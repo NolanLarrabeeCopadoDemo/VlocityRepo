@@ -1,0 +1,430 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "id": 1,
+                "name": "Parent.OrderId",
+                "val": "8013y000007D8kdAAC"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "getOrderItemsfromOrder",
+            "bundleType": "",
+            "dsDelay": "",
+            "inputMap": {
+                "OrderId": "{Parent.OrderId}"
+            },
+            "jsonMap": "{\"Parent.OrderId\":\"{Parent.OrderId}\"}",
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "lwc": {
+        "DeveloperName": "cfLineItems_1_DMelsh",
+        "Id": "0Rb4w0000004F4ACAU",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfLineItems_1_DMelsh",
+        "NamespacePrefix": "c"
+    },
+    "selectableMode": "Multi",
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "ProductName-0",
+                            "name": "ProductName",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "ProductName",
+                                "label": "Product Name",
+                                "placeholder": "output",
+                                "record": "{record}",
+                                "type": "text"
+                            },
+                            "size": {
+                                "default": "3",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "size": {
+                                    "default": "3",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_3-of-12 "
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Quantity-1",
+                            "name": "Quantity",
+                            "property": {
+                                "card": "{card}",
+                                "fieldName": "Quantity",
+                                "label": "Quantity",
+                                "placeholder": "output",
+                                "record": "{record}",
+                                "type": "number"
+                            },
+                            "size": {
+                                "default": "2",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "size": {
+                                    "default": "2",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_2-of-12 "
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "UnitPrice-2",
+                            "name": "UnitPrice",
+                            "property": {
+                                "card": "{card}",
+                                "currency": "USD",
+                                "fieldName": "UnitPrice",
+                                "label": "Unit Price",
+                                "locale": "en-US",
+                                "placeholder": "output",
+                                "record": "{record}",
+                                "type": "currency"
+                            },
+                            "size": {
+                                "default": "2",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "size": {
+                                    "default": "2",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_2-of-12 "
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "TotalPrice-3",
+                            "name": "TotalPrice",
+                            "property": {
+                                "card": "{card}",
+                                "currency": "USD",
+                                "fieldName": "TotalPrice",
+                                "label": "Total Price",
+                                "locale": "en-US",
+                                "placeholder": "output",
+                                "record": "{record}",
+                                "type": "currency"
+                            },
+                            "size": {
+                                "default": "3",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "size": {
+                                    "default": "3",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_3-of-12 "
+                            },
+                            "type": "field"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "flexMenu",
+                            "elementLabel": "Menu-4",
+                            "name": "Menu",
+                            "property": {
+                                "card": "{card}",
+                                "iconName": "utility:down",
+                                "iconPosition": "left",
+                                "iconSize": "x-small",
+                                "label": "Menu",
+                                "menuItems": [
+                                    {
+                                        "actionConditions": null,
+                                        "actionData": {
+                                            "card": "{card}",
+                                            "stateAction": {
+                                                "actionConditions": null,
+                                                "displayName": "Expedite Order",
+                                                "flyoutLwc": "expedite-order-o-s-english",
+                                                "flyoutParams": {
+                                                    "OrderItemId": "{OrderItemId}"
+                                                },
+                                                "flyoutType": "OmniScripts",
+                                                "hasExtraParams": true,
+                                                "id": "flex-action-1651549229916",
+                                                "layoutType": "lightning",
+                                                "openFlyoutIn": "Modal",
+                                                "openUrlIn": "Current Window",
+                                                "osName": "ExpediteOrder/OS/English",
+                                                "parent": "menu",
+                                                "type": "Flyout",
+                                                "vlocityIcon": "standard:default"
+                                            },
+                                            "stateObj": "{record}"
+                                        },
+                                        "actionList": [
+                                            {
+                                                "actionIndex": 0,
+                                                "card": "{card}",
+                                                "draggable": false,
+                                                "isOpen": true,
+                                                "key": "1670421232813-k689uzn8e",
+                                                "label": "Action",
+                                                "stateAction": {
+                                                    "actionConditions": null,
+                                                    "channelName": "close_modal",
+                                                    "displayName": "Expedite Order",
+                                                    "flyoutLwc": "expedite-order-o-s-english",
+                                                    "flyoutParams": {
+                                                        "OrderItemId": "{OrderItemId}"
+                                                    },
+                                                    "flyoutType": "OmniScripts",
+                                                    "hasExtraParams": true,
+                                                    "id": "flex-action-1670430796930",
+                                                    "layoutType": "lightning",
+                                                    "openFlyoutIn": "Modal",
+                                                    "openUrlIn": "Current Window",
+                                                    "osName": "ExpediteOrder/OS/English",
+                                                    "type": "Flyout",
+                                                    "vlocityIcon": "standard:default"
+                                                },
+                                                "stateObj": "{record}"
+                                            }
+                                        ],
+                                        "iconName": "standard:default",
+                                        "label": "Expedite Order",
+                                        "name": "menu-item-1651549128498-0",
+                                        "showSpinner": "false"
+                                    },
+                                    {
+                                        "actionList": [
+                                            {
+                                                "actionIndex": 0,
+                                                "card": "{card}",
+                                                "draggable": false,
+                                                "isOpen": true,
+                                                "key": "1670421181219-0svvy0q1r",
+                                                "label": "Action",
+                                                "stateAction": {
+                                                    "channelName": "close_modal",
+                                                    "displayName": "Action",
+                                                    "flyoutLwc": "cancel-order-o-s-english",
+                                                    "flyoutParams": {
+                                                        "OrderItemId": "{OrderItemId}"
+                                                    },
+                                                    "flyoutType": "OmniScripts",
+                                                    "hasExtraParams": true,
+                                                    "id": "flex-action-1670430810632",
+                                                    "layoutType": "lightning",
+                                                    "openFlyoutIn": "Modal",
+                                                    "openUrlIn": "Current Window",
+                                                    "osName": "CancelOrder/OS/English",
+                                                    "type": "Flyout",
+                                                    "vlocityIcon": "standard-default"
+                                                }
+                                            }
+                                        ],
+                                        "iconName": "standard:default",
+                                        "label": "Cancel Order",
+                                        "name": "menu-item-1670421181195-0",
+                                        "showSpinner": "false"
+                                    },
+                                    {
+                                        "actionList": [
+                                            {
+                                                "actionIndex": 0,
+                                                "card": "{card}",
+                                                "draggable": false,
+                                                "isOpen": true,
+                                                "key": "1670421445006-ecuwuo8cc",
+                                                "label": "Action",
+                                                "stateAction": {
+                                                    "channelName": "close_modal",
+                                                    "displayName": "Action",
+                                                    "flyoutLwc": "return-order-o-s-english",
+                                                    "flyoutParams": {
+                                                        "OrderItemId": "{OrderItemId}"
+                                                    },
+                                                    "flyoutType": "OmniScripts",
+                                                    "hasExtraParams": true,
+                                                    "id": "flex-action-1670430818696",
+                                                    "layoutType": "lightning",
+                                                    "openFlyoutIn": "Modal",
+                                                    "openUrlIn": "Current Window",
+                                                    "osName": "ReturnOrder/OS/English",
+                                                    "type": "Flyout",
+                                                    "vlocityIcon": "standard-default"
+                                                }
+                                            }
+                                        ],
+                                        "iconName": "standard:default",
+                                        "label": "Return Order",
+                                        "name": "menu-item-1670421444995-0",
+                                        "showSpinner": "false"
+                                    },
+                                    {
+                                        "actionList": [
+                                            {
+                                                "actionIndex": 0,
+                                                "card": "{card}",
+                                                "draggable": false,
+                                                "isOpen": true,
+                                                "key": "1670421498502-iyqtjpn90",
+                                                "label": "Action",
+                                                "stateAction": {
+                                                    "channelName": "close_modal",
+                                                    "displayName": "Action",
+                                                    "flyoutLwc": "modify-order-o-s-english",
+                                                    "flyoutParams": {
+                                                        "OrderItemId": "{OrderItemId}"
+                                                    },
+                                                    "flyoutType": "OmniScripts",
+                                                    "hasExtraParams": true,
+                                                    "id": "flex-action-1670430828950",
+                                                    "layoutType": "lightning",
+                                                    "openFlyoutIn": "Modal",
+                                                    "openUrlIn": "Current Window",
+                                                    "osName": "ModifyOrder/OS/English",
+                                                    "type": "Flyout",
+                                                    "vlocityIcon": "standard-default"
+                                                }
+                                            }
+                                        ],
+                                        "iconName": "standard:default",
+                                        "label": "Modify Order",
+                                        "name": "menu-item-1670421498493-0",
+                                        "showSpinner": "false"
+                                    }
+                                ],
+                                "overflow": true,
+                                "position": "right",
+                                "record": "{record}",
+                                "size": "large",
+                                "type": "action",
+                                "variant": "brand"
+                            },
+                            "size": {
+                                "default": "2",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "size": {
+                                    "default": "2",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_2-of-12 "
+                            },
+                            "type": "element"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "class": "slds-card slds-p-around_x-small slds-m-bottom_x-small",
+                "container": {
+                    "class": "slds-card"
+                },
+                "margin": [
+                    {
+                        "size": "none",
+                        "type": "around"
+                    }
+                ],
+                "padding": [
+                    {
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12"
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "LineItems",
+    "xmlJson": [
+        {
+            "@attributes": {
+                "targets": "lightningCommunity__Default"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        }
+    ],
+    "xmlObject": {
+        "apiVersion": 51,
+        "isExplicitImport": false,
+        "isExposed": true,
+        "masterLabel": "LineItems",
+        "runtimeNamespace": "%vlocity_namespace%",
+        "targetConfigs": "PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdDb21tdW5pdHlfX0RlZmF1bHQiPgogICAgICA8cHJvcGVydHkgbmFtZT0icmVjb3JkSWQiIHR5cGU9IlN0cmluZyIvPgogICAgPC90YXJnZXRDb25maWc+",
+        "targets": {
+            "target": [
+                "lightning__AppPage",
+                "lightning__HomePage",
+                "lightning__RecordPage",
+                "lightningCommunity__Page",
+                "lightningCommunity__Default"
+            ]
+        }
+    }
+}

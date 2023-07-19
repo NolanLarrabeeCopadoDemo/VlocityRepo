@@ -1,0 +1,65 @@
+{
+  "constants" : [
+    {
+      "name":"hasSecurityPredicates",
+      "value": "${Variables.ApplySecurityPredicates == 'Yes'}"
+    }
+  ],
+  "macros" : [ ],
+  "rules" : [
+    {
+      "name": "SecurityPredicateDataflowRule",
+      "condition" : "${Constants.hasSecurityPredicates}",
+      "appliesTo": [
+      {
+      "type": "workflow",
+      "name": "*"
+      }
+      ],
+      "actions": [
+        {
+        "action": "set",
+        "description": "add predicate for Sales Agreement Product Schedules in Dataflow",
+        "path": "$.workflowDefinition.MFG_Register_SalesAgreementProductSchedule.parameters.rowLevelSecurityFilter",
+        "value": "'SalesAgreementProduct.SalesAgreement.OwnerId' == \"$User.Id\" || 'SalesAgreementProduct.SalesAgreement.Owner.Role.Roles' == \"$User.UserRoleId\"   ||   'SalesAgreementProduct.SalesAgreement.Account.OwnerId' == \"$User.Id\" || 'SalesAgreementProduct.SalesAgreement.Account.Owner.Role.Roles' == \"$User.UserRoleId\" "
+        },
+        {
+        "action": "set",
+        "description": "add predicate for Sales Agreement Product in Dataflow",
+        "path": "$.workflowDefinition.MFG_Register_SalesAgreementProduct.parameters.rowLevelSecurityFilter",
+        "value": "'SalesAgreement.OwnerId' == \"$User.Id\" || 'SalesAgreement.Owner.Role.Roles' == \"$User.UserRoleId\"   ||   'SalesAgreement.Account.OwnerId' == \"$User.Id\" || 'SalesAgreement.Account.Owner.Role.Roles' == \"$User.UserRoleId\" "
+        },
+        {
+        "action": "set",
+        "description": "add predicate for Sales Agreement in Dataflow",
+        "path": "$.workflowDefinition.MFG_Register_SalesAgreement.parameters.rowLevelSecurityFilter",
+        "value": "'OwnerId' == \"$User.Id\" || 'Owner.Role.Roles' == \"$User.UserRoleId\"    ||   'Account.OwnerId' == \"$User.Id\" || 'Account.Owner.Role.Roles' == \"$User.UserRoleId\" "
+        },
+        {
+        "action": "set",
+        "description": "add predicate for Order Product in Dataflow",
+        "path": "$.workflowDefinition.MFG_Register_OrderProduct.parameters.rowLevelSecurityFilter",
+        "value": "'Order.Owner.Id' == \"$User.Id\" || 'Order.Owner.Role.Roles' == \"$User.UserRoleId\"    ||   'Order.Account.OwnerId' == \"$User.Id\" || 'Order.Account.Owner.Role.Roles' == \"$User.UserRoleId\"    ||   'Order.SalesAgreement.OwnerId' == \"$User.Id\" || 'Order.SalesAgreement.Owner.Role.Roles' == \"$User.UserRoleId\" "
+        },
+        {
+        "action": "set",
+        "description": "add predicate for Order in Dataflow",
+        "path": "$.workflowDefinition.MFG_Register_Order.parameters.rowLevelSecurityFilter",
+        "value": "'OwnerId' == \"$User.Id\" || 'Owner.Role.Roles' == \"$User.UserRoleId\"    ||   'Account.OwnerId' == \"$User.Id\" || 'Account.Owner.Role.Roles' == \"$User.UserRoleId\"    ||   'SalesAgreement.OwnerId' == \"$User.Id\" || 'SalesAgreement.Owner.Role.Roles' == \"$User.UserRoleId\"  "
+        },
+        {
+        "action": "set",
+        "description": "add predicate for Account in Dataflow",
+        "path": "$.workflowDefinition.MFG_Register_Account.parameters.rowLevelSecurityFilter",
+        "value": "'OwnerId' == \"$User.Id\" || 'Owner.Role.Roles' == \"$User.UserRoleId\" "
+        },
+        {
+        "action": "set",
+        "description": "add predicate for Contract in Dataflow",
+        "path": "$.workflowDefinition.MFG_Register_Contract.parameters.rowLevelSecurityFilter",
+        "value": "'OwnerId' == \"$User.Id\" || 'Owner.Role.Roles' == \"$User.UserRoleId\"    ||   'SalesAgreement.OwnerId' == \"$User.Id\" || 'SalesAgreement.Owner.Role.Roles' == \"$User.UserRoleId\"    ||   'Account.OwnerId' == \"$User.Id\" || 'Account.Owner.Role.Roles' == \"$User.UserRoleId\" "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    "CustomJavaScript": "team_estimateproductlist_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsLocked": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "MayEdit": true,
+    "Name": "IPStoreProducts",
+    "OmniProcessElement": [
+        "team_estimateproductlist_Element_DR1.json",
+        "team_estimateproductlist_Element_DR2.json",
+        "team_estimateproductlist_Element_DR3.json",
+        "team_estimateproductlist_Element_IP1.json",
+        "team_estimateproductlist_Element_IP2.json",
+        "team_estimateproductlist_Element_R1.json",
+        "team_estimateproductlist_Element_R2.json"
+    ],
+    "OmniProcessKey": "team_estimateproductlist",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "team_estimateproductlist_PropertySetConfig.json",
+    "SubType": "estimateproductlist",
+    "Type": "team",
+    "UniqueName": "team_estimateproductlist_Procedure_1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/team/estimateproductlist/Procedure",
+    "WebComponentKey": "07c25dfe-3d03-7447-415b-0733e770835e"
+}

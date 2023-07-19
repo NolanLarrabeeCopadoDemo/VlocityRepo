@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Engineering Queue</name>
+    <queueMembers>
+        <users>
+            <user>ellie.engineering.pq9a63q7falx.9b1wrxyxcsjx@copado.com2023/07/18_17-7-41.demo3</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Milestone1_Project__c</sobjectType>
+    </queueSobject>
+</Queue>

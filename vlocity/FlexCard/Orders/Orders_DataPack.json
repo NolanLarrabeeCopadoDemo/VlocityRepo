@@ -1,0 +1,53 @@
+{
+    "AuthorName": "SalesforceDemo",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 4,
+                    "name": "recordId",
+                    "val": "5008X000029rWifQAE"
+                },
+                {
+                    "id": 7,
+                    "name": "User.userAccountId",
+                    "val": "0010M00001MxBj4QAF"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "getOrdersfromAccount",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "AccountId": "{User.userAccountId}",
+                    "CaseId": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\",\"User.userAccountId\":\"{User.userAccountId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "Orders",
+    "Namespace": "",
+    "OmniUiCardKey": "Orders/SalesforceDemo/2.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "Orders.json",
+    "SampleDataSourceResponse": "[]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/Orders"
+}

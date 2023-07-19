@@ -1,0 +1,30 @@
+{
+    "AuthorName": "PWC",
+    "ClonedFromOmniUiCardKey": "AccountInformationtest/PWC/1/1639670171246",
+    "DataSourceConfig": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+        },
+        "type": null,
+        "value": {
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "AccountInformation",
+    "Namespace": "",
+    "OmniUiCardKey": "AccountInformation/PWC/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "AccountInformation.json",
+    "SampleDataSourceResponse": "",
+    "StylingConfiguration": "",
+    "UniqueName": "AccountInformation_PWC_1",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/AccountInformation"
+}

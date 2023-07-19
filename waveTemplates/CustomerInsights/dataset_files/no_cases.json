@@ -1,0 +1,173 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsEnclosedBy": null,
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n",
+    "numberOfLinesToIgnore": null
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Case_tp",
+      "label": "Case",
+      "name": "Case_tp",
+      "fields": [
+        {
+          "fullyQualifiedName": "Id",
+          "name": "Id",
+          "type": "Text",
+          "label": "Id"
+        },
+        {
+          "fullyQualifiedName": "CaseNumber",
+          "name": "CaseNumber",
+          "type": "Text",
+          "label": "CaseNumber"
+        },
+        {
+          "fullyQualifiedName": "ContactId",
+          "name": "ContactId",
+          "type": "Text",
+          "label": "ContactId"
+        },
+        {
+          "fullyQualifiedName": "AccountId",
+          "name": "AccountId",
+          "type": "Text",
+          "label": "AccountId"
+        },
+        {
+          "fullyQualifiedName": "ParentId",
+          "name": "ParentId",
+          "type": "Text",
+          "label": "ParentId"
+        },
+        {
+          "fullyQualifiedName": "SuppliedName",
+          "name": "SuppliedName",
+          "type": "Text",
+          "label": "SuppliedName"
+        },
+        {
+          "fullyQualifiedName": "SuppliedEmail",
+          "name": "SuppliedEmail",
+          "type": "Text",
+          "label": "SuppliedEmail"
+        },
+        {
+          "fullyQualifiedName": "SuppliedPhone",
+          "name": "SuppliedPhone",
+          "type": "Text",
+          "label": "SuppliedPhone"
+        },
+        {
+          "fullyQualifiedName": "SuppliedCompany",
+          "name": "SuppliedCompany",
+          "type": "Text",
+          "label": "SuppliedCompany"
+        },
+        {
+          "fullyQualifiedName": "Type",
+          "name": "Type",
+          "type": "Text",
+          "label": "Type"
+        },
+        {
+          "fullyQualifiedName": "Status",
+          "name": "Status",
+          "type": "Text",
+          "label": "Status"
+        },
+        {
+          "fullyQualifiedName": "Reason",
+          "name": "Reason",
+          "type": "Text",
+          "label": "Reason"
+        },
+        {
+          "fullyQualifiedName": "Origin",
+          "name": "Origin",
+          "type": "Text",
+          "label": "Origin"
+        },
+        {
+          "fullyQualifiedName": "Subject",
+          "name": "Subject",
+          "type": "Text",
+          "label": "Subject"
+        },
+        {
+          "fullyQualifiedName": "Priority",
+          "name": "Priority",
+          "type": "Text",
+          "label": "Priority"
+        },
+        {
+          "fullyQualifiedName": "IsClosed",
+          "name": "IsClosed",
+          "type": "Text",
+          "label": "IsClosed"
+        },
+        {
+          "fullyQualifiedName": "ClosedDate",
+          "name": "ClosedDate",
+          "type": "Date",
+          "label": "ClosedDate",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        {
+          "fullyQualifiedName": "IsEscalated",
+          "name": "IsEscalated",
+          "type": "Text",
+          "label": "IsEscalated"
+        },
+        {
+          "fullyQualifiedName": "OwnerId",
+          "name": "OwnerId",
+          "type": "Text",
+          "label": "OwnerId"
+        },
+        {
+          "fullyQualifiedName": "CreatedDate",
+          "name": "CreatedDate",
+          "type": "Date",
+          "label": "CreatedDate",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        {
+          "fullyQualifiedName": "LastModifiedDate",
+          "name": "LastModifiedDate",
+          "type": "Date",
+          "label": "LastModifiedDate",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        {
+          "fullyQualifiedName": "ContactPhone",
+          "name": "ContactPhone",
+          "type": "Text",
+          "label": "ContactPhone"
+        },
+        {
+          "fullyQualifiedName": "ContactMobile",
+          "name": "ContactMobile",
+          "type": "Text",
+          "label": "ContactMobile"
+        },
+        {
+          "fullyQualifiedName": "ContactEmail",
+          "name": "ContactEmail",
+          "type": "Text",
+          "label": "ContactEmail"
+        },
+        {
+          "fullyQualifiedName": "LastViewedDate",
+          "name": "LastViewedDate",
+          "type": "Date",
+          "label": "LastViewedDate",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        }
+      ]
+    }
+  ]
+}

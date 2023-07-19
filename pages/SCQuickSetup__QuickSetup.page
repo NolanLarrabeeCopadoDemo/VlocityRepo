@@ -1,0 +1,247 @@
+<apex:page sidebar="false" controller="SCQuickSetup.QuickSetupController">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <apex:stylesheet value="{!URLFOR($Resource.SCQuickSetup__LDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+        <apex:includeScript value="{!URLFOR($Resource.SCQuickSetup__sos_jqueryui192, '/js/jquery-1.8.3.js')}"/>
+        <apex:variable var="LDS" value="{!URLFOR($Resource.SCQuickSetup__LDS)}" />
+        <apex:variable var="APP" value="{!URLFOR($Resource.SCQuickSetup__app_statics)}"/>
+        <script>
+            var sldsPATH = '{!LDS}';
+            var appStatic = '{!APP}';
+            var qs_orgId = '{!$Organization.Id}';
+        </script>
+        <style type="text/css">
+            .setup-app {
+                position: relative;
+            }
+            .setup-app .slds-notify_position_botton {
+                top:initial;
+                bottom: 10px;
+                position: absolute;
+            }
+            .setup-app .slds-notify--toast{
+                min-width: 22rem;
+            }
+        </style>
+        <apex:stylesheet value="{!APP}/styles/main.css"/>
+        <apex:includeScript value="{!URLFOR($Resource.SCQuickSetup__FirebaseJS, '/FirebaseJS/firebaseApp.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.SCQuickSetup__FirebaseJS, '/FirebaseJS/firebaseDatabase.js')}"/>
+        <apex:includeScript value="{!$Resource.SCQuickSetup__sos_sha256}"/>
+        <apex:includeScript value="{!$Resource.SCQuickSetup__sos_fb_connection_js}"/>
+
+        <apex:includeScript value="{!APP}/scripts/utils.js"/>
+        <apex:includeScript value="{!APP}/scripts/kb_module.js"/>
+        <apex:includeScript value="{!APP}/scripts/case_module.js"/>
+        <apex:includeScript value="{!APP}/scripts/sos_module.js"/>
+        <apex:includeScript value="{!APP}/scripts/chat_module.js"/>
+        <apex:includeScript value="{!APP}/scripts/bookmark_module.js"/>
+        <apex:includeScript value="{!APP}/scripts/main.js"/>
+        <apex:includeScript value="{!APP}/vendor/rivetsjs.js"/>
+
+        <apex:includeScript value="/soap/ajax/33.0/connection.js"/>
+        <apex:includeScript value="https://cdnjs.cloudflare.com/ajax/libs/jsforce/1.6.3/jsforce.min.js"/>
+
+        <div class="setup-app">
+            <div class="slds-page-header slds-m-bottom--medium" role="banner">
+                <div class="slds-media slds-media--center">
+                    <div class="slds-media__body">
+                        <p class="slds-page-header__title slds-truncate slds-align-middle" title="Mobile Service Demo Quick Setup">Mobile Service Demo Quick Setup</p>
+                        <div class="slds-form--inline slds-m-vertical--medium">
+                            <div class="slds-form-element is-required">
+                                <label class="slds-form-element__label" for="username">Username</label>
+                                <div class="slds-form-element__control">
+                                    <input id="username" class="slds-input" type="email" value="{!JSENCODE($Setup.SCQuickSetup__sos_quick_setup__c.SCQuickSetup__sfdc_email__c)}" placeholder="youremail@salesforce.com"/>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <button class="slds-button slds-button--brand" type="button" id="button-login">Login</button>
+                            </div>
+                        </div>
+                        <div class="slds-form-element__help" style="color:red;display:none;" id="email-error">The email is invalid.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-tabs--scoped quick-setup-model">
+                <ul class="slds-tabs--scoped__nav" role="tablist">
+                    <li class="slds-tabs--scoped__item slds-text-heading--label slds-active" title="Knowledge" role="presentation">
+                        <a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-scoped-1" id="tab-scoped-1__item">
+                            <span class="slds-icon_container vertical-align-middle slds-hide" title="You have errors in your setup">
+                                <svg aria-hidden="true" class="slds-icon slds-icon-text-error slds-icon--x-small">
+                                    <use xlink:href="{!LDS}/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+                                </svg>
+                                <span class="slds-assistive-text">Error in setup</span>
+                            </span>
+                            <span class="vertical-align-middle">
+                                Knowledge
+                            </span>
+                        </a>
+                    </li>
+                    <li class="slds-tabs--scoped__item slds-text-heading--label " title="Case" role="presentation">
+                        <a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-2" id="tab-scoped-2__item">
+                            <span class="slds-icon_container vertical-align-middle slds-hide" title="You have errors in your setup">
+                                <svg aria-hidden="true" class="slds-icon slds-icon-text-error slds-icon--x-small">
+                                    <use xlink:href="{!LDS}/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+                                </svg>
+                                <span class="slds-assistive-text">Error in setup</span>
+                            </span>
+                            <span class="vertical-align-middle">
+                                Case
+                            </span>
+                        </a>
+                    </li>
+                    <li class="slds-tabs--scoped__item slds-text-heading--label" title="Chat" role="presentation">
+                        <a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-3" id="tab-scoped-3__item">
+                            <span class="slds-icon_container vertical-align-middle slds-hide" title="You have errors in your setup">
+                                <svg aria-hidden="true" class="slds-icon slds-icon-text-error slds-icon--x-small">
+                                    <use xlink:href="{!LDS}/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+                                </svg>
+                                <span class="slds-assistive-text">Error in setup</span>
+                            </span>
+                            <span class="vertical-align-middle">
+                                Chat
+                            </span>
+                        </a>
+                    </li>
+                    <li class="slds-tabs--scoped__item slds-text-heading--label" title="SOS" role="presentation">
+                        <a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-4" id="tab-scoped-4__item">
+                            <span class="slds-icon_container vertical-align-middle slds-hide" title="You have errors in your setup">
+                                <svg aria-hidden="true" class="slds-icon slds-icon-text-error slds-icon--x-small">
+                                    <use xlink:href="{!LDS}/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+                                </svg>
+                                <span class="slds-assistive-text">Error in setup</span>
+                            </span>
+                            <span class="vertical-align-middle">
+                                SOS
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="slds-tabs--scoped__item slds-text-heading--label" title="Bookmark" role="presentation">
+                        <a class="slds-tabs--scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-scoped-5" id="tab-scoped-5__item">
+                            <span class="slds-icon_container vertical-align-middle slds-hide" title="You have errors in your setup">
+                                <svg aria-hidden="true" class="slds-icon slds-icon-text-error slds-icon--x-small">
+                                    <use xlink:href="{!LDS}/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+                                </svg>
+                                <span class="slds-assistive-text">Error in setup</span>
+                            </span>
+                            <span class="vertical-align-middle">
+                                Bookmark
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div id="tab-scoped-1" class="slds-tabs--scoped__content slds-show" role="tabpanel" aria-labelledby="tab-scoped-1__item">
+                    <span id="knowledge_template" class="slds-hide"></span>
+                </div>
+                <div id="tab-scoped-2" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-2__item">
+                    <span id="case_template" class="slds-hide"></span>
+                </div>
+                <div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-3__item">
+                    <span id="chat_template" class="slds-hide"></span>
+                </div>
+                <div id="tab-scoped-4" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-4__item">
+                    <span id="sos_template" class="slds-hide"></span>
+                </div>
+
+                <div id="tab-scoped-5" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-5__item">
+                    <span id="bookmark_template" class="slds-hide"></span>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                /* Load templates */
+                $('#knowledge_template').load('{!APP}/templates/knowledge_template.html');
+                $('#case_template').load('{!APP}/templates/case_template.html');
+                $('#chat_template').load('{!APP}/templates/chat_template.html');
+                $('#sos_template').load('{!APP}/templates/sos_template.html');
+                $('#bookmark_template').load('{!APP}/templates/bookmark_template.html');
+            });
+             $(function(){
+
+                $('#button-login').click(function(){
+                    var email = $('#username').val();
+                    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@salesforce.com$/;
+                    if(email != "" && re.test(email)) {
+                        $("#email-error").hide();
+                        QuickSetup.login(email).then(
+                            function(data){
+                                QuickSetup.render();
+                                console.log('login - susses');
+                                saveEmail(email)
+
+                            }, function(data) {
+                                console.log('login - error');
+                            }
+                        );
+                    } else {
+                        $("#email-error").show();
+                    }
+                })
+
+                var jsConnection = new jsforce.Connection({
+                    serverUrl : window.location.protocol + "//" + window.location.host,
+                    sessionId : '{!$Api.Session_ID}'
+                });
+
+                //QuickSetup.loadPreData(jsConnection).then(function(a){console.log(a)})
+
+                Knowledge.setConnection(jsConnection);
+
+                Cases.connectedApp(jsConnection).then(function(a){console.log(a)})
+
+                var sosNames = {}
+
+                sosNames.servicePresence   ='{!JSENCODE($Setup.SCQuickSetup__sos_auto_setup__c.SCQuickSetup__service_presence__c)}' || 'SOS Online';
+                sosNames.routingConfig     = '{!JSENCODE($Setup.SCQuickSetup__sos_auto_setup__c.SCQuickSetup__routing_config__c)}' || 'SOS Route';
+                sosNames.queue             = '{!JSENCODE($Setup.SCQuickSetup__sos_auto_setup__c.SCQuickSetup__queue__c)}' || 'SOS Queue';
+                sosNames.permissionSet     = '{!JSENCODE($Setup.SCQuickSetup__sos_auto_setup__c.SCQuickSetup__permission_set__c)}' || 'SOS Permission';
+                sosNames.sosDeployment     ='{!JSENCODE($Setup.SCQuickSetup__sos_auto_setup__c.SCQuickSetup__deployment__c)}' || 'SOS Deploy';
+
+                sforce.connection.sessionId = '{!$Api.Session_ID}';
+
+                SOS.setConnection(jsConnection);
+                SOS.setNames(sosNames);
+
+                var chatNames = {}
+                chatNames.servicePresence   = '{!JSENCODE($Setup.SCQuickSetup__chat_auto_setup__c.SCQuickSetup__service_presence__c)}' || 'Chat Online';
+                chatNames.routingConfig     = '{!JSENCODE($Setup.SCQuickSetup__chat_auto_setup__c.SCQuickSetup__routing_config__c)}' || 'Mobile Chat Route';
+                chatNames.queue             = '{!JSENCODE($Setup.SCQuickSetup__chat_auto_setup__c.SCQuickSetup__queue__c)}' || 'Chat Queue';
+                chatNames.permissionSet     = '{!JSENCODE($Setup.SCQuickSetup__chat_auto_setup__c.SCQuickSetup__permission_set__c)}' || 'Chat Permission';
+                chatNames.deployment        = '{!JSENCODE($Setup.SCQuickSetup__chat_auto_setup__c.SCQuickSetup__deployment__c)}' || 'Chat Deployment';
+                chatNames.button            = '{!JSENCODE($Setup.SCQuickSetup__chat_auto_setup__c.SCQuickSetup__button__c)}' || 'Chat Button';
+                chatNames.skill             = '{!JSENCODE($Setup.SCQuickSetup__chat_auto_setup__c.SCQuickSetup__skill__c)}' || 'Chat Skill';
+                chatNames.liveAgentConfig   = '{!JSENCODE($Setup.SCQuickSetup__chat_auto_setup__c.SCQuickSetup__liveAgentConfig__c)}' || 'Live Agent Config';
+                Chat.setNames(chatNames);
+
+                if ("{!JSENCODE($Setup.SCQuickSetup__sos_quick_setup__c.SCQuickSetup__sfdc_email__c)}".length > 0 ){
+                    $('#button-login').click();
+                }
+
+            })
+
+             function saveEmail(email){
+                    var results = soqlCall("SELECT Id FROM SCQuickSetup__sos_quick_setup__c");
+                    var customSetting = new sforce.SObject("SCQuickSetup__sos_quick_setup__c");
+                    var exists = results.length && (results[0].Id || results[0].id);
+                    customSetting.SCQuickSetup__sfdc_email__c = email;
+
+                    if (exists) {
+                      customSetting.Id = exists;
+                      result = sforce.connection.update([customSetting]);
+                    } else {
+                      result = sforce.connection.create([customSetting]);
+                    }
+                    function soqlCall(query) {
+                        var queryResult = sforce.connection.query(query);
+                        return queryResult.getArray('records');
+                    }
+                }
+        </script>
+        <style>
+            .vertical-align-middle{
+                vertical-align:middle;
+            }
+        </style>
+    </html>
+</apex:page>

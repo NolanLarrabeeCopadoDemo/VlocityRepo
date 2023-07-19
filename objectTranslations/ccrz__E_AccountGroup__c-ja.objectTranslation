@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CC 取引先グループ</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group ID --></label>
+        <name>ccrz__AccountGroupID__c</name>
+    </fields>
+    <fields>
+        <help>ccApiTestData で使用される場合を除き、B2B Commerce 内部でのみ使用されます。</help>
+        <label><!-- DataId --></label>
+        <name>ccrz__DataId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desc --></label>
+        <name>ccrz__Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- PriceList Selection Method --></label>
+        <name>ccrz__PriceListSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Best Price</masterLabel>
+            <translation>最適価格</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sequence Order</masterLabel>
+            <translation>シーケンス順序</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Theme Name --></label>
+        <name>ccrz__ThemeName__c</name>
+    </fields>
+    <nameFieldLabel>取引先グループ名</nameFieldLabel>
+</CustomObjectTranslation>

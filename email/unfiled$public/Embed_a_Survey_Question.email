@@ -1,0 +1,22 @@
+<html><head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;"><div style=""><span style="font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 0.875rem; color: rgb(28, 28, 28);"><span style="font-size:14px;">Hello {{{Recipient.Name}}},</span></span><br />
+<br />
+<span style="font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 14px;"><span style="font-variant: normal; white-space: pre-wrap;"><span style="font-family:'Salesforce Sans',sans-serif"><span style="color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Thanks for being a valued member of the </span></span></span></span></span></span><span style="color:#1c1c1c;">Partner Extraa P</span><span style="font-variant: normal; white-space: pre-wrap;"><span style="font-family:'Salesforce Sans',sans-serif"><span style="color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">rogram.</span></span></span></span></span></span></span>
+<p style="font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 0.875rem; line-height: 1.38;"><span style="font-size:14px;"><span style="font-variant: normal; white-space: pre-wrap;"><span style="font-family:'Salesforce Sans',sans-serif"><span style="color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">To improve the redemption experience, we'd like to ask you a few questions.</span></span></span></span></span></span></span><br />
+&nbsp;</p>
+
+<div style="font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 0.875rem; text-align: center;"><span style="font-size:14px;">{{{SurveyQuestion.QuestionName}}}</span></div>
+<span style="font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 14px;"> &nbsp;</span>
+
+<div style="font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 0.875rem; text-align: center;"><span style="font-size:14px;">{{{SurveyQuestion.QuestionHtmlContent}}}</span></div>
+<br />
+<br />
+<br />
+<span style="font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 0.875rem; color: rgb(28, 28, 28);"><span style="font-size:14px;">Thanks,<br />
+<br />
+Partner Extraa Program<br />
+Member Services Team&nbsp; &nbsp;</span></span><br />
+<br />
+<span style="color: rgb(28, 28, 28); font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 14px;">Questions? Need help? Contact </span><span style="font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 14px;"><span style="color:#0000ee;">Member Support</span>.</span></div></body></html>

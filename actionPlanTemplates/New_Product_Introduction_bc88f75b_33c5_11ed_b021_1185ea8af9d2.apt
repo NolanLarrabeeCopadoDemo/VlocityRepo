@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>new task</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 1 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 1</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>new task</name>
+        <uniqueName>new_task_bc9ef05f_33c5_11ed_b021_29a8dfeb7509</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hr000000TOxEKAW</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>AssessTaskeDef</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>AssessTaskeDef</name>
+        <uniqueName>AssessTaskeDef_bc9f3e81_33c5_11ed_b021_7d1ca78ce2e7</uniqueName>
+    </actionPlanTemplateItem>
+    <isAdHocItemCreationEnabled>true</isAdHocItemCreationEnabled>
+    <name>New Product Introduction</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>New_Product_Introduction_bc88f75b_33c5_11ed_b021_1185ea8af9d2</uniqueName>
+</ActionPlanTemplate>

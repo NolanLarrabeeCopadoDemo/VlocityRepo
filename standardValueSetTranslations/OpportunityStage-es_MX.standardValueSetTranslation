@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Closed Lost</masterLabel>
+        <translation>Cerrado perdido</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed Won</masterLabel>
+        <translation>Cerrado ganado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Defining Spec</masterLabel>
+        <translation><!-- Defining Spec --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Discovery</masterLabel>
+        <translation><!-- Discovery --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Engineering</masterLabel>
+        <translation><!-- Engineering --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negotiation</masterLabel>
+        <translation>Negociación</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pricing Review</masterLabel>
+        <translation><!-- Pricing Review --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Proposal/Quote</masterLabel>
+        <translation>Propuesta/Cotización</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualification</masterLabel>
+        <translation>Calificación</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quote Submitted</masterLabel>
+        <translation><!-- Quote Submitted --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RFQ Received</masterLabel>
+        <translation><!-- RFQ Received --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RFQ Response in Process</masterLabel>
+        <translation><!-- RFQ Response in Process --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Verbal Approval</masterLabel>
+        <translation><!-- Verbal Approval --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

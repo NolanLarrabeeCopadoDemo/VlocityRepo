@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Registered User</audienceName>
+    <container>B2B Commerce Lightning Experience</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>UserType</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Guest</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>76e052a6-032b-45ba-8cc2-af56d687bcc4$#$c8d6aa7c-06df-4d0d-aa14-ed4a99015336</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Page_Flex_Section_Component</targetValue>
+        </target>
+        <target>
+            <groupName>fabad946-a039-4e3b-9d06-2eb847a0c70a$#$0cc47d60-f1d3-40d9-94da-f34727ce4add</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Page_Updated_Section_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

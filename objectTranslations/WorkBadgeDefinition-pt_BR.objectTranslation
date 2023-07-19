@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Insira o número de pontos associados a este emblema.</help>
+        <label>Pontos</label>
+        <name>BadgePoints__c</name>
+    </fields>
+</CustomObjectTranslation>

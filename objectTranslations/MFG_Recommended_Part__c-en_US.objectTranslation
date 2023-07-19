@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Recommended Part</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Recommended Parts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>MFG_Asset__c</name>
+        <relationshipLabel><!-- Recommended Parts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commerce Link --></label>
+        <name>MFG_Commerce_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link --></label>
+        <name>MFG_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Name --></label>
+        <name>MFG_PartName__c</name>
+        <relationshipLabel><!-- Recommended Parts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>MFG_Source__c</name>
+        <picklistValues>
+            <masterLabel>APM</masterLabel>
+            <translation><!-- APM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tech</masterLabel>
+            <translation><!-- Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Order</masterLabel>
+            <translation><!-- Work Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- StoreURL --></label>
+        <name>MFG_StoreURL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

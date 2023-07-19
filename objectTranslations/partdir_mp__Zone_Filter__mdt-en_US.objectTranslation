@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>partdir_mp__Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field values --></label>
+        <name>partdir_mp__Field_values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>partdir_mp__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>partdir_mp__Object_Name__c</name>
+        <picklistValues>
+            <masterLabel>Account Brand</masterLabel>
+            <translation><!-- Account Brand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner App</masterLabel>
+            <translation><!-- Partner App --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>partdir_mp__Zone__c</name>
+        <relationshipLabel><!-- Zones Filters --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

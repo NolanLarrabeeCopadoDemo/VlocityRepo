@@ -1,0 +1,334 @@
+<!--
+ - this page using on community on 'Visualforce Page' standard component
+ -->
+
+<apex:page id="AC_PartnerLocationPage" controller="partdir_mp.AC_PartnerLocationPageCtrl" docType="html-5.0"
+           standardStylesheets="false">
+
+	<apex:includeLightning />
+	<apex:slds />
+
+	<script>
+		$Lightning.use("partdir_mp:AC_PartnerDirConnectApp", function () {
+			$Lightning.createComponent("partdir_mp:AC_PartnerDirLocationSearch",
+				{},
+				"lightning",
+				function (cmp) {
+					$A.eventService.addHandler({
+						"event": "partdir_mp:AC_PartnerDirLocationSearchEvent",
+						"handler": searchLocations
+					});
+				});
+		});
+
+		function searchLocations(event) {
+			searchAddresses(event.getParam('addressSearchKey'));
+
+		}
+	</script>
+	<style>
+		html body.sfdcBody {
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+		}
+
+		.message-block {
+			position: absolute;
+			z-index: 100;
+			width: 50%;
+			background-color: transparent;
+			margin-left: 25%;
+			margin-right: 25%;
+			top: 7rem;
+		}
+
+		.flex-container {
+			display: flex;
+			justify-content: center;
+		}
+
+		#lightning input {
+			background-color: #fff;
+			border: 1px solid #dddbda;
+			border-radius: .25rem;
+			width: 50%;
+			-webkit-transition: border .1s linear, background-color .1s linear, box-shadow .3s ease;
+			transition: border .1s linear, background-color .1s linear, box-shadow .3s ease;
+			display: inline-block;
+			padding: 0 1rem 0 .75rem;
+			line-height: 1.875rem;
+			min-height: calc(1.875rem + (1px * 2));
+			margin: 2rem 0 1rem 0;
+		}
+
+		#lightning ul {
+			position: absolute !important;
+			top: 4rem;
+			width: 50%;
+			box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.16);
+		}
+
+		#lightning input:focus {
+			box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.16);
+		}
+
+		/*smartphones*/
+		@media (max-width: 576px) {
+			#lightning input {
+				width: 100%;
+			}
+
+			#lightning ul {
+				width: 100%;
+				top: 4rem;
+			}
+		}
+
+		/*tablets*/
+		@media (min-width: 576px) and (max-width: 768px) {
+			#lightning input {
+				width: 100%;
+			}
+
+			#lightning ul {
+				width: 100%;
+				top: 4rem;
+			}
+
+		}
+
+		@media only screen and (max-width: 768px) {
+
+			.message-block {
+				width: 90%;
+				margin-left: 5%;
+				margin-right: 5%;
+			}
+
+			.message {
+				background-color: #ffc;
+				border-style: solid;
+				border-width: 1px;
+				border-radius: 4px;
+				color: #000;
+				padding: 6px 8px 6px 6px;
+			}
+
+			.confirmM6, .confirmM4, .confirmM3, .confirmM2, .confirmS1 {
+				border-color: #390;
+			}
+
+			.message .messageText h4 {
+				 font-weight: bold;
+				margin-right: 4px;
+			 }
+		}
+	</style>
+
+
+	<script src='https://maps.googleapis.com/maps/api/js?key={!apiKey.partdir_mp__Value__c}'></script>
+
+	<body>
+
+	<div class="message-block">
+		<apex:pageMessages />
+	</div>
+
+	<div id="lightning" class="flex-container" style="background-color: white">
+
+	</div>
+
+	<div class="flex-container" style="background-color: #fff;">
+		<ol class="slds-list_ordered slds-text-color_weak slds-m-bottom_medium">
+			<li>{!$Label.partdir_mp__Type_name_of_location}</li>
+			<li>{!$Label.partdir_mp__Drag_and_drop_marker}</li>
+			<li>{!$Label.partdir_mp__Save_location}</li>
+		</ol>
+	</div>
+
+	<apex:form style="background-color: white" rendered="{!showMap}" id="component">
+
+		<apex:inputHidden value="{!partnerBrand.partdir_mp__Location__Longitude__s}" id="longitude"/>
+		<apex:inputHidden value="{!partnerBrand.partdir_mp__Location__Latitude__s}" id="latitude"/>
+
+		<div style="display: flex; align-items: flex-start; position: absolute; top: 0; left: 0;">
+			<apex:commandButton value="{!$Label.partdir_mp__Back}" styleClass="slds-button" onClick="history.go({!stepsForBack})"/>
+		</div>
+
+		<div class="flex-container">
+			<apex:commandButton value="Save Location" styleClass="slds-button slds-button_brand slds-m-bottom_medium"
+			                    action="{!saveLocation}"/>
+		</div>
+
+		<apex:actionFunction action="{!searchAddress}" name="searchAddresses" reRender="component">
+			<apex:param name="searchKey" value=""/>
+		</apex:actionFunction>
+
+		<div id="map_canvas" style="height:590px; width:100%; border-radius: .25rem;"></div>
+
+		<script>
+
+			var map;
+			var markers;
+			var currentMarker;
+
+			var longitudeField = document.getElementById('{!$Component.longitude}');
+			var latitudeField = document.getElementById('{!$Component.latitude}');
+
+			google.maps.event.addDomListener(window, 'load', initialize());
+
+			function initialize() {
+
+				var addressLatLng = JSON.parse('{!addressLatLng}');
+
+				var myOptions;
+
+				if (addressLatLng.length === 0) {
+
+					myOptions = {
+						zoom: 10,
+						center: new google.maps.LatLng('{!partnerBrand.partdir_mp__Location__Latitude__s}', '{!partnerBrand.partdir_mp__Location__Longitude__s}'),
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					};
+
+				} else {
+
+					myOptions = {
+						zoom: 10,
+						center: new google.maps.LatLng(addressLatLng[0].latitude, addressLatLng[0].longitude),
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					};
+
+				}
+
+				map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+				var title = '{!partnerBrand.CompanyName}';
+
+				var description = '';
+
+				if ('{!partnerBrand.City}') {
+					description += '{!partnerBrand.City + ', '}';
+				}
+
+				if ('{!partnerBrand.Country}') {
+					description += '{!partnerBrand.Country + ', '}';
+				}
+
+			    if ('{!partnerBrand.Street}') {
+					description += '{!partnerBrand.Street}';
+				}
+
+
+				if (addressLatLng.length === 0) {
+
+					currentMarker = new google.maps.Marker({
+						position: new google.maps.LatLng('{!partnerBrand.partdir_mp__Location__Latitude__s}', '{!partnerBrand.partdir_mp__Location__Longitude__s}'),
+						map: map,
+						title: title,
+						description: description,
+						animation: google.maps.Animation.DROP
+					});
+					currentMarker.addListener('click', function (event) {
+
+						currentMarker = new google.maps.Marker({
+							position: event.latLng,
+							map: map,
+							title: title,
+							description: description,
+							animation: google.maps.Animation.DROP
+						});
+
+						for (var i = 0; i < markers.length; i++) {
+							markers[i].setMap(null);
+						}
+						markers = [1];
+						markers[0] = currentMarker;
+						longitudeField.value = currentMarker.position.lng();
+						latitudeField.value = currentMarker.position.lat();
+
+					});
+
+					markers = [1];
+					markers[0] = currentMarker;
+
+				} else {
+
+					var latlngbounds = new google.maps.LatLngBounds();
+
+					markers = [addressLatLng.length];
+
+					for (var i = 0; i < addressLatLng.length; i++) {
+
+						var myLatlng = new google.maps.LatLng(addressLatLng[i].latitude, addressLatLng[i].longitude);
+
+						latlngbounds.extend(myLatlng);
+
+						var marker = new google.maps.Marker({
+							position: myLatlng,
+							map: map,
+							title: title,
+							description: description,
+							animation: google.maps.Animation.DROP
+						});
+
+						marker.addListener('click', function (event) {
+
+							currentMarker = new google.maps.Marker({
+								position: event.latLng,
+								map: map,
+								title: title,
+								description: description,
+								animation: google.maps.Animation.DROP
+							});
+
+							for (var i = 0; i < markers.length; i++) {
+								markers[i].setMap(null);
+							}
+							markers = [1];
+							markers[0] = currentMarker;
+							longitudeField.value = currentMarker.position.lng();
+							latitudeField.value = currentMarker.position.lat();
+
+						});
+
+						markers[i] = marker;
+
+					}
+
+					map.fitBounds(latlngbounds);
+				}
+
+				google.maps.event.addDomListener(map, 'click', function (event) {
+					placeMarker(event.latLng);
+				});
+
+				function placeMarker(location) {
+					for (var i = 0; i < markers.length; i++) {
+						markers[i].setMap(null);
+					}
+					markers = [1];
+
+					currentMarker = new google.maps.Marker({
+						position: location,
+						map: map,
+						title: title,
+						description: description,
+						animation: google.maps.Animation.DROP
+					});
+					markers[0] = currentMarker;
+					longitudeField.value = currentMarker.position.lng();
+					latitudeField.value = currentMarker.position.lat();
+				}
+
+			}
+
+		</script>
+
+	</apex:form>
+
+	</body>
+
+</apex:page>

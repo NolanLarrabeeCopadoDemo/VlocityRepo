@@ -1,0 +1,74 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsEnclosedBy": null,
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n",
+    "numberOfLinesToIgnore": null
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "CaseHistory_tp",
+      "label": "CaseHistory",
+      "name": "CaseHistory_tp",
+      "fields": [
+        {
+          "fullyQualifiedName": "Id",
+          "label": "Id",
+          "name": "Id",
+          "type": "Text"
+        },
+        {
+          "fullyQualifiedName": "IsDeleted",
+          "label": "IsDeleted",
+          "name": "IsDeleted",
+          "type": "Text"
+        },
+        {
+          "fullyQualifiedName": "CaseId",
+          "label": "CaseId",
+          "name": "CaseId",
+          "type": "Text"
+        },
+        {
+          "fullyQualifiedName": "CreatedById",
+          "label": "CreatedById",
+          "name": "CreatedById",
+          "type": "Text"
+        },
+        {
+          "fullyQualifiedName": "CreatedDate",
+          "label": "CreatedDate",
+          "name": "CreatedDate",
+          "type": "Date",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        {
+          "fullyQualifiedName": "Field",
+          "label": "Field",
+          "name": "Field",
+          "type": "Text"
+        },
+        {
+          "fullyQualifiedName": "DataType",
+          "label": "DataType",
+          "name": "DataType",
+          "type": "Text"
+        },
+        {
+          "fullyQualifiedName": "OldValue",
+          "label": "OldValue",
+          "name": "OldValue",
+          "type": "Text"
+        },
+        {
+          "fullyQualifiedName": "NewValue",
+          "label": "NewValue",
+          "name": "NewValue",
+          "type": "Text"
+        }
+      ]
+    }
+  ]
+}

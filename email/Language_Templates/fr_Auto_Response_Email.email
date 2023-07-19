@@ -1,0 +1,18 @@
+{!Contact.Name},<br/>
+Merci de nous avoir contacté! Nous avons bien reçu votre message et un conseiller a été assigné. Nous faisons tout notre possible pour résoudre votre problème dans les plus brefs délais.
+<br/><br/>
+Pour référence, voici les détails de votre demande:
+<br/><br/>
+- N° Requête: {!Case.CaseNumber}
+<br/><br/>
+- Objet: {!Case.Subject}
+<br/><br/>
+- Description: {!Case.Description}
+<br/><br/>
+Dans l'attente, vous pouvez rechercher une solution dans notre base de connaissance, ou ajouter un commentaire à votre requête, depuis notre communauté {!Case_Survey_URL__c} . 
+<br/><br/>
+Cordialement,<br/>
+{!User.FirstName}<br/>
+Service Client {!Organization.Name}
+<br/><br/>
+Référence de Requête: {!Case.Thread_Id}

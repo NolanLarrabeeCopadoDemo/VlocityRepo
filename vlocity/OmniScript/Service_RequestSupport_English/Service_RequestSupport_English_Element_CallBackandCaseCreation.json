@@ -1,0 +1,35 @@
+{
+    "EmbeddedOmniScriptKey": "Service|CallBackandCaseCreation|English",
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "CallBackandCaseCreation",
+    "OmniProcessId": {
+        "Name": "Service",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Service/RequestSupport/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "English",
+        "Sub Type": "CallBackandCaseCreation",
+        "Type": "Service",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Request Call Back",
+                        "field": "NextStepDecision"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Service/RequestSupport/English/CallBackandCaseCreation"
+}

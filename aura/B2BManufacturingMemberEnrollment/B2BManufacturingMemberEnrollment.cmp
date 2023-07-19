@@ -1,0 +1,19 @@
+<aura:component  implements="forceCommunity:availableForAllPageTypes" controller="B2BManufacturingMemberEnrollController">
+	 <aura:attribute name="termsandConditionflag" type="Boolean"  default="false" />
+     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+	
+    
+	<div class="container" >
+        
+        <div class="buttoncenter">
+             <div class="rowElement details" style="height:40px;">
+                As a member of the Partner Extraa Program, get access to exclusive benefits and earn rewards based on your activities.
+                </div>
+            <div class="rowElement terms" style=" height:40px;display: inline-flex; ">
+                <lightning:input type="checkbox" checked="{!v.termsandConditionflag}"  label="" onchange="{!c.Showhide}" name="input2" />I accept the program's&nbsp;
+                <a href="#" > terms and conditions</a>
+            </div>
+            <div  class="rowElement button" ><lightning:button  disabled="true" aura:id="joinMembershipBtn" variant="brand" label="Become a Member"  onclick="{!c.createMembership}" /></div>
+        </div>
+	</div>
+</aura:component>

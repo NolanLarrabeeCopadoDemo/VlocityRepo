@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission that requires this agent&apos;s social posts to be submitted for approval before posting.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Require Social Post Approvals</label>
+</PermissionSet>

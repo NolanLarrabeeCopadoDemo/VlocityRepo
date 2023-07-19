@@ -1,0 +1,2 @@
+Id,CaseNumber,ContactId,AccountId,ParentId,SuppliedName,SuppliedEmail,SuppliedPhone,SuppliedCompany,Type,Status,Reason,Origin,Subject,Priority,IsClosed,ClosedDate,IsEscalated,OwnerId,CreatedDate,LastModifiedDate,ContactPhone,ContactMobile,ContactEmail,LastViewedDate
+sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,1988-01-20T00:00:00.000Z,sample,sample,1988-01-20T00:00:00.000Z,1988-01-20T00:00:00.000Z,sample,sample,sample,1988-01-20T00:00:00.000Z

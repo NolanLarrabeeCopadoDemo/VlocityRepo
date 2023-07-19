@@ -1,0 +1,33 @@
+<!--
+  @description       : 
+  @author            : Salesforce
+  @group             : 
+  @last modified on  : 02-17-2021
+  @last modified by  : Salesforce
+  Modifications Log 
+  Ver   Date         Author       Modification
+  1.0   02-09-2021   Salesforce   Initial Version
+-->
+<template>
+    <div class="nto-insider-profile ">
+        <c-b2b-manufacturing-member-profile-points
+            points-balance={pointsBalance}
+            expiring-points={pointsExpiryInfo.points}
+            membership-number={membershipNumber}
+            expiry-date = {pointsExpiryInfo.date}
+            tier-name={tierInfo.name}
+            tier-steps={tierSteps}
+            tier-points={tierInfo.points}
+        ></c-b2b-manufacturing-member-profile-points ><div></div>
+        <div class="nto-insider-profile__header slds-p-top_small">
+            <div class="nto-insider-profile__header__title">
+                Transactions
+            </div>
+        </div>
+        <div class="slds-m-top_small">
+            <c-b2b-manufacturing-recent-transactions
+                    member-id={memberId}
+                    ></c-b2b-manufacturing-recent-transactions>
+        </div>
+    </div>
+</template>

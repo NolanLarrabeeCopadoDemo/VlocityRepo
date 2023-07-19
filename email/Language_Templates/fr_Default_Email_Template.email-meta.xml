@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is the default email template for inbound cases.  To change to a different default email template, edit the DefaultEmailTemplate apex class.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>fr_*Default Email Template</name>
+    <style>none</style>
+    <subject>Votre question au Service Client {!Organization.Name}</subject>
+    <textOnly>{!Contact.FirstName},
+
+Merci de nous avoir contacté! J&apos;ai recherché la solution à votre problème et j&apos;ai trouvé un article qui je pense devrais vous aidez. Si vous avez une autre question, n&apos;hesitez pas à répondre à cet email ou à visiter notre communauté.
+
+Nous sommes dans une démarche d&apos;amélioration constante de notre service client, et apprécierions si vous remplissiez une très courte enquête de satisfaction.
+
+Merci!
+{!User.FirstName}
+Service Client {!Organization.Name}  {!Case.Articles_as_PDFs}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

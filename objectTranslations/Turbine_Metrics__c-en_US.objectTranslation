@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asset Metric</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asset Metrics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Asset Metrics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Evaporator Flow (gpm) --></label>
+        <name>Avg_kW_Output__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Reported --></label>
+        <name>Date_Time_Reported__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condenser Flow (gpm) --></label>
+        <name>Direction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours This Month --></label>
+        <name>Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lifetime Hours --></label>
+        <name>Lifetime_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operational Status Indicator --></label>
+        <name>Operational_Status_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operational Status URL --></label>
+        <name>Operational_Status_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operational Status --></label>
+        <name>Operational_Status__c</name>
+        <picklistValues>
+            <masterLabel>Offline</masterLabel>
+            <translation><!-- Offline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Active</masterLabel>
+            <translation><!-- Online Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Idle</masterLabel>
+            <translation><!-- Online Idle --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SEER --></label>
+        <name>RPM__c</name>
+    </fields>
+    <fields>
+        <label><!-- kW Indicator URL --></label>
+        <name>kW_Indicator_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Output Indicator --></label>
+        <name>kW_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- EER --></label>
+        <name>kW_Output_Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- kW Output (Daily High) --></label>
+        <name>kW_Output_Daily_High__c</name>
+    </fields>
+    <fields>
+        <label><!-- kW Output (Daily Low) --></label>
+        <name>kW_Output_Daily_Low__c</name>
+    </fields>
+    <fields>
+        <label><!-- AVG Energy Draw (amps) --></label>
+        <name>kW_Output_Monthly_Avg__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

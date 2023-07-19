@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Purchase Requisition</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Purchase Requisitions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Details --></label>
+        <name>Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Cost --></label>
+        <name>Estimated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Purchase Requisitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requested Product --></label>
+        <name>Requested_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sourcing Manager --></label>
+        <name>Sourcing_Manager__c</name>
+        <relationshipLabel><!-- Purchase Requisitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Review</masterLabel>
+            <translation><!-- In-Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

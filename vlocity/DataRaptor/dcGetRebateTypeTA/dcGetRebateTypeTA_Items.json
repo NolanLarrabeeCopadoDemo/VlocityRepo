@@ -1,0 +1,96 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIKE",
+        "FilterValue": "SearchTerm",
+        "GlobalKey": "dcGetRebateTypeTA9919827731643496",
+        "InputFieldName": "Name",
+        "InputObjectName": "ProgramRebateType",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcGetRebateTypeTA",
+        "OmniDataTransformationId": {
+            "Name": "dcGetRebateTypeTA",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcGetRebateTypeTA",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ProgramRebateType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "RebateProgramId",
+        "GlobalKey": "dcGetRebateTypeTA26639366583691526",
+        "InputFieldName": "RebateProgramId",
+        "InputObjectName": "ProgramRebateType",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcGetRebateTypeTA",
+        "OmniDataTransformationId": {
+            "Name": "dcGetRebateTypeTA",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcGetRebateTypeTA",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ProgramRebateType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcGetRebateTypeTA8514110297960213",
+        "InputFieldName": "ProgramRebateType:Id",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcGetRebateTypeTA",
+        "OmniDataTransformationId": {
+            "Name": "dcGetRebateTypeTA",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcGetRebateTypeTA",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProgramRebateTypeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcGetRebateTypeTA8401344170982878",
+        "InputFieldName": "ProgramRebateType:Name",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcGetRebateTypeTA",
+        "OmniDataTransformationId": {
+            "Name": "dcGetRebateTypeTA",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcGetRebateTypeTA",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProgramRebateTypeName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Launches the Create RFQ flow from the Purchase Req</description>
+    <flowDefinition>MFG_Discrete_Partners_SRM_Create_RFQ_from_Purchase_Requisition</flowDefinition>
+    <label>Create RFQ</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

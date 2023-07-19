@@ -1,0 +1,72 @@
+{
+    "dates": [],
+    "derivedDimensions": [],
+    "derivedMeasures": [
+        {
+            "conditionalFormatting": {},
+            "field": "WinRate",
+            "format": {
+                "customFormat": "[\"#,###.##%\",100]",
+                "delimiters": {}
+            },
+            "showInExplorer": true
+        }
+    ],
+    "dimensions": [
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Name",
+            "label": "Opportunity Name",
+            "linkTemplate": "/{{row.Id}}",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "recordIdField": "Id",
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Owner.Name",
+            "label": "Opportunity Owner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Account.Owner.Name",
+            "label": "Account Owner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Account.Name",
+            "linkTemplate": "/{{row.AccountId}}",
+            "linkTemplateEnabled": true,
+            "linkTooltip": "Open Account",
+            "members": [],
+            "recordDisplayFields": [],
+            "recordIdField": "AccountId",
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true
+        }
+    ],
+    "measures": [
+        {
+            "field": "Amount",
+            "format": {
+                "customFormat": "[\"$#,###\",1]",
+                "delimiters": {}
+            }
+        }
+    ],
+    "organizations": [],
+    "showDetailsDefaultFields": []
+}

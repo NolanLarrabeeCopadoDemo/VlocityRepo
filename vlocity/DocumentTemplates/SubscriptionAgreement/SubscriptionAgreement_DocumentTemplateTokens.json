@@ -1,0 +1,218 @@
+[
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "05ac367d-70c8-eb46-1053-afd4c7fd80d4",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "CITY",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-1395796794"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "191a8173-ccb5-86a1-6499-0bf95c1f6fdc",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "STREET1",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-215689972"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "2827b922-28ef-8edd-9679-b440a618bd20",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "otc",
+        "TokenPath": "products",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-1762040762"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "6b77ef11-d944-a137-038a-2b978d7e3dc4",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "POSTALCODE",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-420931741"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "748c8876-15d4-d275-1da2-a3338e1eb905",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "COUNTRY",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated936963499"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "8b9d45c1-6f59-83a3-066a-1272355837eb",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "mrc",
+        "TokenPath": "products",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated1396522187"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "958441ad-55fe-5d05-5dbe-cfd9ee14558d",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "SUBSCRIBER_NAME",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-2097603393"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "97e7b082-b87c-0872-7962-0534b5ba51a1",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "Product",
+        "TokenPath": "products",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-241990453"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "ab11b6de-a613-e819-7015-7645d4fd82b6",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "IF_customer_not_in_US",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-1984340205"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "d3e1c695-6ef7-a6de-0ff5-bb7aca66719d",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "total_mrc",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-529754374"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "e888211e-4882-3dfd-2393-d41e08e726e1",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "Quantity",
+        "TokenPath": "products",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-854665070"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "fdbb60ac-e375-907d-5af7-3db8496f043b",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "STATE",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-1271699828"
+    }
+]

@@ -1,0 +1,57 @@
+<template>
+    <div class="container">
+        <li role="presentation" class="slds-listbox__item">
+            <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+                role="option">
+                <span class="slds-media__figure">
+                    <template if:true={icon}>
+                        <span class="slds-avatar slds-avatar_medium">
+                            <lightning-icon icon-name={icon}></lightning-icon>
+                        </span>
+                    </template>
+                </span>
+                <span class="slds-media__body">
+                    <span class="slds-media__body">
+                        <span
+                            class="slds-listbox__option-text slds-listbox__option-text_entity">
+                            {label}
+                        </span>
+                        <span
+                            class="slds-listbox__option-meta slds-listbox__option-meta_entity">
+                            {sublabel}
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </li>
+    </div>
+
+    <!-- leaving in item. 
+    <div class="itemContainer">
+        <li role="presentation" class="slds-listbox__item">
+            <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+                role="option" onmousedown={handleItemSelect} data-value={item.value}>
+                <span class="slds-media__figure">
+                    <template if:true={item.icon}>
+                        <span class="slds-avatar slds-avatar_medium">
+                            <lightning-icon icon-name={item.icon}></lightning-icon>
+                        </span>
+                    </template>
+                </span>
+                <span class="slds-media__body">
+                    <span class="slds-media__body">
+                        <span
+                            class="slds-listbox__option-text slds-listbox__option-text_entity">
+                            {item.label}
+                        </span>
+                        <span
+                            class="slds-listbox__option-meta slds-listbox__option-meta_entity">
+                            {item.sublabel}
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </li>
+    </div>
+    -->
+</template>

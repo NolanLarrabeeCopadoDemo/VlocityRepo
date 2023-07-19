@@ -1,0 +1,43 @@
+.THIS.container {
+  margin-top: 15px;
+  position: relative;
+  border: 3px  ;
+
+     
+}
+.THIS button {
+    padding-left:1.5rem !important;padding-right: 1.5rem !important;padding-bottom: 0.1rem;padding-top: 0.2rem;
+    font-size: 0.85rem;
+    border-radius:20px;
+}
+.THIS.center {
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.THIS .buttoncenter{ 
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.THIS .details{ 
+   font-size:18px;
+   color:#5F6675;
+}
+
+.THIS .terms{ 
+   font-size:16px;
+   color:#5F6675;
+}
+@media only screen and (max-width: 600px) {
+	.THIS .rowElement {
+      height: 34px !important;
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+}

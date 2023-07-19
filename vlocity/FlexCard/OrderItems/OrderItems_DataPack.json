@@ -1,0 +1,44 @@
+{
+    "AuthorName": "SalesforceDemo",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 1,
+                "name": "Parent.OrderId",
+                "val": "8018c000001nObgAAE"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "getOrderItemsfromOrder",
+            "bundleType": "",
+            "dsDelay": "",
+            "inputMap": {
+                "OrderId": "{Parent.OrderId}"
+            },
+            "resultVar": ""
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "OrderItems",
+    "Namespace": "",
+    "OmniUiCardKey": "OrderItems/SalesforceDemo/1.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "OrderItems.json",
+    "SampleDataSourceResponse": "[{\"OrderItemId\":\"8028c000002hVFTAA2\",\"AvailableQuantity\":75,\"Quantity\":75,\"CreatedDate\":\"2022-03-11T00:01:55.000Z\",\"TotalPrice\":60000,\"ProductName\":\"Ripper 19\",\"UnitPrice\":800},{\"OrderItemId\":\"8028c000002hVFUAA2\",\"AvailableQuantity\":74,\"Quantity\":74,\"CreatedDate\":\"2022-03-11T00:01:55.000Z\",\"TotalPrice\":333000,\"ProductName\":\"Utility Broom UB1000\",\"UnitPrice\":4500},{\"OrderItemId\":\"8028c000002hVFVAA2\",\"AvailableQuantity\":93,\"Quantity\":93,\"CreatedDate\":\"2022-03-11T00:01:55.000Z\",\"TotalPrice\":441750,\"ProductName\":\"Pulverizer P20\",\"UnitPrice\":4750}]",
+    "StylingConfiguration": "",
+    "UniqueName": "OrderItems_SalesforceDemo_1",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/OrderItems"
+}

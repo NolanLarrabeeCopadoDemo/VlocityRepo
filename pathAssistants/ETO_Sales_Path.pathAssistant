@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>ETO Sales Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>MFG_Production_Start_date__c</fieldNames>
+        <fieldNames>Project_Manager_Contact__c</fieldNames>
+        <info>&lt;p&gt;&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57WBzpmJ4wbuNv-nRXx8N5I7DErBryALQefSFF-p_8MEjnoBp&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Estimator__c</fieldNames>
+        <fieldNames>Estimation_Status__c</fieldNames>
+        <fieldNames>Total_Cost__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Do we have all necessary parts and tools?&lt;/li&gt;&lt;li&gt;Have our suppliers changed?&lt;/li&gt;&lt;li&gt;What does our availability look like?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Engineering</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Pricing_Approved__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Are pricing and margins within acceptable levels?&lt;/li&gt;&lt;li&gt;Do we need to position an extended sales contract?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Pricing Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Complete_ROI_Analysis__c</fieldNames>
+        <fieldNames>Deal_Approved_Date__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Confirm pricing and budget with customer&lt;/li&gt;&lt;li&gt;Validate timeline&lt;/li&gt;&lt;li&gt;Receive PO&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Proposal/Quote</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Project_Budgeted__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;What problem are they trying to solve?&lt;/li&gt;&lt;li&gt;What is the value to them in solving this problem?&lt;/li&gt;&lt;li&gt;Are we working with someone who has decision making authority?&lt;/li&gt;&lt;li&gt;What&amp;#39;s their budget?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MFG_ETO_Opportunity</recordTypeName>
+</PathAssistant>

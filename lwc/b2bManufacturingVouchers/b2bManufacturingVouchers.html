@@ -1,0 +1,51 @@
+<template>
+    <div class="vouchers">
+        <h2 class="vouchers__title slds-truncate">
+            Vouchers
+        </h2>
+        <template if:true={voucherpresent}>
+            <div class="slider slds-grid slds-grid_vertical-align-center slds-p-bottom_large">
+                <template if:true={showArrows}>
+                    <lightning-button-icon 
+                        icon-name="utility:chevronleft"
+                        alternative-text="Previous"
+                        title="Previous"
+                        class="slds-no-flex"
+                        variant="bare"
+                        onclick={scrollLeft}
+                    ></lightning-button-icon>
+                </template>
+                <ul class="slds-m-horizontal_large slds-col slds-grid">
+                    <template for:each={records} for:item="record">
+                        <li key={record.Id}>
+                            <c-b2b-manufacturing-voucher
+                                type={record.VoucherDefinition.Type}
+                                name={record.VoucherDefinition.Name}
+                                code={record.VoucherCode} 
+                                expiration-date={record.ExpirationDate}
+                            ></c-b2b-manufacturing-voucher>
+                        </li>
+                    </template>
+                </ul>
+                <template if:true={showArrows}>
+                    <lightning-button-icon 
+                        icon-name="utility:chevronright"
+                        alternative-text="Next"
+                        title="Next"
+                        class="slds-no-flex"
+                        variant="bare"
+                        onclick={scrollRight}
+                    ></lightning-button-icon>
+                </template>
+            </div>
+        </template>
+        <template if:false={voucherpresent}>
+            <div class="slds-p-around_small">
+                <c-b2b-manufacturing-empty-state
+                    title="Looks like you don't have vouchers yet."
+                    message="After you have vouchers issued to you, you’ll see them here."
+                ></c-b2b-manufacturing-empty-state>
+            </div>
+        </template>
+    </div>
+</template>

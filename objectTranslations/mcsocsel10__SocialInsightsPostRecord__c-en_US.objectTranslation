@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- PostId --></label>
+        <name>mcsocsel10__PostId__c</name>
+    </fields>
+    <fields>
+        <label><!-- PostPersonaId --></label>
+        <name>mcsocsel10__PostPersonaId__c</name>
+    </fields>
+    <fields>
+        <label><!-- RecordId --></label>
+        <name>mcsocsel10__RecordId__c</name>
+    </fields>
+</CustomObjectTranslation>

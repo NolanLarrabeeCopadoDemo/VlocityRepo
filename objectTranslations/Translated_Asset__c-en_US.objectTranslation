@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Translated Asset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Translated Assets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asset Reference --></label>
+        <name>Asset_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Chatter Post</masterLabel>
+            <translation><!-- Chatter Post --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lightning</masterLabel>
+            <translation><!-- Lightning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VF Page</masterLabel>
+            <translation><!-- VF Page --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>Version__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

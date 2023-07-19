@@ -1,0 +1,192 @@
+[
+    {
+        "GlobalKey": "UpdateOrderPostCustom8557",
+        "InputFieldName": "EditBlock1:SAAccountId",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateOrderPostCustom5173",
+        "InputFieldName": "EditBlock1:EffectiveDate",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EffectiveDate",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "NULL",
+        "GlobalKey": "UpdateOrderPostCustom9560",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EndDate",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateOrderPostCustom9091",
+        "InputFieldName": "EditBlock1:Id",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateOrderPostCustom3639",
+        "IsDisabled": true,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateOrderPostCustom6549",
+        "InputFieldName": "EditBlock1:Name",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateOrderPostCustom4347",
+        "InputFieldName": "EditBlock1:OrderNumber",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderNumber",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateOrderPostCustom3714",
+        "InputFieldName": "EditBlock1:NewSAId",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SalesAgreementId",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateOrderPostCustom2954",
+        "InputFieldName": "EditBlock1:Status",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "UpdateOrderPost",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderPost",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderPost",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

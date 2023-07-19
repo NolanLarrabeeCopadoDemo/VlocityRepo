@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Group ID --></label>
+        <name>ccrz__AccountGroupID__c</name>
+    </fields>
+    <fields>
+        <help><!-- B2B Commerce internal use only except when used with ccApiTestData. --></help>
+        <label><!-- DataId --></label>
+        <name>ccrz__DataId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desc --></label>
+        <name>ccrz__Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- PriceList Selection Method --></label>
+        <name>ccrz__PriceListSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Best Price</masterLabel>
+            <translation><!-- Best Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sequence Order</masterLabel>
+            <translation><!-- Sequence Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Theme Name --></label>
+        <name>ccrz__ThemeName__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This will be used as the SOQL query for  the ed_insights.BatchScoreRecords class to determine which records to mass score for this prediction definition. You may leave this blank If you are not using the ed_insights.BatchScoreRecords class. --></help>
+        <label><!-- Batch Update Query --></label>
+        <name>ed_insights__Batch_Update_Query__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Prediction API can optionally lookup datasets to get field values that will be used in the model. To use this feature, Configure Dataset Joins in &quot;Custom Metadata Types&quot; (within the setup menu) first, then copy and paste the Dataset Join Name here. --></help>
+        <label><!-- Dataset Join Name --></label>
+        <name>ed_insights__Dataset_Join_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if you would like to disable scoring records for this prediction definition. This might be needed when bulk inserting new records. --></help>
+        <label><!-- Disable Scoring --></label>
+        <name>ed_insights__Disable_Scoring__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Einstein Discovery Scoring API will include warnings for missing columns or column values that are out of bounds from values from the dataset used to train the model. Check this box if you would like to hide warnings from the Commentary Field Name. --></help>
+        <label><!-- Hide Scoring Warnings --></label>
+        <name>ed_insights__Hide_Warnings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the number of Einstein Discovery recommendations for improving the score. Leave this blank to see all improvement recommendations. --></help>
+        <label><!-- Recommendation Limit --></label>
+        <name>ed_insights__Recommendation_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Optionally set a threshold for which recommendations are returned. Only recommendations that affect the outcome by at least this threshold will be displayed. For example if the Prediction = 100 and threshold = 0.10, recs must have a value of 10 or more. --></help>
+        <label><!-- Recommendation Threshold --></label>
+        <name>ed_insights__Recommendation_Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commentary Field Name --></label>
+        <name>ed_insights__commentary_field_api_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>ed_insights__object_api_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Field Name --></label>
+        <name>ed_insights__outcome_field_api_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prediction Definition Id --></label>
+        <name>ed_insights__prediction_definition_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prescription Field Name --></label>
+        <name>ed_insights__prescription_field_api_name__c</name>
+    </fields>
+</CustomObjectTranslation>

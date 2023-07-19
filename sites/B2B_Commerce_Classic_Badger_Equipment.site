@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowGuestPaymentsApi>false</allowGuestPaymentsApi>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>ccrz__CCSiteLogin</authorizationRequiredPage>
+    <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>true</browserXssProtection>
+    <cachePublicVisualforcePagesInProxyServers>true</cachePublicVisualforcePagesInProxyServers>
+    <changePasswordPage>ccrz__CCChangePassword</changePasswordPage>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <contentSniffingProtection>true</contentSniffingProtection>
+    <enableAuraRequests>true</enableAuraRequests>
+    <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <forgotPasswordPage>ccrz__CCForgotPassword</forgotPasswordPage>
+    <genericErrorPage>Exception</genericErrorPage>
+    <inMaintenancePage>InMaintenance</inMaintenancePage>
+    <inactiveIndexPage>ccrz__CCInMaintenance</inactiveIndexPage>
+    <indexPage>ccrz__HomePage</indexPage>
+    <masterLabel>B2B Commerce Classic - Badger Equipment</masterLabel>
+    <redirectToCustomDomain>false</redirectToCustomDomain>
+    <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <selfRegPage>ccrz__CCSiteRegister</selfRegPage>
+    <serverIsDown>SNA_B2B_Commerce_Classic_Badger_Equipment1_sf_default_cdn_ww2g1</serverIsDown>
+    <siteAdmin>majimenez@copado.com2023/07/18_17-7-41.demo3</siteAdmin>
+    <siteGuestRecordDefaultOwner>b2bguest.abozmap4dq57.jyyu7zqhv7.ygqzw5fwuxyu@copado.com2023/07/18_17-7-41.demo3</siteGuestRecordDefaultOwner>
+    <siteType>ChatterNetwork</siteType>
+    <subdomain>sdodemo-main-166ce2cf6b6-16b-1896ad646c2</subdomain>
+    <urlPathPrefix>MFGEquipment</urlPathPrefix>
+</CustomSite>

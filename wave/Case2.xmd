@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>Case2</dataset>
+    <dimensions>
+        <field>Duration_Bucket</field>
+        <isDerived>false</isDerived>
+        <members>
+            <label>1-7</label>
+            <member>1. 1-7</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>8-21</label>
+            <member>2. 8-21</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>22-60</label>
+            <member>3. 22-60</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>61-100</label>
+            <member>4. 61-100</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>101-365</label>
+            <member>5. 101-365</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <members>
+            <label>&gt;1yr</label>
+            <member>6. &gt;1yr</member>
+            <sortIndex>5</sortIndex>
+        </members>
+        <members>
+            <label>N/A</label>
+            <member>7. NA</member>
+            <sortIndex>6</sortIndex>
+        </members>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>CaseNumber</field>
+        <isDerived>false</isDerived>
+        <linkTemplate>/{{row.Id}}</linkTemplate>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Agent.Name</field>
+        <isDerived>false</isDerived>
+        <label>Case Owner</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Account.Owner.Name</field>
+        <isDerived>false</isDerived>
+        <label>Account Owner</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Contact.Name</field>
+        <isDerived>false</isDerived>
+        <label>Contact Name</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+</WaveXmd>

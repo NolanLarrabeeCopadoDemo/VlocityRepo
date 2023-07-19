@@ -1,0 +1,163 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <omnistudio-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </omnistudio-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <omnistudio-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></omnistudio-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-text-align_center slds-card slds-p-around_small slds-m-bottom_x-small " style="      
+    border-radius:4px;     ">
+          <div data-style-id="state0element0" class="slds-col   slds-text-align_center slds-border_bottom slds-p-bottom_medium  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="     border-bottom: #C9C9C9 1px solid; 
+         " >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-text-align_left slds-p-bottom_xx-small  slds-large-size_4-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0block_element0" class="slds-col    slds-large-size_4-of-12  slds-medium-size_2-of-12  slds-small-size_2-of-12  slds-size_2-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-img data-style-id="state0element0block_element0block_element0_child"   card={card}  record={record}  size=""  extraclass="slds-align_absolute-left"  state-img='\{"imgsrc":"{ProductUrl}","alternativeText":""}'  img-height="Auto"  img-width="Auto"  theme="slds"  ></omnistudio-flex-img>
+      </div><div data-style-id="state0element0block_element0block_element1" class="slds-col  slds-text-align_center  slds-p-bottom_xx-small  slds-large-size_8-of-12 slds-medium-size_10-of-12 slds-small-size_10-of-12 slds-size_10-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element0block_element1_child"   card={card}  record={record}  placeholder=""  type="text"  label="Product"  field-name="PbeName"  styles='\{"label":{"textAlign":"left","textDecoration":"","fontSize":"15px"},"value":{"textAlign":"left","textDecoration":"font-weight:bold","fontSize":"18px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element0block_element1" class="slds-col   slds-p-bottom_xx-small  slds-large-size_2-of-12 slds-medium-size_3-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element1_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element1block_element0" class="slds-col   slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element1block_element0_child"   card={card}  record={record}  placeholder=""  type="text"  label="Product Code"  field-name=""  locale=""  currency=""  styles='\{"value":{"textAlign":"left","fontSize":""},"label":{"textAlign":"left","fontSize":"14px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element1block_element1" class="slds-col   slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+     height:20px;    " ><omnistudio-output-field data-style-id="state0element0block_element1block_element1_child"   card={card}  record={record}  placeholder=""  field-name="ProductCode"  label=""  type="text"  styles='\{"value":{"color":"#032D60","textDecoration":"font-weight: bold;","textAlign":"left","fontSize":"20px"},"label":{"textAlign":"left","fontSize":""}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element0block_element2" class="slds-col   slds-p-bottom_xx-small  slds-large-size_2-of-12 slds-medium-size_3-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element2_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element2block_element0" class="slds-col  slds-text-align_left  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element2block_element0_child"   card={card}  record={record}  placeholder=""  type="text"  label="Unit Price"  field-name=""  locale=""  currency=""  styles='\{"value":{"textAlign":"left"},"label":{"textAlign":"left","fontSize":"14px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element2block_element1" class="slds-col  slds-text-align_left  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element2block_element1_child"   card={card}  record={record}  placeholder=""  type="currency"  label=""  field-name="PbeUnitPrice"  locale=""  currency=""  styles='\{"value":{"textAlign":"left","textDecoration":"font-weight: bold;","fontSize":"18px"},"label":{"textAlign":"left","fontSize":"18px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element0block_element3" class="slds-col    slds-large-size_3-of-12 slds-medium-size_3-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element3_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element3block_element0" class="slds-col  slds-p-bottom_xx-small slds-m-bottom_xx-small  slds-large-size_6-of-12 slds-medium-size_8-of-12 slds-small-size_6-of-12 slds-size_6-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-2","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}' ><omnistudio-base-input-element data-style-id="state0element0block_element3block_element0_child"   card={card}  record={record}  type="number"  property-obj='\{"label":"Quantity","fieldBinding":"{Qty}"}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-2","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}'  styles='\{"value":{"textDecoration":"font-weight: bold;"},"label":{"fontSize":"15px","textAlign":"left"}}'  theme="slds"  ></omnistudio-base-input-element>
+      </div><div data-style-id="state0element0block_element3block_element1" class="slds-col  slds-p-right_small slds-p-bottom_xx-small slds-m-bottom_xx-small  slds-large-size_6-of-12 slds-medium-size_8-of-12 slds-small-size_6-of-12 slds-size_6-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-2","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-base-input-element data-style-id="state0element0block_element3block_element1_child"   card={card}  record={record}  type="number"  property-obj='\{"label":"Quantity","fieldBinding":"{Qty}","readOnly":true}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-2","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  styles='\{"value":{"textDecoration":"font-weight: bold;","fontSize":""},"label":{"fontSize":"15px","textAlign":"left"}}'  theme="slds"  ></omnistudio-base-input-element>
+      </div><div data-style-id="state0element0block_element3block_element2" class="slds-col  slds-text-align_left slds-p-top_x-large  slds-large-size_6-of-12 slds-medium-size_4-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+     height:60px;    " ><omnistudio-output-field data-style-id="state0element0block_element3block_element2_child"   card={card}  record={record}  placeholder=""  field-name="QuantityUnitOfMeasure"  label=""  type="text"  styles='\{"value":{"textDecoration":"font-weight: bold;","fontSize":"16px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element0block_element4" class="slds-col    slds-large-size_1-of-12 slds-medium-size_3-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element4_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element4block_element0" class="slds-col  slds-p-bottom_xx-small slds-m-top_x-small  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  condition-element" data-rindex={rindex} style="background-color:#F5F5F5;      
+    border-radius:4px;     "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-17","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element0block_element4block_element0_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element4block_element0_child flexActionElement" 
+        data-action-element-class="state0element0block_element4block_element0_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="productblockaction11"   record={record}  card={card}  state-obj={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-17","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}'  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1643015737304","type":"cardAction","displayName":"Select","vlocityIcon":"custom:custom93","openUrlIn":"Current Window","eventName":"selectcards","subType":"PubSub","message":"passdatafromfc1","hasExtraParams":true,"extraParams":{"":""}},"data-conditions":{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-17","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}}]'  label="Select"  icon-name="utility:cart"  icon-size="medium"  styles='\{"label":{"textAlign":"left","fontSize":"16px"}}'  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state0element0block_element4block_element1" class="slds-col  slds-text-align_left slds-p-bottom_xx-small slds-m-top_x-small  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  condition-element" data-rindex={rindex} style="background-color:#F5F5F5;      
+    border-radius:4px;     "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-24","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element0block_element4block_element1_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element4block_element1_child flexActionElement" 
+        data-action-element-class="state0element0block_element4block_element1_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="productblockaction12"   record={record}  card={card}  state-obj={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-24","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  styles='\{"icon":{"width":""},"label":{"textAlign":"left","fontSize":"16px"}}'  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1643015745074","type":"cardAction","displayName":"Selected","vlocityIcon":"utility:cart","openUrlIn":"Current Window","eventName":"selectcards","subType":"PubSub","message":"passdatafromfc1","hasExtraParams":true,"extraParams":{"":""}},"data-conditions":{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-24","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]},"styles":{"icon":{"width":""},"label":{"textAlign":"left"}}}]'  label="Selected"  icon-name="utility:cart"  theme="slds"  ></omnistudio-flex-action>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <omnistudio-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-text-align_center slds-card slds-p-around_small slds-m-bottom_x-small " style="      
+    border-radius:4px;     ">
+          <div data-style-id="state0element0" class="slds-col   slds-text-align_center slds-border_bottom slds-p-bottom_medium  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="     border-bottom: #C9C9C9 1px solid; 
+         " >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-text-align_left slds-p-bottom_xx-small  slds-large-size_4-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0block_element0" class="slds-col    slds-large-size_4-of-12  slds-medium-size_2-of-12  slds-small-size_2-of-12  slds-size_2-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-img data-style-id="state0element0block_element0block_element0_child"   card={card}  record={record}  size=""  extraclass="slds-align_absolute-left"  state-img='\{"imgsrc":"{ProductUrl}","alternativeText":""}'  img-height="Auto"  img-width="Auto"  theme="slds"  ></omnistudio-flex-img>
+      </div><div data-style-id="state0element0block_element0block_element1" class="slds-col  slds-text-align_center  slds-p-bottom_xx-small  slds-large-size_8-of-12 slds-medium-size_10-of-12 slds-small-size_10-of-12 slds-size_10-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element0block_element1_child"   card={card}  record={record}  placeholder=""  type="text"  label="Product"  field-name="PbeName"  styles='\{"label":{"textAlign":"left","textDecoration":"","fontSize":"15px"},"value":{"textAlign":"left","textDecoration":"font-weight:bold","fontSize":"18px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element0block_element1" class="slds-col   slds-p-bottom_xx-small  slds-large-size_2-of-12 slds-medium-size_3-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element1_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element1block_element0" class="slds-col   slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element1block_element0_child"   card={card}  record={record}  placeholder=""  type="text"  label="Product Code"  field-name=""  locale=""  currency=""  styles='\{"value":{"textAlign":"left","fontSize":""},"label":{"textAlign":"left","fontSize":"14px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element1block_element1" class="slds-col   slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+     height:20px;    " ><omnistudio-output-field data-style-id="state0element0block_element1block_element1_child"   card={card}  record={record}  placeholder=""  field-name="ProductCode"  label=""  type="text"  styles='\{"value":{"color":"#032D60","textDecoration":"font-weight: bold;","textAlign":"left","fontSize":"20px"},"label":{"textAlign":"left","fontSize":""}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element0block_element2" class="slds-col   slds-p-bottom_xx-small  slds-large-size_2-of-12 slds-medium-size_3-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element2_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element2block_element0" class="slds-col  slds-text-align_left  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element2block_element0_child"   card={card}  record={record}  placeholder=""  type="text"  label="Unit Price"  field-name=""  locale=""  currency=""  styles='\{"value":{"textAlign":"left"},"label":{"textAlign":"left","fontSize":"14px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element2block_element1" class="slds-col  slds-text-align_left  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element2block_element1_child"   card={card}  record={record}  placeholder=""  type="currency"  label=""  field-name="PbeUnitPrice"  locale=""  currency=""  styles='\{"value":{"textAlign":"left","textDecoration":"font-weight: bold;","fontSize":"18px"},"label":{"textAlign":"left","fontSize":"18px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element0block_element3" class="slds-col    slds-large-size_3-of-12 slds-medium-size_3-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element3_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element3block_element0" class="slds-col  slds-p-bottom_xx-small slds-m-bottom_xx-small  slds-large-size_6-of-12 slds-medium-size_8-of-12 slds-small-size_6-of-12 slds-size_6-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-2","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}' ><omnistudio-base-input-element data-style-id="state0element0block_element3block_element0_child"   card={card}  record={record}  type="number"  property-obj='\{"label":"Quantity","fieldBinding":"{Qty}"}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-2","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}'  styles='\{"value":{"textDecoration":"font-weight: bold;"},"label":{"fontSize":"15px","textAlign":"left"}}'  theme="slds"  ></omnistudio-base-input-element>
+      </div><div data-style-id="state0element0block_element3block_element1" class="slds-col  slds-p-right_small slds-p-bottom_xx-small slds-m-bottom_xx-small  slds-large-size_6-of-12 slds-medium-size_8-of-12 slds-small-size_6-of-12 slds-size_6-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-2","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-base-input-element data-style-id="state0element0block_element3block_element1_child"   card={card}  record={record}  type="number"  property-obj='\{"label":"Quantity","fieldBinding":"{Qty}","readOnly":true}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-2","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  styles='\{"value":{"textDecoration":"font-weight: bold;","fontSize":""},"label":{"fontSize":"15px","textAlign":"left"}}'  theme="slds"  ></omnistudio-base-input-element>
+      </div><div data-style-id="state0element0block_element3block_element2" class="slds-col  slds-text-align_left slds-p-top_x-large  slds-large-size_6-of-12 slds-medium-size_4-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+     height:60px;    " ><omnistudio-output-field data-style-id="state0element0block_element3block_element2_child"   card={card}  record={record}  placeholder=""  field-name="QuantityUnitOfMeasure"  label=""  type="text"  styles='\{"value":{"textDecoration":"font-weight: bold;","fontSize":"16px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element0block_element4" class="slds-col    slds-large-size_1-of-12 slds-medium-size_3-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0block_element4_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element4block_element0" class="slds-col  slds-p-bottom_xx-small slds-m-top_x-small  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  condition-element" data-rindex={rindex} style="background-color:#F5F5F5;      
+    border-radius:4px;     "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-17","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element0block_element4block_element0_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element4block_element0_child flexActionElement" 
+        data-action-element-class="state0element0block_element4block_element0_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="productblockaction11"   record={record}  card={card}  state-obj={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-17","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}'  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1643015737304","type":"cardAction","displayName":"Select","vlocityIcon":"custom:custom93","openUrlIn":"Current Window","eventName":"selectcards","subType":"PubSub","message":"passdatafromfc1","hasExtraParams":true,"extraParams":{"":""}},"data-conditions":{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-17","field":"addToEstimate","operator":"==","value":"false","type":"custom","hasMergeField":false}]}}]'  label="Select"  icon-name="utility:cart"  icon-size="medium"  styles='\{"label":{"textAlign":"left","fontSize":"16px"}}'  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state0element0block_element4block_element1" class="slds-col  slds-text-align_left slds-p-bottom_xx-small slds-m-top_x-small  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  condition-element" data-rindex={rindex} style="background-color:#F5F5F5;      
+    border-radius:4px;     "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-24","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element0block_element4block_element1_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element4block_element1_child flexActionElement" 
+        data-action-element-class="state0element0block_element4block_element1_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="productblockaction12"   record={record}  card={card}  state-obj={record}  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-24","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  styles='\{"icon":{"width":""},"label":{"textAlign":"left","fontSize":"16px"}}'  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1643015745074","type":"cardAction","displayName":"Selected","vlocityIcon":"utility:cart","openUrlIn":"Current Window","eventName":"selectcards","subType":"PubSub","message":"passdatafromfc1","hasExtraParams":true,"extraParams":{"":""}},"data-conditions":{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-24","field":"addToEstimate","operator":"==","value":"true","type":"custom","hasMergeField":false}]},"styles":{"icon":{"width":""},"label":{"textAlign":"left"}}}]'  label="Selected"  icon-name="utility:cart"  theme="slds"  ></omnistudio-flex-action>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <omnistudio-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </omnistudio-action>
+  
+            <omnistudio-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </omnistudio-action>
+            </div>
+          </template>

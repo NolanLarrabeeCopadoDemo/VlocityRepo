@@ -1,0 +1,225 @@
+<aura:component controller="LightningAssetsControllerRecId" implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes">
+    <ltng:require styles="/resource/SLDS100/assets/styles/salesforce-lightning-design-system-ltng.css" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!--aura:handler name="init2" value="{!this}" action="{!c.doInit2}"/-->    
+    <aura:attribute name="Assets" type="Asset[]"/>
+    <!--<aura:attribute name="AssetMetrics" type="Turbine_Metrics__c[]"/>-->
+    <aura:attribute name="pageReference" type="Object"/>    
+    <aura:attribute name="baseUrl" type="String" default=""></aura:attribute>
+    <aura:attribute name="cbaseURL" type="String"/>
+    <aura:attribute name="recordId" type="String"/>    
+    <!--aura:attribute name="recordId" type="String"/-->   
+    <!--div style="width:25%;"><img src="{!v.headerImage}"/></div-->
+    <div>
+        
+        <!--header class="slds-modal__header slds-app-launcher__header slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+<div class="slds-app-launcher__header-search">
+          <div class="slds-form-element">
+            <label for="app-launcher-search" class="slds-form-element__label slds-assistive-text">Find an app</label>
+            <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+
+              <input type="search" class="slds-input" id="app-launcher-search" placeholder="Find Locomotive" />
+            </div>
+          </div>
+        </div>
+        
+        <button class="slds-button slds-button_neutral">Find</button>
+        </header-->
+        
+        
+        
+        
+        <!--
+        <table>          
+            
+            <ul class="slds-grid slds-grid_pull-padded slds-wrap">         
+                <aura:iteration items="{!v.Assets}" var="item">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="slds-p-horizontal_small slds-size_1-of-1 slds-small-size_1-of-3">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div  style="border:1px;border-radius:8px 8px 0px 0px;padding:8px; background-color:#93B2D5 ;text-align:center;color:white;float:center;font-size:1em;">{!item.Product2.Name}</div>                                 
+                        
+                        <span>
+                            
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered"> 
+                                <tr>
+                                    
+                                    <td>
+                                        
+                                        <img src="{!item.Community_Image_URL__c }"/>
+                                        
+                                    </td>
+                                    
+                                    <td>
+                                        <button  class="slds-button slds-button_outline-brand" >
+                                            <img class="slds-button__icon slds-button__icon_left slds-icon_small" aria-hidden="true" src="{!item.Status_Indicator_URL_Public__c}"/>                                      
+                                            <a href="{!'/' + v.cbaseURL + 'asset/'+ item.Id}">{!item.Name}</a>                                                    
+                                            <p>{!item.Status_Message__c}</p>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </span>
+                        
+                        <table class="slds-p-around_small" >
+                            
+                            
+                            
+                            <tr>
+                                <td class="slds-text-title_caps" >Status</td>
+                                <td>{!item.Asset_Status__c}</td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td  class="slds-text-title_caps">Warranty</td>
+                                <td>{!item.Entitlement_Status__c}&nbsp;<img src="{!item.WarranyIndPublic__c}" style="height:20px;"/></td>
+                            </tr>                              
+                            <tr>
+                                <td class="slds-text-title_caps">S/N</td>
+                                <td>{!item.SerialNumber}</td>
+                            </tr>                            
+                        </table>
+                        
+                        
+                        
+                        
+                        
+                    </li>           
+                    
+                </aura:iteration>          
+                
+                
+            </ul>          
+            
+            
+            
+            
+            
+            
+        </table>         
+        -->
+    </div>     
+    
+    
+    <div class="slds slds-align_absolute-center" style="background-color:white;border-radius:8px 8px 8px 8px;">
+        <!--div>
+            <img src="{!v.headerImage}" style="{!'height:' + v.headerImageHeight +';padding:5px;'}"/>
+        </div-->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+<div class="slds-align_absolute-center slds-grid slds-grid_pull-padded-medium slds-wrap">
+            <aura:iteration items="{!v.Assets}" var="item">
+                
+                <div class="slds-col slds-size_1-of-3" style="min-width:300px;max-width:300px;">
+                    <span >
+                        <div class="slds-box" style="min-width:300px;max-width:300px;margin:10px;border-radius: 10px 10px 10px 10px;">
+                            <div class="slds-col slds-align_absolute-center assetBox" >
+                                <span >
+                                    <div>
+                                        <a href="{!'/' + v.cbaseURL + 'asset/'+ item.Id}">
+                                            
+                                            <img src="{!item.Product2.MFG_Image_URL__c }" style="max-height:100px;"/>
+                                        </a>    
+                                        <div class="slds-align_absolute-center assetBox2">{!item.Name}</div>
+                                        
+                                    </div>
+                                </span>
+                                
+                            </div>
+                            
+                            <div style="margin-top:10px;" class="slds-col">
+                                <span>                        
+                                    <table class="slds-table slds-table_cell-buffer" style="background-color:rgba(244, 246, 254, 0);">
+                                        
+                                        <tr class="slds-line-height_reset ">
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps" title="Cloudhub">Location</div>
+                                            </td>    
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#267FAB;" class="slds-text-body_small slds-truncate slds-align_absolute-left" title="Cloudhub">
+                                                    <a href="{!item.Map__c}">{!item.Location.Name}</a></div>
+                                            </td> 
+                                        </tr>                            
+                                        <!--tr class="slds-line-height_reset ">
+                                    <td data-label="Opportunity Name" scope="row">
+                                        <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps" title="Cloudhub">Model</div>
+                                    </td>    
+                                    <td data-label="Opportunity Name" scope="row">
+                                        <div style="color:#267FAB;" class="slds-text-body_small slds-truncate slds-align_absolute-left" title="Cloudhub">{!item.Product2.Name}</div>
+                                    </td> 
+                                </tr-->
+                                        <tr>
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps" title="Cloudhub">Warranty</div>
+                                            </td>    
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#267FAB;" class="slds-text-body_small slds-truncate slds-align_absolute-left" title="Cloudhub"><img src="{!item.WarranyIndPublic__c}" style="height:20px;"/>&nbsp;{!item.Entitlement_Status__c}</div>
+                                            </td>  
+                                        </tr>
+                                        
+                                        <!--tr>
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps" title="Cloudhub">Srvc. Status</div>
+                                            </td>    
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#267FAB;" class="slds-text-body_small slds-truncate slds-align_absolute-left" title="Cloudhub"><img src="{!item.Status_Indicator_URL_Public__c}" style="height:20px;"/>&nbsp;{!item.Asset_Status__c}</div>
+                                            </td>                   
+                                        </tr-->  
+                                        
+                                        <tr>
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps" title="Cloudhub">Op. Status</div>
+                                            </td>    
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#267FAB;"  class="slds-text-body_small slds-truncate slds-align_absolute-left" title="Cloudhub"><img src="{!item.Status_Indicator_URL_Public__c}" style="height:20px;"/>&nbsp;{!item.MFG_IDO_IOT_Status__c }</div>
+                                            </td>                   
+                                        </tr>   
+                                        <tr>
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps" title="Cloudhub">Serial Number</div>
+                                            </td>    
+                                            <td data-label="Opportunity Name" scope="row">
+                                                <div style="color:#333333;" class="slds-text-body_small slds-truncate slds-align_absolute-left" title="Cloudhub">
+                                                    {!item.SerialNumber}
+                                                </div>
+                                            </td>                   
+                                        </tr>    
+                                    </table>
+                                </span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </aura:iteration>
+        </div>
+
+        
+        
+    </div> 
+    
+</aura:component>

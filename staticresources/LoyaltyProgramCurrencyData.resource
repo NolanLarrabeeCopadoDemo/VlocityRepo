@@ -1,0 +1,2 @@
+Currency Name,Currency Type,Expiration Model,Expiration Interval,Expiration Interval Unit,Extend Expiration,Active,Loyalty Program,Tier Group
+Points,NonQualifying,Fixed,2,Years,None,Active,Partner Extraa Program,

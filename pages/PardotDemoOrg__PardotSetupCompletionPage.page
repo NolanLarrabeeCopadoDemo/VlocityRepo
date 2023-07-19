@@ -1,0 +1,17 @@
+<apex:page standardStylesheets="false">
+    <apex:form >
+
+        <apex:pageBlock title="Pardot Demo Org Setup Complete!" >
+
+            <div style="font-size: 15px; margin-bottom: 1em;">
+                <p>You're done! Allow up to 15 minutes for data to fully sync from your PDO to your SDO, then navigate into the <strong>Pardot</strong> app to get going. Good luck with your demo!</p>
+            </div>
+
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value=" Previous Step " onclick="window.location='/apex/PardotSalesforceConnectorSetup'; return false;" />
+            </apex:pageBlockButtons>
+
+        </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BenefitAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowDefinition>Issue_Free_Sample</flowDefinition>
+    <isActive>true</isActive>
+    <isBenefitExpirationAllowed>true</isBenefitExpirationAllowed>
+    <isBenefitUpdateAllowed>false</isBenefitUpdateAllowed>
+    <masterLabel>Issue Free Sample</masterLabel>
+    <processType>1</processType>
+    <type>1</type>
+</BenefitAction>

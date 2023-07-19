@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IndustriesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableAIAccelerator>false</enableAIAccelerator>
+    <enableAccountScoreEnabled>false</enableAccountScoreEnabled>
+    <enableIndustriesRebates>true</enableIndustriesRebates>
+    <enableIndustriesShipAndDebit>false</enableIndustriesShipAndDebit>
+    <enableObjectDetection>false</enableObjectDetection>
+    <enableScoringFrameworkCRMAPref>false</enableScoringFrameworkCRMAPref>
+    <enableScoringFrameworkOrgPref>false</enableScoringFrameworkOrgPref>
+    <enableSmartTags>false</enableSmartTags>
+    <enableSustainabilityCloud>false</enableSustainabilityCloud>
+    <enableTimelinePref>true</enableTimelinePref>
+    <enableVideoVisitsOrgPref>false</enableVideoVisitsOrgPref>
+    <enableVisitCalendarSync>false</enableVisitCalendarSync>
+    <enableVisitInventoryEnabled>false</enableVisitInventoryEnabled>
+    <rlaEditIfAccHasEdit>false</rlaEditIfAccHasEdit>
+</IndustriesSettings>

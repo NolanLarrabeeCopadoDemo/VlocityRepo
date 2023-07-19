@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Advanced Forecasting Guidance Copy</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;The baseline forecast is generated automatically using a formula looking at last years ordered quantity, our existing agreements with customers, and seasonality metrics.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Guidance on updating the forecast&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Account Managers can update the forecast from the 1st of the period to the 15th of the period.&lt;/li&gt;&lt;li&gt;After that point, the forecast will be locked down for the current period.&lt;/li&gt;&lt;li&gt;To update, click into a particular period and change the forecasted quantity.&lt;ul&gt;&lt;li&gt;&lt;b&gt;Note: &lt;/b&gt;reasons for adjustments are required!&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Management will review forecast changes at the end of the period before making their final call&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</body>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>Account Manager Forecasting Guidance</header>
+        <isPublished>true</isPublished>
+        <masterLabel>Advanced Forecasting Guidance Copy</masterLabel>
+        <publishedDate>2022-01-24</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-11-15</startDate>
+        <targetPageKey1>AdvAcctForecastSetPartner</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>30</timesToDisplay>
+        <title>Forecasting Guidelines</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

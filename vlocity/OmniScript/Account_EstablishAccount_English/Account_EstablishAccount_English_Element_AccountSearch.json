@@ -1,0 +1,70 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": true,
+    "MayEdit": true,
+    "Name": "AccountSearch",
+    "OmniProcessId": {
+        "Name": "MatchorCreateAccountContacts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Account/EstablishAccount/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "newAccount",
+        "OmniProcessId": {
+            "Name": "MatchorCreateAccountContacts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Account/EstablishAccount/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Account/EstablishAccount/English/newAccount",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "newAccount",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "callFrequency": 300,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "dataJsonPath": "",
+        "dataProcessorFunction": "",
+        "debounceValue": 0,
+        "disOnTplt": false,
+        "disableDataFilter": false,
+        "editMode": false,
+        "enableGoogleMapsAutocomplete": false,
+        "enableLookup": false,
+        "googleAddressCountry": "all",
+        "googleMapsAPIKey": "",
+        "googleTransformation": {
+            "administrative_area_level_1": "",
+            "country": "",
+            "locality": "",
+            "postal_code": "",
+            "street": ""
+        },
+        "help": false,
+        "helpText": "",
+        "hideEditButton": true,
+        "hideMap": true,
+        "inputWidth": 12,
+        "label": "Search for Account Name",
+        "maxLength": 255,
+        "minLength": 0,
+        "newItemLabel": "",
+        "readOnly": false,
+        "required": false,
+        "show": null,
+        "showInputWidth": false,
+        "typeAheadKey": "Account Name",
+        "useDataJson": false
+    },
+    "Type": "Type Ahead Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Account/EstablishAccount/English/AccountSearch"
+}

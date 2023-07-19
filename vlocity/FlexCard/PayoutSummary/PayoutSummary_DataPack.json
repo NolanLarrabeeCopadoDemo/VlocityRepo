@@ -1,0 +1,41 @@
+{
+    "AuthorName": "Admin",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 16,
+                "name": "recordId",
+                "val": "0010M00001MxBj1QAF"
+            }
+        ],
+        "orderBy": {
+            "isReverse": true,
+            "name": "CumulativePayoutAmount"
+        },
+        "type": "Query",
+        "value": {
+            "dsDelay": 0,
+            "jsonMap": "{\"recordId\":\"{recordId}\"}",
+            "query": "SELECT Name, CumulativePayoutAmount FROM RebateProgramMember WHERE AccountId = '{recordId}' AND CumulativePayoutAmount <> NULL",
+            "resultVar": ""
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "PayoutSummary",
+    "Namespace": "",
+    "OmniUiCardKey": "PayoutSummary/Admin/1.0/1629640220988",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "PayoutSummary.json",
+    "SampleDataSourceResponse": "[{\"attributes\":{\"type\":\"RebateProgramMember\",\"url\":\"/services/data/v52.0/sobjects/RebateProgramMember/0i93y000000000gAAA\"},\"Name\":\"Acme Partners\",\"CumulativePayoutAmount\":20000,\"Id\":\"0i93y000000000gAAA\"},{\"attributes\":{\"type\":\"RebateProgramMember\",\"url\":\"/services/data/v52.0/sobjects/RebateProgramMember/0i93y000000000lAAA\"},\"Name\":\"Acme Partners\",\"CumulativePayoutAmount\":4000,\"Id\":\"0i93y000000000lAAA\"},{\"attributes\":{\"type\":\"RebateProgramMember\",\"url\":\"/services/data/v52.0/sobjects/RebateProgramMember/0i93y000000000VAAQ\"},\"Name\":\"Acme Partners\",\"CumulativePayoutAmount\":54990,\"Id\":\"0i93y000000000VAAQ\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "PayoutSummary_Admin_1",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/PayoutSummary"
+}

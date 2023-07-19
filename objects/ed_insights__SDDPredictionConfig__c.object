@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ed_insights__Batch_Update_Query__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will be used as the SOQL query for  the ed_insights.BatchScoreRecords class to determine which records to mass score for this prediction definition. You may leave this blank If you are not using the ed_insights.BatchScoreRecords class.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will be used as the SOQL query for  the ed_insights.BatchScoreRecords class to determine which records to mass score for this prediction definition. You may leave this blank If you are not using the ed_insights.BatchScoreRecords class.</inlineHelpText>
+        <label>Batch Update Query</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ed_insights__Dataset_Join_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Optional parameter used to lookup values from a dataset rather then the Salesforce object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Prediction API can optionally lookup datasets to get field values that will be used in the model. To use this feature, Configure Dataset Joins in &quot;Custom Metadata Types&quot; (within the setup menu) first, then copy and paste the Dataset Join Name here.</inlineHelpText>
+        <label>Dataset Join Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ed_insights__Disable_Scoring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this box if you would like to disable scoring records for this prediction definition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if you would like to disable scoring records for this prediction definition. This might be needed when bulk inserting new records.</inlineHelpText>
+        <label>Disable Scoring</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ed_insights__Hide_Warnings__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Einstein Discovery Scoring API will include warnings for missing columns or column values that are out of bounds from values from the dataset used to train the model. Check this box if you would like to hide warnings from the Commentary Field Name.</inlineHelpText>
+        <label>Hide Scoring Warnings</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ed_insights__Recommendation_Limit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Limit the number of Einstein Discovery recommendations for improving the score. Leave this blank to see all improvement recommendations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Limit the number of Einstein Discovery recommendations for improving the score. Leave this blank to see all improvement recommendations.</inlineHelpText>
+        <label>Recommendation Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ed_insights__Recommendation_Threshold__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Optionally set a threshold for which recommendations are returned. Only recommendations that affect the outcome by at least this percentage will be displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optionally set a threshold for which recommendations are returned. Only recommendations that affect the outcome by at least this threshold will be displayed. For example if the Prediction = 100 and threshold = 0.10, recs must have a value of 10 or more.</inlineHelpText>
+        <label>Recommendation Threshold</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ed_insights__commentary_field_api_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Commentary Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ed_insights__object_api_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Object</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ed_insights__outcome_field_api_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Outcome Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ed_insights__prediction_definition_id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Prediction Definition Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ed_insights__prescription_field_api_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Prescription Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Einstein Discovery - Write Back</label>
+    <visibility>Public</visibility>
+</CustomObject>

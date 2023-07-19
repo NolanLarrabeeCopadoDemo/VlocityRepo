@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email for abandoned carts</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Abandoned Cart Email</name>
+    <style>none</style>
+    <subject>Abandoned Cart - {!ccrz__E_Cart__c.OwnerFullName}</subject>
+    <textOnly>Hello, 
+Cart {!ccrz__E_Cart__c.Name} was abandoned on {!ccrz__E_Cart__c.LastActivityDate} by {!ccrz__E_Cart__c.OwnerFullName}. 
+Contact: {!ccrz__E_Cart__c.ccrz__Contact__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,57 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "ConfirmationMessage",
+    "OmniProcessId": {
+        "Name": "New Product Registration DC",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Product/RegistrationDC/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Requirements",
+        "OmniProcessId": {
+            "Name": "New Product Registration DC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Product/RegistrationDC/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Product/RegistrationDC/English/Requirements",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Requirements",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock3",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<=",
+                        "data": "90",
+                        "field": "CalculateRegistrationEligibility"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "ProdPurchaseDate"
+                    }
+                ]
+            }
+        },
+        "text": "<p><span style=\"color: #000000;\"><strong>Great news!! Your product is within the 90 days timeframe from the purchase date. Please proceed with the registration.</strong></span></p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Product/RegistrationDC/English/ConfirmationMessage"
+}

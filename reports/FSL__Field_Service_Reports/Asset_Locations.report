@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Location.Assets$Name</field>
+    </columns>
+    <columns>
+        <field>Location$Name</field>
+    </columns>
+    <columns>
+        <field>Location$VisitorAddress.Address</field>
+    </columns>
+    <columns>
+        <field>Location$VisitorAddress.Latitude</field>
+    </columns>
+    <columns>
+        <field>Location$VisitorAddress.Longitude</field>
+    </columns>
+    <description>Report to show Asset Locations on Dispatch Map in FSL</description>
+    <format>Tabular</format>
+    <name>Asset Locations</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Locations_with_Assets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Location$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

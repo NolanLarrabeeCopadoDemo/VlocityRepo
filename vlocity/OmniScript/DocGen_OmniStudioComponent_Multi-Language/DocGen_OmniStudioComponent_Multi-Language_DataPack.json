@@ -1,0 +1,33 @@
+{
+    "Description": "08/10 Update logic in the getTemplateDetails IP to handle %vlocity_namespace%",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsLocked": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": true,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "Multi-Language",
+    "LastPreviewPage": "Lightning",
+    "MayEdit": true,
+    "Name": "Doc Gen Component",
+    "OmniProcessElement": [
+        "DocGen_OmniStudioComponent_Multi-Language_Element_requiredInputs.json",
+        "DocGen_OmniStudioComponent_Multi-Language_Element_IPgetTemplateDetailsForDocGen.json",
+        "DocGen_OmniStudioComponent_Multi-Language_Element_setGenerationOption.json",
+        "DocGen_OmniStudioComponent_Multi-Language_Element_generateDocument.json",
+        "DocGen_OmniStudioComponent_Multi-Language_Element_GenerateDocumentWord.json",
+        "DocGen_OmniStudioComponent_Multi-Language_Element_IPCombainAllPdfVersionIds.json",
+        "DocGen_OmniStudioComponent_Multi-Language_Element_generateMergeDocument.json",
+        "DocGen_OmniStudioComponent_Multi-Language_Element_CustomLWC1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "DocGen_OmniStudioComponent_Multi-Language_PropertySetConfig.json",
+    "SubType": "OmniStudioComponent",
+    "Type": "DocGen",
+    "UniqueName": "DocGen_OmniStudioComponent_multiLanguage_1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/DocGen/OmniStudioComponent/Multi-Language",
+    "WebComponentKey": "6a6f466e-bca9-6a22-e2e0-f8ca44298b4e"
+}

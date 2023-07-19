@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionTableDatasetLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisionTableName>Points_to_Redeem_Based_on_Products_and_Vouchers</decisionTableName>
+    <isDefault>true</isDefault>
+    <setupName>Default Payload</setupName>
+    <sourceObject>RedeemPointsProductCategory__c</sourceObject>
+</DecisionTableDatasetLink>

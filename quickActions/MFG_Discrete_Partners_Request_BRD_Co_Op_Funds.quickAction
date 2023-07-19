@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Request non-capital marketing funds.</description>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>Submitted</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Title</field>
+        <formula>&quot;$User.CompanyName&quot;+&quot;: &quot;+&quot;BDR/Co-OP Request&quot;+ &quot;DATEVALUE($System.OriginDateTime)&quot;</formula>
+    </fieldOverrides>
+    <label>Request BRD/Co-Op Funds</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>ChannelPartnerId</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>RequestedAmount</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>DesiredOutcome</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Description</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Thank you! Your request has been received and will be reviewed.</successMessage>
+    <targetObject>PartnerFundRequest</targetObject>
+    <targetRecordType>PartnerFundRequest.MFG_Discrete_Partners_Non_Capital</targetRecordType>
+    <type>Create</type>
+</QuickAction>

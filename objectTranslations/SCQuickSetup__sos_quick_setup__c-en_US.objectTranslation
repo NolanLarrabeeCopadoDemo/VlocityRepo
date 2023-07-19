@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- bookmark --></label>
+        <name>SCQuickSetup__bookmark__c</name>
+    </fields>
+    <fields>
+        <label><!-- case --></label>
+        <name>SCQuickSetup__case__c</name>
+    </fields>
+    <fields>
+        <label><!-- chat --></label>
+        <name>SCQuickSetup__chat__c</name>
+    </fields>
+    <fields>
+        <label><!-- knowledge --></label>
+        <name>SCQuickSetup__knowledge__c</name>
+    </fields>
+    <fields>
+        <label><!-- selected_tab --></label>
+        <name>SCQuickSetup__selected_tab__c</name>
+    </fields>
+    <fields>
+        <label><!-- sfdc_email --></label>
+        <name>SCQuickSetup__sfdc_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- sos --></label>
+        <name>SCQuickSetup__sos__c</name>
+    </fields>
+</CustomObjectTranslation>

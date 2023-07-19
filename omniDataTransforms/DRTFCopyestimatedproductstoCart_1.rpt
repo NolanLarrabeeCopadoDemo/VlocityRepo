@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;estimatedproducts&quot; : [ {
+    &quot;_flex&quot; : {
+      &quot;state0element0block_element5_child&quot; : true,
+      &quot;state0element0block_element5&quot; : true,
+      &quot;state0element0block_element4_child&quot; : true,
+      &quot;state0element0block_element4&quot; : true,
+      &quot;state0element0block_element3_child&quot; : true,
+      &quot;state0element0block_element3&quot; : true,
+      &quot;state0element0block_element2_child&quot; : true,
+      &quot;state0element0block_element2&quot; : true,
+      &quot;uniqueKey&quot; : &quot;REC0&quot;
+    },
+    &quot;uniqueKey&quot; : &quot;REC0&quot;,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8tbQAD&quot;,
+    &quot;PbeUnitPrice&quot; : 3400,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPDQAZ&quot;,
+    &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+    &quot;PbeName&quot; : &quot;Compactor 9500&quot;,
+    &quot;Id&quot; : &quot;REC0&quot;
+  }, {
+    &quot;_flex&quot; : {
+      &quot;state0element0block_element5_child&quot; : true,
+      &quot;state0element0block_element5&quot; : true,
+      &quot;state0element0block_element4_child&quot; : true,
+      &quot;state0element0block_element4&quot; : true,
+      &quot;state0element0block_element3_child&quot; : true,
+      &quot;state0element0block_element3&quot; : true,
+      &quot;state0element0block_element2_child&quot; : true,
+      &quot;state0element0block_element2&quot; : true,
+      &quot;uniqueKey&quot; : &quot;REC1&quot;
+    },
+    &quot;uniqueKey&quot; : &quot;REC1&quot;,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;,
+    &quot;PbeUnitPrice&quot; : 2345,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOPQAZ&quot;,
+    &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+    &quot;PbeName&quot; : &quot;SLA-Finance&quot;,
+    &quot;Id&quot; : &quot;REC1&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTFCopyestimatedproductstoCart</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:null</formulaConverted>
+        <formulaExpression>null</formulaExpression>
+        <formulaResultPath>estimatedproducts</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTFCopyestimatedproductstoCart8315003811471966</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFCopyestimatedproductstoCart</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:estimatedProducts:ProductsInCart:summaryproducts:ep LIST</formulaConverted>
+        <formulaExpression>LIST(estimatedProducts:ProductsInCart:summaryproducts:ep)</formulaExpression>
+        <formulaResultPath>summarypage</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTFCopyestimatedproductstoCart38389256290114626</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFCopyestimatedproductstoCart</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Product2Id&quot; | var:summaryproducts:ep LIST | var:estimatedProducts:ProductsInCart:summaryproducts:ep LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;Product2Id&quot;,LIST(summaryproducts:ep),LIST(estimatedProducts:ProductsInCart:summaryproducts:ep))</formulaExpression>
+        <formulaResultPath>summarypage</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTFCopyestimatedproductstoCart6442326393294626</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFCopyestimatedproductstoCart</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFCopyestimatedproductstoCart298378889813266</globalKey>
+        <inputFieldName>estimatedproducts</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFCopyestimatedproductstoCart</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ep2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;estimatedproducts&quot; : [ {
+    &quot;_flex&quot; : {
+      &quot;state0element0block_element5_child&quot; : true,
+      &quot;state0element0block_element5&quot; : true,
+      &quot;state0element0block_element4_child&quot; : true,
+      &quot;state0element0block_element4&quot; : true,
+      &quot;state0element0block_element3_child&quot; : true,
+      &quot;state0element0block_element3&quot; : true,
+      &quot;state0element0block_element2_child&quot; : true,
+      &quot;state0element0block_element2&quot; : true,
+      &quot;uniqueKey&quot; : &quot;REC0&quot;
+    },
+    &quot;uniqueKey&quot; : &quot;REC0&quot;,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8tbQAD&quot;,
+    &quot;PbeUnitPrice&quot; : 3400,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPDQAZ&quot;,
+    &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+    &quot;PbeName&quot; : &quot;Compactor 9500&quot;,
+    &quot;Id&quot; : &quot;REC0&quot;
+  }, {
+    &quot;_flex&quot; : {
+      &quot;state0element0block_element5_child&quot; : true,
+      &quot;state0element0block_element5&quot; : true,
+      &quot;state0element0block_element4_child&quot; : true,
+      &quot;state0element0block_element4&quot; : true,
+      &quot;state0element0block_element3_child&quot; : true,
+      &quot;state0element0block_element3&quot; : true,
+      &quot;state0element0block_element2_child&quot; : true,
+      &quot;state0element0block_element2&quot; : true,
+      &quot;uniqueKey&quot; : &quot;REC1&quot;
+    },
+    &quot;uniqueKey&quot; : &quot;REC1&quot;,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;,
+    &quot;PbeUnitPrice&quot; : 2345,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOPQAZ&quot;,
+    &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+    &quot;PbeName&quot; : &quot;SLA-Finance&quot;,
+    &quot;Id&quot; : &quot;REC1&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTFCopyestimatedproductstoCart_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

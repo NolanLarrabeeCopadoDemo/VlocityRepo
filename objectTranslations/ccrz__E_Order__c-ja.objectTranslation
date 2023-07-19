@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CC 注文</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>MFG_Asset__c</name>
+        <relationshipLabel><!-- CC Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order # --></label>
+        <name>Order_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Applied --></label>
+        <name>Points_Applied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Earned --></label>
+        <name>Points_Earned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reward Points Processed --></label>
+        <name>Reward_Points_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfer Source --></label>
+        <name>Transfer_Source__c</name>
+        <relationshipLabel><!-- CC Orders (Transfer Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warranty --></label>
+        <name>Warranty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>ccrz__Account__c</name>
+        <relationshipLabel><!-- CC Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Amount --></label>
+        <name>ccrz__AdjustmentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Reason --></label>
+        <name>ccrz__AdjustmentReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>ccrz__BillTo__c</name>
+        <relationshipLabel><!-- CC Orders (Bill To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>ccrz__BuyerCompanyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>ccrz__BuyerEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>ccrz__BuyerFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>ccrz__BuyerLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Phone --></label>
+        <name>ccrz__BuyerMobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>ccrz__BuyerPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCEmailAddress --></label>
+        <name>ccrz__CCEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCSubscription --></label>
+        <name>ccrz__CCSubscription__c</name>
+        <relationshipLabel><!-- CC Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>ccrz__Contact__c</name>
+        <relationshipLabel><!-- CC Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract ID --></label>
+        <name>ccrz__ContractId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency ISO Code --></label>
+        <name>ccrz__CurrencyISOCode__c</name>
+    </fields>
+    <fields>
+        <help>この項目は、ユーザが独自の取引先を含めたり除外したりして複数の取引先に注文できる実装で使用されます。有効取引先は、サイトで実行されるエンタイトルメント、価格設定、インテグレーションなどを制御するために使用されます。</help>
+        <label><!-- Effective Account ID --></label>
+        <name>ccrz__EffectiveAccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypted Id --></label>
+        <name>ccrz__EncryptedId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ext Carrier --></label>
+        <name>ccrz__ExtCarrier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ext ShipTo --></label>
+        <name>ccrz__ExtShipTo__c</name>
+        <relationshipLabel><!-- CC Orders (Ext ShipTo) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ext ShipTrack No --></label>
+        <name>ccrz__ExtShipTrackNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Anonymous --></label>
+        <name>ccrz__IsAnonymous__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Name --></label>
+        <name>ccrz__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>ccrz__Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Date --></label>
+        <name>ccrz__OrderDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Id --></label>
+        <name>ccrz__OrderId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Name (Duplicated) --></label>
+        <name>ccrz__OrderName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>ccrz__OrderNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Seller --></label>
+        <name>ccrz__OrderSeller__c</name>
+        <relationshipLabel><!-- Seller Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Source --></label>
+        <name>ccrz__OrderSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Status --></label>
+        <name>ccrz__OrderStatus__c</name>
+        <picklistValues>
+            <masterLabel>Back Order</masterLabel>
+            <translation><!-- Back Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Of Material</masterLabel>
+            <translation>部品表</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel Submitted</masterLabel>
+            <translation>キャンセル登録済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>キャンセル</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>完了</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation>処理中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation>保留中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Submitted</masterLabel>
+            <translation>注文登録済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Shipped</masterLabel>
+            <translation>一部発送済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return Submitted</masterLabel>
+            <translation>返品登録済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned</masterLabel>
+            <translation>返品</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped</masterLabel>
+            <translation>発送済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この注文のサブスクリプションを最初に登録した親注文 (該当する場合)</help>
+        <label><!-- Order --></label>
+        <name>ccrz__Order__c</name>
+        <relationshipLabel><!-- Children Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Originated Cart --></label>
+        <name>ccrz__OriginatedCart__c</name>
+        <relationshipLabel><!-- CC Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>ccrz__PONumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- PaymentMethod --></label>
+        <name>ccrz__PaymentMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>ccrz__RequestDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Amount --></label>
+        <name>ccrz__ShipAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Complete --></label>
+        <name>ccrz__ShipComplete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Discount Amount --></label>
+        <name>ccrz__ShipDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Method --></label>
+        <name>ccrz__ShipMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Structure --></label>
+        <name>ccrz__ShipStructure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>ccrz__ShipTo__c</name>
+        <relationshipLabel><!-- CC Orders (Ship To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skip Tax Calculation --></label>
+        <name>ccrz__SkipTax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Parent Order --></label>
+        <name>ccrz__SplitParentOrder__c</name>
+        <relationshipLabel><!-- CC Orders (Split Parent Order) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Split Processed --></label>
+        <name>ccrz__SplitProcessed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storefront --></label>
+        <name>ccrz__Storefront__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subtotal Amount --></label>
+        <name>ccrz__SubtotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Amount --></label>
+        <name>ccrz__TaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt Flag --></label>
+        <name>ccrz__TaxExemptFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax SubTotal Amount --></label>
+        <name>ccrz__TaxSubTotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>ccrz__TotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Discount --></label>
+        <name>ccrz__TotalDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Surcharge --></label>
+        <name>ccrz__TotalSurcharge__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>ccrz__User__c</name>
+        <relationshipLabel><!-- CC Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VerifyExemptionFlag --></label>
+        <name>ccrz__VerifyExemptionFlag__c</name>
+    </fields>
+    <nameFieldLabel>名前</nameFieldLabel>
+</CustomObjectTranslation>

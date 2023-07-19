@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;PriceBookEntry&quot; : {
+    &quot;PriceBook-Block&quot; : {
+      &quot;PriceBookrecName&quot; : &quot;Manufacturing&quot;,
+      &quot;PriceBookIdSF&quot; : &quot;01s8Y000001THDiQAO&quot;,
+      &quot;PriceBook&quot; : &quot;Manufacturing&quot;
+    },
+    &quot;Text1&quot; : &quot;sla&quot;,
+    &quot;CustomLWC6&quot; : {
+      &quot;Products&quot; : {
+        &quot;selectedprods&quot; : [ {
+          &quot;Id&quot; : &quot;REC0&quot;,
+          &quot;PbeName&quot; : &quot;SLA-Finance&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOUQAZ&quot;,
+          &quot;addToEstimate&quot; : true,
+          &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+          &quot;PbeIsActive&quot; : true,
+          &quot;Qty&quot; : 1,
+          &quot;PbeUnitPrice&quot; : 2345,
+          &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;,
+          &quot;uniqueKey&quot; : &quot;REC0&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC0&quot;
+          }
+        } ]
+      }
+    }
+  },
+  &quot;PbeProduct&quot; : [ {
+    &quot;PbeName&quot; : &quot;SLA-Finance&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOUQAZ&quot;,
+    &quot;addToEstimate&quot; : false,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;Qty&quot; : 1,
+    &quot;PbeUnitPrice&quot; : 2345,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;
+  } ],
+  &quot;ep1&quot; : {
+    &quot;ep&quot; : null
+  },
+  &quot;timeStamp&quot; : &quot;2022-01-17T14:29:20.516Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;demo.org@omnistudio.1642136864485&quot;,
+  &quot;userId&quot; : &quot;0058Y00000AwAk2QAF&quot;,
+  &quot;multipleproducts&quot; : [ {
+    &quot;PbeName&quot; : &quot;Genwatt 1000KW&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rshQAB&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;Id&quot; : &quot;REC0&quot;,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;uniqueKey&quot; : &quot;REC0&quot;,
+    &quot;Qty&quot; : 1,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8FkQAL&quot;,
+    &quot;PbeUnitPrice&quot; : 1000,
+    &quot;_flex&quot; : {
+      &quot;uniqueKey&quot; : &quot;REC0&quot;
+    }
+  }, {
+    &quot;PbeName&quot; : &quot;Genwatt 10KW&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rsmQAB&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;Id&quot; : &quot;REC1&quot;,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;uniqueKey&quot; : &quot;REC1&quot;,
+    &quot;Qty&quot; : 1,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8FpQAL&quot;,
+    &quot;PbeUnitPrice&quot; : 200,
+    &quot;_flex&quot; : {
+      &quot;uniqueKey&quot; : &quot;REC1&quot;
+    }
+  } ]
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;selectedProducts&quot; : {
+    &quot;Product2Id&quot; : &quot;Text&quot;,
+    &quot;PriceBookEntryName&quot; : &quot;Text&quot;,
+    &quot;ProductUrl&quot; : &quot;Text&quot;,
+    &quot;Qty&quot; : null,
+    &quot;PriceBookEntryUnitPrice&quot; : null,
+    &quot;Subtotal&quot; : &quot;Text&quot;
+  },
+  &quot;Total&quot; : &quot;Text&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTFEstimateProductList</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:estimatedproducts:Qty var:estimatedproducts:PbeUnitPrice *</formulaConverted>
+        <formulaExpression>(estimatedproducts:Qty)*(estimatedproducts:PbeUnitPrice)</formulaExpression>
+        <formulaResultPath>estimatedproducts:subTotal</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTFEstimateProductList7110403701459931</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList9813072971267145</globalKey>
+        <inputFieldName>estimatedproducts:subTotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:ep:Subtotal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList48973491063074004</globalKey>
+        <inputFieldName>estimatedproducts:PbeUnitPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:ep:PbeUnitPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList7307832527393379</globalKey>
+        <inputFieldName>total</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:Total</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList7299409492822229</globalKey>
+        <inputFieldName>estimatedproducts:ProductUrl</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:ep:ProductUrl</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:estimatedproducts:subTotal SUM</formulaConverted>
+        <formulaExpression>SUM(estimatedproducts:subTotal)</formulaExpression>
+        <formulaResultPath>total</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTFEstimateProductList4494329945207891</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList7935404530371943</globalKey>
+        <inputFieldName>estimatedproducts:Qty</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:ep:Qty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList5248786172129931</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>summaryproducts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList22702806787425822</globalKey>
+        <inputFieldName>estimatedproducts:PbeName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:ep:PbeName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList8017770578188659</globalKey>
+        <inputFieldName>estimatedproducts:Product2Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:ep:Product2Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFEstimateProductList9823528584761443</globalKey>
+        <inputFieldName>estimatedproducts:PriceBookEntryId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFEstimateProductList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:ep:PriceBookEntryId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;setAccountDetails&quot; : {
+    &quot;TAAccountName&quot; : &quot;Acme&quot;,
+    &quot;Name&quot; : &quot;Acme&quot;,
+    &quot;BillingState&quot; : &quot;NY&quot;,
+    &quot;AccountIdSF&quot; : &quot;001B000001LxacQIAR&quot;,
+    &quot;BillingPostalCode&quot; : &quot;31349&quot;,
+    &quot;Website&quot; : &quot;www.google.com&quot;,
+    &quot;BillingStreet&quot; : &quot;10 Main Rd.&quot;,
+    &quot;BillingCity&quot; : &quot;New York&quot;,
+    &quot;BillingCountry&quot; : &quot;USA&quot;,
+    &quot;AccountPhone&quot; : &quot;(212) 555-5555&quot;
+  },
+  &quot;Product&quot; : {
+    &quot;PbeProduct&quot; : [ {
+      &quot;PbeName&quot; : &quot;Compactator&quot;,
+      &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdRzIAI&quot;,
+      &quot;addToEstimate&quot; : false,
+      &quot;PId&quot; : &quot;01tB000000268T0IAI&quot;,
+      &quot;PbeIsActive&quot; : true,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;QuantityUnitOfMeasure&quot; : &quot;Each&quot;,
+      &quot;ProductCode&quot; : &quot;12367C6&quot;,
+      &quot;Product2Id&quot; : &quot;01tB000000268T0IAI&quot;,
+      &quot;PbeUnitPrice&quot; : 100
+    }, {
+      &quot;PbeName&quot; : &quot;Main Case Seal&quot;,
+      &quot;ProductUrl&quot; : &quot;https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&amp;m=462313057&amp;s=612x612&amp;w=0&amp;h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdSZIAY&quot;,
+      &quot;addToEstimate&quot; : false,
+      &quot;PId&quot; : &quot;01tB000000268T4IAI&quot;,
+      &quot;PbeIsActive&quot; : true,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;ProductCode&quot; : &quot;MC&quot;,
+      &quot;Product2Id&quot; : &quot;01tB000000268T4IAI&quot;,
+      &quot;PbeUnitPrice&quot; : 345
+    }, {
+      &quot;PbeName&quot; : &quot;SLA_Finance&quot;,
+      &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdSKIAY&quot;,
+      &quot;addToEstimate&quot; : false,
+      &quot;PId&quot; : &quot;01tB000000268T5IAI&quot;,
+      &quot;PbeIsActive&quot; : true,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;ProductCode&quot; : &quot;SL&quot;,
+      &quot;Product2Id&quot; : &quot;01tB000000268T5IAI&quot;,
+      &quot;PbeUnitPrice&quot; : 1200
+    } ],
+    &quot;listisblank&quot; : false
+  },
+  &quot;summaryproducts&quot; : {
+    &quot;ep&quot; : [ {
+      &quot;PbeName&quot; : &quot;Main Case Seal&quot;,
+      &quot;ProductUrl&quot; : &quot;https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&amp;m=462313057&amp;s=612x612&amp;w=0&amp;h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdSZIAY&quot;,
+      &quot;Subtotal&quot; : 345,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;PbeUnitPrice&quot; : 345,
+      &quot;Product2Id&quot; : &quot;01tB000000268T4IAI&quot;
+    }, {
+      &quot;PbeName&quot; : &quot;SLA_Finance&quot;,
+      &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdSKIAY&quot;,
+      &quot;Subtotal&quot; : 1200,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;PbeUnitPrice&quot; : 1200,
+      &quot;Product2Id&quot; : &quot;01tB000000268T5IAI&quot;
+    } ]
+  },
+  &quot;orderId&quot; : null,
+  &quot;DocumentTemplate&quot; : null,
+  &quot;documentTitle&quot; : null,
+  &quot;timeStamp&quot; : &quot;2022-03-08T06:13:01.876Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;pareshrebate@pwc.com&quot;,
+  &quot;userId&quot; : &quot;005B0000008COAxIAO&quot;,
+  &quot;GenerateDocument&quot; : null,
+  &quot;Error&quot; : { },
+  &quot;AccountInfo&quot; : {
+    &quot;TAAccountName-Block&quot; : {
+      &quot;TAAccountName&quot; : &quot;Acme&quot;,
+      &quot;Name&quot; : &quot;Acme&quot;,
+      &quot;BillingState&quot; : &quot;NY&quot;,
+      &quot;AccountIdSF&quot; : &quot;001B000001LxacQIAR&quot;,
+      &quot;BillingPostalCode&quot; : &quot;31349&quot;,
+      &quot;Website&quot; : &quot;www.google.com&quot;,
+      &quot;BillingStreet&quot; : &quot;10 Main Rd.&quot;,
+      &quot;BillingCity&quot; : &quot;New York&quot;,
+      &quot;BillingCountry&quot; : &quot;USA&quot;,
+      &quot;AccountPhone&quot; : &quot;(212) 555-5555&quot;
+    }
+  },
+  &quot;selectedAccountId&quot; : &quot;001B000001LxacQIAR&quot;,
+  &quot;Contacts&quot; : [ {
+    &quot;ContactId&quot; : &quot;003B000000IP2hnIAD&quot;,
+    &quot;LastName&quot; : &quot;Stamos&quot;,
+    &quot;FirstName&quot; : &quot;Edward&quot;,
+    &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+    &quot;AccountId&quot; : &quot;001B000001LxacQIAR&quot;,
+    &quot;Email&quot; : &quot;pgoriparthy@salesforce.com&quot;
+  }, {
+    &quot;ContactId&quot; : &quot;003B000000IP2hoIAD&quot;,
+    &quot;LastName&quot; : &quot;Jones&quot;,
+    &quot;FirstName&quot; : &quot;Howard&quot;,
+    &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+    &quot;AccountId&quot; : &quot;001B000001LxacQIAR&quot;,
+    &quot;Email&quot; : &quot;info@salesforce.com&quot;
+  }, {
+    &quot;ContactId&quot; : &quot;003B000000IP2hpIAD&quot;,
+    &quot;LastName&quot; : &quot;Tomlin&quot;,
+    &quot;FirstName&quot; : &quot;Leanne&quot;,
+    &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+    &quot;AccountId&quot; : &quot;001B000001LxacQIAR&quot;,
+    &quot;Email&quot; : &quot;info@salesforce.com&quot;
+  } ],
+  &quot;AccountsAndContacts&quot; : {
+    &quot;ContactDetails&quot; : [ {
+      &quot;selectedContact&quot; : true,
+      &quot;ContactId&quot; : &quot;003B000000IP2hnIAD&quot;,
+      &quot;LastName&quot; : &quot;Stamos&quot;,
+      &quot;FirstName&quot; : &quot;Edward&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;AccountId&quot; : &quot;001B000001LxacQIAR&quot;,
+      &quot;Email&quot; : &quot;pgoriparthy@salesforce.com&quot;
+    }, {
+      &quot;selectedContact&quot; : false,
+      &quot;ContactId&quot; : &quot;003B000000IP2hoIAD&quot;,
+      &quot;LastName&quot; : &quot;Jones&quot;,
+      &quot;FirstName&quot; : &quot;Howard&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;AccountId&quot; : &quot;001B000001LxacQIAR&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;selectedContact&quot; : false,
+      &quot;ContactId&quot; : &quot;003B000000IP2hpIAD&quot;,
+      &quot;LastName&quot; : &quot;Tomlin&quot;,
+      &quot;FirstName&quot; : &quot;Leanne&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;AccountId&quot; : &quot;001B000001LxacQIAR&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    } ]
+  },
+  &quot;PriceBookEntry&quot; : {
+    &quot;CustomLWC6&quot; : {
+      &quot;Products&quot; : {
+        &quot;selectedprods&quot; : [ {
+          &quot;Id&quot; : &quot;REC1&quot;,
+          &quot;PbeName&quot; : &quot;Main Case Seal&quot;,
+          &quot;ProductUrl&quot; : &quot;https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&amp;m=462313057&amp;s=612x612&amp;w=0&amp;h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdSZIAY&quot;,
+          &quot;addToEstimate&quot; : true,
+          &quot;PId&quot; : &quot;01tB000000268T4IAI&quot;,
+          &quot;PbeIsActive&quot; : true,
+          &quot;Qty&quot; : &quot;1&quot;,
+          &quot;ProductCode&quot; : &quot;MC&quot;,
+          &quot;Product2Id&quot; : &quot;01tB000000268T4IAI&quot;,
+          &quot;PbeUnitPrice&quot; : 345,
+          &quot;uniqueKey&quot; : &quot;REC1&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC1&quot;,
+            &quot;state0element0block_element3block_element0&quot; : true,
+            &quot;state0element0block_element3block_element0_child&quot; : true,
+            &quot;state0element0block_element3block_element1&quot; : true,
+            &quot;state0element0block_element3block_element1_child&quot; : true,
+            &quot;state0element0block_element4&quot; : true,
+            &quot;state0element0block_element4_child&quot; : true,
+            &quot;state0element0block_element5&quot; : true,
+            &quot;state0element0block_element5_child&quot; : true
+          }
+        }, {
+          &quot;Id&quot; : &quot;REC2&quot;,
+          &quot;PbeName&quot; : &quot;SLA_Finance&quot;,
+          &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdSKIAY&quot;,
+          &quot;addToEstimate&quot; : true,
+          &quot;PId&quot; : &quot;01tB000000268T5IAI&quot;,
+          &quot;PbeIsActive&quot; : true,
+          &quot;Qty&quot; : &quot;1&quot;,
+          &quot;ProductCode&quot; : &quot;SL&quot;,
+          &quot;Product2Id&quot; : &quot;01tB000000268T5IAI&quot;,
+          &quot;PbeUnitPrice&quot; : 1200,
+          &quot;uniqueKey&quot; : &quot;REC2&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC2&quot;,
+            &quot;state0element0block_element3block_element0&quot; : true,
+            &quot;state0element0block_element3block_element0_child&quot; : true,
+            &quot;state0element0block_element3block_element1&quot; : true,
+            &quot;state0element0block_element3block_element1_child&quot; : true,
+            &quot;state0element0block_element4&quot; : true,
+            &quot;state0element0block_element4_child&quot; : true,
+            &quot;state0element0block_element5&quot; : true,
+            &quot;state0element0block_element5_child&quot; : true
+          }
+        } ]
+      }
+    },
+    &quot;ProductName&quot; : &quot;c&quot;,
+    &quot;PriceBook-Block&quot; : {
+      &quot;PriceBookrecName&quot; : &quot;Manufacturing&quot;,
+      &quot;PriceBookIdSF&quot; : &quot;01sB0000002idbWIAQ&quot;,
+      &quot;PriceBook&quot; : &quot;Manufacturing&quot;
+    }
+  },
+  &quot;estimatedproducts&quot; : null,
+  &quot;ep2&quot; : [ {
+    &quot;PbeName&quot; : &quot;Main Case Seal&quot;,
+    &quot;Id&quot; : &quot;REC1&quot;,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeUnitPrice&quot; : 345,
+    &quot;Product2Id&quot; : &quot;01tB000000268T4IAI&quot;,
+    &quot;_flex&quot; : {
+      &quot;uniqueKey&quot; : &quot;REC1&quot;,
+      &quot;state0element0block_element5_child&quot; : true,
+      &quot;state0element0block_element3block_element1&quot; : true,
+      &quot;state0element0block_element3block_element0&quot; : true,
+      &quot;state0element0block_element3block_element0_child&quot; : true,
+      &quot;state0element0block_element5&quot; : true,
+      &quot;state0element0block_element4_child&quot; : true,
+      &quot;state0element0block_element3block_element1_child&quot; : true,
+      &quot;state0element0block_element4&quot; : true
+    },
+    &quot;ProductUrl&quot; : &quot;https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&amp;m=462313057&amp;s=612x612&amp;w=0&amp;h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdSZIAY&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;PId&quot; : &quot;01tB000000268T4IAI&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;Subtotal&quot; : 345,
+    &quot;uniqueKey&quot; : &quot;REC1&quot;,
+    &quot;ProductCode&quot; : &quot;MC&quot;
+  }, {
+    &quot;PbeName&quot; : &quot;SLA_Finance&quot;,
+    &quot;Id&quot; : &quot;REC2&quot;,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeUnitPrice&quot; : 1200,
+    &quot;Product2Id&quot; : &quot;01tB000000268T5IAI&quot;,
+    &quot;_flex&quot; : {
+      &quot;uniqueKey&quot; : &quot;REC2&quot;,
+      &quot;state0element0block_element5_child&quot; : true,
+      &quot;state0element0block_element3block_element1&quot; : true,
+      &quot;state0element0block_element3block_element0&quot; : true,
+      &quot;state0element0block_element3block_element0_child&quot; : true,
+      &quot;state0element0block_element5&quot; : true,
+      &quot;state0element0block_element4_child&quot; : true,
+      &quot;state0element0block_element3block_element1_child&quot; : true,
+      &quot;state0element0block_element4&quot; : true
+    },
+    &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01uB0000002hdSKIAY&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;PId&quot; : &quot;01tB000000268T5IAI&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;Subtotal&quot; : 1200,
+    &quot;uniqueKey&quot; : &quot;REC2&quot;,
+    &quot;ProductCode&quot; : &quot;SL&quot;
+  } ],
+  &quot;estimatedProducts&quot; : {
+    &quot;ProductsInCart&quot; : null,
+    &quot;subtotalcal&quot; : 0
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTFEstimateProductList_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

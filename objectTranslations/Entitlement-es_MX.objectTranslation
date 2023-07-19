@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Descripción de la asignación del servicio</help>
+        <label>Descripción</label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label>Combo asignación</label>
+        <name>Entitlement_Combo__c</name>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>Principal</label>
+        <name>Primary__c</name>
+    </fields>
+</CustomObjectTranslation>

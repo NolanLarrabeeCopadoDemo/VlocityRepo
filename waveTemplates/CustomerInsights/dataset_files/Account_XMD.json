@@ -1,0 +1,31 @@
+{
+    "dates": [],
+    "derivedDimensions": [],
+    "derivedMeasures": [],
+    "dimensions": [
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Name",
+            "linkTemplate": "/{{row.Id}}",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "recordIdField": "Id",
+            "salesforceActions": [],
+            "salesforceActionsEnabled": false
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Owner.Name",
+            "label": "Account Owner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        }
+    ],
+    "measures": [],
+    "organizations": [],
+    "showDetailsDefaultFields": []
+}

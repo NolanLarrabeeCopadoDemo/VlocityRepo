@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Email</fullName>
+        <color>#E27001</color>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media</fullName>
+        <color>#A53711</color>
+        <default>false</default>
+        <label>Social Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Event</fullName>
+        <color>#F3D904</color>
+        <default>false</default>
+        <label>Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Marketing</fullName>
+        <color>#641CCF</color>
+        <default>false</default>
+        <label>Web Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Marketing</fullName>
+        <color>#78C953</color>
+        <default>false</default>
+        <label>Direct Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Print Marketing</fullName>
+        <color>#0B6FCE</color>
+        <default>false</default>
+        <label>Print Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Mail</fullName>
+        <color>#B6E32E</color>
+        <default>false</default>
+        <label>Direct Mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Multi-Channel</fullName>
+        <default>false</default>
+        <label>Multi-Channel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <color>#419249</color>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

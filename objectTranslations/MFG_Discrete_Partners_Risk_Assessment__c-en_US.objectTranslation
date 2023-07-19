@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Risk Assessment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Risk Assessments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accurate Data and Classification --></label>
+        <name>Accurate_Data_and_Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalates shortages and price increases --></label>
+        <name>Escalates_shortages_and_price_increases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fast response to &quot;Put out fires&quot; --></label>
+        <name>Fast_response_to_Put_out_fires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial health reviews of supply base --></label>
+        <name>Financial_health_reviews_of_supply_base__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global view of collection systems --></label>
+        <name>Global_view_of_collection_systems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has performance monitoring available --></label>
+        <name>Has_performance_monitoring_available__c</name>
+    </fields>
+    <fields>
+        <label><!-- How happy are you with service? --></label>
+        <name>How_happy_are_you_with_service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Information Shared across Supply Chain? --></label>
+        <name>Information_Shared_across_Supply_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Major risks reviewed regularly --></label>
+        <name>Major_risks_reviewed_regularly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manages complexity in supply chain --></label>
+        <name>Manages_complexity_in_supply_chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Risk Score --></label>
+        <name>Overall_Risk_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processes are managed proactively --></label>
+        <name>Processes_are_managed_proactively__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reviews risks around costs regularly --></label>
+        <name>Reviews_risks_around_costs_regularly__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;OP incl Demand Management Reviewed --></label>
+        <name>SOP_incl_Demand_Management_Reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seeks weakest links in Supply Chain --></label>
+        <name>Seeks_weakest_links_in_Supply_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sourcing from Single Supplier Facility --></label>
+        <name>Sourcing_from_Single_Supplier_Facility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Assess</masterLabel>
+            <translation><!-- Assess --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Control Risks</masterLabel>
+            <translation><!-- Control Risks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identify</masterLabel>
+            <translation><!-- Identify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mitigate</masterLabel>
+            <translation><!-- Mitigate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Supplier --></label>
+        <name>Supplier__c</name>
+        <relationshipLabel><!-- Risk Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- What is the quality of product --></label>
+        <name>What_is_the_quality_of_product__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is your likelyhood to renew? --></label>
+        <name>What_is_your_likelyhood_to_renew__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

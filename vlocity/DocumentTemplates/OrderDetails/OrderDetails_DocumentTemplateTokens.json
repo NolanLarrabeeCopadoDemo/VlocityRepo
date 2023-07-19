@@ -1,0 +1,398 @@
+[
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "11c6103a-e7de-eaf1-b27f-03ff414d3fd4",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "orderNumber",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated1828358037"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "39b11b10-4229-2612-cdc1-561f9eec9de8",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountShipState",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-1937756938"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "3f764744-747e-19db-c684-fd9f91768204",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "ContactEmail",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-60882441"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "46c82583-cc67-c69c-bc49-d26933c53461",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "Amount",
+        "TokenPath": "Products",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated479580632"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "509cf77b-5a9c-6197-1b46-9fe063211cba",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "name",
+        "TokenPath": "Products",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated1180361303"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "59af8e43-dad6-aa8b-de35-c3882d625a09",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountBillStreet",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated1760281437"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "624499ba-61a9-85bb-6a42-fc34af5ea380",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "OrderCreatedBy",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-1669765116"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "6ea425cf-2a51-5701-9760-22b6a5a81dd9",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountShipCity",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated126934603"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "8d13e7ce-851a-d02c-a06e-5f6c1023b59b",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountShipPostCode",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-740262482"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "a51aeae8-da28-9686-4790-62d9b1d9da64",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "SccountBillState",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated852292742"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "b77e2d5a-9b80-3e93-8bdc-febb472b07b9",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountShipStreet",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-1652809473"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "b9b3aef1-a822-ff31-45dc-eeba438a26a3",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountShipCountry",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-540734654"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "bbf2dc58-d335-cf72-08e4-d89e7e92a882",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "totalAmount",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated116017222"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "bc64fa5e-4aa3-73f4-7274-dfb80f9ab4aa",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "unitPrice",
+        "TokenPath": "Products",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated1526188290"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "bd19aa34-d064-1935-d1e0-a4d82742341f",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "ContactName",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated1588117086"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "be51f71a-703c-4216-6828-aa2438f96cd1",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "ContactPhone",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated85197422"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "cc57879f-3cfa-ad1e-6f1f-654388e41673",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountBillPostalCode",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated599087087"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "cdeeb5da-7a16-1a45-a855-b37cbe0fce36",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "qty",
+        "TokenPath": "Products",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-506146527"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "d60f3d22-4633-17af-395e-5f11c6917118",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "ContactFax",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated304006784"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "db18ea89-c96c-0d5c-bbc6-2ea44e69574f",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "accountName",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-978672894"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "ddba0f8a-9385-f758-4116-5a7c22e18b59",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountBillCountry",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-350090041"
+    },
+    {
+        "Description": "",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "DocumentTemplateSectionId": "",
+        "GlobalKey": "f4b6116e-8170-dfce-f0f8-8ae8c6c12ac2",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "AccountBillCity",
+        "TokenPath": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateToken",
+        "VlocityRecordSourceKey": "DocumentTemplateToken/Generated-1261294461"
+    }
+]

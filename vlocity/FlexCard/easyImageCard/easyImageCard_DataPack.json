@@ -1,0 +1,32 @@
+{
+    "AuthorName": "SalesforceDemo",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+            },
+            "type": null,
+            "value": {
+            }
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "easyImageCard",
+    "Namespace": "",
+    "OmniUiCardKey": "easyImageCard/SalesforceDemo/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "easyImageCard.json",
+    "SampleDataSourceResponse": "",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/easyImageCard"
+}

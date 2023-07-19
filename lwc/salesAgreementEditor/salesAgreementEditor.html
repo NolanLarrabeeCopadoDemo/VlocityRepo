@@ -1,0 +1,166 @@
+<template>
+
+    <!-- i dunno why this isn't working, he wrote at 2:35am
+    <lightning-progress-indicator type="path" current-step={phase.currentPhase}>
+        <template for:each={phases} for:item="ph">
+            <lightning-progress-step label={ph} value={ph} key={ph}></lightning-progress-step>
+        </template>
+    </lightning-progress-indicator> -->
+
+    <template if:true={errorMessage}>
+        <p class="slds-text-color_error">{errorMessage}</p>
+    </template>
+    <template if:true={isProcessing}>
+        <lightning-spinner></lightning-spinner>
+    </template>
+
+    <!-- PHASE 0 -->
+    <template if:true={phase.is0}>
+        <section class="phaseScreen">
+            <h3 class="slds-text-title_bold">Sales Agreement Details</h3>
+            <lightning-record-edit-form class="saFieldsForm" object-api-name="SalesAgreement">
+                <lightning-input-field field-name="Name" value={defaultSAName} required></lightning-input-field>
+                <lightning-input-field field-name="AccountId"></lightning-input-field>
+                <lightning-input-field field-name="PricebookId" onchange={updatePBId} required></lightning-input-field>
+                <lightning-input-field field-name="StartDate" value={defaultStartDate} required></lightning-input-field>
+                <lightning-input-field field-name="ScheduleFrequency" required></lightning-input-field>
+                <lightning-input-field field-name="ScheduleCount" value="12" required></lightning-input-field>
+                <lightning-button class="slds-m-top_small slds-float_right" label="Next" variant="brand"
+                    onclick={captureSAFieldsFormData}></lightning-button>
+            </lightning-record-edit-form>
+        </section>
+    </template>
+
+    <!-- PHASE 1 - ADD PRODUCTS-->
+    <template if:true={phase.is1}>
+        <section class="phaseScreen">
+            <h3 class="slds-text-title_bold">Add Products</h3>
+            <!-- Table -->
+            <div class="slds-grid slds-grid_vertical-align-end">
+                <c-search-2 class="slds-col slds-p-horizontal_x-small productSearch" master-label="Select Product"
+                    field-names={fieldNames} object-name="PricebookEntry" order-by-clause="Name"
+                    where-clause={whereClause} onselectitem={handleSelectProduct}></c-search-2>
+            </div>
+
+            <div class="slds-p-around_x-small">
+                <table class="dataTable">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="colProdName">Product Name</th>
+                            <th scope="col" class="colMetric">Metric</th>
+                            <th scope="col" class="colTotal">Total</th>
+                            <template for:each={newPeriods} for:item="period">
+                                <th scope="col" class="colPeriod" key={period.startDate}>{period.name}</th>
+                            </template>
+                            <th scope="col" class="actions"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={tableData} for:item="row" for:index="rowIndex">
+                            <tr key={row.id}>
+                                <td>
+                                    <a href={row.productLink}>
+                                        {row.productName}</a>
+                                </td>
+                                <td>
+                                    {row.metric}
+                                </td>
+                                <td>
+                                    <input class="slds-input rowTotal" type="number" min=0 value={row.total}
+                                        data-product-id={row.productId} data-metric={row.metric}
+                                        onchange={handleValueChange}>
+                                </td>
+                                <template for:each={row.vals} for:item="val" for:index="columnIndex">
+                                    <td key={val.startDate} class="tableCell">
+                                        <input type="number" min=0 class="slds-input scheduleInput"
+                                            data-start-date={val.startDate} data-is-future={val.isFuture}
+                                            value={val.value} data-product-id={row.productId} data-metric={row.metric}
+                                            data-column-index={columnIndex} data-original-value={val.value}
+                                            onchange={handleValueChange}>
+                                    </td>
+                                </template>
+                                <td>
+                                    <template if:true={row.productName}>
+                                        <lightning-button-icon icon-name="utility:delete" onclick={handleDeleteProduct}
+                                            data-product-id={row.productId}></lightning-button-icon>
+                                    </template>
+                                </td>
+                            </tr>
+                        </template>
+                        <!-- couldn't figure out how to make this work since it requires a dynamic expression of schedule[metric], so going back to the original setup of rows
+                        <template for:each={saProds} for:item="prod">
+                            <template for:each={metrics} for:item="metric" for:index="metricIndex">
+                                <tr key={prod.productId}>
+                                    <template if:false={metricIndex}>
+                                        <td rowspan={metrics.length} class="productName">
+                                            <a href={prod.productLink}>{prod.productName}</a>
+                                        </td>
+                                    </template>
+                                    <td>
+                                        {metric}
+                                    </td>
+                                    <td>
+                                        <input type="number" min=0 class="slds-input rowTotal" value={prod.total}
+                                            data-product-id={prod.productId} data-metric={metric}
+                                            >
+                                    </td>
+                                    <template for:each={prod.schedules} for:item="sched">
+                                        <td key={sched.startDate}>
+                                            <input type="number" min=0 value={schedule[metric]} class="slds-input scheduleInput" data-product-id={prod.productId} data-metric={metric} data-is-future={sched.isFuture} data-start-date={sched.startDate}>
+                                        </td>
+                                    </template>
+                                </tr>
+                            </template>
+                        </template>-->
+
+                    </tbody>
+                </table>
+                <!-- Card Footer, action buttons-->
+                <hr class>
+                <div class="slds-clearfix slds-p-left_medium">
+                    <lightning-button label="Save" variant="brand" onclick={openWarningModal}
+                        class="slds-float_right slds-p-around_x-small"></lightning-button>
+                    <!--<lightning-button label="Reset" class="slds-float_right slds-p-around_x-small"></lightning-button>-->
+                </div>
+                <!-- Adding this text to a more explicit warning modal
+                <p class="slds-text-color_error slds-text-align_right">Note: clicking 'Save' will create an 'activated'
+                    Sales Agreement and 'active' Orders which cannot be deleted, so make sure your data looks the way
+                    you want it.</p>-->
+            </div>
+        </section>
+    </template>
+
+    <template if:true={phase.is2}>
+        <p class="slds-text-heading_medium">
+            Your Sales Agreement, "{salesAgreement.Name}" has been created. Click <a href={linkToSA}>here</a> to view
+            it, or refresh to create another Sales Agreement.
+            <br>
+            Don't forget to click "Recalculate Actuals" for "Past and current schedules" and then refresh the agreement
+            in order to see the Actuals data!
+        </p>
+    </template>
+
+    <template if:true={showModal}>
+        <div style="height:24rem">
+            <section role="alertdialog" tabindex="0" class="slds-modal slds-fade-in-open slds-modal_prompt">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header slds-theme_warning slds-theme_alert-texture">
+                        <!--<lightning-button-icon icon-name="utility:close" alternative-text="Cancel"></lightning-button-icon>-->
+                        <h2 class="slds-text-heading_medium">Note</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="prompt-message-wrapper">
+                        <p class="slds-text-heading_medium">Clicking 'Save' will create an 'activated'
+                            Sales Agreement and 'active' Orders which cannot be deleted, so make sure your data looks
+                            the way you want it! Do you want to proceed?</p>
+                    </div>
+                    <footer class="slds-modal__footer slds-theme_default">
+                        <lightning-button label="Go back" onclick={handleModalCancel}></lightning-button>
+                        <lightning-button label="Save" variant="brand" onclick={handleModalSave}></lightning-button>
+
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </template>
+</template>

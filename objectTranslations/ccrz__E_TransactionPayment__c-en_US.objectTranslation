@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>ccrz__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>ccrz__AccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>ccrz__Account__c</name>
+        <relationshipLabel><!-- CC Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>ccrz__Address__c</name>
+        <relationshipLabel><!-- CC Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>ccrz__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>ccrz__BillTo__c</name>
+        <relationshipLabel><!-- Bill To Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CC Order --></label>
+        <name>ccrz__CCOrder__c</name>
+        <relationshipLabel><!-- CC Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CC Subscription --></label>
+        <name>ccrz__CCSubscription__c</name>
+        <relationshipLabel><!-- CC Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>ccrz__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>ccrz__Contact__c</name>
+        <relationshipLabel><!-- CC Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CurrencyISOCode --></label>
+        <name>ccrz__CurrencyISOCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Month --></label>
+        <name>ccrz__ExpirationMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Year --></label>
+        <name>ccrz__ExpirationYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Applied For --></label>
+        <name>ccrz__InvoiceAppliedFor__c</name>
+        <relationshipLabel><!-- CC Transaction Payments For --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Applied To --></label>
+        <name>ccrz__InvoiceAppliedTo__c</name>
+        <relationshipLabel><!-- CC Transaction Payments To --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Transaction Payment --></label>
+        <name>ccrz__ParentTransactionPayment__c</name>
+        <relationshipLabel><!-- CC Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>ccrz__PaymentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Amount --></label>
+        <name>ccrz__RequestAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To --></label>
+        <name>ccrz__SoldTo__c</name>
+        <relationshipLabel><!-- Sold To Transaction Payments (Sold To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Transaction Payment --></label>
+        <name>ccrz__SourceTransactionPayment__c</name>
+        <relationshipLabel><!-- Sourced Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stored Payment --></label>
+        <name>ccrz__StoredPayment__c</name>
+        <relationshipLabel><!-- CC Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Storefront --></label>
+        <name>ccrz__Storefront__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Account Number --></label>
+        <name>ccrz__SubAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token --></label>
+        <name>ccrz__Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Code --></label>
+        <name>ccrz__TransactionCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Payment Id --></label>
+        <name>ccrz__TransactionPaymentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Subcode --></label>
+        <name>ccrz__TransactionSubcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Timestamp --></label>
+        <name>ccrz__TransactionTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>ccrz__TransactionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>ccrz__User__c</name>
+        <relationshipLabel><!-- CC Transaction Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Verification Code --></label>
+        <name>ccrz__VerificationCode__c</name>
+    </fields>
+</CustomObjectTranslation>

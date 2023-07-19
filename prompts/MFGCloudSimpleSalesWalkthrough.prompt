@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>MFG Cloud Simple Sales Walkthrough</masterLabel>
+    <promptVersions>
+        <body>Here you can see a list of your recently viewed opportunities. Sometimes it&apos;s helpful to view these in a different way: click the button to the right of the gear at the top right of the page, then select &quot;Kanban.&quot;</body>
+        <customApplication>standard__Manufacturing</customApplication>
+        <delayDays>1</delayDays>
+        <description>A basic, guided walkthrough of sales-centric records and views. Shows the Opportunities tab and links to an Account record (Acme Partners).</description>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>MFG Cloud Simple Sales Walkthrough Step 1</masterLabel>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2020-08-03</startDate>
+        <stepNumber>1</stepNumber>
+        <targetPageKey1>Opportunity</targetPageKey1>
+        <targetPageKey2>list</targetPageKey2>
+        <targetPageType>standard__objectPage</targetPageType>
+        <timesToDisplay>3</timesToDisplay>
+        <title>Opportunities Tab</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>Now we can see the same list, organized by status. This is useful for visualizing several opportunities across stages, which can help us manage our pipeline more efficiently.</body>
+        <customApplication>standard__Manufacturing</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>BottomCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>MFG Cloud Simple Sales Walkthrough Step 2</masterLabel>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>2</stepNumber>
+        <targetPageKey1>Opportunity</targetPageKey1>
+        <targetPageKey2>list</targetPageKey2>
+        <targetPageType>standard__objectPage</targetPageType>
+        <title>Kanban view</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <actionButtonLabel>Account Page</actionButtonLabel>
+        <actionButtonLink>https://mfgmaster224v2.lightning.force.com/lightning/r/Account/0010M00001MxBj1QAF/view</actionButtonLink>
+        <body>From here, we might want to dig into a specific account. We can navigate to an Account record from here by clicking the account name on any of the cards displayed here. Alternately, click the &quot;Account Page&quot; link below to view an example.</body>
+        <customApplication>standard__Manufacturing</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>MFG Cloud Simple Sales Walkthrough Step 3</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>3</stepNumber>
+        <targetPageKey1>Opportunity</targetPageKey1>
+        <targetPageKey2>list</targetPageKey2>
+        <targetPageType>standard__objectPage</targetPageType>
+        <title>Accounts</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

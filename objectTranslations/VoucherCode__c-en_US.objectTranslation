@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Voucher Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Voucher Codes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Loyalty Program Member --></label>
+        <name>LoyaltyProgramMember__c</name>
+        <relationshipLabel><!-- Voucher Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sequential Voucher Number --></label>
+        <name>SequentialCounterNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voucher Code Category --></label>
+        <name>VoucherCodeCategory__c</name>
+        <picklistValues>
+            <masterLabel>Accrual</masterLabel>
+            <translation><!-- Accrual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity</masterLabel>
+            <translation><!-- Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotion</masterLabel>
+            <translation><!-- Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redemption</masterLabel>
+            <translation><!-- Redemption --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Voucher Code Correlation ID --></label>
+        <name>VoucherCodeCorrelationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voucher Code Status --></label>
+        <name>VoucherCodeStatus__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed</masterLabel>
+            <translation><!-- Processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Voucher Code Type --></label>
+        <name>VoucherCodeType__c</name>
+        <picklistValues>
+            <masterLabel>Scan Code</masterLabel>
+            <translation><!-- Scan Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voucher Code</masterLabel>
+            <translation><!-- Voucher Code --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Voucher Code --></label>
+        <name>VoucherCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voucher Definition --></label>
+        <name>VoucherDefinitionId__c</name>
+        <relationshipLabel><!-- Voucher Codes --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

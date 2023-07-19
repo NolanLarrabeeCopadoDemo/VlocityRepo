@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Purchase Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Purchase Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promise Date --></label>
+        <name>Promise_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Date --></label>
+        <name>Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Agreement --></label>
+        <name>Sales_Agreement__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccountRelationshipShareRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessLevel>Read</accessLevel>
+    <accountToCriteriaField>Opportunity.PartnerAccountId</accountToCriteriaField>
+    <description>Sharing rule will share VAR/Reseller opportunities to the Distributor so Distributors can see what is in their pipeline.</description>
+    <entityType>Opportunity</entityType>
+    <masterLabel>View Opportunities of Resellers</masterLabel>
+    <staticFormulaCriteria>Probability &gt;= 0.75</staticFormulaCriteria>
+    <type>Distributor</type>
+</AccountRelationshipShareRule>

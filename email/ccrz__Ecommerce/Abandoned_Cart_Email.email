@@ -1,0 +1,3 @@
+Hello, 
+Cart {!ccrz__E_Cart__c.Name} was abandoned on {!ccrz__E_Cart__c.LastActivityDate} by {!ccrz__E_Cart__c.OwnerFullName}. 
+Contact: {!ccrz__E_Cart__c.ccrz__Contact__c}

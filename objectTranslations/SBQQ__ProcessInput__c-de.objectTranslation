@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Prozesseingabe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Prozesseingaben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Prozesseingabe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Prozesseingaben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Prozesseingabe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Prozesseingaben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Prozesseingabe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Prozesseingaben</value>
+    </caseValues>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <picklistValues>
+            <masterLabel>Mineral Sands</masterLabel>
+            <translation><!-- Mineral Sands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Products</masterLabel>
+            <translation><!-- Other Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titanium Chemicals</masterLabel>
+            <translation><!-- Titanium Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titanium Dioxide (TiO2)</masterLabel>
+            <translation><!-- Titanium Dioxide (TiO2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ultrafine and Specialty Titanium Dioxide</masterLabel>
+            <translation><!-- Ultrafine and Specialty Titanium Dioxide --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Segment --></label>
+        <name>Business_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Market</masterLabel>
+            <translation><!-- Middle Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMB</masterLabel>
+            <translation><!-- SMB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Excavator Type --></label>
+        <name>Excavator_Type__c</name>
+        <picklistValues>
+            <masterLabel>Demolition Excavators</masterLabel>
+            <translation><!-- Demolition Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frontless Excavators</masterLabel>
+            <translation><!-- Frontless Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Excavators</masterLabel>
+            <translation><!-- Large Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Excavators</masterLabel>
+            <translation><!-- Medium Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mini Excavators</masterLabel>
+            <translation><!-- Mini Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Excavators</masterLabel>
+            <translation><!-- Small Excavators --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Power --></label>
+        <name>Gross_Power__c</name>
+    </fields>
+    <fields>
+        <label><!-- Noise Canceling --></label>
+        <name>Noise_Canceling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Application --></label>
+        <name>Primary_Application__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Construction</masterLabel>
+            <translation><!-- General Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landscaping</masterLabel>
+            <translation><!-- Landscaping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Road Work</masterLabel>
+            <translation><!-- Road Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Segment --></label>
+        <name>Product_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Energy, Utilities, and Process Manufacturing</masterLabel>
+            <translation><!-- Energy, Utilities, and Process Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Excavators</masterLabel>
+            <translation><!-- Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts</masterLabel>
+            <translation><!-- Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skid Steer</masterLabel>
+            <translation><!-- Skid Steer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase/Lease --></label>
+        <name>Purchase_Lease__c</name>
+        <picklistValues>
+            <masterLabel>Lease</masterLabel>
+            <translation><!-- Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase</masterLabel>
+            <translation><!-- Purchase --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um diese Prozesseingabe zu aktivieren.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Binary Choice --></label>
+        <name>SBQQ__BinaryChoice__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie an, welche Prozesseingabebedingungen erfüllt sein müssen.</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Alle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>Beliebige</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Angebotsfeld, aus dem der Standardwert für diese Eingabe stammt.</help>
+        <label><!-- Default Field --></label>
+        <name>SBQQ__DefaultField__c</name>
+        <picklistValues>
+            <masterLabel>Bill To Country</masterLabel>
+            <translation>Rechnungsanschrift Land</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship To Country</masterLabel>
+            <translation>Lieferanschrift Land</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie die Reihenfolge an, in der die Prozesseingabe angezeigt werden soll.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie den API-Namen für das Feld aus, in das die Benutzereingabe eingegeben wird.</help>
+        <label><!-- Input Field --></label>
+        <name>SBQQ__InputField__c</name>
+        <picklistValues>
+            <masterLabel>Application__c</masterLabel>
+            <translation><!-- Application__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BinaryChoice__c</masterLabel>
+            <translation>BinaryChoice__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business_Segment__c</masterLabel>
+            <translation><!-- Business_Segment__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excavator_Type__c</masterLabel>
+            <translation><!-- Excavator_Type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gross_Power__c</masterLabel>
+            <translation><!-- Gross_Power__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IntegerInput__c</masterLabel>
+            <translation>IntegerInput__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noise_Canceling__c</masterLabel>
+            <translation><!-- Noise_Canceling__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary_Application__c</masterLabel>
+            <translation><!-- Primary_Application__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Segment__c</masterLabel>
+            <translation><!-- Product_Segment__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Type__c</masterLabel>
+            <translation><!-- Product_Type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase_Lease__c</masterLabel>
+            <translation><!-- Purchase_Lease__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution__c</masterLabel>
+            <translation><!-- Solution__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub_Sector__c</masterLabel>
+            <translation><!-- Sub_Sector__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term__c</masterLabel>
+            <translation><!-- Term__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type__c</masterLabel>
+            <translation><!-- Type__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie einen numerischen Wert ein.</help>
+        <label><!-- Integer Input --></label>
+        <name>SBQQ__IntegerInput__c</name>
+    </fields>
+    <fields>
+        <help>Der Text, der dem Benutzer in der Eingabeaufforderung angezeigt werden soll.</help>
+        <label><!-- Label --></label>
+        <name>SBQQ__Label__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Operator aus, der beim Vergleich der Angabe im &quot;Eingabefeld&quot; mit dem Produktfeld verwendet werden soll.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>enthält</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>endet auf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>größer oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>größer als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>kleiner oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>kleiner als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>ungleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>beginnt mit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Process Input Condition --></label>
+        <name>SBQQ__ProcessInputCondition__c</name>
+        <relationshipLabel><!-- Process Inputs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Feld im Produktobjekt, das zum Filtern von Produkten verwendet wird, die mit dieser Eingabe übereinstimmen.</help>
+        <label><!-- Product Field --></label>
+        <name>SBQQ__ProductField__c</name>
+        <picklistValues>
+            <masterLabel>Application__c</masterLabel>
+            <translation><!-- Application__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guided_Selling__c</masterLabel>
+            <translation><!-- Guided_Selling__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Produktcode</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Produktfamilie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Name</masterLabel>
+            <translation>Produktname</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Segment__c</masterLabel>
+            <translation><!-- Product_Segment__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub_Sector__c</masterLabel>
+            <translation><!-- Sub_Sector__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type__c</masterLabel>
+            <translation><!-- Type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>excavator_type__c</masterLabel>
+            <translation><!-- excavator_type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>primary_application__c</masterLabel>
+            <translation><!-- primary_application__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>product_type__c</masterLabel>
+            <translation><!-- product_type__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sae_gross_power_hp__c</masterLabel>
+            <translation><!-- sae_gross_power_hp__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Angebotsprozess, der Inhaber der Eingabe ist.</help>
+        <label><!-- Quote Process --></label>
+        <name>SBQQ__QuoteProcess__c</name>
+        <relationshipLabel><!-- Process Inputs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>Solution__c</name>
+        <picklistValues>
+            <masterLabel>Batteries</masterLabel>
+            <translation><!-- Batteries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Battery Tools</masterLabel>
+            <translation><!-- Battery Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kits</masterLabel>
+            <translation><!-- Kits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Licenses</masterLabel>
+            <translation><!-- Software Licenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turbines</masterLabel>
+            <translation><!-- Turbines --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Sector --></label>
+        <name>Sub_Sector__c</name>
+        <picklistValues>
+            <masterLabel>Downstream</masterLabel>
+            <translation><!-- Downstream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil Field Services and Equipment</masterLabel>
+            <translation><!-- Oil Field Services and Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Manufacturing</masterLabel>
+            <translation><!-- Process Manufacturing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Engine Oils</masterLabel>
+            <translation><!-- Engine Oils --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gear Oils</masterLabel>
+            <translation><!-- Gear Oils --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greases</masterLabel>
+            <translation><!-- Greases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synthetics</masterLabel>
+            <translation><!-- Synthetics --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Eingabename</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Both Product Field and Operator must be set if either are set. --></errorMessage>
+        <name>SBQQ__ProductFieldAndOperatorSet</name>
+    </validationRules>
+</CustomObjectTranslation>

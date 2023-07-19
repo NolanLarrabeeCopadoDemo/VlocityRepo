@@ -1,0 +1,35 @@
+{
+    "EmbeddedOmniScriptKey": "Account|EstablishAccount|English",
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "MatchorCreateAccountContacts",
+    "OmniProcessId": {
+        "Name": "New Product Registration DC",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Product/RegistrationDC/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "English",
+        "Sub Type": "EstablishAccount",
+        "Type": "Account",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "*Customer Community",
+                        "field": "UserProfile"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Product/RegistrationDC/English/MatchorCreateAccountContacts"
+}

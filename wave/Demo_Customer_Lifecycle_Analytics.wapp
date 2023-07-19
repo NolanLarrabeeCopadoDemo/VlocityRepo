@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assetIcon>/analytics/wave/web/proto/images/app/icons/16.png</assetIcon>
+    <folder>Demo_Customer_Lifecycle_Analytics</folder>
+    <masterLabel>Demo | Customer Lifecycle Analytics</masterLabel>
+    <shares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>majimenez@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </shares>
+    <templateOrigin>SE_Customer_Lifecycle_Analytics_Demo</templateOrigin>
+    <templateVersion>1.0</templateVersion>
+</WaveApplication>

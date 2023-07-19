@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>AAF_Adjustments1</dataset>
+    <dimensions>
+        <field>AdvAcctForecastFactId.AccountId.Name</field>
+        <isDerived>false</isDerived>
+        <label>Account Name</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>AdvAcctForecastFactId.AccountId.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>AdvAcctForecastFactId.AdvAcctForecastSetPartnerId.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AdvAcctForecastFactId.AdvAcctForecastSetPartnerId.Name</field>
+        <isDerived>false</isDerived>
+        <label>Partner Set</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>AdvAcctForecastFactId.AdvAcctForecastSetPartnerId.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>AdvAcctForecastFactId.AdvAcctForecastSetPartnerId.Id</recordIdField>
+        <salesforceActionsEnabled>false</salesforceActionsEnabled>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AdvAcctForecastFactId.ProductId.Name</field>
+        <isDerived>false</isDerived>
+        <label>Product Name</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+</WaveXmd>

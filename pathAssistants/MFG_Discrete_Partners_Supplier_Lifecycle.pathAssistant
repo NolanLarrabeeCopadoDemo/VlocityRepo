@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Account</entityName>
+    <fieldName>MFG_Discrete_Partners_Lifecycle__c</fieldName>
+    <masterLabel>Supplier Lifecycle</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER DEVELOPMENT&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;It is the process of collaborating with suppliers to improve their process and manufacturing capabilities&lt;strong style=&quot;font-size: 13px;&quot;&gt;.&lt;/strong&gt; Supplier development comes into picture when a supplier’s performance is not up to the mark&lt;strong style=&quot;font-size: 13px;&quot;&gt;. &lt;/strong&gt;Giving supplier regular feedback about their performance improves supplier base.&lt;/p&gt;</info>
+        <picklistValueName>Develop</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Annual_Income__c</fieldNames>
+        <fieldNames>AnnualRevenue</fieldNames>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER EVALUATION&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Suppliers fill application forms and submit documents for the evaluation process. Depending on the supplier’s cost of quality, cost of doing business, and other financial &amp;amp; economic aspects, the evaluation determines the onboarding. Other methods to evaluate suppliers include questionnaires, scorecards, site visits, etc.&lt;/p&gt;</info>
+        <picklistValueName>Evaluate</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER RELATIONSHIP MANAGEMENT&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;The primary purpose of SRM is to develop a mutually beneficial relationship that delivers a higher level of competitive advantage and innovation. SRM promotes collaboration between parties resulting in lower costs, reduced risk, better quality, and greater efficiency.&lt;/p&gt;</info>
+        <picklistValueName>Inactive</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER OFF-BOARDING&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;A succession plan is key to ensure that the business is not impacted by the absence of a supplier. Off-boarding may also impact a supplier as a result of a company acquisition or merger.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Maintain</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Closed_Won_Value__c</fieldNames>
+        <fieldNames>Value__c</fieldNames>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER PERFORMANCE MANAGEMENT&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Supplier performance management helps a company spot supplier problems at an early stage and ensures to solve issues on time. Though tracking supplier performance across the global is complicated, but for better visibility, organizations must effectively follow supplier performance and identify the problem areas.&lt;/p&gt;</info>
+        <picklistValueName>Measure</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Programs__c</fieldNames>
+        <fieldNames>Region__c</fieldNames>
+        <fieldNames>Service_Territory__c</fieldNames>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER ON-BOARDING&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;It is necessary to collect supplier information to make the working relationship transparent. Once the supplier is on-boarded, the organization can track updates on supplier information &amp;amp; performance.&lt;/p&gt;</info>
+        <picklistValueName>On-board</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER SELECTION&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;An effective supplier selection process leads to a great outcome. Supplier selection being a critical phase, its objective is to maximize the overall value and develop a long term relationship. It’s success depends on various assessment techniques that are both qualitative and quantitative.&lt;/p&gt;</info>
+        <picklistValueName>Qualify</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Rating_Indicator__c</fieldNames>
+        <fieldNames>Website</fieldNames>
+        <fieldNames>YTD_Revenue_Generated__c</fieldNames>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER RISK MANAGEMENT&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Another vital phase of the supplier lifecycle management is to identify supplier risk at the supplier base to prevent disruptions. Risk management is among the most critical duties of procurement and yet the most overlooked. Risk management is essential for a successful business.&lt;/p&gt;</info>
+        <picklistValueName>Risk</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>NumberOfEmployees</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <fieldNames>Industry</fieldNames>
+        <info>&lt;h4 style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;SUPPLIER SELECTION&lt;/strong&gt;&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;An effective supplier selection process leads to a great outcome. Supplier selection being a critical phase, its objective is to maximize the overall value and develop a long term relationship. It’s success depends on various assessment techniques that are both qualitative and quantitative.&lt;/p&gt;</info>
+        <picklistValueName>Select</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MFG_Discrete_Partners_Supplier</recordTypeName>
+</PathAssistant>

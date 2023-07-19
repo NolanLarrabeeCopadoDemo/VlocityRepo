@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>mcsocsel10__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record ID --></label>
+        <name>mcsocsel10__RecordID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic Profile ID --></label>
+        <name>mcsocsel10__TopicProfileID__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>CC-Warenkorbposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>CC-Warenkorbpositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>CC-Warenkorbposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>CC-Warenkorbpositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>CC-Warenkorbposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>CC-Warenkorbpositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>CC-Warenkorbposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>CC-Warenkorbpositionen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- CC Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Line --></label>
+        <name>Quote_Line__c</name>
+        <relationshipLabel><!-- CC Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quoted Price --></label>
+        <name>QuotedPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absolute Discount --></label>
+        <name>ccrz__AbsoluteDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Amount --></label>
+        <name>ccrz__AdjustmentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Message --></label>
+        <name>ccrz__AvailabilityMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cart Item Group --></label>
+        <name>ccrz__CartItemGroup__c</name>
+        <relationshipLabel><!-- Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cart Item Id --></label>
+        <name>ccrz__CartItemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cart --></label>
+        <name>ccrz__Cart__c</name>
+        <relationshipLabel><!-- Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>ccrz__Category__c</name>
+        <relationshipLabel><!-- Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>ccrz__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coupon --></label>
+        <name>ccrz__Coupon__c</name>
+        <relationshipLabel><!-- Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Display Product --></label>
+        <name>ccrz__DisplayProduct__c</name>
+        <relationshipLabel><!-- CC Cart Items (Display Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Name --></label>
+        <name>ccrz__ExtName__c</name>
+    </fields>
+    <fields>
+        <label><!-- External SKU --></label>
+        <name>ccrz__ExtSKU__c</name>
+    </fields>
+    <fields>
+        <help>VERALTET</help>
+        <label><!-- Is Subscription Selected --></label>
+        <name>ccrz__Is_Subscription_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Label --></label>
+        <name>ccrz__ItemLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Status --></label>
+        <name>ccrz__ItemStatus__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation>Verfügbar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation>Ungültig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Order</masterLabel>
+            <translation>Vorbestellung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item Total --></label>
+        <name>ccrz__ItemTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Item Price --></label>
+        <name>ccrz__OriginalItemPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Quantity --></label>
+        <name>ccrz__OriginalQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Cart Item --></label>
+        <name>ccrz__ParentCartItem__c</name>
+        <relationshipLabel><!-- Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Product --></label>
+        <name>ccrz__ParentProduct__c</name>
+        <relationshipLabel><!-- Cart Items (ParentProductID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent Discount --></label>
+        <name>ccrz__PercentDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>ccrz__Price__c</name>
+    </fields>
+    <fields>
+        <help>Durch Semikolon getrennte Liste von Modifizierungstypen, die das Festlegen des Preises für diese Warenkorbposition beeinflussen</help>
+        <label><!-- Pricing Modifier Types --></label>
+        <name>ccrz__PricingModifierTypes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Type --></label>
+        <name>ccrz__PricingType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Attribute --></label>
+        <name>ccrz__PrimaryAttr__c</name>
+        <relationshipLabel><!-- CC Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ProductType --></label>
+        <name>ccrz__ProductType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>ccrz__Product__c</name>
+        <relationshipLabel><!-- Cart Items (ProductID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>ccrz__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Price Sub Amount --></label>
+        <name>ccrz__RecurringPriceSubAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Price --></label>
+        <name>ccrz__RecurringPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>ccrz__RequestDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Attribute --></label>
+        <name>ccrz__SecondaryAttr__c</name>
+        <relationshipLabel><!-- CC Cart Items (Secondary Attribute) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Selected Attributes --></label>
+        <name>ccrz__SelectedAttr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller --></label>
+        <name>ccrz__Seller__c</name>
+        <relationshipLabel><!-- CC Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Store ID --></label>
+        <name>ccrz__StoreID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Amount --></label>
+        <name>ccrz__SubAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubProdTerm --></label>
+        <name>ccrz__SubProdTerm__c</name>
+        <relationshipLabel><!-- CC Cart Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Laufzeit des Abonnements in Monaten. Wenn dieses Feld leer ist, dann ist diese Warenkorbposition keine abonnierte Position.</help>
+        <label><!-- Subscription Duration (In Months) --></label>
+        <name>ccrz__Subscription_Duration__c</name>
+    </fields>
+    <fields>
+        <help>Die Frequenz dieses Abonnements in Tagen. Falls nicht auf der Benutzungsoberfläche ausgewählt, wird dieser Wert als Standardwert für die Abonnementsfrequenz des Produkts verwendet.</help>
+        <label><!-- Subscription Frequency --></label>
+        <name>ccrz__Subscription_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tertiary Attribute --></label>
+        <name>ccrz__TertiaryAttr__c</name>
+        <relationshipLabel><!-- CC Cart Items (Tertiary Attribute) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unit Of Measure --></label>
+        <name>ccrz__UnitOfMeasure__c</name>
+    </fields>
+    <fields>
+        <label><!-- cart item type --></label>
+        <name>ccrz__cartItemType__c</name>
+        <picklistValues>
+            <masterLabel>Coupon</masterLabel>
+            <translation>Gutschein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation>Haupt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation>Neben</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quoted Quantity --></label>
+        <name>quotedQty__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>CartItemAutoNumber</nameFieldLabel>
+</CustomObjectTranslation>

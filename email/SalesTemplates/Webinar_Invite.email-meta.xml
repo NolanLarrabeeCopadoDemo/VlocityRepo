@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mass Email template for Contacts</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*Webinar Invite</name>
+    <style>none</style>
+    <subject>Upcoming Webinar Just For You!</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I would like to extend a personal invitation to our upcoming webinar.
+
+The topic is all about the importance of cyber-security in an increasingly digital world.
+
+If you&apos;re interested, please click HERE to register.
+
+I look forward to seeing you there!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

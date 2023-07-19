@@ -1,0 +1,80 @@
+<aura:component controller="LightningAssetsControllerRecId" implements="lightning:isUrlAddressable,force:hasRecordId,flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes">
+    <ltng:require styles="/resource/SLDS100/assets/styles/salesforce-lightning-design-system-ltng.css" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!--aura:handler name="init2" value="{!this}" action="{!c.doInit2}"/-->    
+    <aura:attribute name="Assets" type="Asset[]"/>
+    <aura:attribute name="pageReference" type="Object"/>    
+    <aura:attribute name="baseUrl" type="String" default=""></aura:attribute>
+    <aura:attribute name="cbaseURL" type="String"/>    
+    <aura:attribute name="headerImage" type="String"/> 
+    <aura:attribute name="headerImageHeight" type="String"/> 
+	<aura:attribute name="recordId" type="String"/>     
+    <!--div style="width:25%;"><img src="{!v.headerImage}"/></div-->
+    <div class="slds slds-box slds-grid slds-grid_vertical slds-align_absolute-center" style="background-color:white;border-radius:8px 8px 8px 8px;">
+         <div>
+            <img src="{!v.headerImage}" style="{!'height:' + v.headerImageHeight +';padding:5px;'}"/>
+        </div>
+        <aura:iteration items="{!v.Assets}" var="item">
+                <div>
+                    <div class="slds-col slds-align_absolute-center assetBox" >
+                        <span>
+                            <div>
+                                <img src="{!item.Product2.MFG_Image_URL__c}" style="max-height:100px;"/>
+                                <div class="slds-align_absolute-center assetBox2">{!item.Name}</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div style="margin-top:10px;" class="slds-col">
+                        <span>                        
+                            <table class="slds-table slds-table_cell-buffer" style="background-color:rgba(244, 246, 254, 0);">
+                                <tr class="slds-line-height_reset ">
+                                    <td  scope="row">
+                                        <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps">Product</div>
+                                    </td>    
+                                    <td   scope="row">
+                                        <div style="color:#267FAB;" class="slds-text-body_small slds-truncate slds-align_absolute-left">
+                                            <a href="{!item.Map__c}">{!item.Product2.Name}</a></div>
+                                    </td> 
+                                </tr>                            
+                                <tr class="slds-line-height_reset ">
+                                    <td  scope="row">
+                                        <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps">Location</div>
+                                    </td>    
+                                    <td   scope="row">
+                                        <div style="color:#267FAB;" class="slds-text-body_small slds-truncate slds-align_absolute-left">
+                                            <a href="{!item.Map__c}">{!item.Location.Name}</a></div>
+                                    </td> 
+                                </tr>                            
+                                <tr>
+                                    <td   scope="row">
+                                        <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps">Warranty</div>
+                                    </td>    
+                                    <td   scope="row">
+                                        <div style="color:#267FAB;" class="slds-text-body_small slds-truncate slds-align_absolute-left"><img src="{!item.WarranyIndPublic__c}" style="height:20px;"/>&nbsp;{!item.Entitlement_Status__c}</div>
+                                    </td>  
+                                </tr>
+                                <!--tr>
+                                    <td   scope="row">
+                                        <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps">Srvc. Status</div>
+                                    </td>    
+                                    <td   scope="row">
+                                        <div style="color:#267FAB;" class="slds-text-body_small slds-truncate slds-align_absolute-left"><img src="{!item.Status_Indicator_URL_Public__c}" style="height:20px;"/>&nbsp;{!item.Asset_Status__c}</div>
+                                    </td>                   
+                                </tr-->  
+                                <tr>
+                                    <td scope="row">
+                                        <div style="color:#17479E;" class="slds-truncate slds-align_absolute-left slds-text-title_caps">Op. Status</div>
+                                    </td>    
+                                    <td scope="row">
+                                        <div style="color:#267FAB;"  class="slds-text-body_small slds-truncate slds-align_absolute-left"><img src="{!item.Status_Indicator_URL_Public__c }" style="height:20px;"/>&nbsp;{!item.MFG_IDO_IOT_Status__c }</div>
+                                    </td>                   
+                                </tr>                                  
+                            </table>
+                        </span>
+                    </div>
+                </div>
+            </aura:iteration>
+        <table>
+        </table>         
+    </div>            
+</aura:component>

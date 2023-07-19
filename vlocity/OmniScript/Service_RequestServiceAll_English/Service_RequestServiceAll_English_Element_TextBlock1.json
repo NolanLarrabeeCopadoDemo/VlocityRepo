@@ -1,0 +1,41 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "TextBlock1",
+    "OmniProcessId": {
+        "Name": "Service",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Service/RequestServiceAll/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "AssetIdentification",
+        "OmniProcessId": {
+            "Name": "Service",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Service/RequestServiceAll/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Service/RequestServiceAll/English/AssetIdentification",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "AssetIdentification",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock1",
+        "sanitize": false,
+        "show": null,
+        "text": "<div>\n<h3 class=\"slds-box slds-page-header\">Details at a Glance</h3>\n<div class=\"slds-box slds-theme_success slds-theme_alert-texture slds-float_left\">\n<div><strong>Asset Name</strong>: %Name%</div>\n<div><strong>Asset Status</strong>: %Status%</div>\n<div><strong>Asset Purchase Date</strong>: %Purchase Date%</div>\n<div><strong>Asset Install Date</strong>:&nbsp; %Install Date%</div>\n<div><strong>Asset Serial Number</strong>:&nbsp; %Serial Number%</div>\n</div>\n<div>%Image%</div>\n</div>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Service/RequestServiceAll/English/TextBlock1"
+}

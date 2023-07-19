@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectHierarchyRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <mappingType>Support</mappingType>
+    <masterLabel>ObjectHierarchyRelationship</masterLabel>
+    <parentObjectMapping>
+        <inputObject>ManufacturingProgram</inputObject>
+        <mappingFields>
+            <inputField>Account</inputField>
+            <outputField>Account</outputField>
+        </mappingFields>
+        <outputObject>Opportunity</outputObject>
+    </parentObjectMapping>
+    <parentRecord>CmpForecastFactToOpportunity</parentRecord>
+    <sourceReferenceRelaFieldName>ManufacturingProgram</sourceReferenceRelaFieldName>
+    <usageType>TransformationMapping</usageType>
+</ObjectHierarchyRelationship>

@@ -1,0 +1,50 @@
+<apex:page controller="PardotDemoOrg.PardotDemoOrgController" action="{!init}">
+    <apex:form style="width:700px">
+
+        <apex:pageBlock title="Request Pardot Demo Org" rendered="{!shouldRenderPdoRequest}">
+            <apex:pageMessage escape="false" severity="warning" strength="1" summary="Use a <a href=https://support.google.com/mail/answer/12096?hl=en target=_blank style=margin:0;font-size:inherit;color:inherit;>+alias</a> here! User Email must be a functioning @salesforce address and unique across <i>all</i> Pardot orgs." />
+            <br />
+
+            <apex:messages />
+
+            <apex:pageBlockSection columns="1">
+                <apex:inputText value="{!pardotDemoOrgInputs.email}" id="email" label="User Email" required="true" size="40" html-placeholder="email+alias@salesforce.com" />
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1">
+                <apex:inputSecret value="{!pardotDemoOrgInputs.password}" id="password" onkeyup="PasswordValidator.validatePassword(this)" label="Password" required="true" size="40" html-placeholder="" />
+            </apex:pageBlockSection>
+            <span id="password-too-weak-label" style="position: relative; top: -21px; right: -390px; color: #cf4f43;">&nbsp;</span>
+            <p style="margin: -15px 0px 5px 132px; color: #A0A0A0">Password must include upper/lowercase letters, a number, and must be at least 8 characters long.</p>
+            <apex:pageBlockSection columns="1">
+                <apex:inputSecret value="{!pardotDemoOrgInputs.confirmPassword}" id="confirmPassword" label="Confirm Password" required="true" size="40" html-placeholder="" />
+            </apex:pageBlockSection>
+            
+
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!save}" value=" Request Pardot Demo Org " />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Request Pardot Demo Org" rendered="{!shouldRenderPdoSetup}">
+            <apex:pageMessage severity="confirm" strength="1" summary="Pardot Demo Org request was successful!" />
+
+            <apex:pageBlockSection columns="1">             
+                <p>Next, we will walk you through the following setup items:</p>
+                <ol>
+                    <li>Enable SSO between your SDO and your new PDO</li>
+                    <li>Enable the Salesforce connector in your new PDO</li>
+                </ol>          
+                <p>Before continuing, make sure you have your credentials to both your new PDO and SDO - you will need them.</p>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!setupPdo}" value=" Setup Pardot Demo Org " />
+            </apex:pageBlockButtons>
+
+            <apex:iframe src="{!$Label.PardotDemoOrg__Pardot_Base_Url}/user/logout" height="0" width="0" />
+        </apex:pageBlock>
+    </apex:form>   
+    <apex:includeScript value="{!$Resource.PardotDemoOrg__PasswordValidator}"/>
+  
+</apex:page>

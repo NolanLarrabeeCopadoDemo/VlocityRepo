@@ -1,0 +1,254 @@
+{
+  "templateType" : "app",
+  "label" : "Manufacturing Analytics",
+  "name" : "Manufacturing_Analytics",
+  "description" : "Analytics for Manufacturing app lets account managers visualize all aspects of their business. Insights based on data from the manufacturing cloud keep you on top of your accounts health, sales agreements, orders, and contracts.",
+  "assetVersion" : 47.0,
+  "variableDefinition" : "variables.json",
+  "uiDefinition" : "ui.json",
+  "rules" : [
+    {
+      "type" : "templateToApp",
+      "file" : "template-to-app-rules.json"
+    },
+    {
+      "type" : "appToTemplate",
+      "file" : "app-to-template-rules.json"
+    }
+  ],
+  "releaseInfo" : {
+    "templateVersion" : "1.8",
+    "notesFile" : "releaseNotes.html"
+  },
+  "folderDefinition" : "folder.json",
+  "externalFiles" : [ ],
+  "lenses" : [ ],
+  "dashboards" : [
+    {
+      "label" : "Account Insights - Agreements Performance",
+      "name" : "Account_Insights_Agreements_Performance_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Account_Insights_Agreements_Performance.json"
+    },
+    {
+      "label" : "Account Insights - Order Status",
+      "name" : "Account_Insights_Order_Status_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Account_Insights_Order_Status.json"
+    },
+    {
+      "label" : "Account Insights - Product Sales & Pricing",
+      "name" : "Account_Insights_Product_Sales_Pricing_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Account_Insights_Product_Sales_Pricing.json"
+    },
+    {
+      "label" : "Accounts Health",
+      "name" : "Accounts_Health_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Accounts_Health.json"
+    },
+    {
+      "label" : "Embdedded - Manufacturing Home Page",
+      "name" : "Manufacturing_Home_Page_Embdedded1_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Manufacturing_Home_Page_Embdedded1.json"
+    },
+    {
+      "label" : "Embedded - Manufacturing Agreement Performance",
+      "name" : "Manufacturing_Agreement_Performance_Embedded_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Manufacturing_Agreement_Performance_Embedded.json"
+    },
+    {
+      "label" : "Embedded - Manufacturing Product Performance",
+      "name" : "Manufacturing_Product_Performance_Embedded_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Manufacturing_Product_Performance_Embedded.json"
+    },
+    {
+      "label" : "Embedded - Sales Agreement Product Performance",
+      "name" : "Sales_Agreement_Product_Performance_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Sales_Agreement_Product_Performance.json"
+    },
+    {
+      "label" : "Embedded - Sales Agreement Revenue Realization",
+      "name" : "Sales_Agreement_Revenue_Realization_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Sales_Agreement_Revenue_Realization.json"
+    },
+    {
+      "label" : "Key Account Manager Home",
+      "name" : "Key_Account_Manager_Home_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Key_Account_Manager_Home.json"
+    },
+    {
+      "label" : "Pricing Insights",
+      "name" : "Pricing_Insights2_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Pricing_Insights2.json"
+    },
+    {
+      "label" : "Product Performance",
+      "name" : "Product_Performance_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Product_Performance.json"
+    },
+    {
+      "label" : "Sales Agreements Insights",
+      "name" : "Sales_Agreements_Insights_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Sales_Agreements_Insights.json"
+    },
+    {
+      "label" : "Whitespace Analysis",
+      "name" : "Whitespace_Analysis_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Whitespace_Analysis.json"
+    }
+  ],
+  "eltDataflows" : [
+    {
+      "label" : "Manufacturing Analytics Dataflow",
+      "name" : "Manufacturing_Analytics_Dataflow1",
+      "condition" : "${Variables.Overrides.createDataflow}",
+      "file" : "dataflow/Manufacturing_AnalyticsDataflow.json"
+    }
+  ],
+  "datasetFiles" : [
+    {
+      "label" : "MFG_Account",
+      "name" : "MFG_Account_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/MFG_Account_XMD.json"
+    },
+    {
+      "label" : "MFG_Contract",
+      "name" : "MFG_Contract_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/MFG_Contract_XMD.json"
+    },
+    {
+      "label" : "MFG_Order",
+      "name" : "MFG_Order_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/MFG_Order_XMD.json"
+    },
+    {
+      "label" : "MFG_OrderProduct",
+      "name" : "MFG_OrderProduct_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/MFG_OrderProduct_XMD.json"
+    },
+    {
+      "label" : "MFG_PricebookEntry",
+      "name" : "MFG_PricebookEntry_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/MFG_PricebookEntry_XMD.json"
+    },
+    {
+      "label" : "MFG_SalesAgreement",
+      "name" : "MFG_SalesAgreement_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/MFG_SalesAgreement_XMD.json"
+    },
+    {
+      "label" : "MFG_SalesAgreementProduct",
+      "name" : "MFG_SalesAgreementProduct_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/MFG_SalesAgreementProduct_XMD.json"
+    },
+    {
+      "label" : "MFG_SalesAgreementProductSchedule",
+      "name" : "MFG_SalesAgreementProductSchedule_tp",
+      "condition" : "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd" : "dataset_files/MFG_SalesAgreementProductSchedule_XMD.json"
+    }
+  ],
+  "storedQueries" : [ ],
+  "imageFiles" : [
+    {
+      "name" : "Rightarrowpngpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/Rightarrowpng.png"
+    },
+    {
+      "name" : "downarrowpngpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/downarrowpng.png"
+    },
+    {
+      "name" : "Rightarrowpngpng1",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/Rightarrowpng.png"
+    },
+    {
+      "name" : "manufacturing_app_icon2xpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/manufacturing_app_icon@2x.png"
+    },
+    {
+      "name" : "Powered_by_EA_grey2xpngpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/Powered_by_EA_grey2xpng.png"
+    },
+    {
+      "name" : "Powered_by_EA_grey2xpngpng4",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/Powered_by_EA_grey2xpng.png"
+    },
+    {
+      "name" : "Powered_by_EA_grey2xpngpng5",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/Powered_by_EA_grey2xpng.png"
+    },
+    {
+      "name" : "unnamedpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/unnamed.png"
+    },
+    {
+      "name" : "unnamedpng1",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/unnamed.png"
+    },
+    {
+      "name" : "Powered_by_analytics_bannerpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/Powered_by_analytics_banner.png"
+    },
+    {
+      "name" : "manufacturing_app_icon2xpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/manufacturing_app_icon@2x.png"
+    },
+    {
+      "name" : "manufacturing_app_iconpng1",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/manufacturing_app_icon.png"
+    },
+    {
+      "name" : "manufacturing_app_iconpng8",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/manufacturing_app_icon.png"
+    },
+    {
+      "name" : "manufacturing_app_iconpng11",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/manufacturing_app_icon.png"
+    }
+  ],
+  "extendedTypes" : { },
+  "templateDependencies" : [ ],
+  "icons" : {
+    "appBadge" : {
+      "name" : "16.png"
+    },
+    "templateBadge" : {
+      "name" : "default.png"
+    },
+    "templatePreviews" : [ ]
+  }
+}

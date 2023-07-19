@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Groupe de compte CC</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Groupes de compte CC</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group ID --></label>
+        <name>ccrz__AccountGroupID__c</name>
+    </fields>
+    <fields>
+        <help>Uniquement pour usage interne de B2B Commerce, sauf lors de l’utilisation avec ccApiTestData.</help>
+        <label><!-- DataId --></label>
+        <name>ccrz__DataId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desc --></label>
+        <name>ccrz__Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- PriceList Selection Method --></label>
+        <name>ccrz__PriceListSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Best Price</masterLabel>
+            <translation>Meilleur prix</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sequence Order</masterLabel>
+            <translation>Ordre de séquence</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Theme Name --></label>
+        <name>ccrz__ThemeName__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du groupe de compte</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

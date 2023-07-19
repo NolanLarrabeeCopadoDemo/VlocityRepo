@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>B2B_Guest_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>B2B Guest Access</label>
+        <sharedTo>
+            <guestUser>B2B_Commerce_Classic_Badger_Equipment</guestUser>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>OwnerId</field>
+            <operation>equals</operation>
+            <value>005Hr00000EdGkAIAV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>ccrz__Owner__c</field>
+            <operation>equals</operation>
+            <value>005Hr00000EdGkAIAV</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>B2B_Guest_Access_2</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>B2B Guest Access 2</label>
+        <sharedTo>
+            <guestUser>B2B_Commerce_Classic_Badger_Parts</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>OwnerId</field>
+            <operation>equals</operation>
+            <value>005Hr00000EdGkAIAV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>ccrz__Owner__c</field>
+            <operation>equals</operation>
+            <value>005Hr00000EdGkAIAV</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

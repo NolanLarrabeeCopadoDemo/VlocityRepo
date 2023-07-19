@@ -1,0 +1,32 @@
+{
+    "CustomJavaScript": "doc_Generation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsLocked": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "MayEdit": true,
+    "Name": "IPgetTemplateDetailsForDocGen",
+    "OmniProcessElement": [
+        "doc_Generation_Element_getObjectType.json",
+        "doc_Generation_Element_templatesLoop.json",
+        "doc_Generation_Element_FetchDocumentTemplateFromName.json",
+        "doc_Generation_Element_omniStudioTemplatesLoop.json",
+        "doc_Generation_Element_OmniStudioExtractDocumentTemplateByName.json",
+        "doc_Generation_Element_MergeAllTemplates.json",
+        "doc_Generation_Element_ResponseAction.json",
+        "doc_Generation_Element_ResponseAction2.json"
+    ],
+    "OmniProcessKey": "doc_Generation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "doc_Generation_PropertySetConfig.json",
+    "SubType": "Generation",
+    "Type": "doc",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/doc/Generation/Procedure",
+    "WebComponentKey": "e8f2512c-8805-bb9b-53e9-618727d6f043"
+}

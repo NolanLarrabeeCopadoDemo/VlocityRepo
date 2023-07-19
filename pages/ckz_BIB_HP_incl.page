@@ -1,0 +1,22 @@
+<!--
+ - Created by brandon.rogers on 12/13/18.
+ -->
+
+<apex:page id="ckz_BIB_HP_incl" sidebar="false" showHeader="false" standardStylesheets="false">
+
+    <c:cc_HeroCarousel />
+    <c:ckz_HomePageRecentOrders />
+    <!--<c:ckz_CartUpload />-->
+    <c:cc_HP_SpotlightProducts />
+    <c:cc_homepageOrderTemplate />
+
+    <script type="text/javascript">
+        $(function () {
+            CCRZ.pubSub.on('view:quickWishlistView:refresh', function () {
+                //Collapse HP Wishlists
+                $('#collapseTemplateEntry').removeClass('in');
+            });
+        });
+    </script>
+
+</apex:page>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>AccountId</field>
+        <formula>WorkOrder.Account.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Amount</field>
+        <formula>900000</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>CloseDate</field>
+        <formula>today() + 30</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Description</field>
+        <formula>&quot;Asset is showing signs of wear and age is beyond useful life.  Should be upgraded to new model.&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>LeadSource</field>
+        <literalValue>Field Service</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&quot;Asset Upgrade - Modernization Project at &quot; &amp; WorkOrder.Account.Name</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>NextStep</field>
+        <formula>&quot;Reach out to Lauren to discuss project details.&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>OwnerId</field>
+        <formula>WorkOrder.Account.OwnerId</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>StageName</field>
+        <literalValue>Proposal/Quote</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type</field>
+        <literalValue>New Business</literalValue>
+    </fieldOverrides>
+    <label>Create Sales Referral</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>AccountId</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>CloseDate</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>StageName</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Amount</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>NextStep</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Opportunity</targetObject>
+    <targetParentField>Work_Order__c</targetParentField>
+    <targetRecordType>Opportunity.SimpleOpportunity</targetRecordType>
+    <type>Create</type>
+</QuickAction>

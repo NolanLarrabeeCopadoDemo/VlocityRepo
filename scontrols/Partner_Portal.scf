@@ -1,0 +1,14 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function redirect(){
+    window.location = "/secur/login_portal.jsp?orgId=00DHr0000010MFf&portalId=060Hr000000dZU1"
+}
+//-->
+</script>
+</head>
+<body onLoad="javascript:redirect()">
+
+</body>
+</html>

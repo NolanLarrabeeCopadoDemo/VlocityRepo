@@ -1,0 +1,11 @@
+{
+    "Total": "Text",
+    "selectedProducts": {
+        "PriceBookEntryName": "Text",
+        "PriceBookEntryUnitPrice": null,
+        "Product2Id": "Text",
+        "ProductUrl": "Text",
+        "Qty": null,
+        "Subtotal": "Text"
+    }
+}

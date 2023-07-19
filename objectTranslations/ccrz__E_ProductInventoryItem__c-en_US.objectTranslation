@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Availability Message RT --></label>
+        <name>ccrz__AvailabilityMessageRT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Message --></label>
+        <name>ccrz__AvailabilityMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inventory Location code --></label>
+        <name>ccrz__InventoryLocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Item --></label>
+        <name>ccrz__ProductItem__c</name>
+        <relationshipLabel><!-- Product Inventory Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qty Available --></label>
+        <name>ccrz__QtyAvailable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>ccrz__Status__c</name>
+        <picklistValues>
+            <masterLabel>Back Order</masterLabel>
+            <translation><!-- Back Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Stock</masterLabel>
+            <translation><!-- In Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Stock</masterLabel>
+            <translation><!-- Out of Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Order</masterLabel>
+            <translation><!-- Pre Order --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

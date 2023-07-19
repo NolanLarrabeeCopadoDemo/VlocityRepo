@@ -1,0 +1,2 @@
+Membership Number,Account,Member Status,Enrollment Channel,Enrollment Date,Partnership Start Date,Percentage of Team Trained,Number Of Quarterly Conference Attended,Brand Coverage,Loyalty Program,Loyalty Tier Group        ,Loyalty Tier        ,Effective Date        ,Tier Expiration Date        ,Loyalty Currency Name,Points Balance
+24345671,Acme Corporation,Active,Web,2019-6-20,2020-5-20,60,5,60,Program Name Test 1,Test Tier Group 1,Silver,2020-5-20,2020-5-20,Test Currency 11,15000

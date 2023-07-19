@@ -1,0 +1,117 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'$Vlocity.NULL'",
+        "GlobalKey": "DREXFetchPriceBookEntriesCustom0jI8Y000000005aUAAItem0",
+        "InputFieldName": "Id",
+        "InputObjectName": "Pricebook2",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DREXFetchPriceBookEntries",
+        "OmniDataTransformationId": {
+            "Name": "DREXFetchPriceBookEntries",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREXFetchPriceBookEntries",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Pricebookrec",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'TRUE'",
+        "GlobalKey": "DREXFetchPriceBookEntriesCustom0jI8Y000000005aUAAItem1",
+        "InputFieldName": "IsActive",
+        "InputObjectName": "Pricebook2",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DREXFetchPriceBookEntries",
+        "OmniDataTransformationId": {
+            "Name": "DREXFetchPriceBookEntries",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREXFetchPriceBookEntries",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Pricebookrec",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREXFetchPriceBookEntriesCustom0jI8Y000000005aUAAItem2",
+        "InputFieldName": "Pricebookrec:Id",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DREXFetchPriceBookEntries",
+        "OmniDataTransformationId": {
+            "Name": "DREXFetchPriceBookEntries",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREXFetchPriceBookEntries",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriceBookIdSF",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREXFetchPriceBookEntriesCustom0jI8Y000000005aUAAItem4",
+        "IsDisabled": true,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DREXFetchPriceBookEntries",
+        "OmniDataTransformationId": {
+            "Name": "DREXFetchPriceBookEntries",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREXFetchPriceBookEntries",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "PriceBookrec",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREXFetchPriceBookEntriesCustom0jI8Y000000005aUAAItem3",
+        "InputFieldName": "Pricebookrec:Name",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DREXFetchPriceBookEntries",
+        "OmniDataTransformationId": {
+            "Name": "DREXFetchPriceBookEntries",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREXFetchPriceBookEntries",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriceBookrecName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

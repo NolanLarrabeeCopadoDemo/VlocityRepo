@@ -1,0 +1,37 @@
+{
+  "name" : "CustomerInsights",
+  "label" : "Customer Insights",
+  "featuredAssets": {
+    "default": {
+      "assets": [
+        {
+          "id": "${App.Dashboards['Gallery - Activity Components'].Id}"
+        },
+        {
+          "id": "${App.Dashboards['Gallery - Case Components'].Id}"
+        },
+        {
+          "id": "${App.Dashboards['Gallery - Lead Components'].Id}"
+        },
+        {
+          "id": "${App.Dashboards['Gallery - Opportunity Components'].Id}"
+        },
+        {
+          "id": "${App.Dashboards['Gallery - Product Components'].Id}"
+        },
+        {
+          "id": "${App.Dashboards['Account Embedded'].Id}"
+        },
+        {
+          "id": "${App.Dashboards['Opportunity Embedded'].Id}"
+        },
+        {
+          "id": "${App.Dashboards['Sales Performnance'].Id}"
+        },
+        {
+          "id": "${App.Dashboards['Service Performnance'].Id}"
+        }
+      ]
+    }
+  }
+}

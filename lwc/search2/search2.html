@@ -1,0 +1,52 @@
+<template>
+    <div class={includeCardClass}>
+    <div class="slds-form-element">
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container">
+                <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="true"
+                    aria-haspopup="listbox" role="combobox">
+                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right slds-m-bottom_none"
+                        role="none">
+                        <lightning-input type="search" label={masterLabel}
+                            class="slds-m-bottom_none slds-p-bottom_none"
+                            aria-controls="itemlist" role="textbox" placeholder={placeholder} onfocus={handleFocus}
+                            onblur={handleBlur} onkeyup={handleSearchKeyUp} onchange={handleSearchChange} value={value}
+                            disabled={searchDisabled}>
+                        </lightning-input>
+                        
+                    </div>
+                    <div id="itemlist" class="slds-dropdown slds-dropdown_length-10 slds-dropdown_fluid slds-m-top_none"
+                        role="listbox">
+                        <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                            <template for:each={items} for:item="item">
+                                <c-search-box-item label={item.label} sublabel={item.sublabel} value={item.value}
+                                    icon={item.icon} key={item.value} hidden={item.hidden} search-text={searchText}
+                                    index={item.index} onmousedown={handleItemSelect} data-value={item.value}
+                                    externally-filtered={item.externallyFiltered}>
+                                    <!--onmousedown={handleItemSelect} data-value={item.value}-->
+                                </c-search-box-item>
+                            </template>
+                            <template if:true={noMatchFound}>
+                                <li role="presentation" class="slds-listbox__item">
+                                    <span
+                                        class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                                        role="option">
+                                        <span class="slds-media__body">
+                                            <span class="slds-listbox__option-text slds-listbox__option-text_entity">
+                                                {noMatchFoundString}
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <template if:true={displayTable}>
+        <lightning-datatable columns={tableColumns} data={tableData} key-field="id"></lightning-datatable>
+    </template>
+    </div>    
+</template>

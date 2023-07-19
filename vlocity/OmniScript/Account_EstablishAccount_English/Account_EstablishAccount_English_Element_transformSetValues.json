@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": true,
+    "MayEdit": true,
+    "Name": "transformSetValues",
+    "OmniProcessId": {
+        "Name": "MatchorCreateAccountContacts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Account/EstablishAccount/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "AccountName": "%newAccount:newAccountName%",
+            "BillingCity": "%newAccount:newAddress-Block:newCity%",
+            "BillingCountry": "%newAccount:newAddress-Block:newCountry%",
+            "BillingState": "%newAccount:newAddress-Block:newState%",
+            "BillingStreet": "%newAccount:newAddress-Block:newStreet%",
+            "Contact": "%newAccount:ContactId%",
+            "Email": "%newAccount:AddContactBlock:authEmail%",
+            "FirstName": "=%newAccount:AddContactBlock:authFirstName%",
+            "LastName": "%newAccount:AddContactBlock:authLastName%",
+            "MobilePhone": "%newAccount:AddContactBlock:authMobilePhone%",
+            "Website": "=%newAccount:newWebSite%"
+        },
+        "label": "Transform for common DR",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Account/EstablishAccount/English/transformSetValues"
+}

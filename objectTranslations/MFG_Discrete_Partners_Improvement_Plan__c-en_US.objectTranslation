@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Improvement Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Improvement Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Items --></label>
+        <name>Action_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Feedback --></label>
+        <name>Internal_Feedback__c</name>
+        <relationshipLabel><!-- Improvement Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Summary Steps --></label>
+        <name>Summary_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supplier --></label>
+        <name>Supplier__c</name>
+        <relationshipLabel><!-- Improvement Plans --></relationshipLabel>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

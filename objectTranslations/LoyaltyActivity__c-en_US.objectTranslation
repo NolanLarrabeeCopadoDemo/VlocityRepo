@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Engagement Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Engagement Activities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activity Category --></label>
+        <name>ActivityCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Journal SubType --></label>
+        <name>JournalSubType__c</name>
+        <relationshipLabel><!-- Engagement Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Points Accrued --></label>
+        <name>PointsAccrued__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

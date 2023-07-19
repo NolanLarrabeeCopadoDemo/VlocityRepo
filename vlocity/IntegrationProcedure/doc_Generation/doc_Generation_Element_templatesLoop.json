@@ -1,0 +1,31 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "templatesLoop",
+    "OmniProcessId": {
+        "Name": "IPgetTemplateDetailsForDocGen",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/doc/Generation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%getObjectType:isNewObject% <> 'true'",
+        "label": "LoopBlock1",
+        "loopList": "templateNames",
+        "loopOutput": {
+            "Id": "%FetchDocumentTemplateFromName:Id%",
+            "Name": "%FetchDocumentTemplateFromName:Name%",
+            "TemplateType": "%FetchDocumentTemplateFromName:TemplateType%",
+            "VersionNumber": "%FetchDocumentTemplateFromName:VersionNumber%",
+            "isNewObject": "%getObjectType:isNewObject%"
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/doc/Generation/Procedure/templatesLoop"
+}

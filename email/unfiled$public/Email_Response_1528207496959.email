@@ -1,0 +1,11 @@
+Dear {{{Recipient.FirstName}}},<br />
+<br />
+Thank you for contacting us! I&#39;ve researched the issue and found an article that I think will help you. If you have any other questions, please don&#39;t hesitate to reply to this email or visit the {{{Recipient.CompanyName}}} Community.<br />
+<br />
+We are always looking to improve our customer service, so would you mind taking this brief survey about your experience?<br />
+<br />
+<a href="https://sdomaster.my.salesforce.com/apex/DE_CustomerSurvey">Customer Experience Survey</a><br />
+<br />
+Thank you!<br />
+{{{Recipient.CompanyName}}}&nbsp;Customer Service<br />
+&nbsp;

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MLPredictionDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiApplicationDeveloperName>CaseWrapUpModel</aiApplicationDeveloperName>
+    <description>ServiceCaseWrapUp predField IsEscalated</description>
+    <developerName>mlpd_v1_1669825108132</developerName>
+    <masterLabel>ServiceCaseWrapUpIsEscalated</masterLabel>
+    <predictionField>Case.IsEscalated</predictionField>
+    <status>Draft</status>
+    <type>MulticlassClassification</type>
+</MLPredictionDefinition>

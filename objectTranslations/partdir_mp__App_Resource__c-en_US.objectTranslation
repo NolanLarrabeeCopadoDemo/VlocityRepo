@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Image Name --></label>
+        <name>partdir_mp__Image_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner App --></label>
+        <name>partdir_mp__Partner_App__c</name>
+        <relationshipLabel><!-- App Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Data --></label>
+        <name>partdir_mp__Resource_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thumbnail Link --></label>
+        <name>partdir_mp__Thumbnail_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>partdir_mp__Type__c</name>
+        <picklistValues>
+            <masterLabel>Image</masterLabel>
+            <translation><!-- Image --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

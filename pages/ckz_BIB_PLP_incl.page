@@ -1,0 +1,42 @@
+<!--
+ - Created by brandon.rogers on 12/13/18.
+ -->
+
+<apex:page id="ckz_BIB_PLP_incl" sidebar="false" showHeader="false" standardStylesheets="false">
+    <!-- <c:cc_PLPinvMsg />  -->
+    <!-- <c:cc_POCproductListGrid /> -->
+    <!--<c:cc_MobileOrderGrid />-->
+    <!-- <c:cc_POCproductListTable /> -->
+
+    <c:cc_ProductGrid />
+    <c:cc_spec_filters />
+
+    <script id="subcatDesktop" type="text/template">
+        <div class="row">
+            {{#each this.subcategories}}
+            <div class="col-xs-3 subcatContainer">
+                {{#if this.mediaWrapper }}
+                <a href="javascript:void(0);" class="categoryImage" data-id="{{this.mockCategory.id}}">
+                    {{displayImage this.mediaWrapper 'categoryList img-responsive center-block'}}
+                </a>
+                {{/if}}
+                <h4 class="text-center">
+                    <a href="javascript:void(0);" class="categoryName" data-id="{{this.mockCategory.id}}">{{this.mockCategory.name}}</a>
+                </h4>
+                <p>{{unescape this.mockCategory.ShortDesc}}</p>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            // ADD PROD SPECS
+            //  $('#categories-right-nav').after('<div class="filterContainer"></div>');
+
+            // HIDE QUICK ORDER
+            $('.quick-order').hide();
+        });
+    </script>
+
+</apex:page>

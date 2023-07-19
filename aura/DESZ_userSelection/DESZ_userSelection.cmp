@@ -1,0 +1,24 @@
+<aura:component implements="lightning:availableForFlowScreens" controller="DESZ_displayUser">
+    <aura:attribute name="Users" type="User[]" />
+    <aura:attribute name="selected" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}" />
+    <h2 class="slds-page-header__title"></h2>
+    <lightning:layout>
+        <article class="slds-card slds-m-bottom_medium">
+            <div class="slds-media__body">
+                <div>
+                    <lightning:layoutitem>
+                        <lightning:select aura:id="usr" label="Select Project Owner" name="selectAccount"  onchange="{!c.changeOwner}">
+                            
+                            <aura:iteration items="{!v.Users}" var="item" >
+                                <option value="{!item.Id}" label="{!item.Name}" >
+                                    {!item.Name}
+                                </option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </lightning:layoutitem>
+                </div>
+            </div>
+        </article>
+    </lightning:layout>
+</aura:component>

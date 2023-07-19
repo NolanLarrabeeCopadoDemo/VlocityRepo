@@ -1,0 +1,22 @@
+<template>
+    <div class="program-tiers slds-p-around_large">
+        <div class="program-tiers__header slds-text-align_center">
+            <h2 class="title">Program Tiers</h2>
+            <span class="sub-title">Unlock even more benefits as you move from the Silver tier to our Gold and Platinum tiers.</span>
+        </div>
+        <div class="slds-grid slds-gutters_large slds-wrap">
+            <template for:each={tiers} for:item="t">
+                <div 
+                    class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-vertical_large"
+                    key={t.id}
+                >
+                    <c-b2b-manufacturing-program-tiers-item
+                        icon={t.icon}
+                        name={t.name}
+                        description={t.description}
+                    ></c-b2b-manufacturing-program-tiers-item>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

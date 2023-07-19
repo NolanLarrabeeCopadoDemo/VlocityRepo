@@ -1,0 +1,105 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "OpportunitiesRegion2_csv",
+      "label": "OpportunitiesRegion2",
+      "name": "OpportunitiesRegion2",
+      "fields": [
+        {
+          "fullyQualifiedName": "Industry",
+          "name": "Industry",
+          "type": "Text",
+          "label": "Industry"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Name",
+          "name": "Opportunity_Name",
+          "type": "Text",
+          "label": "Opportunity Name"
+        },
+        {
+          "fullyQualifiedName": "Close_Date_Year",
+          "name": "Close_Date_Year",
+          "type": "Numeric",
+          "label": "Close Date (Year)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Close_Date_Month",
+          "name": "Close_Date_Month",
+          "type": "Numeric",
+          "label": "Close Date (Month)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Account_Type",
+          "name": "Account_Type",
+          "type": "Text",
+          "label": "Account Type"
+        },
+        {
+          "fullyQualifiedName": "Amount",
+          "name": "Amount",
+          "type": "Numeric",
+          "label": "Amount",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Probability",
+          "name": "Probability",
+          "type": "Numeric",
+          "label": "Probability",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 1,
+          "format": "0.#",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Order_Quantity",
+          "name": "Order_Quantity",
+          "type": "Numeric",
+          "label": "Order Quantity",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Account_Owner",
+          "name": "Account_Owner",
+          "type": "Text",
+          "label": "Account Owner"
+        },
+        {
+          "fullyQualifiedName": "Product_Name",
+          "name": "Product_Name",
+          "type": "Text",
+          "label": "Product Name"
+        },
+        {
+          "fullyQualifiedName": "Stage",
+          "name": "Stage",
+          "type": "Text",
+          "label": "Stage"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ContentSize</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Document_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Case study</fullName>
+                    <default>false</default>
+                    <label>Case study</label>
+                </value>
+                <value>
+                    <fullName>Competitive analysis</fullName>
+                    <default>false</default>
+                    <label>Competitive analysis</label>
+                </value>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Public relations</fullName>
+                    <default>false</default>
+                    <label>Public relations</label>
+                </value>
+                <value>
+                    <fullName>Product collateral</fullName>
+                    <default>false</default>
+                    <label>Product collateral</label>
+                </value>
+                <value>
+                    <fullName>Sales presentation</fullName>
+                    <default>false</default>
+                    <label>Sales presentation</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>White paper</fullName>
+                    <default>false</default>
+                    <label>White paper</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Product manual</fullName>
+                    <default>false</default>
+                    <label>Product manual</label>
+                </value>
+                <value>
+                    <fullName>Firmware</fullName>
+                    <default>false</default>
+                    <label>Firmware</label>
+                </value>
+                <value>
+                    <fullName>Image</fullName>
+                    <default>false</default>
+                    <label>Image</label>
+                </value>
+                <value>
+                    <fullName>Video</fullName>
+                    <default>false</default>
+                    <label>Video</label>
+                </value>
+                <value>
+                    <fullName>Audio</fullName>
+                    <default>false</default>
+                    <label>Audio</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>External-Approved</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>External_ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FileExtension</fullName>
+    </fields>
+    <fields>
+        <fullName>FileType</fullName>
+    </fields>
+    <fields>
+        <fullName>IsAssetEnabled</fullName>
+    </fields>
+    <fields>
+        <fullName>Language</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Content</relationshipLabel>
+        <relationshipName>Content</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Review_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Review Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SharingOption</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SharingPrivacy</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>TagCsv</fullName>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <recordTypes>
+        <fullName>MarketingDocument</fullName>
+        <active>true</active>
+        <label>Marketing Document</label>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>Audio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case study</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitive analysis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product collateral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White paper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SalesAsset</fullName>
+        <active>true</active>
+        <label>Sales Asset</label>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>Case study</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitive analysis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product collateral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White paper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SupportDocument</fullName>
+        <active>true</active>
+        <label>Support Document</label>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>Firmware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>VERSION.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.CONTENT_SIZE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.FILE_EXTENSION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.LAST_UPDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.OWNER</searchResultsAdditionalFields>
+    </searchLayouts>
+</CustomObject>

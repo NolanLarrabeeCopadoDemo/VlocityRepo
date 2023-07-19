@@ -1,0 +1,47 @@
+[
+    {
+        "FormulaExpression": "SetPdfIds:pdfContentVersionId",
+        "FormulaResultPath": "pdfContentVersionIds",
+        "FormulaSequence": 1,
+        "GlobalKey": "8ae4b1d9-a963-46dd-8727-ee3cdeade908",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "transformDocumentTemples_DCT",
+        "OmniDataTransformationId": {
+            "Name": "transformDocumentTemples_DCT",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/transformDocumentTemples_DCT",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "aa483c71-180e-425d-8eea-40a4eb5c522f",
+        "InputFieldName": "pdfContentVersionIds",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "transformDocumentTemples_DCT",
+        "OmniDataTransformationId": {
+            "Name": "transformDocumentTemples_DCT",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/transformDocumentTemples_DCT",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "pdfContentVersionIds",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

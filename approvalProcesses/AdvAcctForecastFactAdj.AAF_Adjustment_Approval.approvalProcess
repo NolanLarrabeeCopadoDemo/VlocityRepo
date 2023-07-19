@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>aequipment.zx18oajdojrh.kwyzclu8.v9xfbgwt6wlh@copado.com2023/07/18_17-7-41.demo3</submitter>
+        <type>user</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>agupta.jkuhupnrgsci.x95vwzyegdwu.z3vyfgxqn4sg@copado.com2023/07/18_17-7-41.demo3</submitter>
+        <type>user</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>bripper.woyjrtwcurgq.jw5s8nphak8.y6xhfpjmr4f6@copado.com2023/07/18_17-7-41.demo3</submitter>
+        <type>user</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>strencher.iwtfgk1dvpl0.ck1xao2dp.gk0wpn5ie6bt@copado.com2023/07/18_17-7-41.demo3</submitter>
+        <type>user</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CreatedDate</field>
+        <field>AdjustedBy</field>
+        <field>Comment</field>
+        <field>InitialValue</field>
+        <field>UpdatedValue</field>
+        <field>AdvAcctForecastMeasureDef</field>
+        <field>AdvAcctForecastFact</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <label>Approve</label>
+        <name>Approve</name>
+    </approvalStep>
+    <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>UpdatedValue &lt;&gt; InitialValue</formula>
+    </entryCriteria>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>AAF Adjustment Approval</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>5</activeVersionNumber>
+    <description>Screen flow used on the public partner portal page as an application to become a partner.</description>
+    <masterLabel>PRM: ONB - Partner Application</masterLabel>
+</FlowDefinition>

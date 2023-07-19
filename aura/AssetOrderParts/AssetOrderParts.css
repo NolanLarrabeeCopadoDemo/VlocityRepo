@@ -1,0 +1,11 @@
+.THIS .btn{
+	border: 0px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    margin:0 auto;
+    padding:5px 15px;
+}
+.THIS.center{
+    text-align:center;
+}

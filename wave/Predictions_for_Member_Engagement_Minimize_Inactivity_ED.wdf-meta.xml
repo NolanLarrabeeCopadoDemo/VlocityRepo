@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataflow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>Predictions_for_Member_Engagement</application>
+    <dataflowType>User</dataflowType>
+    <description>Minimize_Inactivity_ED</description>
+    <masterLabel>Predictions for Member Engagement Minimize_Inactivity_ED</masterLabel>
+</WaveDataflow>

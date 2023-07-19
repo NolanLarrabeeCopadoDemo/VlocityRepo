@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>aadmin.q3jprk07myjz.lwvsrc1qm6z4.bsg3vbimhj46@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>chet.callaghan.iw2anoh4z9pk.qv3burrbaile@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>sdo_a1.ersp5otyw0bn.sxwgeojfchyz.ue9umjw8rfh7@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>sdo_a2.s6iqtqldxep4.2dxyql04n9uk.pxyday59l7uu@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>sdo_a3.ilzhowaxgsdd.9dezzmspv3uk.urvelvlpi32y@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>vance.channel.lunuretycy2f.0xsjv47wcg8k@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>CEO</sharedTo>
+        <sharedToType>RoleAndSubordinates</sharedToType>
+    </folderShares>
+    <name>15 - B2B Commerce Dashboards</name>
+</DashboardFolder>

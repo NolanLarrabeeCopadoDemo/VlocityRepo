@@ -1,0 +1,78 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "ListAction2",
+    "OmniProcessId": {
+        "Name": "addtocart",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/team/order/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "advancedMerge": true,
+        "advancedMergeMap": [
+            {
+                "listKey": "estimatedProducts:ProductsInCart:summaryproducts:ep",
+                "matchingPath": "Product2Id",
+                "normalizeKey": "1"
+            },
+            {
+                "listKey": "selectedprods",
+                "matchingPath": "Product2Id",
+                "normalizeKey": "1"
+            },
+            {
+                "listKey": "estimatedproducts",
+                "matchingPath": "Product2Id",
+                "normalizeKey": "1"
+            }
+        ],
+        "allowMergeNulls": false,
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "dynamicOutputFields": "",
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "filterListFormula": "",
+        "hasPrimary": false,
+        "label": "ListAction2",
+        "mergeFields": [
+        ],
+        "mergeListsOrder": [
+            "estimatedProducts:ProductsInCart:summaryproducts:ep",
+            "selectedprods",
+            "estimatedproducts"
+        ],
+        "primaryListKey": "",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "sortBy": [
+        ],
+        "sortInDescendingOrder": false,
+        "updateFieldValue": {
+        },
+        "useFormulas": true
+    },
+    "Type": "List Merge Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/team/order/Procedure/ListAction2"
+}

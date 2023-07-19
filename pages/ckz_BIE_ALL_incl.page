@@ -1,0 +1,27 @@
+<!--
+ - Created by brandon.rogers on 12/13/18.
+ -->
+
+<apex:page id="ckz_BIE_ALL_incl" sidebar="false" showHeader="false" standardStylesheets="false">
+
+    <c:ckz_Header_Pro />
+    <c:ckz_ContractSelector />
+    <c:ckz_Footer />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/93082887a8.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            // ADD CURRENT PAGE NAME CLASS TO BODY TAG
+            let pageName = "ckz_" + CCRZ.pagevars.currentPageName.slice(6).toLowerCase();
+            $("body").addClass(pageName);
+
+            // TOGGLE FLUID (FULL-WIDTH) CONTAINER
+            if(pageName !== 'ckz_ccpage'){
+                $(".container").toggleClass("container container-fluid");
+            }
+        });
+    </script>
+
+</apex:page>

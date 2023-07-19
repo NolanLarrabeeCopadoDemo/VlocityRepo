@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Recommendation strategy for the professional community home page.</description>
+    <label>PRO Community Home</label>
+    <recommendationLoad>
+        <description>Retrieves all recommendations targeted at external users of the PRO community.</description>
+        <label>Get PRO Recommendations</label>
+        <name>Get_PRO_Recommendations</name>
+        <condition>
+            <field>Recommendation.Targeted_Audience__c</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>B2B Customers</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Get_PRO_Recommendations</childNode>
+        <label>Output</label>
+        <name>Output_d0816e93edcf4809884b80c4fa7a2255</name>
+    </union>
+</RecommendationStrategy>

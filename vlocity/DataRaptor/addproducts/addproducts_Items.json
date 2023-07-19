@@ -1,0 +1,67 @@
+[
+    {
+        "FormulaExpression": "(PriceBookEntry:CustomLWC6:Products:selectedprods:PbeUnitPrice)*(PriceBookEntry:CustomLWC6:Products:selectedprods:Qty)",
+        "FormulaResultPath": "PriceBookEntry:CustomLWC6:Products:selectedprods:Subtotal",
+        "FormulaSequence": 1,
+        "GlobalKey": "addproductsCustom8089",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "addproducts",
+        "OmniDataTransformationId": {
+            "Name": "addproducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/addproducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "addproductsCustom8123",
+        "InputFieldName": "PriceBookEntry:CustomLWC6:Products:selectedprods",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "addproducts",
+        "OmniDataTransformationId": {
+            "Name": "addproducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/addproducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "selectedprods",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "addproductsCustom6411",
+        "InputFieldName": "PriceBookEntry:CustomLWC6:Products:selectedprods:Subtotal",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "addproducts",
+        "OmniDataTransformationId": {
+            "Name": "addproducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/addproducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "selectedprods:Subtotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

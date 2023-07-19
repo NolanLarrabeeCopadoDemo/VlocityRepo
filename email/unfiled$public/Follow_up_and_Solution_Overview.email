@@ -1,0 +1,9 @@
+<span style="line-height: 20.8px; font-family: arial;"><span style="font-size: 9pt;">{!Contact.FirstName}<br />
+<br />
+Thank you for spending the time to speak with me today and giving me an understanding of your business. &nbsp;As promised, attached is an overview of my company and our solutions.<br />
+<br />
+Please let me know if you have any questions. I look forward to speaking with you again soon!</span></span><br style="line-height: 20.8px;" />
+<br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px; font-family: geneva;"><span style="font-size: 9pt;">Best Regards,<br />
+{!User.Name}<br />
+{!User.Email}</span></span>

@@ -1,0 +1,7 @@
+<apex:page standardController="Lead" lightningStylesheets="true">
+    
+	<flow:interview name="MFG_Add_Campaign_Member">
+        <apex:param name="CurrentLead" value="{!Id}" />
+    </flow:interview>
+    
+</apex:page>

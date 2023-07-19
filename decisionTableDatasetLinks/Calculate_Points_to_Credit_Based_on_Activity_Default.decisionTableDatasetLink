@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionTableDatasetLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisionTableName>Calculate_Points_to_Credit_Based_on_Activity</decisionTableName>
+    <isDefault>true</isDefault>
+    <setupName>Default Payload</setupName>
+    <sourceObject>LoyaltyActivity__c</sourceObject>
+</DecisionTableDatasetLink>

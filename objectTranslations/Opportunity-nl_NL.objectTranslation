@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- My Opportunities PRM --></label>
+        <name>My_Opportunities_PRM</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Region --></label>
+        <name>Account_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is used in an equation to generate a random number --></help>
+        <label><!-- AutoNumber --></label>
+        <name>AutoNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Approved --></label>
+        <name>Budget_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Equipment Cost --></label>
+        <name>Capital_Equipment_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Related Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closing Countdown --></label>
+        <name>CloseDate_TODAY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competition --></label>
+        <name>Competition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitive Coach --></label>
+        <name>Competitive_Coach__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitive Deal --></label>
+        <name>Competitive_Deal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>Dolby</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>DTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>THZ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complete ROI Analysis --></label>
+        <name>Complete_ROI_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact City --></label>
+        <name>Contact_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Company --></label>
+        <name>Contact_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Country --></label>
+        <name>Contact_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Postal Code --></label>
+        <name>Contact_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact State Province --></label>
+        <name>Contact_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Street --></label>
+        <name>Contact_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Title --></label>
+        <name>Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Terms --></label>
+        <name>Contract_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Non-Standard</masterLabel>
+            <translation><!-- Non-Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Amount --></label>
+        <name>DB_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Days --></label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>DateTimeCreated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Left Until Expire --></label>
+        <name>Days_Left_Until_Expire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Approved Date --></label>
+        <name>Deal_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Forward --></label>
+        <name>Deal_Forward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal ID --></label>
+        <name>Deal_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Source --></label>
+        <name>Deal_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Role --></label>
+        <name>Decision_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo Presentation Date --></label>
+        <name>Demo_Presentation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approved --></label>
+        <name>Discount_Approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discount % --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distributor --></label>
+        <name>Distributor__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of days before or after the close date the opportunity is predicted to close.  It is calculated by subtracting the Close Date from the Predicted Close Date. --></help>
+        <label><!-- ED Close Date Delta --></label>
+        <name>ED_Close_Date_Delta__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>ED_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of DAYS after the Created Date that this opportunity is targeted to close. --></help>
+        <label><!-- ED Predicted Time to Close --></label>
+        <name>ED_Outcome__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is calculated by adding the number of days in the &quot;ED Predicted Time to Close&quot; field to the CREATED DATE. --></help>
+        <label><!-- ED Predicted Close Date --></label>
+        <name>ED_Predicted_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>ED_Prescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engage Legal --></label>
+        <name>Engage_Legal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimation Status --></label>
+        <name>Estimation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not started</masterLabel>
+            <translation><!-- Not started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On hold</masterLabel>
+            <translation><!-- On hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimator Name --></label>
+        <name>Estimator_Name__c</name>
+        <relationshipLabel><!-- Opportunities (Estimator Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimator Notes --></label>
+        <name>Estimator_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimator --></label>
+        <name>Estimator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery. --></help>
+        <label><!-- Executive Meeting --></label>
+        <name>Exec_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Number of Units --></label>
+        <name>Expected_Number_of_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forwarded Lead ID --></label>
+        <name>Forwarded_Lead_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Margin --></label>
+        <name>Gross_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implementation Start --></label>
+        <name>Implementation_Start__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dependent on Age field.  Good = Age &lt; 30 Days.  Warning = Age &lt; 45 Days. Poor = Age &gt; 60 Days. --></help>
+        <label><!-- Age Indicator --></label>
+        <name>IndStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery --></help>
+        <label><!-- Interactive Demo --></label>
+        <name>Interactive_Demo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Pricing Approvals --></label>
+        <name>Internal_Pricing_Approvals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Estimated Close Date --></label>
+        <name>Intial_Estimated_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Cost --></label>
+        <name>Labor_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Hours --></label>
+        <name>Labor_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Rate --></label>
+        <name>Labor_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity --></label>
+        <name>LastActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>LastModifiedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Margin --></label>
+        <name>MFG_ALL_Expected_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- MFG Opty Quip URL --></label>
+        <name>MFG_ALL_Opty_Quip_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFQ Expected Date --></label>
+        <name>MFG_ALL_RFQ_Expected_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFQ Received Date --></label>
+        <name>MFG_ALL_RFQ_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>MFG_IDO_Asset__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MFG Key Record --></label>
+        <name>MFG_Key_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Start Date --></label>
+        <name>MFG_Production_Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Due Date --></label>
+        <name>MFG_Quote_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Materials Cost --></label>
+        <name>Materials_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overhead Rate --></label>
+        <name>Overhead_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Owner --></label>
+        <name>Partner_Owner__c</name>
+        <relationshipLabel><!-- Partner Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plant Location --></label>
+        <name>Plant_Location__c</name>
+        <picklistValues>
+            <masterLabel>Appleton, WI</masterLabel>
+            <translation><!-- Appleton, WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eugene, OR</masterLabel>
+            <translation><!-- Eugene, OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Rapids, MI</masterLabel>
+            <translation><!-- Grand Rapids, MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plant City, FL</masterLabel>
+            <translation><!-- Plant City, FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Antonio, TX</masterLabel>
+            <translation><!-- San Antonio, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suwanee, GA</masterLabel>
+            <translation><!-- Suwanee, GA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Approved --></label>
+        <name>Pricing_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production End Date --></label>
+        <name>Production_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Hours --></label>
+        <name>Production_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>GC1000 series</masterLabel>
+            <translation><!-- GC1000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC10001</masterLabel>
+            <translation><!-- GC10001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC20002</masterLabel>
+            <translation><!-- GC20002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5000 series</masterLabel>
+            <translation><!-- GC5000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC50000</masterLabel>
+            <translation><!-- GC50000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Budget --></label>
+        <name>Project_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Budgeted? --></label>
+        <name>Project_Budgeted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Description --></label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Contact --></label>
+        <name>Project_Manager_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Project Manager Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Durations --></label>
+        <name>Projected_Durations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Finish --></label>
+        <name>Projected_Finish__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field tracks many times an Opportunity has been pushed from month to month --></help>
+        <label><!-- Push Counter --></label>
+        <name>Push_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Random Number --></label>
+        <name>Random_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Lost --></label>
+        <name>Reason_Lost__c</name>
+        <picklistValues>
+            <masterLabel>No Decision</masterLabel>
+            <translation><!-- No Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Issues</masterLabel>
+            <translation><!-- Product Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rebate Program --></label>
+        <name>Rebate_Program__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Registration Expiration --></label>
+        <name>Registration_Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to your Amended Contract. --></help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- SteelBrick CPQ uses this field to automatically convert assets and subscriptions. --></help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to create Contracted Prices without creating a Contract. --></help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique identifier for the Amend:Re-Quote transaction, which is the original primary quote&apos;s ID. --></help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to automatically create an order from the primary quote. --></help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help><!-- SteelBrick CPQ uses this to point to the primary quote on this opportunity. --></help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this opportunity is a renewal opportunity. --></help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract being renewed by this renewal opportunity. If the several contracts roll up to this opportunity, this points at the master contract. --></help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stalled Opportunity --></label>
+        <name>Stalled_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Value --></label>
+        <name>Status_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooling Cost --></label>
+        <name>Tooling_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- URLsrc --></label>
+        <name>URLsrc__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Forwarded Lead --></label>
+        <name>View_Forwarded_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Winning Competitor --></label>
+        <name>Winning_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>Concurrent A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>Concurrent B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>Concurrent C</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>Work_Order__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- cv --></label>
+        <name>cv__c</name>
+    </fields>
+    <fields>
+        <help><!-- Overall Approval Status for this Opportunity --></help>
+        <label><!-- Approval Status --></label>
+        <name>sbaa__ApprovalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation><!-- Recalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used with Native Approvals to indicate the step in the approval process this Opportunity is in --></help>
+        <label><!-- Approval Step --></label>
+        <name>sbaa__ApprovalStep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used with Native Approvers; indicates which Approver is responsible for approving the Opportunity. --></help>
+        <label><!-- Approver --></label>
+        <name>sbaa__Approver__c</name>
+        <relationshipLabel><!-- Opportunities (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used with Native Approvals; to indicate whether the step has been approved --></help>
+        <label><!-- Step Approved --></label>
+        <name>sbaa__StepApproved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when record was submitted for approval --></help>
+        <label><!-- Submitted Date --></label>
+        <name>sbaa__SubmittedDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- User requesting approval for the Opportunity. --></help>
+        <label><!-- Submitted User --></label>
+        <name>sbaa__SubmittedUser__c</name>
+        <relationshipLabel><!-- Opportunities (Submitted User) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Opportunities created by or for partners. --></description>
+        <label><!-- Channel (Partner) --></label>
+        <name>ChannelPartner</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- ETO Opportunities --></description>
+        <label><!-- Engineer to Order --></label>
+        <name>MFG_ETO_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Revenue Operation Flow --></description>
+        <label><!-- Revenue Cloud --></label>
+        <name>Revenue_Cloud</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Simple Opportunities with products. --></description>
+        <label><!-- Simple Opportunity --></label>
+        <name>SimpleOpportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- If the stage equals closed - lost, then the reason lost is a required field. --></errorMessage>
+        <name>Reason_Lost_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Financial_System_Integration --></label>
+        <name>Financial_System_Integration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Great_Plains_Integration --></label>
+        <name>Great_Plains_Integration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quick_Quote --></label>
+        <name>Quick_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sales_Methodology --></label>
+        <name>Sales_Methodology</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sign_with_DocuSign --></label>
+        <name>Sign_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewApprovals --></label>
+        <name>sbaa__PreviewApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RecallApprovals --></label>
+        <name>sbaa__RecallApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ResendRequestEmail --></label>
+        <name>sbaa__ResendRequestEmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SubmitForApproval --></label>
+        <name>sbaa__SubmitForApproval</name>
+    </webLinks>
+</CustomObjectTranslation>

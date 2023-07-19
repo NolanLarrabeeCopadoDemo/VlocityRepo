@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Business Review</fullName>
+        <default>false</default>
+        <label>Business Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Compliance</fullName>
+        <default>false</default>
+        <label>Compliance</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Webinar</fullName>
+        <default>false</default>
+        <label>Product Webinar</label>
+    </customValue>
+    <customValue>
+        <fullName>Quiz of the day</fullName>
+        <default>false</default>
+        <label>Quiz of the day</label>
+    </customValue>
+    <customValue>
+        <fullName>Quiz of the week</fullName>
+        <default>false</default>
+        <label>Quiz of the week</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Training</fullName>
+        <default>false</default>
+        <label>Sales Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Security</fullName>
+        <default>false</default>
+        <label>Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Knowledge</fullName>
+        <default>false</default>
+        <label>Technical Knowledge</label>
+    </customValue>
+    <customValue>
+        <fullName>Support Training</fullName>
+        <default>false</default>
+        <label>Support Training</label>
+    </customValue>
+    <customValue>
+        <fullName>App Download</fullName>
+        <default>false</default>
+        <label>App Download</label>
+    </customValue>
+    <customValue>
+        <fullName>Training Workshop</fullName>
+        <default>false</default>
+        <label>Training Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Online Training</fullName>
+        <default>false</default>
+        <label>Online Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Quarterly Survey</fullName>
+        <default>false</default>
+        <label>Quarterly Survey</label>
+    </customValue>
+    <customValue>
+        <fullName>Yearly Survey</fullName>
+        <default>false</default>
+        <label>Yearly Survey</label>
+    </customValue>
+    <customValue>
+        <fullName>Engagement</fullName>
+        <default>false</default>
+        <label>Engagement</label>
+    </customValue>
+    <customValue>
+        <fullName>Member activity</fullName>
+        <default>false</default>
+        <label>Member activity</label>
+    </customValue>
+    <masterLabel>Activity Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

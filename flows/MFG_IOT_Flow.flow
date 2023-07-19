@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <description>IOT Flow based on the Inverter Platform Event. This flow creates a Case from the Platform Event and updates the Asset component. Feel free to change text fields on the two steps (Create Case and Update Asset) to better connect with your demo. 
+Fabricio Buzzatti - May 2022</description>
+    <interviewLabel>IOT {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>MFG IOT Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Case</name>
+        <label>Create Case</label>
+        <locationX>176</locationX>
+        <locationY>194</locationY>
+        <connector>
+            <targetReference>Case_Origin</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <stringValue>replace with account id</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <stringValue>replace with contact id</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>$Record.error_code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_Model__c</field>
+            <value>
+                <elementReference>$Record.model__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Serial_Number__c</field>
+            <value>
+                <elementReference>$Record.serial_no__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>IOT Case: Generator Issue</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Case_Origin</name>
+        <label>Case Origin</label>
+        <locationX>176</locationX>
+        <locationY>314</locationY>
+        <connector>
+            <targetReference>Update_Asset</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Serial_Number__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Salesforce IoT</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Asset</name>
+        <label>Update Asset</label>
+        <locationX>176</locationX>
+        <locationY>434</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ContactId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <stringValue>Generator not engaging</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Error_Code__c</field>
+            <value>
+                <elementReference>$Record.error_code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>$Record.model__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SerialNumber</field>
+            <value>
+                <elementReference>$Record.serial_no__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Asset</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Case</targetReference>
+        </connector>
+        <object>Inverter_Event__e</object>
+        <triggerType>PlatformEvent</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

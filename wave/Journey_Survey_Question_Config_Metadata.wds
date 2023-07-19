@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>Demo_Customer_Lifecycle_Analytics</application>
+    <masterLabel>Journey_Survey_Question_Config_Metadata</masterLabel>
+    <templateAssetSourceName>Journey_Survey_Question_Config_Metadata</templateAssetSourceName>
+    <type>default</type>
+</WaveDataset>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>clay.phillips.qhidjezwmvgx.c2jct.b1sa4ndthphr@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>df.gt7bggzds03c.272giuyfa1ay.orgvizl8zjc0@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>majimenez@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>CEO</sharedTo>
+        <sharedToType>Role</sharedToType>
+    </folderShares>
+    <name>Sample Management dashboards</name>
+</DashboardFolder>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMSConnectSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cmsConnectResourceType>
+        <cmsConnectResourceDefinition>
+            <developerName>Blog_Entry</developerName>
+            <masterLabel>Blog Entry</masterLabel>
+            <options>0</options>
+            <payloadType>JSON</payloadType>
+            <resourceIdPath>ID</resourceIdPath>
+            <resourceNamePath>title</resourceNamePath>
+            <resourcePath>rest/v1.1/sites/cirrussolar.wordpress.com/posts/{component}</resourcePath>
+        </cmsConnectResourceDefinition>
+        <cmsConnectResourceDefinition>
+            <developerName>Blog_Entry_List</developerName>
+            <masterLabel>Blog Entry List</masterLabel>
+            <options>1</options>
+            <payloadType>JSON</payloadType>
+            <resourcePath>rest/v1.1/sites/cirrussolar.wordpress.com/posts?number={itemsPerPage}&amp;page={pageNumber}</resourcePath>
+            <rootNodePath>posts</rootNodePath>
+        </cmsConnectResourceDefinition>
+        <developerName>Cirrus_Blog</developerName>
+        <masterLabel>Cirrus Blog</masterLabel>
+        <resourceType>JSON</resourceType>
+    </cmsConnectResourceType>
+    <connectionType>Public</connectionType>
+    <developerName>Wordpress_Blog</developerName>
+    <languageEnabled>N</languageEnabled>
+    <masterLabel>Cirrus Blog</masterLabel>
+    <personalizationEnabled>N</personalizationEnabled>
+    <sortOrder>2</sortOrder>
+    <status>ACTIVE</status>
+    <type>WordPress</type>
+    <websiteUrl>https://public-api.wordpress.com</websiteUrl>
+</CMSConnectSource>

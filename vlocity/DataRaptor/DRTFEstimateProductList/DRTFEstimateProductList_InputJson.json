@@ -1,0 +1,84 @@
+{
+    "PbeProduct": [
+        {
+            "PbeIsActive": true,
+            "PbeName": "SLA-Finance",
+            "PbeUnitPrice": 2345,
+            "PriceBookEntryId": "01u8Y00000L9tOUQAZ",
+            "Product2Id": "01t8Y00000NV8siQAD",
+            "Qty": 1,
+            "addToEstimate": false,
+            "filtervalue": "filtervalue"
+        }
+    ],
+    "PriceBookEntry": {
+        "CustomLWC6": {
+            "Products": {
+                "selectedprods": [
+                    {
+                        "Id": "REC0",
+                        "PbeIsActive": true,
+                        "PbeName": "SLA-Finance",
+                        "PbeUnitPrice": 2345,
+                        "PriceBookEntryId": "01u8Y00000L9tOUQAZ",
+                        "Product2Id": "01t8Y00000NV8siQAD",
+                        "Qty": 1,
+                        "_flex": {
+                            "uniqueKey": "REC0"
+                        },
+                        "addToEstimate": true,
+                        "filtervalue": "filtervalue",
+                        "uniqueKey": "REC0"
+                    }
+                ]
+            }
+        },
+        "PriceBook-Block": {
+            "PriceBook": "Manufacturing",
+            "PriceBookIdSF": "01s8Y000001THDiQAO",
+            "PriceBookrecName": "Manufacturing"
+        },
+        "Text1": "sla"
+    },
+    "ep1": {
+        "ep": null
+    },
+    "multipleproducts": [
+        {
+            "Id": "REC0",
+            "PbeIsActive": true,
+            "PbeName": "Genwatt 1000KW",
+            "PbeUnitPrice": 1000,
+            "PriceBookEntryId": "01u8Y00000L9rshQAB",
+            "Product2Id": "01t8Y00000NV8FkQAL",
+            "Qty": 1,
+            "_flex": {
+                "uniqueKey": "REC0"
+            },
+            "addToEstimate": true,
+            "filtervalue": "filtervalue",
+            "uniqueKey": "REC0"
+        },
+        {
+            "Id": "REC1",
+            "PbeIsActive": true,
+            "PbeName": "Genwatt 10KW",
+            "PbeUnitPrice": 200,
+            "PriceBookEntryId": "01u8Y00000L9rsmQAB",
+            "Product2Id": "01t8Y00000NV8FpQAL",
+            "Qty": 1,
+            "_flex": {
+                "uniqueKey": "REC1"
+            },
+            "addToEstimate": true,
+            "filtervalue": "filtervalue",
+            "uniqueKey": "REC1"
+        }
+    ],
+    "timeStamp": "2022-01-17T14:29:20.516Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058Y00000AwAk2QAF",
+    "userName": "demo.org@%vlocity_namespace%.1642136864485",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-480"
+}

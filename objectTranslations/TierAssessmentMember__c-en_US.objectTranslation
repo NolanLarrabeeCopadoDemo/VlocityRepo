@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tier Assessment Member</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tier Assessment Members</value>
+    </caseValues>
+    <fields>
+        <label><!-- Aggregate Transaction Amount Till Date --></label>
+        <name>AggregateTransactionAmountTillDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Type --></label>
+        <name>AssessmentType__c</name>
+        <picklistValues>
+            <masterLabel>Expire Tier</masterLabel>
+            <translation><!-- Expire Tier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade Tier</masterLabel>
+            <translation><!-- Upgrade Tier --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branding Percentage --></label>
+        <name>BrandingPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty Program Member --></label>
+        <name>LoyaltyProgramMember__c</name>
+        <relationshipLabel><!-- Tier Assessment Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partnership Years --></label>
+        <name>PartnershipYears__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quarterly Conference Attended --></label>
+        <name>QuarterlyConferenceAttended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence Number --></label>
+        <name>SequenceNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed</masterLabel>
+            <translation><!-- Processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team Trained Percentage --></label>
+        <name>TeamTrainedPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier Expiration Date --></label>
+        <name>TierExpirationDate__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

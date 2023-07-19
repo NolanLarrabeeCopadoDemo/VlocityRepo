@@ -1,0 +1,27 @@
+{
+    "Input": [
+        {
+            "Id": "REC0",
+            "PbeName": "Compactor 9500",
+            "PbeUnitPrice": 3400,
+            "PriceBookEntryId": "01u8Y00000L9tPIQAZ",
+            "Product2Id": "01t8Y00000NV8tbQAD",
+            "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+            "Qty": "1",
+            "Subtotal": 3400,
+            "_flex": {
+                "uniqueKey": "REC0"
+            },
+            "uniqueKey": "REC0"
+        },
+        {
+            "PbeName": "SLA-Finance",
+            "PbeUnitPrice": 2345,
+            "PriceBookEntryId": "01u8Y00000L9tOUQAZ",
+            "Product2Id": "01t8Y00000NV8siQAD",
+            "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+            "Qty": "1",
+            "Subtotal": 2345
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>Manufacturing_Analytics_Winter_21_228</application>
+    <masterLabel>RebatesEDMinimizeMemberProfitability</masterLabel>
+    <templateAssetSourceName>RebatesEDMinimizeMemberProfitability_tp</templateAssetSourceName>
+</WaveDataset>

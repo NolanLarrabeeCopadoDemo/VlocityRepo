@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>Comment</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Logistics_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text(Logistics__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Logistics Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Logistics_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF( Logistics_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Logistics_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Logistics_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Logistics_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Logistics_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Logistics rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Logistics Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Logistics__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>On a scale of 1-5, 5 being the best, how do you rate logistics services of the supplier?</inlineHelpText>
+        <label>Logistics</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quality_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text(Quality__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quality Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF(Quality_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Quality_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Quality_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Quality_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Quality_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Quality rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quality Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Service_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text(Service__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF(Service_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Service_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Service_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Service_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Service_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Service rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Service</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Supplier_Name_Helper__c</fullName>
+        <externalId>false</externalId>
+        <label>Supplier Name Helper</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Supplier__c</fullName>
+        <externalId>false</externalId>
+        <label>Supplier</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Ratings</relationshipLabel>
+        <relationshipName>Ratings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Transparency_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text(Transparency__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Transparency Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transparency_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF(Transparency_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Transparency_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Transparency_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Transparency_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Transparency_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Transparency rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Transparency Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transparency__c</fullName>
+        <externalId>false</externalId>
+        <label>Transparency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Trust_Rating_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text(Trust__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trust Rating Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trust_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF( Trust_Rating_Helper__c  = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Trust_Rating_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Trust_Rating_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Trust_Rating_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Trust_Rating_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Trust rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trust Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trust__c</fullName>
+        <externalId>false</externalId>
+        <label>Trust</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_1_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text( Vendor_Question_1__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 1 Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_1_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF(Vendor_Question_1_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Vendor_Question_1_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Vendor_Question_1_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Vendor_Question_1_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Vendor_Question_1_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Vendor rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 1 Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Question 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_2_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text( Vendor_Question_2__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 2 Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_2_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF( Vendor_Question_2_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Vendor_Question_2_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Vendor_Question_2_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Vendor_Question_2_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Vendor_Question_2_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Vendor rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 2 Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Question 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_3_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text( Vendor_Question_3__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 3 Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_3_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF( Vendor_Question_3_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Vendor_Question_3_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Vendor_Question_3_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Vendor_Question_3_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Vendor_Question_3_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Vendor rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 3 Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Question 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_4_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text( Vendor_Question_4__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 4 Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_4_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF( Vendor_Question_4_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Vendor_Question_4_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Vendor_Question_4_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Vendor_Question_4_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Vendor_Question_4_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Vendor rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 4 Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Question 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_5_Helper__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Text( Vendor_Question_5__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 5 Helper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_5_Rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+IF( Vendor_Question_5_Helper__c = 0, &quot;/img/samples/stars_000.gif&quot;,
+IF(Vendor_Question_5_Helper__c = 1, &quot;/img/samples/stars_100.gif&quot;,
+IF(Vendor_Question_5_Helper__c = 2, &quot;/img/samples/stars_200.gif&quot;,
+IF(Vendor_Question_5_Helper__c = 3, &quot;/img/samples/stars_300.gif&quot;,
+IF(Vendor_Question_5_Helper__c = 4, &quot;/img/samples/stars_400.gif&quot;,
+&quot;/img/samples/stars_500.gif&quot;
+))))),
+&quot;Vendor rating&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vendor Question 5 Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Question_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Question 5</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Rating</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>SRM_Rating</fullName>
+        <columns>NAME</columns>
+        <columns>Quality_Rating__c</columns>
+        <columns>Logistics_Rating__c</columns>
+        <columns>Service_Rating__c</columns>
+        <columns>Transparency_Rating__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>SRM Rating</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RT-{00000}</displayFormat>
+        <label>Rating Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Ratings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

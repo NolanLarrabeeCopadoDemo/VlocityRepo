@@ -1,0 +1,49 @@
+{
+  "pages": [
+    {
+      "title": "Create Customer Insights Analytics App",
+      "variables": [
+        {
+          "name": "Can_Continue"
+        },
+        {
+          "name": "Has_DataSyncEnabled"
+        },
+        {
+          "name": "Has_Products"
+        },
+        {
+          "name": "Has_RoleHierarchy"
+        },
+        {
+          "name": "Has_Cases"
+        },
+        {
+          "name": "Has_Leads"
+        },
+        {
+          "name": "Has_PersonAccount"
+        },
+        {
+          "name": "Has_Activities"
+        },
+        {
+          "name": "Fiscal_Month"
+        },
+        {
+          "name": "First_Day_Of_Week"
+        },
+        {
+          "name": "DefaultsVisibleMessages"
+        },
+        {
+          "name": "failedCheck"
+        }
+      ],
+      "vfPage": {
+        "name": "CustomerInsightsChecklist"
+      }
+    }
+  ],
+  "displayMessages": []
+}

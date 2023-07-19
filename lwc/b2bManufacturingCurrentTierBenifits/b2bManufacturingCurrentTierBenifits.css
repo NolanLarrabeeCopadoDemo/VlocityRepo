@@ -1,0 +1,16 @@
+.benifits {
+    height: 100%;
+    border-radius: var(--lwc-borderRadiusMedium,0.25rem);
+    border: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(212, 212, 212));
+}
+.benifits__header .slds-text-heading_medium {
+    color: #005FB2;
+    font-weight: bold;
+}
+.benifits__list__item {
+    color: #263045;
+    font-size: 1rem;
+}
+.benifits__list__item:nth-child(odd) {
+    background-color:rgba(36, 119, 204, 0.05);
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MfgProgramTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <programTemplateItems>
+        <advAccountForecastSet>EniacProgramForecastFact</advAccountForecastSet>
+        <templateItemName>Program Forecast</templateItemName>
+        <transformationDisplayOrder>1</transformationDisplayOrder>
+        <transformationType>ForecastSetRelation</transformationType>
+    </programTemplateItems>
+    <programTemplateItems>
+        <advAccountForecastSet>EniacProgramVariantForecastFact</advAccountForecastSet>
+        <templateItemName>Program Variant Forecast</templateItemName>
+        <transformationDisplayOrder>2</transformationDisplayOrder>
+        <transformationType>ForecastSetRelation</transformationType>
+    </programTemplateItems>
+    <programTemplateItems>
+        <advAccountForecastSet>EniacProgramComponentForecastFact</advAccountForecastSet>
+        <templateItemName>Program Component Forecast</templateItemName>
+        <transformationDisplayOrder>3</transformationDisplayOrder>
+        <transformationType>ForecastSetRelation</transformationType>
+    </programTemplateItems>
+    <programTemplateName>Eniac Electric Car Template</programTemplateName>
+    <status>Active</status>
+</MfgProgramTemplate>

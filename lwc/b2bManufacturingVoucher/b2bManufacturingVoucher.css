@@ -1,0 +1,32 @@
+.voucher {
+    width: 240px;
+    border: 1px solid #BCC9D5;
+    border-radius: 2px;
+    position: relative;
+}
+.voucher__name {
+    color: #263045
+}
+.voucher__info__label {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    color: #263045;
+}
+
+.voucher__info__value {
+    color: #000000;
+}
+
+.voucher__half-circle {
+    background-color: #ffffff;
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    margin-top: -8.5px;
+}
+.voucher__info + .voucher__info {
+    border-left: 0.5px dashed #869BA6;
+    margin-left: 6px;
+    padding-left: 12px;
+
+}

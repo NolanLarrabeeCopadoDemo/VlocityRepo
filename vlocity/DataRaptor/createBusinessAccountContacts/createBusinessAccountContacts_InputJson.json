@@ -1,0 +1,46 @@
+{
+    "AccountSearch-Block": {
+        "Name": "Alan's Awnings"
+    },
+    "ContextId": "",
+    "id": "a3F4P000002DXvQUAW",
+    "isdtp": "p1",
+    "layout": "lightning",
+    "newAccount2": {
+        "AccountSearch-Block": {
+            "AccountSearch": "Test",
+            "Id": null
+        },
+        "AddAccount": true,
+        "AddContact": null,
+        "AddContactBlock": {
+            "authEmail2": "sally@salyy.com",
+            "authFirstName2": "Sally",
+            "authLastName2": "Smith",
+            "authMobilePhone2": "6540556522"
+        },
+        "ContactId": null,
+        "newAccountName2": null,
+        "newAddress2-Block": {
+            "newAddress2": null,
+            "newCity2": null,
+            "newCountry2": null,
+            "newPostalCode2": null,
+            "newState2": null,
+            "newStreet2": null
+        },
+        "newWebSite2": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://vido--vlocity-ins.visualforce.com",
+    "timeStamp": "2019-09-25T21:43:24.791Z",
+    "userCurrencyCode": "USD",
+    "userId": "0054P00000AnTiqQAF",
+    "userName": "tsears@vido.demo",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+    }
+}

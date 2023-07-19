@@ -1,0 +1,33 @@
+{
+    "ContextId": null,
+    "RebateMembers": {
+        "RebateMemberBlock": {
+            "MemberStatus": null,
+            "Name": null,
+            "RebateMembersAccountTA-Block": {
+                "RebateMembersAccountTA": null
+            }
+        }
+    },
+    "RebateProgram": {
+        "RPEndDate": null,
+        "RPFrequency": null,
+        "RPName": null,
+        "RPPayoutCalcDays": null,
+        "RPStartDate": null,
+        "RPStatus": null,
+        "RPTXGraceDays": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DRCreateRebateMembers": null,
+        "RebateMembers": null,
+        "RebateProgram": null
+    }
+}

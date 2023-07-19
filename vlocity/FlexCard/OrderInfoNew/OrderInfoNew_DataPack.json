@@ -1,0 +1,52 @@
+{
+    "AuthorName": "AcmeManufacturing",
+    "ClonedFromOmniUiCardKey": "OrderInfo/AcmeManufacturing/1.0/1636381663541",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "OrderId",
+                    "val": "8013y000007CrVJAA0"
+                },
+                {
+                    "id": 9,
+                    "name": "Parent.OrderId",
+                    "val": "8013y000007CrVJAA0"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "getOrderList",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "OrderId": "{Parent.OrderId}"
+                },
+                "jsonMap": "{\"OrderId\":\"{OrderId}\",\"Parent.OrderId\":\"{Parent.OrderId}\"}",
+                "resultVar": "[0].['Order']"
+            }
+        }
+    },
+    "Description": "Get order info",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "OrderInfoNew",
+    "Namespace": "",
+    "OmniUiCardKey": "OrderInfoNew/AcmeManufacturing/1.0/1637706033064",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "OrderInfoNew.json",
+    "SampleDataSourceResponse": "[{\"OrderId\":\"8013y000007CrVJAA0\",\"OrderNumber\":\"00006549\",\"OrderStatus\":\"Draft\",\"Order\":{\"OrderProduct\":\"Compactor 3500\",\"Orderqty\":1}}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/OrderInfoNew"
+}

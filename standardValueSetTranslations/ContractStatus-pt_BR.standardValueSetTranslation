@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Activated</masterLabel>
+        <translation>Ativo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Awaiting Signature</masterLabel>
+        <translation><!-- Awaiting Signature --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Canceled</masterLabel>
+        <translation><!-- Canceled --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contract Expired</masterLabel>
+        <translation><!-- Contract Expired --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contract Terminated</masterLabel>
+        <translation><!-- Contract Terminated --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Draft</masterLabel>
+        <translation>Rascunho</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In Approval Process</masterLabel>
+        <translation>Em Processo de Aprovação</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negotiating</masterLabel>
+        <translation><!-- Negotiating --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Signature Declined</masterLabel>
+        <translation><!-- Signature Declined --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Signed</masterLabel>
+        <translation><!-- Signed --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

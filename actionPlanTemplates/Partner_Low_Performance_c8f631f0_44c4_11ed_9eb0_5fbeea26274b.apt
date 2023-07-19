@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>GenericVisitTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0pyHr000000kB8PIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>GenericVisitTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Review  Incentive  Performance</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>GenericVisitTask</itemEntityType>
+        <name>Review  Incentive  Performance</name>
+        <uniqueName>Review_Incentive_Performance_c94a1e59_44c4_11ed_9eb0_d34ec95ed3d1</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>GenericVisitTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0pyHr000000kB8OIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>GenericVisitTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Review  Agreement Performance</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>GenericVisitTask</itemEntityType>
+        <name>Review  Agreement Performance</name>
+        <uniqueName>Review_Agreement_Performance_c9495b05_44c4_11ed_9eb0_47701cc5be99</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>GenericVisitTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0pyHr000000kB8QIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>GenericVisitTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Voice of Customer</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>3</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>GenericVisitTask</itemEntityType>
+        <name>Voice of Customer</name>
+        <uniqueName>Voice_of_Customer_c949d037_44c4_11ed_9eb0_5ff56b3b8f94</uniqueName>
+    </actionPlanTemplateItem>
+    <description>Action Plan Template to Manage customer engagements and tasks in a consistent, compliant manner regarding performance</description>
+    <isAdHocItemCreationEnabled>true</isAdHocItemCreationEnabled>
+    <name>Partner Low Performance *</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>Partner_Low_Performance_c8f631f0_44c4_11ed_9eb0_5fbeea26274b</uniqueName>
+</ActionPlanTemplate>

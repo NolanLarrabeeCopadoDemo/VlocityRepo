@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Post ID --></label>
+        <name>mcsocsel10__PostID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>mcsocsel10__Type__c</name>
+        <picklistValues>
+            <masterLabel>Expand</masterLabel>
+            <translation><!-- Expand --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>mcsocsel10__URL__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,47 @@
+{
+    "AuthorName": "SalesforceDemo",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 1,
+                    "name": "recordId",
+                    "val": "5008X000028bqqbQAA"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "dcGetCaseDetails",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "CaseId": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "CaseAsset",
+    "Namespace": "",
+    "OmniUiCardKey": "CaseAsset/SalesforceDemo/4.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "CaseAsset.json",
+    "SampleDataSourceResponse": "[{\"Case Status\":\"New\",\"MailingStreet\":\"1 Market St\",\"ProductModel\":\"414LP KAA\",\"AssetId\":\"02i8X00000YmM1wQAF\",\"LastName\":\"Bailey\",\"MailingPostalCode\":\"94105\",\"PurchaseDate\":\"2021-09-27\",\"Phone\":\"(415) 555-1212\",\"Case Priority\":\"Medium\",\"SerialNumber\":\"BPS-LSS1122890\",\"Case Number\":\"00002641\",\"Case Subject\":\"skid steer issue\",\"MailingState\":\"CA\",\"AssetName\":\"414LP Primary Skid Steer, KAA\",\"InstallDate\":\"2014-08-22\",\"ContactId\":\"0038X00003ZZH9fQAH\",\"MailingCity\":\"San Francisco\",\"ImageURL\":\"https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/Skid+Steer.png\",\"MailingCountry\":\"US\",\"FirstName\":\"Lauren\",\"ProductCode\":\"414LP-KAA-E-SSL\",\"Email\":\"lbailey@example.com\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0158X00000TeANo&amp;oid=00D8X000000FFg4\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 4,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/CaseAsset"
+}

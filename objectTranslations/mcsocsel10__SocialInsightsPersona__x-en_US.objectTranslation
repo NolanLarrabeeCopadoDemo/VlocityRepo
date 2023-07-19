@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Bio --></label>
+        <name>mcsocsel10__Bio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider External Id --></label>
+        <name>mcsocsel10__ExternalAuthorId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider External Picture URL --></label>
+        <name>mcsocsel10__ExternalPictureURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Followers --></label>
+        <name>mcsocsel10__Followers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Following --></label>
+        <name>mcsocsel10__Following__c</name>
+    </fields>
+    <fields>
+        <label><!-- Influencer Score --></label>
+        <name>mcsocsel10__InfluencerScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Tweets --></label>
+        <name>mcsocsel10__NumberOfTweets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Real Name --></label>
+        <name>mcsocsel10__RealName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Handle --></label>
+        <name>mcsocsel10__SocialHandle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Network --></label>
+        <name>mcsocsel10__SocialNetwork__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified --></label>
+        <name>mcsocsel10__Verified__c</name>
+    </fields>
+</CustomObjectTranslation>

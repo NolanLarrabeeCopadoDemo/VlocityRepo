@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>mcsocsel10__SocialIntelligenceAdministrator</name>
+    </customPermissions>
+    <description>Permission Set License for Administrative access to Social Intelligence Module</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Social Intelligence Administrator License</label>
+</PermissionSet>

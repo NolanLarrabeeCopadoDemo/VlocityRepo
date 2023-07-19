@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Coupon CC</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Coupons CC</value>
+    </caseValues>
+    <fields>
+        <label><!-- Cart Total Amount --></label>
+        <name>ccrz__CartTotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coupon Code --></label>
+        <name>ccrz__CouponCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coupon Id --></label>
+        <name>ccrz__CouponId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coupon Name --></label>
+        <name>ccrz__CouponName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coupon Type --></label>
+        <name>ccrz__CouponType__c</name>
+        <picklistValues>
+            <masterLabel>Absolute</masterLabel>
+            <translation>Absolu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation>Pourcentage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Prix</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Décrivez ce que le coupon doit accomplir.</help>
+        <label><!-- Coupon Notes --></label>
+        <name>ccrz__Coupon_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency ISO Code --></label>
+        <name>ccrz__CurrencyISOCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Amount --></label>
+        <name>ccrz__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Type --></label>
+        <name>ccrz__DiscountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>ccrz__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>ccrz__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Use --></label>
+        <name>ccrz__MaxUse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Quantity --></label>
+        <name>ccrz__MinQty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Name --></label>
+        <name>ccrz__RuleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Type --></label>
+        <name>ccrz__RuleType__c</name>
+        <picklistValues>
+            <masterLabel>CartTotal</masterLabel>
+            <translation>CartTotal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation>Général</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation>Livraison</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rule --></label>
+        <name>ccrz__Rule__c</name>
+        <relationshipLabel><!-- CC Coupons --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Minimum Quantity --></label>
+        <name>ccrz__SourceMinQty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Product --></label>
+        <name>ccrz__SourceProduct__c</name>
+        <relationshipLabel><!-- CC Coupons (Source Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Relation --></label>
+        <name>ccrz__SourceRelation__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPEC</masterLabel>
+            <translation>SPEC</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Spec Minimum Quantity --></label>
+        <name>ccrz__SourceSpecMiniQty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Spec Value --></label>
+        <name>ccrz__SourceSpecValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Spec --></label>
+        <name>ccrz__SourceSpec__c</name>
+        <relationshipLabel><!-- CC Coupons --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>ccrz__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storefront --></label>
+        <name>ccrz__Storefront__c</name>
+        <picklistValues>
+            <masterLabel>DefaultStore</masterLabel>
+            <translation>DefaultStore</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Product --></label>
+        <name>ccrz__TargetProduct__c</name>
+        <relationshipLabel><!-- CC Coupons (Target Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Quantity --></label>
+        <name>ccrz__TargetQty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Relation --></label>
+        <name>ccrz__TargetRelation__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPEC</masterLabel>
+            <translation>SPEC</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Spec Quantity --></label>
+        <name>ccrz__TargetSpecQty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Spec Value --></label>
+        <name>ccrz__TargetSpecValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Spec --></label>
+        <name>ccrz__TargetSpec__c</name>
+        <relationshipLabel><!-- CC Coupons (Target Spec) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Used --></label>
+        <name>ccrz__TotalUsed__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Numéro automatique de coupon</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

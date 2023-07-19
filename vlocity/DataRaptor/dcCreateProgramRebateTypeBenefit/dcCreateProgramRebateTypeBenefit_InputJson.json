@@ -1,0 +1,82 @@
+{
+    "DRId_ProgramRebateType": "0hv4x000000PToiAAG",
+    "DRId_RebateProgram": "0i84x000000x3GrAAI",
+    "RebateProgram": {
+        "RPEndDate": "2022-09-30",
+        "RPFrequency": "Monthly",
+        "RPName": "Joanne",
+        "RPPayoutCalcDays": 4,
+        "RPStartDate": "2022-09-01",
+        "RPTXGraceDays": 4
+    },
+    "RebateProgramId": "0i84x000000x3GrAAI",
+    "RebateType": {
+        "RebateTypeBlock": {
+            "RTAccrualRate": 1,
+            "RTAggregateObjectName": "RebateMemberProductAggregate",
+            "RTBenefitQualifierField": "GrowthAmount",
+            "RTCalculationDefinition": "9N14x000000kBwYCAU",
+            "RTCalculationMethod": "Retrospective",
+            "RTCalculationType": "AggregateBased",
+            "RTIsIntegratable": true,
+            "RTMeasureField": "GrowthAmountPercent",
+            "RTName": "abc",
+            "RTProductFilterType": "IncludeProducts",
+            "RTRebateMeasureType": "AmountperUnit",
+            "RTStatus": "Inactive"
+        }
+    },
+    "RebateTypeBenefits": {
+        "RebateTypeBenefitsBlock": [
+            {
+                "RTBAppliedBenefit": 5,
+                "RTBBenefitAchieved": true,
+                "RTBEffectiveEndDate": "2022-09-30",
+                "RTBEffectiveStartDate": "2022-09-01",
+                "RTBMaximumMeasureFieldValue": 1,
+                "RTBName": "123",
+                "RTBProductTA-Block": {
+                    "ProductCode": "SS.9422",
+                    "ProductId": "01t4x000006gnJdAAI",
+                    "ProductName": "Staurolite",
+                    "RTBProductTA": "Staurolite"
+                },
+                "RTBProgramRebateTypeName-Block": {
+                    "ProgramRebateTypeId": "0hv4x000000PToiAAG",
+                    "ProgramRebateTypeName": "abc",
+                    "RTBProgramRebateTypeName": "abc"
+                },
+                "RTBQualifyingRange": 10,
+                "RTBStatus": "Active"
+            },
+            {
+                "RTBAppliedBenefit": 3,
+                "RTBBenefitAchieved": true,
+                "RTBEffectiveEndDate": "2022-09-30",
+                "RTBEffectiveStartDate": "2022-09-01",
+                "RTBMaximumMeasureFieldValue": 4,
+                "RTBName": "456",
+                "RTBProductTA-Block": {
+                    "ProductCode": "A-4",
+                    "ProductId": "01t4x000006gnLbAAI",
+                    "ProductName": "Operating Rate - Deep Star",
+                    "RTBProductTA": "Operating Rate - Deep Star"
+                },
+                "RTBProgramRebateTypeName-Block": {
+                    "ProgramRebateTypeId": "0hv4x000000PToiAAG",
+                    "ProgramRebateTypeName": "abc",
+                    "RTBProgramRebateTypeName": "abc"
+                },
+                "RTBQualifyingRange": 45,
+                "RTBStatus": "Active"
+            }
+        ]
+    },
+    "timeStamp": "2022-09-15T17:34:24.778Z",
+    "userCurrencyCode": "USD",
+    "userId": "0054x000007GMHZAA4",
+    "userName": "admin@mfg-091222.demo",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-420",
+    "userTimeZoneName": "America/Los_Angeles"
+}

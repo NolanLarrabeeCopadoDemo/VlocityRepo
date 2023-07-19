@@ -1,0 +1,6 @@
+*** NEW APPROVAL NOTIFICATION ***
+
+Hi {!Contact.FirstName}
+
+The following record needs your approval:
+Contract: {!Contract.Link}

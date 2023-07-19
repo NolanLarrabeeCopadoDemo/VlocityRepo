@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Custom Searchbox</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__AppPage</target>
+        <target>lightningCommunity__Page</target>        
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="masterLabel" type="string" label="Search Label" default="Search" role="inputOnly"/>
+            <property name="objectName" type="string" label="Object Name" role="inputOnly"/>
+            <property name="fieldNamesString" type="string" label="Field Names as a string - recommended" description="Enter a comma-separated list of field names from the target object to include. The first field will be the primary label, any other fields (if provided) will be sub-labels." role="inputOnly"/>
+            <property name="fieldNames" type="string[]" label="Field Names as a collection - advanced" description="Pass in a collection (e.g. list) strings of (via flow/apex/api)" role="inputOnly"/>
+            <!--<property name="standardSearchName" type="string" role="inputOnly" />-->
+            <!--<property name="labelField" type="string" label="Primary Field" role="inputOnly"/>-->
+            <!--<property name="sublabelFields" type="string" label="Sublabel Fields"/>-->
+            <!--<property name="filterOnSublabels" type="boolean" label="Filter on Sublabels"/>-->
+        </targetConfig>
+        <targetConfig targets="lightning__HomePage,lightning__RecordPage,lightning__AppPage">
+            <property name="masterLabel" type="string" label="Search Label" default="Search"/>
+            <property name="objectName" type="string" label="Object Name" description="API name of the object to search"/>
+            <!-- only FlowScreen supports list, so the other page types will need to supply a comma-separated string -->
+            <property name="fieldNamesString" type="string" label="Field Names" description="Enter a comma-separated list of field names to include. The first field will be the primary label, any other fields (if provided) will be sub-labels."/>
+            <property name="includeCard" type="boolean" default="true" label="Include background/border" description="Check this if you are adding the component as a standlone" />
+            <property name="standardSearchName" type="string" label="Standard Search" description="objectFields = list of all fields for an object (must provide Object Name); sobjectList = list of all SObjects" datasource="objectFields,sobjectList"/>
+            <property name="whereClause" label="'Where' clause" type="string" description="(Advanced) SOQL 'where' clause to filter results"/>
+            <!--<property name="labelField" type="string" label="Primary Field" role="inputOnly"/>-->
+            <!--<property name="sublabelFields" type="string" label="Sublabel Fields"/>-->
+            <!--<property name="filterOnSublabels" type="boolean" label="Filter on Sublabels"/>-->
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

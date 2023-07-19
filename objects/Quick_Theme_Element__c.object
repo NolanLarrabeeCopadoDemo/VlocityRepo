@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Background_Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Background Color</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Border__c</fullName>
+        <externalId>false</externalId>
+        <label>Border</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Link_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Link State</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>true</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>false</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Hover</fullName>
+                    <default>false</default>
+                    <label>Hover</label>
+                </value>
+                <value>
+                    <fullName>Focus</fullName>
+                    <default>false</default>
+                    <label>Focus</label>
+                </value>
+                <value>
+                    <fullName>Visited</fullName>
+                    <default>false</default>
+                    <label>Visited</label>
+                </value>
+                <value>
+                    <fullName>Clicked</fullName>
+                    <default>false</default>
+                    <label>Clicked</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quick_Theme__c</fullName>
+        <externalId>false</externalId>
+        <label>Quick Theme</label>
+        <referenceTo>Quick_Theme__c</referenceTo>
+        <relationshipLabel>Quick Theme Elements</relationshipLabel>
+        <relationshipName>Quick_Theme_Elements</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Text_Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Text Color</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Text_Decoration__c</fullName>
+        <externalId>false</externalId>
+        <label>Text Decoration</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Text_Decoration</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Text_Font_Weight__c</fullName>
+        <externalId>false</externalId>
+        <label>Text Font Weight</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Font_Weight</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Text_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Text Size</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Header Area</fullName>
+                    <default>false</default>
+                    <label>Header Area</label>
+                </value>
+                <value>
+                    <fullName>Header Links</fullName>
+                    <default>false</default>
+                    <label>Header Links</label>
+                </value>
+                <value>
+                    <fullName>Menu Bar Area</fullName>
+                    <default>false</default>
+                    <label>Menu Bar Area</label>
+                </value>
+                <value>
+                    <fullName>Top Menu Link</fullName>
+                    <default>false</default>
+                    <label>Top Menu Link</label>
+                </value>
+                <value>
+                    <fullName>Sub Menu Area</fullName>
+                    <default>false</default>
+                    <label>Sub Menu Area</label>
+                </value>
+                <value>
+                    <fullName>Sub Menu Link</fullName>
+                    <default>false</default>
+                    <label>Sub Menu Link</label>
+                </value>
+                <value>
+                    <fullName>Search Button</fullName>
+                    <default>false</default>
+                    <label>Search Button</label>
+                </value>
+                <value>
+                    <fullName>Hero Button 1</fullName>
+                    <default>false</default>
+                    <label>Hero Button 1</label>
+                </value>
+                <value>
+                    <fullName>Hero Button 2</fullName>
+                    <default>false</default>
+                    <label>Hero Button 2</label>
+                </value>
+                <value>
+                    <fullName>Hero Active Tab Indicator</fullName>
+                    <default>false</default>
+                    <label>Hero Active Tab Indicator</label>
+                </value>
+                <value>
+                    <fullName>Widget Header</fullName>
+                    <default>false</default>
+                    <label>Widget Header</label>
+                </value>
+                <value>
+                    <fullName>Buttons</fullName>
+                    <default>false</default>
+                    <label>Buttons</label>
+                </value>
+                <value>
+                    <fullName>Top Category</fullName>
+                    <default>false</default>
+                    <label>Top Category</label>
+                </value>
+                <value>
+                    <fullName>Top Category Link</fullName>
+                    <default>false</default>
+                    <label>Top Category Link</label>
+                </value>
+                <value>
+                    <fullName>Sub Category Area</fullName>
+                    <default>false</default>
+                    <label>Sub Category Area</label>
+                </value>
+                <value>
+                    <fullName>Sub Category Link</fullName>
+                    <default>false</default>
+                    <label>Sub Category Link</label>
+                </value>
+                <value>
+                    <fullName>Footer Area</fullName>
+                    <default>false</default>
+                    <label>Footer Area</label>
+                </value>
+                <value>
+                    <fullName>Footer Link</fullName>
+                    <default>false</default>
+                    <label>Footer Link</label>
+                </value>
+                <value>
+                    <fullName>Add to Cart Button</fullName>
+                    <default>false</default>
+                    <label>Add to Cart Button</label>
+                </value>
+                <value>
+                    <fullName>Checkout Button</fullName>
+                    <default>false</default>
+                    <label>Checkout Button</label>
+                </value>
+                <value>
+                    <fullName>Breadcrumb Area</fullName>
+                    <default>false</default>
+                    <label>Breadcrumb Area</label>
+                </value>
+                <value>
+                    <fullName>Breadcrumb Link</fullName>
+                    <default>false</default>
+                    <label>Breadcrumb Link</label>
+                </value>
+                <value>
+                    <fullName>Panels</fullName>
+                    <default>false</default>
+                    <label>Panels</label>
+                </value>
+                <value>
+                    <fullName>Panel Footer</fullName>
+                    <default>false</default>
+                    <label>Panel Footer</label>
+                </value>
+                <value>
+                    <fullName>General Links</fullName>
+                    <default>false</default>
+                    <label>General Links</label>
+                </value>
+                <value>
+                    <fullName>Top Header Area</fullName>
+                    <default>false</default>
+                    <label>Top Header Area</label>
+                </value>
+                <value>
+                    <fullName>Middle Header Area</fullName>
+                    <default>false</default>
+                    <label>Middle Header Area</label>
+                </value>
+                <value>
+                    <fullName>Search Form</fullName>
+                    <default>false</default>
+                    <label>Search Form</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Quick Theme Element</label>
+    <nameField>
+        <displayFormat>QSE-{0000}</displayFormat>
+        <label>Quick Theme Element Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Quick Theme Elements</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

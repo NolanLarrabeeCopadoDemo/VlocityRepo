@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>Accounts_and_Products1</dataset>
+    <dimensions>
+        <field>Account_Type</field>
+        <isDerived>false</isDerived>
+        <members>
+            <label>Tier 1</label>
+            <member>Enterprise</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>Tier 3</label>
+            <member>Small Business</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>Tier 2</label>
+            <member>Mid-Market</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Account_Name</field>
+        <isDerived>false</isDerived>
+        <members>
+            <label>Omega Incorporated</label>
+            <member>Ohana Incorporated.</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+</WaveXmd>

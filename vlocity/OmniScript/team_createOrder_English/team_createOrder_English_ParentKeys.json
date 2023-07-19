@@ -1,0 +1,10 @@
+[
+    "DataRaptor/DREXFetchAccountDetails",
+    "DataRaptor/DREXFetchContactDetails",
+    "DataRaptor/DREXFetchPriceBookEntries",
+    "DataRaptor/DREXFetchProductDetails",
+    "DataRaptor/DREXGetOrderDetails",
+    "DataRaptor/DRLOCreateDraftOrder",
+    "IntegrationProcedure/team_estimateproductlist",
+    "IntegrationProcedure/team_order"
+]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Opportunity</contextRecordType>
+    <label>MFG Create Post-Sales Project</label>
+    <recommendationLimit>
+        <childNode>MFG_ETO_Load_Offers</childNode>
+        <label>Limit</label>
+        <name>Limit</name>
+        <filterMode>Accepted</filterMode>
+        <filterMode>Rejected</filterMode>
+        <lookbackDuration>1</lookbackDuration>
+        <maxRecommendationCount>3</maxRecommendationCount>
+    </recommendationLimit>
+    <recommendationLoad>
+        <label>Load Offers</label>
+        <name>MFG_ETO_Load_Offers</name>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>ETO</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Limit</childNode>
+        <label>Output</label>
+        <name>Output_f7e722b43ebe4bc5904dbb376df80212</name>
+    </union>
+</RecommendationStrategy>

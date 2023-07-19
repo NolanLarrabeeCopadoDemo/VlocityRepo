@@ -1,0 +1,53 @@
+{
+    "AuthorName": "DMelsh",
+    "ClonedFromOmniUiCardKey": "Orders/SalesforceDemo/3.0",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 4,
+                    "name": "recordId",
+                    "val": "5004w00002XUtgDAAT"
+                },
+                {
+                    "id": 7,
+                    "name": "User.userAccountId",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "getOrdersfromAccount",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "AccountId": "{User.userAccountId}",
+                    "CaseId": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\",\"User.userAccountId\":\"{User.userAccountId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "OrdersLineItems",
+    "Namespace": "",
+    "OmniUiCardKey": "OrdersLineItems/DMelsh/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "OrdersLineItems.json",
+    "SampleDataSourceResponse": "[{\"EffectiveDate\":\"2022-09-28\",\"OrderId\":\"8014w0000078vkfAAA\",\"TotalAmount\":5750,\"OrderNumber\":\"00006622\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-29\",\"OrderId\":\"8014w0000078vnFAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006597\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-12\",\"OrderId\":\"8014w0000078vkZAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006594\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-12\",\"OrderId\":\"8014w0000078vkYAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006593\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-12\",\"OrderId\":\"8014w0000078vkXAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006592\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-12\",\"OrderId\":\"8014w0000078vkWAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006591\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-12\",\"OrderId\":\"8014w0000078vkVAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006590\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-12\",\"OrderId\":\"8014w0000078vkUAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006589\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-12\",\"OrderId\":\"8014w0000078vkTAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006588\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-12\",\"OrderId\":\"8014w0000078vkSAAQ\",\"TotalAmount\":5750,\"OrderNumber\":\"00006587\",\"CaseId\":\"5004w00002XUtgDAAT\",\"AccountId\":\"0014w00003hrl9WAAQ\",\"Status\":\"Draft\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/OrdersLineItems"
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #E84340, #E84340)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>2</bin>
+                <formatValue>linear-gradient(to bottom, #E6E830, #E6E830)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>3</bin>
+                <formatValue>linear-gradient(to bottom, #E8963B, #E8963B)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>4</bin>
+                <formatValue>linear-gradient(to bottom, #00B531, #00B531)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>D</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>lens_2_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#52b7d8</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>sum_of_Defects</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Supplier_Order_Date__2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#FF0000</formatValue>
+                <label>1 Week Supply</label>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>250</bin>
+                <formatValue>#FFF200</formatValue>
+                <label>2 Weeks Supply</label>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>500</bin>
+                <formatValue>#E8963B</formatValue>
+                <label>3 Weeks Supply</label>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>750</bin>
+                <formatValue>#00B531</formatValue>
+                <label>4 Weeks Supply</label>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>lens_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Late</bin>
+                <formatValue>rgb(255, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Delivery_Status</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Supplier_Order_Date__1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #E84340, #E84340)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>2</bin>
+                <formatValue>linear-gradient(to bottom, #E6E830, #E6E830)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>3</bin>
+                <formatValue>linear-gradient(to bottom, #E8963B, #E8963B)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>4</bin>
+                <formatValue>linear-gradient(to bottom, #00B531, #00B531)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>D</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>lens_2_2.D</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(255, 0, 0)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>sum_of_RMAs</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Supplier_Order_Date__2.sum_of_RMAs</field>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#52b7d8</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>sum_of_Defects</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Supplier_Order_Date__2.sum_of_Defects</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#FF0000</formatValue>
+                <label>1 Week Supply</label>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>250</bin>
+                <formatValue>#FFF200</formatValue>
+                <label>2 Weeks Supply</label>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>500</bin>
+                <formatValue>#E8963B</formatValue>
+                <label>3 Weeks Supply</label>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>750</bin>
+                <formatValue>#00B531</formatValue>
+                <label>4 Weeks Supply</label>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>lens_1.B</field>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>Late</bin>
+                <formatValue>rgb(255, 0, 0)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Delivery_Status</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Supplier_Order_Date__1.count</field>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Supply_Readiness_Relationships1</waveVisualization>
+</WaveXmd>

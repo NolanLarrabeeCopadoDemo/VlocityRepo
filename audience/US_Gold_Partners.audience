@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>US Gold Partners</audienceName>
+    <container>Ω - Partner Central</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.ChannelProgramName</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Gold</fieldValue>
+            </criterionValue>
+            <operator>Contains</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>9b35fb3a-f010-4366-be5d-de9bc2ed8fa3$#$710dc759-0b14-45a8-9537-30c2034895ce</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Lead_Inbox_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

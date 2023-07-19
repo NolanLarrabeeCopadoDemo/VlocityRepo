@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Case</contextRecordType>
+    <description>What: Primary Case Object Strategy used by the Service Team. Who: Service Team When: 2021</description>
+    <filter>
+        <childNode>MFG_Load_Case_Closed_Recommendations</childNode>
+        <label>Case is Closed, no Article created</label>
+        <name>MFG_Case_is_Closed_no_Article_created</name>
+        <expression>ISPICKVAL($Record.Status, &apos;Closed&apos;) &amp;&amp; $Record.MFG_Service_Article_Created__c = False</expression>
+    </filter>
+    <filter>
+        <childNode>MFG_All_Recommendations</childNode>
+        <label>Filter to matched Recommendation</label>
+        <name>MFG_Filter_to_matched_Recommendation</name>
+        <expression>Id = $Request.ConversationKey &amp;&amp; $Request.ConversationKey != &apos;&apos;</expression>
+    </filter>
+    <label>Service - Conversation Helper Strategy - Case</label>
+    <mutuallyExclusive>
+        <childNode>MFG_Case_is_Closed_no_Article_created</childNode>
+        <childNode>MFG_Filter_to_matched_Recommendation</childNode>
+        <childNode>MFG_Remote_Diagnostics</childNode>
+        <label>Pinned Recommendations</label>
+        <name>MFG_Pinned_Recommendations</name>
+    </mutuallyExclusive>
+    <recommendationLoad>
+        <label>Remote Diagnostics</label>
+        <name>MFG_Remote_Diagnostics</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Simple1</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Load Case Closed Recommendations</label>
+        <name>MFG_Load_Case_Closed_Recommendations</name>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>CaseClosed</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>All Recommendations</label>
+        <name>MFG_All_Recommendations</name>
+        <condition>
+            <field>Name</field>
+            <operator>NOT_EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value></value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>MFG_Pinned_Recommendations</childNode>
+        <label>Output</label>
+        <name>Output_d5e03b218ac84efd8ee7a59d95671c08</name>
+    </union>
+</RecommendationStrategy>

@@ -1,0 +1,107 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <omnistudio-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </omnistudio-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <omnistudio-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></omnistudio-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col   slds-size_3-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0_child"   card={card}  record={record}  placeholder="output"  field-name="ProductName"  label="Product Name"  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element1" class="slds-col   slds-size_2-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element1_child"   card={card}  record={record}  placeholder="output"  field-name="Quantity"  label="Quantity"  type="number"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element2" class="slds-col   slds-size_2-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element2_child"   card={card}  record={record}  placeholder="output"  field-name="UnitPrice"  label="Unit Price"  type="currency"  locale="en-US"  currency="USD"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element3" class="slds-col   slds-size_3-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element3_child"   card={card}  record={record}  placeholder="output"  field-name="TotalPrice"  label="Total Price"  type="currency"  locale="en-US"  currency="USD"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element4" class="slds-col   slds-size_2-of-12  " data-rindex={rindex} style="" >
+    <omnistudio-flex-menu data-style-id="state0element4_child" 
+    onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}  card={card}  record={record}  type="action"  size="large"  variant="brand"  icon-name="utility:down"  overflow="true"  label="Menu"  position="right"  icon-position="left"  icon-size="x-small" 
+    theme="slds" > 
+     <omnistudio-flex-menu-item 
+    name="menu-item-1651549128498-0"
+    theme="slds"
+    data-style-id="state0element4_menuitem_0"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1651549229916","type":"Flyout","displayName":"Expedite Order","vlocityIcon":"standard:default","openUrlIn":"Current Window","flyoutType":"OmniScripts","openFlyoutIn":"Modal","layoutType":"lightning","hasExtraParams":true,"flyoutParams":{"OrderItemId":"{OrderItemId}"},"osName":"ExpediteOrder/OS/English","flyoutLwc":"expedite-order-o-s-english","parent":"menu","actionConditions":null}}]'  label="Expedite Order"  icon-name="standard:default"  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{"openFlyoutIn":"Modal"}'  flyout-channel="undefined"  class="state0element4_menuitem_0 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element4_menuitem_0" data-show-spinner="false" 
+    data-element-label="menu4menuitem0" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     <div slot="modalflyout" class="menu4menuitem0action0" ><omnistudio-custom-lwc-wrapper element-name="c-expedite-order-o-s-english" property='\{"prefill":"{\"omniscriptEmbeddedSource\":\"flyout\",\"OrderItemId\":\"{OrderItemId}\"}"}' records={records} record-id={recordId} record={record}  card={card}  action={modalAction.menu4menuitem0action0} >
+     <c-expedite-order-o-s-english   layout='lightning'    ></c-expedite-order-o-s-english>
+    </omnistudio-custom-lwc-wrapper></div></omnistudio-flex-action>
+    </omnistudio-flex-menu-item>
+    </omnistudio-flex-menu>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <omnistudio-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col   slds-size_3-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0_child"   card={card}  record={record}  placeholder="output"  field-name="ProductName"  label="Product Name"  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element1" class="slds-col   slds-size_2-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element1_child"   card={card}  record={record}  placeholder="output"  field-name="Quantity"  label="Quantity"  type="number"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element2" class="slds-col   slds-size_2-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element2_child"   card={card}  record={record}  placeholder="output"  field-name="UnitPrice"  label="Unit Price"  type="currency"  locale="en-US"  currency="USD"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element3" class="slds-col   slds-size_3-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element3_child"   card={card}  record={record}  placeholder="output"  field-name="TotalPrice"  label="Total Price"  type="currency"  locale="en-US"  currency="USD"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element4" class="slds-col   slds-size_2-of-12  " data-rindex={rindex} style="" >
+    <omnistudio-flex-menu data-style-id="state0element4_child" 
+    onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction}  card={card}  record={record}  type="action"  size="large"  variant="brand"  icon-name="utility:down"  overflow="true"  label="Menu"  position="right"  icon-position="left"  icon-size="x-small" 
+    theme="slds" > 
+     <omnistudio-flex-menu-item 
+    name="menu-item-1651549128498-0"
+    theme="slds"
+    data-style-id="state0element4_menuitem_0"
+    
+    class=""
+    >
+    <omnistudio-flex-action record={record} card={card}  action-list='\[{"stateObj":"{record}","card":"{card}","stateAction":{"id":"flex-action-1651549229916","type":"Flyout","displayName":"Expedite Order","vlocityIcon":"standard:default","openUrlIn":"Current Window","flyoutType":"OmniScripts","openFlyoutIn":"Modal","layoutType":"lightning","hasExtraParams":true,"flyoutParams":{"OrderItemId":"{OrderItemId}"},"osName":"ExpediteOrder/OS/English","flyoutLwc":"expedite-order-o-s-english","parent":"menu","actionConditions":null}}]'  label="Expedite Order"  icon-name="standard:default"  re-render-flyout="undefined"  preload-flyout="undefined"  flyout-details='\{"openFlyoutIn":"Modal"}'  flyout-channel="undefined"  class="state0element4_menuitem_0 flexActionElement" onexecuteaction={performAction} 
+    data-action-element-class="state0element4_menuitem_0" data-show-spinner="false" 
+    data-element-label="menu4menuitem0" 
+    theme="slds" extra-class="slds-dropdown__item" 
+      action-wrapperclass=""
+      action-labelclass="slds-truncate menu-item-label"
+      menu-item-data="%7B%7D"
+      icon-size="x-small"
+      icon-extraclass="slds-icon-text-default slds-m-right_x-small" >
+     <div slot="modalflyout" class="menu4menuitem0action0" ><omnistudio-custom-lwc-wrapper element-name="c-expedite-order-o-s-english" property='\{"prefill":"{\"omniscriptEmbeddedSource\":\"flyout\",\"OrderItemId\":\"{OrderItemId}\"}"}' records={records} record-id={recordId} record={record}  card={card}  action={modalAction.menu4menuitem0action0} >
+     <c-expedite-order-o-s-english   layout='lightning'    ></c-expedite-order-o-s-english>
+    </omnistudio-custom-lwc-wrapper></div></omnistudio-flex-action>
+    </omnistudio-flex-menu-item>
+    </omnistudio-flex-menu>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <omnistudio-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </omnistudio-action>
+  
+            <omnistudio-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </omnistudio-action>
+            </div>
+          </template>

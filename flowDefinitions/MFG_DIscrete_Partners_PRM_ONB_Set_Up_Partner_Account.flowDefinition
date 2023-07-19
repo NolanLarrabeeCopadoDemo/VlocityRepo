@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>Flow launched by the &quot;Qualify Partner&quot; Lead Action. Used to set ISPARTNER to TRUE and add to channel program. Used as a part of the onboarding process</description>
+    <masterLabel>PRM: ONB - Set Up Partner Account</masterLabel>
+</FlowDefinition>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Sample__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Standard Sample path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Feedback__c</fieldNames>
+        <fieldNames>Completed_Date__c</fieldNames>
+        <fieldNames>Time_to_Complete_days__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Enter customer feedback&lt;/li&gt;&lt;li&gt;Proceed with opportunity as appropriate&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Complete</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Fulfillment_Status__c</fieldNames>
+        <fieldNames>Tracking_Number__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Which stage of fulfillment is the sample currently in?&lt;/li&gt;&lt;li&gt;What is the tracking number?&lt;/li&gt;&lt;li&gt;Make sure to follow up with customer once the sample arrives!&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Fulfillment</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Approved_by_Logistics__c</fieldNames>
+        <fieldNames>Cost_Labor__c</fieldNames>
+        <fieldNames>Cost_Shipping__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Is all shipping information validated and confirmed?&lt;/li&gt;&lt;li&gt;Are there any special requirements for shipping the requested product?&lt;/li&gt;&lt;li&gt;Are shipping costs within reasonable limits?&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Logistics Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Account_Manager__c</fieldNames>
+        <fieldNames>Sample_Type__c</fieldNames>
+        <fieldNames>Date_Requested_By__c</fieldNames>
+        <fieldNames>Comments__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Who is the sample for and what is the reason behind it?&lt;/li&gt;&lt;li&gt;What opportunity value does it represent?&lt;/li&gt;&lt;li&gt;Is the sample a standard spec product or custom?&lt;/li&gt;&lt;li&gt;Is there any supporting documentation from the customer?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>New Request</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Approved_by_Sales_Manager__c</fieldNames>
+        <fieldNames>Opportunity__c</fieldNames>
+        <fieldNames>Opportunity_Value__c</fieldNames>
+        <fieldNames>ROI__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Does this sample represent a genuine business opportunity?&lt;/li&gt;&lt;li&gt;Has this customer demonstrated a history of acting on values sent?&lt;/li&gt;&lt;li&gt;Are there any missing pieces of documentation required?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Sales Approval</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Standard_Product_Sample</recordTypeName>
+</PathAssistant>

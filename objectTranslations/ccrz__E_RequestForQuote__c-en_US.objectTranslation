@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>ccrz__Account__c</name>
+        <relationshipLabel><!-- CC Requests For Quote --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>ccrz__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC Cart --></label>
+        <name>ccrz__Cart__c</name>
+        <relationshipLabel><!-- CC Requests For Quote --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CloseDate --></label>
+        <name>ccrz__CloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>ccrz__Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>ccrz__Contact__c</name>
+        <relationshipLabel><!-- CC Requests For Quote --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>ccrz__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>ccrz__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>ccrz__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt Out --></label>
+        <name>ccrz__HasOptedOutOfEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName --></label>
+        <name>ccrz__LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source --></label>
+        <name>ccrz__LeadSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- LeadStatus --></label>
+        <name>ccrz__LeadStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Step --></label>
+        <name>ccrz__NextStep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>ccrz__OpportunityName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type --></label>
+        <name>ccrz__OpportunityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>ccrz__Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Name --></label>
+        <name>ccrz__StageName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storefront --></label>
+        <name>ccrz__Storefront__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>ccrz__Website__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,151 @@
+<!--
+ - Created by brandon.rogers on 12/13/18.
+ -->
+
+<apex:component id="ckz_Categories">
+    <style type="text/css">
+        .navbar-side-collapse .side-nav li a, .filterNormal .list-unstyled li a {
+            font-size: 14px;
+            color: #252525;
+            line-height: 22px;
+            padding: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .navbar-side-collapse .side-nav li .collapseItem li a, .sidebar-list li a {
+            font-size: 13px !important;
+            color: #888888;
+            display: inline-block;
+            line-height: 20px;
+            padding: 7px 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-side-collapse .side-nav li .collapseItem li a i, .sidebar-list li a i {
+            right: 0;
+            left: auto;
+            line-height: 20px;
+            position: absolute;
+        }
+
+        .navbar-side-collapse {
+            padding: 0;
+            display: block;
+        }
+
+        .navbar-side-collapse .side-nav {
+            width: 100%;
+            margin: 0;
+        }
+
+        .navbar-side-collapse .side-nav ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+
+        .navbar-side-collapse .side-nav li {
+            width: 95%;
+            margin-bottom: 15px;
+        }
+
+        .navbar-side-collapse .side-nav li a {
+            background-color: transparent;
+            position: relative;
+        }
+
+        .navbar-side-collapse .side-nav li a i {
+            font-size: 12px;
+            line-height: 22px;
+            position: absolute;
+            right: 0;
+        }
+
+        .navbar-side-collapse .side-nav li .collapseItem li {
+            margin-bottom: 0 !important;
+        }
+    </style>
+
+    <script id="cc-category-container-template" type="text/template">
+
+        <div class="categories_side_container cc_categories_side_container" id="category-accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default cc_category_tree">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Categories</h4>
+                </div>
+
+                <div class="panel-body">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse navbar-side-collapse">
+                        <ul class="nav navbar-nav side-nav">
+                            {{#each .}}
+                            <li>
+                                {{#if children}}
+                                <a href="#{{sfid}}" data-toggle="collapse" data-target="#collapse-{{sfid}}" aria-expanded="false">
+                                    {{name}}
+                                </a>
+                                <span class="pull-right cc_icon_area">
+                                    <span class="icon-toggle cc_icon_toggle" role="button" data-toggle="collapse" data-target="#collapse-{{sfid}}" aria-expanded="false" aria-controls="collapse-{{sfid}}" onclick="iconToggle(this)">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                                <ul id="collapse-{{sfid}}" class="collapseItem collapse" aria-expanded="false" style="height: 0px;">
+                                    {{#each children}}
+                                    <li>
+                                        {{#if children}}
+                                        <a role="button" href="#{{sfid}}" class="cc_cat_name">
+                                            {{name}}
+                                        </a>
+                                        <span class="pull-right cc_icon_area">
+                                            <span class="icon-toggle cc_icon_toggle" role="button" data-toggle="collapse" data-target="#collapse-{{sfid}}" aria-expanded="false" aria-controls="collapse-{{sfid}}" onclick="iconToggle(this)">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </span>
+                                        </span>
+                                        <ul id="collapse-{{sfid}}" class="collapseItem collapse" aria-expanded="false" style="height: 0px;">
+                                            {{#each children}}
+                                            <li>
+                                                <a href="#{{sfid}}">
+                                                    {{name}}
+                                                </a>
+                                            </li>
+                                            {{/each}}
+                                        </ul>
+                                        {{else}}
+                                        <a role="button" href="#{{sfid}}" class="cc_cat_name" aria-expanded="false">
+                                            {{name}}
+                                        </a>
+                                        {{/if}}
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                                {{else}}
+                                <a href="#{{sfid}}" class="collapsed" aria-expanded="false">
+                                    {{name}}
+                                </a>
+                                {{/if}}
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- /.panel -->
+        </div>
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            CCRZ.uiProperties.CategoryTree.tmpl = 'cc-category-container-template';
+        });
+
+        function iconToggle(e) {
+            $(e).find('i').toggleClass('fa-plus fa-minus')
+        }
+    </script>
+</apex:component>

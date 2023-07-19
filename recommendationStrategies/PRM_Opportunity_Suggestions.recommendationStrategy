@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Opportunity</contextRecordType>
+    <description>Used in a partner community to suggest partner suggestions on an opportunity.</description>
+    <if>
+        <childNode>Load_PRM_Opportunity_Proposal_Quote_Stage</childNode>
+        <childNode>Loan_PRM_Opportunity_Discovery_Stage</childNode>
+        <childNode>Load_PRM_Opportunity_Qualification_Stage</childNode>
+        <childNode>Load_PRM_Opportunity_Negotiation_Stage</childNode>
+        <label>Opportunity Stage</label>
+        <name>Opportunity_Stage</name>
+        <childNodeExpression>
+            <childName>Load_PRM_Opportunity_Qualification_Stage</childName>
+            <expression>ISPICKVAL($Record.StageName, &apos;Qualification&apos;)</expression>
+        </childNodeExpression>
+        <childNodeExpression>
+            <childName>Load_PRM_Opportunity_Proposal_Quote_Stage</childName>
+            <expression>ISPICKVAL($Record.StageName, &apos;Proposal/Quote&apos;)</expression>
+        </childNodeExpression>
+        <childNodeExpression>
+            <childName>Loan_PRM_Opportunity_Discovery_Stage</childName>
+            <expression>ISPICKVAL($Record.StageName, &apos;Discovery&apos;)</expression>
+        </childNodeExpression>
+        <childNodeExpression>
+            <childName>Load_PRM_Opportunity_Negotiation_Stage</childName>
+            <expression>ISPICKVAL($Record.StageName, &apos;Negotiation&apos;)</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <label>PRM Opportunity Suggestions</label>
+    <recommendationLoad>
+        <label>Load PRM Opportunity - Negotiation Stage</label>
+        <name>Load_PRM_Opportunity_Negotiation_Stage</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>PRM Opportunity - Negotiation Stage</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Load PRM Opportunity - Proposal/Quote Stage</label>
+        <name>Load_PRM_Opportunity_Proposal_Quote_Stage</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>PRM Opportunity - Proposal/Quote Stage</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Loan PRM Opportunity - Discovery Stage</label>
+        <name>Loan_PRM_Opportunity_Discovery_Stage</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>PRM Opportunity - Discovery Stage</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Load PRM Opportunity - Qualification Stage</label>
+        <name>Load_PRM_Opportunity_Qualification_Stage</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>PRM Opportunity - Qualification Stage</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Opportunity_Stage</childNode>
+        <label>Output</label>
+        <name>Output_cac247d9516d4aca842455893b280845</name>
+    </union>
+</RecommendationStrategy>

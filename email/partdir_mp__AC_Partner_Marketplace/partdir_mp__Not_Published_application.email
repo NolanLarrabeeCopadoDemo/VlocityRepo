@@ -1,0 +1,11 @@
+Your application {!partdir_mp__Partner_App__c.Name} has been successfully uploaded to the portal.
+
+To publish your app:
+
+1. Open {!partdir_mp__Partner_App__c.partdir_mp__CommunityUrl__c}/partner-app/{!partdir_mp__Partner_App__c.Id} on the portal.
+
+2. Click Edit App.
+
+3. Check the checkbox Published.
+
+4. Click Save.

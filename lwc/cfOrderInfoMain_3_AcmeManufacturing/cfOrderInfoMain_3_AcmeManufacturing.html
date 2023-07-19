@@ -1,0 +1,125 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <omnistudio-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </omnistudio-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <omnistudio-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></omnistudio-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-theme_default slds-card slds-p-around_x-small slds-m-around_none " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-large-size_1-of-12 slds-medium-size_1-of-12 slds-small-size_1-of-12 slds-size_1-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-icon data-style-id="state0element0block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:success"  size="medium"  extraclass="slds-icon_container slds-icon__svg--default "  variant="success"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element0block_element1" class="slds-col   slds-large-size_10-of-12 slds-medium-size_10-of-12 slds-small-size_10-of-12 slds-size_10-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3EGreat%20News%20-%20No%20delays%20in%20%7BAccountName%7D%20Orders%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state><omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="1" data-rindex={rindex} class="cf-vlocity-state-1 cf-vlocity-state slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-theme_alert-texture slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_x-small slds-m-around_none " style="     border-top: #FDBB37 3px solid;border-right: #FDBB37 3px solid;border-bottom: #FDBB37 3px solid;border-left: #FDBB37 3px solid; 
+    border-radius:25;     ">
+          <div data-style-id="state1element0" class="slds-col   slds-text-align_left slds-p-around_x-small  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="  background-repeat:no-repeat;    
+         " >
+    <omnistudio-block data-style-id="state1element0_child"  card={card}  record={record}  label="\Order {OrderNumber} Delayed"  collapsible="true"  collapsed-by-default="true"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element0block_element0" class="slds-col   slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element0block_element0_child"   card={card}  record={record}  placeholder=""  field-name="OrderNumber"  label="Order Number"  type="text"  styles='\{"label":{"fontSize":"1em"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element0block_element1" class="slds-col   slds-size_6-of-12 " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state1element0block_element1_child"   card={card}  record={record}  placeholder=""  field-name="DelayReason"  label="Delay Reason"  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element0block_element2" class="slds-col   slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-small-size_6-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element0block_element2_child"   card={card}  record={record}  placeholder=""  field-name="ShippingCity"  label="Shipping Location"  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element0block_element3" class="slds-col   slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-small-size_6-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element0block_element3_child"   card={card}  record={record}  placeholder=""  field-name="StartDate"  label="Start Date"  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element0block_element4" class="slds-col   slds-large-size_2-of-12 slds-medium-size_2-of-12 slds-small-size_2-of-12 slds-size_2-of-12  " data-rindex={rindex} style="      
+     height:25px;    " ><omnistudio-flex-action data-style-id="state1element0block_element4_child"  tracking-obj={_childCardTrackingObj}  class= "state1element0block_element4_child flexActionElement" 
+        data-action-element-class="state1element0block_element4_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="block0action4"   record={record}  card={card}  state-obj={record}  display-as-button="false"  button-variant="neutral"  icon-only="true"  icon-size="medium"  icon-color="#4176D3"  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1637712838565","type":"Custom","displayName":"Modify Order","vlocityIcon":"utility:edit","targetType":"Record","openUrlIn":"New Tab/Window","Record":{"targetAction":"edit","targetId":"{OrderId}","targetName":"Order"}},"displayAsButton":false,"buttonVariant":"neutral","iconOnly":true,"iconSize":"medium","iconColor":"#4176D3"}]'  label="Modify Order"  icon-name="utility:edit"  hide-action-icon="false"  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state1element0block_element5" class="slds-col   slds-large-size_2-of-12 slds-medium-size_2-of-12 slds-small-size_2-of-12 slds-size_2-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-action data-style-id="state1element0block_element5_child"  tracking-obj={_childCardTrackingObj}  class= "state1element0block_element5_child flexActionElement" 
+        data-action-element-class="state1element0block_element5_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="block0action5"   record={record}  card={card}  state-obj={record}  icon-only="true"  icon-size="medium"  icon-color="#4176D3"  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1637731479994","type":"Custom","displayName":"View Order","vlocityIcon":"utility:preview","targetType":"Record","openUrlIn":"New Tab/Window","Record":{"targetName":"Order","targetAction":"view","targetId":"{OrderId}"}},"iconOnly":true,"iconSize":"medium","iconColor":"#4176D3"}]'  label="View Order"  icon-name="utility:preview"  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state1element0block_element6" class="slds-col  slds-text-align_right  slds-large-size_8-of-12 slds-medium-size_8-of-12 slds-small-size_8-of-12 slds-size_8-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-action data-style-id="state1element0block_element6_child"  tracking-obj={_childCardTrackingObj}  class= "state1element0block_element6_child flexActionElement" 
+        data-action-element-class="state1element0block_element6_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="block0action6"   record={record}  card={card}  state-obj={record}  display-as-button="false"  icon-only="true"  button-variant="outline-brand"  icon-size="medium"  icon-color="#4176D3"  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1637727552357","type":"Flyout","displayName":"Product Details","vlocityIcon":"utility:summarydetail","openUrlIn":"Current Window","flyoutType":"childCard","openFlyoutIn":"Popover","cardName":"OrderInfoNew","flyoutLwc":"OrderInfoNew","hasExtraParams":true,"flyoutParams":{"OrderId":"{OrderId}","OrderItemId":"{OrderItemId}"}},"displayAsButton":false,"iconOnly":true,"buttonVariant":"outline-brand","iconSize":"medium","iconColor":"#4176D3"}]'  label="Product Details"  icon-name="utility:summarydetail"  theme="slds"  ><div slot="popoverflyout" class="block0action6action0" > <c-cf-order-info-new data-style-id="state1element0block_element6_child"  parent-record={record}  records={_records}  parent-mergefields={card}  record-id={recordId}  object-api-name={objectApiName}  parent-attribute='\{"OrderId":"{OrderId}","OrderItemId":"{OrderItemId}"}'  ></c-cf-order-info-new></div></omnistudio-flex-action>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <omnistudio-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-theme_default slds-card slds-p-around_x-small slds-m-around_none " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col   slds-p-around_x-small slds-size_12-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-large-size_1-of-12 slds-medium-size_1-of-12 slds-small-size_1-of-12 slds-size_1-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-icon data-style-id="state0element0block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:success"  size="medium"  extraclass="slds-icon_container slds-icon__svg--default "  variant="success"  imgsrc=""  theme="slds"  ></omnistudio-flex-icon>
+      </div><div data-style-id="state0element0block_element1" class="slds-col   slds-large-size_10-of-12 slds-medium-size_10-of-12 slds-small-size_10-of-12 slds-size_10-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element0block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3EGreat%20News%20-%20No%20delays%20in%20%7BAccountName%7D%20Orders%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state><omnistudio-flex-card-state  record={record} data-statue="false"  data-index="1" data-rindex={rindex} class="cf-vlocity-state-1 cf-vlocity-state slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-theme_alert-texture slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_x-small slds-m-around_none " style="     border-top: #FDBB37 3px solid;border-right: #FDBB37 3px solid;border-bottom: #FDBB37 3px solid;border-left: #FDBB37 3px solid; 
+    border-radius:25;     ">
+          <div data-style-id="state1element0" class="slds-col   slds-text-align_left slds-p-around_x-small  slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12  " data-rindex={rindex} style="  background-repeat:no-repeat;    
+         " >
+    <omnistudio-block data-style-id="state1element0_child"  card={card}  record={record}  label="\Order {OrderNumber} Delayed"  collapsible="true"  collapsed-by-default="true"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state1element0block_element0" class="slds-col   slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-small-size_6-of-12 slds-size_6-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element0block_element0_child"   card={card}  record={record}  placeholder=""  field-name="OrderNumber"  label="Order Number"  type="text"  styles='\{"label":{"fontSize":"1em"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element0block_element1" class="slds-col   slds-size_6-of-12 " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state1element0block_element1_child"   card={card}  record={record}  placeholder=""  field-name="DelayReason"  label="Delay Reason"  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element0block_element2" class="slds-col   slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-small-size_6-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element0block_element2_child"   card={card}  record={record}  placeholder=""  field-name="ShippingCity"  label="Shipping Location"  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element0block_element3" class="slds-col   slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-small-size_6-of-12 slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state1element0block_element3_child"   card={card}  record={record}  placeholder=""  field-name="StartDate"  label="Start Date"  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state1element0block_element4" class="slds-col   slds-large-size_2-of-12 slds-medium-size_2-of-12 slds-small-size_2-of-12 slds-size_2-of-12  " data-rindex={rindex} style="      
+     height:25px;    " ><omnistudio-flex-action data-style-id="state1element0block_element4_child"  tracking-obj={_childCardTrackingObj}  class= "state1element0block_element4_child flexActionElement" 
+        data-action-element-class="state1element0block_element4_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="block0action4"   record={record}  card={card}  state-obj={record}  display-as-button="false"  button-variant="neutral"  icon-only="true"  icon-size="medium"  icon-color="#4176D3"  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1637712838565","type":"Custom","displayName":"Modify Order","vlocityIcon":"utility:edit","targetType":"Record","openUrlIn":"New Tab/Window","Record":{"targetAction":"edit","targetId":"{OrderId}","targetName":"Order"}},"displayAsButton":false,"buttonVariant":"neutral","iconOnly":true,"iconSize":"medium","iconColor":"#4176D3"}]'  label="Modify Order"  icon-name="utility:edit"  hide-action-icon="false"  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state1element0block_element5" class="slds-col   slds-large-size_2-of-12 slds-medium-size_2-of-12 slds-small-size_2-of-12 slds-size_2-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-action data-style-id="state1element0block_element5_child"  tracking-obj={_childCardTrackingObj}  class= "state1element0block_element5_child flexActionElement" 
+        data-action-element-class="state1element0block_element5_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="block0action5"   record={record}  card={card}  state-obj={record}  icon-only="true"  icon-size="medium"  icon-color="#4176D3"  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1637731479994","type":"Custom","displayName":"View Order","vlocityIcon":"utility:preview","targetType":"Record","openUrlIn":"New Tab/Window","Record":{"targetName":"Order","targetAction":"view","targetId":"{OrderId}"}},"iconOnly":true,"iconSize":"medium","iconColor":"#4176D3"}]'  label="View Order"  icon-name="utility:preview"  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state1element0block_element6" class="slds-col  slds-text-align_right  slds-large-size_8-of-12 slds-medium-size_8-of-12 slds-small-size_8-of-12 slds-size_8-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-action data-style-id="state1element0block_element6_child"  tracking-obj={_childCardTrackingObj}  class= "state1element0block_element6_child flexActionElement" 
+        data-action-element-class="state1element0block_element6_child" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="block0action6"   record={record}  card={card}  state-obj={record}  display-as-button="false"  icon-only="true"  button-variant="outline-brand"  icon-size="medium"  icon-color="#4176D3"  action-list='\[{"stateObj":"{record}","card":"{card}","record":"{record}","stateAction":{"id":"flex-action-1637727552357","type":"Flyout","displayName":"Product Details","vlocityIcon":"utility:summarydetail","openUrlIn":"Current Window","flyoutType":"childCard","openFlyoutIn":"Popover","cardName":"OrderInfoNew","flyoutLwc":"OrderInfoNew","hasExtraParams":true,"flyoutParams":{"OrderId":"{OrderId}","OrderItemId":"{OrderItemId}"}},"displayAsButton":false,"iconOnly":true,"buttonVariant":"outline-brand","iconSize":"medium","iconColor":"#4176D3"}]'  label="Product Details"  icon-name="utility:summarydetail"  theme="slds"  ><div slot="popoverflyout" class="block0action6action0" > <c-cf-order-info-new data-style-id="state1element0block_element6_child"  parent-record={record}  records={_records}  parent-mergefields={card}  record-id={recordId}  object-api-name={objectApiName}  parent-attribute='\{"OrderId":"{OrderId}","OrderItemId":"{OrderItemId}"}'  ></c-cf-order-info-new></div></omnistudio-flex-action>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <omnistudio-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </omnistudio-action>
+  
+            <omnistudio-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </omnistudio-action>
+            </div>
+          </template>

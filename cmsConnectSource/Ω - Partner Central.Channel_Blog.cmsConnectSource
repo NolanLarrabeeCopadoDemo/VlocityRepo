@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMSConnectSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cmsConnectResourceType>
+        <cmsConnectResourceDefinition>
+            <developerName>Blog_item</developerName>
+            <masterLabel>Blog item</masterLabel>
+            <options>0</options>
+            <payloadType>JSON</payloadType>
+            <resourceIdPath>ID</resourceIdPath>
+            <resourceNamePath>title</resourceNamePath>
+            <resourcePath>rest/v1.1/sites/cirruschannel.wordpress.com/posts/{component}</resourcePath>
+        </cmsConnectResourceDefinition>
+        <cmsConnectResourceDefinition>
+            <developerName>Blog_List</developerName>
+            <masterLabel>Blog List</masterLabel>
+            <options>1</options>
+            <payloadType>JSON</payloadType>
+            <resourcePath>rest/v1.1/sites/cirruschannel.wordpress.com/posts?number={itemsPerPage}&amp;page={pageNumber}</resourcePath>
+            <rootNodePath>posts</rootNodePath>
+        </cmsConnectResourceDefinition>
+        <developerName>Channel_Blog</developerName>
+        <masterLabel>Channel Blog</masterLabel>
+        <resourceType>JSON</resourceType>
+    </cmsConnectResourceType>
+    <connectionType>Public</connectionType>
+    <developerName>Channel_Blog</developerName>
+    <languageEnabled>N</languageEnabled>
+    <masterLabel>Channel Blog</masterLabel>
+    <personalizationEnabled>N</personalizationEnabled>
+    <sortOrder>1</sortOrder>
+    <status>ACTIVE</status>
+    <type>WordPress</type>
+    <websiteUrl>https://public-api.wordpress.com</websiteUrl>
+</CMSConnectSource>

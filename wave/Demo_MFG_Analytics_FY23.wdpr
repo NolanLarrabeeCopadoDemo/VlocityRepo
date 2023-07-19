@@ -1,0 +1,618 @@
+{
+  "version" : "56.0",
+  "nodes" : {
+    "edge_MFG_Demo_Data" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "name" : "MFG_Demo_Sales_Agreements_Performance"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "digest_Account" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "External_ID__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "Lookup_Account_Id" : {
+      "action" : "update",
+      "sources" : [ "edge_MFG_Demo_Data", "digest_Account" ],
+      "parameters" : {
+        "leftKeys" : [ "ExternalId" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "AccountId" : "Id",
+          "AccountName" : "Name"
+        }
+      }
+    },
+    "reg_MFG_Demo_Data" : {
+      "action" : "save",
+      "sources" : [ "UPDATE2" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Demo Sales Agreements Performance",
+          "name" : "MFG_Demo_Sales_Agreements_Performance",
+          "folderName" : "Demo_MFG_Analytics_FY23"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "edg_Sales_Agreements_Rebates_Tiers" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "name" : "MFG_Demo_Sales_Agreements_Rebates_Tiers"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "update_AccountID_in_SART" : {
+      "action" : "update",
+      "sources" : [ "edg_Sales_Agreements_Rebates_Tiers", "digest_Account" ],
+      "parameters" : {
+        "leftKeys" : [ "AccountExternalId" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "AccountId" : "Id",
+          "AccountName" : "Name"
+        }
+      }
+    },
+    "Register_MFG_Demo_Sales_Agreements_Rebates_Tiers" : {
+      "action" : "save",
+      "sources" : [ "UPDATE3" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Demo Sales Agreements Rebates Tiers",
+          "name" : "MFG_Demo_Sales_Agreements_Rebates_Tiers",
+          "folderName" : "Demo_MFG_Analytics_FY23"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "ProductCode", "Description", "IsActive", "CreatedDate", "CreatedById", "LastModifiedDate", "LastModifiedById", "SystemModstamp", "Family", "ExternalId", "QuantityUnitOfMeasure", "IsDeleted", "IsArchived", "StockKeepingUnit", "External_ID__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Product2",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Product2"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "UPDATE0" : {
+      "action" : "update",
+      "sources" : [ "DROP_FIELDS3", "LOAD_DATASET0" ],
+      "parameters" : {
+        "leftKeys" : [ "ProductExternalId" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "ProductFamily" : "Family",
+          "ProductName" : "Name"
+        }
+      }
+    },
+    "UPDATE1" : {
+      "action" : "update",
+      "sources" : [ "DROP_FIELDS1", "LOAD_DATASET0" ],
+      "parameters" : {
+        "leftKeys" : [ "ProductExternalId" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "ProductFamily" : "Family",
+          "ProductName" : "Name"
+        }
+      }
+    },
+    "FORMULA0" : {
+      "action" : "formula",
+      "sources" : [ "Lookup_Account_Id" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "ElapsedYears",
+          "label" : "ElapsedYears",
+          "formulaExpression" : "year(now()) - year(to_date(LastProcessedDate))",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : "0"
+        } ]
+      }
+    },
+    "FORMULA1" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "DATETIME",
+          "name" : "TimeAux",
+          "label" : "TimeAux",
+          "formulaExpression" : "Time",
+          "format" : "yyyy-MM-dd",
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "DROP_FIELDS0" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA1" ],
+      "parameters" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Time", "LastProcessedDate" ]
+        }
+      }
+    },
+    "FORMULA2" : {
+      "action" : "formula",
+      "sources" : [ "DROP_FIELDS0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "DATETIME",
+          "name" : "Time",
+          "label" : "Time",
+          "formulaExpression" : "to_timestamp(date_add(TimeAux, 365 * ElapsedYears))",
+          "format" : "yyyy-MM-dd",
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA3" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA2" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "DATETIME",
+          "name" : "LastProcessedDate",
+          "label" : "LastProcessedDate",
+          "formulaExpression" : "now()",
+          "format" : "yyyy-MM-dd",
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "DROP_FIELDS1" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA3" ],
+      "parameters" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "TimeAux", "ElapsedYears" ]
+        }
+      }
+    },
+    "FORMULA4" : {
+      "action" : "formula",
+      "sources" : [ "update_AccountID_in_SART" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "ElapsedYears",
+          "label" : "ElapsedYears",
+          "formulaExpression" : "year(now()) - year(to_date(LastProcessedDate))",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : "0"
+        } ]
+      }
+    },
+    "FORMULA5" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA4" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "DATETIME",
+          "name" : "TimeAux",
+          "label" : "TimeAux",
+          "formulaExpression" : "Time",
+          "format" : "yyyy-MM-dd",
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "DROP_FIELDS2" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA5" ],
+      "parameters" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "LastProcessedDate", "Time" ]
+        }
+      }
+    },
+    "FORMULA6" : {
+      "action" : "formula",
+      "sources" : [ "DROP_FIELDS2" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "DATETIME",
+          "name" : "Time",
+          "label" : "Time",
+          "formulaExpression" : "to_timestamp(date_add(TimeAux, 365 * ElapsedYears))",
+          "format" : "yyyy-MM-dd",
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA7" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA6" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "DATETIME",
+          "name" : "LastProcessedDate",
+          "label" : "LastProcessedDate",
+          "formulaExpression" : "now()",
+          "format" : "yyyy-MM-dd",
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "DROP_FIELDS3" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA7" ],
+      "parameters" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "TimeAux", "ElapsedYears" ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "External_ID__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "SalesAgreement",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "SalesAgreement"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "UPDATE2" : {
+      "action" : "update",
+      "sources" : [ "UPDATE1", "LOAD_DATASET1" ],
+      "parameters" : {
+        "leftKeys" : [ "SalesAgreementExternalId" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "SalesAgreementName" : "Name"
+        }
+      }
+    },
+    "UPDATE3" : {
+      "action" : "update",
+      "sources" : [ "UPDATE0", "LOAD_DATASET1" ],
+      "parameters" : {
+        "leftKeys" : [ "SalesAgreementExternalId" ],
+        "rightKeys" : [ "External_ID__c" ],
+        "updateColumns" : {
+          "SalesAgreementName" : "Name"
+        }
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "edge_MFG_Demo_Data" : {
+        "label" : "Load Demo S.A.P.",
+        "description" : "",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "digest_Account" : {
+        "label" : "digest_Account",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "Lookup_Account_Id" : {
+        "label" : "Lookup_Account_Id S.A.P.",
+        "description" : "",
+        "type" : "UPDATE",
+        "top" : 112,
+        "left" : 252
+      },
+      "reg_MFG_Demo_Data" : {
+        "label" : "Save Demo S.A.P.",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 1232
+      },
+      "edg_Sales_Agreements_Rebates_Tiers" : {
+        "label" : "edg_Sales_Agreements_Rebates_Tiers",
+        "type" : "LOAD_DATASET",
+        "top" : 532,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "update_AccountID_in_SART" : {
+        "label" : "update_AccountID_in_SART",
+        "type" : "UPDATE",
+        "top" : 392,
+        "left" : 252
+      },
+      "Register_MFG_Demo_Sales_Agreements_Rebates_Tiers" : {
+        "label" : "Save Demo S.A.R.T.",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 532.1,
+        "left" : 952
+      },
+      "LOAD_DATASET0" : {
+        "label" : "Product2",
+        "type" : "LOAD_DATASET",
+        "top" : 252.2,
+        "left" : 951.5,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "UPDATE0" : {
+        "label" : "Update Product S.A.R.T.",
+        "description" : "",
+        "type" : "UPDATE",
+        "top" : 392.1,
+        "left" : 952
+      },
+      "UPDATE1" : {
+        "label" : "Update Product S.A.P.",
+        "description" : "",
+        "type" : "UPDATE",
+        "top" : 112.1,
+        "left" : 952.3
+      },
+      "TRANSFORM9" : {
+        "label" : "Compute Timeshifting S.A.P.",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 111.80000000000001,
+        "left" : 671.9,
+        "graph" : {
+          "FORMULA0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Elapsed Years S.A.P."
+          },
+          "FORMULA1" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula TimeAux S.A.P."
+          },
+          "DROP_FIELDS0" : {
+            "label" : "Drop Time and LPD S.A.P."
+          },
+          "FORMULA2" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Timeshift S.A.P."
+          },
+          "FORMULA3" : {
+            "parameters" : {
+              "type" : "DATE_NOW_UI"
+            },
+            "label" : "Formula Now S.A.P."
+          },
+          "DROP_FIELDS1" : {
+            "label" : "Drop Aux S.A.P."
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA0",
+          "target" : "FORMULA1"
+        }, {
+          "source" : "FORMULA1",
+          "target" : "DROP_FIELDS0"
+        }, {
+          "source" : "DROP_FIELDS0",
+          "target" : "FORMULA2"
+        }, {
+          "source" : "FORMULA2",
+          "target" : "FORMULA3"
+        }, {
+          "source" : "FORMULA3",
+          "target" : "DROP_FIELDS1"
+        } ]
+      },
+      "TRANSFORM10" : {
+        "label" : "Compute Timeshifting S.A.R.T.",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 392,
+        "left" : 392,
+        "graph" : {
+          "FORMULA4" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Elapsed Years S.A.R.T."
+          },
+          "FORMULA5" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula TimeAux S.A.R.T."
+          },
+          "DROP_FIELDS2" : {
+            "label" : "Drop Time and LPD S.A.R.T."
+          },
+          "FORMULA6" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Timeshift S.A.R.T."
+          },
+          "FORMULA7" : {
+            "parameters" : {
+              "type" : "DATE_NOW_UI"
+            },
+            "label" : "Formula Now S.A.R.T."
+          },
+          "DROP_FIELDS3" : {
+            "label" : "Drop Aux S.A.R.T."
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA4",
+          "target" : "FORMULA5"
+        }, {
+          "source" : "FORMULA5",
+          "target" : "DROP_FIELDS2"
+        }, {
+          "source" : "DROP_FIELDS2",
+          "target" : "FORMULA6"
+        }, {
+          "source" : "FORMULA6",
+          "target" : "FORMULA7"
+        }, {
+          "source" : "FORMULA7",
+          "target" : "DROP_FIELDS3"
+        } ]
+      },
+      "LOAD_DATASET1" : {
+        "label" : "SalesAgreement",
+        "type" : "LOAD_DATASET",
+        "top" : 391.8,
+        "left" : 1092.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "UPDATE2" : {
+        "label" : "Update Sales Agreement S.A.P.",
+        "description" : "",
+        "type" : "UPDATE",
+        "top" : 112,
+        "left" : 1092
+      },
+      "UPDATE3" : {
+        "label" : "Update Sales Agreement S.A.R.T.",
+        "description" : "",
+        "type" : "UPDATE",
+        "top" : 392,
+        "left" : 1232.2
+      }
+    },
+    "connectors" : [ {
+      "source" : "TRANSFORM10",
+      "target" : "UPDATE0"
+    }, {
+      "source" : "TRANSFORM9",
+      "target" : "UPDATE1"
+    }, {
+      "source" : "edge_MFG_Demo_Data",
+      "target" : "Lookup_Account_Id"
+    }, {
+      "source" : "digest_Account",
+      "target" : "Lookup_Account_Id"
+    }, {
+      "source" : "UPDATE2",
+      "target" : "reg_MFG_Demo_Data"
+    }, {
+      "source" : "edg_Sales_Agreements_Rebates_Tiers",
+      "target" : "update_AccountID_in_SART"
+    }, {
+      "source" : "digest_Account",
+      "target" : "update_AccountID_in_SART"
+    }, {
+      "source" : "UPDATE3",
+      "target" : "Register_MFG_Demo_Sales_Agreements_Rebates_Tiers"
+    }, {
+      "source" : "LOAD_DATASET0",
+      "target" : "UPDATE0"
+    }, {
+      "source" : "LOAD_DATASET0",
+      "target" : "UPDATE1"
+    }, {
+      "source" : "Lookup_Account_Id",
+      "target" : "TRANSFORM9"
+    }, {
+      "source" : "update_AccountID_in_SART",
+      "target" : "TRANSFORM10"
+    }, {
+      "source" : "UPDATE1",
+      "target" : "UPDATE2"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "UPDATE2"
+    }, {
+      "source" : "UPDATE0",
+      "target" : "UPDATE3"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "UPDATE3"
+    } ],
+    "hiddenColumns" : [ ]
+  }
+}

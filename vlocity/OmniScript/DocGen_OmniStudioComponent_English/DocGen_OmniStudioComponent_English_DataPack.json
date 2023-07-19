@@ -1,0 +1,33 @@
+{
+    "Description": "7/18 Update for Omnstudio Package for English",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsLocked": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": true,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "LastPreviewPage": "Lightning",
+    "MayEdit": true,
+    "Name": "Doc Gen Component",
+    "OmniProcessElement": [
+        "DocGen_OmniStudioComponent_English_Element_requiredInputs.json",
+        "DocGen_OmniStudioComponent_English_Element_IPgetTemplateDetailsForDocGen.json",
+        "DocGen_OmniStudioComponent_English_Element_setGenerationOption.json",
+        "DocGen_OmniStudioComponent_English_Element_generateDocument.json",
+        "DocGen_OmniStudioComponent_English_Element_GenerateDocumentWord.json",
+        "DocGen_OmniStudioComponent_English_Element_IPCombainAllPdfVersionIds.json",
+        "DocGen_OmniStudioComponent_English_Element_generateMergeDocument.json",
+        "DocGen_OmniStudioComponent_English_Element_CustomLWC1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "DocGen_OmniStudioComponent_English_PropertySetConfig.json",
+    "SubType": "OmniStudioComponent",
+    "Type": "DocGen",
+    "UniqueName": "DocGen_OmniStudioComponent_multiLanguage_1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/DocGen/OmniStudioComponent/English",
+    "WebComponentKey": "d38e59fe-c4b5-77b5-b45d-69c322b5fab8"
+}

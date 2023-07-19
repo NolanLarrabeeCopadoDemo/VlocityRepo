@@ -1,0 +1,41 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "TextBlock8",
+    "OmniProcessId": {
+        "Name": "Expedite Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ExpediteOrder/OS/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Request Approved",
+        "OmniProcessId": {
+            "Name": "Expedite Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ExpediteOrder/OS/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ExpediteOrder/OS/English/Request Approved",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Request Approved",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 6,
+        "dataJSON": false,
+        "label": "TextBlock8",
+        "sanitize": false,
+        "show": null,
+        "text": "<p><strong>Expedited Shipping Cost:&nbsp; </strong>%Shipping Cost%</p>\n<p><strong>Updated Total Price:</strong>&nbsp; &nbsp;%UpdatedTotal%</p>\n<p><strong>New Shipping Date:</strong>&nbsp; &nbsp;%Expedited Shipping Date%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ExpediteOrder/OS/English/TextBlock8"
+}

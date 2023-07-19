@@ -1,0 +1,272 @@
+{
+    "AccountInfo": {
+        "TAAccountName-Block": {
+            "AccountIdSF": "0018Y00002g4fqKQAQ",
+            "BillingPostalCode": "31349",
+            "Name": "Acme",
+            "TAAccountName": "Acme"
+        }
+    },
+    "AccountsAndContacts": {
+        "ContactDetails": [
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "info@salesforce.com",
+                "FirstName": "Edward Stamos Stamos Stamos Stamos",
+                "Id": "0038Y00003KhkJkQAJ",
+                "LastName": "Stamos",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "info@salesforce.com",
+                "FirstName": "Howard Jones Jones Jones Jones Jones",
+                "Id": "0038Y00003KhkJlQAJ",
+                "LastName": "Jones",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "info@salesforce.com",
+                "FirstName": "Leanne Tomlin Tomlin Tomlin Tomlin",
+                "Id": "0038Y00003KhkJmQAJ",
+                "LastName": "Tomlin",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "john@servicecloud.trial",
+                "FirstName": "John Smith Smith Smith Smith Smith Smith",
+                "Id": "0038Y00003KhkJhQAJ",
+                "LastName": "Smith",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "your.email@test.com",
+                "FirstName": "Mark Land Land Land Land Land Land Land",
+                "Id": "0038Y00003KhkJoQAJ",
+                "LastName": "Land",
+                "Phone": "(415) 555-5555",
+                "selectedContact": true
+            }
+        ]
+    },
+    "Completion": null,
+    "Error": {
+    },
+    "PbeProduct": [
+        {
+            "PbeIsActive": true,
+            "PbeName": "Compactor 9500",
+            "PbeUnitPrice": 3400,
+            "PriceBookEntryId": "01u8Y00000L9tPIQAZ",
+            "Product2Id": "01t8Y00000NV8tbQAD",
+            "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+            "Qty": "1",
+            "addToEstimate": false,
+            "filtervalue": "filtervalue"
+        },
+        {
+            "PbeIsActive": true,
+            "PbeName": "SLA-Finance",
+            "PbeUnitPrice": 2345,
+            "PriceBookEntryId": "01u8Y00000L9tOUQAZ",
+            "Product2Id": "01t8Y00000NV8siQAD",
+            "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+            "Qty": "1",
+            "addToEstimate": false,
+            "filtervalue": "filtervalue"
+        },
+        {
+            "PbeIsActive": true,
+            "PbeName": "Main Case Seal",
+            "PbeUnitPrice": 1200,
+            "PriceBookEntryId": "01u8Y00000L9tPOQAZ",
+            "Product2Id": "01t8Y00000NV8tgQAD",
+            "ProductUrl": "https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&m=462313057&s=612x612&w=0&h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=",
+            "Qty": "1",
+            "addToEstimate": false,
+            "filtervalue": "filtervalue"
+        }
+    ],
+    "PriceBookEntry": {
+        "CustomLWC6": {
+            "Products": {
+                "selectedprods": [
+                    {
+                        "Id": "REC0",
+                        "PbeIsActive": true,
+                        "PbeName": "Compactor 9500",
+                        "PbeUnitPrice": 3400,
+                        "PriceBookEntryId": "01u8Y00000L9tPIQAZ",
+                        "Product2Id": "01t8Y00000NV8tbQAD",
+                        "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC0"
+                        },
+                        "addToEstimate": true,
+                        "filtervalue": "filtervalue",
+                        "uniqueKey": "REC0"
+                    },
+                    {
+                        "Id": "REC1",
+                        "PbeIsActive": true,
+                        "PbeName": "SLA-Finance",
+                        "PbeUnitPrice": 2345,
+                        "PriceBookEntryId": "01u8Y00000L9tOUQAZ",
+                        "Product2Id": "01t8Y00000NV8siQAD",
+                        "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC1"
+                        },
+                        "addToEstimate": true,
+                        "filtervalue": "filtervalue",
+                        "uniqueKey": "REC1"
+                    }
+                ]
+            }
+        },
+        "Noofproducts": 2,
+        "PriceBook-Block": {
+            "PriceBook": "Manufacturing",
+            "PriceBookIdSF": "01s8Y000001THDiQAO",
+            "PriceBookrecName": "Manufacturing"
+        },
+        "Text1": "c",
+        "Total Cost": 0
+    },
+    "PriceBookEntry:Text1": "null",
+    "estimatedProducts": {
+        "Formula1": 5745,
+        "ProductsInCart": {
+            "summaryproducts": {
+                "ep": [
+                    {
+                        "Id": "REC0",
+                        "PbeName": "Compactor 9500",
+                        "PbeUnitPrice": 3400,
+                        "PriceBookEntryId": "01u8Y00000L9tPIQAZ",
+                        "Product2Id": "01t8Y00000NV8tbQAD",
+                        "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+                        "Qty": "1",
+                        "Subtotal": 3400,
+                        "_flex": {
+                            "uniqueKey": "REC0"
+                        },
+                        "uniqueKey": "REC0"
+                    }
+                ]
+            }
+        },
+        "subtotalcal": 3400
+    },
+    "estimatedproducts": [
+        {
+            "Id": "REC0",
+            "PbeIsActive": true,
+            "PbeName": "Compactor 9500",
+            "PbeUnitPrice": 3400,
+            "PriceBookEntryId": "01u8Y00000L9tPIQAZ",
+            "Product2Id": "01t8Y00000NV8tbQAD",
+            "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+            "Qty": "1",
+            "_flex": {
+                "state0element0block_element2": true,
+                "state0element0block_element2_child": true,
+                "state0element0block_element3": true,
+                "state0element0block_element3_child": true,
+                "state0element0block_element4": true,
+                "state0element0block_element4_child": true,
+                "state0element0block_element5": true,
+                "state0element0block_element5_child": true,
+                "uniqueKey": "REC0"
+            },
+            "addToEstimate": true,
+            "filtervalue": "filtervalue",
+            "uniqueKey": "REC0"
+        },
+        {
+            "Id": "REC1",
+            "PbeIsActive": true,
+            "PbeName": "SLA-Finance",
+            "PbeUnitPrice": 2345,
+            "PriceBookEntryId": "01u8Y00000L9tOUQAZ",
+            "Product2Id": "01t8Y00000NV8siQAD",
+            "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+            "Qty": "1",
+            "_flex": {
+                "state0element0block_element2": true,
+                "state0element0block_element2_child": true,
+                "state0element0block_element3": true,
+                "state0element0block_element3_child": true,
+                "state0element0block_element4": true,
+                "state0element0block_element4_child": true,
+                "state0element0block_element5": true,
+                "state0element0block_element5_child": true,
+                "uniqueKey": "REC1"
+            },
+            "addToEstimate": true,
+            "filtervalue": "filtervalue",
+            "uniqueKey": "REC1"
+        }
+    ],
+    "selectedAccountId": "0018Y00002g4fqKQAQ",
+    "setAccountDetails": {
+        "AccountIdSF": "0018Y00002g4fqKQAQ",
+        "BillingPostalCode": "31349",
+        "Name": "Acme",
+        "TAAccountName": "Acme"
+    },
+    "summaryproducts": {
+        "Total": 5745,
+        "ep": [
+            {
+                "PbeName": "Compactor 9500",
+                "PbeUnitPrice": 3400,
+                "PriceBookEntryId": "01u8Y00000L9tPIQAZ",
+                "Product2Id": "01t8Y00000NV8tbQAD",
+                "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+                "Qty": "1",
+                "Subtotal": 3400
+            },
+            {
+                "PbeName": "SLA-Finance",
+                "PbeUnitPrice": 2345,
+                "PriceBookEntryId": "01u8Y00000L9tOUQAZ",
+                "Product2Id": "01t8Y00000NV8siQAD",
+                "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+                "Qty": "1",
+                "Subtotal": 2345
+            }
+        ]
+    },
+    "timeStamp": "2022-01-28T10:34:42.341Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058Y00000AwAk2QAF",
+    "userName": "demo.org@%vlocity_namespace%.1642136864485",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-480"
+}

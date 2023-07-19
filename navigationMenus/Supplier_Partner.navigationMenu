@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Badger Partner Portal</container>
+    <containerType>Network</containerType>
+    <label>Navigation Bar: Supplier Partner</label>
+    <navigationMenuItem>
+        <label>Business Center</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/business-center</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Feedback Center</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/feedback-center</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Resource Center</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/files</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Support Center</label>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/support</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

@@ -1,0 +1,44 @@
+{
+    "AuthorName": "SalesforceDemo",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 1,
+                "name": "User.userContactId",
+                "val": "0030M00001rlhAMQAY"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "getCasefromContact",
+            "bundleType": "",
+            "dsDelay": "",
+            "inputMap": {
+                "ContactId": "{User.userContactId}"
+            },
+            "resultVar": ""
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "Cases",
+    "Namespace": "",
+    "OmniUiCardKey": "Cases/SalesforceDemo/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "Cases.json",
+    "SampleDataSourceResponse": "[{\"Subject\":\"Unable to start Skid Steer\",\"CaseId\":\"5003y00000wXyNmAAK\",\"CaseNumber\":\"00002608\",\"Channel\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeW6&amp;oid=00D0M000001quUM\\\" alt=\\\" \\\" style=\\\"height:22px; width:22px;\\\" border=\\\"0\\\"/>\",\"Opened Date\":\"2022-05-06T04:45:17.000Z\",\"Priority\":\"Medium\",\"Status\":\"New\"},{\"Subject\":\"How do I diagnose this product issue?\",\"CaseId\":\"5000M00000ac8M4QAI\",\"CaseNumber\":\"00001400\",\"Channel\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeW9&amp;oid=00D0M000001quUM\\\" alt=\\\" \\\" style=\\\"height:22px; width:22px;\\\" border=\\\"0\\\"/>\",\"Opened Date\":\"2020-01-10T20:35:28.000Z\",\"Priority\":\"High\",\"Origin\":\"Website\",\"Status\":\"Working\"},{\"Subject\":\"Can you expedite my order?\",\"CaseId\":\"5000M00000ac8M5QAI\",\"CaseNumber\":\"00001450\",\"Channel\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeW6&amp;oid=00D0M000001quUM\\\" alt=\\\" \\\" style=\\\"height:22px; width:22px;\\\" border=\\\"0\\\"/>\",\"Opened Date\":\"2020-01-10T20:35:28.000Z\",\"Priority\":\"Critical\",\"Origin\":\"Phone\",\"Status\":\"Closed\"},{\"Subject\":\"Question on my most recent order.\",\"CaseId\":\"5000M00000ac8MJQAY\",\"CaseNumber\":\"00001592\",\"Channel\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeWB&amp;oid=00D0M000001quUM\\\" alt=\\\" \\\" style=\\\"height:22px; width:22px;\\\" border=\\\"0\\\"/>\",\"Opened Date\":\"2020-01-10T20:35:28.000Z\",\"Priority\":\"High\",\"Origin\":\"Mobile Device\",\"Status\":\"Working\"},{\"Subject\":\"Facebook Message from: Lauren Boyle\",\"CaseId\":\"5000M00000ac8MWQAY\",\"CaseNumber\":\"00001607\",\"Channel\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeWC&amp;oid=00D0M000001quUM\\\" alt=\\\" \\\" style=\\\"height:22px; width:22px;\\\" border=\\\"0\\\"/>\",\"Opened Date\":\"2020-01-10T20:35:28.000Z\",\"Priority\":\"Medium\",\"Origin\":\"Facebook\",\"Status\":\"Closed\"},{\"Subject\":\"What are your service hours?\",\"CaseId\":\"5000M00000ac8O9QAI\",\"CaseNumber\":\"00001533\",\"Channel\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeW8&amp;oid=00D0M000001quUM\\\" alt=\\\" \\\" style=\\\"height:22px; width:22px;\\\" border=\\\"0\\\"/>\",\"Opened Date\":\"2020-01-10T20:35:28.000Z\",\"Priority\":\"Medium\",\"Origin\":\"Chat\",\"Status\":\"Closed\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "Cases_SalesforceDemo_1",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/Cases"
+}

@@ -1,0 +1,95 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "ContactDetails",
+    "OmniProcessId": {
+        "Name": "PWE",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/team/createOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "AccountsAndContacts",
+        "OmniProcessId": {
+            "Name": "PWE",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/team/createOrder/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/team/createOrder/English/AccountsAndContacts",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "AccountsAndContacts",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "allowClear": true,
+        "allowDelete": true,
+        "allowEdit": true,
+        "allowNew": true,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "deleteLabel": "Delete",
+        "editLabel": "Edit",
+        "elementName": "",
+        "hide": false,
+        "label": "Edit Contact",
+        "maxDisplay": 6,
+        "mode": "Cards",
+        "newLabel": "New",
+        "selectCheckBox": "selectedContact",
+        "selectMode": "Single",
+        "selectSobject": "Contact",
+        "show": null,
+        "sobjectMapping": [
+            {
+                "duplicateKey": true,
+                "osElement": "ContactId",
+                "sObjectField": "Id"
+            },
+            {
+                "duplicateKey": false,
+                "osElement": "FirstName",
+                "sObjectField": "FirstName"
+            },
+            {
+                "duplicateKey": false,
+                "osElement": "LastName",
+                "sObjectField": "LastName"
+            },
+            {
+                "duplicateKey": false,
+                "osElement": "Email",
+                "sObjectField": "Email"
+            },
+            {
+                "duplicateKey": false,
+                "osElement": "Phone",
+                "sObjectField": "Phone"
+            },
+            {
+                "duplicateKey": true,
+                "osElement": "AccountIdofContact",
+                "sObjectField": "AccountId"
+            },
+            {
+                "duplicateKey": false,
+                "osElement": "AccountName",
+                "sObjectField": "AccountId"
+            }
+        ],
+        "sumElement": "",
+        "svgIcon": "user",
+        "svgSprite": "utility",
+        "valueSvgMap": [
+        ]
+    },
+    "Type": "Edit Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/team/createOrder/English/ContactDetails"
+}

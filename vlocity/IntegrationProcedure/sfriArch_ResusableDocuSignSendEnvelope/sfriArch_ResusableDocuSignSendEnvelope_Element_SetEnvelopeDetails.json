@@ -1,0 +1,56 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "SetEnvelopeDetails",
+    "OmniProcessId": {
+        "Name": "sfiArch Resusable DocuSign Send Envelope",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/sfriArch/ResusableDocuSignSendEnvelope/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "myEnvelope": {
+                "documents": [
+                    {
+                        "documentId": "1",
+                        "fileExtension": "docx",
+                        "name": "%docTitle%",
+                        "sourceId": "%DetermineDocumentToSend:myDocument%",
+                        "sourceType": "Content"
+                    }
+                ],
+                "emailBody": "%docTitle%-Sent Via DocuSign Envelope",
+                "emailSubject": "Please sign this %docTitle%",
+                "parentId": "%SObjectId%",
+                "recipients": {
+                    "signers": [
+                        {
+                            "email": "%generateDocument:recipientEmail%",
+                            "name": "%generateDocument:recipientName%",
+                            "recipientId": "1",
+                            "routingOrder": "1",
+                            "signerRole": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/sfriArch/ResusableDocuSignSendEnvelope/Procedure/SetEnvelopeDetails"
+}

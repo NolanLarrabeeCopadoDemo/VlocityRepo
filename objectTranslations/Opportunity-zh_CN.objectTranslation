@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- My Opportunities PRM --></label>
+        <name>My_Opportunities_PRM</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Region --></label>
+        <name>Account_Region__c</name>
+    </fields>
+    <fields>
+        <label>年龄</label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>这是用来在一个方程来产生一个随机数</help>
+        <label>自动编号</label>
+        <name>AutoNumber__c</name>
+    </fields>
+    <fields>
+        <label>核定预算</label>
+        <name>Budget_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Equipment Cost --></label>
+        <name>Capital_Equipment_Cost__c</name>
+    </fields>
+    <fields>
+        <label>外壳</label>
+        <name>Case__c</name>
+        <relationshipLabel>相关销售机会</relationshipLabel>
+    </fields>
+    <fields>
+        <label>关闭倒计时</label>
+        <name>CloseDate_TODAY__c</name>
+    </fields>
+    <fields>
+        <label>指导</label>
+        <name>Coaching__c</name>
+        <relationshipLabel>机会</relationshipLabel>
+    </fields>
+    <fields>
+        <label>竞争</label>
+        <name>Competition__c</name>
+    </fields>
+    <fields>
+        <label>竞争指导</label>
+        <name>Competitive_Coach__c</name>
+    </fields>
+    <fields>
+        <label>有竞争的单子</label>
+        <name>Competitive_Deal__c</name>
+    </fields>
+    <fields>
+        <label>竞争者</label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>竞争对手A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>竞争对手B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>竞争对手Ç</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>完整的投资回报分析</label>
+        <name>Complete_ROI_Analysis__c</name>
+    </fields>
+    <fields>
+        <label>联系市</label>
+        <name>Contact_City__c</name>
+    </fields>
+    <fields>
+        <label>联系方式公司</label>
+        <name>Contact_Company__c</name>
+    </fields>
+    <fields>
+        <label>联系国家</label>
+        <name>Contact_Country__c</name>
+    </fields>
+    <fields>
+        <label>联系人电子邮件</label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label>联系人姓名</label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label>联系电话</label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label>联系邮编</label>
+        <name>Contact_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label>联系国省</label>
+        <name>Contact_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Street --></label>
+        <name>Contact_Street__c</name>
+    </fields>
+    <fields>
+        <label>联系人职务</label>
+        <name>Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label>合同条款</label>
+        <name>Contract_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Non-Standard</masterLabel>
+            <translation>非标</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>标准</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>创建日期</label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label>DB金额</label>
+        <name>DB_Amount__c</name>
+    </fields>
+    <fields>
+        <label>DB天</label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>DateTimeCreated__c</name>
+    </fields>
+    <fields>
+        <label>还有...天过期</label>
+        <name>Days_Left_Until_Expire__c</name>
+    </fields>
+    <fields>
+        <label>单子批准日期</label>
+        <name>Deal_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label>Deal前进</label>
+        <name>Deal_Forward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal ID --></label>
+        <name>Deal_ID__c</name>
+    </fields>
+    <fields>
+        <label>单子来源</label>
+        <name>Deal_Source__c</name>
+    </fields>
+    <fields>
+        <label>决策角色</label>
+        <name>Decision_Role__c</name>
+    </fields>
+    <fields>
+        <label>演示文稿日期</label>
+        <name>Demo_Presentation_Date__c</name>
+    </fields>
+    <fields>
+        <label>折扣已批准</label>
+        <name>Discount_Approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>没有</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>是</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>折扣 ％</label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label>分销商</label>
+        <name>Distributor__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of days before or after the close date the opportunity is predicted to close.  It is calculated by subtracting the Close Date from the Predicted Close Date. --></help>
+        <label><!-- ED Close Date Delta --></label>
+        <name>ED_Close_Date_Delta__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>ED_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of DAYS after the Created Date that this opportunity is targeted to close. --></help>
+        <label><!-- ED Predicted Time to Close --></label>
+        <name>ED_Outcome__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is calculated by adding the number of days in the &quot;ED Predicted Time to Close&quot; field to the CREATED DATE. --></help>
+        <label><!-- ED Predicted Close Date --></label>
+        <name>ED_Predicted_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>ED_Prescription__c</name>
+    </fields>
+    <fields>
+        <label>Engage法务</label>
+        <name>Engage_Legal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimation Status --></label>
+        <name>Estimation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not started</masterLabel>
+            <translation><!-- Not started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On hold</masterLabel>
+            <translation><!-- On hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimator Name --></label>
+        <name>Estimator_Name__c</name>
+        <relationshipLabel><!-- Opportunities (Estimator Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimator Notes --></label>
+        <name>Estimator_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimator --></label>
+        <name>Estimator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery. --></help>
+        <label><!-- Executive Meeting --></label>
+        <name>Exec_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Number of Units --></label>
+        <name>Expected_Number_of_Units__c</name>
+    </fields>
+    <fields>
+        <label>外部ID</label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>转发的销售线索ID</label>
+        <name>Forwarded_Lead_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Margin --></label>
+        <name>Gross_Margin__c</name>
+    </fields>
+    <fields>
+        <label>实施启动</label>
+        <name>Implementation_Start__c</name>
+    </fields>
+    <fields>
+        <help>依赖于年龄字段。好=年龄&lt;30天。警告=年龄&lt;45天。可怜=年龄&gt; 60天。</help>
+        <label>年龄指标</label>
+        <name>IndStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery --></help>
+        <label><!-- Interactive Demo --></label>
+        <name>Interactive_Demo__c</name>
+    </fields>
+    <fields>
+        <label>内部定价认证</label>
+        <name>Internal_Pricing_Approvals__c</name>
+    </fields>
+    <fields>
+        <label>初步预计关闭日期</label>
+        <name>Intial_Estimated_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Cost --></label>
+        <name>Labor_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Hours --></label>
+        <name>Labor_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Rate --></label>
+        <name>Labor_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity --></label>
+        <name>LastActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>LastModifiedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Margin --></label>
+        <name>MFG_ALL_Expected_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- MFG Opty Quip URL --></label>
+        <name>MFG_ALL_Opty_Quip_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFQ Expected Date --></label>
+        <name>MFG_ALL_RFQ_Expected_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFQ Received Date --></label>
+        <name>MFG_ALL_RFQ_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>MFG_IDO_Asset__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MFG Key Record --></label>
+        <name>MFG_Key_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Start Date --></label>
+        <name>MFG_Production_Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Due Date --></label>
+        <name>MFG_Quote_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label>利润</label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Materials Cost --></label>
+        <name>Materials_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overhead Rate --></label>
+        <name>Overhead_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Owner --></label>
+        <name>Partner_Owner__c</name>
+        <relationshipLabel><!-- Partner Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plant Location --></label>
+        <name>Plant_Location__c</name>
+        <picklistValues>
+            <masterLabel>Appleton, WI</masterLabel>
+            <translation><!-- Appleton, WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eugene, OR</masterLabel>
+            <translation><!-- Eugene, OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Rapids, MI</masterLabel>
+            <translation><!-- Grand Rapids, MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plant City, FL</masterLabel>
+            <translation><!-- Plant City, FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Antonio, TX</masterLabel>
+            <translation><!-- San Antonio, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suwanee, GA</masterLabel>
+            <translation><!-- Suwanee, GA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Approved --></label>
+        <name>Pricing_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production End Date --></label>
+        <name>Production_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Hours --></label>
+        <name>Production_Hours__c</name>
+    </fields>
+    <fields>
+        <label>产品</label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>GC1000 series</masterLabel>
+            <translation>GC1000系列</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC10001</masterLabel>
+            <translation><!-- GC10001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC20002</masterLabel>
+            <translation><!-- GC20002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5000 series</masterLabel>
+            <translation>GC5000系列</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC50000</masterLabel>
+            <translation><!-- GC50000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>项目预算</label>
+        <name>Project_Budget__c</name>
+    </fields>
+    <fields>
+        <label>项目编入预算？</label>
+        <name>Project_Budgeted__c</name>
+    </fields>
+    <fields>
+        <label>项目介绍</label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <label>项目经理联系</label>
+        <name>Project_Manager_Contact__c</name>
+        <relationshipLabel>机会</relationshipLabel>
+    </fields>
+    <fields>
+        <label>项目名</label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label>预计持续时间</label>
+        <name>Projected_Durations__c</name>
+    </fields>
+    <fields>
+        <label>预计完成</label>
+        <name>Projected_Finish__c</name>
+    </fields>
+    <fields>
+        <help>该字段跟踪很多次的机会已经被推逐月</help>
+        <label>Push计数器</label>
+        <name>Push_Counter__c</name>
+    </fields>
+    <fields>
+        <label>随机数字</label>
+        <name>Random_Number__c</name>
+    </fields>
+    <fields>
+        <label>失单原因</label>
+        <name>Reason_Lost__c</name>
+        <picklistValues>
+            <masterLabel>No Decision</masterLabel>
+            <translation><!-- No Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>其他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>价格</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Issues</masterLabel>
+            <translation>产品问题</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation>关系</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rebate Program --></label>
+        <name>Rebate_Program__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>报名截止</label>
+        <name>Registration_Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to your Amended Contract. --></help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- SteelBrick CPQ uses this field to automatically convert assets and subscriptions. --></help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to create Contracted Prices without creating a Contract. --></help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique identifier for the Amend:Re-Quote transaction, which is the original primary quote&apos;s ID. --></help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to automatically create an order from the primary quote. --></help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help><!-- SteelBrick CPQ uses this to point to the primary quote on this opportunity. --></help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this opportunity is a renewal opportunity. --></help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract being renewed by this renewal opportunity. If the several contracts roll up to this opportunity, this points at the master contract. --></help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>暂停机会</label>
+        <name>Stalled_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label>状态值</label>
+        <name>Status_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooling Cost --></label>
+        <name>Tooling_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- URLsrc --></label>
+        <name>URLsrc__c</name>
+    </fields>
+    <fields>
+        <label>查看转发业务机会</label>
+        <name>View_Forwarded_Lead__c</name>
+    </fields>
+    <fields>
+        <label>胜出竞争者</label>
+        <name>Winning_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>竞争对手A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>竞争对手B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>竞争对手Ç</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>Work_Order__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label>简历</label>
+        <name>cv__c</name>
+    </fields>
+    <fields>
+        <help><!-- Overall Approval Status for this Opportunity --></help>
+        <label><!-- Approval Status --></label>
+        <name>sbaa__ApprovalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation><!-- Recalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used with Native Approvals to indicate the step in the approval process this Opportunity is in --></help>
+        <label><!-- Approval Step --></label>
+        <name>sbaa__ApprovalStep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used with Native Approvers; indicates which Approver is responsible for approving the Opportunity. --></help>
+        <label><!-- Approver --></label>
+        <name>sbaa__Approver__c</name>
+        <relationshipLabel><!-- Opportunities (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used with Native Approvals; to indicate whether the step has been approved --></help>
+        <label><!-- Step Approved --></label>
+        <name>sbaa__StepApproved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when record was submitted for approval --></help>
+        <label><!-- Submitted Date --></label>
+        <name>sbaa__SubmittedDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- User requesting approval for the Opportunity. --></help>
+        <label><!-- Submitted User --></label>
+        <name>sbaa__SubmittedUser__c</name>
+        <relationshipLabel><!-- Opportunities (Submitted User) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Opportunities created by or for partners. --></description>
+        <label>间接（合作伙伴）</label>
+        <name>ChannelPartner</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- ETO Opportunities --></description>
+        <label><!-- Engineer to Order --></label>
+        <name>MFG_ETO_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Revenue Operation Flow --></description>
+        <label><!-- Revenue Cloud --></label>
+        <name>Revenue_Cloud</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Simple Opportunities with products. --></description>
+        <label>简单</label>
+        <name>SimpleOpportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>如果舞台等于封闭 - 失去再失的原因是必填字段。</errorMessage>
+        <name>Reason_Lost_Required</name>
+    </validationRules>
+    <webLinks>
+        <label>会计集成</label>
+        <name>Financial_System_Integration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Great_Plains_Integration --></label>
+        <name>Great_Plains_Integration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quick_Quote --></label>
+        <name>Quick_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label>销售方法</label>
+        <name>Sales_Methodology</name>
+    </webLinks>
+    <webLinks>
+        <label>用DocuSign签字</label>
+        <name>Sign_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewApprovals --></label>
+        <name>sbaa__PreviewApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RecallApprovals --></label>
+        <name>sbaa__RecallApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ResendRequestEmail --></label>
+        <name>sbaa__ResendRequestEmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SubmitForApproval --></label>
+        <name>sbaa__SubmitForApproval</name>
+    </webLinks>
+</CustomObjectTranslation>

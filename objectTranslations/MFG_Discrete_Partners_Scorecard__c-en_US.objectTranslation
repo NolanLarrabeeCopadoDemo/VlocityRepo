@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Scorecard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scorecards</value>
+    </caseValues>
+    <fields>
+        <label><!-- Availability Comments --></label>
+        <name>Availability_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Score --></label>
+        <name>Availability_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Strategy --></label>
+        <name>Category_Strategy__c</name>
+        <relationshipLabel><!-- Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- # Days Late --></label>
+        <name>Days_Late__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Status --></label>
+        <name>Delivery_Status__c</name>
+        <picklistValues>
+            <masterLabel>Early</masterLabel>
+            <translation><!-- Early --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late</masterLabel>
+            <translation><!-- Late --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Time</masterLabel>
+            <translation><!-- On Time --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Desired Parts Available? --></label>
+        <name>Desired_Parts_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Parts Available --></label>
+        <name>Parts_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Parts on Backorder --></label>
+        <name>Parts_on_Backorder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order --></label>
+        <name>Purchase_Order__c</name>
+        <relationshipLabel><!-- Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quality Comments --></label>
+        <name>Quality_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quality Score --></label>
+        <name>Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responsiveness Comments --></label>
+        <name>Responsiveness_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responsiveness Score --></label>
+        <name>Responsiveness_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Defects? --></label>
+        <name>Shipment_Defects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supplier Communication --></label>
+        <name>Supplier_Communication__c</name>
+        <picklistValues>
+            <masterLabel>⭐ Poor</masterLabel>
+            <translation><!-- ⭐ Poor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>⭐⭐ Fair</masterLabel>
+            <translation><!-- ⭐⭐ Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>⭐⭐⭐ Good</masterLabel>
+            <translation><!-- ⭐⭐⭐ Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>⭐⭐⭐⭐ Excellent</masterLabel>
+            <translation><!-- ⭐⭐⭐⭐ Excellent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Supplier --></label>
+        <name>Supplier__c</name>
+        <relationshipLabel><!-- Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Period --></label>
+        <name>Time_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Defects --></label>
+        <name>of_Defects__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of RMAs --></label>
+        <name>of_RMAs__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

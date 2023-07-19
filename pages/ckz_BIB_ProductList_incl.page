@@ -1,0 +1,24 @@
+<!--
+ - Created by brandon.rogers on 2020-01-06.
+ -->
+
+<apex:page id="ckz_BIB_ProductList_incl" sidebar="false" showHeader="false" standardStylesheets="false">
+
+    <!-- PLP 2.0 -->
+    <c:ckz_ProductListHeader />
+    <c:ckz_ProductListFilter />
+    <c:ckz_ProductItemGrid />
+    <c:ckz_ProductItemList />
+    <c:ckz_ProductCompare />
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+
+            CCRZ.pubSub.on("view:productItemsView:refresh", function (viewRef) {
+                //console.log("ckz_BIB_ProductList_incl:productItemsView:refresh");
+
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        });
+    </script>
+</apex:page>

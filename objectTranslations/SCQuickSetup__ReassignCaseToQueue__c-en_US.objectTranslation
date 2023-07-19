@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Enable --></label>
+        <name>SCQuickSetup__Enable__c</name>
+    </fields>
+    <fields>
+        <label><!-- OwnerId --></label>
+        <name>SCQuickSetup__OwnerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- QueueId --></label>
+        <name>SCQuickSetup__QueueId__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>artfeed__Article_Feedback__c.artfeed__Article_Title__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>artfeed__Article_Feedback__c.artfeed__Like__c</field>
+    </columns>
+    <columns>
+        <field>artfeed__Article_Feedback__c.artfeed__Unlike_Reason__c</field>
+    </columns>
+    <columns>
+        <field>artfeed__Article_Feedback__c.artfeed__Assigned_To__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>artfeed__Article_Feedback__c.artfeed__Article_Number__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Article Feedback Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$artfeed__Article_Feedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>artfeed__Article_Feedback__c.artfeed__Action_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

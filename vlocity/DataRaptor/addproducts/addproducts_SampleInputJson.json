@@ -1,0 +1,211 @@
+{
+    "AccountInfo": {
+        "TAAccountName-Block": {
+            "AccountIdSF": "0018Y00002g4fqKQAQ",
+            "BillingPostalCode": "31349",
+            "Name": "Acme",
+            "TAAccountName": "Acme"
+        }
+    },
+    "AccountsAndContacts": {
+        "ContactDetails": [
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "info@salesforce.com",
+                "FirstName": "Edward Stamos Stamos Stamos Stamos",
+                "Id": "0038Y00003KhkJkQAJ",
+                "LastName": "Stamos",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "info@salesforce.com",
+                "FirstName": "Howard Jones Jones Jones Jones Jones",
+                "Id": "0038Y00003KhkJlQAJ",
+                "LastName": "Jones",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "info@salesforce.com",
+                "FirstName": "Leanne Tomlin Tomlin Tomlin Tomlin",
+                "Id": "0038Y00003KhkJmQAJ",
+                "LastName": "Tomlin",
+                "Phone": "(212) 555-5555",
+                "selectedContact": true
+            },
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "john@servicecloud.trial",
+                "FirstName": "John Smith Smith Smith Smith Smith Smith",
+                "Id": "0038Y00003KhkJhQAJ",
+                "LastName": "Smith",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "0018Y00002g4fqKQAQ",
+                "Email": "your.email@test.com",
+                "FirstName": "Mark Land Land Land Land Land Land Land",
+                "Id": "0038Y00003KhkJoQAJ",
+                "LastName": "Land",
+                "Phone": "(415) 555-5555",
+                "selectedContact": false
+            }
+        ]
+    },
+    "Completion": null,
+    "Contacts": [
+        {
+            "AccountId": "0018Y00002g4fqKQAQ",
+            "Email": "info@salesforce.com",
+            "FirstName": "Edward Stamos Stamos Stamos Stamos",
+            "Id": "0038Y00003KhkJkQAJ",
+            "LastName": "Stamos",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountId": "0018Y00002g4fqKQAQ",
+            "Email": "info@salesforce.com",
+            "FirstName": "Howard Jones Jones Jones Jones Jones",
+            "Id": "0038Y00003KhkJlQAJ",
+            "LastName": "Jones",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountId": "0018Y00002g4fqKQAQ",
+            "Email": "info@salesforce.com",
+            "FirstName": "Leanne Tomlin Tomlin Tomlin Tomlin",
+            "Id": "0038Y00003KhkJmQAJ",
+            "LastName": "Tomlin",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountId": "0018Y00002g4fqKQAQ",
+            "Email": "john@servicecloud.trial",
+            "FirstName": "John Smith Smith Smith Smith Smith Smith",
+            "Id": "0038Y00003KhkJhQAJ",
+            "LastName": "Smith",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountId": "0018Y00002g4fqKQAQ",
+            "Email": "your.email@test.com",
+            "FirstName": "Mark Land Land Land Land Land Land Land",
+            "Id": "0038Y00003KhkJoQAJ",
+            "LastName": "Land",
+            "Phone": "(415) 555-5555"
+        }
+    ],
+    "Error": {
+    },
+    "PriceBookEntry": {
+        "CustomLWC6": {
+            "Products": {
+                "selectedprods": [
+                    {
+                        "Id": "REC0",
+                        "PId": "01t8Y00000NV8FkQAL",
+                        "PbeIsActive": true,
+                        "PbeName": "Genwatt 1000KW",
+                        "PbeUnitPrice": 1000,
+                        "PriceBookEntryId": "01u8Y00000L9rscQAB",
+                        "Product2Id": "01t8Y00000NV8FkQAL",
+                        "ProductUrl": "http://www.slhmetals.com/images/Steel%20Rebar%2002.png",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC0"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC0"
+                    },
+                    {
+                        "Id": "REC1",
+                        "PId": "01t8Y00000NV8FpQAL",
+                        "PbeIsActive": true,
+                        "PbeName": "Genwatt 10KW",
+                        "PbeUnitPrice": 200,
+                        "PriceBookEntryId": "01u8Y00000L9rsdQAB",
+                        "Product2Id": "01t8Y00000NV8FpQAL",
+                        "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC1"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC1"
+                    }
+                ]
+            }
+        },
+        "Noofproducts": 0,
+        "PriceBook-Block": {
+            "PriceBook": "Standard Price Book",
+            "PriceBookIdSF": "01s8Y000001Sc7rQAC",
+            "PriceBookrecName": "Standard Price Book"
+        },
+        "ProductName": "gen",
+        "totalcost": 0
+    },
+    "Product": {
+        "PbeProduct": [
+            {
+                "PId": "01t8Y00000NV8FkQAL",
+                "PbeIsActive": true,
+                "PbeName": "Genwatt 1000KW",
+                "PbeUnitPrice": 1000,
+                "PriceBookEntryId": "01u8Y00000L9rscQAB",
+                "Product2Id": "01t8Y00000NV8FkQAL",
+                "ProductUrl": "http://www.slhmetals.com/images/Steel%20Rebar%2002.png",
+                "Qty": "1",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01t8Y00000NV8FpQAL",
+                "PbeIsActive": true,
+                "PbeName": "Genwatt 10KW",
+                "PbeUnitPrice": 200,
+                "PriceBookEntryId": "01u8Y00000L9rsdQAB",
+                "Product2Id": "01t8Y00000NV8FpQAL",
+                "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg",
+                "Qty": "1",
+                "addToEstimate": false
+            }
+        ],
+        "listisblank": false
+    },
+    "selectedAccountId": "0018Y00002g4fqKQAQ",
+    "setAccountDetails": {
+        "AccountIdSF": "0018Y00002g4fqKQAQ",
+        "BillingPostalCode": "31349",
+        "Name": "Acme",
+        "TAAccountName": "Acme"
+    },
+    "summaryproducts": {
+        "ep": null
+    },
+    "timeStamp": "2022-02-18T06:30:37.092Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058Y00000AwAk2QAF",
+    "userName": "demo.org@%vlocity_namespace%.1642136864485",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-480"
+}

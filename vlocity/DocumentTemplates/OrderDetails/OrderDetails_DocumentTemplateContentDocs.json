@@ -1,0 +1,34 @@
+[
+    {
+        "ContentDocumentId": {
+            "LatestPublishedVersion.ExternalDocumentInfo2": "f7f133ef-b3db-6dba-89b7-268372f0aa21",
+            "LatestPublishedVersion.Title": "PreworkEstimateTemplate.docx",
+            "LatestPublishedVersion.VersionNumber": "1",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "ContentDocument/Generated-373697110",
+            "VlocityRecordSObjectType": "ContentDocument"
+        },
+        "DocumentTemplate.GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+        "DocumentTemplateId": {
+            "GlobalKey": "OrderDetails/1/MFG Spring Master V2/1657844842546",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated-1967297149",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "FileStageType": "Original",
+        "IsLocked": false,
+        "LatestContentVersionId": {
+            "ExternalDocumentInfo2": "f7f133ef-b3db-6dba-89b7-268372f0aa21",
+            "Title": "PreworkEstimateTemplate.docx",
+            "VersionNumber": "1",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "ContentVersion/Generated-1001918243",
+            "VlocityRecordSObjectType": "ContentVersion"
+        },
+        "MayEdit": true,
+        "Name": "PreworkEstimateTemplate.docx",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateContentDoc",
+        "VlocityRecordSourceKey": "DocumentTemplateContentDoc/Generated125387516"
+    }
+]

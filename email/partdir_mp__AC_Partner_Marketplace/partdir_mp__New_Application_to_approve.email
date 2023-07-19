@@ -1,0 +1,11 @@
+You have received a new application {!partdir_mp__Partner_App__c.Name} for review.
+
+To provide your feedback:
+
+1. Open the application record in Salesforce or follow the link. {!partdir_mp__Partner_App__c.Link}
+
+2. Check provided details by the partner on the record.
+
+3. Click Approve or Decline.
+
+4. Enter the comment if required.

@@ -1,0 +1,98 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "NextStepDecision",
+    "OmniProcessId": {
+        "Name": "Service",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Service/RequestServiceFromAsset/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TroubleshootKM",
+        "OmniProcessId": {
+            "Name": "Service",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Service/RequestServiceFromAsset/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Service/RequestServiceFromAsset/English/TroubleshootKM",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TroubleshootKM",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "horizontalMode": "image",
+        "imageCountInRow": 3,
+        "label": "",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": "image"
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "developerName": "CACCAHBDAf5e3493dd58f4d23aeeeb7c845193ea0",
+                "imgId": "/servlet/servlet.FileDownload?file=0153y0000049fN8AAI&docName=CACCAHBDAf5e3493dd58f4d23aeeeb7c845193ea0",
+                "name": "Do nothing for now",
+                "value": "Do nothing for now"
+            },
+            {
+                "developerName": "CACCAHBDA6882427583e4403f8385f2f9d6518a2b",
+                "imgId": "/servlet/servlet.FileDownload?file=0153y0000049fNDAAY&docName=CACCAHBDA6882427583e4403f8385f2f9d6518a2b",
+                "name": "Request Call Back",
+                "value": "Request Call Back"
+            },
+            {
+                "developerName": "CACCAHBDA58eaf24d9e3448e38ca2e33aec6d0b4c",
+                "imgId": "/servlet/servlet.FileDownload?file=0153y0000049fNNAAY&docName=CACCAHBDA58eaf24d9e3448e38ca2e33aec6d0b4c",
+                "name": "Chat with an Agent",
+                "value": "Chat with an Agent"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "required": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "No",
+                        "field": "KMIssueFixDesicion"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "No",
+                        "field": "RadioArticleReview"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Service/RequestServiceFromAsset/English/NextStepDecision"
+}

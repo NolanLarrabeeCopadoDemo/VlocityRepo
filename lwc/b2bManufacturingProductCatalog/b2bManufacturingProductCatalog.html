@@ -1,0 +1,33 @@
+<template>
+   
+    <div>
+        <div class=" slds-p-bottom_medium">
+            <div class="b2b-redemption-catelog__header__title">
+                Rewards Catalog
+            </div>
+            <div  class="b2b-redemption-catelog__header__sub_title">
+                Use your points to shop in our online catalog.
+            </div>
+        </div>
+        <div class="slds-grid">
+            <!-- slds-grid_align-center -->
+            <div class="slds-col slds-grid slds-wrap">
+                <template for:each={products} for:item="product">
+                    <c-b2b-manufacturing-product-thumbnail
+                        key={product.productName}
+                        product-name={product.productName}
+                        product-url={product.productUrl}
+                        product-image-url={product.productImageUrl}
+                        product-price={product.productPrice}
+                        show-compare
+                        partner-id={product.partnerId}
+                        product-id={product.productId}
+                        journal-subtype-id={product.journalSubtypeId}
+                        voucher-definition-id={product.voucherDefinitionId}
+                        category={product.category}
+                    ></c-b2b-manufacturing-product-thumbnail>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

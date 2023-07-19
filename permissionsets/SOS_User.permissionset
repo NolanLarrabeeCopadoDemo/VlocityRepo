@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users can receive SOS requests.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Enable SOS Licenses</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EnableSOS</name>
+    </userPermissions>
+</PermissionSet>

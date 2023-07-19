@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>MFG_IDO_Dealer_Churn</application>
+    <description>Created from the MFG IDO Dealer Churn Account ID Lookup recipe.</description>
+    <masterLabel>MFG IDO Dealer Churn Account ID Lookup</masterLabel>
+</WaveDataset>

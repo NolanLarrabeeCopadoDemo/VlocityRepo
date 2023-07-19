@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Channel Name --></label>
+        <name>Channel_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>ChatEndUserId__c</name>
+        <relationshipLabel><!-- Chat Transcripts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The last page visited by the user prior to launching the chat session --></help>
+        <label><!-- Chat Start URL --></label>
+        <name>ChatStartURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- CurrentEmail --></label>
+        <name>SCQuickSetup__CurrentEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+</CustomObjectTranslation>

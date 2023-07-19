@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Check Out Date --></label>
+        <name>Check_Out_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out Distance From Record (mi) --></label>
+        <name>Check_Out_Distance_From_Record_mi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out Latitude --></label>
+        <name>Check_Out_Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out Longitude --></label>
+        <name>Check_Out_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check out Accuracy (m) --></label>
+        <name>Check_out_Accuracy_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Latitude --></label>
+        <name>Created_Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Location Accuracy (m) --></label>
+        <name>Created_Location_Accuracy_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Location Verified --></label>
+        <name>Created_Location_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Longitude --></label>
+        <name>Created_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Days --></label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance From Record (mi) --></label>
+        <name>Distance_From_Record_mi__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <help>จำนวนเหตุการณ์ทั้งหมด</help>
+        <label><!-- Count of Events --></label>
+        <name>FSL__Count_of_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Tasks --></label>
+        <name>FSL__Count_of_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>FSL__Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>Resource Absence</masterLabel>
+            <translation>ทรัพยากรขาดงาน</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Appointment</masterLabel>
+            <translation>การนัดหมายการบริการ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>LastModifiedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation><!-- Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prep</masterLabel>
+            <translation><!-- Prep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Base Object --></label>
+        <name>maps__BaseObjectId__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Layer Id --></label>
+        <name>maps__LayerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Advanced Route Waypoint --></label>
+        <name>maps__WA_AdvRouteWaypoint__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pardot Source Id --></label>
+        <name>pi__pardot_source_id__c</name>
+    </fields>
+</CustomObjectTranslation>

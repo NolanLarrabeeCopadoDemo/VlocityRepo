@@ -1,0 +1,245 @@
+{
+  "Can_Continue": {
+    "required": true,
+    "variableType": {
+      "type": "BooleanType"
+    }
+  },
+  "failedCheck": {
+    "required": false,
+      "variableType": {
+        "type": "StringType"
+    }
+  },
+  "Has_DataSyncEnabled": {
+    "label": "Does the Org have Data Sync enabled?",
+    "description": "Check Data Sync status",
+    "defaultValue": "Yes",
+    "variableType": {
+      "type": "StringType",
+      "enums": [
+        "Yes",
+        "No"
+      ]
+    },
+    "required": true
+  },
+  "Has_Leads": {
+    "label": "Is the customer using Leads?",
+    "description": "Pull in Leads",
+    "defaultValue": "No",
+    "variableType": {
+      "type": "StringType",
+      "enums": [
+        "Yes",
+        "No"
+      ]
+    },
+    "required": true
+  },
+  "Has_Products": {
+    "label": "Is the customer using OpportunityLineItem and Products?",
+    "description": "",
+    "defaultValue": "No",
+    "variableType": {
+      "type": "StringType",
+      "enums": [
+        "Yes",
+        "No"
+      ]
+    },
+    "required": true
+  },
+  "Has_Activities": {
+    "label": "Is the customer using Events and Tasks?",
+    "description": "",
+    "defaultValue": "No",
+    "variableType": {
+      "type": "StringType",
+      "enums": [
+        "Yes",
+        "No"
+      ]
+    },
+    "required": true
+  },
+  "Has_Cases": {
+    "label": "is the customer using Cases?",
+    "description": "",
+    "defaultValue": "No",
+    "variableType": {
+      "type": "StringType",
+      "enums": [
+        "Yes",
+        "No"
+      ]
+    },
+    "required": true
+  },
+  "Has_RoleHierarchy": {
+    "label": "Is the customer using UserRole hierarchy?",
+    "description": "This Question remains hidden.",
+    "defaultValue": "Yes",
+    "variableType": {
+      "type": "StringType",
+      "enums": [
+        "Yes",
+        "No"
+      ]
+    },
+    "required": true
+  },
+  "Has_PersonAccount": {
+    "label": "Is PersonAccount Enabled in this org?",
+    "description": "This Question remains hidden.",
+    "defaultValue": "No",
+    "variableType": {
+      "type": "StringType",
+      "enums": [
+        "Yes",
+        "No"
+      ]
+    },
+    "required": true
+  },
+  "Fiscal_Month": {
+    "label": "What month starts your fiscal period?",
+    "description": "Select the start date of your fiscal period",
+    "defaultValue": "01 - January",
+    "required": true,
+    "variableType": {
+      "type": "StringType",
+      "enums": [
+        "01 - January",
+        "02 - February",
+        "03 - March",
+        "04 - April",
+        "05 - May",
+        "06 - June",
+        "07 - July",
+        "08 - August",
+        "09 - September",
+        "10 - October",
+        "11 - November",
+        "12 - December"
+      ]
+    }
+  },
+  "First_Day_Of_Week": {
+    "required": true,
+    "description": "Internal mapping for first day of week",
+    "defaultValue": 0,
+    "variableType": {
+      "type": "NumberType"
+    }
+  },
+  "FY_Month_Offset_Map": {
+    "required": true,
+    "description": "Internal mapping between fiscal year start months and offset, not to be displayed in UI.",
+    "defaultValue": {
+      "01 - January": 0,
+      "02 - February": 1,
+      "03 - March": 2,
+      "04 - April": 3,
+      "05 - May": 4,
+      "06 - June": 5,
+      "07 - July": 6,
+      "08 - August": 7,
+      "09 - September": 8,
+      "10 - October": 9,
+      "11 - November": 10,
+      "12 - December": 11
+    },
+    "variableType": {
+      "type": "ObjectType"
+    }
+  },
+  "DefaultsVisibleMessages": {
+    "label": "",
+    "description": "",
+    "variableType": {
+      "type": "StringType"
+    },
+    "required": false
+  },
+  "Overrides": {
+    "label": "Overrides",
+    "description": "Internal configuration to allow asset creation overrides, not to be displayed in UI.",
+    "defaultValue": {
+      "createAllDashboards": true,
+      "createAllLenses": true,
+      "createAllExternalFiles": true,
+      "createDataflow": true,
+      "createAllDatasetFiles": true,
+      "createAllImages": true,
+      "createAllRecipes": true
+    },
+    "required": true,
+    "excludeSelected": false,
+    "excludes": [],
+    "variableType": {
+      "required": [
+        "createAllExternalFiles",
+        "createAllDashboards",
+        "createAllImages",
+        "createAllDatasetFiles",
+        "createAllLenses",
+        "createDataflow",
+        "createAllRecipes"
+      ],
+      "type": "ObjectType",
+      "properties": {
+        "createAllDashboards": {
+          "type": "BooleanType",
+          "enums": [
+            true,
+            false
+          ]
+        },
+        "createAllLenses": {
+          "type": "BooleanType",
+          "enums": [
+            true,
+            false
+          ]
+        },
+        "createAllExternalFiles": {
+          "type": "BooleanType",
+          "enums": [
+            true,
+            false
+          ]
+        },
+        "createDataflow": {
+          "type": "BooleanType",
+          "enums": [
+            true,
+            false
+          ]
+        },
+        "createAllDatasetFiles": {
+          "type": "BooleanType",
+          "enums": [
+            true,
+            false
+          ]
+        },
+        "createAllImages": {
+          "type": "BooleanType",
+          "enums": [
+            true,
+            false
+          ]
+        },
+        "createAllRecipes": {
+          "type": "BooleanType",
+          "enums": [
+            true,
+            false
+          ]
+        }
+      },
+      "strictValidation": true
+    }
+  }
+}

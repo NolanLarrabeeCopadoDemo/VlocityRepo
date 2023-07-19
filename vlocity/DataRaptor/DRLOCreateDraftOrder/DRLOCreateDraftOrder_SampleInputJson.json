@@ -1,0 +1,261 @@
+{
+    "": "",
+    "AccountInfo": {
+        "TAAccountName-Block": {
+            "AccountIdSF": "001B000001LxacQIAR",
+            "AccountPhone": "(212) 555-5555",
+            "BillingCity": "Bill New York",
+            "BillingCountry": "Bill USA",
+            "BillingPostalCode": "Bill 31349",
+            "BillingState": "Bill MH",
+            "BillingStreet": "Bill Street A",
+            "Name": "Acme",
+            "TAAccountName": "Acme",
+            "Website": "www.google.com"
+        }
+    },
+    "AccountsAndContacts": {
+        "ContactDetails": [
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hnIAD",
+                "Email": "paresh.koshti@pwc.com",
+                "FirstName": "Edward",
+                "LastName": "Stamos",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hoIAD",
+                "Email": "pgoriparthy@salesforce.com",
+                "FirstName": "Howard",
+                "LastName": "Jones",
+                "Phone": "(212) 555-5555",
+                "selectedContact": true
+            },
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hpIAD",
+                "Email": "pkoshti@salesforce.com",
+                "FirstName": "Leanne",
+                "LastName": "Tomlin",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hqIAD",
+                "Email": "info@salesforce.com",
+                "FirstName": "Marc",
+                "LastName": "Benioff",
+                "Phone": "(415) 901-7000",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000KqNowIAF",
+                "Email": "asda@gmail.com",
+                "FirstName": "asd",
+                "LastName": "asd",
+                "Phone": "34324",
+                "selectedContact": false
+            }
+        ]
+    },
+    "Contacts": [
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hnIAD",
+            "Email": "paresh.koshti@pwc.com",
+            "FirstName": "Edward",
+            "LastName": "Stamos",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hoIAD",
+            "Email": "pgoriparthy@salesforce.com",
+            "FirstName": "Howard",
+            "LastName": "Jones",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hpIAD",
+            "Email": "pkoshti@salesforce.com",
+            "FirstName": "Leanne",
+            "LastName": "Tomlin",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hqIAD",
+            "Email": "info@salesforce.com",
+            "FirstName": "Marc",
+            "LastName": "Benioff",
+            "Phone": "(415) 901-7000"
+        },
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000KqNowIAF",
+            "Email": "asda@gmail.com",
+            "FirstName": "asd",
+            "LastName": "asd",
+            "Phone": "34324"
+        }
+    ],
+    "DocumentTemplate": {
+        "Id": "2dtB00000008Q1BIAU",
+        "Name": "OrderDetails",
+        "TemplateType": "MicrosoftWord",
+        "TokenMappingType": "JSON",
+        "VersionNumber": 1
+    },
+    "Error": null,
+    "GenerateDocument": {
+    },
+    "PriceBookEntry": {
+        "CustomLWC6": {
+            "Products": {
+                "selectedprods": [
+                    {
+                        "Id": "REC0",
+                        "PId": "01tB000000268T0IAI",
+                        "PbeIsActive": true,
+                        "PbeName": "Compactator",
+                        "PbeUnitPrice": 100,
+                        "PriceBookEntryId": "01uB0000002hdRzIAI",
+                        "Product2Id": "01tB000000268T0IAI",
+                        "ProductCode": "12367C6",
+                        "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+                        "Qty": "1",
+                        "QuantityUnitOfMeasure": "Each",
+                        "_flex": {
+                            "state0element0block_element3block_element0": true,
+                            "state0element0block_element3block_element0_child": true,
+                            "state0element0block_element3block_element1": true,
+                            "state0element0block_element3block_element1_child": true,
+                            "state0element0block_element4block_element0": true,
+                            "state0element0block_element4block_element0_child": true,
+                            "state0element0block_element4block_element1": true,
+                            "state0element0block_element4block_element1_child": true,
+                            "uniqueKey": "REC0"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC0"
+                    }
+                ]
+            }
+        },
+        "PriceBook-Block": {
+            "PriceBook": "Manufacturing",
+            "PriceBookIdSF": "01sB0000002idbWIAQ",
+            "PriceBookrecName": "Manufacturing"
+        },
+        "ProductName": "c"
+    },
+    "Product": {
+        "PbeProduct": [
+            {
+                "PId": "01tB000000268T0IAI",
+                "PbeIsActive": true,
+                "PbeName": "Compactator",
+                "PbeUnitPrice": 100,
+                "PriceBookEntryId": "01uB0000002hdRzIAI",
+                "Product2Id": "01tB000000268T0IAI",
+                "ProductCode": "12367C6",
+                "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+                "Qty": "1",
+                "QuantityUnitOfMeasure": "Each",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01tB000000268T4IAI",
+                "PbeIsActive": true,
+                "PbeName": "Main Case Seal",
+                "PbeUnitPrice": 345,
+                "PriceBookEntryId": "01uB0000002hdSZIAY",
+                "Product2Id": "01tB000000268T4IAI",
+                "ProductCode": "MC",
+                "ProductUrl": "https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&m=462313057&s=612x612&w=0&h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=",
+                "Qty": "1",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01tB000000268T5IAI",
+                "PbeIsActive": true,
+                "PbeName": "SLA_Finance",
+                "PbeUnitPrice": 1200,
+                "PriceBookEntryId": "01uB0000002hdSKIAY",
+                "Product2Id": "01tB000000268T5IAI",
+                "ProductCode": "SL",
+                "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+                "Qty": "1",
+                "addToEstimate": false
+            }
+        ],
+        "listisblank": false
+    },
+    "documentTitle": "Order Details",
+    "estimatedProducts": {
+        "ProductsInCart": {
+            "summaryproducts": {
+                "ep": {
+                }
+            }
+        },
+        "subtotalcal": 100
+    },
+    "estimatedproducts": null,
+    "orderId": "801B0000001TzwMIAS",
+    "selectedAccountId": "001B000001LxacQIAR",
+    "setAccountDetails": {
+        "AccountIdSF": "001B000001LxacQIAR",
+        "AccountPhone": "(212) 555-5555",
+        "BillingCity": "Bill New York",
+        "BillingCountry": "Bill USA",
+        "BillingPostalCode": "Bill 31349",
+        "BillingState": "Bill MH",
+        "BillingStreet": "Bill Street A",
+        "Name": "Acme",
+        "TAAccountName": "Acme",
+        "Website": "www.google.com"
+    },
+    "summaryproducts": {
+        "ep": [
+            {
+                "PbeName": "Compactator",
+                "PbeUnitPrice": 100,
+                "PriceBookEntryId": "01uB0000002hdRzIAI",
+                "Product2Id": "01tB000000268T0IAI",
+                "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+                "Qty": "1",
+                "Subtotal": 100
+            }
+        ]
+    },
+    "timeStamp": "2022-03-22T08:18:34.693Z",
+    "userCurrencyCode": "USD",
+    "userId": "005B0000007L6rwIAC",
+    "userName": "rebate-admin-72@gs0.org",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-420",
+    "userTimeZoneName": "America/Los_Angeles",
+    "vlcTimeTracking": {
+        "AccountInfo": 3440,
+        "AccountsAndContacts": 4387,
+        "DRCreateDraftOrder": 1172,
+        "DRFetchContactDetails": 1709,
+        "DataRaptorExtractOrder": 397,
+        "GetDocumentTemplates": 470,
+        "IPMergeProducts": 721,
+        "OmniScriptSessionToken": "f0c04445-1978-4343-8504-6e343e956676",
+        "PriceBookEntry": 10660,
+        "SelectedAccount": 0,
+        "Set Generation Options": 0,
+        "SetValues": 0,
+        "SetValues3": 0,
+        "estimatedProducts": 1344
+    }
+}

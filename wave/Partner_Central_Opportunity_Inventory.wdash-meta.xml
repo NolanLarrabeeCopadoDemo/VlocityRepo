@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>SharedApp</application>
+    <dateVersion>1</dateVersion>
+    <description>Used in Partner Central on the Opportunity page to represent Inventory</description>
+    <masterLabel>Partner Central Opportunity Inventory</masterLabel>
+</WaveDashboard>

@@ -1,0 +1,5 @@
+<aura:component implements="force:lightningQuickAction,lightning:availableForFlowActions" controller = "DESZ_flowRedirect">
+   <aura:attribute name="recordId" type="String" default=""/>
+   <aura:attribute name="objAPI" type="String" default=""/>
+    <!--<lightning:button onclick="{!c.invoke}"/>-->
+</aura:component>

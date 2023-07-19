@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agent --></label>
+        <name>CaseTimer19__Agent__c</name>
+        <relationshipLabel><!-- Session Times --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>CaseTimer19__Case__c</name>
+        <relationshipLabel><!-- Session Times --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CaseTimer19__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>CaseTimer19__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>CaseTimer19__Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manual Entry --></label>
+        <name>CaseTimer19__Manual_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Time --></label>
+        <name>CaseTimer19__Session_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time --></label>
+        <name>CaseTimer19__Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>CaseTimer19__Type__c</name>
+        <picklistValues>
+            <masterLabel>Automatic</masterLabel>
+            <translation><!-- Automatic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

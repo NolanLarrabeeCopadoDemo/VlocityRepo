@@ -1,0 +1,136 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsEnclosedBy": null,
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n",
+    "numberOfLinesToIgnore": null
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Lead_tp",
+      "label": "Lead",
+      "name": "Lead_tp",
+      "fields": [
+        {
+          "fullyQualifiedName": "Id",
+          "name": "Id",
+          "type": "Text",
+          "label": "Id"
+        },
+        {
+          "fullyQualifiedName": "Name",
+          "name": "Name",
+          "type": "Text",
+          "label": "Name"
+        },
+        {
+          "fullyQualifiedName": "Company",
+          "name": "Company",
+          "type": "Text",
+          "label": "Company"
+        },
+        {
+          "fullyQualifiedName": "City",
+          "name": "City",
+          "type": "Text",
+          "label": "City"
+        },
+        {
+          "fullyQualifiedName": "Country",
+          "name": "Country",
+          "type": "Text",
+          "label": "Country"
+        },
+        {
+          "fullyQualifiedName": "LeadSource",
+          "name": "LeadSource",
+          "type": "Text",
+          "label": "LeadSource"
+        },
+        {
+          "fullyQualifiedName": "Status",
+          "name": "Status",
+          "type": "Text",
+          "label": "Status"
+        },
+        {
+          "fullyQualifiedName": "Industry",
+          "name": "Industry",
+          "type": "Text",
+          "label": "Industry"
+        },
+        {
+          "fullyQualifiedName": "Rating",
+          "name": "Rating",
+          "type": "Text",
+          "label": "Rating"
+        },
+        {
+          "fullyQualifiedName": "OwnerId",
+          "name": "OwnerId",
+          "type": "Text",
+          "label": "OwnerId"
+        },
+        {
+          "fullyQualifiedName": "IsConverted",
+          "name": "IsConverted",
+          "type": "Text",
+          "label": "IsConverted"
+        },
+        {
+          "fullyQualifiedName": "ConvertedDate",
+          "name": "ConvertedDate",
+          "type": "Date",
+          "label": "ConvertedDate",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        {
+          "fullyQualifiedName": "ConvertedAccountId",
+          "name": "ConvertedAccountId",
+          "type": "Text",
+          "label": "ConvertedAccountId"
+        },
+        {
+          "fullyQualifiedName": "ConvertedContactId",
+          "name": "ConvertedContactId",
+          "type": "Text",
+          "label": "ConvertedContactId"
+        },
+        {
+          "fullyQualifiedName": "ConvertedOpportunityId",
+          "name": "ConvertedOpportunityId",
+          "type": "Text",
+          "label": "ConvertedOpportunityId"
+        },
+        {
+          "fullyQualifiedName": "IsUnreadByOwner",
+          "name": "IsUnreadByOwner",
+          "type": "Text",
+          "label": "IsUnreadByOwner"
+        },
+        {
+          "fullyQualifiedName": "CreatedDate",
+          "name": "CreatedDate",
+          "type": "Date",
+          "label": "CreatedDate",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        {
+          "fullyQualifiedName": "LastModifiedDate",
+          "name": "LastModifiedDate",
+          "type": "Date",
+          "label": "LastModifiedDate",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+            {
+          "fullyQualifiedName": "NewLead",
+          "name": "NewLead",
+          "type": "Text",
+          "label": "NewLead"
+        }
+      ]
+    }
+  ]
+}

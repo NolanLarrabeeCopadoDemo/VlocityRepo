@@ -1,0 +1,52 @@
+{
+    "AuthorName": "AcmeManufacturing",
+    "ClonedFromOmniUiCardKey": "OrderInfoMain/AcmeManufacturing/3.0",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 1,
+                    "name": "currentContact",
+                    "val": "003B000000LRnEyIAL"
+                },
+                {
+                    "id": 13,
+                    "name": "recordId",
+                    "val": "003B000000LRnEyIAL"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "getContactOrders",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "currentContact": "{recordId}"
+                },
+                "jsonMap": "{\"currentContact\":\"{currentContact}\",\"recordId\":\"{recordId}\"}",
+                "resultVar": "[0].[Order]"
+            }
+        }
+    },
+    "Description": "Get order info on enagements",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "OrderInfoMainEngagements",
+    "Namespace": "",
+    "OmniUiCardKey": "OrderInfoMainEngagements/AcmeManufacturing/2.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "OrderInfoMainEngagements.json",
+    "SampleDataSourceResponse": "[{\"Case\":{\"CaseId\":\"003B000000LRnEyIAL\",\"CaseAccountId\":\"001B000001QUZ0NIAX\"},\"Order\":[{\"AccountName\":\"Acme Partners\",\"OrderId\":\"801B0000001qunIIAQ\",\"OrderNumber\":\"00006549\",\"OrderItem\":{\"OrderQuantity\":1,\"OrderProducts\":\"Compactor 3500\"},\"Delayed\":true,\"DelayReason\":\"Delayed at shipping\",\"StartDate\":\"2022-07-18\"},{\"AccountName\":\"Acme Partners\",\"OrderId\":\"801B000000219nKIAQ\",\"OrderNumber\":\"00006603\",\"OrderItem\":[{\"OrderQuantity\":7,\"OrderProducts\":\"Ripper 19\"},{\"OrderQuantity\":1,\"OrderProducts\":\"Backhoe Attachment R1\"},{\"OrderQuantity\":1,\"OrderProducts\":\"Compactor 3500\"},{\"OrderQuantity\":1,\"OrderProducts\":\"Compactor 9000\"},{\"OrderQuantity\":4,\"OrderProducts\":\"Ripper 19\"},{\"OrderQuantity\":1,\"OrderProducts\":\"Trencher T48\"}],\"Delayed\":true,\"DelayReason\":\"Backhoe Shortage\",\"StartDate\":\"2022-08-07\"},{\"AccountName\":\"Acme Partners\",\"OrderId\":\"801B000000218vkIAA\",\"OrderNumber\":\"00006598\",\"OrderItem\":[{\"OrderQuantity\":1,\"OrderProducts\":\"Backhoe Attachment R1\"},{\"OrderQuantity\":4,\"OrderProducts\":\"Compactor 3500\"},{\"OrderQuantity\":4,\"OrderProducts\":\"Compactor 9000\"},{\"OrderQuantity\":20,\"OrderProducts\":\"Ripper 19\"},{\"OrderQuantity\":4,\"OrderProducts\":\"Trencher T48\"}],\"Delayed\":true,\"DelayReason\":\"Compactor back order\",\"StartDate\":\"2022-03-14\"}]}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/OrderInfoMainEngagements"
+}

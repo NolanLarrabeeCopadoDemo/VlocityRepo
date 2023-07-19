@@ -1,0 +1,2 @@
+<apex:page standardController="ccrz__E_Cart__c" extensions="CloudCrazeCPQConnector" showHeader="false" sidebar="false" action="{!goToQuoteLineEditor}">
+</apex:page>

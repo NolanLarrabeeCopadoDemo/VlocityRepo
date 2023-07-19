@@ -1,0 +1,2 @@
+Voucher Code,Effective Date,Program Name,Voucher Definition ID,Member ID,Contact Name,Transaction Journal Id,Promotion Name,Benefit Name,Reason(Notes)
+EXPO3000URSA,2021-10-31,Partner Extraa Program,Construction Expo Event,100003,,,,,Sample Voucher

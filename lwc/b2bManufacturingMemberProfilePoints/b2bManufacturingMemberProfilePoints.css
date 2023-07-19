@@ -1,0 +1,40 @@
+.profile-points-wrapper {
+    background-color: #0059b3;
+    margin-top: -16px;
+}
+.profile-points {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #0059b3;
+    color: #ffffff;
+    flex-wrap: wrap;
+    border-radius:7px;
+}
+.profile-border {
+    border-right: 1px solid #6485a0;
+}
+
+.lable {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+.value {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 2.25rem;
+}
+.Silver {
+    background-color: #D8D8D8;
+    text-transform: uppercase;
+    color: black;
+}
+.Gold {
+    background-color: #FFC600;
+    text-transform: uppercase;
+    color: black;
+}
+.Platinum {
+    background-color: #E5E5E5;
+    text-transform: uppercase;
+    color: black;
+}

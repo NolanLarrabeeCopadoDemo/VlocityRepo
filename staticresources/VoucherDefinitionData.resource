@@ -1,0 +1,4 @@
+Voucher Definition Name,Type,Active,Loyalty Program,Partner Name,Product / Category Name,Face Value,Discount Percent,Effective Date,Expiration Date,Expiration Type,Expiration Period,Expiration Period Unit,Description,Starting Voucher Number,Voucher Code Prefix,Voucher Code Suffix
+Safety Kit Voucher,ProductorService,TRUE,Partner Extraa Program,Ursa Inc.,Safety Kit,,,2021-01-01,,Period,12,Months,Safety Kit Voucher,1000,SAFE,URSA
+Toolkit Voucher,ProductorService,TRUE,Partner Extraa Program,Ursa Inc.,Toolkit,,,2021-01-01,,Period,12,Months,Tool Kit Voucher,2000,TOOL,URSA
+Construction Expo Event,ProductorService,TRUE,Partner Extraa Program,Ursa Inc.,Construction Expo Event Pass,,,2021-01-01,2022-12-31,FixedDate,,,Construction Expo Event Pass,3000,EXPO,URSA

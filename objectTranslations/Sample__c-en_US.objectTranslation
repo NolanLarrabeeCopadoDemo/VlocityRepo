@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Samples</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Manager --></label>
+        <name>Account_Manager__c</name>
+        <relationshipLabel><!-- Samples (Account Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- All approvals complete --></label>
+        <name>All_approvals_complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved by Logistics --></label>
+        <name>Approved_by_Logistics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved by Product Team --></label>
+        <name>Approved_by_Product_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved by Sales Manager --></label>
+        <name>Approved_by_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cost: Labor --></label>
+        <name>Cost_Labor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost: Product --></label>
+        <name>Cost_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost: Shipping --></label>
+        <name>Cost_Shipping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost: Total --></label>
+        <name>Cost_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Requested By --></label>
+        <name>Date_Requested_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback --></label>
+        <name>Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Status --></label>
+        <name>Fulfillment_Status__c</name>
+        <picklistValues>
+            <masterLabel>In process</masterLabel>
+            <translation><!-- In process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In transit</masterLabel>
+            <translation><!-- In transit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not started</masterLabel>
+            <translation><!-- Not started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Logistics Coordinator --></label>
+        <name>Logistics_Coordinator__c</name>
+        <relationshipLabel><!-- Samples (Logistics Coordinator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Value --></label>
+        <name>Opportunity_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation><!-- Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Comments --></label>
+        <name>Product_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Lead --></label>
+        <name>Product_Lead__c</name>
+        <relationshipLabel><!-- Samples (Product Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Quantity --></label>
+        <name>Product_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ROI --></label>
+        <name>ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required Fields Valid --></label>
+        <name>Required_Fields_Valid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>Sales_Manager__c</name>
+        <relationshipLabel><!-- Samples (Sales Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sample Type --></label>
+        <name>Sample_Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom Product</masterLabel>
+            <translation><!-- Custom Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Product</masterLabel>
+            <translation><!-- Standard Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Approval</masterLabel>
+            <translation><!-- Final Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfillment</masterLabel>
+            <translation><!-- Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics Review</masterLabel>
+            <translation><!-- Logistics Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Request</masterLabel>
+            <translation><!-- New Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Approval</masterLabel>
+            <translation><!-- Product Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Development</masterLabel>
+            <translation><!-- Product Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Specification</masterLabel>
+            <translation><!-- Product Specification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Validation</masterLabel>
+            <translation><!-- Product Validation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Approval</masterLabel>
+            <translation><!-- Sales Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage number (formula) --></label>
+        <name>Stage_number_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time to Complete (days) --></label>
+        <name>Time_to_Complete_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- processbypass --></label>
+        <name>processbypass__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Custom Product sample --></label>
+        <name>Custom_Product_sample</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Product Sample --></label>
+        <name>Standard_Product_Sample</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- One or more required approvals are missing before updating the stage --></errorMessage>
+        <name>All_required_approvals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot advanced past this stage without approval from Logistics Coordinator --></errorMessage>
+        <name>Logistics_Approval_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One or more approvals are required before advancing to this stage. Please consult the Path. --></errorMessage>
+        <name>Passes_validation_formula</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot advance past this stage without approval from the Product team --></errorMessage>
+        <name>Require_Product_approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot mark as closed without entering feedback --></errorMessage>
+        <name>Require_feedback_to_close</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot advance past this stage without Sales Manager approval --></errorMessage>
+        <name>Sales_Approval_required</name>
+    </validationRules>
+</CustomObjectTranslation>

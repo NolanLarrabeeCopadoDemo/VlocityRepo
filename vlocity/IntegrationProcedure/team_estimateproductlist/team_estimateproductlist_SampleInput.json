@@ -1,0 +1,266 @@
+{
+    "AccountInfo": {
+        "TAAccountName-Block": {
+            "AccountIdSF": "001B000001LxacQIAR",
+            "BillingPostalCode": "31349",
+            "Name": "Acme",
+            "TAAccountName": "Acme"
+        }
+    },
+    "AccountsAndContacts": {
+        "ContactDetails": [
+            {
+                "AccountId": "001B000001LxacQIAR",
+                "Email": "info@salesforce.com",
+                "FirstName": "Edward",
+                "Id": "003B000000IP2hnIAD",
+                "LastName": "Stamos",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "001B000001LxacQIAR",
+                "Email": "info@salesforce.com",
+                "FirstName": "Howard",
+                "Id": "003B000000IP2hoIAD",
+                "LastName": "Jones",
+                "Phone": "(212) 555-5555",
+                "selectedContact": true
+            },
+            {
+                "AccountId": "001B000001LxacQIAR",
+                "Email": "info@salesforce.com",
+                "FirstName": "Leanne",
+                "Id": "003B000000IP2hpIAD",
+                "LastName": "Tomlin",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            }
+        ]
+    },
+    "Completion": null,
+    "Contacts": [
+        {
+            "AccountId": "001B000001LxacQIAR",
+            "Email": "info@salesforce.com",
+            "FirstName": "Edward",
+            "Id": "003B000000IP2hnIAD",
+            "LastName": "Stamos",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountId": "001B000001LxacQIAR",
+            "Email": "info@salesforce.com",
+            "FirstName": "Howard",
+            "Id": "003B000000IP2hoIAD",
+            "LastName": "Jones",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountId": "001B000001LxacQIAR",
+            "Email": "info@salesforce.com",
+            "FirstName": "Leanne",
+            "Id": "003B000000IP2hpIAD",
+            "LastName": "Tomlin",
+            "Phone": "(212) 555-5555"
+        }
+    ],
+    "Error": {
+    },
+    "PriceBookEntry": {
+        "CustomLWC6": {
+            "Products": {
+                "selectedprods": [
+                    {
+                        "Id": "REC0",
+                        "PId": "01tB000000268T0IAI",
+                        "PbeIsActive": true,
+                        "PbeName": "Compactator",
+                        "PbeUnitPrice": 100,
+                        "PriceBookEntryId": "01uB0000002hdRzIAI",
+                        "Product2Id": "01tB000000268T0IAI",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC0"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC0"
+                    },
+                    {
+                        "Id": "REC1",
+                        "PId": "01tB000000268T4IAI",
+                        "PbeIsActive": true,
+                        "PbeName": "Main Case Seal",
+                        "PbeUnitPrice": 345,
+                        "PriceBookEntryId": "01uB0000002hdSZIAY",
+                        "Product2Id": "01tB000000268T4IAI",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC1"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC1"
+                    },
+                    {
+                        "Id": "REC2",
+                        "PId": "01tB000000268T5IAI",
+                        "PbeIsActive": true,
+                        "PbeName": "SLA_Finance",
+                        "PbeUnitPrice": 1200,
+                        "PriceBookEntryId": "01uB0000002hdSKIAY",
+                        "Product2Id": "01tB000000268T5IAI",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC2"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC2"
+                    }
+                ]
+            }
+        },
+        "Noofproducts": 0,
+        "PriceBook-Block": {
+            "PriceBook": "Manufacturing",
+            "PriceBookIdSF": "01sB0000002idbWIAQ",
+            "PriceBookrecName": "Manufacturing"
+        },
+        "ProductName": "c",
+        "totalcost": 0
+    },
+    "Product": {
+        "PbeProduct": [
+            {
+                "PId": "01tB000000268T0IAI",
+                "PbeIsActive": true,
+                "PbeName": "Compactator",
+                "PbeUnitPrice": 100,
+                "PriceBookEntryId": "01uB0000002hdRzIAI",
+                "Product2Id": "01tB000000268T0IAI",
+                "Qty": "1",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01tB000000268T4IAI",
+                "PbeIsActive": true,
+                "PbeName": "Main Case Seal",
+                "PbeUnitPrice": 345,
+                "PriceBookEntryId": "01uB0000002hdSZIAY",
+                "Product2Id": "01tB000000268T4IAI",
+                "Qty": "1",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01tB000000268T5IAI",
+                "PbeIsActive": true,
+                "PbeName": "SLA_Finance",
+                "PbeUnitPrice": 1200,
+                "PriceBookEntryId": "01uB0000002hdSKIAY",
+                "Product2Id": "01tB000000268T5IAI",
+                "Qty": "1",
+                "addToEstimate": false
+            }
+        ],
+        "listisblank": false
+    },
+    "estimatedProducts": {
+        "ProductsInCart": {
+            "summaryproducts": {
+                "ep": [
+                    {
+                        "PbeName": "Compactator",
+                        "PbeUnitPrice": 100,
+                        "PriceBookEntryId": "01uB0000002hdRzIAI",
+                        "Product2Id": "01tB000000268T0IAI",
+                        "Qty": "1",
+                        "Subtotal": 100
+                    },
+                    {
+                        "PbeName": "Main Case Seal",
+                        "PbeUnitPrice": 345,
+                        "PriceBookEntryId": "01uB0000002hdSZIAY",
+                        "Product2Id": "01tB000000268T4IAI",
+                        "Qty": "1",
+                        "Subtotal": 345
+                    },
+                    {
+                        "PbeName": "SLA_Finance",
+                        "PbeUnitPrice": 1200,
+                        "PriceBookEntryId": "01uB0000002hdSKIAY",
+                        "Product2Id": "01tB000000268T5IAI",
+                        "Qty": "1",
+                        "Subtotal": 1200
+                    }
+                ]
+            }
+        },
+        "subtotalcal": 0
+    },
+    "estimatedproducts": null,
+    "selectedAccountId": "001B000001LxacQIAR",
+    "setAccountDetails": {
+        "AccountIdSF": "001B000001LxacQIAR",
+        "BillingPostalCode": "31349",
+        "Name": "Acme",
+        "TAAccountName": "Acme"
+    },
+    "summaryproducts": {
+        "ep": [
+            {
+                "PbeName": "Compactator",
+                "PbeUnitPrice": 100,
+                "PriceBookEntryId": "01uB0000002hdRzIAI",
+                "Product2Id": "01tB000000268T0IAI",
+                "Qty": "1",
+                "Subtotal": 100
+            },
+            {
+                "PbeName": "Main Case Seal",
+                "PbeUnitPrice": 345,
+                "PriceBookEntryId": "01uB0000002hdSZIAY",
+                "Product2Id": "01tB000000268T4IAI",
+                "Qty": "1",
+                "Subtotal": 345
+            },
+            {
+                "PbeName": "SLA_Finance",
+                "PbeUnitPrice": 1200,
+                "PriceBookEntryId": "01uB0000002hdSKIAY",
+                "Product2Id": "01tB000000268T5IAI",
+                "Qty": "1",
+                "Subtotal": 1200
+            }
+        ]
+    },
+    "timeStamp": "2022-02-20T14:58:21.577Z",
+    "userCurrencyCode": "USD",
+    "userId": "005B0000007L6rwIAC",
+    "userName": "rebate-admin-72@gs0.org",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-480",
+    "userTimeZoneName": "America/Los_Angeles"
+}

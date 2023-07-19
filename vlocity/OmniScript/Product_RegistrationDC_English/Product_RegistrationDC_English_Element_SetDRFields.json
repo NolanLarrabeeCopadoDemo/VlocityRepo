@@ -1,0 +1,42 @@
+{
+    "Description": "This SV sets values for Asset creation",
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "SetDRFields",
+    "OmniProcessId": {
+        "Name": "New Product Registration DC",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Product/RegistrationDC/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "AccountId": "%AccountId%",
+            "AssetName": "%TAEquipment-Block:ProductName%",
+            "ContactId": "%ContactId%",
+            "InstallDate": "%DateOfInstall%",
+            "ProductId": "%TAEquipment-Block:ProductId%",
+            "PurchaseDate": "%ProdPurchaseDate%",
+            "SerialNumber": "%SN%"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Product/RegistrationDC/English/SetDRFields"
+}

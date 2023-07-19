@@ -1,0 +1,272 @@
+<aura:component controller="FIDO">
+	<aura:attribute name="Settings" type="String[]" />
+    <aura:attribute name="Industry" type="String"/>
+    <aura:attribute name="Solutions" type="String[]"/>
+    <aura:attribute name="pagetype" type="String" default="Blueprint"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:iteration items="{!v.Settings}" var="setting">
+        <div class="blueprint_overflow">
+        	<aura:if isTrue="{!setting.demo_solution_view__c == 'Two Level Solution View'}">
+                <aura:iteration items="{!v.Solutions}" var="parentsolution">
+                    <aura:if isTrue="{! parentsolution.parent_demo_solution__c == null}">
+                        <aura:if isTrue="{! parentsolution.show_in_blueprint_view__c  == true}">
+                            <div class="blueprint_parent_wrapper center padding">
+                                <h3>{!parentsolution.name}</h3>
+                                <aura:iteration items="{!v.Solutions}" var="solution">
+                                    <aura:if isTrue="{!solution.parent_demo_solution__c == parentsolution.sfid}">
+                                        <aura:if isTrue="{!solution.show_in_blueprint_view__c == true }">
+                                            <div class="blueprintwrapper" >
+                                                <div class="center paddingsmall">
+                                                    <aura:if isTrue="{!solution.gtm_focus__c == true}">
+                                                        <div class="blueprint_item blueprint_item_dark">
+                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/GettingToKnowTheIDO/Images/GTM-Icons/blueprint-gear-dark.png" class="blueprint_gear" />
+                                                            <div class="padding">
+                                                                <strong class="blueprint_parent">{!solution.parent_solution_name__c}</strong>
+                                                                <h2 class="blueprint_title paddingtopbottom">{!solution.name}</h2>
+                                                                <div class="blueprintdesc">
+                                                                    <ui:outputRichText value="{!solution.description__c}"/>
+                                                                </div>
+                                                                <div class="paddingtopbottom">
+                                                                    <button class="slds-button slds-button_neutral" onclick="{!c.gotosolutions}">View Scripts</button>
+                                                                </div>
+                                                            </div>
+                                                            <aura:if isTrue="{!solution.clouds_products__c != null}">
+                                                                <div class="paddingsmall bluepringclouds">
+                                                                    <div class="solution_icons">
+                                                                       <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Sales"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/sales_cloud.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Service"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/service_cloud.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Marketing"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/marketing_cloud.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Commerce"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/commerc_cloud.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Community"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/community_cloud.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Einstein"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/einstein.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="iot"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/iot.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Analytics"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/analytics_cloud.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Quip"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/collaboration.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="FSL"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/fsl.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Platform"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/platform.jpg" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                        <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Integration"> 
+                                                                            <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/GettingToKnowTheIDO/Images/GTM-Icons/integration.png" class="cloud_icon" />
+                                                                        </c:FIDO_IfContains>
+                                                                    </div>
+                                                                </div>
+                                                            </aura:if>  
+                                                        </div>
+                                                        <aura:set attribute="else">
+                                                            <div class="blueprint_item">
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/GettingToKnowTheIDO/Images/GTM-Icons/blueprint-ger.png" class="blueprint_gear" />
+                                                                <div class="padding">
+                                                                    <strong class="blueprint_parent">{!solution.parent_solution_name__c}</strong>
+                                                                    <h2 class="blueprint_title">{!solution.name}</h2>
+                                                                    <div class="blueprintdesc">
+                                                                        <ui:outputRichText value="{!solution.description__c}"/>
+                                                                    </div>
+                                                                    <div class="paddingtopbottom">
+                                                                        <button class="slds-button slds-button_neutral" onclick="{!c.gotosolutions}">View Scripts</button>
+                                                                    </div>
+                                                                </div>
+                                                                <aura:if isTrue="{!solution.clouds_products__c != null}">
+                                                                    <div class="paddingsmall bluepringclouds">
+                                                                        <div class="solution_icons">
+                                                                               <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Sales"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/sales_cloud.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Service"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/service_cloud.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Marketing"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/marketing_cloud.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Commerce"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/commerc_cloud.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Community"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/community_cloud.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Einstein"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/einstein.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="iot"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/iot.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Analytics"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/analytics_cloud.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Quip"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/collaboration.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="FSL"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/fsl.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Platform"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/platform.jpg" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                                <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Integration"> 
+                                                                                    <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/GettingToKnowTheIDO/Images/GTM-Icons/integration.png" class="cloud_icon" />
+                                                                                </c:FIDO_IfContains>
+                                                                        </div>
+                                                                    </div>
+                                                                </aura:if>
+                                                            </div>  
+                                                        </aura:set>
+                                                    </aura:if>
+                                                </div>
+                                            </div>
+                                         </aura:if>
+                                    </aura:if>
+                                </aura:iteration>
+                                <div class="clear"></div>
+                            </div>
+                        </aura:if>
+                    </aura:if>
+                </aura:iteration>
+            <aura:set attribute="else">
+            	<aura:iteration items="{!v.Solutions}" var="solution">
+                	<aura:if isTrue="{!solution.show_in_blueprint_view__c == true }">
+                    	<div class="blueprintwrapper" >
+                        	<div class="center paddingsmall">
+                            	<aura:if isTrue="{!solution.gtm_focus__c == true}">
+                                	<div class="blueprint_item blueprint_item_dark">
+                                    	<img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/GettingToKnowTheIDO/Images/GTM-Icons/blueprint-gear-dark.png" class="blueprint_gear" />
+                                        <div class="padding">
+                                        	<strong class="blueprint_parent">{!solution.parent_solution_name__c}</strong>
+                                            <h2 class="blueprint_title paddingtopbottom">{!solution.name}</h2>
+                                            <div class="blueprintdesc">
+                                            	<ui:outputRichText value="{!solution.description__c}"/>
+                                            </div>
+                                            <div class="paddingtopbottom">
+                                                <button class="slds-button slds-button_neutral" onclick="{!c.gotosolutions}">View Scripts</button>
+                                            </div>
+                                        </div>
+                                        <aura:if isTrue="{!solution.clouds_products__c != null}">
+                                            <div class="paddingsmall bluepringclouds">
+                                                <div class="solution_icons">
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Sales Cloud"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/sales_cloud.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Service Cloud"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/service_cloud.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Marketing Cloud"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/marketing_cloud.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Commerce Cloud"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/commerc_cloud.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Community Cloud"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/community_cloud.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Einstein"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/einstein.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="iot"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/iot.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Analytics"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/analytics_cloud.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Quip"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/collaboration.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="FSL"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/fsl.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Platform"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/platform.jpg" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                    <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Integration"> 
+                                                        <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/GettingToKnowTheIDO/Images/GTM-Icons/integration.png" class="cloud_icon" />
+                                                    </c:FIDO_IfContains>
+                                                </div>
+                                            </div>
+                                        </aura:if>
+                                      </div>
+                                      <aura:set attribute="else">
+                                          <div class="blueprint_item">
+                                              <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/GettingToKnowTheIDO/Images/GTM-Icons/blueprint-ger.png" class="blueprint_gear" />
+                                              <div class="padding">
+                                                   <strong class="blueprint_parent paddingtopbottom">{!solution.industry__c}</strong>
+                                                   <h2 class="blueprint_title">{!solution.name}</h2>
+                                                   <div class="blueprintdesc">
+                                                        <ui:outputRichText value="{!solution.description__c}"/>
+                                                   </div>
+                                                   <div class="paddingtopbottom">
+                                                        <button class="slds-button slds-button_neutral" onclick="{!c.gotosolutions}">View Scripts</button>
+                                                   </div>
+                                               </div>
+                                              <aura:if isTrue="{!solution.clouds_products__c != null}">
+                                                   <div class="paddingsmall bluepringclouds">
+                                                       <div class="solution_icons">
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Sales Cloud"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/sales_cloud.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Service Cloud"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/service_cloud.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Marketing Cloud"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/marketing_cloud.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Commerce Cloud"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/commerc_cloud.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Community Cloud"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/community_cloud.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Einstein"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/einstein.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="iot"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/iot.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Analytics"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/analytics_cloud.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Quip"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/collaboration.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="FSL"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/fsl.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Platform"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/icons/clouds/platform.jpg" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                            <c:FIDO_IfContains items="{!solution.clouds_products__c}"  element="Integration"> 
+                                                                <img src="https://s3.amazonaws.com/sfdc-ckz-b2b/RCG/GettingToKnowTheIDO/Images/GTM-Icons/integration.png" class="cloud_icon" />
+                                                            </c:FIDO_IfContains>
+                                                        </div>
+                                                    </div>
+                                              </aura:if>
+                                        	</div>  
+                                    	</aura:set>
+                                	</aura:if>
+                            	</div>
+                        	</div>
+                    	</aura:if>
+                	</aura:iteration>
+            	<div class="clear"></div>  
+            </aura:set>
+        </aura:if>
+        </div>
+    </aura:iteration>
+</aura:component>

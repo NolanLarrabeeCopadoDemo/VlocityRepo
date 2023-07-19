@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Dias DB</label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label>ID Externo</label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>Logo</label>
+        <name>Logo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rebate Program --></label>
+        <name>Rebate_Program__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Termos &amp; Condições</label>
+        <name>Terms__c</name>
+    </fields>
+</CustomObjectTranslation>

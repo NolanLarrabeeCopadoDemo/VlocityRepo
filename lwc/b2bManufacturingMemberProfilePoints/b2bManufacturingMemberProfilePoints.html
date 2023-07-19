@@ -1,0 +1,54 @@
+<!--
+  @description       : 
+  @author            : Salesforce
+  @group             : 
+  @last modified on  : 02-09-2021
+  @last modified by  : Salesforce
+  Modifications Log 
+  Ver   Date         Author       Modification
+  1.0   02-09-2021   Salesforce   Initial Version
+-->
+<template>
+    <div class="profile-points-wrapper">
+        <div class="profile-points slds-grid">
+            <div 
+                class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-p-vertical_large slds-p-left_xx-large"
+            >
+                <div class="slds-media slds-media_center slds-p-right_xx-large slds-border_right profile-border">
+                    <div class="slds-media__figure slds-m-right_large">
+                        <img src={membershipBanner} alt="" />
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="lable slds-p-bottom_x-small">MEMBERSHIP NO.</div>
+                        <div class="value">{membershipNumber}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-p-vertical_large slds-p-left_xx-large">
+                <div class="slds-media slds-media_center slds-p-right_xx-large slds-border_right profile-border">
+                    <div class="slds-media__figure slds-m-right_large">
+                        <img src={pointsBalanceBanner} alt="" />
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="lable slds-p-bottom_x-small">POINT BALANCE</div>
+                        <div class="value">{pointsBalance}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-p-vertical_large slds-p-left_xx-large">
+                <div class="slds-media slds-media_center slds-p-right_xx-large">
+                    <div class="slds-media__figure slds-m-right_large">
+                        <img src={tierBanner} alt="" />
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="lable slds-p-bottom_x-small">TIER</div> 
+                        <lightning-badge
+                            class={tierName}
+                            label={tierName}
+                        ></lightning-badge>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

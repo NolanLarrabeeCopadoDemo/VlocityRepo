@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>预算差异</label>
+        <name>Budget_Variance__c</name>
+    </fields>
+    <fields>
+        <help>投资回报率是净增益。 （总中奖金额 - 实际成本）/实际成本</help>
+        <label>活动的ROI</label>
+        <name>Campaign_ROI__c</name>
+    </fields>
+    <fields>
+        <label>DB天</label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB --></label>
+        <name>EDY_ORGCUSTOM__DB__c</name>
+    </fields>
+    <fields>
+        <label>以前用的名字</label>
+        <name>EDY_ORGCUSTOM__Old_Name__c</name>
+    </fields>
+    <fields>
+        <help>活动效果是由投资回报率驱动。 5块钱的迹象是超过300％。</help>
+        <label>活动效果</label>
+        <name>Effectiveness_Rating__c</name>
+    </fields>
+    <fields>
+        <label>外部ID</label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>主要优惠</label>
+        <name>Primary_Offer__c</name>
+        <picklistValues>
+            <masterLabel>Case Study</masterLabel>
+            <translation>案例分析</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Us Form</masterLabel>
+            <translation>联系表格</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo</masterLabel>
+            <translation>演示</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Free Trial</masterLabel>
+            <translation>免费试用</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>其他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation>网络研讨会</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whitepaper</masterLabel>
+            <translation>白皮书</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>投资回报率走势</label>
+        <name>ROI_Chart__c</name>
+    </fields>
+    <fields>
+        <label>实现目标收益</label>
+        <name>Revenue_Towards_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Linked Business Unit --></label>
+        <name>mcdm_15__LinkedBusinessUnit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Linked Journey --></label>
+        <name>mcdm_15__LinkedJourney__c</name>
+        <relationshipLabel><!-- Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pardot Campaign Id --></label>
+        <name>pi__Pardot_Campaign_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Has Dependencies --></label>
+        <name>pi__Pardot_Has_Dependencies__c</name>
+    </fields>
+    <recordTypes>
+        <label>儿童活动</label>
+        <name>ChildCampaign</name>
+    </recordTypes>
+    <recordTypes>
+        <label>父活动</label>
+        <name>ParentCampaign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Campaigns led and used by partners to market to their customers. --></description>
+        <label><!-- Partner-Led Campaign --></label>
+        <name>Partner_Led_Campaign</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label>今年的投资回报率</label>
+        <name>ThisyearsROI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>et4ae5__ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FSL Rule Analyzer Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FSL Rule Analyzer Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alt Policy 1 Name --></label>
+        <name>Alt_Policy_1_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alt Policy 2 Name --></label>
+        <name>Alt_Policy_2_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alt Policy 3 Name --></label>
+        <name>Alt_Policy_3_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alt Policy 4 Name --></label>
+        <name>Alt_Policy_4_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ignore Availability Policy Name --></label>
+        <name>Availability_Policy_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Policy Name --></label>
+        <name>Main_Policy_Label__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

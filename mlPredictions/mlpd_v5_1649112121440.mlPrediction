@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MLPredictionDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiApplicationDeveloperName>CaseWrapUpModel</aiApplicationDeveloperName>
+    <description>CWU predField Reason</description>
+    <developerName>mlpd_v5_1649112121440</developerName>
+    <masterLabel>CWUReason</masterLabel>
+    <predictionField>Case.Reason</predictionField>
+    <status>Enabled</status>
+    <type>MulticlassClassification</type>
+</MLPredictionDefinition>

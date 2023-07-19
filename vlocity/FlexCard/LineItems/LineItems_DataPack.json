@@ -1,0 +1,47 @@
+{
+    "AuthorName": "DMelsh",
+    "ClonedFromOmniUiCardKey": "OrderItems/SalesforceDemo/5.0",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 1,
+                    "name": "Parent.OrderId",
+                    "val": "8013y000007D8kdAAC"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "getOrderItemsfromOrder",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "OrderId": "{Parent.OrderId}"
+                },
+                "jsonMap": "{\"Parent.OrderId\":\"{Parent.OrderId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "LineItems",
+    "Namespace": "",
+    "OmniUiCardKey": "LineItems/DMelsh/1.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "LineItems.json",
+    "SampleDataSourceResponse": "[{\"OrderItemId\":\"8023y000007FkCEAA0\",\"AvailableQuantity\":12,\"Quantity\":12,\"CreatedDate\":\"2022-10-10T16:05:14.000Z\",\"TotalPrice\":69000,\"ProductName\":\"Hammer H700\",\"UnitPrice\":5750},{\"OrderItemId\":\"8023y000007FkCFAA0\",\"AvailableQuantity\":12,\"Quantity\":12,\"CreatedDate\":\"2022-10-10T16:05:14.000Z\",\"TotalPrice\":72000,\"ProductName\":\"Trencher T36\",\"UnitPrice\":6000},{\"OrderItemId\":\"8023y000007FkCGAA0\",\"AvailableQuantity\":18,\"Quantity\":18,\"CreatedDate\":\"2022-10-10T16:05:14.000Z\",\"TotalPrice\":135000,\"ProductName\":\"Sweeper S1000\",\"UnitPrice\":7500}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/LineItems"
+}

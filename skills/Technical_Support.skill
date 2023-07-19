@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>brenda.service.3r0xhimhnt1m.qlvciwltzazl@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>jay.service.ipvucb8vru8d.lpgpfjx5upsf@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>linda.service.zglesx83icdg.epz6p1ivyiqn@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>majimenez@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>oorde.mnnskc4szkzz.gcsomowzgfbd..elf3immfqfl5@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>steven.service.p252hxl9fh31.alfesfuq5mom@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>tim.service.0aifxjprqang.baxiwsymnt5n@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>sdo_a5.kx3uxa31rqlc.qru9d5um8nxr.d1oouhmfog6c@copado.com2023/07/18_17-7-41.demo3</user>
+        </users>
+    </assignments>
+    <label>Technical Support</label>
+</Skill>

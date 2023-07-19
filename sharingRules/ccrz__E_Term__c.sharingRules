@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>B2B_Guest_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>B2B Guest Access</label>
+        <sharedTo>
+            <guestUser>B2B_Commerce_Classic_Badger_Equipment</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>ccrz__Enabled__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>B2B_Guest_Access_2</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>B2B Guest Access 2</label>
+        <sharedTo>
+            <guestUser>B2B_Commerce_Classic_Badger_Parts</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>ccrz__Enabled__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

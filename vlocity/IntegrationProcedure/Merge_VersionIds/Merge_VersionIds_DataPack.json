@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "Merge_VersionIds_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsLocked": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "MayEdit": true,
+    "Name": "merge pdfVersionIds",
+    "OmniProcessElement": [
+        "Merge_VersionIds_Element_MergeDocumentList.json",
+        "Merge_VersionIds_Element_transformMergeList.json",
+        "Merge_VersionIds_Element_transformDocumentTemplateIds.json",
+        "Merge_VersionIds_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "Merge_VersionIds",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Merge_VersionIds_PropertySetConfig.json",
+    "SubType": "VersionIds",
+    "Type": "Merge",
+    "UniqueName": "Merge_VersionIds_Procedure_2",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Merge/VersionIds/Procedure",
+    "WebComponentKey": "4f0860be-5317-3ede-935c-afd55f431151"
+}

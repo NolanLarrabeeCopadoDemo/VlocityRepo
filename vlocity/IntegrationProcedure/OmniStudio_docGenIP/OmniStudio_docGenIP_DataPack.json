@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "OmniStudio_docGenIP_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsLocked": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "MayEdit": true,
+    "Name": "OmniStudioIPgetTemplateDetailsForDocGen",
+    "OmniProcessElement": [
+        "OmniStudio_docGenIP_Element_templatesLoop.json",
+        "OmniStudio_docGenIP_Element_FetchDocumentTemplateFromName.json",
+        "OmniStudio_docGenIP_Element_MergeAllTemplates.json",
+        "OmniStudio_docGenIP_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "OmniStudio_docGenIP",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "OmniStudio_docGenIP_PropertySetConfig.json",
+    "SubType": "docGenIP",
+    "Type": "OmniStudio",
+    "UniqueName": "OmniStudio_docGenIP_Procedure_1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/OmniStudio/docGenIP/Procedure",
+    "WebComponentKey": "6d0478d3-60ed-6a97-a1ad-f68a17a72491"
+}

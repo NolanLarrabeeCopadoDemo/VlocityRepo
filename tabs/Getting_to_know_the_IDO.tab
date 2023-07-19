@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <auraComponent>FIDO_Wrapper</auraComponent>
+    <description>Getting to know the IDO tool built by Jesse Chase</description>
+    <label>Getting to know the IDO</label>
+    <motif>Custom61: Castle</motif>
+</CustomTab>

@@ -1,0 +1,2 @@
+Tier Group Name,TierModel,Loyalty Program ,Period Duration Type,Period Quantity,Qualifying Points Reset Period,Qualifying Points Reset Frequency,Qualifying Points Reset Date,Active,Extend Expiration,IsPrimary
+Status Tier Group,Fixed,Partner Extraa Program,Years,1,Years,1,2021-12-31,Active,QualifyingPointsResetDate,true

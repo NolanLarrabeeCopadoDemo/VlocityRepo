@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>To Calculate SubTotal &amp; Total of Selected Products</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Input&quot; : [ {
+    &quot;_flex&quot; : {
+      &quot;uniqueKey&quot; : &quot;REC0&quot;
+    },
+    &quot;uniqueKey&quot; : &quot;REC0&quot;,
+    &quot;Id&quot; : &quot;REC0&quot;,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8tbQAD&quot;,
+    &quot;PbeUnitPrice&quot; : 3400,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;Subtotal&quot; : 3400,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPIQAZ&quot;,
+    &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+    &quot;PbeName&quot; : &quot;Compactor 9500&quot;
+  }, {
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;,
+    &quot;PbeUnitPrice&quot; : 2345,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;Subtotal&quot; : 2345,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOUQAZ&quot;,
+    &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+    &quot;PbeName&quot; : &quot;SLA-Finance&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTFMergeProducts</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFMergeProducts5648532079145667</globalKey>
+        <inputFieldName>ListOutput</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFMergeProducts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>summaryproducts:ep</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;setAccountDetails&quot; : {
+    &quot;TAAccountName&quot; : &quot;Acme&quot;,
+    &quot;Name&quot; : &quot;Acme&quot;,
+    &quot;AccountIdSF&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+    &quot;BillingPostalCode&quot; : &quot;31349&quot;
+  },
+  &quot;PbeProduct&quot; : [ {
+    &quot;PbeName&quot; : &quot;Compactor 9500&quot;,
+    &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPIQAZ&quot;,
+    &quot;addToEstimate&quot; : false,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeUnitPrice&quot; : 3400,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8tbQAD&quot;
+  }, {
+    &quot;PbeName&quot; : &quot;SLA-Finance&quot;,
+    &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOUQAZ&quot;,
+    &quot;addToEstimate&quot; : false,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeUnitPrice&quot; : 2345,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;
+  }, {
+    &quot;PbeName&quot; : &quot;Main Case Seal&quot;,
+    &quot;ProductUrl&quot; : &quot;https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&amp;m=462313057&amp;s=612x612&amp;w=0&amp;h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPOQAZ&quot;,
+    &quot;addToEstimate&quot; : false,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeUnitPrice&quot; : 1200,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8tgQAD&quot;
+  } ],
+  &quot;ep1&quot; : {
+    &quot;ep&quot; : [ {
+      &quot;PbeName&quot; : &quot;Compactor 9500&quot;,
+      &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPIQAZ&quot;,
+      &quot;Subtotal&quot; : 3400,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;PbeUnitPrice&quot; : 3400,
+      &quot;Product2Id&quot; : &quot;01t8Y00000NV8tbQAD&quot;
+    }, {
+      &quot;PbeName&quot; : &quot;SLA-Finance&quot;,
+      &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOUQAZ&quot;,
+      &quot;Subtotal&quot; : 2345,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;PbeUnitPrice&quot; : 2345,
+      &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;
+    } ],
+    &quot;Total&quot; : 5745
+  },
+  &quot;timeStamp&quot; : &quot;2022-01-28T10:34:42.341Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;demo.org@omnistudio.1642136864485&quot;,
+  &quot;userId&quot; : &quot;0058Y00000AwAk2QAF&quot;,
+  &quot;Completion&quot; : null,
+  &quot;Error&quot; : { },
+  &quot;AccountInfo&quot; : {
+    &quot;TAAccountName-Block&quot; : {
+      &quot;TAAccountName&quot; : &quot;Acme&quot;,
+      &quot;Name&quot; : &quot;Acme&quot;,
+      &quot;AccountIdSF&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;BillingPostalCode&quot; : &quot;31349&quot;
+    }
+  },
+  &quot;selectedAccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+  &quot;AccountsAndContacts&quot; : {
+    &quot;ContactDetails&quot; : [ {
+      &quot;selectedContact&quot; : false,
+      &quot;LastName&quot; : &quot;Stamos&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJkQAJ&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;Edward Stamos Stamos Stamos Stamos&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;selectedContact&quot; : false,
+      &quot;LastName&quot; : &quot;Jones&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJlQAJ&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;Howard Jones Jones Jones Jones Jones&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;selectedContact&quot; : false,
+      &quot;LastName&quot; : &quot;Tomlin&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJmQAJ&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;Leanne Tomlin Tomlin Tomlin Tomlin&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;selectedContact&quot; : false,
+      &quot;LastName&quot; : &quot;Smith&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJhQAJ&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;John Smith Smith Smith Smith Smith Smith&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;john@servicecloud.trial&quot;
+    }, {
+      &quot;selectedContact&quot; : true,
+      &quot;LastName&quot; : &quot;Land&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJoQAJ&quot;,
+      &quot;Phone&quot; : &quot;(415) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;Mark Land Land Land Land Land Land Land&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;your.email@test.com&quot;
+    } ]
+  },
+  &quot;PriceBookEntry&quot; : {
+    &quot;Noofproducts&quot; : 2,
+    &quot;Total Cost&quot; : 0,
+    &quot;PriceBook-Block&quot; : {
+      &quot;PriceBookrecName&quot; : &quot;Manufacturing&quot;,
+      &quot;PriceBookIdSF&quot; : &quot;01s8Y000001THDiQAO&quot;,
+      &quot;PriceBook&quot; : &quot;Manufacturing&quot;
+    },
+    &quot;Text1&quot; : &quot;c&quot;,
+    &quot;CustomLWC6&quot; : {
+      &quot;Products&quot; : {
+        &quot;selectedprods&quot; : [ {
+          &quot;Id&quot; : &quot;REC0&quot;,
+          &quot;PbeName&quot; : &quot;Compactor 9500&quot;,
+          &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPIQAZ&quot;,
+          &quot;addToEstimate&quot; : true,
+          &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+          &quot;PbeIsActive&quot; : true,
+          &quot;Qty&quot; : &quot;1&quot;,
+          &quot;PbeUnitPrice&quot; : 3400,
+          &quot;Product2Id&quot; : &quot;01t8Y00000NV8tbQAD&quot;,
+          &quot;uniqueKey&quot; : &quot;REC0&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC0&quot;,
+            &quot;state0element0block_element2&quot; : true,
+            &quot;state0element0block_element2_child&quot; : true,
+            &quot;state0element0block_element3&quot; : true,
+            &quot;state0element0block_element3_child&quot; : true,
+            &quot;state0element0block_element4&quot; : true,
+            &quot;state0element0block_element4_child&quot; : true,
+            &quot;state0element0block_element5&quot; : true,
+            &quot;state0element0block_element5_child&quot; : true
+          }
+        }, {
+          &quot;Id&quot; : &quot;REC1&quot;,
+          &quot;PbeName&quot; : &quot;SLA-Finance&quot;,
+          &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOUQAZ&quot;,
+          &quot;addToEstimate&quot; : true,
+          &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+          &quot;PbeIsActive&quot; : true,
+          &quot;Qty&quot; : &quot;1&quot;,
+          &quot;PbeUnitPrice&quot; : 2345,
+          &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;,
+          &quot;uniqueKey&quot; : &quot;REC1&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC1&quot;,
+            &quot;state0element0block_element2&quot; : true,
+            &quot;state0element0block_element2_child&quot; : true,
+            &quot;state0element0block_element3&quot; : true,
+            &quot;state0element0block_element3_child&quot; : true,
+            &quot;state0element0block_element4&quot; : true,
+            &quot;state0element0block_element4_child&quot; : true,
+            &quot;state0element0block_element5&quot; : true,
+            &quot;state0element0block_element5_child&quot; : true
+          }
+        } ]
+      }
+    }
+  },
+  &quot;estimatedproducts&quot; : [ {
+    &quot;_flex&quot; : {
+      &quot;state0element0block_element5_child&quot; : true,
+      &quot;state0element0block_element5&quot; : true,
+      &quot;state0element0block_element4_child&quot; : true,
+      &quot;state0element0block_element4&quot; : true,
+      &quot;state0element0block_element3_child&quot; : true,
+      &quot;state0element0block_element3&quot; : true,
+      &quot;state0element0block_element2_child&quot; : true,
+      &quot;state0element0block_element2&quot; : true,
+      &quot;uniqueKey&quot; : &quot;REC0&quot;
+    },
+    &quot;uniqueKey&quot; : &quot;REC0&quot;,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8tbQAD&quot;,
+    &quot;PbeUnitPrice&quot; : 3400,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPIQAZ&quot;,
+    &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+    &quot;PbeName&quot; : &quot;Compactor 9500&quot;,
+    &quot;Id&quot; : &quot;REC0&quot;
+  }, {
+    &quot;_flex&quot; : {
+      &quot;state0element0block_element5_child&quot; : true,
+      &quot;state0element0block_element5&quot; : true,
+      &quot;state0element0block_element4_child&quot; : true,
+      &quot;state0element0block_element4&quot; : true,
+      &quot;state0element0block_element3_child&quot; : true,
+      &quot;state0element0block_element3&quot; : true,
+      &quot;state0element0block_element2_child&quot; : true,
+      &quot;state0element0block_element2&quot; : true,
+      &quot;uniqueKey&quot; : &quot;REC1&quot;
+    },
+    &quot;uniqueKey&quot; : &quot;REC1&quot;,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8siQAD&quot;,
+    &quot;PbeUnitPrice&quot; : 2345,
+    &quot;Qty&quot; : &quot;1&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;addToEstimate&quot; : true,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tOUQAZ&quot;,
+    &quot;ProductUrl&quot; : &quot;https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png&quot;,
+    &quot;PbeName&quot; : &quot;SLA-Finance&quot;,
+    &quot;Id&quot; : &quot;REC1&quot;
+  } ],
+  &quot;PriceBookEntry:Text1&quot; : &quot;null&quot;,
+  &quot;estimatedProducts&quot; : {
+    &quot;Formula1&quot; : 5745,
+    &quot;subtotalcal&quot; : 3400,
+    &quot;CustomLWC4&quot; : {
+      &quot;ep1&quot; : {
+        &quot;ep&quot; : [ {
+          &quot;Id&quot; : &quot;REC0&quot;,
+          &quot;PbeName&quot; : &quot;Compactor 9500&quot;,
+          &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9tPIQAZ&quot;,
+          &quot;Subtotal&quot; : 3400,
+          &quot;Qty&quot; : &quot;1&quot;,
+          &quot;PbeUnitPrice&quot; : 3400,
+          &quot;Product2Id&quot; : &quot;01t8Y00000NV8tbQAD&quot;,
+          &quot;uniqueKey&quot; : &quot;REC0&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC0&quot;
+          }
+        } ]
+      }
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTFMergeProducts_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

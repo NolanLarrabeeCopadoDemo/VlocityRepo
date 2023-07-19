@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>SA_recalc</name>
+        <label>SA recalc</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <actionName>refreshActualsCalculation</actionName>
+        <actionType>refreshActualsCalculation</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>isCurrentSchedule</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>salesAgreementId</name>
+            <value>
+                <stringValue>0YAHr000000kBjfOAE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>userId</name>
+            <value>
+                <stringValue>005Hr00000EirARIAZ</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>refreshActualsCalculation</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Sales Agreement Recalc {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sales Agreement Recalc</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SA_recalc</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+</Flow>

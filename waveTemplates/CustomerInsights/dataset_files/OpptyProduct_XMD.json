@@ -1,0 +1,45 @@
+{
+    "dates": [],
+    "derivedDimensions": [],
+    "derivedMeasures": [],
+    "dimensions": [],
+    "measures": [
+        {
+            "field": "Opportunity.Amount",
+            "format": {
+                "customFormat": "[\"$#,###\",1]",
+                "delimiters": {}
+            }
+        },
+        {
+            "field": "ListPrice",
+            "format": {
+                "customFormat": "[\"$#,###.00\",1]",
+                "delimiters": {}
+            }
+        },
+        {
+            "field": "Opportunity.Pricebook.UnitPrice",
+            "format": {
+                "customFormat": "[\"$#,###\",1]",
+                "delimiters": {}
+            }
+        },
+        {
+            "field": "UnitPrice",
+            "format": {
+                "customFormat": "[\"$#,###\",1]",
+                "delimiters": {}
+            }
+        },
+        {
+            "field": "TotalPrice",
+            "format": {
+                "customFormat": "[\"$#,###\",1]",
+                "delimiters": {}
+            }
+        }
+    ],
+    "organizations": [],
+    "showDetailsDefaultFields": []
+}

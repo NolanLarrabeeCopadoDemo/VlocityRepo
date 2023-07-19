@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>none</fullName>
+        <default>false</default>
+        <label>none</label>
+    </customValue>
+    <customValue>
+        <fullName>underline</fullName>
+        <default>false</default>
+        <label>underline</label>
+    </customValue>
+    <customValue>
+        <fullName>overline</fullName>
+        <default>false</default>
+        <label>overline</label>
+    </customValue>
+    <customValue>
+        <fullName>underline overline</fullName>
+        <default>false</default>
+        <label>underline overline</label>
+    </customValue>
+    <masterLabel>Text Decoration</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,34 @@
+<h2>Release Notes for Customer Insights</h2>
+<h5>Version 1.1</h5>
+
+<h2>New Dashboards</h2>
+<h4>Sales Performance</h4>
+<ul>
+    <li>Ready-to-deploy dashboard with the most commonly requested sales metrics to track revenue, pipeline, leads, activities, and top accounts.</li>
+    <li>Minimal use of SAQL and Interactions (Bindings) for easy customization.</li>
+    <li>Demonstrates design and usability best practices.</li>
+  </ul>
+<h4>Opportunity Embedded</h4>
+<ul>
+    <li>Designed to embed in the Opportunity page layout using Lightning App Builder.</li>
+    <li>Use the <a href="https://help.salesforce.com/s/articleView?id=sf.bi_embed_lightning.htm&type=5" target="_blank">Filter Builder</a> to add filters for Activity, Case, Opportunity, and OpportunityHistory</li>
+        <ul>
+            <li>Activity Dataset: Match Oppd.Id to Id</li>
+            <li>Case Dataset: Match AccountId to AccountId</li>
+            <li>Opportunity Dataset: Match Id to Id</li>
+            <li>OpportunityHistory Dataset: Match OpportunityId to Id</li>
+        </ul>
+</ul>
+  <h2>Modular Recipes</h2>
+  <p>Customer Insights can now run in Orgs without role hierarchy, lead records, or case records. Instead, Salesforce loads sample data into the Sales Performance Dashboard so you can see a preview of all widgets</p>
+  <h4>Row-Level Security</h4>
+  <p>Security Predicates are now added by default on the following datasets</p>
+    <ul>
+      <li>Activity</li>
+      <li>Opportunity</li>
+      <li>OpportunityHistory</li>
+      <li>OpptyProduct</li>
+      <li>Account</li>
+      <li>Lead</li>
+    </ul>
+  <p>Users will be able to view data owned by them and others in their role and subordinates. In Orgs without role hierarchy, users will be able to view data owned by them</p>

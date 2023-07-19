@@ -1,0 +1,40 @@
+{
+    "Description": "Set Values for case creation",
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": true,
+    "MayEdit": true,
+    "Name": "SVCaseCreation",
+    "OmniProcessId": {
+        "Name": "CallBackandCaseCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Service/CallBackandCaseCreation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "AssetId": "%AssetId%",
+            "CaseReason": "New problem",
+            "ContactId": "%Contact Id%",
+            "Priority": "Medium",
+            "Status": "New"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Service/CallBackandCaseCreation/English/SVCaseCreation"
+}

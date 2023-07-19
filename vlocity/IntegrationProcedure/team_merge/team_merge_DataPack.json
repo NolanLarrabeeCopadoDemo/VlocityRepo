@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "team_merge_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsLocked": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "MayEdit": true,
+    "Name": "ProductList",
+    "OmniProcessElement": [
+        "team_merge_Element_MergeSelectedProductsToCart.json",
+        "team_merge_Element_SetValues1.json",
+        "team_merge_Element_DataRaptorTransformAction1.json",
+        "team_merge_Element_NullifyEstimateProducts.json",
+        "team_merge_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "team_merge",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "team_merge_PropertySetConfig.json",
+    "SubType": "merge",
+    "Type": "team",
+    "UniqueName": "team_merge_Procedure_1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/team/merge/Procedure",
+    "WebComponentKey": "f6fcf96d-d44b-9fd6-8f7c-044b1f3fb6f3"
+}

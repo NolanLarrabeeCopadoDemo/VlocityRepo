@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccountRelationshipShareRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessLevel>Read</accessLevel>
+    <accountToCriteriaField>Case.AccountId</accountToCriteriaField>
+    <description>Sharing rule will share cases of customers to VAR/Reseller so that VAR/Resellers can support end customers.</description>
+    <entityType>Case</entityType>
+    <masterLabel>View Cases of Customer</masterLabel>
+    <type>VAR/Reseller</type>
+</AccountRelationshipShareRule>

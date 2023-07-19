@@ -1,0 +1,73 @@
+{
+    "ArticlesLength": 0,
+    "CountTemplateSelected": 1,
+    "EnterObject": {
+        "ObjectId": "0014x00000ExpivAAB"
+    },
+    "FileFormat": "pdf",
+    "Files": "",
+    "FilesLength": 0,
+    "SObjectId": "0014x00000ExpivAAB",
+    "attachFileFormat": "pdf",
+    "countTemplates": 1,
+    "docGenerationMechanism": "VlocityClientSide",
+    "docTitle": "Clinical Notes",
+    "documentTitle": "Clinical Notes",
+    "documentViewer": "VlocityClientSideViewer",
+    "downloadFileFormat": "all",
+    "generateDocument": {
+        "GenerateDocumentWord": [
+            {
+                "FetchDocumentTemplateFromNameStatus": true,
+                "Id": "a1b4x000001DmmoAAC",
+                "LoopBlockIterationIndex": 1,
+                "LoopBlockIterationStatus": true,
+                "Name": "Clinical Notes",
+                "TemplateType": "Microsoft Word .DOCX Template",
+                "VersionNumber": 1,
+                "distributionPublicUrl": "",
+                "documentTitle": "Clinical Notes.docx",
+                "initiatePDFGeneration": true,
+                "pdfContentVersionId": "0684x00000Fi5QmAAJ",
+                "pdfDocumentTitle": "Clinical Notes",
+                "wordContentVersionId": "0684x00000Fi5QhAAJ"
+            }
+        ],
+        "SendViaDocuSIgn": true,
+        "recipientEmail": "dfischesser@salesforce.com",
+        "recipientName": "Dean"
+    },
+    "generateMergeDocument": null,
+    "generatePdfDocument": true,
+    "pdfContentVersionIds": [
+        "0684x00000Fi5QmAAJ"
+    ],
+    "pdfGenerationCompleted": true,
+    "pdfGenerationSource": "VlocityClientSide",
+    "selectedTemplate": [
+        {
+            "FetchDocumentTemplateFromNameStatus": true,
+            "Id": "a1b4x000001DmmoAAC",
+            "LoopBlockIterationIndex": 1,
+            "LoopBlockIterationStatus": true,
+            "Name": "Clinical Notes",
+            "TemplateType": "Microsoft Word .DOCX Template",
+            "VersionNumber": 1
+        }
+    ],
+    "templateNames": [
+        {
+            "VlocityDocumentTemplate": "Clinical Notes"
+        }
+    ],
+    "templateType": "Microsoft Word .DOCX Template",
+    "timeStamp": "2022-07-28T13:30:53.979Z",
+    "timeTaken": 7,
+    "useTemplateDRExtract": "No",
+    "userCurrencyCode": "USD",
+    "userId": "0054x000000z8RWAAY",
+    "userName": "demo.org@health.1605621074233",
+    "userProfile": "Vlocity User",
+    "userTimeZone": "-420",
+    "userTimeZoneName": "America/Los_Angeles"
+}

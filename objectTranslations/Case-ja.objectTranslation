@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- SLICK_CTI_CASE --></label>
+        <name>SLICK_CTI_CASE</name>
+    </fieldSets>
+    <fields>
+        <help><!-- What is the Date you agreed to respond to this RFQ? --></help>
+        <label><!-- Accepted Date --></label>
+        <name>Accepted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do you plan to respond to this RFQ ? --></help>
+        <label><!-- Accepted --></label>
+        <name>Accepted__c</name>
+    </fields>
+    <fields>
+        <label>満足度</label>
+        <name>CSAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Time (Seconds) --></label>
+        <name>CaseTimer19__Cumulative_Time__c</name>
+    </fields>
+    <fields>
+        <label>ケースアンケートURL</label>
+        <name>Case_Survey_URL__c</name>
+    </fields>
+    <fields>
+        <label>チャネル</label>
+        <name>Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChatKey --></label>
+        <name>ChatKey__c</name>
+    </fields>
+    <fields>
+        <label>市区町村</label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>ClosedDate__c</name>
+    </fields>
+    <fields>
+        <label>コミュニティ取引先責任者と一致</label>
+        <name>Community_Contact_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concerned quantity --></label>
+        <name>Concerned_quantity__c</name>
+    </fields>
+    <fields>
+        <label>予測コスト</label>
+        <name>Cost__c</name>
+    </fields>
+    <fields>
+        <label>国</label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Time (Seconds) --></label>
+        <name>Cumulative_Time__c</name>
+    </fields>
+    <fields>
+        <label>顧客タイプ</label>
+        <name>Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation>大企業</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>家庭</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small and Medium Business</masterLabel>
+            <translation>中小企業</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label>DB対応時間（ツール用）</label>
+        <name>DB_Case_Duration_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label>DB時間（ツール用）</label>
+        <name>DB_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label>クローズ日</label>
+        <name>DateTime_Closed_c__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label>オープン日</label>
+        <name>DateTime_Opened_c__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the Due Date of this Request for Quote --></help>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label>対応時間</label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label>DB（ツール用）</label>
+        <name>EDY_ORGCUSTOM__DB__c</name>
+    </fields>
+    <fields>
+        <label>旧詳細</label>
+        <name>EDY_ORGCUSTOM__Old_Description__c</name>
+    </fields>
+    <fields>
+        <label>旧タイトル</label>
+        <name>EDY_ORGCUSTOM__Old_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>ED_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Predicted CSAT --></label>
+        <name>ED_Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>ED_Prescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Cost --></label>
+        <name>Est_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>初回クローズ</label>
+        <name>First_Contact_Close__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked when there is a KB Article attached to the Case. --></help>
+        <label>ナレッジ添付</label>
+        <name>KB_Article_Attached__c</name>
+    </fields>
+    <fields>
+        <help><!-- Article created using the Create Article flow through either the dynamic button or the Next Best Action recommendation --></help>
+        <label><!-- Article Created --></label>
+        <name>MFG_Service_Article_Created__c</name>
+    </fields>
+    <fields>
+        <help><!-- Short summary of actions taken to resolve the Case. --></help>
+        <label><!-- Close Summary --></label>
+        <name>MFG_Service_Close_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Type --></label>
+        <name>MFG_Service_Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order or Invoice</masterLabel>
+            <translation><!-- Order or Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation><!-- Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup and Usage</masterLabel>
+            <translation><!-- Setup and Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suggestion</masterLabel>
+            <translation><!-- Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting</masterLabel>
+            <translation><!-- Troubleshooting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Milestone Status --></label>
+        <name>MilestoneStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- NBA to Display --></label>
+        <name>NBA_to_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Voucher --></label>
+        <name>Offer_Voucher__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Image --></label>
+        <name>OpenGraph_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Type --></label>
+        <name>OpenGraph_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Url --></label>
+        <name>OpenGraph_Url__c</name>
+    </fields>
+    <fields>
+        <label>顧客ケースID</label>
+        <name>Org_Cust_Case_ID__c</name>
+    </fields>
+    <fields>
+        <label>製品区分</label>
+        <name>Product_Family_KB__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Products</masterLabel>
+            <translation>会議</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generators</masterLabel>
+            <translation><!-- Generators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Products</masterLabel>
+            <translation>ヘッドホン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skid Steer</masterLabel>
+            <translation><!-- Skid Steer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Model --></label>
+        <name>Product_Model__c</name>
+    </fields>
+    <fields>
+        <label>製品名</label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label>クオリティスコア</label>
+        <name>Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label>一次回答時間（分）</label>
+        <name>Response_Time_mins__c</name>
+    </fields>
+    <fields>
+        <label><!-- chatKey --></label>
+        <name>SCQuickSetup__chatKey__c</name>
+    </fields>
+    <fields>
+        <label>SLA規約</label>
+        <name>SLA_Compliant__c</name>
+    </fields>
+    <fields>
+        <label>SLA種別</label>
+        <name>SLA_Type__c</name>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation>プレミアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>スタンダード</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>メールトリガ送信</label>
+        <name>Send_Email_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Field Service --></label>
+        <name>Send_FieldService__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label>サービステリトリー</label>
+        <name>Service_Territory__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>都道府県</label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label>ステータス</label>
+        <name>Status_Indicator__c</name>
+    </fields>
+    <fields>
+        <label>町名・番地</label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label>サブ種別</label>
+        <name>Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation>請求書</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation>クレーム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order or Invoice</masterLabel>
+            <translation>注文、請求書</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation>プロファイル</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup and Usage</masterLabel>
+            <translation>設定と利用状況</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suggestion</masterLabel>
+            <translation>推奨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting</masterLabel>
+            <translation>トラブル対応</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey URL --></label>
+        <name>Survey_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Open --></label>
+        <name>Time_Open__c</name>
+    </fields>
+    <fields>
+        <label>サポートタイプ</label>
+        <name>Type_of_Support__c</name>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation>プレミアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>スタンダード</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- URLsrc --></label>
+        <name>URLsrc__c</name>
+    </fields>
+    <fields>
+        <label>緊急</label>
+        <name>Urgency__c</name>
+    </fields>
+    <fields>
+        <label>ボリューム</label>
+        <name>Volume__c</name>
+    </fields>
+    <fields>
+        <label>作業タイプ</label>
+        <name>Work_Type__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Approval Requested --></label>
+        <name>ckz_Budget_Approval_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Approval Status --></label>
+        <name>ckz_Budget_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Budget Override Amount --></label>
+        <name>ckz_Budget_Override_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Amount --></label>
+        <name>ckz_Credit_Override_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Requested --></label>
+        <name>ckz_Credit_Override_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Status --></label>
+        <name>ckz_Credit_Override_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Cart --></label>
+        <name>ckz_Source_Cart__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- demoRecommendations --></label>
+        <name>demoRecommendations__c</name>
+    </fields>
+    <fields>
+        <label><!-- deviceId --></label>
+        <name>deviceId__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Primary case record type used for most cases. --></description>
+        <label>一般的な質問</label>
+        <name>Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used specifically for Chat cases to drive the chat-specific page layout. --></description>
+        <label><!-- Chat Case --></label>
+        <name>Chat_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Digital Engagement - Social Case --></label>
+        <name>Digital_Engagement_Social_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Request for Quote Record Type --></description>
+        <label><!-- RFQ --></label>
+        <name>RFQ</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Order Return (RMA) --></description>
+        <label><!-- RMA --></label>
+        <name>RMA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Chat Live Agent --></label>
+        <name>SCQuickSetup__Chat_Live_Agent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SOS Recodr --></label>
+        <name>SCQuickSetup__SOS_Recodr</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Case_Classification --></label>
+        <name>Case_Classification</name>
+    </webLinks>
+    <webLinks>
+        <label>顧客満足度アンケート</label>
+        <name>Customer_Satisfaction_Survey</name>
+    </webLinks>
+    <webLinks>
+        <label>記事を送信</label>
+        <name>Email_Article</name>
+    </webLinks>
+    <webLinks>
+        <label>ソリューションを送信</label>
+        <name>Email_Solution</name>
+    </webLinks>
+    <webLinks>
+        <label>ソリューションを検索</label>
+        <name>Find_Solution</name>
+    </webLinks>
+    <webLinks>
+        <label>セルフサービスにログイン</label>
+        <name>Login_to_Self_Service</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label>アップセル/クロスセル 商談</label>
+        <name>SCQuickSetup__UpsellCrosssellOpportunity</name>
+    </webLinks>
+    <webLinks>
+        <label>アップセル/クロスセル 商談</label>
+        <name>UpSellCrossSellOpp</name>
+    </webLinks>
+</CustomObjectTranslation>

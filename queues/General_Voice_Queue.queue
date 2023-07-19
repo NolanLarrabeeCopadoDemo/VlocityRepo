@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>General Voice Queue</name>
+    <queueMembers>
+        <users>
+            <user>majimenez@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>tim.service.0aifxjprqang.baxiwsymnt5n@copado.com2023/07/18_17-7-41.demo3</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

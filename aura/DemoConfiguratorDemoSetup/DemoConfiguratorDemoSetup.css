@@ -1,0 +1,21 @@
+.THIS .checkmarkul ul li{
+    position: relative;
+    padding-left: 20px;
+    list-style-type: none!important;
+}
+.THIS h1{
+    margin-bottom:10px;
+    font-size:18px;
+}
+.THIS .checkmarkul ul li:before {
+  	position: absolute;
+    fill: darkgreen;
+    color: darkgreen;
+  	top: 0px;
+  	left: 0;
+  	content: ' ';
+  	width: 30px;
+  	height: 30px;
+  	content: "\2713";
+} 
+.THIS .checkmarkul ul{text-align:left;margin-left:0;}

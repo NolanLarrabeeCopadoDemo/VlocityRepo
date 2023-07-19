@@ -1,0 +1,44 @@
+{
+  "Overrides" : 
+  {
+    "label" : "Overrides",
+    "description" : "Internal configuration to allow asset creation overrides, not to be displayed in UI.",
+    "defaultValue" : {
+      "createAllDashboards" : true,
+      "createAllExternalFiles" : true,
+      "createAllDatasetFiles" : false,
+      "createAllImages" : true
+    },
+    "required" : true,
+    "excludeSelected" : false,
+    "excludes" : [ ],
+    "variableType" : {
+      "required" : [ 
+      "createAllExternalFiles", 
+      "createAllDashboards", 
+      "createAllDatasetFiles",  
+      "createAllImages"
+      ],
+      "type" : "ObjectType",
+      "properties" : {
+        "createAllDashboards" : {
+          "type" : "BooleanType",
+          "enums" : [ true, false ]
+        },
+        "createAllExternalFiles" : {
+          "type" : "BooleanType",
+          "enums" : [ true, false ]
+        },
+        "createAllDatasetFiles" : {
+          "type" : "BooleanType",
+          "enums" : [ true, false ]
+        },
+        "createAllImages" : {
+          "type" : "BooleanType",
+          "enums" : [ true, false ]
+        }
+      },
+      "strictValidation" : true
+    }
+  }
+}

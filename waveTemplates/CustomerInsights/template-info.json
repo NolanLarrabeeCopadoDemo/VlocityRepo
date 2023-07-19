@@ -1,0 +1,426 @@
+{
+  "templateType" : "app",
+  "label" : "Customer Insights Analytics",
+  "name" : "CustomerInsights",
+  "description" : "The Customer Insights Analytics template brings together analysis of Sales Cloud and Service Cloud in a unified, easy-to-customize app. v1.2 #080",
+  "assetVersion" : 55.0,
+  "variableDefinition" : "variables.json",
+  "uiDefinition" : "ui.json",
+  "rules" : [
+    {
+      "type" : "templateToApp",
+      "file" : "template-to-app-rules.json"
+    },
+    {
+      "type" : "appToTemplate",
+      "file" : "app-to-template-rules.json"
+    }
+  ],
+  "releaseInfo" : {
+    "templateVersion" : "1.2",
+    "notesFile" : "releaseNotes.html"
+  },
+  "apexCallback" : {
+    "namespace" : "wavetemplate",
+    "name" : "CustomerInsightsConfigurationModifier"
+  },
+  "folderDefinition" : "folder.json",
+  "externalFiles" : [
+    {
+      "condition" : "${Variables.Has_RoleHierarchy == 'No'}",
+      "file" : "dataset_files/no_userrole_hierarchy.csv",
+      "name" : "no_userrole_hierarchy_insights",
+      "schema" : "dataset_files/no_userrole_hierarchy.json",
+      "type" : "CSV",
+      "userXmd" : "dataset_files/no_userrole_hierarchy_XMD.json"
+    },
+    {
+      "condition" : "${Variables.Has_Cases == 'No'}",
+      "file" : "dataset_files/no_cases.csv",
+      "name" : "Case_tp",
+      "schema" : "dataset_files/no_cases.json",
+      "type" : "CSV",
+      "userXmd" : "dataset_files/no_cases_XMD.json"
+    },
+    {
+      "condition" : "${Variables.Has_Cases == 'No'}",
+      "file" : "dataset_files/no_casehistory.csv",
+      "name" : "CaseHistory_tp",
+      "schema" : "dataset_files/no_casehistory.json",
+      "type" : "CSV",
+      "userXmd" : "dataset_files/no_casehistory_XMD.json"
+    },
+    {
+      "condition" : "${Variables.Has_Leads == 'No'}",
+      "file" : "dataset_files/no_lead.csv",
+      "name" : "Lead_tp",
+      "schema" : "dataset_files/no_lead.json",
+      "type" : "CSV",
+      "userXmd" : "dataset_files/no_lead_XMD.json"
+    }
+  ],
+  "lenses" : [ ],
+  "dashboards" : [
+    {
+      "label" : "Account Embedded",
+      "name" : "Account_Embedded_tp",
+      "file" : "dashboards/Account_Embedded.json"
+    },
+    {
+      "label" : "Gallery - Activity Components",
+      "name" : "Activity_Components_tp",
+      "condition" : "${Variables.Has_Activities == 'Yes'}",
+      "file" : "dashboards/Activity_Components.json"
+    },
+    {
+      "label" : "Gallery - Case Components",
+      "name" : "Case_Components_tp",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "file" : "dashboards/Case_Components.json"
+    },
+    {
+      "label" : "Gallery - Lead Components",
+      "name" : "Lead_Components_tp",
+      "condition" : "${Variables.Has_Leads == 'Yes'}",
+      "file" : "dashboards/Lead_Components.json"
+    },
+    {
+      "label" : "Gallery - Opportunity Components",
+      "name" : "Opportunity_Components_tp",
+      "file" : "dashboards/Opportunity_Components.json"
+    },
+    {
+      "label" : "Gallery - Product Components",
+      "name" : "Product_Components_tp",
+      "condition" : "${Variables.Has_Products == 'Yes'}",
+      "file" : "dashboards/Product_Components.json"
+    },
+    {
+      "label" : "Opportunity Embedded",
+      "name" : "Opportunity_Embedded_tp",
+      "file" : "dashboards/Opportunity_Embedded.json"
+    },
+    {
+      "label" : "Sales Performance",
+      "name" : "Sales_Performance_tp",
+      "file" : "dashboards/Sales_Performance.json"
+    }
+  ],
+  "components" : [
+    {
+      "label" : "Activities by Status",
+      "name" : "Activities_by_Status_tp",
+      "condition" : "${Variables.Has_Activities == 'Yes'}",
+      "file" : "components/Activities_by_Status.json"
+    },
+    {
+      "label" : "Activities by Team and Account",
+      "name" : "Activities_by_Team_tp",
+      "condition" : "${Variables.Has_Activities == 'Yes'}",
+      "file" : "components/Activities_by_Team.json"
+    },
+    {
+      "label" : "Activities by Type",
+      "name" : "Activities_by_Type_tp",
+      "condition" : "${Variables.Has_Activities == 'Yes'}",
+      "file" : "components/Activities_by_Type.json"
+    },
+    {
+      "label" : "Cases by Account and Origin",
+      "name" : "Cases_by_Account_and_Origin_tp",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "file" : "components/Cases_by_Account_and_Origin.json"
+    },
+    {
+      "label" : "Cases by Agent and Duration",
+      "name" : "Cases_by_Agent_and_Duration_tp",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "file" : "components/Cases_by_Agent_and_Duration.json"
+    },
+    {
+      "label" : "Cases by Sales Rep and Account",
+      "name" : "Cases_by_Sales_Rep_and_Account_tp",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "file" : "components/Cases_by_Sales_Rep_and_Account.json"
+    },
+    {
+      "label" : "Cases by Status and Priority",
+      "name" : "Cases_by_Status_and_Priority_tp",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "file" : "components/Cases_by_Status_and_Priority.json"
+    },
+    {
+      "label" : "Cases Components",
+      "name" : "Cases_tp",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "file" : "components/Cases.json"
+    },
+    {
+      "label" : "Days Since Last Activity",
+      "name" : "Days_Since_Last_Activity_tp",
+      "condition" : "${Variables.Has_Activities == 'Yes'}",
+      "file" : "components/Days_Since_Last_Activity.json"
+    },
+    {
+      "label" : "Leads by Recent and Source",
+      "name" : "Leads_by_Recent_and_Source_tp",
+      "condition" : "${Variables.Has_Leads == 'Yes'}",
+      "file" : "components/Leads_by_Recent_and_Source.json"
+    },
+    {
+      "label" : "Leads by Status and Industry",
+      "name" : "Leads_by_Status_and_Industry_tp",
+      "condition" : "${Variables.Has_Leads == 'Yes'}",
+      "file" : "components/Leads_by_Status_and_Industry.json"
+    },
+    {
+      "label" : "Opportunity Avg Days in Sales Cycle",
+      "name" : "Opportunity_Avg_Days_in_Sales_Cycle_tp",
+      "file" : "components/Opportunity_Avg_Days_in_Sales_Cycle.json"
+    },
+    {
+      "label" : "Opportunity Closed Won",
+      "name" : "Opportunity_Closed_Won_tp",
+      "file" : "components/Opportunity_Closed_Won.json"
+    },
+    {
+      "label" : "Opportunity Closed Won and Products",
+      "name" : "Opportunity_Closed_Won_and_Products_tp",
+      "condition" : "${Variables.Has_Products == 'Yes'}",
+      "file" : "components/Opportunity_Closed_Won_and_Products.json"
+    },
+    {
+      "label" : "Opportunity Open Pipeline",
+      "name" : "Opportunity_Open_Pipeline_tp",
+      "file" : "components/Opportunity_Open_Pipeline.json"
+    },
+    {
+      "label" : "Opportunity Pipeline Trending",
+      "name" : "Opportunity_Pipeline_Trending_tp",
+      "file" : "components/Opportunity_Pipeline_Trending.json"
+    },
+    {
+      "label" : "Opportunity Win Rate",
+      "name" : "Opportunity_Win_Rate_tp",
+      "file" : "components/Opportunity_Win_Rate.json"
+    },
+    {
+      "label" : "Product by Whitespace and Pipeline",
+      "name" : "Product_by_Whitespace_and_Pipeline_tp",
+      "condition" : "${Variables.Has_Products == 'Yes'}",
+      "file" : "components/Product_by_Whitespace_and_Pipeline.json"
+    },
+    {
+      "label" : "Products Purchased by Family and Product",
+      "name" : "Products_Purchased_by_Family_and_Product_tp",
+      "condition" : "${Variables.Has_Products == 'Yes'}",
+      "file" : "components/Products_Purchased_by_Family_and_Product.json"
+    }
+  ],
+  "eltDataflows" : [ ],
+  "recipes" : [
+    {
+      "label" : "insights_user",
+      "name" : "insights_user_combined",
+      "condition" : "${Variables.Has_RoleHierarchy == 'Yes' || Variables.Has_RoleHierarchy == 'No'}",
+      "file" : "recipes/insights_user_combined.json"
+    },
+    {
+      "label" : "insights_opportunity",
+      "name" : "insights_opportunity_combined",
+      "file" : "recipes/insights_opportunity_combined.json"
+    },
+    {
+      "label" : "insights_lead",
+      "name" : "insights_lead",
+      "condition" : "${Variables.Has_Leads == 'Yes' || Variables.Has_Leads == 'No'}",
+      "file" : "recipes/insights_lead.json"
+    },
+    {
+      "label" : "insights_case",
+      "name" : "insights_case",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "file" : "recipes/insights_case.json"
+    },
+    {
+      "label" : "insights_activity",
+      "name" : "insights_activity",
+      "condition" : "${Variables.Has_Activities == 'Yes' || Variables.Has_Activities == 'No'}",
+      "file" : "recipes/insights_activity.json"
+    }
+  ],
+  "datasetFiles" : [
+    {
+      "label" : "Account",
+      "name" : "Account_tp",
+      "userXmd" : "dataset_files/Account_XMD.json"
+    },
+    {
+      "label" : "Activity",
+      "name" : "Activity_tp",
+      "condition" : "${Variables.Has_Activities == 'Yes' || Variables.Has_Activities == 'No'}",
+      "userXmd" : "dataset_files/Activity_XMD.json"
+    },
+    {
+      "label" : "Case",
+      "name" : "Case_tp",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "userXmd" : "dataset_files/Case_XMD.json"
+    },
+    {
+      "label" : "CaseHistory",
+      "name" : "CaseHistory_tp",
+      "condition" : "${Variables.Has_Cases == 'Yes'}",
+      "userXmd" : "dataset_files/CaseHistory_XMD.json"
+    },
+    {
+      "label" : "Lead",
+      "name" : "Lead_tp",
+      "condition" : "${Variables.Has_Leads == 'Yes'}",
+      "userXmd" : "dataset_files/Lead_XMD.json"
+    },
+    {
+      "label" : "Opportunity",
+      "name" : "Opportunity_tp",
+      "userXmd" : "dataset_files/Opportunity_XMD.json"
+    },
+    {
+      "label" : "OpportunityHistory",
+      "name" : "OpportunityHistory_tp",
+      "userXmd" : "dataset_files/OpportunityHistory_XMD.json"
+    },
+    {
+      "label" : "OpptyProduct",
+      "name" : "OpptyProduct_tp",
+      "condition" : "${Variables.Has_Products == 'Yes'}",
+      "userXmd" : "dataset_files/OpptyProduct_XMD.json"
+    },
+    {
+      "label" : "Product",
+      "name" : "Product_tp",
+      "condition" : "${Variables.Has_Products == 'Yes'}",
+      "userXmd" : "dataset_files/Product_XMD.json"
+    },
+    {
+      "label" : "User",
+      "name" : "User_tp",
+      "userXmd" : "dataset_files/User_XMD.json"
+    },
+    {
+      "label" : "UserRole",
+      "name" : "UserRole",
+      "condition" : "${Variables.Has_RoleHierarchy == 'No' || Variables.Has_RoleHierarchy == 'Yes'}",
+      "userXmd" : "dataset_files/UserRole_XMD.json"
+    }
+  ],
+  "storedQueries" : [ ],
+  "imageFiles" : [
+    {
+      "name" : "crm_analytics_icon",
+      "file" : "images/crm_analytics_icon.png"
+    },
+    {
+      "name" : "crm_analytics_icon_small",
+      "file" : "images/crm_analytics_icon_small.png"
+    },
+    {
+      "name" : "background",
+      "file" : "images/bg.png"
+    },
+    {
+      "name" : "help_centerpng",
+      "file" : "images/help_center.png"
+    },
+    {
+      "name" : "arrows",
+      "file" : "images/arrows.png"
+    },
+    {
+      "name" : "expand_icon",
+      "file" : "images/expand_icon.png"
+    }
+  ],
+  "customAttributes" : [
+    {
+      "label" : "Features",
+      "values" : [
+        "CRM Analytics",
+        "KPI Rich Datasets",
+        "Recipes"
+      ]
+    },
+    {
+      "label" : "Salesforce Objects",
+      "values" : [
+        "Account",
+        "PersonAccount",
+        "Case",
+        "CaseHistory",
+        "Event",
+        "Lead",
+        "Opportunity",
+        "Opportunity Line Item",
+        "Opportunity History",
+        "Product",
+        "Price Book",
+        "Task",
+        "User",
+        "UserRole"
+      ]
+    },
+    {
+      "label" : "Publisher",
+      "values" : [
+        "CRM Analytics"
+      ]
+    }
+  ],
+  "extendedTypes" : { },
+  "templateDependencies" : [ ],
+  "tags" : [
+    "Sales",
+    "Service",
+    "Customer 360",
+    "Featured"
+  ],
+  "icons" : {
+    "appBadge" : {
+      "name" : "6.png"
+    },
+    "templateBadge" : {
+      "name" : "badge_customer_insights.png"
+    },
+    "templatePreviews" : [
+      {
+        "name" : "preview_customer_insights1.png",
+        "label" : "Activities Insights Dashboard",
+        "description" : "Use the Activities Insights Dashboard to understand account engagement."
+      },
+      {
+        "name" : "preview_customer_insights2.png",
+        "label" : "Case Insights Dashboard",
+        "description" : "Use the Case Insights Dashboard to understand how your Sales organization engages with customers. Use the dashboard out of the box or copy and paste the components to other dashboards to create a customized experience for your users."
+      },
+      {
+        "name" : "preview_customer_insights3.png",
+        "label" : "Lead Insights Dashboard",
+        "description" : "Use the Leads Insights Dashboard to understand lead performance for your Sales organization."
+      },
+      {
+        "name" : "preview_customer_insights4.png",
+        "label" : "Opportunities Insights Dashboard",
+        "description" : "Use the Opportunities Insights Dashboard to explore your opportunity data and understand pipeline health."
+      },
+      {
+        "name" : "preview_customer_insights5.png",
+        "label" : "Products Insights Dashboard",
+        "description" : "Use the Products Insights Dashboard to explore your products purchased and understand product whitespace."
+      },
+      {
+        "name" : "preview_customer_insights6.png",
+        "label" : "Recipes",
+        "description" : "Get to know the pre-built recipes that generate datasets for this template. Add custom fields and objects in Salesforce that you want to include in your dataset for further analysis. Sync your data and schedule the recipes to run at a time convenient for your organization."
+      }
+    ]
+  }
+}

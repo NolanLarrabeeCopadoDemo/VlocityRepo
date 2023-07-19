@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Memo --></label>
+        <name>DemoADM__Memo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>DemoADM__Title__c</name>
+    </fields>
+</CustomObjectTranslation>

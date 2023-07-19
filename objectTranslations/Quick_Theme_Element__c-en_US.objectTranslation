@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quick Theme Element</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quick Theme Elements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Color --></label>
+        <name>Background_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Border --></label>
+        <name>Border__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link State --></label>
+        <name>Link_State__c</name>
+        <picklistValues>
+            <masterLabel>Clicked</masterLabel>
+            <translation><!-- Clicked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus</masterLabel>
+            <translation><!-- Focus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hover</masterLabel>
+            <translation><!-- Hover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visited</masterLabel>
+            <translation><!-- Visited --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quick Theme --></label>
+        <name>Quick_Theme__c</name>
+        <relationshipLabel><!-- Quick Theme Elements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Text Color --></label>
+        <name>Text_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Decoration --></label>
+        <name>Text_Decoration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Font Weight --></label>
+        <name>Text_Font_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Size --></label>
+        <name>Text_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Add to Cart Button</masterLabel>
+            <translation><!-- Add to Cart Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Breadcrumb Area</masterLabel>
+            <translation><!-- Breadcrumb Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Breadcrumb Link</masterLabel>
+            <translation><!-- Breadcrumb Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buttons</masterLabel>
+            <translation><!-- Buttons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkout Button</masterLabel>
+            <translation><!-- Checkout Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Footer Area</masterLabel>
+            <translation><!-- Footer Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Footer Link</masterLabel>
+            <translation><!-- Footer Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Links</masterLabel>
+            <translation><!-- General Links --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Header Area</masterLabel>
+            <translation><!-- Header Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Header Links</masterLabel>
+            <translation><!-- Header Links --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hero Active Tab Indicator</masterLabel>
+            <translation><!-- Hero Active Tab Indicator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hero Button 1</masterLabel>
+            <translation><!-- Hero Button 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hero Button 2</masterLabel>
+            <translation><!-- Hero Button 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Menu Bar Area</masterLabel>
+            <translation><!-- Menu Bar Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Header Area</masterLabel>
+            <translation><!-- Middle Header Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panel Footer</masterLabel>
+            <translation><!-- Panel Footer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panels</masterLabel>
+            <translation><!-- Panels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Button</masterLabel>
+            <translation><!-- Search Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Form</masterLabel>
+            <translation><!-- Search Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Category Area</masterLabel>
+            <translation><!-- Sub Category Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Category Link</masterLabel>
+            <translation><!-- Sub Category Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Menu Area</masterLabel>
+            <translation><!-- Sub Menu Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Menu Link</masterLabel>
+            <translation><!-- Sub Menu Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top Category</masterLabel>
+            <translation><!-- Top Category --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top Category Link</masterLabel>
+            <translation><!-- Top Category Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top Header Area</masterLabel>
+            <translation><!-- Top Header Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top Menu Link</masterLabel>
+            <translation><!-- Top Menu Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Widget Header</masterLabel>
+            <translation><!-- Widget Header --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

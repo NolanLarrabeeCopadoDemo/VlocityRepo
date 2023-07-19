@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiscoveryAIModel xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <algorithmType>Glm</algorithmType>
+    <classificationThreshold>0.49739615718500463</classificationThreshold>
+    <label>Maximize Converted</label>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Trade Show Invite</label>
+        <name>Trade_Show_Invite</name>
+        <type>Text</type>
+        <values>false</values>
+        <values>true</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Marketing Promo</label>
+        <name>Marketing_Promo</name>
+        <type>Text</type>
+        <values>President&apos;s Day</values>
+        <values>Sunny Season Promo</values>
+        <values>Renewable Installation Promo</values>
+        <values>Spring Early Bird Promo</values>
+        <values>CA Solar Energy Convention Promo</values>
+        <values>Portable Panel Promo</values>
+        <values>Memorial Day</values>
+        <values>Mid-Season Special</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Annual Revenue</label>
+        <name>Annual_Revenue</name>
+        <type>Number</type>
+        <values>-42000.0___1697249.0</values>
+        <values>1697249.0___1867928.0</values>
+        <values>1867928.0___1916000.0</values>
+        <values>1916000.0___1920000.0</values>
+        <values>1920000.0___1968107.0</values>
+        <values>1968107.0___2020282.0</values>
+        <values>2020282.0___2122387.0</values>
+        <values>2122387.0___2375041.0</values>
+        <values>2375041.0___4590000.0</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Industry</label>
+        <name>Industry</name>
+        <type>Text</type>
+        <values>Hospitality</values>
+        <values>Retail</values>
+        <values>Shipping</values>
+        <values>Banking</values>
+        <values>Apparel</values>
+        <values>Consulting</values>
+        <values>Manufacturing</values>
+        <values>Technology</values>
+        <values>Biotechnology</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>State</label>
+        <name>State</name>
+        <type>Text</type>
+        <values>Texas</values>
+        <values>California</values>
+        <values>New York</values>
+        <values>Boston</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Product</label>
+        <name>Product</name>
+        <type>Text</type>
+        <values>GC1500 Series</values>
+        <values>GC2000 Series Plus</values>
+        <values>GC2000 Series</values>
+        <values>GC5000 Series</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Converted</label>
+        <name>Converted</name>
+        <type>Text</type>
+        <values>true</values>
+        <values>false</values>
+    </modelFields>
+    <modelRuntimeType>Discovery</modelRuntimeType>
+    <predictedField>Converted</predictedField>
+    <predictionType>Classification</predictionType>
+    <sourceType>Discovery</sourceType>
+    <status>Enabled</status>
+    <trainingMetrics>{&quot;r2&quot;:0.5565054307684694,&quot;nobs&quot;:10000,&quot;nullDeviance&quot;:13827.400951526995,&quot;residualDegreesOfFreedom&quot;:9464,&quot;type&quot;:&quot;BinomialGLM&quot;,&quot;gini&quot;:0.8504416648642641,&quot;meanPerClassError&quot;:0.161383781011558,&quot;logloss&quot;:0.3468608108728563,&quot;auc&quot;:0.925220832432132,&quot;residualDeviance&quot;:6937.216217457125,&quot;confusionMatrices&quot;:{&quot;thresholds&quot;:[0.49739615718500463],&quot;tns&quot;:[3954],&quot;tps&quot;:[4486],&quot;totalPositives&quot;:5234,&quot;totalNegatives&quot;:4766},&quot;rmse&quot;:0.3323850198047774,&quot;aic&quot;:8009.216217457125,&quot;nullDegreesOfFreedom&quot;:9999,&quot;mse&quot;:0.11047980139062229}</trainingMetrics>
+</DiscoveryAIModel>

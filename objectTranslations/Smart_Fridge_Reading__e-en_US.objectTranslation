@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Smart Fridge Reading</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Smart Fridge Readings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Humidity --></label>
+        <name>Humidity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temperature --></label>
+        <name>Temperature__c</name>
+    </fields>
+    <fields>
+        <label><!-- deviceId --></label>
+        <name>deviceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- door --></label>
+        <name>door__c</name>
+    </fields>
+    <fields>
+        <label><!-- ts --></label>
+        <name>ts__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

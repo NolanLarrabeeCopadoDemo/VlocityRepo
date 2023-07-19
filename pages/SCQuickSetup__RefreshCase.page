@@ -1,0 +1,43 @@
+<apex:page controller="SCQuickSetup.RefreshCase">
+     <apex:includeScript value="/soap/ajax/34.0/connection.js"/>
+     <apex:includeScript value="/support/console/34.0/integration.js"/>
+
+
+    <script type='text/javascript'>
+
+     sforce.connection.sessionId = '{!$Api.Session_ID}';
+     var result;
+     document.addEventListener('DOMContentLoaded', function () {
+        console.log('1');
+        startRefresh();
+
+     })
+    
+    function startRefresh(){
+        setTimeout(function(){refresh()}, 15000);
+    }
+    
+    function refresh() {
+        console.log("refresh");
+        var id = '1';
+        if (result) {
+            id = result.caseName;
+        }
+        SCQuickSetup.RefreshCase.refresh(id,function(data, event) {
+             console.log(event);
+             result = data;
+             if (event.status) {
+                 if (result.refresh){
+                    sforce.console.refreshNavigationTab(function(r) {console.log("reload table")})
+                 }
+             }
+             
+             startRefresh();
+         })
+    }
+    
+    
+       </script>
+     
+    
+</apex:page>

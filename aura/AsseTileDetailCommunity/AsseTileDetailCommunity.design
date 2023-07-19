@@ -1,0 +1,4 @@
+<design:component>
+  <design:attribute name="headerImage" label="Header Image" Description="Header Image"/>
+  <design:attribute name="headerImageHeight" label="Header Image Height" Description="Header Image Height"/>    
+</design:component>

@@ -1,0 +1,2581 @@
+{
+  "name" : "Manufacturing_Home_Page_Embdedded1_tp",
+  "label" : "Embdedded - Manufacturing Home Page",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [
+      {
+        "conditionalFormatting" : { },
+        "field" : "SalesAgreementProduc_1.Revenue_Gap",
+        "format" : { }
+      },
+      {
+        "conditionalFormatting" : { },
+        "field" : "SalesAgreementProduc_1.Revenue_Shortfall",
+        "format" : { }
+      },
+      {
+        "conditionalFormatting" : {
+          "chartColor" : {
+            "referenceField" : "Revenue_Realisation",
+            "type" : "multiple",
+            "parameters" : {
+              "bins" : [
+                {
+                  "formatValue" : "#C23934",
+                  "bin" : "*"
+                },
+                {
+                  "formatValue" : "#04844B",
+                  "bin" : "100"
+                }
+              ]
+            }
+          }
+        },
+        "field" : "SalesAgreementProduc_1.Revenue_Realisation",
+        "format" : { }
+      }
+    ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [
+      {
+        "recordDisplayFields" : [ ],
+        "conditionalFormatting" : {
+          "chartColor" : {
+            "referenceField" : "Revenue_Realisation",
+            "type" : "multiple",
+            "parameters" : {
+              "bins" : [
+                {
+                  "formatValue" : "#C23934",
+                  "bin" : "*"
+                },
+                {
+                  "formatValue" : "#04844B",
+                  "bin" : "100"
+                }
+              ]
+            }
+          }
+        },
+        "salesforceActions" : [ ],
+        "field" : "SalesAgreementProduc_1.ALL",
+        "members" : [ ],
+        "customActions" : [ ]
+      }
+    ]
+  },
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [ ],
+    "gridLayouts" : [
+      {
+        "maxWidth" : 1500,
+        "name" : "Default",
+        "numColumns" : 50,
+        "pages" : [
+          {
+            "label" : "Current Business",
+            "name" : "96fb1d7e-ae0d-4b51-bd1b-46fee7880e63",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "navigation_1",
+                "row" : 0,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(255, 255, 255)",
+                  "borderColor" : "#C6D3E1",
+                  "borderEdges" : [
+                    "top"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 23,
+                "column" : 1,
+                "name" : "container_14",
+                "row" : 11,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(244, 244, 244, 0.4)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_3",
+                "row" : 0,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(230, 236, 242)",
+                  "borderColor" : "#335779",
+                  "borderEdges" : [
+                    "top"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 20,
+                "name" : "number_1",
+                "row" : 5,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 32,
+                "name" : "number_2",
+                "row" : 5,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 8,
+                "name" : "number_3",
+                "row" : 5,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 17,
+                "column" : 26,
+                "name" : "text_1",
+                "row" : 12,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 24,
+                "column" : 25,
+                "name" : "container_1",
+                "row" : 11,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(244, 244, 244, 0.4)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 18,
+                "column" : 27,
+                "name" : "chart_2",
+                "row" : 16,
+                "rowspan" : 16,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 2,
+                "name" : "link_1",
+                "row" : 32,
+                "rowspan" : 1,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 5,
+                "column" : 26,
+                "name" : "link_2",
+                "row" : 32,
+                "rowspan" : 1,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 19,
+                "column" : 2,
+                "name" : "chart_5",
+                "row" : 17,
+                "rowspan" : 14,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 21,
+                "name" : "image_1",
+                "row" : 35,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 12,
+                "column" : 2,
+                "name" : "text_2",
+                "row" : 12,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              }
+            ]
+          },
+          {
+            "label" : "Grow My Business",
+            "name" : "dcc70e5d-3908-4426-8ac5-f99fe142f5c1",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "navigation_1",
+                "row" : 0,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(255, 255, 255)",
+                  "borderColor" : "#C6D3E1",
+                  "borderEdges" : [
+                    "top"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_3",
+                "row" : 0,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(230, 236, 242)",
+                  "borderColor" : "#335779",
+                  "borderEdges" : [
+                    "top"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 18,
+                "column" : 2,
+                "name" : "text_65",
+                "row" : 12,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 21,
+                "column" : 24,
+                "name" : "chart_4",
+                "row" : 15,
+                "rowspan" : 16,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 29,
+                "name" : "number_4",
+                "row" : 5,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 11,
+                "name" : "number_5",
+                "row" : 5,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 17,
+                "column" : 2,
+                "name" : "chart_3",
+                "row" : 16,
+                "rowspan" : 15,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 45,
+                "column" : 1,
+                "name" : "container_5",
+                "row" : 11,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(244, 244, 244, 0.4)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 21,
+                "name" : "image_1",
+                "row" : 35,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 2,
+                "name" : "link_3",
+                "row" : 32,
+                "rowspan" : 1,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [ ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#FFFFFF",
+          "cellSpacingX" : 0,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "rgb(197, 211, 224)"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "PlannedAmountFinal_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "PlannedAmountFinal_1",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [..\"current year\"];\nq = filter q by date('ActualEndDate_Year', 'ActualEndDate_Month', 'ActualEndDate_Day') in [\"current year\"..];\nq = filter q by 'isValidProductSchedule' == \"true\";\n\nresult = foreach q generate 'Id' as 'Id','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', \n(case  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"]) then 'PlannedAmountFinal' \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"]) then 'PlannedAmountFinal'-( 'PlannedDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")) )  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'PlannedAmountFinal'-( 'PlannedDailyAmount'*daysBetween(toDate(toString(now(),\"yyyy-MM-dd\"),\"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\") ) ) \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'PlannedAmountFinal'  -  ('PlannedDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")))  -  ('PlannedDailyAmount'*daysBetween(toDate(toString(now(),\"yyyy-MM-dd\"),\"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\")))\nend) as 'Planned_Amount'\n, 'PlannedAmountFinal' as 'A', 'PlannedDailyAmount' as 'B', daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\")) as 'days', daysBetween(now(), toDate('ActualEndDate', \"yyyy-MM-dd\") ) as 'days_to_end';\nresult = foreach result generate 'Id' as 'Id', 'SalesAgreementProduct.SalesAgreement.Account.Name', 'A', 'B', 'days', 'days_to_end', 'Planned_Amount', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate';\nresult = group result by all;\nresult = foreach result generate sum('Planned_Amount') as 'Planned_Amount';\nresult = order result by ('Planned_Amount' asc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "PlannedAmountFinal_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "PlannedAmountFinal"
+              ]
+            ],
+            "filters" : [
+              [
+                "Start Date",
+                [
+                  [
+                    [
+                      "year",
+                      0
+                    ],
+                    [
+                      "year",
+                      0
+                    ]
+                  ]
+                ],
+                ">=<="
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "sum_PlannedAmountFinal"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "ActualAmount_Derived_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "ActualAmount_Derived_1",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [..\"current year\"];\nq = filter q by date('ActualEndDate_Year', 'ActualEndDate_Month', 'ActualEndDate_Day') in [\"current year\"..];\nq = filter q by 'isValidProductSchedule' == \"true\";\n\nq = foreach q generate 'Id' as 'Id','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'DerivedActualAmount' as 'DerivedActualAmount', 'PlannedAmountFinal' as 'PlannedAmountFinal', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) or 'StartDate_sec_epoch'>date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', 'PlannedDailyAmount' as 'PlannedDailyAmount';\nresult = foreach q generate 'Id' as 'Id','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', \n(case  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"]) then 'PlannedAmountFinal' \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"]) then 'PlannedAmountFinal'-( 'PlannedDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")) )  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'PlannedAmountFinal'-( 'PlannedDailyAmount'*daysBetween(toDate(toString(now(),\"yyyy-MM-dd\"),\"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\") ) ) \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'PlannedAmountFinal'  -  ('PlannedDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")))  -  ('PlannedDailyAmount'*daysBetween(toDate(toString(now(),\"yyyy-MM-dd\"),\"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\")))\nend) as 'Planned_Amount', \n(case  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current year\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'DerivedActualAmount' \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current year\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'DerivedActualAmount'-( 'ActualDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")) )  \nelse 0\nend) as 'Actual_Amount';\nresult = foreach result generate 'Id' as 'Id', 'SalesAgreementProduct.SalesAgreement.Account.Name', 'Planned_Amount', 'Actual_Amount';\nresult = group result by all;\nresult = foreach result generate round(coalesce(sum('Actual_Amount'),0)*100/sum('Planned_Amount')) as 'Revenue_Realisation';\nresult = order result by ('Revenue_Realisation' desc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "maxColumnWidth" : 300,
+            "minColumnWidth" : 40,
+            "mode" : "variable",
+            "numberOfLines" : 1,
+            "showActionMenu" : true,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "Actual_Amount_Timese_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Actual_Amount_Timeseries",
+        "numbers" : [ ],
+        "query" : "all_slaps = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nall_slaps = filter all_slaps by 'isValidProductSchedule' == \"true\";\n valid_slaps = filter all_slaps by date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [..\"1 month ago\"];\nvalid_slaps = filter valid_slaps by date('ActualEndDate_Year', 'ActualEndDate_Month', 'ActualEndDate_Day') in [\"1 year ago\"..];\nvalid_slaps = foreach valid_slaps generate date_to_epoch(toDate(number_to_string(string_to_number(toString(now(),\"yyyy\"))-1, \"#\")    +    \"-01-01 00:00:00\", \"yyyy-MM-dd HH:mm:ss\")) as 'Start', date_to_epoch(toDate(toString(now(),\"yyyy\")    +    \"-\"    +    number_to_string(string_to_number(toString(now(),\"MM\"))-1, \"#,00\")    +    toString(month_last_day(toDate((date_to_epoch(month_last_day(now())) - 2764800))),\"-dd \")    +    \"23:59:59\", \"yyyy-MM-dd HH:mm:ss\")) as 'End', 'Id' as 'Id', 'StartDate_sec_epoch' as 'StartDate_sec_epoch', 'ActualEndDate_sec_epoch' as 'ActualEndDate_sec_epoch', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate_sec_epoch' else date_to_epoch(now()) end) as 'LastValidDate_sec_epoch', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', 'DerivedActualAmount' as 'DerivedActualAmount';\n\nStart = foreach valid_slaps generate 'Start' as 'Start', 'End' as 'End', 'Id' as 'Id', 'StartDate_sec_epoch' as 'Start Date', 'LastValidDate_sec_epoch' as 'End Date', case when ('StartDate_sec_epoch' >= 'Start') then date_to_string(toDate('StartDate_sec_epoch'),\"yyyy\") else date_to_string(toDate('Start'),\"yyyy\") end as 'Date_Year', case when ('StartDate_sec_epoch' >= 'Start') then date_to_string(toDate('StartDate_sec_epoch'),\"MM\") else date_to_string(toDate('Start'),\"MM\") end as 'Date_Month',                  (case  when 'StartDate_sec_epoch' >= 'Start' &&  'LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch'))) && date_to_epoch(now())> date_to_epoch(month_last_day(toDate('StartDate_sec_epoch'))) && 'End' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch'))) && StartDate_sec_epoch <= date_to_epoch(now())  then (daysBetween(toDate('StartDate_sec_epoch'),month_last_day(toDate('StartDate_sec_epoch')))+1) * 'ActualDailyAmount' when 'StartDate_sec_epoch' >= 'Start' &&  'LastValidDate_sec_epoch' >= 'End' && date_to_epoch(now()) >= 'End' && 'End' <= date_to_epoch(month_last_day(toDate('StartDate_sec_epoch'))) && StartDate_sec_epoch <= date_to_epoch(now()) then (daysBetween(toDate('StartDate_sec_epoch'), toDate('End'))+1) * 'ActualDailyAmount' when 'StartDate_sec_epoch' >= 'Start' &&  'LastValidDate_sec_epoch' >= date_to_epoch(now()) && date_to_epoch(now()) <= date_to_epoch(month_last_day(toDate('StartDate_sec_epoch'))) && 'End' >= date_to_epoch(now()) && 'StartDate_sec_epoch' < date_to_epoch(now()) && StartDate_sec_epoch <= date_to_epoch(now()) then (daysBetween(toDate('StartDate_sec_epoch'), now())+1) * 'ActualDailyAmount' when 'StartDate_sec_epoch' >= 'Start' &&  'LastValidDate_sec_epoch' <= date_to_epoch(month_last_day(toDate('StartDate_sec_epoch'))) && date_to_epoch(now()) >= 'LastValidDate_sec_epoch' && 'End' >= 'LastValidDate_sec_epoch'  && StartDate_sec_epoch <= date_to_epoch(now()) then (daysBetween(toDate('StartDate_sec_epoch'), toDate('LastValidDate_sec_epoch'))+1) * 'ActualDailyAmount' when 'StartDate_sec_epoch' < 'Start' &&  'LastValidDate_sec_epoch' >= date_to_epoch(month_last_day(toDate('Start'))) && date_to_epoch(now())>= date_to_epoch(month_last_day(toDate('Start'))) && 'End' >= date_to_epoch(month_last_day(toDate('Start'))) && 'Start' <= date_to_epoch(now()) then (daysBetween(toDate('Start'),month_last_day(toDate('Start')))+1) * 'ActualDailyAmount' when 'StartDate_sec_epoch' < 'Start' &&  'LastValidDate_sec_epoch' >= 'End' && date_to_epoch(now())>= 'End' && 'End' <= date_to_epoch(month_last_day(toDate('Start'))) && 'Start' <= date_to_epoch(now()) then (daysBetween(toDate('Start'), toDate('End'))+1) * 'ActualDailyAmount' when 'StartDate_sec_epoch' < 'Start' &&  'LastValidDate_sec_epoch' >= date_to_epoch(now()) && date_to_epoch(now()) <= date_to_epoch(month_last_day(toDate('Start'))) && 'End' >= date_to_epoch(now()) && 'Start' <= date_to_epoch(now()) then (daysBetween(toDate('Start'), now())+1) * 'ActualDailyAmount' when 'StartDate_sec_epoch' < 'Start' &&  'LastValidDate_sec_epoch' <= date_to_epoch(month_last_day(toDate('Start'))) && date_to_epoch(now()) >= 'LastValidDate_sec_epoch' && 'End' >= 'LastValidDate_sec_epoch' && 'Start' <= date_to_epoch(now()) then (daysBetween(toDate('Start'), toDate('LastValidDate_sec_epoch'))+1) * 'ActualDailyAmount'  else 0 end) as 'Amount'                , 'DerivedActualAmount' as 'DerivedActualAmount', 'ActualDailyAmount' as 'ActualDailyAmount';\n\n End_Value = foreach valid_slaps generate 'Start' as 'Start', 'End' as 'End', 'Id' as 'Id', 'StartDate_sec_epoch' as 'Start Date', 'LastValidDate_sec_epoch' as 'End Date', case when ('LastValidDate_sec_epoch' < 'End') then date_to_string(toDate('LastValidDate_sec_epoch'),\"yyyy\") else  date_to_string(toDate('End'),\"yyyy\") end as 'Date_Year', case when ('LastValidDate_sec_epoch' < 'End') then date_to_string(toDate('LastValidDate_sec_epoch'),\"MM\") else  date_to_string(toDate('End'),\"MM\") end as 'Date_Month',                  (case  when ('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) && ('LastValidDate_sec_epoch' <= 'End') && (date_to_epoch(now()) >= 'LastValidDate_sec_epoch') then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))))),toDate('LastValidDate_sec_epoch'))) * 'ActualDailyAmount'  when ('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(now())) - 2764800)))) + 86400)) && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(now())) - 2764800)))) + 86400)) && (date_to_epoch(now()) <= 'End') && (date_to_epoch(now()) <= 'LastValidDate_sec_epoch') then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(now())) - 2764800)))))),now())) * 'ActualDailyAmount'  when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)))  && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) && ('LastValidDate_sec_epoch' >= 'End') && (date_to_epoch(now()) >= 'End' ) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))))),toDate('End'))) * 'ActualDailyAmount'  else 0 end)  as 'Amount'                          , 'DerivedActualAmount' as 'DerivedActualAmount', 'ActualDailyAmount' as 'ActualDailyAmount';\n\n DataForFill = union Start, End_Value; \nDataForFill = foreach DataForFill generate 'Id' as 'Id', 'Date_Year' as 'Date_Year', 'Date_Month' as 'Date_Month','Start' as 'Start', 'End' as 'End', 'Start Date' as 'Start Date', 'End Date' as 'End Date','Amount' as 'Amount', 'DerivedActualAmount' as 'DerivedActualAmount', 'ActualDailyAmount' as 'ActualDailyAmount'; \nFilledData = fill DataForFill by (dateCols=('Date_Year', 'Date_Month', \"Y-M\"), partition='Id'); \nFilledData = group FilledData by ('Id', 'Date_Year', 'Date_Month'); \n\nFilledData = foreach FilledData generate 'Id', 'Date_Year', 'Date_Month', date_to_epoch(toDate('Date_Year'+\"-\"+'Date_Month'+\"-01\",\"yyyy-MM-dd\")) as 'Date',first('Start') as 'Start', min(first('Start')) over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'StartFilter', first('End') as 'End', min(first('End')) over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'EndFilter',  min(first('Start Date')) over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'Start Date', min(first('End Date')) over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'End Date', sum('Amount') as 'Amount', min(first('ActualDailyAmount'))over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'ActualDailyAmount'; \nFilledData = filter FilledData by coalesce('Start',0) != 0 || ('Date' > 'StartFilter' && 'Date' > 'Start Date' && 'Date' < 'End Date' && 'Date' < 'EndFilter');\nFilledData = foreach FilledData generate 'Id', 'Date_Year', 'Date_Month', case when 'Amount' is null then month_days(toDate('Date'))*'ActualDailyAmount' else 'Amount' end as 'Amount'; \nresult = group FilledData by ('Date_Year', 'Date_Month'); \nresult = foreach result generate 'Date_Year'+\"~~~\"+'Date_Month' as 'StartDate_Year~~~StartDate_Month', 'Date_Year' as 'StartDate_Year', 'Date_Month' as 'StartDate_Month', \"01\" as 'StartDate_Day', sum('Amount') as 'Amount';\n\n\n\nresult = fill result by (dateCols=('StartDate_Year','StartDate_Month', \"Y-M\"));\nresult = timeseries result generate 'Amount' as 'Amount_prediction' with (length=12, predictionInterval=95, dateCols=('StartDate_Year', 'StartDate_Month', \"Y-M\"), ignoreLast = false);\nresult = foreach result generate 'StartDate_Year' + \"~~~\" + 'StartDate_Month' as 'StartDate_Year~~~StartDate_Month', 'StartDate_Year' as 'StartDate_Year', 'StartDate_Month' as 'StartDate_Month', \"01\" as 'StartDate_Day', (case when date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [\"current month\"..] then coalesce('Amount', 'Amount_prediction') else 'Amount' end) as 'Amount', 'Amount_prediction_low_95', 'Amount_prediction_high_95';\nresult_cy = filter result by date('StartDate_Year','StartDate_Month','StartDate_Day') in [\"current year\"..\"current year\"];\nresult_cy = group result_cy by 'StartDate_Year~~~StartDate_Month';\nresult_cy = foreach result_cy generate 'StartDate_Year~~~StartDate_Month' as 'StartDate_Year~~~StartDate_Month', sum(sum('Amount')) over ([..0] partition by all order by 'StartDate_Year~~~StartDate_Month' asc) as 'Amount', (sum(sum('Amount')) over ([..0] partition by all order by 'StartDate_Year~~~StartDate_Month' asc)  -  sum('Amount')  +  sum('Amount_prediction_low_95')) as 'Amount_prediction_low_95', (sum(sum('Amount')) over ([..0] partition by all order by 'StartDate_Year~~~StartDate_Month' asc)  -  sum('Amount')  +  sum('Amount_prediction_high_95')) as 'Amount_prediction_high_95';\nresult_cy = order result_cy by 'StartDate_Year~~~StartDate_Month' asc;  ",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : false,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showPoints" : false,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "sync",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "time",
+            "missingValue" : "connect",
+            "dashLine" : {
+              "measures" : [
+                "Amount"
+              ],
+              "showDashLine" : false
+            },
+            "timeAxis" : {
+              "showTitle" : true,
+              "showAxis" : true,
+              "referenceLines" : [
+                {
+                  "color" : "rgb(137, 50, 237)",
+                  "time" : "2019-07",
+                  "label" : "TODAY"
+                }
+              ],
+              "title" : "Time (Year>Month)"
+            },
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "left",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "fillArea" : true,
+            "showActionMenu" : true,
+            "showZero" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "referenceLines" : [
+                {
+                  "color" : "rgb(21, 137, 238)",
+                  "label" : "PLANNED",
+                  "value" : "{{cell(PlannedAmountFinal_1.result, 0 , \"Planned_Amount\").asObject()}}"
+                }
+              ],
+              "title" : "Amount",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "valueType" : "none",
+            "theme" : "wave",
+            "applyConditionalFormatting" : true,
+            "drawArea" : {
+              "measure" : "Amount",
+              "showDrawArea" : true,
+              "bounding1" : "Amount_prediction_low_95",
+              "bounding2" : "Amount_prediction_high_95"
+            }
+          },
+          "type" : "chart"
+        }
+      },
+      "TODAY_reference_line_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "TODAY_reference_line",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = foreach q generate date_diff(\"week\", toDate(toString(now(), \"yyyy\")+\"-01-01 00:00:00\"), now()) as 'CurrentWeek';\nq = group q by all;\nq = foreach q generate first('CurrentWeek') as 'CurrentWeek', \"W\"+number_to_string(first('CurrentWeek'), \"#00\") as 'CurrentWeek_label', toString(now(),\"yyyy\")+\"~~~\"+toString(now(),\"MM\") as 'Current_Year~~~Current_Month';\nq = limit q 1;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Pending_Approvals_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Pending_Approvals",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by 'SalesAgreementProduct.SalesAgreement.Status' == \"Draft\";\nq = filter q by date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [\"current year\"..\"current year\"];\nresult = foreach q generate 'Id' as 'Id','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'PlannedAmountFinal' as 'Pending_Approvals';\nresult = group result by all;\nresult = foreach result generate sum('Pending_Approvals') as 'Pending_Approvals';\nresult = order result by ('Pending_Approvals' asc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Pending_Approval_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Pending Approval",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [\"current year\"..\"current year\"];\nq = filter q by 'SalesAgreementProduct.SalesAgreement.Status' == \"Draft\";\nq = group q by 'SalesAgreementProduct.SalesAgreement.Name';\nq = foreach q generate 'SalesAgreementProduct.SalesAgreement.Name' as 'SalesAgreementProduct.SalesAgreement.Name', sum('PlannedAmountFinal') as 'sum_PlannedAmountFinal';\nq = order q by 'sum_PlannedAmountFinal' desc;\nq = limit q 2000;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "SalesAgreementProduct.SalesAgreement.Name"
+              ],
+              "plots" : [
+                "sum_PlannedAmountFinal"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "ActualAmount_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "ActualAmount_1",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [..\"current year\"];\nq = filter q by date('ActualEndDate_Year', 'ActualEndDate_Month', 'ActualEndDate_Day') in [\"current year\"..];\nq = filter q by 'isValidProductSchedule' == \"true\";\nq = foreach q generate 'Id' as 'Id','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'DerivedActualAmount' as 'DerivedActualAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', 'PlannedDailyAmount' as 'PlannedDailyAmount';\nresult = foreach q generate 'Id' as 'Id','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', \n(case  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current year\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'DerivedActualAmount' \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current year\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'DerivedActualAmount'-( 'ActualDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")) )  \nelse 0\nend) as 'Actual_Amount'\n, 'DerivedActualAmount' as 'A', 'ActualDailyAmount' as 'B', daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\")) as 'days', daysBetween(year_last_day( now() ), toDate('ActualEndDate', \"yyyy-MM-dd\") ) as 'days_to_end';\nresult = foreach result generate 'Id' as 'Id', 'SalesAgreementProduct.SalesAgreement.Account.Name', 'A', 'B', 'days', 'days_to_end', 'Actual_Amount', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate';\nresult = group result by all;\nresult = foreach result generate sum('Actual_Amount') as 'Actual_Amount';\nresult = order result by ('Actual_Amount' asc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Pending_Approval_3" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Pending Approval",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [\"current year\"..\"current year\"];\nq = filter q by 'SalesAgreementProduct.SalesAgreement.Status' == \"Draft\";\nq = group q by 'SalesAgreementProduct.SalesAgreement.Name';\nq = foreach q generate 'SalesAgreementProduct.SalesAgreement.Name' as 'SalesAgreementProduct.SalesAgreement.Name', sum('PlannedAmountFinal') as 'sum_PlannedAmountFinal';\nq = order q by 'sum_PlannedAmountFinal' desc;\nq = limit q 2000;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "SalesAgreementProduct.SalesAgreement.Name"
+              ],
+              "plots" : [
+                "sum_PlannedAmountFinal"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Upcoming_Renewal_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Upcoming Renewal",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by !('SalesAgreementProduct.SalesAgreement.Derived_Status' in [\"Activated\", \"Cancelled\", \"Expired\"]);\nq = foreach q generate (case when ('SalesAgreementProduct.SalesAgreement.Derived_Status' in [\"Approved\", \"Pending Approval\"] && date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [\"current year\"..\"current year\"]) or ('SalesAgreementProduct.SalesAgreement.Derived_Status' in [\"UnderRevision\", \"Upcoming Renewal\"]) then \"In\" else \"Out\" end) as 'Filter', 'SalesAgreementProduct.SalesAgreement.Derived_Status' as 'SalesAgreementProduct.SalesAgreement.Derived_Status', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'SalesAgreementProduct.SalesAgreement.Name' as 'SalesAgreementProduct.SalesAgreement.Name';\nq = filter q by 'Filter' == \"In\";\nresult = group q by 'SalesAgreementProduct.SalesAgreement.Name';\nresult = foreach result generate 'SalesAgreementProduct.SalesAgreement.Name' as 'SalesAgreementProduct.SalesAgreement.Name', sum('PlannedAmountFinal') as 'PlannedAmountFinal';\nresult = order result by ('PlannedAmountFinal' desc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : false,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "Planned Amount",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : false,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "SalesAgreementProduc_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "SalesAgreementProduc_1",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by 'isValidProductSchedule' == \"true\";\nq = foreach q generate 'Id' as 'Id','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'DerivedActualAmount' as 'DerivedActualAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', 'PlannedDailyAmount' as 'PlannedDailyAmount';\nresult = foreach q generate 'Id' as 'Id','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', \n(case  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current year\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'DerivedActualAmount' \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current year\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'DerivedActualAmount'-( 'ActualDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")) )  \nelse 0\nend) as 'A'\n,\n(case  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"]) then 'PlannedAmountFinal' \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"]) then 'PlannedAmountFinal'-( 'PlannedDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")) )  \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [\"current year\"..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then 'PlannedAmountFinal'-( 'PlannedDailyAmount'*daysBetween(now(), toDate('ActualEndDate', \"yyyy-MM-dd\") ) ) \nwhen (toDate('StartDate', \"yyyy-MM-dd\") in [..\"current day\"] && toDate('ActualEndDate', \"yyyy-MM-dd\") in [\"current year\"..]) then  'PlannedAmountFinal'  -  ('PlannedDailyAmount'*daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\")))  -  ('PlannedDailyAmount'*daysBetween(now(), toDate('ActualEndDate', \"yyyy-MM-dd\")))\nend) as 'B' ;\n\nresult = foreach result generate 'Id' as 'Id', 'SalesAgreementProduct.SalesAgreement.Account.Name', 'A', 'B', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate';\nresult = group result by 'SalesAgreementProduct.SalesAgreement.Account.Name';\nresult = foreach result generate 'SalesAgreementProduct.SalesAgreement.Account.Name', round(coalesce(sum('A'),0)*100/sum('B')) as 'Revenue_Realisation';\nresult = order result by ('Revenue_Realisation' desc);\nresult = limit result 2000;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : false,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : true,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : 10,
+              "position" : "bottom-center",
+              "inside" : false
+            },
+            "axisMode" : "sync",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 10,
+              "subtitleFontSize" : 10,
+              "label" : "",
+              "align" : "right",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : false,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : false,
+              "customSize" : 30,
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "revenue_split_by_agr_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "revenue split by agreement status",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by !('SalesAgreementProduct.SalesAgreement.Derived_Status' in [\"Activated\", \"Cancelled\", \"Expired\"]);\nq = foreach q generate (case when ('SalesAgreementProduct.SalesAgreement.Derived_Status' in [\"Approved\", \"Pending Approval\"] && date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [\"current year\"..\"current year\"]) or ('SalesAgreementProduct.SalesAgreement.Derived_Status' in [\"UnderRevision\", \"Upcoming Renewal\"]) then \"In\" else \"Out\" end) as 'Filter', 'SalesAgreementProduct.SalesAgreement.Derived_Status' as 'SalesAgreementProduct.SalesAgreement.Derived_Status', 'PlannedAmountFinal' as 'PlannedAmountFinal';\nq = filter q by 'Filter' == \"In\";\nresult = group q by 'SalesAgreementProduct.SalesAgreement.Derived_Status';\nresult = foreach result generate 'SalesAgreementProduct.SalesAgreement.Derived_Status' as 'SalesAgreementProduct.SalesAgreement.Derived_Status', sum('PlannedAmountFinal') as 'Planned_Revenue';\nresult = limit result 2000;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "centerText" : "",
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "showMeasureTitle" : false,
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "pie",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "right",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "inner" : 80,
+            "showActionMenu" : true,
+            "centerValueType" : "number",
+            "valueType" : "compactNumber",
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "revenue_split_by_agr_2" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "revenue split by agreement status",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by 'SalesAgreementProduct.SalesAgreement.Status' != \"Expired\";\nq = foreach q generate 'Id' as 'Id', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount', 'SalesAgreementProduct.SalesAgreement.Status' as 'SalesAgreementProduct.SalesAgreement.Status', 'StartDate_Year', 'StartDate_Month', 'StartDate_Day', 'StartDate', 'ActualEndDate', 'EndDate_Year', 'EndDate_Month', 'EndDate_Day';\nq_A = filter q by 'SalesAgreementProduct.SalesAgreement.Status' == \"Activated\" && date('EndDate_Year', 'EndDate_Month', 'EndDate_Day') in [\"current year\"..\"current year\"];\nq_B = filter q by 'SalesAgreementProduct.SalesAgreement.Status' == \"Approved\" && date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [\"current year\"..\"current year\"];\nq_C = filter q by 'SalesAgreementProduct.SalesAgreement.Status' == \"Draft\" && date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [\"current year\"..\"current year\"];\nresult = union q_A , q_B , q_C;\nresult = foreach result generate 'Id' as 'Id', 'SalesAgreementProduct.SalesAgreement.Status' as 'SalesAgreementProduct.SalesAgreement.Status', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'StartDate', 'ActualEndDate', 'PlannedAmountFinal' as 'Planned_Revenue';\nresult = group result by 'SalesAgreementProduct.SalesAgreement.Status';\nresult = foreach result generate 'SalesAgreementProduct.SalesAgreement.Status' as 'SalesAgreementProduct.SalesAgreement.Status', sum('Planned_Revenue') as 'Planned_Revenue';\nresult = limit result 2000;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "centerText" : "",
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "bottom-center",
+              "inside" : false
+            },
+            "showMeasureTitle" : false,
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "pie",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "inner" : 60,
+            "showActionMenu" : true,
+            "centerValueType" : "number",
+            "valueType" : "compactNumber",
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Upcoming_Renewals" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Upcoming_Renewal",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by 'SalesAgreementProduct.SalesAgreement.Derived_Status' == \"Upcoming Renewal\";\nresult = group q by all;\nresult = foreach result generate sum('PlannedAmountFinal') as 'Upcoming_Renewal';\nresult = order result by ('Upcoming_Renewal' asc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Actual_Revenue_Guage_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Actual Revenue Guage",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "ActualAmount"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "max" : 69696969,
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "flatgauge",
+            "medium" : 33,
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "colors" : {
+              "mediumColor2" : "#F29946",
+              "mediumColor1" : "#FED444",
+              "lowColor1" : "#F71979",
+              "lowColor2" : "#CC203D",
+              "highColor1" : "#7BDE4E",
+              "highColor2" : "#169913"
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "plots" : [
+                "sum_ActualAmount"
+              ]
+            },
+            "high" : 66,
+            "showActionMenu" : true,
+            "min" : 0,
+            "valueType" : "compactNumber",
+            "theme" : "wave",
+            "referenceLines" : [
+              {
+                "color" : "rgb(0, 161, 224)",
+                "label" : "Planned",
+                "value" : 696969
+              }
+            ],
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "rgba(255, 255, 255, 0)",
+      "borderColor" : "#E6ECF2",
+      "borderEdges" : [ ],
+      "borderRadius" : 0,
+      "borderWidth" : 1
+    },
+    "widgets" : {
+      "text_18" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : true,
+          "text" : "Choose KPI:",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "text"
+      },
+      "container_14" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "text_1" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : false,
+          "text" : "Which accounts need my attention?",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E",
+          "tooltip" : ""
+        },
+        "type" : "text"
+      },
+      "text_19" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : true,
+          "text" : "Group by:",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "text"
+      },
+      "link_3" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['Sales Agreements Insights'].Name}",
+            "namespace" : "${Org.Namespace}",
+            "pageName" : "958150b7-123d-48ff-a984-7525ca18d609"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 10,
+          "includeState" : false,
+          "text" : "VIEW DASHBOARD",
+          "textAlignment" : "left",
+          "textColor" : "rgb(0, 109, 204)"
+        },
+        "type" : "link"
+      },
+      "link_1" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['Account Insights - Agreements Performance'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 10,
+          "includeState" : false,
+          "text" : "VIEW DASHBOARD",
+          "textAlignment" : "left",
+          "textColor" : "rgb(0, 109, 204)"
+        },
+        "type" : "link"
+      },
+      "link_2" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['Accounts Health'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 10,
+          "includeState" : false,
+          "text" : "VIEW DASHBOARD",
+          "textAlignment" : "left",
+          "textColor" : "rgb(0, 109, 204)"
+        },
+        "type" : "link"
+      },
+      "text_65" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : false,
+          "text" : "Which sales agreements will get me more business?",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E",
+          "tooltip" : ""
+        },
+        "type" : "text"
+      },
+      "navigation_1" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "selectedTab" : {
+            "backgroundColor" : "rgb(240, 248, 252)",
+            "borderColor" : "rgb(0, 112, 210)",
+            "borderEdges" : [
+              "bottom"
+            ],
+            "borderWidth" : 2,
+            "textColor" : "rgb(0, 112, 210)"
+          },
+          "tabCount" : 6,
+          "textColor" : "#091A3E"
+        },
+        "type" : "navigation"
+      },
+      "number_5" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "Pending_Approvals",
+          "numberColor" : "#335779",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "Pending_Approvals_1",
+          "textAlignment" : "center",
+          "title" : "PENDING APPROVALS",
+          "titleColor" : "#335779",
+          "titleSize" : 10
+        },
+        "type" : "number"
+      },
+      "number_4" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "Upcoming_Renewal",
+          "numberColor" : "#335779",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "Upcoming_Renewals",
+          "textAlignment" : "center",
+          "title" : "UPCOMING RENEWALS",
+          "titleColor" : "#335779",
+          "titleSize" : 10
+        },
+        "type" : "number"
+      },
+      "number_3" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : true,
+          "measureField" : "Revenue_Realisation",
+          "numberColor" : "#335779",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "ActualAmount_Derived_1",
+          "textAlignment" : "center",
+          "title" : "REVENUE REALIZATION",
+          "titleColor" : "#335779",
+          "titleSize" : 10
+        },
+        "type" : "number"
+      },
+      "number_2" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "Planned_Amount",
+          "numberColor" : "#335779",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "PlannedAmountFinal_1",
+          "textAlignment" : "center",
+          "title" : "PLANNED REVENUE (YTD)",
+          "titleColor" : "#335779",
+          "titleSize" : 10
+        },
+        "type" : "number"
+      },
+      "container_1" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "number_1" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "Actual_Amount",
+          "numberColor" : "#335779",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "ActualAmount_1",
+          "textAlignment" : "center",
+          "title" : "ACTUAL REVENUE (YTD)",
+          "titleColor" : "#335779",
+          "titleSize" : 10
+        },
+        "type" : "number"
+      },
+      "container_3" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_5" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "image_1" : {
+        "parameters" : {
+          "alignmentX" : "center",
+          "alignmentY" : "center",
+          "fit" : "fitwidth",
+          "image" : {
+            "name" : "${App.Images['Powered_by_analytics_bannerpng'].Name}",
+            "namespace" : "${Org.Namespace}"
+          }
+        },
+        "type" : "image"
+      },
+      "chart_5" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showPoints" : false,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "sync",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "missingValue" : "connect",
+          "visualizationType" : "time",
+          "dashLine" : {
+            "measures" : [
+              "Amount"
+            ],
+            "showDashLine" : false
+          },
+          "timeAxis" : {
+            "showTitle" : true,
+            "showAxis" : true,
+            "referenceLines" : [
+              {
+                "color" : "rgb(137, 50, 237)",
+                "time" : "{{cell(TODAY_reference_line_1.result, 0, \"Current_Year~~~Current_Month\").asObject()}}",
+                "label" : "TODAY"
+              }
+            ],
+            "title" : "Time (Year>Month)"
+          },
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "left",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "fillArea" : true,
+          "showActionMenu" : true,
+          "showZero" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "referenceLines" : [
+              {
+                "color" : "rgb(21, 137, 238)",
+                "label" : "PLANNED",
+                "value" : "{{cell(PlannedAmountFinal_1.result, 0 , \"Planned_Amount\").asObject()}}"
+              }
+            ],
+            "title" : "Amount",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "valueType" : "none",
+          "theme" : "colorblind",
+          "step" : "Actual_Amount_Timese_1",
+          "applyConditionalFormatting" : true,
+          "drawArea" : {
+            "measure" : "Amount",
+            "showDrawArea" : true,
+            "bounding1" : "Amount_prediction_low_95",
+            "bounding2" : "Amount_prediction_high_95"
+          }
+        },
+        "type" : "chart"
+      },
+      "text_2" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : false,
+          "text" : "How is my actual revenue doing against planned?",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E",
+          "tooltip" : ""
+        },
+        "type" : "text"
+      },
+      "chart_2" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showValues" : false,
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : true,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : 10,
+            "position" : "bottom-center",
+            "inside" : false
+          },
+          "axisMode" : "sync",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 10,
+            "subtitleFontSize" : 10,
+            "label" : "",
+            "align" : "right",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : false,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "waterLight",
+          "step" : "SalesAgreementProduc_1",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : 30,
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round",
+                "parameters" : { }
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_4" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showValues" : false,
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "Planned Amount",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "colorblind",
+          "step" : "Upcoming_Renewal_1",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round",
+                "parameters" : { }
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_3" : {
+        "parameters" : {
+          "centerText" : "",
+          "autoFitMode" : "keepLabels",
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "showMeasureTitle" : false,
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "pie",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "right",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "inner" : 80,
+          "showActionMenu" : true,
+          "centerValueType" : "number",
+          "valueType" : "compactNumber",
+          "theme" : "waterLight",
+          "step" : "revenue_split_by_agr_1",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      }
+    }
+  }
+}

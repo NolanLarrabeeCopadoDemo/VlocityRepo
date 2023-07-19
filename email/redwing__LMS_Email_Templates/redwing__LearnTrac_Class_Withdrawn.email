@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject="{!$Label.redwing__alms_email_withdrawal_confirmation} {!relatedTo.Learning_Version__r.ILT__r.Name} {!$Label.redwing__alms_email_class}" recipientType="User" relatedToType="redwing__Learning_Assignment__c"  language="{!recipient.LanguageLocaleKey}">
+    <messaging:htmlEmailBody >
+        <c:ILTNotification learningAssignment="{!relatedTo}" notificationName="LearnTrac_Class_Withdrawn" />
+    </messaging:htmlEmailBody>
+    <c:ILTNotificationIcsAttachment learningAssignment="{!relatedTo}" notificationName="LearnTrac_Class_Cancelled" />
+</messaging:emailTemplate>

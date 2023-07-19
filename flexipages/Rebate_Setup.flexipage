@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>dir</name>
+                    <value>ltr</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>inline</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>inlineLabel</name>
+                    <value>Launch RebateSetup/OS</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>inlineVariant</name>
+                    <value>brand</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>layout</name>
+                    <value>lightning</value>
+                </componentInstanceProperties>
+                <componentName>rebateSetupOSEnglish</componentName>
+                <identifier>c_rebateSetupOSEnglish</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region1</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h2 style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;INTRODUCING OMNISTUDIO&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;This Rebate Setup component was developed using OmniStudio which allows you to rapidly create and deploy branded experiences with guided interactions that work across devices and channels.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Rebate Setup involves several steps that can be complex. This OmniScript simplifies these steps into a an easy to follow user-guided process.&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://mfgmasterpre240v1.file.force.com/servlet/rtaImage?refid=0EMHr000002ctvC&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region2</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>region3</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Rebate Setup</masterLabel>
+    <template>
+        <name>flexipage:appHomeTemplateTwoColumnsStacked</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

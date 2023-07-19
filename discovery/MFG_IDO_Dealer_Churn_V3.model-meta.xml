@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiscoveryAIModel xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <algorithmType>Glm</algorithmType>
+    <classificationThreshold>0.30057379833060793</classificationThreshold>
+    <label>MFG IDO-Dealer Churn V3</label>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Cases_Product_Related</label>
+        <name>Cases_Product_Related</name>
+        <type>Text</type>
+        <values>0</values>
+        <values>1</values>
+        <values>2</values>
+        <values>3</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Services_provider</label>
+        <name>Services_provider</name>
+        <type>Text</type>
+        <values>Yes</values>
+        <values>No</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Agreement_Type</label>
+        <name>Agreement_Type</name>
+        <type>Text</type>
+        <values>Standard</values>
+        <values>Special</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Partner_Program_Level</label>
+        <name>Partner_Program_Level</name>
+        <type>Text</type>
+        <values>Silver</values>
+        <values>Gold</values>
+        <values>Platinum</values>
+        <values>Bronze</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Tenure</label>
+        <name>Tenure</name>
+        <type>Number</type>
+        <values>0.03___5.02</values>
+        <values>5.02___6.98</values>
+        <values>6.98___8.0</values>
+        <values>8.0___9.69</values>
+        <values>9.69___11.0</values>
+        <values>11.0___12.08</values>
+        <values>12.08___14.0</values>
+        <values>14.0___15.23</values>
+        <values>15.23___17.07</values>
+        <values>17.07___54.71</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>MrkPgrogram_Funds_Pct_Used</label>
+        <name>MrkPgrogram_Funds_Pct_Used</name>
+        <type>Number</type>
+        <values>-163.748674___0.0</values>
+        <values>0.0___1.4E-5</values>
+        <values>1.4E-5___181.818182</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>MrktProgram_Score</label>
+        <name>MrktProgram_Score</name>
+        <type>Number</type>
+        <values>0.0___2.0</values>
+        <values>2.0___4.0</values>
+        <values>4.0___5.0</values>
+        <values>5.0___6.0</values>
+        <values>6.0___7.0</values>
+        <values>7.0___8.0</values>
+        <values>8.0___9.0</values>
+        <values>9.0___10.0</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Billing_State_Province</label>
+        <name>Billing_State_Province</name>
+        <type>Text</type>
+        <values>WA</values>
+        <values>MA</values>
+        <values>GA</values>
+        <values>OH</values>
+        <values>PA</values>
+        <values>FL</values>
+        <values>CA</values>
+        <values>MI</values>
+        <values>IL</values>
+        <values>NY</values>
+        <values>IN</values>
+        <values>AZ</values>
+        <values>NE</values>
+        <values>NJ</values>
+        <values>NC</values>
+        <values>VA</values>
+        <values>CT</values>
+        <values>MN</values>
+        <values>MD</values>
+        <values>KS</values>
+        <values>TN</values>
+        <values>MO</values>
+        <values>NM</values>
+        <values>ON</values>
+        <values>PR</values>
+        <values>KY</values>
+        <values>NV</values>
+        <values>WV</values>
+        <values>ID</values>
+        <values>undefined</values>
+        <values>CO</values>
+        <values>TX</values>
+        <values>WI</values>
+        <values>NH</values>
+        <values>SC</values>
+        <values>Other</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Account_Owner</label>
+        <name>Account_Owner</name>
+        <type>Text</type>
+        <values>Melissa Baker</values>
+        <values>Jane Austin</values>
+        <values>Kendra Lopez</values>
+        <values>Paul Morrison</values>
+        <values>Pam Lawison</values>
+        <values>Matthew Parker</values>
+        <values>Casey Miller</values>
+        <values>Erin Marsh</values>
+        <values>Martino Castanon</values>
+        <values>Jim Matthews</values>
+        <values>Janice Gonzales</values>
+        <values>Alan Reed</values>
+        <values>Lamar Smith</values>
+        <values>Krystal Sanchez</values>
+        <values>Janet Jones</values>
+        <values>Ricky East</values>
+        <values>Gloria Barnes</values>
+        <values>Melissa Wood</values>
+        <values>Mary Adams</values>
+        <values>Sara Brown</values>
+        <values>James Clifton</values>
+        <values>Ralph Clark</values>
+        <values>Ely East</values>
+        <values>Crystal Franklin</values>
+        <values>Louise Martin</values>
+        <values>Alexander Raneri</values>
+        <values>Harry Long</values>
+        <values>Savannah Smith</values>
+        <values>Andy James</values>
+        <values>Extra User</values>
+        <values>Other</values>
+    </modelFields>
+    <modelFields>
+        <isDisparateImpact>false</isDisparateImpact>
+        <isSensitive>false</isSensitive>
+        <label>Churn</label>
+        <name>Churn</name>
+        <type>Text</type>
+        <values>1</values>
+        <values>0</values>
+    </modelFields>
+    <modelRuntimeType>Discovery</modelRuntimeType>
+    <predictedField>Churn</predictedField>
+    <predictionType>Classification</predictionType>
+    <sourceType>Discovery</sourceType>
+    <status>Enabled</status>
+    <trainingMetrics>{&quot;r2&quot;:0.6802487509599717,&quot;nobs&quot;:6749,&quot;nullDeviance&quot;:1498.7111249530185,&quot;residualDegreesOfFreedom&quot;:5394,&quot;type&quot;:&quot;BinomialGLM&quot;,&quot;gini&quot;:0.9868625993635356,&quot;meanPerClassError&quot;:0.0838715624873965,&quot;logloss&quot;:0.029040063788858823,&quot;auc&quot;:0.9934312996817678,&quot;residualDeviance&quot;:391.9827810220164,&quot;confusionMatrices&quot;:{&quot;thresholds&quot;:[0.30057379833060793],&quot;tns&quot;:[6570],&quot;tps&quot;:[132],&quot;totalPositives&quot;:153,&quot;totalNegatives&quot;:6596},&quot;rmse&quot;:0.08550094129361076,&quot;aic&quot;:3101.9827810220163,&quot;nullDegreesOfFreedom&quot;:6748,&quot;mse&quot;:0.007310410962093474}</trainingMetrics>
+</DiscoveryAIModel>

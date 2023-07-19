@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #677A97, #677A97)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #677A97, #677A97)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Count</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Agent_Polar_2_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>1.AccrualReversal</bin>
+                <formatValue>rgb(50, 150, 237)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>4.AdjustedPoints_Negative</bin>
+                <formatValue>rgb(195, 152, 245)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>3.AdjustedPoints_Positive</bin>
+                <formatValue>rgb(157, 83, 242)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>2.RedemptionReversal</bin>
+                <formatValue>rgb(119, 185, 242)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>5.Tier Changes</bin>
+                <formatValue>rgb(38, 171, 164)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>ActionType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Actions_Distribution_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Agent_Performance_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>linear-gradient(to bottom, #677A97, #677A97)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>linear-gradient(to bottom, #677A97, #677A97)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>Count</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Agent_Polar_2_1.Count</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>1.AccrualReversal</bin>
+                <formatValue>rgb(50, 150, 237)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>4.AdjustedPoints_Negative</bin>
+                <formatValue>rgb(195, 152, 245)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>3.AdjustedPoints_Positive</bin>
+                <formatValue>rgb(157, 83, 242)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>2</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>2.RedemptionReversal</bin>
+                <formatValue>rgb(119, 185, 242)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>3</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>5.Tier Changes</bin>
+                <formatValue>rgb(38, 171, 164)</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>4</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>ActionType</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>categories</type>
+        </conditionalFormatting>
+        <field>Actions_Distribution_2.Total_Actions</field>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Adjusted_Points_KPIs_1.Debited_Points_Change_Percentage</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>Adjusted_Points_KPIs_1.Credited_Points_Change_Percentage</field>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>Adjusted_Points_KPIs_1.Redemption_Reversal_Change_Percentage</field>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Adjusted_Points_KPIs_1.Accrual_Reversal_Change_Percentage</field>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>Agent_Performance_2.Total_Actions1</field>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>Agent_Performance_2.Total_Actions</field>
+        <isDerived>false</isDerived>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>Total_Actions_KPI_2.Total_Actions_Change_Percentage</field>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Team_Performance</waveVisualization>
+</WaveXmd>

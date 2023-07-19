@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Contact</contextRecordType>
+    <if>
+        <childNode>Load_Extend_Warranty_Rec</childNode>
+        <label>Warranty</label>
+        <name>Warranty</name>
+        <childNodeExpression>
+            <childName>Load_Extend_Warranty_Rec</childName>
+            <expression>CONTAINS(LOWER($Record.FirstName), &apos;lauren&apos;)</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <label>Contact_Extend Warranty</label>
+    <recommendationLoad>
+        <label>Load Extend Warranty Rec</label>
+        <name>Load_Extend_Warranty_Rec</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Extend Warranty</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Warranty</childNode>
+        <label>Output</label>
+        <name>Output_ba88b67a753c4972a0e80853426ff8b4</name>
+    </union>
+</RecommendationStrategy>

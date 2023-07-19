@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Cat_Man_Trenchers_RW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>filters access to contains trench and attachments -  used for AAF</description>
+        <label>Cat-Man-Trenchers-RW</label>
+        <sharedTo>
+            <role>Category_Trenchers_Manager</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>CBS_Cat__c</field>
+            <operation>contains</operation>
+            <value>Trench</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>CBS_Cat__c</field>
+            <operation>contains</operation>
+            <value>Attachments</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Cat_Manager_Ripper_RW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Cat-Manager-Ripper-RW</label>
+        <sharedTo>
+            <role>Category_Rippers_Manager</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>CBS_Cat__c</field>
+            <operation>equals</operation>
+            <value>Rippers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>CBS_Cat__c</field>
+            <operation>equals</operation>
+            <value>Compactors</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Cat_Global_Manager_All_RW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>category managers global get all categories in AAF</description>
+        <label>Cat-Global-Manager-All-RW</label>
+        <sharedTo>
+            <role>Global_Category_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

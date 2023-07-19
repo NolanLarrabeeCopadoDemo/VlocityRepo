@@ -1,0 +1,32 @@
+{
+    "RebateMembers": {
+        "RebateMemberBlock": [
+            {
+                "MemberStatus": "Active",
+                "Name": "mickey",
+                "RebateMembersAccountTA-Block": {
+                    "RebateMembersAccountId": "0014x00001NRyrLAAT",
+                    "RebateMembersAccountName": "Omega Incorporated",
+                    "RebateMembersAccountTA": "Omega Incorporated"
+                }
+            },
+            {
+                "MemberStatus": "Active",
+                "Name": "mini",
+                "RebateMembersAccountTA-Block": {
+                    "RebateMembersAccountId": "0014x00001NRyrLAAT",
+                    "RebateMembersAccountName": "Omega Incorporated",
+                    "RebateMembersAccountTA": "Omega Incorporated"
+                }
+            }
+        ]
+    },
+    "RebateProgramId": "",
+    "timeStamp": "2022-09-22T21:26:20.968Z",
+    "userCurrencyCode": "USD",
+    "userId": "0054x000007GMHZAA4",
+    "userName": "admin@mfg-091222.demo",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-420",
+    "userTimeZoneName": "America/Los_Angeles"
+}

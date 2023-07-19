@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>true</allowInternalUserLogin>
+    <allowMembersToFlag>true</allowMembersToFlag>
+    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
+    <communityRoles/>
+    <description>This is a B2B community using the Customer Service (Napili) template and accessible by Lauren Bailey.</description>
+    <disableReputationRecordConversations>true</disableReputationRecordConversations>
+    <emailFooterLogo>Images_Logos_Buttons/CompanyLogo.image%2Fpng</emailFooterLogo>
+    <emailFooterText>.</emailFooterText>
+    <emailSenderAddress>sdo@salesforce.com</emailSenderAddress>
+    <emailSenderName>Professional Community</emailSenderName>
+    <enableApexCDNCaching>true</enableApexCDNCaching>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>true</enableDirectMessages>
+    <enableExperienceBundleBasedSnaOverrideEnabled>true</enableExperienceBundleBasedSnaOverrideEnabled>
+    <enableGuestChatter>true</enableGuestChatter>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
+    <enableImageOptimizationCDN>true</enableImageOptimizationCDN>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>true</enableKnowledgeable>
+    <enableMemberVisibility>true</enableMemberVisibility>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>true</enableReputation>
+    <enableShowAllNetworkSettings>false</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
+    <enableTalkingAboutStats>true</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
+    <enableTopicSuggestions>true</enableTopicSuggestions>
+    <enableUpDownVote>true</enableUpDownVote>
+    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>true</gatherCustomerSentimentData>
+    <headlessForgotPasswordTemplate>unfiled$public/CommunityHeadlessForgotPasswordTemplate</headlessForgotPasswordTemplate>
+    <maxFileSizeKb>20480</maxFileSizeKb>
+    <networkMemberGroups>
+        <permissionSet>Moderate_Audiophiles_Community</permissionSet>
+        <permissionSet>Community_Moderator</permissionSet>
+        <profile>*partners</profile>
+        <profile>*service</profile>
+        <profile>admin</profile>
+        <profile>*partners - delegated administrator</profile>
+        <profile>*customer community</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Designer</homePageOverrideSetting>
+        <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>Professional_Community_C</picassoSite>
+    <recommendationAudience>
+        <recommendationAudienceDetails>
+            <audienceCriteriaType>MaxDaysInCommunity</audienceCriteriaType>
+            <audienceCriteriaValue>180.0</audienceCriteriaValue>
+            <setupName>New Members</setupName>
+        </recommendationAudienceDetails>
+        <recommendationAudienceDetails>
+            <audienceCriteriaType>CustomList</audienceCriteriaType>
+            <setupName>Product Upgrade Eligible Members</setupName>
+        </recommendationAudienceDetails>
+    </recommendationAudience>
+    <recommendationDefinition>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://trailhead.salesforce.com</actionUrl>
+            <description>Professionals who get trained do more business and have higher customer satisfaction ratings. Want to accelerate your career? Get trained now!</description>
+            <linkText>Learn More</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>CustomChannel4</channel>
+                    <enabled>true</enabled>
+                    <rank>1</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>1.1: CTA: Product Training</setupName>
+            <title>Get Trained!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://www.salesforce.com/communities/overview/?d=70130000000lzYpAAI&amp;internal=true</actionUrl>
+            <description>We thought you could use an upgrade - checkout our latest promotions:</description>
+            <linkText>I&apos;m Interested!</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>CustomChannel1</channel>
+                    <enabled>true</enabled>
+                    <rank>1</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>1.1: Product Upgrade</setupName>
+            <title>Need an Upgrade?</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://www.salesforce.com/communities/overview/?d=70130000000lzYpAAI&amp;internal=true</actionUrl>
+            <description>Learn how to join the conversation to learn or share with other customers!</description>
+            <linkText>Get Started</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>DefaultChannel</channel>
+                    <enabled>true</enabled>
+                    <rank>1</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>1.1: Welcome</setupName>
+            <title>Welcome to the Community!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://releasenotes.docs.salesforce.com</actionUrl>
+            <description>Every release, we give you new and compelling features based on YOUR feedback! Want to learn more? Visit our release notes!</description>
+            <linkText>Take Me There!</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>CustomChannel1</channel>
+                    <enabled>true</enabled>
+                    <rank>2</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>1.2: New Release Features</setupName>
+            <title>Check Out Our Release Features!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://developer.salesforce.com/trailhead</actionUrl>
+            <description>Develop deeper industry knowledge and become a recognized expert in your field!</description>
+            <linkText>Enroll Me!</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>DefaultChannel</channel>
+                    <enabled>true</enabled>
+                    <rank>2</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>1.2: Training</setupName>
+            <title>Get Certified!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://www.salesforce.com</actionUrl>
+            <description>Hear the experts talk about how to get the most value out of your investments.</description>
+            <linkText>Learn More</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>DefaultChannel</channel>
+                    <enabled>true</enabled>
+                    <rank>3</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>1.3: Weekly Webinar</setupName>
+            <title>Join us for our Weekly Webinar!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://trailhead.salesforce.com</actionUrl>
+            <description>Professionals who get trained do more business and have higher customer satisfaction ratings. Want to accelerate your career? Get trained now!</description>
+            <linkText>Learn More</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>CustomChannel4</channel>
+                    <enabled>true</enabled>
+                    <rank>2</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>2.1: CTA: Product Training</setupName>
+            <title>Get Trained!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://www.salesforce.com/communities/overview/?d=70130000000lzYpAAI&amp;internal=true</actionUrl>
+            <description>We thought you could use an upgrade - checkout our latest promotions:</description>
+            <linkText>I&apos;m Interested!</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>CustomChannel1</channel>
+                    <enabled>true</enabled>
+                    <rank>3</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>2.1: Product Upgrade</setupName>
+            <title>Need an Upgrade?</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://www.salesforce.com/communities/overview/?d=70130000000lzYpAAI&amp;internal=true</actionUrl>
+            <description>Learn how to join the conversation to learn or share with other customers!</description>
+            <linkText>Get Started</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>DefaultChannel</channel>
+                    <enabled>true</enabled>
+                    <rank>4</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>2.1: Welcome</setupName>
+            <title>Welcome to the Community!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://releasenotes.docs.salesforce.com</actionUrl>
+            <description>Every release, we give you new and compelling features based on YOUR feedback! Want to learn more? Visit our release notes!</description>
+            <linkText>Take Me There!</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>CustomChannel1</channel>
+                    <enabled>true</enabled>
+                    <rank>4</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>2.2: New Release Features</setupName>
+            <title>Check Out Our Release Features!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://developer.salesforce.com/trailhead</actionUrl>
+            <description>Develop deeper industry knowledge and become a recognized expert in your field!</description>
+            <linkText>Enroll Me!</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>DefaultChannel</channel>
+                    <enabled>true</enabled>
+                    <rank>5</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>2.2: Training</setupName>
+            <title>Get Certified!</title>
+        </recommendationDefinitionDetails>
+        <recommendationDefinitionDetails>
+            <actionUrl>https://www.salesforce.com</actionUrl>
+            <description>Hear the experts talk about how to get the most value out of your investments.</description>
+            <linkText>Learn More</linkText>
+            <scheduledRecommendations>
+                <scheduledRecommendationDetails>
+                    <channel>DefaultChannel</channel>
+                    <enabled>true</enabled>
+                    <rank>6</rank>
+                    <recommendationAudience>000000000000000</recommendationAudience>
+                </scheduledRecommendationDetails>
+            </scheduledRecommendations>
+            <setupName>2.3: Weekly Webinar</setupName>
+            <title>Join us for our Weekly Webinar!</title>
+        </recommendationDefinitionDetails>
+    </recommendationDefinition>
+    <reputationLevels>
+        <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/reputation_01_png2.png</smallImage>
+            </branding>
+            <label>Novice</label>
+            <lowerThreshold>0.0</lowerThreshold>
+        </level>
+        <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/reputation_02_png2.png</smallImage>
+            </branding>
+            <label>Amateur</label>
+            <lowerThreshold>26.0</lowerThreshold>
+        </level>
+        <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/reputation_03_png2.png</smallImage>
+            </branding>
+            <label>Intermediate</label>
+            <lowerThreshold>51.0</lowerThreshold>
+        </level>
+        <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/reputation_04_png2.png</smallImage>
+            </branding>
+            <label>Professional</label>
+            <lowerThreshold>101.0</lowerThreshold>
+        </level>
+        <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/reputation_05_png2.png</smallImage>
+            </branding>
+            <label>Expert</label>
+            <lowerThreshold>160.0</lowerThreshold>
+        </level>
+        <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/reputation_06_png2.png</smallImage>
+            </branding>
+            <label>Guru</label>
+            <lowerThreshold>200.0</lowerThreshold>
+        </level>
+    </reputationLevels>
+    <reputationPointsRules>
+        <pointsRule>
+            <eventType>FeedItemReceiveALike</eventType>
+            <points>7</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemShareAPost</eventType>
+            <points>1</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemWriteAPost</eventType>
+            <points>3</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemYourAnswerMarkedBest</eventType>
+            <points>25</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemPostQuestion</eventType>
+            <points>2</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>EndorseSomeoneForKnowledgeOnATopic</eventType>
+            <points>0</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemReceiveAnAnswer</eventType>
+            <points>11</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemReceiveAComment</eventType>
+            <points>7</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemLikeSomething</eventType>
+            <points>1</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemAnswerAQuestion</eventType>
+            <points>9</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemSomeoneSharesYourPost</eventType>
+            <points>8</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemMarkAnswerAsBest</eventType>
+            <points>6</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemMentionSomeone</eventType>
+            <points>2</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemReceiveAMention</eventType>
+            <points>9</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>EndorsedForKnowledgeOnATopic</eventType>
+            <points>0</points>
+        </pointsRule>
+        <pointsRule>
+            <eventType>FeedItemWriteAComment</eventType>
+            <points>1</points>
+        </pointsRule>
+    </reputationPointsRules>
+    <selfRegProfile>*customer community</selfRegProfile>
+    <selfRegistration>true</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>Professional_Community</site>
+    <siteArchiveStatus>NotArchived</siteArchiveStatus>
+    <status>Live</status>
+    <tabs>
+        <defaultTab>home</defaultTab>
+        <standardTab>Chatter</standardTab>
+    </tabs>
+    <urlPathPrefix>professional</urlPathPrefix>
+    <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
+</Network>

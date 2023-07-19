@@ -1,0 +1,27 @@
+<apex:page controller="PardotDemoOrg.PardotSalesforceSsoController" action="{!init}" standardStylesheets="false">
+    <apex:form >
+    
+        <apex:pageBlock title="Enable Single Sign-on">
+
+            <div style="font-size: 15px; margin-bottom: 1em;">
+                <p>First, we will enable Single Sign-on between your SDO and PDO. You will need your PDO credentials on this step.</p>
+                <ol>
+                    <li>Click <strong>Log in with Salesforce</strong> below</li>
+                    <li>Click <strong>Allow</strong> in the popup window</li>
+                    <li>Enter your new PDO credentials {!pardotEmail}</li>
+                    <li>Click <strong>Verify</strong></li>
+                    <li>Click <strong>Next Step</strong> above to move on</li>
+                </ol>
+            </div>
+
+            <apex:iframe src="{!$Label.PardotDemoOrg__Pardot_Base_Url}/user/logout" scrolling="true" id="ssoIframe" />
+
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value=" Previous Step " onclick="window.location='/apex/RequestPardotDemoOrg'; return false;" />
+                <apex:commandButton value=" Next Step " onclick="window.location='/apex/PardotSalesforceConnectorSetup'; return false;" />
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

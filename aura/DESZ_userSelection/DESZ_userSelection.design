@@ -1,0 +1,3 @@
+<design:component>
+    <design:attribute name="selected" label="Default Owner"/>
+</design:component>

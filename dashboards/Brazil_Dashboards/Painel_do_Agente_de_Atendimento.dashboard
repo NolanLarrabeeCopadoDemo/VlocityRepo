@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Estou fornecendo aos clientes uma boa experiência de atendimento?</footer>
+            <gaugeMax>5.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <groupingSortProperties/>
+            <header>Satisfação dos Meus Clientes</header>
+            <indicatorBreakpoint1>3.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>4.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Service_Agent_Reports/My_Customer_Satisfaction</report>
+            <showPercentage>false</showPercentage>
+            <showRange>false</showRange>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>My Customer Satisfaction</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Estou respondendo rapidamente aos clientes?</footer>
+            <gaugeMax>60.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <groupingSortProperties/>
+            <header>Meu Tempo de Resposta</header>
+            <indicatorBreakpoint1>15.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>30.0</indicatorBreakpoint2>
+            <indicatorHighColor>#C25454</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Service_Agent_Reports/My_First_Response</report>
+            <showPercentage>false</showPercentage>
+            <showRange>false</showRange>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>My Response Time</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Estou mantendo nossos acordos de atendimento com os clientes?</footer>
+            <gaugeMax>100.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <groupingSortProperties/>
+            <header>Minha Adarência ao SLA</header>
+            <indicatorBreakpoint1>60.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>80.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Service_Agent_Reports/My_SLA_Compliance</report>
+            <showPercentage>true</showPercentage>
+            <showRange>false</showRange>
+            <showTotal>false</showTotal>
+            <showValues>false</showValues>
+            <title>My SLA Compliance</title>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Estou priorizando corretamente?</footer>
+            <groupingSortProperties/>
+            <header>Meus Casos por Prioridade</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Service_Agent_Reports/My_Case_Priorities</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>My Case Priorities</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Em quais tipos de casos estou trabalhando?</footer>
+            <groupingColumn>TYPE</groupingColumn>
+            <groupingSortProperties/>
+            <header>Meus Casos por Tipo</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Service_Agent_Reports/My_Cases_by_Type</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>My Cases by Type</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Estou resolvendo os problemas dos clientes em tempo hábil?</footer>
+            <gaugeMax>72.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <groupingSortProperties/>
+            <header>Meu Tempo de Resolução</header>
+            <indicatorBreakpoint1>24.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>48.0</indicatorBreakpoint2>
+            <indicatorHighColor>#C25454</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Service_Agent_Reports/My_Resolution_Time</report>
+            <showPercentage>false</showPercentage>
+            <showRange>false</showRange>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>My Resolution Time</title>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>Em quais canais estou trabalhando mais?</footer>
+            <groupingSortProperties/>
+            <header>Meus Casos por Canal</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Service_Agent_Reports/My_Cases_by_Channel</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>false</showTotal>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>My Cases by Channel</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>No que o resto do meu time está trabalhando?</footer>
+            <groupingColumn>OWNER</groupingColumn>
+            <groupingColumn>STATUS</groupingColumn>
+            <groupingSortProperties/>
+            <header>Casos do Meu Time</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Service_Executive_Reports/Cases_Assigned_by_Status</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>My Team&apos;s Cases</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Case.Opportunities__r$Amount</column>
+            </chartSummary>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Quanta receita eu tenho gerado para a empresa?</footer>
+            <groupingColumn>Case.Opportunities__r$Type</groupingColumn>
+            <groupingSortProperties/>
+            <header>Receita Gerada nos Meus Atendimentos</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Service_Agent_Reports/My_Service_Sourced_Revenue</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>My Service-Sourced Revenue</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </rightSection>
+    <runningUser>tim.service.0aifxjprqang.baxiwsymnt5n@copado.com2023/07/18_17-7-41.demo3</runningUser>
+    <textColor>#000000</textColor>
+    <title>Painel do Agente de Atendimento</title>
+    <titleColor>#DDDDDD</titleColor>
+    <titleSize>8</titleSize>
+</Dashboard>

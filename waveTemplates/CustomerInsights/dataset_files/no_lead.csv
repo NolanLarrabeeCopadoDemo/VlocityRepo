@@ -1,0 +1,2 @@
+Id,Name,Company,City,Country,LeadSource,Status,Industry,Rating,OwnerId,IsConverted,ConvertedDate,ConvertedAccountId,ConvertedContactId,ConvertedOpportunityId,IsUnreadByOwner,CreatedDate,LastModifiedDate, NewLead
+sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,1988-01-20T00:00:00.000Z,sample,sample,sample,sample,1988-01-20T00:00:00.000Z,1988-01-20T00:00:00.000Z, sample

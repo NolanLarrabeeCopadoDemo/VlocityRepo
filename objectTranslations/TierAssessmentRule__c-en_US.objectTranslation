@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tier Assessment Rule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tier Assessment Rules</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branding Percentage --></label>
+        <name>BrandingPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty Tier Name --></label>
+        <name>LoyaltyTierName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partnership Years --></label>
+        <name>PartnershipYears__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quarterly Conference Attended --></label>
+        <name>QuarterlyConferenceAttended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Across All Channel --></label>
+        <name>SalesAcrossAllChannel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence Number --></label>
+        <name>SequenceNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Trained Percentage --></label>
+        <name>TeamTrainedPercentage__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

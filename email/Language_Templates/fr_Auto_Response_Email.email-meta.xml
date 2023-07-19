@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-response email which is sent after a new case is received.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FR Svc Auto-Response Email</name>
+    <style>none</style>
+    <subject>Merci d&apos;avoir contacté le service client {!Organization.Name}!</subject>
+    <textOnly>{!Contact.Name},
+Merci de nous avoir contacté! Nous avons bien reçu votre message et un conseiller a été assigné. Nous faisons tout notre possible pour résoudre votre problème dans les plus brefs délais.
+
+Pour référence, voici les détails de votre demande:
+
+- N° Requête: {!Case.CaseNumber}
+
+- Objet: {!Case.Subject}
+
+- Description: {!Case.Description}
+
+Dans l&apos;attente, vous pouvez rechercher une solution dans notre base de connaissance, ou ajouter un commentaire à votre requête, depuis notre communauté {!Case_Survey_URL__c} .
+
+Cordialement,
+{!User.FirstName}
+Service Client {!Organization.Name}
+
+Référence de Requête: {!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

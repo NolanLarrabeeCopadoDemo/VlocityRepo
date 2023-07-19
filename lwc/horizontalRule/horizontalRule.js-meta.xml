@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+ <targetConfigs>
+<targetConfig targets="lightning__FlowScreen">
+
+<property name="hrColor" label="Line Colors" default="blue" type="String" description="Colors can be enter in as word(blue) or hex(#0000FF)or RGB(rgb(0,0,255))"></property>
+<property name="hrSize" label="Line Thickness" default="3" type="Integer" description="This is thickness in pixels"></property>
+<property name="hrStyle" label="Line Style"  type="String" description="Enter a style such as solid,dotted,dashed,double,groove,inset,outset,ridge" ></property>
+
+
+
+</targetConfig>
+<targetConfig targets="lightning__RecordPage">
+
+    <property name="hrColor" label="Line Colors" default="blue" type="String" description="Colors can be enter in as word(blue) or hex(#0000FF)or RGB(rgb(0,0,255))"></property>
+    <property name="hrSize" label="Line Thickness" default="3" type="Integer" description="This is thickness in pixels"></property>
+    <property name="hrStyle" label="Line Style"  default="solid" type="String" description="Enter a style such as solid,dotted,dashed,double,groove,inset,outset,ridge" datasource="mix,solid,dotted,dashed,double,groove,inset,outset,ridge" ></property>
+    <property name="hrWidth" label="Line Width"  default="auto" type="String" description="Pick a width percentage" datasource="auto,5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100%, 105%, 110%, 115%, 120%, 125%, 130%, 135%, 140%, 145%, 150%, 155%, 160%, 165%, 170%, 175%, 180%, 185%, 190%, 195%, 200%" ></property>
+ 
+    
+    
+    </targetConfig>
+
+</targetConfigs>
+
+    
+  
+</LightningComponentBundle>

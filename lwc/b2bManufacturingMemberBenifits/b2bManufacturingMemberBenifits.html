@@ -1,0 +1,22 @@
+<template>
+    <div class="member-benifits slds-p-around_large">
+        <div class="member-benifits__header slds-text-align_center slds-p-top_x-large">
+            <h2 class="title">Benefits</h2>
+            <span class="sub-title">Based on tier, here are some of the benefits available to members.</span>
+        </div>
+        <div class="slds-grid slds-gutters_large slds-wrap">
+            <template for:each={benifits} for:item="b">
+                <div 
+                    class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-3 slds-p-vertical_xx-large"
+                    key={b.id}
+                >
+                    <c-b2b-manufacturing-member-benifits-item
+                        icon={b.icon}
+                        name={b.name}
+                        description={b.description}
+                    ></c-b2b-manufacturing-member-benifits-item>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

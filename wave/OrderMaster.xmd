@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset>OrderMaster</dataset>
+    <dates>
+        <alias>Order.ActivatedDate</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>1</fiscalMonthOffset>
+        <label>Order Activation Date</label>
+        <sortIndex>0</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dates>
+        <alias>Order.CreatedDate</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>1</fiscalMonthOffset>
+        <label>Order Created Date</label>
+        <sortIndex>1</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dimensions>
+        <field>Order.OrderNumber</field>
+        <isDerived>false</isDerived>
+        <label>Order Number</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Order.Status</field>
+        <isDerived>false</isDerived>
+        <label>Order Status</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Product.Name</field>
+        <isDerived>false</isDerived>
+        <label>Product</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Order.TotalAmount</field>
+        <formatCustomFormat>[&quot;#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Revenue</field>
+        <formatCustomFormat>[&quot;#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>true</isDerived>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Product.PriceEntry.UnitPrice</field>
+        <formatCustomFormat>[&quot;#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Revenue:Order</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>true</isDerived>
+        <label>Revenue to Order Value</label>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>ListPrice</field>
+        <formatCustomFormat>[&quot;#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>UnitPrice</field>
+        <formatCustomFormat>[&quot;#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>TotalPrice</field>
+        <formatCustomFormat>[&quot;#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+</WaveXmd>

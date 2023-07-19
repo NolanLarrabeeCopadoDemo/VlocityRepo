@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionContext>
+        <action>GetFranchiseeData</action>
+        <argument>
+            <name>custId</name>
+            <value>$Record.Account.External_ID__c</value>
+        </argument>
+        <label>Get Credit Score</label>
+        <name>Get_Credit_Score</name>
+        <type>apex</type>
+    </actionContext>
+    <contextRecordType>Case</contextRecordType>
+    <filter>
+        <childNode>Load_Zero_Percent_Refinancing</childNode>
+        <label>CreditScore GT 750</label>
+        <name>CreditScore_GT_750</name>
+        <expression>$Get_Credit_Score.creditScore &gt; 750</expression>
+    </filter>
+    <if>
+        <childNode>Account_Type</childNode>
+        <childNode>Thank_for_Loyalty</childNode>
+        <label>Case Status</label>
+        <name>Case_Status</name>
+        <childNodeExpression>
+            <childName>Thank_for_Loyalty</childName>
+            <expression>TEXT($Record.Status) == &apos;New&apos;</expression>
+        </childNodeExpression>
+        <childNodeExpression>
+            <childName>Account_Type</childName>
+            <expression>TEXT($Record.Status) != &apos;New&apos;</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>Enterprise_Only</childNode>
+        <childNode>Standard_support</childNode>
+        <label>Account Type</label>
+        <name>Account_Type</name>
+        <childNodeExpression>
+            <childName>Enterprise_Only</childName>
+            <expression>TEXT($Record.Account.Type)==&apos;Enterprise&apos; </expression>
+        </childNodeExpression>
+        <childNodeExpression>
+            <childName>Standard_support</childName>
+            <expression>TEXT($Record.Account.Type)!=&apos;Enterprise&apos; </expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>Premium_support</childNode>
+        <label>Case Reason is Hardware</label>
+        <name>Case_Reason_is_Hardware</name>
+        <childNodeExpression>
+            <childName>Premium_support</childName>
+            <expression>TEXT($Record.Reason)==&apos;Hardware Issue&apos; &amp;&amp; TEXT($Record.Status) != &apos;Field Technician Dispatched&apos;</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>Sort_by_Ranking</childNode>
+        <label>Field Technician Has Been Dispatched</label>
+        <name>Field_Technician_Has_Been_Dispatched</name>
+        <childNodeExpression>
+            <childName>Sort_by_Ranking</childName>
+            <expression>TEXT($Record.Status) == &apos;Field Technician Dispatched&apos;</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <label>AA_Jasmine Yogurt Service</label>
+    <recommendationLoad>
+        <label>Thank for Loyalty</label>
+        <name>Thank_for_Loyalty</name>
+        <condition>
+            <field>Recommendation.Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Loyalty</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Standard Support</label>
+        <name>Standard_support</name>
+        <condition>
+            <field>Recommendation.Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Support_standard</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Premium Support</label>
+        <name>Premium_support</name>
+        <condition>
+            <field>Recommendation.Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Support_premium</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Upsell</label>
+        <name>Upsell</name>
+        <condition>
+            <field>Recommendation.Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Upsell</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Load Zero Percent Refinancing</label>
+        <name>Load_Zero_Percent_Refinancing</name>
+        <condition>
+            <field>Recommendation.Category__c</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>ZeroPercent</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <sort>
+        <childNode>Upsell</childNode>
+        <childNode>CreditScore_GT_750</childNode>
+        <label>Sort by Ranking</label>
+        <name>Sort_by_Ranking</name>
+        <field>
+            <name>Ranking__c</name>
+            <nullsFirst>false</nullsFirst>
+            <order>Asc</order>
+        </field>
+    </sort>
+    <union>
+        <childNode>Case_Status</childNode>
+        <label>Output</label>
+        <name>Output_6d79075958254727af3bc44f3f0cc41c</name>
+    </union>
+    <union>
+        <childNode>Case_Reason_is_Hardware</childNode>
+        <childNode>Field_Technician_Has_Been_Dispatched</childNode>
+        <label>Enterprise Only</label>
+        <name>Enterprise_Only</name>
+    </union>
+</RecommendationStrategy>

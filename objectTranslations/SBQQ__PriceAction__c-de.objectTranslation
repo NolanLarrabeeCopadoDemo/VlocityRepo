@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Preisaktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Preisaktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Preisaktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Preisaktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Preisaktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Preisaktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Preisaktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Preisaktionen</value>
+    </caseValues>
+    <fields>
+        <help>Wählen Sie das Feld aus, das aktualisiert werden soll, wenn die Bedingungen erfüllt sind.</help>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Dimensions_Cost__c</masterLabel>
+            <translation><!-- Dimensions_Cost__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>Rabatt (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>Rabatt (Betrag)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EditLinesFieldSetName__c</masterLabel>
+            <translation><!-- EditLinesFieldSetName__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fork_Access_Cost__c</masterLabel>
+            <translation><!-- Fork_Access_Cost__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inv_Item_Description__c</masterLabel>
+            <translation><!-- Inv_Item_Description__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory_On_Hand__c</masterLabel>
+            <translation><!-- Inventory_On_Hand__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory_Status__c</masterLabel>
+            <translation><!-- Inventory_Status__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFG_Site_Unit_Price__c</masterLabel>
+            <translation><!-- MFG_Site_Unit_Price__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager_Cost_Threshold__c</masterLabel>
+            <translation><!-- Manager_Cost_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager_List_Threshold__c</masterLabel>
+            <translation><!-- Manager_List_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager_Margin_Threshold__c</masterLabel>
+            <translation><!-- Manager_Margin_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market_Price__c</masterLabel>
+            <translation><!-- Market_Price__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (%)</masterLabel>
+            <translation>Aufschlag (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (Amt)</masterLabel>
+            <translation>Aufschlag (Betrag)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material_Cost__c</masterLabel>
+            <translation><!-- Material_Cost__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_Allocated__c</masterLabel>
+            <translation><!-- Quantity_Allocated__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_Assigned__c</masterLabel>
+            <translation><!-- Quantity_Assigned__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_Available__c</masterLabel>
+            <translation><!-- Quantity_Available__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_On_Hand__c</masterLabel>
+            <translation><!-- Quantity_On_Hand__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate__c</masterLabel>
+            <translation><!-- Rate__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Hidden__c</masterLabel>
+            <translation><!-- SBQQ__Hidden__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Optional__c</masterLabel>
+            <translation><!-- SBQQ__Optional__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__PricingMethod__c</masterLabel>
+            <translation><!-- SBQQ__PricingMethod__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__SpecialPriceType__c</masterLabel>
+            <translation><!-- SBQQ__SpecialPriceType__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__SpecialPrice__c</masterLabel>
+            <translation><!-- SBQQ__SpecialPrice__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__SubscriptionTerm__c</masterLabel>
+            <translation><!-- SBQQ__SubscriptionTerm__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__UnitCost__c</masterLabel>
+            <translation><!-- SBQQ__UnitCost__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock_Number__c</masterLabel>
+            <translation><!-- Stock_Number__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Price</masterLabel>
+            <translation>Stückpreis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP_Cost_Threshold__c</masterLabel>
+            <translation><!-- VP_Cost_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP_List_Threshold__c</masterLabel>
+            <translation><!-- VP_List_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP_Margin_Threshold__c</masterLabel>
+            <translation><!-- VP_Margin_Threshold__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie eine Formel mit Operatoren, Funktionen und verfügbaren Feldern in Angebots- und Zielobjekt ein. Wird bei altem Rechner nicht unterstützt.</help>
+        <label><!-- Formula --></label>
+        <name>SBQQ__Formula__c</name>
+    </fields>
+    <fields>
+        <help>Nummer, die die Reihenfolge bestimmt, in der mehrere Aktionen für eine Regel ausgeführt werden.</help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Lookup Object --></label>
+        <name>SBQQ__RuleLookupObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help>Preisregel, die diese Aktion ausführt.</help>
+        <label><!-- Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Price Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>API-Name des Felds, das aus der Zeile zurückgegeben werden soll, die die Bedingung erfüllt.</help>
+        <label><!-- Source Lookup Field --></label>
+        <name>SBQQ__SourceLookupField__c</name>
+        <picklistValues>
+            <masterLabel>Dimensions_Cost__c</masterLabel>
+            <translation><!-- Dimensions_Cost__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fork_Access_Cost__c</masterLabel>
+            <translation><!-- Fork_Access_Cost__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Stock__c</masterLabel>
+            <translation><!-- In_Stock__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory_Status2__c</masterLabel>
+            <translation><!-- Inventory_Status2__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory_Status__c</masterLabel>
+            <translation><!-- Inventory_Status__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item_Description__c</masterLabel>
+            <translation><!-- Item_Description__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List_Unit_Price__c</masterLabel>
+            <translation><!-- List_Unit_Price__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager_Cost_Threshold__c</masterLabel>
+            <translation><!-- Manager_Cost_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager_List_Threshold__c</masterLabel>
+            <translation><!-- Manager_List_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager_Margin_Threshold__c</masterLabel>
+            <translation><!-- Manager_Margin_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market_Price__c</masterLabel>
+            <translation><!-- Market_Price__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material_Cost__c</masterLabel>
+            <translation><!-- Material_Cost__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_Allocated__c</masterLabel>
+            <translation><!-- Quantity_Allocated__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_Assigned__c</masterLabel>
+            <translation><!-- Quantity_Assigned__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_Available__c</masterLabel>
+            <translation><!-- Quantity_Available__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_On_Hand__c</masterLabel>
+            <translation><!-- Quantity_On_Hand__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate__c</masterLabel>
+            <translation><!-- Rate__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Value__c</masterLabel>
+            <translation>SBQQ__Value__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit_Cost2__c</masterLabel>
+            <translation><!-- Unit_Cost2__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit_Cost__c</masterLabel>
+            <translation><!-- Unit_Cost__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit_Price2__c</masterLabel>
+            <translation><!-- Unit_Price2__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit_Price__c</masterLabel>
+            <translation><!-- Unit_Price__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP_Cost_Threshold__c</masterLabel>
+            <translation><!-- VP_Cost_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP_List_Threshold__c</masterLabel>
+            <translation><!-- VP_List_Threshold__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP_Margin_Threshold__c</masterLabel>
+            <translation><!-- VP_Margin_Threshold__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Zusammenfassungsvariable, die die Quelle des Werts für diese Aktion darstellt.</help>
+        <label><!-- Source Variable --></label>
+        <name>SBQQ__SourceVariable__c</name>
+        <relationshipLabel><!-- Price Actions (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie das Objekt aus, in dem das Feld definiert ist</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Produktoption</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Angebot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Angebotsbelegposten</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wenn der einzufügende Wert in einem anderen Angebotsbelegposten-Feld berechnet wird, wählen Sie das Feld hier aus.</help>
+        <label><!-- Source Field --></label>
+        <name>SBQQ__ValueField__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie den Wert ein, der in das Zielfeld eingefügt werden soll, wenn die Bedingungen erfüllt sind.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Aktionsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- To use Quote Line Pricing Guidance as the Target Object, select After Calculate from the Calculator Evaluation Event dropdown list. --></errorMessage>
+        <name>SBQQ__Event_Evaluation_Pricing_Guidance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Price Action Target Object does not match Evaluation Scope --></errorMessage>
+        <name>SBQQ__Target_Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

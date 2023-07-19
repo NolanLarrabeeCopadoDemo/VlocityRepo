@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides access to create and manage visits, assessment tasks, and associated features.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Partner Visit Management Cloned</label>
+    <license>ManufacturingPartnerVisitMgmtPsl</license>
+</PermissionSet>

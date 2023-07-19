@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- SLICK_CTI_CASE --></label>
+        <name>SLICK_CTI_CASE</name>
+    </fieldSets>
+    <fields>
+        <help><!-- What is the Date you agreed to respond to this RFQ? --></help>
+        <label><!-- Accepted Date --></label>
+        <name>Accepted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do you plan to respond to this RFQ ? --></help>
+        <label><!-- Accepted --></label>
+        <name>Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSAT --></label>
+        <name>CSAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Time (Seconds) --></label>
+        <name>CaseTimer19__Cumulative_Time__c</name>
+    </fields>
+    <fields>
+        <label>URL Questionnaire Satisfaction</label>
+        <name>Case_Survey_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChatKey --></label>
+        <name>ChatKey__c</name>
+    </fields>
+    <fields>
+        <label>Ville</label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label>Date de Clotûre</label>
+        <name>ClosedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Contact Match --></label>
+        <name>Community_Contact_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concerned quantity --></label>
+        <name>Concerned_quantity__c</name>
+    </fields>
+    <fields>
+        <label>Coût Estimé</label>
+        <name>Cost__c</name>
+    </fields>
+    <fields>
+        <label>Pays</label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Time (Seconds) --></label>
+        <name>Cumulative_Time__c</name>
+    </fields>
+    <fields>
+        <label>Type de Client</label>
+        <name>Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation>Entreprise</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Particulier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small and Medium Business</masterLabel>
+            <translation>PME/PMI</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label>DB Durée de la requête (heures)</label>
+        <name>DB_Case_Duration_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label><!-- DB Hours --></label>
+        <name>DB_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label>Date/Heure Fermeture</label>
+        <name>DateTime_Closed_c__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by the Perfect Date Wizard --></help>
+        <label>Date/Heure Ouverture</label>
+        <name>DateTime_Opened_c__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the Due Date of this Request for Quote --></help>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label>Durée</label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB --></label>
+        <name>EDY_ORGCUSTOM__DB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Description --></label>
+        <name>EDY_ORGCUSTOM__Old_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Subject --></label>
+        <name>EDY_ORGCUSTOM__Old_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>ED_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Predicted CSAT --></label>
+        <name>ED_Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>ED_Prescription__c</name>
+    </fields>
+    <fields>
+        <label>Coût Estimé</label>
+        <name>Est_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>Clôturé au Premier Contact</label>
+        <name>First_Contact_Close__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked when there is a KB Article attached to the Case. --></help>
+        <label>Article Attaché</label>
+        <name>KB_Article_Attached__c</name>
+    </fields>
+    <fields>
+        <help><!-- Article created using the Create Article flow through either the dynamic button or the Next Best Action recommendation --></help>
+        <label><!-- Article Created --></label>
+        <name>MFG_Service_Article_Created__c</name>
+    </fields>
+    <fields>
+        <help><!-- Short summary of actions taken to resolve the Case. --></help>
+        <label><!-- Close Summary --></label>
+        <name>MFG_Service_Close_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Type --></label>
+        <name>MFG_Service_Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order or Invoice</masterLabel>
+            <translation><!-- Order or Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation><!-- Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup and Usage</masterLabel>
+            <translation><!-- Setup and Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suggestion</masterLabel>
+            <translation><!-- Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting</masterLabel>
+            <translation><!-- Troubleshooting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>MilestoneStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- NBA to Display --></label>
+        <name>NBA_to_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Voucher --></label>
+        <name>Offer_Voucher__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Image --></label>
+        <name>OpenGraph_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Type --></label>
+        <name>OpenGraph_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Url --></label>
+        <name>OpenGraph_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org Cust Case ID --></label>
+        <name>Org_Cust_Case_ID__c</name>
+    </fields>
+    <fields>
+        <label>Famille Produit</label>
+        <name>Product_Family_KB__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Products</masterLabel>
+            <translation>Produits pour les professionnels</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generators</masterLabel>
+            <translation><!-- Generators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Products</masterLabel>
+            <translation>Produits pour les particuliers</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skid Steer</masterLabel>
+            <translation><!-- Skid Steer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Model --></label>
+        <name>Product_Model__c</name>
+    </fields>
+    <fields>
+        <label>Nom Produit</label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label>Score Qualité</label>
+        <name>Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label>Temps de Réponse (mins)</label>
+        <name>Response_Time_mins__c</name>
+    </fields>
+    <fields>
+        <label><!-- chatKey --></label>
+        <name>SCQuickSetup__chatKey__c</name>
+    </fields>
+    <fields>
+        <label>Conforme SLA</label>
+        <name>SLA_Compliant__c</name>
+    </fields>
+    <fields>
+        <label>Type SLA</label>
+        <name>SLA_Type__c</name>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation><!-- Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Send Email Trigger --></label>
+        <name>Send_Email_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Field Service --></label>
+        <name>Send_FieldService__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label>Territoire de Service</label>
+        <name>Service_Territory__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Etat</label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label>Indicateur</label>
+        <name>Status_Indicator__c</name>
+    </fields>
+    <fields>
+        <label>Rue</label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label>Sous-Type</label>
+        <name>Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation>Facturation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation>Plainte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order or Invoice</masterLabel>
+            <translation>Commande ou Facture</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation>Profil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup and Usage</masterLabel>
+            <translation>Configuration et Utilisation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suggestion</masterLabel>
+            <translation><!-- Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting</masterLabel>
+            <translation>Dépannage</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey URL --></label>
+        <name>Survey_URL__c</name>
+    </fields>
+    <fields>
+        <label>Equipe</label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label>Temps Ouvert</label>
+        <name>Time_Open__c</name>
+    </fields>
+    <fields>
+        <label>Type de Support</label>
+        <name>Type_of_Support__c</name>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation>Premium</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>Standard</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- URLsrc --></label>
+        <name>URLsrc__c</name>
+    </fields>
+    <fields>
+        <label>Urgence</label>
+        <name>Urgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume --></label>
+        <name>Volume__c</name>
+    </fields>
+    <fields>
+        <label>Type de Travail</label>
+        <name>Work_Type__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Code Postal</label>
+        <name>Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Approval Requested --></label>
+        <name>ckz_Budget_Approval_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Approval Status --></label>
+        <name>ckz_Budget_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Budget Override Amount --></label>
+        <name>ckz_Budget_Override_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Amount --></label>
+        <name>ckz_Credit_Override_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Requested --></label>
+        <name>ckz_Credit_Override_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Status --></label>
+        <name>ckz_Credit_Override_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Cart --></label>
+        <name>ckz_Source_Cart__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- demoRecommendations --></label>
+        <name>demoRecommendations__c</name>
+    </fields>
+    <fields>
+        <label><!-- deviceId --></label>
+        <name>deviceId__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Primary case record type used for most cases. --></description>
+        <label>Requête</label>
+        <name>Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used specifically for Chat cases to drive the chat-specific page layout. --></description>
+        <label>Requête Chat</label>
+        <name>Chat_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Digital Engagement - Social Case --></label>
+        <name>Digital_Engagement_Social_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Request for Quote Record Type --></description>
+        <label><!-- RFQ --></label>
+        <name>RFQ</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Order Return (RMA) --></description>
+        <label><!-- RMA --></label>
+        <name>RMA</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Requête Live Agent</label>
+        <name>SCQuickSetup__Chat_Live_Agent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SOS Recodr --></label>
+        <name>SCQuickSetup__SOS_Recodr</name>
+    </recordTypes>
+    <webLinks>
+        <label>Classification</label>
+        <name>Case_Classification</name>
+    </webLinks>
+    <webLinks>
+        <label>Enquête de Satisfaction</label>
+        <name>Customer_Satisfaction_Survey</name>
+    </webLinks>
+    <webLinks>
+        <label>Envoyer Article par email</label>
+        <name>Email_Article</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Solution --></label>
+        <name>Email_Solution</name>
+    </webLinks>
+    <webLinks>
+        <label>Trouver Solution</label>
+        <name>Find_Solution</name>
+    </webLinks>
+    <webLinks>
+        <label>Connection Self-Service</label>
+        <name>Login_to_Self_Service</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label>Opportunité Up-Sell / Cross-Sell</label>
+        <name>SCQuickSetup__UpsellCrosssellOpportunity</name>
+    </webLinks>
+    <webLinks>
+        <label>opp Up-Sell/Cross-Sell</label>
+        <name>UpSellCrossSellOpp</name>
+    </webLinks>
+</CustomObjectTranslation>

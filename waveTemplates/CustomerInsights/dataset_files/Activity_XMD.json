@@ -1,0 +1,83 @@
+{
+    "dates": [],
+    "derivedDimensions": [],
+    "derivedMeasures": [],
+    "dimensions": [
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Opp.Name",
+            "linkTemplate": "/{{row.Opp.Id}}",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "recordIdField": "Opp.Id",
+            "salesforceActions": [],
+            "salesforceActionsEnabled": false
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Subject",
+            "linkTemplate": "/{{row.Id}}",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "recordIdField": "Id",
+            "salesforceActions": [],
+            "salesforceActionsEnabled": false
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Opp.Account.Owner.Name",
+            "label": "OppAcctOwner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Opp.Owner.Name",
+            "label": "Opportunity Owner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Owner.Name",
+            "label": "Owner Name",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Account.Owner.Name",
+            "label": "Account Owner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Opp.Account.Name",
+            "linkTemplate": "/{{row.AccountId}}",
+            "linkTemplateEnabled": true,
+            "linkTooltip": "Open Account",
+            "members": [],
+            "recordDisplayFields": [],
+            "recordIdField": "AccountId",
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true
+        }
+    ],
+    "measures": [],
+    "organizations": [],
+    "showDetailsDefaultFields": []
+}

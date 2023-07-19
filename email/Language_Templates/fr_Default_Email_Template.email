@@ -1,0 +1,17 @@
+<img src="{!Contact.URLsrc__c}/servlet/servlet.ImageServer?id=015Hr000003iK9x&oid=00DHr0000010MFf"><hr width="100%">
+
+{!Contact.FirstName},
+<br><br>
+Merci de nous avoir contacté!
+J'ai recherché la solution à votre problème et j'ai trouvé un article qui je pense devrais vous aidez.
+Si vous avez une autre question, n'hesitez pas à répondre à cet email ou à visiter notre <a href="{!Case_Survey_URL__c}">communauté</a>. 
+<br><br>
+Nous sommes dans une démarche d'amélioration constante de notre service client, et apprécierions si vous remplissiez une très courte <a href="{!Case.Case_Survey_URL__c}/apex/DE_CustomerSurvey?contactid={!Contact.Id}&caseid={!Case.Id}">enquête de satisfaction</a>.
+<br><br>
+Merci! 
+<br>
+{!User.FirstName}
+<br>
+Service Client {!Organization.Name}
+
+{!Case.Articles_as_PDFs}

@@ -1,0 +1,52 @@
+{
+    "estimatedproducts": [
+        {
+            "Id": "REC0",
+            "PbeIsActive": true,
+            "PbeName": "Compactor 9500",
+            "PbeUnitPrice": 3400,
+            "PriceBookEntryId": "01u8Y00000L9tPDQAZ",
+            "Product2Id": "01t8Y00000NV8tbQAD",
+            "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+            "Qty": "1",
+            "_flex": {
+                "state0element0block_element2": true,
+                "state0element0block_element2_child": true,
+                "state0element0block_element3": true,
+                "state0element0block_element3_child": true,
+                "state0element0block_element4": true,
+                "state0element0block_element4_child": true,
+                "state0element0block_element5": true,
+                "state0element0block_element5_child": true,
+                "uniqueKey": "REC0"
+            },
+            "addToEstimate": true,
+            "filtervalue": "filtervalue",
+            "uniqueKey": "REC0"
+        },
+        {
+            "Id": "REC1",
+            "PbeIsActive": true,
+            "PbeName": "SLA-Finance",
+            "PbeUnitPrice": 2345,
+            "PriceBookEntryId": "01u8Y00000L9tOPQAZ",
+            "Product2Id": "01t8Y00000NV8siQAD",
+            "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+            "Qty": "1",
+            "_flex": {
+                "state0element0block_element2": true,
+                "state0element0block_element2_child": true,
+                "state0element0block_element3": true,
+                "state0element0block_element3_child": true,
+                "state0element0block_element4": true,
+                "state0element0block_element4_child": true,
+                "state0element0block_element5": true,
+                "state0element0block_element5_child": true,
+                "uniqueKey": "REC1"
+            },
+            "addToEstimate": true,
+            "filtervalue": "filtervalue",
+            "uniqueKey": "REC1"
+        }
+    ]
+}

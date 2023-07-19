@@ -1,0 +1,337 @@
+{
+  "name" : "Sales_Agreement_Revenue_Realization_tp",
+  "label" : "Embedded - Sales Agreement Revenue Realization",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [
+      {
+        "conditionalFormatting" : {
+          "chartColor" : {
+            "referenceField" : "Realization",
+            "type" : "multiple",
+            "parameters" : {
+              "bins" : [
+                {
+                  "formatValue" : "linear-gradient(to bottom, #0D34B6, #0D34B6)",
+                  "bin" : "*"
+                },
+                {
+                  "formatValue" : "linear-gradient(to bottom, #237FDF, #0B87F8)",
+                  "bin" : "0"
+                }
+              ]
+            }
+          }
+        },
+        "field" : "Agreement_revenue_re_1.Revenue",
+        "format" : { }
+      }
+    ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [
+      {
+        "recordDisplayFields" : [ ],
+        "conditionalFormatting" : {
+          "chartColor" : {
+            "referenceField" : "Realization",
+            "type" : "multiple",
+            "parameters" : {
+              "bins" : [
+                {
+                  "formatValue" : "linear-gradient(to bottom, #0D34B6, #0D34B6)",
+                  "bin" : "*"
+                },
+                {
+                  "formatValue" : "linear-gradient(to bottom, #237FDF, #0B87F8)",
+                  "bin" : "0"
+                }
+              ]
+            }
+          }
+        },
+        "salesforceActions" : [ ],
+        "field" : "Agreement_revenue_re_1.ALL",
+        "members" : [ ],
+        "customActions" : [ ]
+      }
+    ]
+  },
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [ ],
+    "gridLayouts" : [
+      {
+        "name" : "Default",
+        "numColumns" : 40,
+        "pages" : [
+          {
+            "label" : "Untitled",
+            "name" : "8cbf1d96-01ab-46ea-bad8-947eabdb966d",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 40,
+                "column" : 0,
+                "name" : "container_1",
+                "row" : 0,
+                "rowspan" : 10,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 16,
+                "column" : 0,
+                "name" : "text_1",
+                "row" : 2,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 28,
+                "column" : 0,
+                "name" : "chart_1",
+                "row" : 4,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 28,
+                "name" : "number_1",
+                "row" : 3,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [
+          "minWidth(450)",
+          "maxWidth(520)"
+        ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#F2F6FA",
+          "cellSpacingX" : 4,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#C5D3E0"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "Agreement_revenue_re_1" : {
+        "broadcastFacet" : true,
+        "groups" : [
+          "SalesAgreementProduct.SalesAgreementId"
+        ],
+        "label" : "Agreement revenue realization",
+        "numbers" : [
+          "Planned Amount",
+          "Revenue",
+          "Revised Planned Amount",
+          "Planned Amount Till Date",
+          "Realization"
+        ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nresult = group q by ('SalesAgreementProduct.SalesAgreementId', 'Id');\nresult = foreach result generate q.'SalesAgreementProduct.SalesAgreementId' as 'SalesAgreementProduct.SalesAgreementId', q.'Id' as 'Id', sum(q.'DerivedPlannedAmount') as 'A', sum(q.'DerivedActualAmount') as 'B', case when first('isValidProductSchedule') == \"true\" then daysBetween(toDate(min(q.'StartDate_sec_epoch')), toDate(min(q.'ActualEndDate_sec_epoch'))) + 1 else 0 end as 'D', case when date_to_epoch(now()) < min(q.'ActualEndDate_sec_epoch') &&  date_to_epoch(now()) > min(q.'StartDate_sec_epoch') then daysBetween(toDate(min(q.'StartDate_sec_epoch')), now()) + 1 when date_to_epoch(now()) > min(q.'StartDate_sec_epoch') then daysBetween(toDate(min(q.'StartDate_sec_epoch')), toDate(min(q.'ActualEndDate_sec_epoch'))) + 1 else 0 end as 'G', min(q.'PlannedDailyAmount') as 'E';\nresult = foreach result generate 'SalesAgreementProduct.SalesAgreementId', 'Id', 'A', 'B', 'D', 'E', B/A as 'C', D * E as 'F', E * G as 'H';\nresult = order result by ('SalesAgreementProduct.SalesAgreementId' asc, 'Id' asc);\nresult = group result by 'SalesAgreementProduct.SalesAgreementId';\nresult = foreach result generate 'SalesAgreementProduct.SalesAgreementId' as 'SalesAgreementProduct.SalesAgreementId', sum('A') as 'Planned Amount', sum('B') as 'Revenue', coalesce(sum('F'),sum('A')) as 'Revised Planned Amount', coalesce(sum('H'),sum('A')) as 'Planned Amount Till Date', round(sum('B')/sum('A'),2) as 'Realization'; \nresult = limit result 1;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [
+          "SalesAgreementProduct.SalesAgreementId"
+        ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "max" : 100,
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "flatgauge",
+            "medium" : 33,
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                150,
+                80
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "colors" : {
+              "mediumColor2" : "#F29946",
+              "mediumColor1" : "#FED444",
+              "lowColor1" : "#F71979",
+              "lowColor2" : "#CC203D",
+              "highColor1" : "#7BDE4E",
+              "highColor2" : "#169913"
+            },
+            "high" : 66,
+            "min" : 0,
+            "showActionMenu" : true,
+            "valueType" : "compactNumber",
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "#FFFFFF",
+      "borderColor" : "#E6ECF2",
+      "borderEdges" : [ ],
+      "borderRadius" : 0,
+      "borderWidth" : 1
+    },
+    "widgets" : {
+      "container_1" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "number_1" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : true,
+          "measureField" : "Realization",
+          "numberColor" : "#091A3E",
+          "numberSize" : 20,
+          "showActionMenu" : true,
+          "step" : "Agreement_revenue_re_1",
+          "textAlignment" : "left",
+          "title" : "",
+          "titleColor" : "#091A3E",
+          "titleSize" : 16
+        },
+        "type" : "number"
+      },
+      "text_1" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "Revenue Realization",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "chart_1" : {
+        "parameters" : {
+          "max" : "{{coalesce(cell(Agreement_revenue_re_1.result,0,\"Planned Amount\"),0).asObject()}}",
+          "legend" : {
+            "showHeader" : true,
+            "show" : false,
+            "position" : "right-top",
+            "inside" : false
+          },
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : [
+              "Revenue"
+            ],
+            "showNullValues" : true,
+            "showPercentage" : false,
+            "customText" : "[Realization] of  [Planned Amount]",
+            "showDimensions" : false,
+            "showMeasures" : true,
+            "customizeTooltip" : true,
+            "dimensions" : [
+              "SalesAgreementProduct.SalesAgreementId"
+            ]
+          },
+          "visualizationType" : "flatgauge",
+          "exploreLink" : false,
+          "medium" : 33,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              150,
+              80
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "colors" : {
+            "mediumColor2" : "#F29946",
+            "mediumColor1" : "#FED444",
+            "lowColor1" : "#F71979",
+            "lowColor2" : "#CC203D",
+            "highColor1" : "#7BDE4E",
+            "highColor2" : "#169913"
+          },
+          "high" : 66,
+          "columnMap" : {
+            "trellis" : [ ],
+            "plots" : [
+              "Revenue"
+            ]
+          },
+          "showActionMenu" : false,
+          "min" : 0,
+          "valueType" : "compactNumber",
+          "theme" : "wave",
+          "step" : "Agreement_revenue_re_1",
+          "referenceLines" : [
+            {
+              "color" : "#00A0E0",
+              "label" : "Planned Amount Till Date",
+              "value" : "{{coalesce(cell(Agreement_revenue_re_1.result,0,\"Planned Amount Till Date\"),0).asObject()}}"
+            }
+          ],
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      }
+    }
+  }
+}

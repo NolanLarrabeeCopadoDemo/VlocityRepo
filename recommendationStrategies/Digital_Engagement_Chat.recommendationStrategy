@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>LiveChatTranscript</contextRecordType>
+    <description>Recommendations for Chat conversations</description>
+    <label>Digital Engagement - Chat</label>
+    <recommendationLoad>
+        <label>Load Seasonal Tips</label>
+        <name>Load_Seasonal_Tips</name>
+        <condition>
+            <field>Recommendation.Name</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Seasonal</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Load Battery Backup</label>
+        <name>Load_Battery_Backup</name>
+        <condition>
+            <field>Recommendation.Name</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Battery</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Load Discounts</label>
+        <name>Load_Discounts</name>
+        <condition>
+            <field>Recommendation.Name</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>25% Discount</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Load_Seasonal_Tips</childNode>
+        <childNode>Load_Battery_Backup</childNode>
+        <childNode>Load_Discounts</childNode>
+        <label>Output</label>
+        <name>Output_d53e947f6ea2447c840b19ad75e1df86</name>
+    </union>
+</RecommendationStrategy>

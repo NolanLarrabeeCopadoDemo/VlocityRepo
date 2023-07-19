@@ -1,0 +1,13 @@
+<html><head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{Recipient.FirstName}}}<br />
+<br />
+I hope all is well! Just wanted to follow-up on the quote we sent over previously and see if you had any questions or updates you can pass my way.<br />
+<br />
+Thanks in advance. I look forward to speaking with you again soon!<br />
+<br />
+Best Regards,<br />
+{{{Sender.Name}}}<br />
+{{{Sender.Email}}}
+</body></html>

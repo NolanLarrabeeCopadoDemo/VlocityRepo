@@ -1,0 +1,41 @@
+{
+    "bundleName": "loadRebateProgramAndTypesAndProducts",
+    "objectList": {
+        "RebateProgram": {
+            "RPEndDate": "2022-09-30",
+            "RPFrequency": "Monthly",
+            "RPName": "z",
+            "RPPayoutCalcDays": 1,
+            "RPStartDate": "2022-09-01",
+            "RPStatus": "Draft",
+            "RPTXGraceDays": 1
+        },
+        "RebateType": {
+            "RebateTypeBlock": {
+                "ProductSelection": {
+                    "ProductLookUp": "01t4x000006gnG2AAI"
+                },
+                "RTAccrualRate": 4,
+                "RTAggregateObjectName": "RebateMemberProductAggregate",
+                "RTBaselineAmount": 2,
+                "RTBenefitQualifierField": "GrowthAmount",
+                "RTCalculationDefinition": "9N14x000000kBwVCAU",
+                "RTCalculationMethod": "Retrospective",
+                "RTCalculationType": "AggregateBased",
+                "RTIsIntegratable": true,
+                "RTMeasureField": "GrowthAmount",
+                "RTName": "abc",
+                "RTProductFilterType": "IncludeProducts",
+                "RTRebateMeasureType": "AmountperUnit",
+                "RTStatus": "Active"
+            }
+        },
+        "timeStamp": "2022-09-22T17:24:24.647Z",
+        "userCurrencyCode": "USD",
+        "userId": "0054x000007GMHZAA4",
+        "userName": "admin@mfg-091222.demo",
+        "userProfile": "System Administrator",
+        "userTimeZone": "-420",
+        "userTimeZoneName": "America/Los_Angeles"
+    }
+}

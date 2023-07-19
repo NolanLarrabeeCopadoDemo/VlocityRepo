@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Accessories</masterLabel>
+        <translation><!-- Accessories --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Attachments</masterLabel>
+        <translation><!-- Attachments --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Batteries</masterLabel>
+        <translation><!-- Batteries --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Battery Tools</masterLabel>
+        <translation><!-- Battery Tools --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bits</masterLabel>
+        <translation><!-- Bits --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chemicals</masterLabel>
+        <translation><!-- Chemicals --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directional Drilling Equipment</masterLabel>
+        <translation><!-- Directional Drilling Equipment --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Drilling Motors</masterLabel>
+        <translation><!-- Drilling Motors --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Engine Oils</masterLabel>
+        <translation><!-- Engine Oils --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Equipment</masterLabel>
+        <translation><!-- Equipment --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gear Oils</masterLabel>
+        <translation><!-- Gear Oils --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Greases</masterLabel>
+        <translation><!-- Greases --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gyro Survey</masterLabel>
+        <translation><!-- Gyro Survey --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kits</masterLabel>
+        <translation><!-- Kits --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Maintenance</masterLabel>
+        <translation><!-- Maintenance --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Materials</masterLabel>
+        <translation><!-- Materials --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mobilization</masterLabel>
+        <translation><!-- Mobilization --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oil, Gas and Energy</masterLabel>
+        <translation><!-- Oil, Gas and Energy --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Parts</masterLabel>
+        <translation><!-- Parts --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Personnel</masterLabel>
+        <translation><!-- Personnel --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pharmaceutical</masterLabel>
+        <translation><!-- Pharmaceutical --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Plastics</masterLabel>
+        <translation><!-- Plastics --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Process Manufacturing</masterLabel>
+        <translation><!-- Process Manufacturing --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Product</masterLabel>
+        <translation>Produit</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Professional Services</masterLabel>
+        <translation><!-- Professional Services --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Service</masterLabel>
+        <translation>Service</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Services</masterLabel>
+        <translation><!-- Services --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Software Licenses</masterLabel>
+        <translation><!-- Software Licenses --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Synthetics</masterLabel>
+        <translation><!-- Synthetics --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Turbines</masterLabel>
+        <translation><!-- Turbines --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,145 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="GLOBAL" controller="CampaignPendingApprovalsCtrl">
+    <aura:attribute name="modOpen" type="boolean" default="false"/>
+    <aura:attribute name="campaignId" type="Id" />
+    <aura:attribute name="memberList" type="List" />
+    <aura:attribute name="approvedMemberList" type="List"/>
+    <aura:attribute name="totalAddedMembers" type="integer" default="0"/>
+    <aura:attribute name="selectedCount" type="integer" default="0"/>
+    <aura:attribute name="campaignMsgApp" type="Campaign_Message__c"/>
+    <aura:attribute name="campaignMsgRej" type="Campaign_Message__c"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.loadContactList}"/>
+    
+    <!--Campaign pending approvals header action area-->
+    <div class="slds-page-header">
+        <div class="slds-grid">
+            <div class="slds-col slds-has-flexi-truncate">
+                <div class="slds-media slds-no-space slds-grow">
+                    <div class="slds-media__body">
+                        <h1 class="slds-page-header__title slds-p-right_x-small">
+                            <button class="slds-button slds-button_reset slds-type-focus slds-truncate" aria-haspopup="true" title="">
+                                <span class="slds-grid slds-has-flexi-truncate slds-grid_vertical-align-center">
+                                    <span class="slds-truncate" title="Recently Viewed">Pending Approvals</span>
+                                </span>
+                            </button>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-no-flex slds-grid slds-align-top slds-p-bottom_xx-small">
+                <div class="slds-button-group" role="group">
+                    <p style="margin-right: 15px">{!v.campaignMsgApp.Approved_Members__c} Approved * {!v.campaignMsgRej.Rejected_Members__c} Rejected</p>
+                    <button class="slds-button slds-button_brand" onclick="{!c.submitMembers}">Submit Members</button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-grid">
+            <div class="slds-col slds-align-middle">
+                <p class="slds-text-body_small">{!v.totalAddedMembers} Members * {!v.selectedCount} Members Selected</p>
+            </div>
+            <div class="slds-col slds-no-flex slds-grid slds-align-bottom">
+                <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-m-left_x-small">
+                    <div class="slds-button-group" role="group">
+                        <button class="slds-button slds-button_neutral" onclick="{!c.approveSelected}"><lightning:icon iconName="utility:check" size="xx-small"/> Approve</button>
+                        <button class="slds-button slds-button_neutral" onclick="{!c.rejectSelected}"><lightning:icon iconName="utility:close" size="xx-small"/> Reject</button>
+                        <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-button_last">
+                            <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Show More">
+                                <lightning:icon iconName="utility:down" size="xx-small"/>
+                                <span class="slds-assistive-text">Show More</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="slds-button slds-button_neutral" onclick="{!c.openPersonalizeModal}">Personalize Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--All the members added to this campaign-->
+    <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+        <thead>
+            <tr class="slds-text-title--caps">
+                <th style="width:3.25rem;" class="slds-text-align--right">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <label class="slds-checkbox">
+                                <!--header checkbox for select all-->
+                                <ui:inputCheckbox aura:id="box3" change="{!c.selectAll}"/>
+                                <span class="slds-checkbox--faux"></span>
+                                <span class="slds-form-element__label text"></span>
+                            </label>
+                        </div>
+                    </div>
+                </th>
+                <th>
+                    <span class="slds-truncate" title="Name">Name</span>      
+                </th>
+                <th>
+                    <span class="slds-truncate" title="Status">Status</span>
+                </th>
+                <th>       
+                    <span class="slds-truncate" title="Personalization">Personalization</span>
+                </th>
+                <th >
+                    <div class="slds-truncate" title="Greeting">Greeting</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.memberList}" var="member">
+                <tr>
+                    <td scope="row" class="slds-text-align--right" style="width:3.25rem;">
+                        <div class="slds-form-element">
+                            <div class="slds-form-element__control">
+                                <label class="slds-checkbox">
+                                    <ui:inputCheckbox text="{!member.memberId}" aura:id="selRecord" value="" change="{!c.checkboxSelect}"/>
+                                    <span class="slds-checkbox--faux"></span>
+                                    <span class="slds-form-element__label text"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <div class="slds-truncate" title="{!member.Name}"><a href="{!'/one/one.app?#/sObject/'+ member.memberId + '/view'}">{!member.Name}</a></div>
+                    </td>
+                    <td scope="row">
+                        <div class="slds-truncate" title="{!member.Status}">{!member.Status}</div>
+                    </td>
+                    <td scope="row">
+                        <div class="slds-truncate" title=""></div>
+                    </td>
+                    <td scope="row">
+                        <div class="slds-truncate" title=""></div>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    
+    <!--Modal for Personalizing email bases on Member-->
+    <div class="slds-m-around__xx-small">
+        <aura:if isTrue="{!v.modOpen}">
+            <div role="dialog" class="slds-modal slds-fade-in-open ">
+                <div class="slds-modal__container" style="z-index: 1000;">
+                    <div class="slds-modal__header">
+                        <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closePersonalizeModal}">
+                            X
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 class="slds-text-heading__medium">Personalize Messages</h2>
+                    </div>
+                    <div class="slds-modal__content slds-p-around_xx-small">
+                        <!--Calling Personalization component based on a user-->
+						<c:CampaignPersonalizationForUser campaignId="{!v.campaignId}" approvedMemberList="{!v.memberList}"/>
+                    </div>
+                    <div class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick="{!c.closePersonalizeModal}" >Cancel</button>
+                        <button class="slds-button slds-button_brand" onclick="{!c.savePersonalization}">Save and Close</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop--open"></div>
+        </aura:if>
+    </div>
+</aura:component>

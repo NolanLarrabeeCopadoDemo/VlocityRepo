@@ -1,0 +1,69 @@
+[
+    {
+        "FormulaExpression": "LIST(estimatedProducts:ProductsInCart:summaryproducts:ep)",
+        "FormulaResultPath": "summarypage",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTFCopyProdSummaryToEstimateCustom0jI8Y000000005kUAAItem0",
+        "IsDisabled": true,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DRTFCopyProdSummaryToEstimate",
+        "OmniDataTransformationId": {
+            "Name": "DRTFCopyProdSummaryToEstimate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFCopyProdSummaryToEstimate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"Product2Id\",LIST(summaryproducts:ep),LIST(estimatedProducts:ProductsInCart:summaryproducts:ep))",
+        "FormulaResultPath": "summarypage",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRTFCopyProdSummaryToEstimateCustom0jI8Y000000005kUAAItem1",
+        "IsDisabled": true,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DRTFCopyProdSummaryToEstimate",
+        "OmniDataTransformationId": {
+            "Name": "DRTFCopyProdSummaryToEstimate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFCopyProdSummaryToEstimate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTFCopyProdSummaryToEstimateCustom0jI8Y000000005kUAAItem2",
+        "InputFieldName": "estimatedProducts:ProductsInCart:summaryproducts:ep",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DRTFCopyProdSummaryToEstimate",
+        "OmniDataTransformationId": {
+            "Name": "DRTFCopyProdSummaryToEstimate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFCopyProdSummaryToEstimate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "summaryproducts:ep",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

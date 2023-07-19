@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <interviewLabel>Update Quote Fields with Account Fields (Segments) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Quote Fields with Account Fields (Segments)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Quote_Fields</name>
+        <label>Update Quote Fields</label>
+        <locationX>512</locationX>
+        <locationY>135</locationY>
+        <inputAssignments>
+            <field>Commercial_Segment__c</field>
+            <value>
+                <elementReference>$Record.Commercial_Segment__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Industry_Segment__c</field>
+            <value>
+                <elementReference>$Record.Industry_Segment__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Update_Quote_Fields</targetReference>
+        </connector>
+        <object>SBQQ__Quote__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

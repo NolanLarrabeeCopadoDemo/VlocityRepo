@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>Document_Type__c</name>
+        <picklistValues>
+            <masterLabel>Audio</masterLabel>
+            <translation>Áudio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case study</masterLabel>
+            <translation>Estudo de Caso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitive analysis</masterLabel>
+            <translation>Análise Competitiva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firmware</masterLabel>
+            <translation>Firmware</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image</masterLabel>
+            <translation>Imagem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation>Legal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Outro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product collateral</masterLabel>
+            <translation>Garantia de Produto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product manual</masterLabel>
+            <translation>Manual de Produto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public relations</masterLabel>
+            <translation>Relações Públicas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales presentation</masterLabel>
+            <translation>Apresentação de Vendas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation>Treinamento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation>Vídeo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White paper</masterLabel>
+            <translation>White Paper</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External-Approved --></label>
+        <name>External_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- External_ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Campaign --></label>
+        <name>Related_Campaign__c</name>
+        <relationshipLabel>Conteúdo</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Review Date --></label>
+        <name>Review_Date__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Marketing Document --></label>
+        <name>MarketingDocument</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Asset --></label>
+        <name>SalesAsset</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Support Document --></label>
+        <name>SupportDocument</name>
+    </recordTypes>
+</CustomObjectTranslation>

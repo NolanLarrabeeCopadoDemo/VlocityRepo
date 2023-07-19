@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Base permissions required for key MFG, Loyalty, Rebates, Analytics, FSL, and Commerce capabilities.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PRM: Base Permissions</label>
+    <permissionSets>CPQ_Community_Access</permissionSets>
+    <permissionSets>Code_Snippets_Community_Permission_Set</permissionSets>
+    <permissionSets>Community_Delegated_Administrator</permissionSets>
+    <permissionSets>Create_Custom_Badges</permissionSets>
+    <permissionSets>DV_PAA__Partner_Adoption_Information_Permission</permissionSets>
+    <permissionSets>FSL_Agent_Community_Permissions_V_2</permissionSets>
+    <permissionSets>FSL_Agent_Customer_Community_Permissions</permissionSets>
+    <permissionSets>FSL_Community_Dispatcher_License</permissionSets>
+    <permissionSets>FSL_Dispatcher_Community_Permissions</permissionSets>
+    <permissionSets>FSL_Dispatcher_License</permissionSets>
+    <permissionSets>FSL_Resource_Community_Permissions</permissionSets>
+    <permissionSets>FSL_Resource_License</permissionSets>
+    <permissionSets>FSL_SDO_Permission_Sets</permissionSets>
+    <permissionSets>Flow_User</permissionSets>
+    <permissionSets>Loyalty_B2B_Partner_Community_Permset</permissionSets>
+    <permissionSets>MFG_Service_OmniStudio_Community_Users</permissionSets>
+    <permissionSets>SBQQ__SteelBrickCPQCustomerUser</permissionSets>
+    <permissionSets>View_Einstein_Discovery_in_Communities</permissionSets>
+    <permissionSets>View_Wave_Analytics_on_Communities_Pages</permissionSets>
+    <permissionSets>et4ae5__Marketing_Cloud_Connector_Partner_Community_User</permissionSets>
+    <permissionSets>force__ManufacturingAdvAccForecastForCmtyPsl</permissionSets>
+    <permissionSets>force__ManufacturingSalesAgreementsForCmtyPsl</permissionSets>
+    <permissionSets>force__RebateManagementExpCloudPsl</permissionSets>
+    <permissionSets>ltui__LearnTrac_Lightning_UI_User</permissionSets>
+    <permissionSets>pi__Sales_Edge</permissionSets>
+    <permissionSets>redwing__LMS_External_User</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

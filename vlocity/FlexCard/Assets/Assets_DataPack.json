@@ -1,0 +1,44 @@
+{
+    "AuthorName": "SalesforceDemo",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 1,
+                "name": "User.userAccountId",
+                "val": "0010M00001MxBj4QAF"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "getAssetfromAccount",
+            "bundleType": "",
+            "dsDelay": "",
+            "inputMap": {
+                "AccountId": "{User.userAccountId}"
+            },
+            "resultVar": ""
+        }
+    },
+    "Description": "",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "Assets",
+    "Namespace": "",
+    "OmniUiCardKey": "Assets/SalesforceDemo/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "Assets.json",
+    "SampleDataSourceResponse": "[{\"AssetName\":\"Open Trailer\",\"AssetId\":\"02i0M000008bkUrQAI\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"OPT-3894765\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"D6K2 Tractor\",\"AssetId\":\"02i0M000008bkTaQAI\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"BPS-LSS1144YYUU\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVL&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"414LP Primary Skid Steer, KAA\",\"AssetId\":\"02i0M000008bkTZQAY\",\"InstallDate\":\"2014-08-22\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"BPS-LSS1122890\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVK&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Closed Concept Trailer\",\"AssetId\":\"02i0M000008bkUyQAI\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"BP-200420072013\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Cab Enclosure with Sound and Heater\",\"AssetId\":\"02i0M000008bkUzQAI\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"BP-CAB7788JK\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"CX Medium Excavator\",\"AssetId\":\"02i0M000008bkcnQAA\",\"InstallDate\":\"2019-07-30\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"BPSSL408-XDR-9988\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"730 Articulated Truck\",\"AssetId\":\"02i0M000008bkcoQAA\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"BPS-LSS7788990\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVL&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Full Size Excavator\",\"AssetId\":\"02i0M000008bkcpQAA\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"BPS-SDFGG7788\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"442LP KAA Skid Steer Loader\",\"AssetId\":\"02i0M000008bkcqQAA\",\"PurchaseDate\":\"2021-09-27\",\"SerialNumber\":\"BPS422LDS8890\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Generator\",\"AssetId\":\"02i0M000008bkU7QAI\",\"PurchaseDate\":\"2021-01-15\",\"SerialNumber\":\"C-PR-00126\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"426LP KAA Skid Steer Loader #2\",\"AssetId\":\"02i0M000008bkTjQAI\",\"PurchaseDate\":\"2021-01-15\",\"SerialNumber\":\"C-EB-76488\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Diesel Fuel Filter - Tiered Pricing\",\"AssetId\":\"02i3y00000KQLixAAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Performance Plus Fuel Injection Pump\",\"AssetId\":\"02i3y00000KQLj5AAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Quick Hydraulic Coupler\",\"AssetId\":\"02i3y00000KQLj4AAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Crankshaft\",\"AssetId\":\"02i3y00000KQLj3AAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Upgraded Air Filter\",\"AssetId\":\"02i3y00000KQLj2AAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Piston Head\",\"AssetId\":\"02i3y00000KQLj1AAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Flywheel\",\"AssetId\":\"02i3y00000KQLj0AAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Axle\",\"AssetId\":\"02i3y00000KQLizAAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"},{\"AssetName\":\"Badger Parts Dynamic Kit\",\"AssetId\":\"02i3y00000KQLiyAAH\",\"PurchaseDate\":\"2020-09-15\",\"Warranty\":\"<img src=\\\"/servlet/servlet.ImageServer?id=0150M000003YeVJ&amp;oid=00D0M000001quUM\\\" alt=\\\"Active Contract?\\\" style=\\\"height:24px; width:24px;\\\" border=\\\"0\\\"/>\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "Assets_SalesforceDemo_1",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/Assets"
+}

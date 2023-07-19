@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Points awarded from the account activities of this type will expire --></help>
+        <label><!-- Automatic Expiry --></label>
+        <name>DV_PAA__Automatic_Expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Icon URL --></label>
+        <name>DV_PAA__Category_Icon_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Icon --></label>
+        <name>DV_PAA__Category_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>DV_PAA__Category__c</name>
+        <picklistValues>
+            <masterLabel>Certification</masterLabel>
+            <translation><!-- Certification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conference</masterLabel>
+            <translation><!-- Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>DV_PAA__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many days do points from this activity type expires --></help>
+        <label><!-- Expiry Period (Days) --></label>
+        <name>DV_PAA__Expiry_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the default amount gained from an Activity. Different point values can be assigned to specific programs and levels through the Program Level Activity Point Association related list --></help>
+        <label><!-- Points --></label>
+        <name>DV_PAA__Points__c</name>
+    </fields>
+    <fields>
+        <help><!-- Valid from this date --></help>
+        <label><!-- Valid From --></label>
+        <name>DV_PAA__Valid_From__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any activities of this type after the &quot;Valid Until&quot; date will not have any points. If you don&apos;t wish to have a &quot;Valid Until&quot; date simply leave this field empty --></help>
+        <label><!-- Valid Until --></label>
+        <name>DV_PAA__Valid_Until__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- You have to input a valid expiry period when this activity is an automatic expiry type --></errorMessage>
+        <name>DV_PAA__Expiry_Period_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

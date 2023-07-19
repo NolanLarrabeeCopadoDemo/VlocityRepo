@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>ED_Members_Activity</dataset>
+    <dimensions>
+        <field>MemberTenure</field>
+        <isDerived>false</isDerived>
+        <label>Membership Duration</label>
+        <members>
+            <label>&lt; 1 month</label>
+            <member>1.&lt; 1 month</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>1-3 months</label>
+            <member>2.1-3 months</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>3-6 months</label>
+            <member>3.3-6 months</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>6-9 months</label>
+            <member>4.6-9 months</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>9-12 months</label>
+            <member>5.9-12 months</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <members>
+            <label>1-2 years</label>
+            <member>6.1-2 years</member>
+            <sortIndex>5</sortIndex>
+        </members>
+        <members>
+            <label>2-5 years</label>
+            <member>7.2-5 years</member>
+            <sortIndex>6</sortIndex>
+        </members>
+        <members>
+            <label>5+ years</label>
+            <member>8.5+ years</member>
+            <sortIndex>7</sortIndex>
+        </members>
+        <members>
+            <label>NA</label>
+            <member>9.NA</member>
+            <sortIndex>8</sortIndex>
+        </members>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>MemberName</field>
+        <isDerived>false</isDerived>
+        <label>Member</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordDisplayFields>
+            <recordDisplayField>MemberTier.TierGroup.Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordDisplayFields>
+            <recordDisplayField>MemberTier.Name</recordDisplayField>
+            <sortIndex>1</sortIndex>
+        </recordDisplayFields>
+        <recordDisplayFields>
+            <recordDisplayField>Id</recordDisplayField>
+            <sortIndex>2</sortIndex>
+        </recordDisplayFields>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>true</salesforceActionsEnabled>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>MemberTier.TierGroup.Name</field>
+        <isDerived>false</isDerived>
+        <label>Tier Group</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>MemberTier.Name</field>
+        <isDerived>false</isDerived>
+        <label>Tier Name</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Contact_MailingState</field>
+        <isDerived>false</isDerived>
+        <label>Mailing State/Province</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Contact_MailingCity</field>
+        <isDerived>false</isDerived>
+        <label>Mailing City</label>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>IsAReferral</field>
+        <isDerived>false</isDerived>
+        <label>Is a Referral</label>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Contact_City_State</field>
+        <isDerived>false</isDerived>
+        <label>State/Province &amp; City</label>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <measures>
+        <field>MemberCurrency.PointsBalance</field>
+        <isDerived>false</isDerived>
+        <label>Points Balance</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>unique_Id</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>true</isDerived>
+        <label>Members</label>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>MemberCurrency.Ledger.Current_Accrued_Points</field>
+        <isDerived>false</isDerived>
+        <label>Points Accrued</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>avg_Engagement_Score</field>
+        <formatCustomFormat>[&quot;#,###&quot;,1]</formatCustomFormat>
+        <isDerived>true</isDerived>
+        <label>Average Score</label>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>MemberCurrency.Ledger.Current_Redeemed_Points</field>
+        <isDerived>false</isDerived>
+        <label>Points Redeemed</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>MemberCurrency.Ledger.Previous_Expired_Points</field>
+        <isDerived>false</isDerived>
+        <label>NQP Expired in Prev Period</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>DaysSinceLastActivity</field>
+        <isDerived>false</isDerived>
+        <label>Days Since Last Transaction</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Transactions.Accrual_Transactions_Current_Period</field>
+        <isDerived>false</isDerived>
+        <label>Accruals</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>Transactions.Redemption_Transactions_Current_Period</field>
+        <isDerived>false</isDerived>
+        <label>Redemptions</label>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>MemberCurrency.Ledger.Current_Expired_Points</field>
+        <isDerived>false</isDerived>
+        <label>Points Expired</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>Transactions.Transaction_Amount_Current_Period</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Transaction Amount</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>Referred.Member_Count</field>
+        <isDerived>false</isDerived>
+        <label>Members Referred</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>Contact_Age</field>
+        <isDerived>false</isDerived>
+        <label>Age</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>Transactions.Transactions_all</field>
+        <isDerived>false</isDerived>
+        <label>Lifetime Transactions</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>Transactions.Transaction_Amount_all</field>
+        <isDerived>false</isDerived>
+        <label>Lifetime Transaction Amount</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>Current_Transaction_Frequency</field>
+        <isDerived>false</isDerived>
+        <label>Average Time Between Accrual or Redemption Transactions</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>Transactions.Accrual_Transactions_Previous_Period</field>
+        <isDerived>false</isDerived>
+        <label>Accruals in Prev Period</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>Transactions.Redemption_Transactions_Previous_Period</field>
+        <isDerived>false</isDerived>
+        <label>Redemptions in Prev Period</label>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <measures>
+        <field>Transactions.Transaction_Amount_Previous_Period</field>
+        <isDerived>false</isDerived>
+        <label>Transaction Amt in Prev Period</label>
+        <sortIndex>16</sortIndex>
+    </measures>
+    <measures>
+        <field>MemberCurrency.Ledger.Previous_Accrued_Points</field>
+        <isDerived>false</isDerived>
+        <label>NQP Accrued in Prev Period</label>
+        <sortIndex>17</sortIndex>
+    </measures>
+    <measures>
+        <field>MemberCurrency.Ledger.Previous_Redeemed_Points</field>
+        <isDerived>false</isDerived>
+        <label>NQP Redeemed in Prev Period</label>
+        <sortIndex>18</sortIndex>
+    </measures>
+    <measures>
+        <field>Previous_Transaction_Frequency</field>
+        <isDerived>false</isDerived>
+        <label>Average Time Between Accrual or Redemption Transactions – Pr</label>
+        <sortIndex>19</sortIndex>
+    </measures>
+    <measures>
+        <field>Months_in_Tier</field>
+        <isDerived>false</isDerived>
+        <label>Months in Tier</label>
+        <sortIndex>20</sortIndex>
+    </measures>
+    <measures>
+        <field>Latest_NPS</field>
+        <isDerived>false</isDerived>
+        <label>Latest NPS</label>
+        <sortIndex>21</sortIndex>
+    </measures>
+    <measures>
+        <field>NPS</field>
+        <isDerived>false</isDerived>
+        <label>Overall NPS</label>
+        <sortIndex>22</sortIndex>
+    </measures>
+    <measures>
+        <field>Latest_CSAT</field>
+        <isDerived>false</isDerived>
+        <label>Latest CSAT Score</label>
+        <sortIndex>23</sortIndex>
+    </measures>
+    <measures>
+        <field>CSAT</field>
+        <isDerived>false</isDerived>
+        <label>Avg CSAT Score</label>
+        <sortIndex>24</sortIndex>
+    </measures>
+</WaveXmd>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>mcsocsel10__Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Next Gen Social Insights Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Social Insights Setting</label>
+    <pluralLabel>SocialInsightsSettings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

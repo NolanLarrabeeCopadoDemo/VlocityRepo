@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionTable xmlns="http://soap.sforce.com/2006/04/metadata">
+    <conditionType>All</conditionType>
+    <decisionTableParameters>
+        <fieldName>PartnershipYears__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>GreaterOrEqual</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>BrandingPercentage__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>GreaterOrEqual</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>SalesAcrossAllChannel__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>GreaterOrEqual</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>QuarterlyConferenceAttended__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>GreaterOrEqual</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>TeamTrainedPercentage__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>GreaterOrEqual</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>SequenceNumber__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <usage>OUTPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>LoyaltyTierName__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <usage>OUTPUT</usage>
+    </decisionTableParameters>
+    <description>Evaluate the target member tier eligibility for loyalty program members based on tier assessment rules.</description>
+    <setupName>Evaluate Target Member Tier</setupName>
+    <sourceObject>TierAssessmentRule__c</sourceObject>
+    <status>Active</status>
+</DecisionTable>

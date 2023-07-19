@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>CC-Auftragsposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>CC-Auftragspositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>CC-Auftragsposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>CC-Auftragspositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>CC-Auftragsposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>CC-Auftragspositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>CC-Auftragsposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>CC-Auftragspositionen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Download url --></label>
+        <name>DownloadUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- MediaSource --></label>
+        <name>MediaSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU --></label>
+        <name>SKU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thumbnail Path --></label>
+        <name>ThumbnailPath__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absolute Discount --></label>
+        <name>ccrz__AbsoluteDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Amount --></label>
+        <name>ccrz__AdjustmentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Message --></label>
+        <name>ccrz__AvailabilityMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>ccrz__Category__c</name>
+        <relationshipLabel><!-- Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>ccrz__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coupon --></label>
+        <name>ccrz__Coupon__c</name>
+        <relationshipLabel><!-- Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Display Product --></label>
+        <name>ccrz__DisplayProduct__c</name>
+        <relationshipLabel><!-- CC Order Items (Display Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Name --></label>
+        <name>ccrz__ExtName__c</name>
+    </fields>
+    <fields>
+        <label><!-- External SKU --></label>
+        <name>ccrz__ExtSKU__c</name>
+    </fields>
+    <fields>
+        <help>Wert (TRUE oder FALSE), der angibt, ob es sich bei dieser Auftragsposition um ein Abonnement handelt oder nicht.</help>
+        <label><!-- Is Subscription --></label>
+        <name>ccrz__Is_Subscription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Label --></label>
+        <name>ccrz__ItemLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Status --></label>
+        <name>ccrz__ItemStatus__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation>Verfügbar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Order</masterLabel>
+            <translation>Vorbestellung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item Total --></label>
+        <name>ccrz__ItemTotal__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt, wann der nächste Auftrag für diese Auftragsposition erteilt wird, falls es sich bei dieser Auftragsposition tatsächlich um ein Abonnement handelt.</help>
+        <label><!-- Next Subscription Date --></label>
+        <name>ccrz__Next_Subscription_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Item Group --></label>
+        <name>ccrz__OrderItemGroup__c</name>
+        <relationshipLabel><!-- Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Item Id --></label>
+        <name>ccrz__OrderItemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Item Status --></label>
+        <name>ccrz__OrderItemStatus__c</name>
+        <picklistValues>
+            <masterLabel>Cancel Submitted</masterLabel>
+            <translation>Stornierung übermittelt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>Storniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation>In Bearbeitung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation>Zurückgestellt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Submitted</masterLabel>
+            <translation>Auftrag übermittelt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Shipped</masterLabel>
+            <translation>Teilversandt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return Submitted</masterLabel>
+            <translation>Retoure gesendet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned</masterLabel>
+            <translation>Retoure</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped</masterLabel>
+            <translation>Versandt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Line Type --></label>
+        <name>ccrz__OrderLineType__c</name>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation>Haupt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation>Neben</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>ccrz__Order__c</name>
+        <relationshipLabel><!-- Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Item Price --></label>
+        <name>ccrz__OriginalItemPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Quantity --></label>
+        <name>ccrz__OriginalQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Order Item --></label>
+        <name>ccrz__ParentOrderItem__c</name>
+        <relationshipLabel><!-- Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Product --></label>
+        <name>ccrz__ParentProduct__c</name>
+        <relationshipLabel><!-- Order Items (ParentProductID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent Discount --></label>
+        <name>ccrz__PercentDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>ccrz__Price__c</name>
+    </fields>
+    <fields>
+        <help>Durch Semikolon getrennte Liste von Modifizierungstypen, die den Preis dieser Auftragsposition beeinflussen.</help>
+        <label><!-- Pricing Modifier Types --></label>
+        <name>ccrz__PricingModifierTypes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Type --></label>
+        <name>ccrz__PricingType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Attribute --></label>
+        <name>ccrz__PrimaryAttr__c</name>
+        <relationshipLabel><!-- CC Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ProductType --></label>
+        <name>ccrz__ProductType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>ccrz__Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>ccrz__Product__c</name>
+        <relationshipLabel><!-- Order Items (ProductID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>ccrz__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Price Sub Amount --></label>
+        <name>ccrz__RecurringPriceSubAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Price --></label>
+        <name>ccrz__RecurringPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>ccrz__RequestDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Attribute --></label>
+        <name>ccrz__SecondaryAttr__c</name>
+        <relationshipLabel><!-- CC Order Items (Secondary Attribute) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Selected Attributes --></label>
+        <name>ccrz__SelectedAttr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller --></label>
+        <name>ccrz__Seller__c</name>
+        <relationshipLabel><!-- CC Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Split Source --></label>
+        <name>ccrz__SplitSource__c</name>
+        <relationshipLabel><!-- Split Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Store Id --></label>
+        <name>ccrz__StoreId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Amount --></label>
+        <name>ccrz__SubAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC SubProdTerm --></label>
+        <name>ccrz__SubProdTerm__c</name>
+        <relationshipLabel><!-- CC Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SubscriptionId --></label>
+        <name>ccrz__SubscriptionId__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt, ob ein Abonnement verlängert wird, wenn dessen Enddatum erreicht ist. Dieses Feld wird bei der ursprünglichen Auftragserteilung aus dem Feld Is_Subscription_Auto_Renewal des Produkts übernommen.</help>
+        <label><!-- Subscription Auto Renewal --></label>
+        <name>ccrz__Subscription_Auto_Renewal__c</name>
+    </fields>
+    <fields>
+        <help>Die Laufzeit dieses Abonnements in Monaten. Gilt nur für Auftragspositionen, die Abonnements sind.</help>
+        <label><!-- Subscription Duration --></label>
+        <name>ccrz__Subscription_Duration__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt, wann das Abonnement endet. Wenn dieses Abonnement auf &quot;Automatische Verlängerung&quot; festgelegt ist, wird das Enddatum des Abonnements entsprechend verlängert.</help>
+        <label><!-- Subscription End Date --></label>
+        <name>ccrz__Subscription_End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt, wie oft ein neuer Auftrag (in Monaten) erteilt wird, wenn es sich bei dieser Auftragsposition um ein Abonnement handelt.</help>
+        <label><!-- Subscription Frequency --></label>
+        <name>ccrz__Subscription_Frequency__c</name>
+    </fields>
+    <fields>
+        <help>Das Startdatum dieses Abonnements.</help>
+        <label><!-- Subscription Start Date --></label>
+        <name>ccrz__Subscription_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Der Status des Abonnements, wenn es sich bei dieser Auftragsposition um ein Abonnement handelt.</help>
+        <label><!-- Subscription Status --></label>
+        <name>ccrz__Subscription_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Aktiv</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>Storniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fehler</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lapsed</masterLabel>
+            <translation>Abgelaufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reordered</masterLabel>
+            <translation>Nachbestellt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tertiary Attribute --></label>
+        <name>ccrz__TertiaryAttr__c</name>
+        <relationshipLabel><!-- CC Order Items (Tertiary Attribute) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unit Of Measure --></label>
+        <name>ccrz__UnitOfMeasure__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>OrderItemAutoNumber</nameFieldLabel>
+</CustomObjectTranslation>

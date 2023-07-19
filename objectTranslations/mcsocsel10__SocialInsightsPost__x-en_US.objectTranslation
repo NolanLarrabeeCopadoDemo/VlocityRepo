@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Message --></label>
+        <name>mcsocsel10__Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Post Id --></label>
+        <name>mcsocsel10__ExternalPostId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Headline --></label>
+        <name>mcsocsel10__Headline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Studio Media Type --></label>
+        <name>mcsocsel10__MediaProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Studio Media Type Title --></label>
+        <name>mcsocsel10__MediaTypeTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Studio Media Provider --></label>
+        <name>mcsocsel10__MediaType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Post Persona Id --></label>
+        <name>mcsocsel10__ParentPersona__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Post Id --></label>
+        <name>mcsocsel10__ParentPost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Persona Id --></label>
+        <name>mcsocsel10__Persona__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plain Text Message --></label>
+        <name>mcsocsel10__PlainTextContent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Posted Date --></label>
+        <name>mcsocsel10__Posted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sentiment --></label>
+        <name>mcsocsel10__Sentiment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message Clipping --></label>
+        <name>mcsocsel10__TruncatedContent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message Clipping Plain Text --></label>
+        <name>mcsocsel10__TruncatedPlainTextContent__c</name>
+    </fields>
+</CustomObjectTranslation>

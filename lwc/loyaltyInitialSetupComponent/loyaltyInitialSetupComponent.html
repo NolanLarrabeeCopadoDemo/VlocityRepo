@@ -1,0 +1,201 @@
+<template>
+   
+    <lightning-card title="Set up Loyalty Management Manufacturing Industry Template">
+
+        <lightning-accordion allow-multiple-sections-open
+                         active-section-name={activeSections}>
+        <div style="margin-left:10px;">
+
+
+        <lightning-accordion-section name="importData" label="Import Data">
+            <p>Reference data is available for the Loyalty Management Industry Template for Manufacturing. You can import the sample data that is already available or import your own data. You can also choose to do both. </p>
+            <p style="margin-top:10px;"><lightning-icon size="x-small" icon-name="action:preview" alternative-text="Preview" title="Preview"></lightning-icon> Example: If you want to upload your own transaction journal entries, you can modify the data in the TransactionJournal file, and import the rest of the data as is.</p>
+            <p style="margin-top:5px;"><lightning-icon size="x-small" icon-name="action:new_note" alternative-text="New note" title="New note"></lightning-icon> Note: After the data is imported, there’s no provision to automatically delete the data. You can only delete the data manually. For details, see
+                <lightning-formatted-url value="https://help.salesforce.com/articleView?id=sf.data_deletion_loyalty.htm" label=" Data Deletion for Loyalty Management" tooltip="Data deletion" target="_blank"></lightning-formatted-url>.</p>
+
+            <h2>Import the Sample Data</h2>
+            <ol class="slds-m-top_small slds-list_ordered">
+                <li>Launch <lightning-formatted-url value="/lightning/n/Import_B2B_Manufacturing_Loyalty_Data" label="Import Wizard" tooltip="Import Wizard"></lightning-formatted-url>.</li>
+                <li>Choose how you want to import the data.</b></li>                
+                <ul class="slds-list_dotted slds-m-top_small">
+                    <li>If you want to import the sample loyalty data, in the <b>Import Sample Loyalty Data </b>section, click <b>Import</b>.</li>
+                    <li class="slds-m-top_small">If you want to import your own data.
+                        <ol class="slds-list_ordered">
+                            <li>Modify and save the CSV files.</li>
+                            <li>Select the CSV files to upload.</li>                                
+                            <li>Under <b>Import Your Loyalty Data</b>, click <b>Import.</b></li>
+                        </ol>
+                    </li>
+                </ul>
+            </ol>            
+        </lightning-accordion-section>
+        <lightning-accordion-section name="refreshDecisionTables" label="Refresh Decision Tables">
+            <p>After the data is imported, before you run the rules, you must refresh the out-of-the-box decision tables that are provided with the industry template. </p>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>Navigate to <lightning-formatted-url value="/lightning/setup/DecisionTables/home" label="Decision Tables" tooltip="Decision Tables" target="_blank"></lightning-formatted-url>.</p> </li></li>
+                <li>On the Decision Table Setup page, click each decision table to refresh.</li>
+                <li>Click <b>Refresh</b>.</li>        
+            </ol>
+        </lightning-accordion-section>       
+        <lightning-accordion-section name="runOrchestrationFlow" label="Run Orchestration Flow">
+            <p>To check out how the entire process is bound together, run the Partner Extraa Program Orchestration flow.</p>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>Navigate to <lightning-formatted-url value="/lightning/setup/Flows/home" label="Flows" tooltip="Flows" target="_blank"></lightning-formatted-url>.</li>
+                <li>On the All Flows page, click <b>Partner Extraa Program Orchestration Flow.</b></li>
+                <li>To schedule a triggered flow, click <b>Edit</b>, and select a time based on Pacific Standard Time (PST) settings.</li>
+                <li>Save the flow as a new version.</li>
+                <li>Click <b>Activate</b>.</li>
+            </ol>
+        </lightning-accordion-section>
+        
+
+    </div>
+    </lightning-accordion>
+    </lightning-card>
+    <div class="ltngCard">
+    <lightning-card title="Additional Setup">
+
+        <lightning-accordion allow-multiple-sections-open
+                         active-section-name={activeSections}>
+        <div style="margin-left:10px;">
+
+        <div style="margin-left: 8px;">You can enable end-to-end business scenarios with this template. Here's how.</div>
+
+        <lightning-accordion-section name="setupDigitalExperience" label="Setup Digital Experience">
+            <p>As an admin, you can customize the community portal for your loyalty members.    </p>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>Navigate to <lightning-formatted-url value="/lightning/setup/SetupNetworks/home" label="Digital Experience" tooltip="Digital Experience" target="_blank"></lightning-formatted-url>.</li>
+                <li>On the All Sites page for Loyalty Management for Manufacturing, select <b>Builder</b>. </li>   
+                <li>On the Experience Builder page for Partner Extraa Program, click <b>Publish</b>.</li>        
+            </ol>
+
+            <h2>Create Role</h2>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>Navigate to <lightning-formatted-url value="/lightning/setup/Roles/home" label="Roles" tooltip="Roles" target="_blank"></lightning-formatted-url>.</li>
+                <p style="margin-top:5px;"><lightning-icon size="x-small" icon-name="action:new_note" alternative-text="New note" title="New note"></lightning-icon> Note: Perform these steps only if a role doesn’t exist.</p>
+                <li>From the Roles Setup page, click <b>Set Up Roles</b>.</li>  
+                <li>Enter the name for <b>Label></b> and <b>Role Name</b> as <b>CEO</b>.</li>  
+                <li>Save the changes.</b></li>  
+            </ol> 
+            
+            <h2>Assign Role to User</h2>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>Navigate to <lightning-formatted-url value="/lightning/setup/ManageUsers/home" label="Users" tooltip="Users" target="_blank"></lightning-formatted-url>.</li>
+                <li>From the Users setup page, for the Admin User, click <b>Edit</b>.</li>  
+                <li>On the Users page, select the <b>Role</b> as <b>CEO</b>.</li>  
+                <li>Save the changes.</b></li>  
+            </ol>  
+
+            <h2>Enable Partner User</h2>
+            <P>You can enroll each contact as a partner user for the member community portal. Here’s how. </P>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>From the App Launcher, enter <b>Contacts</b>, and then select <b>Contacts</b>.</li>
+                <li>From the Contacts list page, select any contact you want to make as partner user. </li>   
+                <li>From the Contact page, click <b>Enable Partner User</b> button.</li>  
+                <li>On the Users Setup page, verify the prefilled user information.</li>  
+                <li>From the <b>Profile</b> dropdown, select <b>Loyalty Partner Community</b>.</li>  
+                <li>Save the changes.</b></li>  
+
+            </ol>  
+
+            <h2>Access Digital Experience</h2>
+            <P>After the admin enables a contact as a partner user, the contact can access the Partner Extraa Program loyalty portal to view their membership details and redeem points for activities.</P>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>From the App Launcher, enter Contacts, and then select <b>Contacts</b>.</li>
+                <li>From the Contacts list page, select any contact which you enabled as partner user.</li>
+                <li>From the Contact page, click  and select <b>Log in to Experience as User</b>.</li>   
+            </ol>  
+
+           
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="setupsurvey" label="Setup the Survey">
+            <p>You can setup a survey to reward the users who have redeemed products from the partner portal. Here’s what you can do to setup the redemption survey email. </p>
+            <h2 class="slds-m-top_small slds-m-bottom_small">Setup the Sender Email Address and Activate the Survey</h2>
+            <p>Before you begin, define and manage an organization-wide email address to be used as the From address for the email which is sent to the community user.
+                See <lightning-formatted-url value="https://help.salesforce.com/articleView?id=sf.emailadmin_manage_orgwide_email_addresses.htm&type=5" label="Set Up Organization-Wide Email Addresses." tooltip="Roles" target="_blank"></lightning-formatted-url></li>
+
+            </p>
+
+            <p>After you set up the organization-wide email address, select the email address to be displayed as the default from address.</p>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>From the App Launcher, enter surveys, and then select <lightning-formatted-url value="/lightning/o/Survey/home" label="Surveys" tooltip="Surveys"></lightning-formatted-url>.</li>
+                <li>On the Surveys page, for Loyalty Redemption Survey, click the dropdown icon, and select <b>Open Latest Version</b>.</li>   
+                <li>Click the <b>Ellipsis</b> icon and select <b>Default Settings</b>.</li>  
+                <li>From the <b>Email Sender Address</b> dropdown list, select the address that you want to select as the From address.</li>
+                <li>Save your changes.</li>   
+                <li>To activate the survey, click <b>Activate</b>.</li>   
+            </ol>
+
+            <h2>Setup Community for Survey</h2>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>Navigate to <lightning-formatted-url value="/lightning/setup/SurveySettings/home" label="Survey Settings" tooltip="Survey Settings" target="_blank"></lightning-formatted-url>.</li>
+                <li>From the dropdown list, <b>Select the default community for creating public survey invitations</b> select <b>Loyalty Management for Manufacturing</b>.</li>  
+            </ol>  
+
+            <h2>Process Your First Redemption</h2>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>From the App Launcher, enter contact, and then select <b>Contacts</b>.</li>  
+                <li>Select a contact for who you want to test the redemption survey email.</li>   
+                <li>On the Contact page, click <b>Edit</b>.</li>  
+                <li>In the <b>Email</b> field, enter the email address where you want to receive the redemption survey email.</li>  
+                <li>Save your changes.</li>   
+                <li>Click the dropdown icon, and select <b>Log in to Experience as User</b>.</li>  
+                <li>From the Partner Extraa Program loyalty portal, click the Rewards Catalog tab.</li>
+                <li>Hover over the product that you want to buy, and select <b>Use Points</b>.</li>
+                <li>On the confirmation window, click<b> Redeem</b>.</li>   
+                <li>On the partner portal, click the Transactions tab to view your transaction activity and the points redeemed on the purchase.</li>
+            </ol> 
+            <p class="slds-m-top_small">Members receive an email to complete the redemption survey. After completing the survey, a transaction journal is created for rewarding points.</p>
+           
+        </lightning-accordion-section>    
+
+
+        <lightning-accordion-section name="setupCTIAdapter" label="Simulate a Member Service Call">
+            <p>Simulate a Service Cloud integration to receive a call from a loyalty program member.</p>
+            <h2>Set Up CTI Simulator</h2>
+            <p>Let’s update the CTI Adapter URL and call button assignments.</p>
+            <ol  class="slds-m-top_small slds-list_ordered">
+                <li>Navigate to <lightning-formatted-url value="/lightning/setup/CallCenters/home" label="Call Centers" tooltip="Call Centers" target="_blank"></lightning-formatted-url>.</li>
+                <li>From the Say Hello to Salesforce Call Center page, click <b>Continue.</b></li>
+                <li>From the All Call Centers page, for <b>Lightning Demo CTI</b>, click <b>Edit</b>.</li>   
+                <li>Under General Information, for Lightning CTI Adapter URL and Classic CTI Adapter URL, mention the same domain name URL of your org. Use the URL format: https://YOUR_DOMAIN_GOES_HERE.my.salesforce.com/apex/demoAdapterPage”001Hr00001niflyAAI</li>  
+                <p><lightning-icon size="x-small" icon-name="action:new_note" alternative-text="New note" title="New note"></lightning-icon> Note: Make sure to use the Classic URL format (YOUR_DOMAIN_GOES_HERE.my.salesforce.com), and not the Lightning URL format (YOUR_DOMAIN_GOES_HERE.lightning.force.com).</p>
+                <li>Under <b>Button Assignments</b>, for <b>Primary Call Button (Left)</b>, enter a unique contact ID. Similarly, you can also add a contact ID for the <b>Secondary Call Button (Right</b>.</li>   
+                <p><lightning-icon size="x-small" icon-name="action:new_note" alternative-text="New note" title="New note"></lightning-icon>  Ensure that the parent account of the contact whose ID is referenced has at least one active program member.</p>
+                <li>Under <b>Lightning Call Ended (Primary)</b>, for <b>Pop Logged Call</b>, <b>enter False</b>.</li> 
+                <li>Save your changes.</li>    
+                <li>To assign users who want to access the Softphone, on the Lightning Demo CTI page, under <b>>Call Center Users</b>, click <b>Manage Call Center Users</b>.</li>    
+                <li>From the Manage Users page, click <b>Add More Users</b>.</li> 
+                <li>From the Search for New Users page, add users, and click <b>Find</b>.</li> 
+                <li>Select the user that you want to add, and click <b>Add to Call Center</b>.</li> 
+                <p><lightning-icon size="x-small" icon-name="action:new_note" alternative-text="New note" title="New note"></lightning-icon> If you’re an admin of a new organization, you’re assigned to the Lightning Voice perm set by default. Remove the Lightning Voice perm set, and then assign the call center.</p>
+            </ol>  
+            <h2>Receive Your First Call</h2>
+            <ol class=" slds-list_ordered">
+                <li>From the App Launcher, search and select <b>Service Console</b>.</li>
+                <li>Click the  <b>Phone</b> icon on the bottom left of the page.
+                    <p>Give it a couple of seconds for the Open CTI Softphone to load.</p>
+                </li> 
+                <li>Click the  <b>Phone</b> icon to simulate a call.</li> 
+                <li>After the call starts, click <b>Accept</b>.</li> 
+                
+            </ol>
+        </lightning-accordion-section>
+
+
+       
+
+
+        <lightning-accordion-section name="enableAnalytics" label="Enable Analytics">
+            <p>Enable Analytics to increase membership, retain customers, and grow the business. To find out how, see <lightning-formatted-url value="https://help.salesforce.com/articleView?id=sf.analytics_loyalty_deploy_and_use.htm" label="Deploy and Use Analytics for Loyalty" tooltip="Deploy and Use Analytics for Loyalty" target="_blank"></lightning-formatted-url>.</p>
+        </lightning-accordion-section>
+        
+
+    </div>
+    </lightning-accordion>
+        
+    </lightning-card>
+    </div>
+
+</template>

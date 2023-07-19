@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiscoveryGoal xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <active>true</active>
+    <deployedModels>
+        <active>true</active>
+        <aiModel>MFG_IDO_Dealer_Churn_V3</aiModel>
+        <classificationThreshold>0.3758542981358124</classificationThreshold>
+        <fieldMappings>
+            <mappedField>Account.MFG_Partner_Tenure__c</mappedField>
+            <modelField>Tenure</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <fieldMappings>
+            <mappedField>Account.BillingState</mappedField>
+            <modelField>Billing_State_Province</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <fieldMappings>
+            <mappedField>Account.MFG_pct_MDF_Used__c</mappedField>
+            <modelField>MrkPgrogram_Funds_Pct_Used</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <fieldMappings>
+            <mappedField>Account.MFG_Services_Provider__c</mappedField>
+            <modelField>Services_provider</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <fieldMappings>
+            <mappedField>Account.Partner_Program_Level__c</mappedField>
+            <modelField>Partner_Program_Level</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <fieldMappings>
+            <mappedField xsi:nil="true"/>
+            <modelField>Account_Owner</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <fieldMappings>
+            <mappedField>Account.MFG_Partner_Agreement_Type__c</mappedField>
+            <modelField>Agreement_Type</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <fieldMappings>
+            <mappedField xsi:nil="true"/>
+            <modelField>Cases_Product_Related</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <fieldMappings>
+            <mappedField>Account.MFG_Marketing_Program_Score__c</mappedField>
+            <modelField>MrktProgram_Score</modelField>
+            <sourceType>SalesforceField</sourceType>
+        </fieldMappings>
+        <label>MFG IDO-Dealer Churn V3</label>
+        <name>MFG_IDO_Dealer_Churn_V3</name>
+        <prescribableFields>
+            <name>Cases_Product_Related</name>
+        </prescribableFields>
+        <prescribableFields>
+            <name>Services_provider</name>
+        </prescribableFields>
+        <prescribableFields>
+            <name>Agreement_Type</name>
+        </prescribableFields>
+        <prescribableFields>
+            <name>Partner_Program_Level</name>
+        </prescribableFields>
+    </deployedModels>
+    <label>Minimize Partner Attrition-Churn</label>
+    <outcome>
+        <field>Churn</field>
+        <fieldLabel>Churn</fieldLabel>
+        <goal>Minimize</goal>
+    </outcome>
+    <predictionType>Classification</predictionType>
+    <subscribedEntity>Account</subscribedEntity>
+</DiscoveryGoal>

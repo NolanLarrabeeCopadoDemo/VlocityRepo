@@ -1,0 +1,65 @@
+<apex:page controller="LoyaltyDataLoadController" action="{!init}">
+    <style>
+        input {
+        	height :30px;
+        }
+    </style>
+    <script>
+    	function changeBackgroundColor(component) {
+            if(component.value) {
+                component.style.color  = "green";
+                component.style.fontWeight  = "800";
+            } else if(!component.value)  {
+                component.style.color  = "black";
+                component.style.fontWeight  = "normal";
+            }
+            
+         }
+    </script>
+   <apex:form >
+            <apex:pagemessages />
+            <apex:pageBlock title="Import Loyalty Data to Your Salesforce Org">    
+            <apex:pageBlockSection title="Import Sample Loyalty Data" columns="2">
+                    <apex:commandButton action="{!loadDefaultDataFromUI}" value="Import"/>
+                    <a href="/servlet/servlet.FileDownload?file={!docId}" target="_blank">Download Sample Loyalty Data</a>
+                    <apex:outputText ></apex:outputText>
+            </apex:pageBlockSection>      
+            <apex:pageBlockSection title="Import Your Loyalty Data (.csv files)" columns="2" >
+                Account And Contact      <apex:inputFile style="height:30px;" value="{!AccountAndContactBlob}"  onchange="changeBackgroundColor(this);"  filename="{!AccountAndContactFileName}"/> 
+                Loyalty Program          <apex:inputFile style="height:30px;" value="{!loyaltyProgramBlob}"  onchange="changeBackgroundColor(this);"  filename="{!programFileName}"/> 
+                Loyalty Tier Group          <apex:inputFile value="{!loyaltyTierGroupBlob}"  onchange="changeBackgroundColor(this);" filename="{!tierGroupFileName}"/>
+                Loyalty Tier          <apex:inputFile value="{!loyaltyTierBlob}"  onchange="changeBackgroundColor(this);" filename="{!tierFileName}"/>
+                Loyalty Program Currency          <apex:inputFile value="{!loyaltyProgramCurrencyBlob}" onchange="changeBackgroundColor(this);" filename="{!programCurrencyFileName}"/>
+                Product Category          <apex:inputFile value="{!productCategoryBlob}"  onchange="changeBackgroundColor(this);" filename="{!productCategoryFileName}"/>
+                Product          <apex:inputFile value="{!productBlob}"  onchange="changeBackgroundColor(this);" filename="{!productFileName}"/>
+                
+                
+                Journal Type          <apex:inputFile value="{!journalTypeBlob}"  onchange="changeBackgroundColor(this);" filename="{!journalTypeFileName}"/>
+                Journal SubType          <apex:inputFile value="{!journalSubTypeBlob}"  onchange="changeBackgroundColor(this);" filename="{!journalSubTypeFileName}"/>   
+                Loyalty Program Member    <apex:inputFile value="{!loyaltyProgramMemberBlob}"  onchange="changeBackgroundColor(this);" filename="{!loyaltyProgramMemberFileName}"/>
+                Loyalty Program Partner          <apex:inputFile value="{!loyaltyProgramPartnerBlob}"  onchange="changeBackgroundColor(this);" filename="{!loyaltyProgramPartnerFileName}"/>
+                
+                Loyalty Benefit Type    <apex:inputFile value="{!loyaltyBenefitTypeBlob}"  onchange="changeBackgroundColor(this);" filename="{!loyaltyBenefitTypeFileName}"/>
+                Loyalty Benefit    <apex:inputFile value="{!loyaltyBenefitBlob}"  onchange="changeBackgroundColor(this);" filename="{!loyaltyBenefitFileName}"/>
+                Loyalty Tier Benefit    <apex:inputFile value="{!loyaltyTierBenefitBlob}"  onchange="changeBackgroundColor(this);" filename="{!loyaltyTierBenefitFileName}"/>
+                
+                Accrue Points Product Category    <apex:inputFile value="{!accruePointsProductCategoryBlob}"  onchange="changeBackgroundColor(this);" filename="{!accruePointsProductCategoryFileName}"/>
+                Tier Assessment Rule    <apex:inputFile value="{!tierAssessmentRuleBlob}"  onchange="changeBackgroundColor(this);" filename="{!tierAssessmentRuleFileName}"/>
+                Loyalty Activity          <apex:inputFile value="{!loyaltyActivityBlob}"  onchange="changeBackgroundColor(this);" filename="{!loyaltyActivityFileName}"/>
+                
+                
+                Redeem Points Product Category    <apex:inputFile value="{!redeemPointsProductCategoryBlob}"  onchange="changeBackgroundColor(this);" filename="{!redeemPointsProductCategoryFileName}"/>
+                Order          <apex:inputFile value="{!orderBlob}"  onchange="changeBackgroundColor(this);" filename="{!orderFileName}"/>                
+                Transaction Journal          <apex:inputFile value="{!transactionJournalBlob}"  onchange="changeBackgroundColor(this);" filename="{!transactionJournalFileName}"/>                
+                Loyalty Ledger    <apex:inputFile value="{!loyaltyLedgerBlob}"  onchange="changeBackgroundColor(this);" filename="{!loyaltyLedgerFileName}"/>
+                
+                Voucher Definition    <apex:inputFile value="{!voucherDefBlob}"  onchange="changeBackgroundColor(this);" filename="{!voucherDefFileName}"/>
+                Voucher   <apex:inputFile value="{!voucherBlob}"  onchange="changeBackgroundColor(this);" filename="{!voucherFileName}"/>
+                Add the current date and time to Last Accrual Processed Date for all members in CSV <apex:inputCheckbox value="{!check}"/>
+                Import Data <apex:commandButton action="{!loadData}" value="Import"/>
+
+                <apex:outputText />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+	</apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectHierarchyRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <inputObjRecordsGrpFieldName>ProductComponent</inputObjRecordsGrpFieldName>
+    <mappingType>ParentToChild</mappingType>
+    <masterLabel>ObjectHierarchyRelationship</masterLabel>
+    <outputPntRelationshipFieldName>Opportunity</outputPntRelationshipFieldName>
+    <parentObjectMapping>
+        <inputObject>MfgProgramCpntFrcstFact</inputObject>
+        <mappingFields>
+            <inputField>TotalCostPerUnit</inputField>
+            <outputField>UnitPrice</outputField>
+        </mappingFields>
+        <outputObject>OpportunityLineItem</outputObject>
+    </parentObjectMapping>
+    <parentRecord>CmpForecastFactToOpportunity</parentRecord>
+    <usageType>TransformationMapping</usageType>
+</ObjectHierarchyRelationship>

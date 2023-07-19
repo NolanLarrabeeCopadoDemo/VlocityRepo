@@ -1,0 +1,29 @@
+<template>
+    <div class="benifits">
+        <div class="benifits__header slds-media slds-media_center slds-border_bottom slds-p-around_small">
+            <img class="slds-media__figure" src={tierIcon} alt="" />
+            <div class="slds-media__body slds-text-heading_medium slds-truncate">
+                {tierName}
+            </div>
+        </div>
+        <div class="benifits__body">
+            <template if:true={benefits}>
+                <ul class="benifits__list">
+                    <template for:each={benefits} for:item="b">
+                        <li key={b.Id} class="benifits__list__item slds-p-around_small">
+                            {b.Benefit.Name}
+                        </li>
+                    </template>
+                </ul>
+            </template>
+            <template if:false={benefitspresent}>
+                <div class="slds-p-around_small">
+                    <c-b2b-manufacturing-empty-state
+                        title="Looks like you don't have benefits yet."
+                        message="After you have benefits issued to you, you’ll see them here."
+                    ></c-b2b-manufacturing-empty-state>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

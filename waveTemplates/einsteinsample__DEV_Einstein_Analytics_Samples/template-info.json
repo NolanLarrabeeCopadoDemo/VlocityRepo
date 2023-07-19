@@ -1,0 +1,533 @@
+{
+  "templateType" : "app",
+  "label" : "Einstein Analytics Learning Adventure",
+  "name" : "DEV_Einstein_Analytics_Samples",
+  "namespace" : "einsteinsample",
+  "templateIcon" : "default.png",
+  "assetIcon" : "11.png",
+  "description" : "Learn Einstein Analytics with fun hands-on examples and best practices.",
+  "assetVersion" : 42.0,
+  "variableDefinition" : "variables.json",
+  "uiDefinition" : "ui.json",
+  "rules" : [
+    {
+      "type" : "templateToApp",
+      "file" : "template-to-app-rules.json"
+    },
+    {
+      "type" : "appToTemplate",
+      "file" : "app-to-template-rules.json"
+    }
+  ],
+  "releaseInfo" : {
+    "templateVersion" : "5.0",
+    "notesFile" : "releaseNotes.html"
+  },
+  "folderDefinition" : "folder.json",
+  "externalFiles" : [
+    {
+      "name" : "Wave_Sample_Opportunities",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/Wave_Sample_Opportunities.csv",
+      "type" : "CSV",
+      "schema" : "external_files/Wave_Sample_Opportunities.json",
+      "userXmd" : "external_files/Wave_Sample_Opportunities_XMD.json"
+    },
+    {
+      "name" : "DTC_Opportunity_SAMPLE",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/DTC_Opportunity_SAMPLE.csv",
+      "type" : "CSV",
+      "schema" : "external_files/DTC_Opportunity_SAMPLE.json",
+      "userXmd" : "external_files/DTC_Opportunity_SAMPLE_XMD.json"
+    },
+    {
+      "name" : "OpportunitiesRegion2",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/OpportunitiesRegion2.csv",
+      "type" : "CSV",
+      "schema" : "external_files/OpportunitiesRegion2.json",
+      "userXmd" : "external_files/OpportunitiesRegion2_XMD.json"
+    },
+    {
+      "name" : "Quota_Region1",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/Quota_Region1.csv",
+      "type" : "CSV",
+      "schema" : "external_files/Quota_Region1.json",
+      "userXmd" : "external_files/Quota_Region1_XMD.json"
+    }
+  ],
+  "lenses" : [ ],
+  "dashboards" : [
+    {
+      "label" : "Charts - Comparison",
+      "name" : "Charts_Comparison_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Charts_Comparison.json"
+    },
+    {
+      "label" : "Charts - Composition",
+      "name" : "Charts_Composition_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Charts_Composition.json"
+    },
+    {
+      "label" : "Charts - Distribution",
+      "name" : "Charts_Distribution_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Charts_Distribution.json"
+    },
+    {
+      "label" : "Charts - Introduction",
+      "name" : "Charts_Introduction_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Charts_Introduction.json"
+    },
+    {
+      "label" : "Charts - Location",
+      "name" : "Charts_Location_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Charts_Location.json"
+    },
+    {
+      "label" : "Charts - Metrics",
+      "name" : "Charts_Metrics_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Charts_Metrics.json"
+    },
+    {
+      "label" : "Charts - Relationship",
+      "name" : "Charts_Relationship_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Charts_Relationship.json"
+    },
+    {
+      "label" : "Charts - Trending",
+      "name" : "Charts_Trending_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Charts_Trending.json"
+    },
+    {
+      "label" : "Dynamic Apps - Data  - Basic Filter",
+      "name" : "Dynamic_Apps_Data_Basic_Filter_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Data_Basic_Filter.json"
+    },
+    {
+      "label" : "Dynamic Apps - Data  - Date Filter (Compact Form)",
+      "name" : "Dynamic_Apps_Data_Date_Filter_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Data_Date_Filter.json"
+    },
+    {
+      "label" : "Dynamic Apps - Data  - Grouping (Compact Form)",
+      "name" : "Dynamic_Apps_Data_Grouping_Compact_Form_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Data_Grouping_Compact_Form.json"
+    },
+    {
+      "label" : "Dynamic Apps - Data  - Limit (Compact Form)",
+      "name" : "Dynamic_Apps_Data_Limit_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Data_Limit_Compact_Form.json"
+    },
+    {
+      "label" : "Dynamic Apps - Data  - Measure (Compact Form)",
+      "name" : "Dynamic_Apps_Data_Measure_Compact_Form_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Data_Measure_Compact_Form.json"
+    },
+    {
+      "label" : "Dynamic Apps - Data  - Order (Compact Form)",
+      "name" : "Dynamic_Apps_Data_Order_Compact_Form_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Data_Order_Compact_Form.json"
+    },
+    {
+      "label" : "Dynamic Apps - Design  - Values Table",
+      "name" : "Dynamic_Apps_Design_Values_Table_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Design_Values_Table.json"
+    },
+    {
+      "label" : "Dynamic Apps - Design - Chart Type",
+      "name" : "Dynamic_Apps_Design_Chart_Type_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Design_Chart_Type.json"
+    },
+    {
+      "label" : "Dynamic Apps - Design - Conditional Formatting",
+      "name" : "Dynamic_Apps_Design_Conditional_Formatting_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Design_Conditional_Formatting.json"
+    },
+    {
+      "label" : "Dynamic Apps - Design - Reference Line",
+      "name" : "Dynamic_Apps_Design_Reference_Line_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Design_Reference_Line.json"
+    },
+    {
+      "label" : "Dynamic Apps - Introduction",
+      "name" : "Dynamic_Apps_Introduction_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Dynamic_Apps_Introduction.json"
+    },
+    {
+      "label" : "Adventure Home",
+      "name" : "Adventure_Home_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Adventure_Home.json"
+    },
+    {
+      "label" : "SAQL - Basics",
+      "name" : "SAQL_Introduction2_Manny_Updates_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/SAQL_Introduction2_Manny_Updates.json"
+    },
+    {
+      "label" : "SAQL - Cogroup",
+      "name" : "New_Copy_COGROUP_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/New_Copy_COGROUP.json"
+    },
+    {
+      "label" : "SAQL - Computing Quartiles",
+      "name" : "New_Copy_Computing_Quartiles_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/New_Copy_Computing_Quartiles.json"
+    },
+    {
+      "label" : "SAQL - Data Spreads",
+      "name" : "New_Copy_Data_Spreads_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/New_Copy_Data_Spreads.json"
+    },
+    {
+      "label" : "SAQL - Introduction",
+      "name" : "KA_SAQL_Introduction_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/KA_SAQL_Introduction.json"
+    },
+    {
+      "label" : "SAQL - Logical Operators",
+      "name" : "New_Copy_Complex_Boolean_Logic_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/New_Copy_Complex_Boolean_Logic.json"
+    },
+    {
+      "label" : "SAQL - Query Editor",
+      "name" : "Query_Editor_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Query_Editor.json"
+    },
+    {
+      "label" : "SAQL - Standard Deviations",
+      "name" : "New_Copy_Computing_Standard_Deviations_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/New_Copy_Computing_Standard_Deviations.json"
+    },
+    {
+      "label" : "SAQL - Union",
+      "name" : "New_Copy_Union_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/New_Copy_Union.json"
+    },
+    {
+      "label" : "SAQL - Windowing",
+      "name" : "New_Copy_KA_SAQL_WINDOWING_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/New_Copy_KA_SAQL_WINDOWING.json"
+    }
+  ],
+  "eltDataflows" : [ ],
+  "datasetFiles" : [ ],
+  "imageFiles" : [
+    {
+      "name" : "iconmeasurepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-measure.png"
+    },
+    {
+      "name" : "icongrouppng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-group.png"
+    },
+    {
+      "name" : "iconlimitpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-limit.png"
+    },
+    {
+      "name" : "iconorderpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-order.png"
+    },
+    {
+      "name" : "iconconditionalpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-conditional.png"
+    },
+    {
+      "name" : "titlepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/title.png"
+    },
+    {
+      "name" : "bgfooterjpg",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/bg-footer.jpg"
+    },
+    {
+      "name" : "bgfooterdesertjpg",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/bg-footer-desert.jpg"
+    },
+    {
+      "name" : "bgfootersnowjpg",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/bg-footer-snow.jpg"
+    },
+    {
+      "name" : "bannerbranddefaultpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/banner-brand-default.png"
+    },
+    {
+      "name" : "bgpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/bg.png"
+    },
+    {
+      "name" : "iconchartpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-chart.png"
+    },
+    {
+      "name" : "iconrefreshinversepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-refresh-inverse.png"
+    },
+    {
+      "name" : "astro_side_profile_binocularspng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/astro_side_profile_binoculars.png"
+    },
+    {
+      "name" : "astro_hmmmpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/astro_hmmm.png"
+    },
+    {
+      "name" : "astro_clipboardpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/astro_clipboard.png"
+    },
+    {
+      "name" : "astro_hard_hatpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/astro_hard_hat.png"
+    },
+    {
+      "name" : "iconcomparepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-compare.png"
+    },
+    {
+      "name" : "icontrendingpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-trending.png"
+    },
+    {
+      "name" : "iconrelationshippng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-relationship.png"
+    },
+    {
+      "name" : "iconcompositionpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-composition.png"
+    },
+    {
+      "name" : "icondistributionpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-distribution.png"
+    },
+    {
+      "name" : "iconlocationpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-location.png"
+    },
+    {
+      "name" : "iconmetricspng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-metrics.png"
+    },
+    {
+      "name" : "icondetailspng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-details.png"
+    },
+    {
+      "name" : "icontablepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-table.png"
+    },
+    {
+      "name" : "iconmappng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-map.png"
+    },
+    {
+      "name" : "icontimebasedpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-time-based.png"
+    },
+    {
+      "name" : "iconreferencelinepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-reference-line.png"
+    },
+    {
+      "name" : "iconfilterpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-filter.png"
+    },
+    {
+      "name" : "icondatepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-date.png"
+    },
+    {
+      "name" : "iconsearchpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-search.png"
+    },
+    {
+      "name" : "iconcalculationpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-calculation.png"
+    },
+    {
+      "name" : "iconoperatororpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-operator-or.png"
+    },
+    {
+      "name" : "iconcolumnvscellpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-column-vs-cell.png"
+    },
+    {
+      "name" : "iconselectionvsresultspng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-selection-vs-results.png"
+    },
+    {
+      "name" : "iconoutputpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-output.png"
+    },
+    {
+      "name" : "headerdetailpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/header-detail.png"
+    },
+    {
+      "name" : "icontrendingpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-trending.png"
+    },
+    {
+      "name" : "iconrelationshippng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-relationship.png"
+    },
+    {
+      "name" : "iconmetricspng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-metrics.png"
+    },
+    {
+      "name" : "iconcompositionpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-composition.png"
+    },
+    {
+      "name" : "iconlearnmorepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-learn-more.png"
+    },
+    {
+      "name" : "iconfilterpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-filter.png"
+    },
+    {
+      "name" : "icondatepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-date.png"
+    },
+    {
+      "name" : "iconsearchpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-search.png"
+    },
+    {
+      "name" : "iconcalculationpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-calculation.png"
+    },
+    {
+      "name" : "iconoperatororpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-operator-or.png"
+    },
+    {
+      "name" : "iconintroductionpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-introduction.png"
+    },
+    {
+      "name" : "iconreferencelinepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-reference-line.png"
+    },
+    {
+      "name" : "arrowlpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/arrow-l.png"
+    },
+    {
+      "name" : "arrowrpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/arrow-r.png"
+    },
+    {
+      "name" : "iconquerypng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-query.png"
+    },
+    {
+      "name" : "iconcodepng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-code.png"
+    },
+    {
+      "name" : "iconeditpng",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/icon-edit.png"
+    },
+    {
+      "name" : "editorgif",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/editor.gif"
+    },
+    {
+      "name" : "findeditorgif",
+      "condition" : "${Variables.Overrides.createAllImages}",
+      "file" : "images/find-editor.gif"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "TextBlock6",
+    "OmniProcessId": {
+        "Name": "Return Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ReturnOrder/OS/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Quantity of Parts to Return",
+        "OmniProcessId": {
+            "Name": "Return Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ReturnOrder/OS/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ReturnOrder/OS/English/Quantity of Parts to Return",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Quantity of Parts to Return",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 8,
+        "dataJSON": false,
+        "label": "TextBlock6",
+        "sanitize": false,
+        "show": null,
+        "text": "<p><strong>Product Name:&nbsp; </strong> %ProductName%</p>\n<p><strong>Quantity:&nbsp; &nbsp;</strong>%Quantity%</p>\n<p><strong>Total Price:</strong>&nbsp; &nbsp;%CurrencyPrice%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ReturnOrder/OS/English/TextBlock6"
+}

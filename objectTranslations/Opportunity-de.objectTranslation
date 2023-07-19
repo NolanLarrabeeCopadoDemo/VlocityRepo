@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- My Opportunities PRM --></label>
+        <name>My_Opportunities_PRM</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Region --></label>
+        <name>Account_Region__c</name>
+    </fields>
+    <fields>
+        <label>Alter</label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Dieses Feld wird genutzt um einen Zufallswert zu berechnen.</help>
+        <label>Autonummer</label>
+        <name>AutoNumber__c</name>
+    </fields>
+    <fields>
+        <label>Budget freigegeben</label>
+        <name>Budget_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Equipment Cost --></label>
+        <name>Capital_Equipment_Cost__c</name>
+    </fields>
+    <fields>
+        <label>Kundenvorgang</label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Related Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Countdown zum Abschluss</label>
+        <name>CloseDate_TODAY__c</name>
+    </fields>
+    <fields>
+        <label>Konkurrenz</label>
+        <name>Competition__c</name>
+    </fields>
+    <fields>
+        <label>Konkurrenz-Coach</label>
+        <name>Competitive_Coach__c</name>
+    </fields>
+    <fields>
+        <label>Opportunity mit Konkurrenz</label>
+        <name>Competitive_Deal__c</name>
+    </fields>
+    <fields>
+        <label>Konkurrent</label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>Konkurrent A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>Konkurrent B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>Konkurrent C</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ROI Analyse abgeschlossen</label>
+        <name>Complete_ROI_Analysis__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: Stadt</label>
+        <name>Contact_City__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: Firma</label>
+        <name>Contact_Company__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: Land</label>
+        <name>Contact_Country__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: E-Mail</label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: Name</label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: Telefon</label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: PLZ</label>
+        <name>Contact_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: Bundesland</label>
+        <name>Contact_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Street --></label>
+        <name>Contact_Street__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt: Titel</label>
+        <name>Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label>Vertragsbedingungen</label>
+        <name>Contract_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Non-Standard</masterLabel>
+            <translation>Nicht Standard</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Erstelldatum</label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Amount --></label>
+        <name>DB_Amount__c</name>
+    </fields>
+    <fields>
+        <label>DB Tage</label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>DateTimeCreated__c</name>
+    </fields>
+    <fields>
+        <label>Tage bis zum Schlusstermin</label>
+        <name>Days_Left_Until_Expire__c</name>
+    </fields>
+    <fields>
+        <label>Genehmigungsdatum Opportunity</label>
+        <name>Deal_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Forward --></label>
+        <name>Deal_Forward__c</name>
+    </fields>
+    <fields>
+        <label>Deal ID</label>
+        <name>Deal_ID__c</name>
+    </fields>
+    <fields>
+        <label>Opportunity Quelle</label>
+        <name>Deal_Source__c</name>
+    </fields>
+    <fields>
+        <label>Entscheider-Rolle</label>
+        <name>Decision_Role__c</name>
+    </fields>
+    <fields>
+        <label>Präsentationstermin Demo</label>
+        <name>Demo_Presentation_Date__c</name>
+    </fields>
+    <fields>
+        <label>Genehmigter Rabatt</label>
+        <name>Discount_Approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Rabatt %</label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label>Zwischenhändler</label>
+        <name>Distributor__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of days before or after the close date the opportunity is predicted to close.  It is calculated by subtracting the Close Date from the Predicted Close Date. --></help>
+        <label><!-- ED Close Date Delta --></label>
+        <name>ED_Close_Date_Delta__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>ED_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of DAYS after the Created Date that this opportunity is targeted to close. --></help>
+        <label><!-- ED Predicted Time to Close --></label>
+        <name>ED_Outcome__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is calculated by adding the number of days in the &quot;ED Predicted Time to Close&quot; field to the CREATED DATE. --></help>
+        <label><!-- ED Predicted Close Date --></label>
+        <name>ED_Predicted_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>ED_Prescription__c</name>
+    </fields>
+    <fields>
+        <label>Rechtsabteilung einbinden</label>
+        <name>Engage_Legal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimation Status --></label>
+        <name>Estimation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not started</masterLabel>
+            <translation><!-- Not started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On hold</masterLabel>
+            <translation><!-- On hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimator Name --></label>
+        <name>Estimator_Name__c</name>
+        <relationshipLabel><!-- Opportunities (Estimator Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimator Notes --></label>
+        <name>Estimator_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimator --></label>
+        <name>Estimator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery. --></help>
+        <label><!-- Executive Meeting --></label>
+        <name>Exec_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Number of Units --></label>
+        <name>Expected_Number_of_Units__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forwarded Lead ID --></label>
+        <name>Forwarded_Lead_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Margin --></label>
+        <name>Gross_Margin__c</name>
+    </fields>
+    <fields>
+        <label>Start Implementierung</label>
+        <name>Implementation_Start__c</name>
+    </fields>
+    <fields>
+        <help>Abhängig vom Feld Alter.</help>
+        <label>Altersindikator</label>
+        <name>IndStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery --></help>
+        <label><!-- Interactive Demo --></label>
+        <name>Interactive_Demo__c</name>
+    </fields>
+    <fields>
+        <label>Interne Freigaben</label>
+        <name>Internal_Pricing_Approvals__c</name>
+    </fields>
+    <fields>
+        <label>Ursprünglicher Schlusstermin</label>
+        <name>Intial_Estimated_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Cost --></label>
+        <name>Labor_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Hours --></label>
+        <name>Labor_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Rate --></label>
+        <name>Labor_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity --></label>
+        <name>LastActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>LastModifiedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Margin --></label>
+        <name>MFG_ALL_Expected_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- MFG Opty Quip URL --></label>
+        <name>MFG_ALL_Opty_Quip_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFQ Expected Date --></label>
+        <name>MFG_ALL_RFQ_Expected_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFQ Received Date --></label>
+        <name>MFG_ALL_RFQ_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>MFG_IDO_Asset__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MFG Key Record --></label>
+        <name>MFG_Key_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Start Date --></label>
+        <name>MFG_Production_Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Due Date --></label>
+        <name>MFG_Quote_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label>Marge</label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Materials Cost --></label>
+        <name>Materials_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overhead Rate --></label>
+        <name>Overhead_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Owner --></label>
+        <name>Partner_Owner__c</name>
+        <relationshipLabel><!-- Partner Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plant Location --></label>
+        <name>Plant_Location__c</name>
+        <picklistValues>
+            <masterLabel>Appleton, WI</masterLabel>
+            <translation><!-- Appleton, WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eugene, OR</masterLabel>
+            <translation><!-- Eugene, OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Rapids, MI</masterLabel>
+            <translation><!-- Grand Rapids, MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plant City, FL</masterLabel>
+            <translation><!-- Plant City, FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Antonio, TX</masterLabel>
+            <translation><!-- San Antonio, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suwanee, GA</masterLabel>
+            <translation><!-- Suwanee, GA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Approved --></label>
+        <name>Pricing_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production End Date --></label>
+        <name>Production_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Hours --></label>
+        <name>Production_Hours__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>GC1000 series</masterLabel>
+            <translation><!-- GC1000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC10001</masterLabel>
+            <translation><!-- GC10001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC20002</masterLabel>
+            <translation><!-- GC20002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5000 series</masterLabel>
+            <translation><!-- GC5000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC50000</masterLabel>
+            <translation><!-- GC50000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Projektbudget</label>
+        <name>Project_Budget__c</name>
+    </fields>
+    <fields>
+        <label>Projektbudget vorhanden?</label>
+        <name>Project_Budgeted__c</name>
+    </fields>
+    <fields>
+        <label>Projektbeschreibung</label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <label>Projektmanager (Kontakt)</label>
+        <name>Project_Manager_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Project Manager Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Projektname</label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label>Geplante Dauer</label>
+        <name>Projected_Durations__c</name>
+    </fields>
+    <fields>
+        <label>Geplantes Enddatum</label>
+        <name>Projected_Finish__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field tracks many times an Opportunity has been pushed from month to month --></help>
+        <label><!-- Push Counter --></label>
+        <name>Push_Counter__c</name>
+    </fields>
+    <fields>
+        <label>Zufallsnummer</label>
+        <name>Random_Number__c</name>
+    </fields>
+    <fields>
+        <label>Verlustgrund</label>
+        <name>Reason_Lost__c</name>
+        <picklistValues>
+            <masterLabel>No Decision</masterLabel>
+            <translation><!-- No Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Sonstiges</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Preis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Issues</masterLabel>
+            <translation>Produkt-Eigenschaften</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation>Beziehung zum Kunden</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rebate Program --></label>
+        <name>Rebate_Program__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ablaufdatum der Registrierung</label>
+        <name>Registration_Expiration__c</name>
+    </fields>
+    <fields>
+        <help>Nachschlagefeld für Ihren geänderten Vertrag.</help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ nutzt dieses Feld dazu, Vermögenswerte und Abonnements automatisch zu konvertieren.</help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um Vertragspreise zu erstellen, ohne einen Vertrag zu generieren.</help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>Die eindeutige Kennung für die Transaktion &quot;Änderungsauftrag&quot;. Es handelt sich um die ursprüngliche ID des Primärangebots.</help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um automatisch einen Auftrag aus dem Primärangebot zu erstellen.</help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ nutzt dieses Feld, um auf das Primärangebot für diese Opportunity zu verweisen.</help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, dass diese Opportunity eine Verlängerungs-Opportunity ist.</help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help>Vertrag, der von dieser Verlängerungs-Opportunity verlängert wird. Sind dieser Opportunity mehrere Verträge zugeordnet, referenziert dieses Feld den Mastervertrag.</help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Angehaltene Opportunity</label>
+        <name>Stalled_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label>Status-Wert</label>
+        <name>Status_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooling Cost --></label>
+        <name>Tooling_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- URLsrc --></label>
+        <name>URLsrc__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Forwarded Lead --></label>
+        <name>View_Forwarded_Lead__c</name>
+    </fields>
+    <fields>
+        <label>Verloren an</label>
+        <name>Winning_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>Konkurrent A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>Konkurrent B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>Konkurrent C</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>Work_Order__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- cv --></label>
+        <name>cv__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtgenehmigungsstatus für diese Opportunity</help>
+        <label><!-- Approval Status --></label>
+        <name>sbaa__ApprovalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Ausstehend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation>Widerrufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wird mit &quot;Native Genehmigungen&quot; verwendet, um den Schritt im Genehmigungsprozess anzugeben, in dem sich diese Opportunity befindet</help>
+        <label><!-- Approval Step --></label>
+        <name>sbaa__ApprovalStep__c</name>
+    </fields>
+    <fields>
+        <help>Wird mit &quot;Native Genehmigungen&quot; verwendet; gibt an, welcher Genehmiger für die Genehmigung der Opportunity zuständig ist.</help>
+        <label><!-- Approver --></label>
+        <name>sbaa__Approver__c</name>
+        <relationshipLabel><!-- Opportunities (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wird mit &quot;Native Genehmigungen&quot; verwendet; gibt an, ob der Schritt genehmigt wurde</help>
+        <label><!-- Step Approved --></label>
+        <name>sbaa__StepApproved__c</name>
+    </fields>
+    <fields>
+        <help>Datum, an dem der Datensatz zur Genehmigung eingereicht wurde</help>
+        <label><!-- Submitted Date --></label>
+        <name>sbaa__SubmittedDate__c</name>
+    </fields>
+    <fields>
+        <help>Benutzer, der die Genehmigung für die Opportunity anfordert.</help>
+        <label><!-- Submitted User --></label>
+        <name>sbaa__SubmittedUser__c</name>
+        <relationshipLabel><!-- Opportunities (Submitted User) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Opportunities created by or for partners. --></description>
+        <label>Indirekt (Partner)</label>
+        <name>ChannelPartner</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- ETO Opportunities --></description>
+        <label><!-- Engineer to Order --></label>
+        <name>MFG_ETO_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Revenue Operation Flow --></description>
+        <label><!-- Revenue Cloud --></label>
+        <name>Revenue_Cloud</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Simple Opportunities with products. --></description>
+        <label>Einfach</label>
+        <name>SimpleOpportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Im Falles das Status gleich verloren ist, muss das Feld &quot;Begründung für Verloren&quot; ausgefüllt werden.</errorMessage>
+        <name>Reason_Lost_Required</name>
+    </validationRules>
+    <webLinks>
+        <label>Account Integration</label>
+        <name>Financial_System_Integration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Great_Plains_Integration --></label>
+        <name>Great_Plains_Integration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quick_Quote --></label>
+        <name>Quick_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sales_Methodology --></label>
+        <name>Sales_Methodology</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sign_with_DocuSign --></label>
+        <name>Sign_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewApprovals --></label>
+        <name>sbaa__PreviewApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RecallApprovals --></label>
+        <name>sbaa__RecallApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ResendRequestEmail --></label>
+        <name>sbaa__ResendRequestEmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SubmitForApproval --></label>
+        <name>sbaa__SubmitForApproval</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,41 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "TextBlock3",
+    "OmniProcessId": {
+        "Name": "Modify Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ModifyOrder/OS/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "New Quantity Updated",
+        "OmniProcessId": {
+            "Name": "Modify Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ModifyOrder/OS/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ModifyOrder/OS/English/New Quantity Updated",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "New Quantity Updated",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 6,
+        "dataJSON": false,
+        "label": "TextBlock3",
+        "sanitize": false,
+        "show": null,
+        "text": "<p><strong>Product Name:</strong>&nbsp; &nbsp;%ProductName%</p>\n<p><strong>Quantity:</strong>&nbsp; &nbsp;%Updated Quantity%</p>\n<p><strong>Total Refunded:</strong>&nbsp; &nbsp;%Updated Total Price%</p>\n<p></p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ModifyOrder/OS/English/TextBlock3"
+}

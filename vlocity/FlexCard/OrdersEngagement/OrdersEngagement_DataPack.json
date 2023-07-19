@@ -1,0 +1,47 @@
+{
+    "AuthorName": "SalesforceDemo",
+    "ClonedFromOmniUiCardKey": "Orders/SalesforceDemo/2.0",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 4,
+                    "name": "recordId",
+                    "val": "003B000000LRnEyIAL"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "getOrdersfromEngagement",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "contactId": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "Show orders flexcard on the service console for manufacturing -  Changed the DR to support the lookup",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "OrdersEngagement",
+    "Namespace": "",
+    "OmniUiCardKey": "OrdersEngagement/SalesforceDemo/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "OrdersEngagement.json",
+    "SampleDataSourceResponse": "[{\"EffectiveDate\":\"2022-08-16\",\"OrderId\":\"801B00000020YOvIAM\",\"TotalAmount\":5750,\"OrderNumber\":\"00006596\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-16\",\"OrderId\":\"801B00000020YOlIAM\",\"TotalAmount\":5750,\"OrderNumber\":\"00006595\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-08-11\",\"OrderId\":\"801B0000001zxDeIAI\",\"TotalAmount\":69005,\"OrderNumber\":\"00006580\",\"Status\":\"Draft\"},{\"EffectiveDate\":\"2022-07-01\",\"OrderId\":\"801B0000001qunhIAA\",\"TotalAmount\":408250,\"OrderNumber\":\"00006579\",\"Status\":\"Activated\"},{\"EffectiveDate\":\"2022-06-01\",\"OrderId\":\"801B0000001qungIAA\",\"TotalAmount\":497000,\"OrderNumber\":\"00006578\",\"Status\":\"Activated\"},{\"EffectiveDate\":\"2022-05-01\",\"OrderId\":\"801B0000001qunfIAA\",\"TotalAmount\":619200,\"OrderNumber\":\"00006577\",\"Status\":\"Activated\"},{\"EffectiveDate\":\"2022-04-01\",\"OrderId\":\"801B0000001quneIAA\",\"TotalAmount\":591400,\"OrderNumber\":\"00006576\",\"Status\":\"Activated\"},{\"EffectiveDate\":\"2022-03-01\",\"OrderId\":\"801B0000001qundIAA\",\"TotalAmount\":834750,\"OrderNumber\":\"00006575\",\"Status\":\"Activated\"},{\"EffectiveDate\":\"2022-02-01\",\"OrderId\":\"801B0000001quncIAA\",\"TotalAmount\":557600,\"OrderNumber\":\"00006574\",\"Status\":\"Activated\"},{\"EffectiveDate\":\"2022-01-01\",\"OrderId\":\"801B0000001qunbIAA\",\"TotalAmount\":590850,\"OrderNumber\":\"00006573\",\"Status\":\"Activated\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/OrdersEngagement"
+}

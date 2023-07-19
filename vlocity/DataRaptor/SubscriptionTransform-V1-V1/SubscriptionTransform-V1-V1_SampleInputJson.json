@@ -1,0 +1,48 @@
+{
+    "CITY": "New York City",
+    "COUNTRY": "USA",
+    "IF_customer_not_in_US": false,
+    "POSTALCODE": "10036",
+    "STATE": "NY",
+    "STREET1": "96 Bank Ave",
+    "SUBSCRIBER_NAME": "Sputnik Gaming Inc",
+    "products": [
+        {
+            "Product": "Virtual Networks - Sputnik Gaming VMWare VCloud NFV",
+            "Quantity": 1,
+            "mrc": 25000,
+            "otc": 25000
+        },
+        {
+            "Product": "Virtual Networks - Sputnik Gaming Net4 Virtual Firewall",
+            "Quantity": 5,
+            "mrc": 5000,
+            "otc": 1000
+        },
+        {
+            "Product": "Virtual Networks - Sputnik Gaming Cisco 3700 Routing VNFs",
+            "Quantity": 10,
+            "mrc": 50000,
+            "otc": 5000
+        },
+        {
+            "Product": "Virtual Networks - Sputnik Gaming WebSecure Virtual Network Function",
+            "Quantity": 5,
+            "mrc": 1250,
+            "otc": 250
+        },
+        {
+            "Product": "Virtual Networks - Sputnik Gaming Sarvasta Anti Virus",
+            "Quantity": 5,
+            "mrc": 2500,
+            "otc": 500
+        },
+        {
+            "Product": "Virtual Networks - Sputnik Gaming Nokia 5620 VNFs",
+            "Quantity": 5,
+            "mrc": 40000,
+            "otc": 8000
+        }
+    ],
+    "total_mrc": 123750
+}

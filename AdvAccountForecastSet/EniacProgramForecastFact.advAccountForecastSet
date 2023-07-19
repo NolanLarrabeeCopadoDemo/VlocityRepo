@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvAccountForecastSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accountFieldName>ManufacturingProgramId</accountFieldName>
+    <calculationFrequency>Monthly</calculationFrequency>
+    <dimensions>
+        <advAcctForecastDimName>Production Location</advAcctForecastDimName>
+        <dimensionFieldName>ProductionLocationId</dimensionFieldName>
+        <dimensionSourceName>ProductLocation</dimensionSourceName>
+        <hierarchySequenceNumber>1</hierarchySequenceNumber>
+    </dimensions>
+    <dimensions>
+        <advAcctForecastDimName>Product</advAcctForecastDimName>
+        <dimensionFieldName>ProductionModelId</dimensionFieldName>
+        <dimensionSourceName>Product</dimensionSourceName>
+        <hierarchySequenceNumber>2</hierarchySequenceNumber>
+    </dimensions>
+    <forecastFactObjectName>MfgProgramForecastFact</forecastFactObjectName>
+    <forecastPeriodGroupName>ProgramPG</forecastPeriodGroupName>
+    <forecastQuantityFieldName>ProgramQuantity</forecastQuantityFieldName>
+    <forecastRevenueFieldName>ExpectedRevenuePerUnit</forecastRevenueFieldName>
+    <forecastSetFieldName>AdvAcctForecastSetUseId</forecastSetFieldName>
+    <forecastSetName>Eniac Program Forecast Fact</forecastSetName>
+    <forecastStatusFieldName>Status</forecastStatusFieldName>
+    <measureDefinitions>
+        <advAcctForecastMeasureDefName>ProgramQuantity</advAcctForecastMeasureDefName>
+        <aggregationType>SUM</aggregationType>
+        <computationMethod>CUSTOM</computationMethod>
+        <forecastDataMeasureName>ProgramQuantity</forecastDataMeasureName>
+        <forecastMeasureName>Program Quantity</forecastMeasureName>
+        <forecastMeasureType>QUANTITY</forecastMeasureType>
+        <isAdjustmentTracked>false</isAdjustmentTracked>
+    </measureDefinitions>
+    <measureDefinitions>
+        <advAcctForecastMeasureDefName>ExpectedRevenuePerUnit</advAcctForecastMeasureDefName>
+        <aggregationType>SUM</aggregationType>
+        <computationMethod>CUSTOM</computationMethod>
+        <forecastDataMeasureName>ExpectedRevenuePerUnit</forecastDataMeasureName>
+        <forecastMeasureName>Expected Revenue Per Unit</forecastMeasureName>
+        <forecastMeasureType>REVENUE</forecastMeasureType>
+        <isAdjustmentTracked>false</isAdjustmentTracked>
+    </measureDefinitions>
+    <periodFieldName>PeriodId</periodFieldName>
+    <rolloverFrequency>Monthly</rolloverFrequency>
+    <status>Inactive</status>
+</AdvAccountForecastSet>

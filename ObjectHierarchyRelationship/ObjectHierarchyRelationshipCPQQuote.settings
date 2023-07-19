@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectHierarchyRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <childObjectMapping>
+        <inputObject>SBQQ__QuoteLine__c</inputObject>
+        <mappingFields>
+            <inputField>SBQQ__Product__c</inputField>
+            <outputField>Product</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>SBQQ__Quantity__c</inputField>
+            <outputField>Quantity</outputField>
+        </mappingFields>
+        <outputObject>TransactionJournal</outputObject>
+    </childObjectMapping>
+    <masterLabel>ObjectHierarchyRelationship</masterLabel>
+    <parentObjectMapping>
+        <inputObject>SBQQ__Quote__c</inputObject>
+        <mappingFields>
+            <inputField>SBQQ__Account__c</inputField>
+            <outputField>Member</outputField>
+        </mappingFields>
+        <outputObject>TransactionJournal</outputObject>
+    </parentObjectMapping>
+    <parentRelationshipFieldName>SBQQ__Quote__c</parentRelationshipFieldName>
+    <usageType>EligibleProgramRebateType</usageType>
+</ObjectHierarchyRelationship>

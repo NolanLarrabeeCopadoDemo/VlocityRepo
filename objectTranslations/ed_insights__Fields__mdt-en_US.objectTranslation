@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Name of the Dataset Join Record this mapping should be used --></help>
+        <label><!-- Dataset Joins --></label>
+        <name>ed_insights__DatasetName__c</name>
+        <relationshipLabel><!-- Dataset Field Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field in the dataset where some model input data lives --></help>
+        <label><!-- Dataset Field Name --></label>
+        <name>ed_insights__Dataset_Field_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the field which the model is expecting --></help>
+        <label><!-- Model Input Field Name --></label>
+        <name>ed_insights__Model_Input_Field_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

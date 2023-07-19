@@ -1,0 +1,36 @@
+<!--
+  @description       : 
+  @author            : Salesforce
+  @group             : 
+  @last modified on  : 02-08-2021
+  @last modified by  : Salesforce
+  Modifications Log 
+  Ver   Date         Author       Modification
+  1.0   02-08-2021   Salesforce   Initial Version
+-->
+
+<template>
+    <div class={comupteClass}>
+        <div class="nTOInsiderProfileRecentTractions  slds-table_striped ">
+            <lightning-datatable
+                key-field="id" 
+                data={visibleTransactions}
+                columns={columns}
+                hide-checkbox-column
+            ></lightning-datatable>
+        </div>
+        <template if:true={transactionPresent}>
+            <div slot="footer" class="slds-var-m-vertical_medium">
+                <c-b2b-manufacturing-pagination records={recentTransactions} record-size="10" onupdate={updateTransactionHandler}></c-b2b-manufacturing-pagination>
+            </div>
+        </template>
+    </div>
+    <template if:false={transactionPresent}>
+        <div class="slds-p-around_small">
+            <c-b2b-manufacturing-empty-state
+                title="No transactions yet."
+                message="But check again after you place an order or engage in a loyalty activity."
+            ></c-b2b-manufacturing-empty-state>
+        </div>
+    </template>
+</template>

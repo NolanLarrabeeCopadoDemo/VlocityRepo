@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BatchProcessJobDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <batchSize>200</batchSize>
+    <dataSource>
+        <condition>1 OR 2</condition>
+        <criteria>any</criteria>
+        <filters>
+            <dynamicValue>false</dynamicValue>
+            <fieldName>Status</fieldName>
+            <fieldValue>NewPendingProcessing</fieldValue>
+            <operator>equals</operator>
+            <sequenceNo>1</sequenceNo>
+        </filters>
+        <filters>
+            <dynamicValue>false</dynamicValue>
+            <fieldName>Status</fieldName>
+            <fieldValue>UpdatedPendingProcessing</fieldValue>
+            <operator>equals</operator>
+            <sequenceNo>2</sequenceNo>
+        </filters>
+        <sourceObject>MemberBenefit</sourceObject>
+    </dataSource>
+    <description>Process New And Updated Benefits</description>
+    <flowApiName>Process_Member_Benefits</flowApiName>
+    <flowInputVariable>MemberBenefitId</flowInputVariable>
+    <masterLabel>Process New And Updated Member Benefits</masterLabel>
+    <processGroup>Loyalty</processGroup>
+    <retryCount>3</retryCount>
+    <retryInterval>1000</retryInterval>
+    <status>Active</status>
+    <type>Flow</type>
+</BatchProcessJobDefinition>

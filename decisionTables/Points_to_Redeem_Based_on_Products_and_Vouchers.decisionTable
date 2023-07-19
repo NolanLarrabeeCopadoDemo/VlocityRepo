@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionTable xmlns="http://soap.sforce.com/2006/04/metadata">
+    <conditionType>All</conditionType>
+    <decisionTableParameters>
+        <fieldName>Points__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <usage>OUTPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>EndDate__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>LessOrEqual</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>RedemptionType__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>Equals</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>Partner__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>Equals</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>VoucherDefinitionId__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>Equals</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>Product__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>Equals</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>ProductCategory__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>Equals</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <decisionTableParameters>
+        <fieldName>StartDate__c</fieldName>
+        <isGroupByField>false</isGroupByField>
+        <operator>GreaterOrEqual</operator>
+        <usage>INPUT</usage>
+    </decisionTableParameters>
+    <description>Decides the number of points that must be redeemed for a member based on the product purchased or vouchers issued.</description>
+    <setupName>Points to Redeem Based on Products and Vouchers</setupName>
+    <sourceObject>RedeemPointsProductCategory__c</sourceObject>
+    <status>Active</status>
+</DecisionTable>

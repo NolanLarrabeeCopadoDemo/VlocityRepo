@@ -1,0 +1,47 @@
+{
+    "AuthorName": "Debarshi",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 3,
+                    "name": "Parent.AssetId",
+                    "val": "02i3y00000KWEguAAH"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "dcGetCaseDetails",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "AssetId": "{Parent.AssetId}"
+                },
+                "jsonMap": "{\"Parent.AssetId\":\"{Parent.AssetId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "Lists all the cases for an asset",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "dcAssetCases",
+    "Namespace": "",
+    "OmniUiCardKey": "dcAssetCases/Debarshi/4.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "dcAssetCases.json",
+    "SampleDataSourceResponse": "[{\"Case Status\":\"New\",\"AssetId\":\"02i3y00000KWEguAAH\",\"Case Description\":\"Filter Issue\",\"Case Priority\":\"Medium\",\"Case Number\":\"00002652\",\"Case Subject\":\"Filter Issue\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "dcAssetCases_Debarshi_4",
+    "VersionNumber": 4,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/dcAssetCases"
+}

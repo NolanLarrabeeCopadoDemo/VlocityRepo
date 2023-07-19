@@ -1,0 +1,52 @@
+{
+    "AuthorName": "AcmeManufacturing",
+    "ClonedFromOmniUiCardKey": "OrderInfoPar/AcmeManufacturing/1.0/1637639396905",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 1,
+                    "name": "currentCase",
+                    "val": "5000M00000ac8OOQAY"
+                },
+                {
+                    "id": 13,
+                    "name": "recordId",
+                    "val": "5000M00000ac8OOQAY"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "getCaseOrders",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "currentCase": "{recordId}"
+                },
+                "jsonMap": "{\"currentCase\":\"{currentCase}\",\"recordId\":\"{recordId}\"}",
+                "resultVar": "[0].[Order]"
+            }
+        }
+    },
+    "Description": "Get order info",
+    "IsLocked": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "OrderInfoMain",
+    "Namespace": "",
+    "OmniUiCardKey": "OrderInfoMain/AcmeManufacturing/3.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "OrderInfoMain.json",
+    "SampleDataSourceResponse": "[{\"Case\":{\"CaseId\":\"5000M00000ac8OOQAY\",\"CaseAccountId\":\"0010M00001MxBj1QAF\"},\"Order\":{\"AccountName\":\"Acme Partners\",\"OrderId\":\"8013y000007CrVJAA0\",\"OrderNumber\":\"00006549\",\"OrderItem\":{\"OrderQuantity\":1,\"OrderProducts\":\"Compactor 3500\"},\"Delayed\":true,\"DelayReason\":\"Delayed at shipping\",\"StartDate\":\"2022-07-18\"}}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 3,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/OrderInfoMain"
+}

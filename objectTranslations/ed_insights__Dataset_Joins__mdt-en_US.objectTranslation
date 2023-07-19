@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Developer Name of the Dataset you wish to use for scoring --></help>
+        <label><!-- Dataset Name --></label>
+        <name>ed_insights__Dataset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Id field in the dataset where the recordId can be found --></help>
+        <label><!-- Name of ID Field --></label>
+        <name>ed_insights__Name_of_ID_Field__c</name>
+    </fields>
+</CustomObjectTranslation>

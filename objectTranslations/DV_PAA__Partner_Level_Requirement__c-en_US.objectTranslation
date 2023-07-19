@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Channel Program Level --></label>
+        <name>DV_PAA__Channel_Program_Level__c</name>
+        <relationshipLabel><!-- Partner Level Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Minimum point requirement for this activity type --></help>
+        <label><!-- Minimum Point Requirement --></label>
+        <name>DV_PAA__Minimum_Point_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Activity Type --></label>
+        <name>DV_PAA__Partner_Activity_Type__c</name>
+        <relationshipLabel><!-- Partner Level Requirements --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

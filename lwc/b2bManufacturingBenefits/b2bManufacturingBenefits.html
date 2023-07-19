@@ -1,0 +1,26 @@
+<template>
+    <div class="">
+        <h2 class="title slds-truncate slds-m-right--xx-small">
+            Your Benefits 
+        </h2>
+        <div class="slds-grid slds-gutters">
+            <div class={computedCurrentTierClassnames}>
+                <c-b2b-manufacturing-current-tier-benifits
+                    member-id={memberId} 
+                    tier-name={tierName}
+                ></c-b2b-manufacturing-current-tier-benifits>
+            </div>
+            <template if:true={accelerateTier}>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12">
+                    <c-b2b-manufacturing-accelerate-tier
+                        tier-heading={tierHeading}
+                        name={accelerateTier.name}
+                        tier-card={accelerateTier.tierCard}
+                        description={accelerateTier.description}
+                        benifits={accelerateTier.benifits}
+                    ></c-b2b-manufacturing-accelerate-tier>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

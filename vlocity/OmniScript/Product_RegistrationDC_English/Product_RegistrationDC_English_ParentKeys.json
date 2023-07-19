@@ -1,0 +1,6 @@
+[
+    "DataRaptor/dcCreateAsset",
+    "DataRaptor/dcGetContactDetails",
+    "DataRaptor/dcGetProducts",
+    "DataRaptor/dcGetUserDetails"
+]

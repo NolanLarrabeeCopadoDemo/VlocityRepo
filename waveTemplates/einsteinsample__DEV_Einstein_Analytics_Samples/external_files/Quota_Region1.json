@@ -1,0 +1,40 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Quota_Region1_csv",
+      "label": "Quota_Region1",
+      "name": "Quota_Region1",
+      "fields": [
+        {
+          "fullyQualifiedName": "Employee",
+          "name": "Employee",
+          "type": "Text",
+          "label": "Employee"
+        },
+        {
+          "fullyQualifiedName": "Year",
+          "name": "Year",
+          "type": "Text",
+          "label": "Year"
+        },
+        {
+          "fullyQualifiedName": "Quota",
+          "name": "Quota",
+          "type": "Numeric",
+          "label": "Quota",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "ScanOrSearch",
+    "OmniProcessId": {
+        "Name": "Service",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Service/RequestSupport/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "AssetInformation",
+        "OmniProcessId": {
+            "Name": "Service",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Service/RequestSupport/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Service/RequestSupport/English/AssetInformation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "AssetInformation",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": true,
+        "helpText": "Mobil Device with Camera access required for scanner",
+        "helpTextPos": "",
+        "hide": false,
+        "horizontalMode": "image",
+        "imageCountInRow": 2,
+        "label": "Scan Or Search Asset",
+        "optionHeight": 200,
+        "optionSource": {
+            "source": "",
+            "type": "image"
+        },
+        "optionWidth": 200,
+        "options": [
+            {
+                "developerName": "CACCAHBDA17683adbd7434e6baaa7ecd0ba152175",
+                "imgId": "/servlet/servlet.FileDownload?file=0153y0000049fNhAAI&docName=CACCAHBDA17683adbd7434e6baaa7ecd0ba152175",
+                "name": "Scan",
+                "value": "Scan"
+            },
+            {
+                "autoAdv": "next",
+                "developerName": "CACCAHBDA1f16ab61c2fe4115960d6966b6b36d86",
+                "imgId": "/servlet/servlet.FileDownload?file=0153y0000049fNnAAI&docName=CACCAHBDA1f16ab61c2fe4115960d6966b6b36d86",
+                "name": "Search",
+                "value": "Search"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "required": false
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Service/RequestSupport/English/ScanOrSearch"
+}

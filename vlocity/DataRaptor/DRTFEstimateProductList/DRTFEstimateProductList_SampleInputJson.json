@@ -1,0 +1,286 @@
+{
+    "AccountInfo": {
+        "TAAccountName-Block": {
+            "AccountIdSF": "001B000001LxacQIAR",
+            "AccountPhone": "(212) 555-5555",
+            "BillingCity": "New York",
+            "BillingCountry": "USA",
+            "BillingPostalCode": "31349",
+            "BillingState": "NY",
+            "BillingStreet": "10 Main Rd.",
+            "Name": "Acme",
+            "TAAccountName": "Acme",
+            "Website": "www.google.com"
+        }
+    },
+    "AccountsAndContacts": {
+        "ContactDetails": [
+            {
+                "AccountId": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hnIAD",
+                "Email": "pgoriparthy@salesforce.com",
+                "FirstName": "Edward",
+                "LastName": "Stamos",
+                "Phone": "(212) 555-5555",
+                "selectedContact": true
+            },
+            {
+                "AccountId": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hoIAD",
+                "Email": "info@salesforce.com",
+                "FirstName": "Howard",
+                "LastName": "Jones",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountId": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hpIAD",
+                "Email": "info@salesforce.com",
+                "FirstName": "Leanne",
+                "LastName": "Tomlin",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            }
+        ]
+    },
+    "Contacts": [
+        {
+            "AccountId": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hnIAD",
+            "Email": "pgoriparthy@salesforce.com",
+            "FirstName": "Edward",
+            "LastName": "Stamos",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountId": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hoIAD",
+            "Email": "info@salesforce.com",
+            "FirstName": "Howard",
+            "LastName": "Jones",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountId": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hpIAD",
+            "Email": "info@salesforce.com",
+            "FirstName": "Leanne",
+            "LastName": "Tomlin",
+            "Phone": "(212) 555-5555"
+        }
+    ],
+    "DocumentTemplate": null,
+    "Error": {
+    },
+    "GenerateDocument": null,
+    "PriceBookEntry": {
+        "CustomLWC6": {
+            "Products": {
+                "selectedprods": [
+                    {
+                        "Id": "REC1",
+                        "PId": "01tB000000268T4IAI",
+                        "PbeIsActive": true,
+                        "PbeName": "Main Case Seal",
+                        "PbeUnitPrice": 345,
+                        "PriceBookEntryId": "01uB0000002hdSZIAY",
+                        "Product2Id": "01tB000000268T4IAI",
+                        "ProductCode": "MC",
+                        "ProductUrl": "https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&m=462313057&s=612x612&w=0&h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element3block_element0": true,
+                            "state0element0block_element3block_element0_child": true,
+                            "state0element0block_element3block_element1": true,
+                            "state0element0block_element3block_element1_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC1"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC1"
+                    },
+                    {
+                        "Id": "REC2",
+                        "PId": "01tB000000268T5IAI",
+                        "PbeIsActive": true,
+                        "PbeName": "SLA_Finance",
+                        "PbeUnitPrice": 1200,
+                        "PriceBookEntryId": "01uB0000002hdSKIAY",
+                        "Product2Id": "01tB000000268T5IAI",
+                        "ProductCode": "SL",
+                        "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element3block_element0": true,
+                            "state0element0block_element3block_element0_child": true,
+                            "state0element0block_element3block_element1": true,
+                            "state0element0block_element3block_element1_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC2"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC2"
+                    }
+                ]
+            }
+        },
+        "PriceBook-Block": {
+            "PriceBook": "Manufacturing",
+            "PriceBookIdSF": "01sB0000002idbWIAQ",
+            "PriceBookrecName": "Manufacturing"
+        },
+        "ProductName": "c"
+    },
+    "Product": {
+        "PbeProduct": [
+            {
+                "PId": "01tB000000268T0IAI",
+                "PbeIsActive": true,
+                "PbeName": "Compactator",
+                "PbeUnitPrice": 100,
+                "PriceBookEntryId": "01uB0000002hdRzIAI",
+                "Product2Id": "01tB000000268T0IAI",
+                "ProductCode": "12367C6",
+                "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+20000+1.jpg",
+                "Qty": "1",
+                "QuantityUnitOfMeasure": "Each",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01tB000000268T4IAI",
+                "PbeIsActive": true,
+                "PbeName": "Main Case Seal",
+                "PbeUnitPrice": 345,
+                "PriceBookEntryId": "01uB0000002hdSZIAY",
+                "Product2Id": "01tB000000268T4IAI",
+                "ProductCode": "MC",
+                "ProductUrl": "https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&m=462313057&s=612x612&w=0&h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=",
+                "Qty": "1",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01tB000000268T5IAI",
+                "PbeIsActive": true,
+                "PbeName": "SLA_Finance",
+                "PbeUnitPrice": 1200,
+                "PriceBookEntryId": "01uB0000002hdSKIAY",
+                "Product2Id": "01tB000000268T5IAI",
+                "ProductCode": "SL",
+                "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+                "Qty": "1",
+                "addToEstimate": false
+            }
+        ],
+        "listisblank": false
+    },
+    "documentTitle": null,
+    "ep2": [
+        {
+            "Id": "REC1",
+            "PId": "01tB000000268T4IAI",
+            "PbeIsActive": true,
+            "PbeName": "Main Case Seal",
+            "PbeUnitPrice": 345,
+            "PriceBookEntryId": "01uB0000002hdSZIAY",
+            "Product2Id": "01tB000000268T4IAI",
+            "ProductCode": "MC",
+            "ProductUrl": "https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&m=462313057&s=612x612&w=0&h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=",
+            "Qty": "1",
+            "Subtotal": 345,
+            "_flex": {
+                "state0element0block_element3block_element0": true,
+                "state0element0block_element3block_element0_child": true,
+                "state0element0block_element3block_element1": true,
+                "state0element0block_element3block_element1_child": true,
+                "state0element0block_element4": true,
+                "state0element0block_element4_child": true,
+                "state0element0block_element5": true,
+                "state0element0block_element5_child": true,
+                "uniqueKey": "REC1"
+            },
+            "addToEstimate": true,
+            "uniqueKey": "REC1"
+        },
+        {
+            "Id": "REC2",
+            "PId": "01tB000000268T5IAI",
+            "PbeIsActive": true,
+            "PbeName": "SLA_Finance",
+            "PbeUnitPrice": 1200,
+            "PriceBookEntryId": "01uB0000002hdSKIAY",
+            "Product2Id": "01tB000000268T5IAI",
+            "ProductCode": "SL",
+            "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+            "Qty": "1",
+            "Subtotal": 1200,
+            "_flex": {
+                "state0element0block_element3block_element0": true,
+                "state0element0block_element3block_element0_child": true,
+                "state0element0block_element3block_element1": true,
+                "state0element0block_element3block_element1_child": true,
+                "state0element0block_element4": true,
+                "state0element0block_element4_child": true,
+                "state0element0block_element5": true,
+                "state0element0block_element5_child": true,
+                "uniqueKey": "REC2"
+            },
+            "addToEstimate": true,
+            "uniqueKey": "REC2"
+        }
+    ],
+    "estimatedProducts": {
+        "ProductsInCart": null,
+        "subtotalcal": 0
+    },
+    "estimatedproducts": null,
+    "orderId": null,
+    "selectedAccountId": "001B000001LxacQIAR",
+    "setAccountDetails": {
+        "AccountIdSF": "001B000001LxacQIAR",
+        "AccountPhone": "(212) 555-5555",
+        "BillingCity": "New York",
+        "BillingCountry": "USA",
+        "BillingPostalCode": "31349",
+        "BillingState": "NY",
+        "BillingStreet": "10 Main Rd.",
+        "Name": "Acme",
+        "TAAccountName": "Acme",
+        "Website": "www.google.com"
+    },
+    "summaryproducts": {
+        "ep": [
+            {
+                "PbeName": "Main Case Seal",
+                "PbeUnitPrice": 345,
+                "PriceBookEntryId": "01uB0000002hdSZIAY",
+                "Product2Id": "01tB000000268T4IAI",
+                "ProductUrl": "https://media.istockphoto.com/photos/rubber-sealing-picture-id462313057?k=20&m=462313057&s=612x612&w=0&h=xjKxHIFkyOkD78OmjtJVC10dY2vWmUNIJu4-AeImEnI=",
+                "Qty": "1",
+                "Subtotal": 345
+            },
+            {
+                "PbeName": "SLA_Finance",
+                "PbeUnitPrice": 1200,
+                "PriceBookEntryId": "01uB0000002hdSKIAY",
+                "Product2Id": "01tB000000268T5IAI",
+                "ProductUrl": "https://sfdc-ckz-b2b.s3.amazonaws.com/MFG/BadgerEquipment/General+Bucket.png",
+                "Qty": "1",
+                "Subtotal": 1200
+            }
+        ]
+    },
+    "timeStamp": "2022-03-08T06:13:01.876Z",
+    "userCurrencyCode": "USD",
+    "userId": "005B0000008COAxIAO",
+    "userName": "pareshrebate@pwc.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-480",
+    "userTimeZoneName": "America/Los_Angeles"
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "GlobalKey": "DRTFCopyProdEstimatedToSummaryCustom0jI8Y000000005fUAAItem0",
+        "InputFieldName": "summaryproducts:ep",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "DRTFCopyProdEstimatedToSummary",
+        "OmniDataTransformationId": {
+            "Name": "DRTFCopyProdEstimatedToSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFCopyProdEstimatedToSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "estimatedProducts:ProductsInCart:summaryproducts:ep",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

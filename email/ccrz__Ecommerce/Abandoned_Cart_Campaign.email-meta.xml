@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Abandoned Cart Campaign</name>
+    <style>none</style>
+    <subject>It&apos;s not too late!</subject>
+    <textOnly>Hi {!ccrz__E_Cart__c.ccrz__Contact__c},
+Your cart was abandoned on {!ccrz__E_Cart__c.LastActivityDate}. It&apos;s not too late! Finish your order today!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

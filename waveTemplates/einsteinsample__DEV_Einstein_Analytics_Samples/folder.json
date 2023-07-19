@@ -1,0 +1,34 @@
+{
+  "featuredAssets" : {
+    "default" : {
+      "assets" : [ 
+        {
+        "id" : "${App.Dashboards['Adventure Home'].Id}",
+        "name" : null,
+        "namespace" : "${Org.Namespace}",
+        "type" : null
+      },
+      {
+        "id" : "${App.Dashboards['Charts - Introduction'].Id}",
+        "name" : null,
+        "namespace" : "${Org.Namespace}",
+        "type" : null
+      },
+      {
+        "id" : "${App.Dashboards['Dynamic Apps - Introduction'].Id}",
+        "name" : null,
+        "namespace" : "${Org.Namespace}",
+        "type" : null
+      },
+      {
+        "id" : "${App.Dashboards['SAQL - Introduction'].Id}",
+        "name" : null,
+        "namespace" : "${Org.Namespace}",
+        "type" : null
+      }
+
+    ]
+
+    }
+  }
+}

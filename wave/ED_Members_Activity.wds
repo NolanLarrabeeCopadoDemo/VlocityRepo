@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>Predictions_for_Member_Engagement</application>
+    <masterLabel>ED_Members_Activity</masterLabel>
+    <templateAssetSourceName>ED_Members_Activity_tp</templateAssetSourceName>
+    <type>default</type>
+</WaveDataset>

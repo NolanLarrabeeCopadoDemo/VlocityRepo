@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ESignatureConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <configType>eSignVendorAccountId</configType>
+    <configValue>c4f691c9-50c1-4c4c-864c-fbdf1b98565c</configValue>
+    <groupType>eSignVendorAccount</groupType>
+    <masterLabel>DocuSigneSignVendorAccountId</masterLabel>
+    <vendor>DocuSign</vendor>
+</ESignatureConfig>

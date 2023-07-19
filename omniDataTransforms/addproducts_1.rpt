@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;PriceBookEntry&quot; : {
+    &quot;PriceBook-Block&quot; : {
+      &quot;PriceBookrecName&quot; : &quot;Manufacturing&quot;,
+      &quot;PriceBookIdSF&quot; : &quot;01s8Y000001THDiQAO&quot;,
+      &quot;PriceBook&quot; : &quot;Manufacturing&quot;
+    },
+    &quot;Text1&quot; : &quot;Gen&quot;,
+    &quot;CustomLWC6&quot; : {
+      &quot;Products&quot; : {
+        &quot;selectedprods&quot; : [ {
+          &quot;Id&quot; : &quot;REC1&quot;,
+          &quot;PbeName&quot; : &quot;Genwatt 10KW&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rsmQAB&quot;,
+          &quot;addToEstimate&quot; : true,
+          &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+          &quot;PbeIsActive&quot; : true,
+          &quot;Qty&quot; : 1,
+          &quot;PbeUnitPrice&quot; : 200,
+          &quot;Product2Id&quot; : &quot;01t8Y00000NV8FpQAL&quot;,
+          &quot;uniqueKey&quot; : &quot;REC1&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC1&quot;
+          }
+        } ]
+      }
+    }
+  },
+  &quot;PbeProduct&quot; : [ {
+    &quot;PbeName&quot; : &quot;Genwatt 1000KW&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rshQAB&quot;,
+    &quot;addToEstimate&quot; : false,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;Qty&quot; : 1,
+    &quot;PbeUnitPrice&quot; : 1000,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8FkQAL&quot;
+  }, {
+    &quot;PbeName&quot; : &quot;Genwatt 10KW&quot;,
+    &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rsmQAB&quot;,
+    &quot;addToEstimate&quot; : false,
+    &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+    &quot;PbeIsActive&quot; : true,
+    &quot;Qty&quot; : 1,
+    &quot;PbeUnitPrice&quot; : 200,
+    &quot;Product2Id&quot; : &quot;01t8Y00000NV8FpQAL&quot;
+  } ],
+  &quot;ep1&quot; : {
+    &quot;ep&quot; : null
+  },
+  &quot;timeStamp&quot; : &quot;2022-01-17T12:02:10.186Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;demo.org@omnistudio.1642136864485&quot;,
+  &quot;userId&quot; : &quot;0058Y00000AwAk2QAF&quot;,
+  &quot;multipleproducts&quot; : {
+    &quot;Products&quot; : {
+      &quot;selectedprods&quot; : [ {
+        &quot;PbeName&quot; : &quot;Genwatt 1000KW&quot;,
+        &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rshQAB&quot;,
+        &quot;addToEstimate&quot; : true,
+        &quot;Id&quot; : &quot;REC0&quot;,
+        &quot;filtervalue&quot; : &quot;filtervalue&quot;,
+        &quot;PbeIsActive&quot; : true,
+        &quot;uniqueKey&quot; : &quot;REC0&quot;,
+        &quot;Qty&quot; : 1,
+        &quot;Product2Id&quot; : &quot;01t8Y00000NV8FkQAL&quot;,
+        &quot;PbeUnitPrice&quot; : 1000,
+        &quot;_flex&quot; : {
+          &quot;uniqueKey&quot; : &quot;REC0&quot;
+        }
+      } ]
+    }
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>addproducts</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>addproductsCustom6411</globalKey>
+        <inputFieldName>PriceBookEntry:CustomLWC6:Products:selectedprods:Subtotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>addproducts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>selectedprods:Subtotal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:PriceBookEntry:CustomLWC6:Products:selectedprods:PbeUnitPrice var:PriceBookEntry:CustomLWC6:Products:selectedprods:Qty *</formulaConverted>
+        <formulaExpression>(PriceBookEntry:CustomLWC6:Products:selectedprods:PbeUnitPrice)*(PriceBookEntry:CustomLWC6:Products:selectedprods:Qty)</formulaExpression>
+        <formulaResultPath>PriceBookEntry:CustomLWC6:Products:selectedprods:Subtotal</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>addproductsCustom8089</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>addproducts</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>addproductsCustom8123</globalKey>
+        <inputFieldName>PriceBookEntry:CustomLWC6:Products:selectedprods</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>addproducts</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>selectedprods</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;setAccountDetails&quot; : {
+    &quot;TAAccountName&quot; : &quot;Acme&quot;,
+    &quot;Name&quot; : &quot;Acme&quot;,
+    &quot;AccountIdSF&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+    &quot;BillingPostalCode&quot; : &quot;31349&quot;
+  },
+  &quot;Product&quot; : {
+    &quot;PbeProduct&quot; : [ {
+      &quot;PbeName&quot; : &quot;Genwatt 1000KW&quot;,
+      &quot;ProductUrl&quot; : &quot;http://www.slhmetals.com/images/Steel%20Rebar%2002.png&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rscQAB&quot;,
+      &quot;addToEstimate&quot; : false,
+      &quot;PId&quot; : &quot;01t8Y00000NV8FkQAL&quot;,
+      &quot;PbeIsActive&quot; : true,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;PbeUnitPrice&quot; : 1000,
+      &quot;Product2Id&quot; : &quot;01t8Y00000NV8FkQAL&quot;
+    }, {
+      &quot;PbeName&quot; : &quot;Genwatt 10KW&quot;,
+      &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg&quot;,
+      &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rsdQAB&quot;,
+      &quot;addToEstimate&quot; : false,
+      &quot;PId&quot; : &quot;01t8Y00000NV8FpQAL&quot;,
+      &quot;PbeIsActive&quot; : true,
+      &quot;Qty&quot; : &quot;1&quot;,
+      &quot;PbeUnitPrice&quot; : 200,
+      &quot;Product2Id&quot; : &quot;01t8Y00000NV8FpQAL&quot;
+    } ],
+    &quot;listisblank&quot; : false
+  },
+  &quot;summaryproducts&quot; : {
+    &quot;ep&quot; : null
+  },
+  &quot;timeStamp&quot; : &quot;2022-02-18T06:30:37.092Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;-480&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;demo.org@omnistudio.1642136864485&quot;,
+  &quot;userId&quot; : &quot;0058Y00000AwAk2QAF&quot;,
+  &quot;Completion&quot; : null,
+  &quot;Error&quot; : { },
+  &quot;AccountInfo&quot; : {
+    &quot;TAAccountName-Block&quot; : {
+      &quot;TAAccountName&quot; : &quot;Acme&quot;,
+      &quot;Name&quot; : &quot;Acme&quot;,
+      &quot;AccountIdSF&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;BillingPostalCode&quot; : &quot;31349&quot;
+    }
+  },
+  &quot;selectedAccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+  &quot;Contacts&quot; : [ {
+    &quot;LastName&quot; : &quot;Stamos&quot;,
+    &quot;Id&quot; : &quot;0038Y00003KhkJkQAJ&quot;,
+    &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+    &quot;FirstName&quot; : &quot;Edward Stamos Stamos Stamos Stamos&quot;,
+    &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+    &quot;Email&quot; : &quot;info@salesforce.com&quot;
+  }, {
+    &quot;LastName&quot; : &quot;Jones&quot;,
+    &quot;Id&quot; : &quot;0038Y00003KhkJlQAJ&quot;,
+    &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+    &quot;FirstName&quot; : &quot;Howard Jones Jones Jones Jones Jones&quot;,
+    &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+    &quot;Email&quot; : &quot;info@salesforce.com&quot;
+  }, {
+    &quot;LastName&quot; : &quot;Tomlin&quot;,
+    &quot;Id&quot; : &quot;0038Y00003KhkJmQAJ&quot;,
+    &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+    &quot;FirstName&quot; : &quot;Leanne Tomlin Tomlin Tomlin Tomlin&quot;,
+    &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+    &quot;Email&quot; : &quot;info@salesforce.com&quot;
+  }, {
+    &quot;LastName&quot; : &quot;Smith&quot;,
+    &quot;Id&quot; : &quot;0038Y00003KhkJhQAJ&quot;,
+    &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+    &quot;FirstName&quot; : &quot;John Smith Smith Smith Smith Smith Smith&quot;,
+    &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+    &quot;Email&quot; : &quot;john@servicecloud.trial&quot;
+  }, {
+    &quot;LastName&quot; : &quot;Land&quot;,
+    &quot;Id&quot; : &quot;0038Y00003KhkJoQAJ&quot;,
+    &quot;Phone&quot; : &quot;(415) 555-5555&quot;,
+    &quot;FirstName&quot; : &quot;Mark Land Land Land Land Land Land Land&quot;,
+    &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+    &quot;Email&quot; : &quot;your.email@test.com&quot;
+  } ],
+  &quot;AccountsAndContacts&quot; : {
+    &quot;ContactDetails&quot; : [ {
+      &quot;selectedContact&quot; : false,
+      &quot;LastName&quot; : &quot;Stamos&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJkQAJ&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;Edward Stamos Stamos Stamos Stamos&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;selectedContact&quot; : false,
+      &quot;LastName&quot; : &quot;Jones&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJlQAJ&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;Howard Jones Jones Jones Jones Jones&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;selectedContact&quot; : true,
+      &quot;LastName&quot; : &quot;Tomlin&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJmQAJ&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;Leanne Tomlin Tomlin Tomlin Tomlin&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;selectedContact&quot; : false,
+      &quot;LastName&quot; : &quot;Smith&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJhQAJ&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;John Smith Smith Smith Smith Smith Smith&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;john@servicecloud.trial&quot;
+    }, {
+      &quot;selectedContact&quot; : false,
+      &quot;LastName&quot; : &quot;Land&quot;,
+      &quot;Id&quot; : &quot;0038Y00003KhkJoQAJ&quot;,
+      &quot;Phone&quot; : &quot;(415) 555-5555&quot;,
+      &quot;FirstName&quot; : &quot;Mark Land Land Land Land Land Land Land&quot;,
+      &quot;AccountId&quot; : &quot;0018Y00002g4fqKQAQ&quot;,
+      &quot;Email&quot; : &quot;your.email@test.com&quot;
+    } ]
+  },
+  &quot;PriceBookEntry&quot; : {
+    &quot;Noofproducts&quot; : 0,
+    &quot;totalcost&quot; : 0,
+    &quot;CustomLWC6&quot; : {
+      &quot;Products&quot; : {
+        &quot;selectedprods&quot; : [ {
+          &quot;Id&quot; : &quot;REC0&quot;,
+          &quot;PbeName&quot; : &quot;Genwatt 1000KW&quot;,
+          &quot;ProductUrl&quot; : &quot;http://www.slhmetals.com/images/Steel%20Rebar%2002.png&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rscQAB&quot;,
+          &quot;addToEstimate&quot; : true,
+          &quot;PId&quot; : &quot;01t8Y00000NV8FkQAL&quot;,
+          &quot;PbeIsActive&quot; : true,
+          &quot;Qty&quot; : &quot;1&quot;,
+          &quot;PbeUnitPrice&quot; : 1000,
+          &quot;Product2Id&quot; : &quot;01t8Y00000NV8FkQAL&quot;,
+          &quot;uniqueKey&quot; : &quot;REC0&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC0&quot;,
+            &quot;state0element0block_element2&quot; : true,
+            &quot;state0element0block_element2_child&quot; : true,
+            &quot;state0element0block_element3&quot; : true,
+            &quot;state0element0block_element3_child&quot; : true,
+            &quot;state0element0block_element4&quot; : true,
+            &quot;state0element0block_element4_child&quot; : true,
+            &quot;state0element0block_element5&quot; : true,
+            &quot;state0element0block_element5_child&quot; : true
+          }
+        }, {
+          &quot;Id&quot; : &quot;REC1&quot;,
+          &quot;PbeName&quot; : &quot;Genwatt 10KW&quot;,
+          &quot;ProductUrl&quot; : &quot;https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg&quot;,
+          &quot;PriceBookEntryId&quot; : &quot;01u8Y00000L9rsdQAB&quot;,
+          &quot;addToEstimate&quot; : true,
+          &quot;PId&quot; : &quot;01t8Y00000NV8FpQAL&quot;,
+          &quot;PbeIsActive&quot; : true,
+          &quot;Qty&quot; : &quot;1&quot;,
+          &quot;PbeUnitPrice&quot; : 200,
+          &quot;Product2Id&quot; : &quot;01t8Y00000NV8FpQAL&quot;,
+          &quot;uniqueKey&quot; : &quot;REC1&quot;,
+          &quot;_flex&quot; : {
+            &quot;uniqueKey&quot; : &quot;REC1&quot;,
+            &quot;state0element0block_element2&quot; : true,
+            &quot;state0element0block_element2_child&quot; : true,
+            &quot;state0element0block_element3&quot; : true,
+            &quot;state0element0block_element3_child&quot; : true,
+            &quot;state0element0block_element4&quot; : true,
+            &quot;state0element0block_element4_child&quot; : true,
+            &quot;state0element0block_element5&quot; : true,
+            &quot;state0element0block_element5_child&quot; : true
+          }
+        } ]
+      }
+    },
+    &quot;ProductName&quot; : &quot;gen&quot;,
+    &quot;PriceBook-Block&quot; : {
+      &quot;PriceBookrecName&quot; : &quot;Standard Price Book&quot;,
+      &quot;PriceBookIdSF&quot; : &quot;01s8Y000001Sc7rQAC&quot;,
+      &quot;PriceBook&quot; : &quot;Standard Price Book&quot;
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>addproducts_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

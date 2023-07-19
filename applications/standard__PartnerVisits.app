@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>GenericVisits</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Visit_Record_Page_Mobile</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Visit</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Visit</tabs>
+    <tabs>standard-ActionPlan</tabs>
+    <tabs>standard-ActionPlanTemplate</tabs>
+    <tabs>standard-AssessmentTask</tabs>
+    <tabs>standard-AssessmentIndicatorDefinition</tabs>
+    <tabs>standard-GenericVisitTask</tabs>
+    <tabs>standard-GenericVisitTaskContext</tabs>
+    <tabs>standard-GnrcVstKeyPerformanceInd</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

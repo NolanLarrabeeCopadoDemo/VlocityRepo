@@ -1,0 +1,2 @@
+Redeem Points Product Category Name,Product Category,Product,Points,Partner,Program Name,Redemption Type,Voucher Definition,Start Date,End Date
+Test Name 1,Test Category 1,Light switches,20, Acme Corporation,Program Name Test 1,Product,,,

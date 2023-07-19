@@ -1,0 +1,73 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "MergeSelectedProductsToCart",
+    "OmniProcessId": {
+        "Name": "ProductList",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/team/merge/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "advancedMerge": true,
+        "advancedMergeMap": [
+            {
+                "listKey": "summaryproducts:ep",
+                "matchingPath": "Product2Id",
+                "normalizeKey": "1"
+            },
+            {
+                "listKey": "estimatedProducts:ProductsInCart:summaryproducts:ep",
+                "matchingPath": "Product2Id",
+                "normalizeKey": "1"
+            }
+        ],
+        "allowMergeNulls": false,
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "dynamicOutputFields": "",
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "filterListFormula": "",
+        "hasPrimary": false,
+        "label": "ListAction1",
+        "mergeFields": [
+            null
+        ],
+        "mergeListsOrder": [
+            "estimatedProducts:ProductsInCart:summaryproducts:ep",
+            "summaryproducts:ep"
+        ],
+        "primaryListKey": "",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "sortBy": [
+        ],
+        "sortInDescendingOrder": false,
+        "updateFieldValue": {
+        },
+        "useFormulas": true
+    },
+    "Type": "List Merge Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/team/merge/Procedure/MergeSelectedProductsToCart"
+}

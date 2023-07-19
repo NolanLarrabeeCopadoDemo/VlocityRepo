@@ -1,0 +1,2 @@
+Voucher Definition Name,Type,Active,Loyalty Program,Partner Name,Product / Category Name,Face Value,Discount Percent,Effective Date,Expiration Date,Expiration Type,Expiration Period,Expiration Period Unit,Description,Starting Voucher Number,Voucher Code Prefix,Voucher Code Suffix
+Safety Kit Voucher,ProductorService,TRUE,Program Name Test 1,Ursa Inc.,Safety Kit,,,2021-01-01,2022-01-02,Period,12,Months,Safety Kit Voucher,1000,SAFE,URSA

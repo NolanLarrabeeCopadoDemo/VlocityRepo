@@ -1,0 +1,10 @@
+<!--
+ - Created by brandon.rogers.
+ -->
+
+<apex:page id="ckz_QuickOrder_incl" docType="html-5.0" sidebar="false" showHeader="false" standardStylesheets="false" applyHtmlTag="false">
+
+    <apex:insert name="MiniQuickOrderBox"/>
+    <c:ckz_QuickOrder />
+
+</apex:page>

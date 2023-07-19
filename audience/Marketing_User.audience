@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Persona: Marketing Users</audienceName>
+    <container>Badger Partner Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>$User.Primary_Partner_Role__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Marketing</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>5a3c408b-b566-407e-8874-07a810a9b429$#$46a22bc7-c7ce-44f3-b513-0f4c8b1cb547</groupName>
+            <priority>2</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Theme_Navigation_Menu_1_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>9cdc405b-6c99-4c44-a05c-7c0624503034$#$61d4f1d2-f63f-44eb-960a-8d0c7cc21729</groupName>
+            <priority>2</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Dealer_Home_CMS_Collection_1_Component_Properties</targetValue>
+        </target>
+    </targets>
+</Audience>

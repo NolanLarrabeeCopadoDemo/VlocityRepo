@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>B2B_CS_Add_To_Cart_Button_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CS Add To Cart Button Label</shortDescription>
+        <value>Add to Cart</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CS_Cart_Updated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CS Cart Updated</shortDescription>
+        <value>Cart Updated</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CS_Description_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CS Description Label</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CS_Error_detected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CS Error detected</shortDescription>
+        <value>Error detected</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CS_More_Information_Button_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CS More Information Button Label</shortDescription>
+        <value>More Information</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CS_Product_added_to_your_cart</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CS Product added to your cart</shortDescription>
+        <value>Product added to your cart</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Alt_Text_Please_Wait</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Alt Text Please Wait</shortDescription>
+        <value>Please wait...</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_CategoryId_is_blank</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP CategoryId is blank</shortDescription>
+        <value>CategoryId is blank</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Category_contains_no_products</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Category contains no products</shortDescription>
+        <value>Category contains no products</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Component_configuration_error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Component configuration error</shortDescription>
+        <value>Component configuration error</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Field_is_not_accessible</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Field is not accessible</shortDescription>
+        <value>{0} is not accessible to the current user</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Invalid_Boolean_Field_Value</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Invalid Boolean Field Value</shortDescription>
+        <value>{0} field value is not a valid Boolean value (true/false)</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Invalid_Compare_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Invalid Compare Type</shortDescription>
+        <value>Field compare type not a valid option (compares, equals)</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Invalid_Field_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Invalid Field Type</shortDescription>
+        <value>{0} is not a valid field type for selection (String, Picklist, Boolean)</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Invalid_Field_for_Product_Object</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Invalid Field for Product Object</shortDescription>
+        <value>{0} is not a valid field on the Product object</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_No_Products</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP No Products</shortDescription>
+        <value>NO PRODUCTS TO DISPLAY</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Processing_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Processing Error</shortDescription>
+        <value>Processing Error</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Product_SKU_list_is_empty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Product SKU list is empty</shortDescription>
+        <value>Product SKU list is empty</value>
+    </labels>
+    <labels>
+        <fullName>B2B_FP_Search_Error_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B FP Search Error Title</shortDescription>
+        <value>Search Error</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Billing_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Billing Address</shortDescription>
+        <value>Billing Address</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Billing_Address_Not_Defined</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Billing Address Not Defined</shortDescription>
+        <value>Billing address not defined for account</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Checkout_Estimated_Shipping</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Checkout Estimated Shipping</shortDescription>
+        <value>Estimated Shipping:</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Checkout_Estimated_Tax</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Checkout Estimated Tax</shortDescription>
+        <value>Estimated Tax:</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Checkout_Subtotal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Checkout Subtotal</shortDescription>
+        <value>Subtotal:</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Checkout_Summary_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Checkout Summary Header</shortDescription>
+        <value>Checkout Summary</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Checkout_Total</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Checkout Total</shortDescription>
+        <value>Total:</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_City</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_City_Not_Valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC City Not Valid</shortDescription>
+        <value>City is not valid</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Company_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Company Name</shortDescription>
+        <value>Company Name</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Company_Name_Not_Valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Company Name Not Valid</shortDescription>
+        <value>Company Name is not valid</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Country</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Country_Not_Valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Country Not Valid</shortDescription>
+        <value>Country is not valid</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Delivery_Instructions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Delivery Instructions</shortDescription>
+        <value>Delivery Instructions</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Delivery_Instructions_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Delivery Instructions Placeholder</shortDescription>
+        <value>Cross street, security code, etc...</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Delivery_Method_Not_Selected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Delivery Method Not Selected</shortDescription>
+        <value>Delivery method not selected</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Delivery_Method_Section_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Delivery Method Section Header</shortDescription>
+        <value>Delivery Method (Estimates are in business days)</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Enter_PO_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Enter PO Number</shortDescription>
+        <value>Enter PO Number</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Next_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Next Button</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Payment_Credit_Card_Option</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Payment Credit Card Option</shortDescription>
+        <value>Credit Card</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Payment_Method_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Payment Method Header</shortDescription>
+        <value>Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Payment_PO_Option</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Payment PO Option</shortDescription>
+        <value>Purchase Order</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Please_Wait</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Please Wait</shortDescription>
+        <value>Please wait...</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Postal_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Postal Code</shortDescription>
+        <value>Postal Code</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Postal_Code_Not_Valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Postal Code Not Valid</shortDescription>
+        <value>Postal code is not valid</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Processing_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Processing Error</shortDescription>
+        <value>Processing Error</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Required_Information_Missing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Required Information Missing</shortDescription>
+        <value>Required information missing</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Ship_To_Address_book_option</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Ship To Address book option</shortDescription>
+        <value>Address Book</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Ship_To_Address_not_defined</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Ship To Address not defined</shortDescription>
+        <value>Ship to address not defined for account</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Ship_To_Enter_Address_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Ship To Enter Address Button</shortDescription>
+        <value>Enter Address</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Ship_To_Enter_Required_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Ship To Enter Required Fields</shortDescription>
+        <value>Please provide a value in all required fields</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Ship_To_Manual_Entry_option</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Ship To Manual Entry option</shortDescription>
+        <value>Manual Entry</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Ship_To_Section_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Ship To Section Header</shortDescription>
+        <value>Ship To</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Ship_To_Select_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Ship To Select Address</shortDescription>
+        <value>Please select an address</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_State_Province</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC State Province</shortDescription>
+        <value>State/Province</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_State_Province_Not_Valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC State Province Not Valid</shortDescription>
+        <value>State/Province is not valid</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Street_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Street Address</shortDescription>
+        <value>Street Address</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SPC_Street_Address_Not_Valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SPC Street Address Not Valid</shortDescription>
+        <value>Street address is not valid</value>
+    </labels>
+    <labels>
+        <fullName>CM_Container_MenuItems_ChannelLabel_3mi3y000000fyep_1311874</fullName>
+        <categories>ChannelMenu</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_Container_MenuItems_ChannelLabel_3mi3y000000fyep_1311874</shortDescription>
+        <value>SMS</value>
+    </labels>
+    <labels>
+        <fullName>CM_Container_MenuItems_ChannelLabel_3mi3y000000fyeu_8080175</fullName>
+        <categories>ChannelMenu</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_Container_MenuItems_ChannelLabel_3mi3y000000fyeu_8080175</shortDescription>
+        <value>WhatsApp</value>
+    </labels>
+    <labels>
+        <fullName>CM_Container_MenuItems_ChannelLabel_3mi3y000000fyev_8969232</fullName>
+        <categories>ChannelMenu</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_Container_MenuItems_ChannelLabel_3mi3y000000fyev_8969232</shortDescription>
+        <value>Facebook</value>
+    </labels>
+    <labels>
+        <fullName>CM_Container_MenuItems_ChannelLabel_3mi3y000000fyew_5145652</fullName>
+        <categories>ChannelMenu</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_Container_MenuItems_ChannelLabel_3mi3y000000fyew_5145652</shortDescription>
+        <value>WeChat</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Autogenerated OmniScript Label for DocGen/OmniStudioComponent</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Continue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Autogenerated OmniScript Label for DocGen/Component</shortDescription>
+        <value>Continue</value>
+    </labels>
+    <labels>
+        <fullName>Done</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Done</shortDescription>
+        <value>Done</value>
+    </labels>
+    <labels>
+        <fullName>GApiKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GApiKey</shortDescription>
+        <value>ABQIAAAARms8MGvnV-BbiTjwR8z1eBST0mNpJvtWvmgvEdrgGXs5szHHahQdD86Zd50nyAzG0QAkxwmgieQrLQ</value>
+    </labels>
+    <labels>
+        <fullName>Generate_Document</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Autogenerated OmniScript Label for DocGen/Component</shortDescription>
+        <value>Generate Document</value>
+    </labels>
+    <labels>
+        <fullName>Generate_Merge_Document</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Autogenerated OmniScript Label for DocGen/Component</shortDescription>
+        <value>Create Composite Document</value>
+    </labels>
+    <labels>
+        <fullName>GoBack</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Autogenerated OmniScript Label for DocGen/OmniStudioComponent</shortDescription>
+        <value>Go Back</value>
+    </labels>
+    <labels>
+        <fullName>InProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Autogenerated OmniScript Label for DocGen/OmniStudioComponent</shortDescription>
+        <value>In Progress</value>
+    </labels>
+    <labels>
+        <fullName>KnowledgeBase_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KnowledgeBase URL</shortDescription>
+        <value>http://sdo.force.com/YourCompany</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_AddQuestion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Question</shortDescription>
+        <value>Add Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Anonymous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Anonymous</shortDescription>
+        <value>Anonymous</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Answer_as</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Answer as</shortDescription>
+        <value>Answer as</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Chatter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chatter</shortDescription>
+        <value>Chatter</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Chatter_Link</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chatter Link</shortDescription>
+        <value>Chatter Link</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Community</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Community</shortDescription>
+        <value>Community</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_ContactWithCase</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact with Case</shortDescription>
+        <value>Contact with Case:</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_CurrentSurveys</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Current Surveys</shortDescription>
+        <value>Current Surveys</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Delete_Confirm</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Are you sure you want to delete this survey?</shortDescription>
+        <value>Are you sure you want to delete this survey?</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_Anonymous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link, Anonymous</shortDescription>
+        <value>Email Link, Anonymous</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_w_Contact_Case_Merge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link w/ Contact &amp; Case Merge</shortDescription>
+        <value>Email Link w/ Contact &amp; Case Merge</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_w_Contact_Merge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link w/ Contact Merge</shortDescription>
+        <value>Email Link w/ Contact Merge</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_EnterSurveyName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enter Survey Name</shortDescription>
+        <value>Enter Survey Name</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_External_Please_Create_Site</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For external facing surveys, please create a site first.  You may still create i</shortDescription>
+        <value>For external facing surveys, please create a site first.  You may still create internal surveys without creating a site.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_For_community_assistance_with_Survey_Force</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For community assistance with Survey Force</shortDescription>
+        <value>For community assistance with Survey Force</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Getting_Help</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Help</shortDescription>
+        <value>Getting Help</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_HeaderAndThankYou</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Header and Thank You</shortDescription>
+        <value>Header, Thank You &amp; CSS</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Installation_Guide</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Installation Guide</shortDescription>
+        <value>Installation Guide</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Internal</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Internal</shortDescription>
+        <value>Internal</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_JustContact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Just Contact</shortDescription>
+        <value>Just Contact</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Learn_More</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Learn More</shortDescription>
+        <value>Learn More</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_MakeANewSurvey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make A New Survey</shortDescription>
+        <value>Make A New Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_MakeNewSurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Make New Survey</shortDescription>
+        <value>Make New Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Make_a_Sample_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Make a Sample Survey</shortDescription>
+        <value>Make a Sample Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Next_Steps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next Steps</shortDescription>
+        <value>Next Steps</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_PleaseEnterTheList</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter the list</shortDescription>
+        <value>Please enter the list of answers/responses in the field below. Each value should be separated by a new line.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Question</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Question</shortDescription>
+        <value>Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required</shortDescription>
+        <value>required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_RequiredQuestion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required Question</shortDescription>
+        <value>Required Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Resources</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Resources</shortDescription>
+        <value>Resources</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Results</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Results</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SELECTSITE</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SELECT SITE</shortDescription>
+        <value>--SELECT SITE--</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SELECTTYPE</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>--SELECT--</shortDescription>
+        <value>--SELECT--</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Salesforce_Answers</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Salesforce Answers</shortDescription>
+        <value>Salesforce Answers</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SaveOrder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Order</shortDescription>
+        <value>Save Order</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SelectQuestionType</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Question Type</shortDescription>
+        <value>Select Question Type</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SelectSitetodisplaySurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Site to display Survey</shortDescription>
+        <value>Select Site to display Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Share</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Share</shortDescription>
+        <value>Share</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Share_My_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Share My Survey</shortDescription>
+        <value>Share My Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Sharing_Options</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sharing Options</shortDescription>
+        <value>Sharing Options</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SubmitSurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit Survey</shortDescription>
+        <value>Submit Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SurveyForceIsOpenSource</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SurveyForceIsOpenSource</shortDescription>
+        <value>Survey Force is Open Source software.  We welcome your issue reports, ideas, documentation, code tweaks and all other participation.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SurveyURLLink</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey URL Link</shortDescription>
+        <value>Survey URL Link</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Force_is_unsupported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Force is unsupported</shortDescription>
+        <value>Survey Force is unsupported.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Force_on_Github</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Force on Github</shortDescription>
+        <value>Survey Force on Github</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Name_Is_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Name Is Required</shortDescription>
+        <value>Survey Name is Required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Site_Is_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Site Is Required</shortDescription>
+        <value>Survey Site Is Required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Submitted_Thank_you</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your survey has been submitted. Thank you for taking our survey.</shortDescription>
+        <value>Your survey has been submitted. Thank you for taking our survey.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_To_submit_ideas_or_issues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To submit ideas or issues</shortDescription>
+        <value>To submit ideas or issues</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_User_Guide</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>User Guide</shortDescription>
+        <value>User Guide</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_View_Results_In_New_Window</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Results In New Window</shortDescription>
+        <value>View Results In New Window</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_View_Sample_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Sample Survey</shortDescription>
+        <value>View Sample Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Welcome_to_Survey_Force</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welcome to Survey Force</shortDescription>
+        <value>Welcome to Survey Force</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X1_Create_a_sample_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>1. Create a sample survey by clicking the button below.</shortDescription>
+        <value>1. Create a sample survey by clicking the button below.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X2_External_Setup_Site</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>2. Set up a site if you would like to have external-facing surveys.</shortDescription>
+        <value>2. Set up a site if you would like to have external-facing surveys.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X3_Start_creating_your_first_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>3. Start creating your first survey.</shortDescription>
+        <value>3. Start creating your first survey.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_You_have_already_taken_this_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You have already taken this survey!</shortDescription>
+        <value>You have already taken this survey!</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Your_next_few_steps_are_easy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your next few steps are easy.</shortDescription>
+        <value>Your next few steps are easy.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_please_visit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>please visit</shortDescription>
+        <value>please visit</value>
+    </labels>
+    <labels>
+        <fullName>LoyaltyProgramName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LoyaltyProgramName</shortDescription>
+        <value>Partner Extraa Program</value>
+    </labels>
+    <labels>
+        <fullName>New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Autogenerated OmniScript Label for DocGen/OmniStudioComponent</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>OmniinProgressMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OmniinProgressMessage</shortDescription>
+        <value>OmniinProgressMessage</value>
+    </labels>
+    <labels>
+        <fullName>Redemption_Survey_Email_frequency_In_Days</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Redemption_Survey_Email_frequency_In_Days</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey</shortDescription>
+        <value>Customer Survey</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey_FeedbackThanks</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey_FeedbackThanks</shortDescription>
+        <value>Thank you for your feedback!</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey_Q1</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey_Q1</shortDescription>
+        <value>To what extent do you agree or disagree with the following statement:&lt;br /&gt; The company made it easy for me to handle my issue.</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey_Q2</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey_Q2</shortDescription>
+        <value>2. How would you rate your overall satisfaction with your customer service experience?</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey_Q3</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey_Q3</shortDescription>
+        <value>3. How likely is it that you would recommend this company to a friend or colleague?</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey_Q4</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey_Q4</shortDescription>
+        <value>4. Was your issue completely resolved?</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey_SubTitle</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey_SubTitle</shortDescription>
+        <value>Your comments will help us drive important improvements in our products and services.</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey_Thanks</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey_Thanks</shortDescription>
+        <value>Thanks</value>
+    </labels>
+    <labels>
+        <fullName>SDO_CustomerSurvey_Title</fullName>
+        <categories>Customer Survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO_CustomerSurvey_Title</shortDescription>
+        <value>for taking the time to fill out this quick survey.</value>
+    </labels>
+    <labels>
+        <fullName>SDO_Version</fullName>
+        <categories>SDO Version</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDO Version</shortDescription>
+        <value>v.192.1 October 5, 2014
+-Communities Templates
+-Consumer Community
+-Winter15 updates
+
+v.190.2 August 11, 2014
+
+Report Enhancements Pilot
+-Look for the &quot;Open Charts Demo&quot; Report Folder</value>
+    </labels>
+    <labels>
+        <fullName>Sites_Google_Key</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sites Google Key</shortDescription>
+        <value>ABQIAAAATXEfj6IW3n-kI7DZ8grWWxTz6A_yJqEW_Qa41mmHPbAum_llvRQFN1LB7bW8Hbaw2DYPc19tNdLT7g</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_AvailableForCalls</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_AvailableForCalls</shortDescription>
+        <value>Available for Calls</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_CallConnect</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_CallConnect</shortDescription>
+        <value>Call connect</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_CallWrapup</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_CallWrapup</shortDescription>
+        <value>Call Wrap-up</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_EmptyNotes</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_EmptyNotes</shortDescription>
+        <value>Notes...</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_InboundCall</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_InboundCall</shortDescription>
+        <value>Inbound call on</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_Internal</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_Internal</shortDescription>
+        <value>Internal call on</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_LeftVoicemail</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_LeftVoicemail</shortDescription>
+        <value>Left voicemail</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_NoAnswer</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_NoAnswer</shortDescription>
+        <value>No answer</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_NotAvailable</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_NotAvailable</shortDescription>
+        <value>Not Available</value>
+    </labels>
+    <labels>
+        <fullName>SlickCTI_OutboundCall</fullName>
+        <categories>slickcti</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SlickCTI_OutboundCall</shortDescription>
+        <value>Outbound call on</value>
+    </labels>
+    <labels>
+        <fullName>SpaceID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SpaceID</shortDescription>
+        <value>5480cf0eaaa3890ab13e5669cd1282192434f-7e48</value>
+    </labels>
+    <labels>
+        <fullName>Twitter_Widget_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Twitter Widget Id</shortDescription>
+        <value>606770178664333312</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderKnowledge_AttachArticle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkOrderKnowledge_AttachArticle</shortDescription>
+        <value>Attach article</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderKnowledge_BadInput</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkOrderKnowledge_BadInput</shortDescription>
+        <value>Your entry must be at least 3 characters</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderKnowledge_DetachArticle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkOrderKnowledge_DetachArticle</shortDescription>
+        <value>Detach article</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderKnowledge_LastPublished</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkOrderKnowledge_LastPublished</shortDescription>
+        <value>Last Published</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderKnowledge_NoArticle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkOrderKnowledge_NoArticle</shortDescription>
+        <value>No Article</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderKnowledge_Search</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkOrderKnowledge_Search</shortDescription>
+        <value>Search Articles</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderKnowledge_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkOrderKnowledge_Title</shortDescription>
+        <value>Knowledge Articles</value>
+    </labels>
+    <labels>
+        <fullName>omnistudio_OmniGoback</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>omnistudio__OmniGoback</shortDescription>
+        <value>Go Back</value>
+    </labels>
+    <labels>
+        <fullName>omnistudio_OmniinProgressMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>omnistudio__OmniinProgressMessage</shortDescription>
+        <value>In Progress</value>
+    </labels>
+</CustomLabels>

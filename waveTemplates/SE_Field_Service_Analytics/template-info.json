@@ -1,0 +1,232 @@
+{
+  "templateType" : "app",
+  "label" : "SE Demo | Field Service Analytics",
+  "name" : "SE_Field_Service_Analytics",
+  "description" : "Demo version of Field Service Analytics.",
+  "customAttributes" : [
+    {
+      "label" : "Author(s)",
+      "values" : [
+        "Siegbert D'Haese (sdhaese@salesforce.com)",
+        "Rodrigo Mercader (rmercader@salesforce.com)",
+        "TCRM PMM"
+      ]
+    },
+    {
+      "label" : "Demo Version",
+      "values" : [
+        "v2021.44"
+      ]
+    },
+    {
+      "label" : "Source Version",
+      "values" : [
+        "v232"
+      ]
+    }
+  ],
+  "tags" : [
+    "SE Demo",
+    "Service",
+    "Field Service Lightning"
+  ],
+  "assetVersion" : 52.0,
+  "variableDefinition" : "variables.json",
+  "uiDefinition" : "ui.json",
+  "rules" : [
+    {
+      "type" : "templateToApp",
+      "file" : "template-to-app-rules.json"
+    },
+    {
+      "type" : "appToTemplate",
+      "file" : "app-to-template-rules.json"
+    }
+  ],
+  "releaseInfo" : {
+    "templateVersion" : "1.0",
+    "notesFile" : "releaseNotes.html"
+  },
+  "folderDefinition" : "folder.json",
+  "externalFiles" : [
+    {
+      "label" : "AssignedResource",
+      "name" : "AssignedResourceDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/AssignedResourceDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/AssignedResourceDemo.json",
+      "userXmd" : "external_files/AssignedResourceDemo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "ResourceAbsence",
+      "name" : "ResourceAbsenceDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/ResourceAbsenceDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/ResourceAbsenceDemo.json",
+      "userXmd" : "external_files/ResourceAbsenceDemo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "ServiceAppointment",
+      "name" : "ServiceAppointmentDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/ServiceAppointmentDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/ServiceAppointmentDemo.json",
+      "userXmd" : "external_files/ServiceAppointmentDemo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "TimeSlot",
+      "name" : "TimeSlotDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/TimeSlotDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/TimeSlotDemo.json",
+      "userXmd" : "external_files/TimeSlotDemo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "ServiceResourceCapacity",
+      "name" : "ServiceResourceCapacityDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/ServiceResourceCapacityDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/ServiceResourceCapacityDemo.json",
+      "userXmd" : "external_files/ServiceResourceCapacityDemo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "ServiceResourceSkill",
+      "name" : "ServiceResourceSkillDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/ServiceResourceSkillDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/ServiceResourceSkillDemo.json",
+      "userXmd" : "external_files/ServiceResourceSkillDemo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "SkillRequirement",
+      "name" : "SkillRequirementDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/SkillRequirementDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/SkillRequirementDemo.json",
+      "userXmd" : "external_files/SkillRequirementDemo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "FSL Capacity",
+      "name" : "FSLCapacityDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/FSL_Capacity_Demo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/FSL_Capacity_Demo.json",
+      "userXmd" : "external_files/FSL_Capacity_Demo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "WorkOrderVolume",
+      "name" : "WorkOrderVolumeDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/WorkOrderVolumeDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/WorkOrderVolumeDemo.json",
+      "userXmd" : "external_files/WorkOrderVolumeDemo_XMD.json",
+      "rows" : 5
+    },
+    {
+      "label" : "WorkOrderVolume Aux",
+      "name" : "WorkOrderVolumeAuxDemo",
+      "condition" : "${Variables.Overrides.createAllExternalFiles}",
+      "file" : "external_files/WorkOrderVolumeAuxDemo.csv",
+      "type" : "CSV",
+      "schema" : "external_files/WorkOrderVolumeAuxDemo.json",
+      "userXmd" : "external_files/WorkOrderVolumeAuxDemo_XMD.json",
+      "rows" : 5
+    }
+  ],
+  "lenses" : [ ],
+  "dashboards" : [
+    {
+      "label" : "Service Resource Page",
+      "name" : "Service_Resource_Page1_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Service_Resource_Page1.json"
+    },
+    {
+      "label" : "Service Territory Page",
+      "name" : "Service_Territory_Page1_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Service_Territory_Page1.json"
+    },
+    {
+      "label" : "Technician Performance",
+      "name" : "Technician_Performance1_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Technician_Performance1.json"
+    },
+    {
+      "label" : "Work Order Backlog",
+      "name" : "Work_Order_Backlog_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Work_Order_Backlog.json"
+    },
+    {
+      "label" : "Work Order Overview",
+      "name" : "Work_Order_Overview1_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Work_Order_Overview1.json"
+    },
+    {
+      "label" : "Work Type Duration Analysis",
+      "name" : "Work_Type_Duration_Analysis1_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/Work_Type_Duration_Analysis1.json"
+    },
+    {
+      "label" : "FSL Demand Forecasting",
+      "name" : "FSL_Demand_Forecasting_tp",
+      "condition" : "${Variables.Overrides.createAllDashboards}",
+      "file" : "dashboards/FSL_Demand_Forecasting.json"
+    }
+  ],
+  "eltDataflows" : [
+    {
+      "label" : "- AF and Timeshifting",
+      "name" : "AF_and_Timeshifting_Field_Service",
+      "condition" : "${Variables.Overrides.createDataflow}",
+      "file" : "dataflow/AF_and_Timeshifting.json"
+    }
+  ],
+  "recipes" : [ ],
+  "datasetFiles" : [ ],
+  "storedQueries" : [ ],
+  "imageFiles" : [ ],
+  "extendedTypes" : { },
+  "templateDependencies" : [ ],
+  "icons" : {
+    "appBadge" : {
+      "name" : "16.png"
+    },
+    "templateBadge" : {
+      "name" : "analytics_icon"
+    },
+    "templatePreviews" : [
+      {
+        "name" : "einstein_scene",
+        "label" : "",
+        "description" : ""
+      },
+      {
+        "name" : "demo_template_guide_0",
+        "label" : "How to Use this Template",
+        "description" : "This demo template is decoupled from core objects and does not require any additional licenses (only TCRM+). To customize the data, download the datasets, modify with the tools of your choice and upload to update the datasets."
+      }
+    ]
+  }
+}

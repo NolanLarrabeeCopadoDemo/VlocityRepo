@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Runs the &quot;qualify partner&quot; flow that converts the lead and creates experience cloud user</description>
+    <flowDefinition>MFG_Discrete_Partners_PRM_ONB_Qualify_Partner_Lead</flowDefinition>
+    <label>Qualify Partner</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

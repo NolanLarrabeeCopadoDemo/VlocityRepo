@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Lead Qualification Team</name>
+    <queueMembers>
+        <users>
+            <user>aranerijv7oisqjxvwszcrdlzjfbcfh..rgbtljglia8l@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>chet.callaghan.iw2anoh4z9pk.qv3burrbaile@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>gbarnesn9mg5foibvedw62k9jtxsbhs..utuifhn1i4gj@copado.com2023/07/18_17-7-41.demo3</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

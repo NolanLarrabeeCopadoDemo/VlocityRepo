@@ -1,0 +1,25 @@
+.sectionDiv{
+    height: 65px;
+    padding: 5px;
+}
+
+ol {
+    margin-left:20px;
+}
+h2 {
+    margin-top:15px;
+    margin-top:10px;
+    font-size:1rem !important;
+}
+.slds-icon_container_circle {
+    width : 30px;
+    height : 30px;
+}
+svg.slds-icon {
+    width: autot;
+    height: autot;
+   
+}
+.ltngCard {
+    margin-top:12px;
+}

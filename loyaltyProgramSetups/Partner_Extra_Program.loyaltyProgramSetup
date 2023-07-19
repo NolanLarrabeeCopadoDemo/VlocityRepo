@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoyaltyProgramSetup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Partner Extra Program</label>
+    <programProcesses>
+        <executionType>RealTime</executionType>
+        <journalSubType>Order</journalSubType>
+        <journalType>Accrual</journalType>
+        <processName>Order</processName>
+        <processType>TransactionJournal</processType>
+        <status>Draft</status>
+    </programProcesses>
+</LoyaltyProgramSetup>

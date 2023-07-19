@@ -1,0 +1,150 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "DTC_Opportunity_SAMPLE_csv",
+      "label": "DTC_Opportunity_SAMPLE",
+      "name": "DTC_Opportunity_SAMPLE",
+      "fields": [
+        {
+          "fullyQualifiedName": "Account_Name",
+          "name": "Account_Name",
+          "type": "Text",
+          "label": "Account Name"
+        },
+        {
+          "fullyQualifiedName": "Account_Owner",
+          "name": "Account_Owner",
+          "type": "Text",
+          "label": "Account Owner"
+        },
+        {
+          "fullyQualifiedName": "Account_Type",
+          "name": "Account_Type",
+          "type": "Text",
+          "label": "Account Type"
+        },
+        {
+          "fullyQualifiedName": "Amount",
+          "name": "Amount",
+          "type": "Numeric",
+          "label": "Amount",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Billing_Country",
+          "name": "Billing_Country",
+          "type": "Text",
+          "label": "Billing Country"
+        },
+        {
+          "fullyQualifiedName": "Billing_State_Province",
+          "name": "Billing_State_Province",
+          "type": "Text",
+          "label": "Billing State/Province"
+        },
+        {
+          "fullyQualifiedName": "Close_Date",
+          "name": "Close_Date",
+          "type": "Date",
+          "label": "Close Date",
+          "format": "yyyy-MM-dd"
+        },
+        {
+          "fullyQualifiedName": "Closed",
+          "name": "Closed",
+          "type": "Text",
+          "label": "Closed"
+        },
+        {
+          "fullyQualifiedName": "Created_Date",
+          "name": "Created_Date",
+          "type": "Date",
+          "label": "Created Date",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        {
+          "fullyQualifiedName": "Forecast_Category",
+          "name": "Forecast_Category",
+          "type": "Text",
+          "label": "Forecast Category"
+        },
+        {
+          "fullyQualifiedName": "Industry",
+          "name": "Industry",
+          "type": "Text",
+          "label": "Industry"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Name",
+          "name": "Opportunity_Name",
+          "type": "Text",
+          "label": "Opportunity Name"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Owner",
+          "name": "Opportunity_Owner",
+          "type": "Text",
+          "label": "Opportunity Owner"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Source",
+          "name": "Opportunity_Source",
+          "type": "Text",
+          "label": "Opportunity Source"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Type",
+          "name": "Opportunity_Type",
+          "type": "Text",
+          "label": "Opportunity Type"
+        },
+        {
+          "fullyQualifiedName": "Owner_Role",
+          "name": "Owner_Role",
+          "type": "Text",
+          "label": "Owner Role"
+        },
+        {
+          "fullyQualifiedName": "Product_Family",
+          "name": "Product_Family",
+          "type": "Text",
+          "label": "Product Family"
+        },
+        {
+          "fullyQualifiedName": "Product_Name",
+          "name": "Product_Name",
+          "type": "Text",
+          "label": "Product Name"
+        },
+        {
+          "fullyQualifiedName": "Segment",
+          "name": "Segment",
+          "type": "Text",
+          "label": "Segment"
+        },
+        {
+          "fullyQualifiedName": "Stage",
+          "name": "Stage",
+          "type": "Text",
+          "label": "Stage"
+        },
+        {
+          "fullyQualifiedName": "Won",
+          "name": "Won",
+          "type": "Text",
+          "label": "Won"
+        }
+      ]
+    }
+  ]
+}

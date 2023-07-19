@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Persona: Supplier Users</audienceName>
+    <container>Badger Partner Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.RecordType.Name</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Supplier</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>be13e37a-3a74-45f8-b1e0-ec0c18af50a6</groupName>
+            <priority>3</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Home_Supplier_Home_Page</targetValue>
+        </target>
+        <target>
+            <groupName>5a3c408b-b566-407e-8874-07a810a9b429$#$46a22bc7-c7ce-44f3-b513-0f4c8b1cb547</groupName>
+            <priority>4</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Default_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>609c580d-a690-4de6-8d23-c7de0cd1d22c$#$be0d2dad-8be5-4c66-8d49-5e442aa659ba</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Pages_Default_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>d4740c52-4a62-418c-bf5a-a624697b16e7$#$fba0736e-3c85-4429-a47b-6326dead176e</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Pages_Support_Center_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>03f05757-b190-42f9-b204-188344d0163f$#$8ab1ffcc-68ff-419f-94e4-e2787b7d54f7</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Pages_Account_Center_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+    </targets>
+</Audience>

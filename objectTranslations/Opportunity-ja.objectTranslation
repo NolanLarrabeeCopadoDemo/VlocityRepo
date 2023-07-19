@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- My Opportunities PRM --></label>
+        <name>My_Opportunities_PRM</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
+    <fields>
+        <label>取引先の地域</label>
+        <name>Account_Region__c</name>
+    </fields>
+    <fields>
+        <label>商談経過日数</label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is used in an equation to generate a random number --></help>
+        <label>自動採番</label>
+        <name>AutoNumber__c</name>
+    </fields>
+    <fields>
+        <label>予算承認済み</label>
+        <name>Budget_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Equipment Cost --></label>
+        <name>Capital_Equipment_Cost__c</name>
+    </fields>
+    <fields>
+        <label>ケース</label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Related Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>クローズカウントダウン</label>
+        <name>CloseDate_TODAY__c</name>
+    </fields>
+    <fields>
+        <label>コーチング</label>
+        <name>Coaching__c</name>
+    </fields>
+    <fields>
+        <label>競合情報</label>
+        <name>Competition__c</name>
+    </fields>
+    <fields>
+        <label>競合対策ガイド</label>
+        <name>Competitive_Coach__c</name>
+    </fields>
+    <fields>
+        <label>競合商談かどうか</label>
+        <name>Competitive_Deal__c</name>
+    </fields>
+    <fields>
+        <label>競合</label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>会社A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>会社B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>会社C</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ROI分析完了</label>
+        <name>Complete_ROI_Analysis__c</name>
+    </fields>
+    <fields>
+        <label>市区郡</label>
+        <name>Contact_City__c</name>
+    </fields>
+    <fields>
+        <label>会社</label>
+        <name>Contact_Company__c</name>
+    </fields>
+    <fields>
+        <label>国</label>
+        <name>Contact_Country__c</name>
+    </fields>
+    <fields>
+        <label>メール</label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label>取引先責任者名</label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label>電話</label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label>郵便番号</label>
+        <name>Contact_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label>都道府県</label>
+        <name>Contact_State_Province__c</name>
+    </fields>
+    <fields>
+        <label>町名・番地</label>
+        <name>Contact_Street__c</name>
+    </fields>
+    <fields>
+        <label>役職</label>
+        <name>Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label>取引条件</label>
+        <name>Contract_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Non-Standard</masterLabel>
+            <translation>標準外</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>標準</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>作成日</label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label>DB金額（金額更新ツール用）</label>
+        <name>DB_Amount__c</name>
+    </fields>
+    <fields>
+        <label>DB Days（日付更新ツール用）</label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>DateTimeCreated__c</name>
+    </fields>
+    <fields>
+        <label>有効期限までの日数</label>
+        <name>Days_Left_Until_Expire__c</name>
+    </fields>
+    <fields>
+        <label>商談承認日</label>
+        <name>Deal_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label>商談を進める</label>
+        <name>Deal_Forward__c</name>
+    </fields>
+    <fields>
+        <label>商談ID</label>
+        <name>Deal_ID__c</name>
+    </fields>
+    <fields>
+        <label>商談ソース</label>
+        <name>Deal_Source__c</name>
+    </fields>
+    <fields>
+        <label>決裁権</label>
+        <name>Decision_Role__c</name>
+    </fields>
+    <fields>
+        <label>デモ日</label>
+        <name>Demo_Presentation_Date__c</name>
+    </fields>
+    <fields>
+        <label>ディスカウント承認済み</label>
+        <name>Discount_Approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>未承認</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>承認済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ディスカウント率</label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label>代理店</label>
+        <name>Distributor__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of days before or after the close date the opportunity is predicted to close.  It is calculated by subtracting the Close Date from the Predicted Close Date. --></help>
+        <label><!-- ED Close Date Delta --></label>
+        <name>ED_Close_Date_Delta__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Leading Causes --></label>
+        <name>ED_Leading_Causes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of DAYS after the Created Date that this opportunity is targeted to close. --></help>
+        <label><!-- ED Predicted Time to Close --></label>
+        <name>ED_Outcome__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is calculated by adding the number of days in the &quot;ED Predicted Time to Close&quot; field to the CREATED DATE. --></help>
+        <label><!-- ED Predicted Close Date --></label>
+        <name>ED_Predicted_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED Prescription --></label>
+        <name>ED_Prescription__c</name>
+    </fields>
+    <fields>
+        <label>エンゲージレベル</label>
+        <name>Engage_Legal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimation Status --></label>
+        <name>Estimation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not started</masterLabel>
+            <translation><!-- Not started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On hold</masterLabel>
+            <translation><!-- On hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimator Name --></label>
+        <name>Estimator_Name__c</name>
+        <relationshipLabel><!-- Opportunities (Estimator Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimator Notes --></label>
+        <name>Estimator_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimator --></label>
+        <name>Estimator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery. --></help>
+        <label><!-- Executive Meeting --></label>
+        <name>Exec_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Number of Units --></label>
+        <name>Expected_Number_of_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>転送元リードID</label>
+        <name>Forwarded_Lead_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Margin --></label>
+        <name>Gross_Margin__c</name>
+    </fields>
+    <fields>
+        <label>実装開始日</label>
+        <name>Implementation_Start__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dependent on Age field.  Good = Age &lt; 30 Days.  Warning = Age &lt; 45 Days. Poor = Age &gt; 60 Days. --></help>
+        <label>経過日数フラグ</label>
+        <name>IndStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to change the results of Einstein Opportunity DIscovery --></help>
+        <label><!-- Interactive Demo --></label>
+        <name>Interactive_Demo__c</name>
+    </fields>
+    <fields>
+        <label>価格社内承認済み</label>
+        <name>Internal_Pricing_Approvals__c</name>
+    </fields>
+    <fields>
+        <label>初期クローズ予想日</label>
+        <name>Intial_Estimated_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Cost --></label>
+        <name>Labor_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Hours --></label>
+        <name>Labor_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labor Rate --></label>
+        <name>Labor_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity --></label>
+        <name>LastActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>LastModifiedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Margin --></label>
+        <name>MFG_ALL_Expected_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- MFG Opty Quip URL --></label>
+        <name>MFG_ALL_Opty_Quip_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFQ Expected Date --></label>
+        <name>MFG_ALL_RFQ_Expected_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFQ Received Date --></label>
+        <name>MFG_ALL_RFQ_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>MFG_IDO_Asset__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MFG Key Record --></label>
+        <name>MFG_Key_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Start Date --></label>
+        <name>MFG_Production_Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Due Date --></label>
+        <name>MFG_Quote_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label>マージン</label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Materials Cost --></label>
+        <name>Materials_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overhead Rate --></label>
+        <name>Overhead_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Owner --></label>
+        <name>Partner_Owner__c</name>
+        <relationshipLabel><!-- Partner Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plant Location --></label>
+        <name>Plant_Location__c</name>
+        <picklistValues>
+            <masterLabel>Appleton, WI</masterLabel>
+            <translation><!-- Appleton, WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eugene, OR</masterLabel>
+            <translation><!-- Eugene, OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Rapids, MI</masterLabel>
+            <translation><!-- Grand Rapids, MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plant City, FL</masterLabel>
+            <translation><!-- Plant City, FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Antonio, TX</masterLabel>
+            <translation><!-- San Antonio, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suwanee, GA</masterLabel>
+            <translation><!-- Suwanee, GA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Approved --></label>
+        <name>Pricing_Approved__c</name>
+    </fields>
+    <fields>
+        <label>連絡窓口</label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production End Date --></label>
+        <name>Production_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Hours --></label>
+        <name>Production_Hours__c</name>
+    </fields>
+    <fields>
+        <label>製品</label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>GC1000 series</masterLabel>
+            <translation>GC1000 シリーズ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC10001</masterLabel>
+            <translation><!-- GC10001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC20002</masterLabel>
+            <translation><!-- GC20002 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5000 series</masterLabel>
+            <translation>GC5000 シリーズ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC50000</masterLabel>
+            <translation><!-- GC50000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>プロジェクト予算</label>
+        <name>Project_Budget__c</name>
+    </fields>
+    <fields>
+        <label>予算算出済み</label>
+        <name>Project_Budgeted__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクト詳細</label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクトマネージャ</label>
+        <name>Project_Manager_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Project Manager Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>プロジェクト名</label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクト期間</label>
+        <name>Projected_Durations__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクト終了日</label>
+        <name>Projected_Finish__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field tracks many times an Opportunity has been pushed from month to month --></help>
+        <label>プッシュカウンター</label>
+        <name>Push_Counter__c</name>
+    </fields>
+    <fields>
+        <label>ランダムな数値</label>
+        <name>Random_Number__c</name>
+    </fields>
+    <fields>
+        <label>ロスト理由</label>
+        <name>Reason_Lost__c</name>
+        <picklistValues>
+            <masterLabel>No Decision</masterLabel>
+            <translation><!-- No Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>価格</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Issues</masterLabel>
+            <translation>機能</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation>会社の信頼性</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rebate Program --></label>
+        <name>Rebate_Program__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>登録期限日</label>
+        <name>Registration_Expiration__c</name>
+    </fields>
+    <fields>
+        <help>修正対象契約へのルックアップ。</help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ では、この項目を使用して納入商品とサブスクリプションを自動的に変換します。</help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help>契約を作成せずに契約価格を作成する場合は、このチェックボックスをオンにします。</help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>注文変更トランザクションの一意の ID であり、元の主見積の ID です。</help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help>主見積から注文を自動的に作成するには、このチェックボックスをオンにします。</help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ では、これを使用してこの商談の主見積を指し示します。</help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help>この商談が更新商談であることを示します。</help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help>この更新商談によって更新される契約。複数の契約がこの商談に積み上げ集計されている場合、これは主契約を指し示します。</help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>停滞商談</label>
+        <name>Stalled_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label>ステータス価格</label>
+        <name>Status_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooling Cost --></label>
+        <name>Tooling_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- URLsrc --></label>
+        <name>URLsrc__c</name>
+    </fields>
+    <fields>
+        <label>リード参照</label>
+        <name>View_Forwarded_Lead__c</name>
+    </fields>
+    <fields>
+        <label>優位競合</label>
+        <name>Winning_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation>競合A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation>競合B</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation>競合C</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>Work_Order__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- cv --></label>
+        <name>cv__c</name>
+    </fields>
+    <fields>
+        <help>この商談の全体的な承認状況</help>
+        <label><!-- Approval Status --></label>
+        <name>sbaa__ApprovalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>承認済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>待機中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation>取り消し済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>却下済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ネイティブ承認で使用し、この商談が含まれる承認プロセスのステップを示します。</help>
+        <label><!-- Approval Step --></label>
+        <name>sbaa__ApprovalStep__c</name>
+    </fields>
+    <fields>
+        <help>ネイティブ承認者で使用し、商談の承認を担当する承認者を示します。</help>
+        <label><!-- Approver --></label>
+        <name>sbaa__Approver__c</name>
+        <relationshipLabel><!-- Opportunities (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ネイティブ承認で使用し、そのステップが承認されたかどうかを示します</help>
+        <label><!-- Step Approved --></label>
+        <name>sbaa__StepApproved__c</name>
+    </fields>
+    <fields>
+        <help>レコードが承認申請された日。</help>
+        <label><!-- Submitted Date --></label>
+        <name>sbaa__SubmittedDate__c</name>
+    </fields>
+    <fields>
+        <help>商談の承認を申請したユーザ</help>
+        <label><!-- Submitted User --></label>
+        <name>sbaa__SubmittedUser__c</name>
+        <relationshipLabel><!-- Opportunities (Submitted User) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Opportunities created by or for partners. --></description>
+        <label>パートナー</label>
+        <name>ChannelPartner</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- ETO Opportunities --></description>
+        <label><!-- Engineer to Order --></label>
+        <name>MFG_ETO_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Revenue Operation Flow --></description>
+        <label><!-- Revenue Cloud --></label>
+        <name>Revenue_Cloud</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Simple Opportunities with products. --></description>
+        <label>シンプル</label>
+        <name>SimpleOpportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- If the stage equals closed - lost, then the reason lost is a required field. --></errorMessage>
+        <name>Reason_Lost_Required</name>
+    </validationRules>
+    <webLinks>
+        <label>会計統合</label>
+        <name>Financial_System_Integration</name>
+    </webLinks>
+    <webLinks>
+        <label>Great Plains と連携</label>
+        <name>Great_Plains_Integration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quick_Quote --></label>
+        <name>Quick_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label>アセットを修正</label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label>営業方法論</label>
+        <name>Sales_Methodology</name>
+    </webLinks>
+    <webLinks>
+        <label>DocuSign で署名</label>
+        <name>Sign_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewApprovals --></label>
+        <name>sbaa__PreviewApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RecallApprovals --></label>
+        <name>sbaa__RecallApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ResendRequestEmail --></label>
+        <name>sbaa__ResendRequestEmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SubmitForApproval --></label>
+        <name>sbaa__SubmitForApproval</name>
+    </webLinks>
+</CustomObjectTranslation>

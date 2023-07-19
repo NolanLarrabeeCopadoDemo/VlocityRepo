@@ -1,0 +1,182 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "OrderId",
+                "val": "8013y000007CrVJAA0"
+            },
+            {
+                "id": 9,
+                "name": "Parent.OrderId",
+                "val": "8013y000007CrVJAA0"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "getOrderList",
+            "bundleType": "",
+            "dsDelay": "",
+            "inputMap": {
+                "OrderId": "{Parent.OrderId}"
+            },
+            "jsonMap": "{\"OrderId\":\"{OrderId}\",\"Parent.OrderId\":\"{Parent.OrderId}\"}",
+            "resultVar": "[0].['Order']"
+        }
+    },
+    "dynamicCanvasWidth": {
+        "type": "tablet_m"
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfOrderInfoNew_1_AcmeManufacturing",
+        "Id": "0Rb5f000001aPPOCA2",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfOrderInfoNew_1_AcmeManufacturing",
+        "NamespacePrefix": "c"
+    },
+    "selectableMode": "Multi",
+    "states": [
+        {
+            "actions": [
+            ],
+            "blankCardState": false,
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "dataTable",
+                            "elementLabel": "Datatable-1",
+                            "name": "Datatable",
+                            "property": {
+                                "cellLevelEdit": true,
+                                "columns": [
+                                    {
+                                        "fieldName": "OrderProduct",
+                                        "label": "Order Product",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "visible": "true"
+                                    },
+                                    {
+                                        "fieldName": "Orderqty",
+                                        "label": "Order Qty",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "visible": "true"
+                                    }
+                                ],
+                                "groupOrder": "asc",
+                                "issearchavailable": false,
+                                "issortavailable": true,
+                                "pagelimit": 3,
+                                "records": "{records}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "slds-size_12-of-12"
+                            },
+                            "type": "element"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Issue",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "slds-theme_warning slds-card slds-p-around_x-small slds-m-around_none ",
+                "container": {
+                    "class": "slds-card"
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                    {
+                        "label": "around:none",
+                        "size": "none",
+                        "type": "around"
+                    }
+                ],
+                "padding": [
+                    {
+                        "label": "around:x-small",
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12 ",
+                "style": "      \n         ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                },
+                "theme": "theme_warning"
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "OrderInfoNew",
+    "xmlJson": [
+    ],
+    "xmlObject": {
+        "apiVersion": 51,
+        "isExplicitImport": false,
+        "isExposed": true,
+        "masterLabel": "OrderInfoNew",
+        "runtimeNamespace": "%vlocity_namespace%",
+        "targets": {
+            "target": [
+                "lightning__AppPage",
+                "lightning__HomePage",
+                "lightning__RecordPage",
+                "lightningCommunity__Page"
+            ]
+        }
+    }
+}

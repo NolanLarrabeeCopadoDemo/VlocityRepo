@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>my360</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>my360</value>
+    </caseValues>
+    <fields>
+        <label><!-- Coaching/1-1 Quip --></label>
+        <name>Coaching_1_1_Quip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager --></label>
+        <name>Manager__c</name>
+        <relationshipLabel><!-- my360 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quota --></label>
+        <name>Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Hub Quip --></label>
+        <name>Sales_Hub_Quip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Meeting Quip --></label>
+        <name>Team_Meeting_Quip__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

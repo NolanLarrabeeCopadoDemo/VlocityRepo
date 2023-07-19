@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Redeem Points Product Category</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Redeem Points Product Categories</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner --></label>
+        <name>Partner__c</name>
+        <relationshipLabel><!-- Redeem Points Product Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Points --></label>
+        <name>Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>ProductCategory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the static resource image that you want to associate with the product. --></help>
+        <label><!-- Product Image Name --></label>
+        <name>Product_Image_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Redeem Points Product Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Redemption Type --></label>
+        <name>RedemptionType__c</name>
+        <relationshipLabel><!-- Redeem Points Product Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voucher Definition --></label>
+        <name>VoucherDefinitionId__c</name>
+        <relationshipLabel><!-- Redeem Points Product Categories --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Case</contextRecordType>
+    <description>Used to support the extend warranty NBA on case</description>
+    <if>
+        <childNode>Load_Extend_Warranty_Rec</childNode>
+        <label>Warranty</label>
+        <name>Warranty</name>
+        <childNodeExpression>
+            <childName>Load_Extend_Warranty_Rec</childName>
+            <expression>CONTAINS(LOWER($Record.Subject), &apos;generator&apos;)</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <label>case_extend warranty</label>
+    <recommendationLoad>
+        <label>Load Extend Warranty Rec</label>
+        <name>Load_Extend_Warranty_Rec</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Extend Warranty</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Warranty</childNode>
+        <label>Output</label>
+        <name>Output_131494ccb73d4e7fb4d0ad937fa041f8</name>
+    </union>
+</RecommendationStrategy>

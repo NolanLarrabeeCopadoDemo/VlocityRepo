@@ -1,0 +1,3538 @@
+{
+  "name" : "Account_Insights_Order_Status_tp",
+  "label" : "Account Insights - Order Status",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [ ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [ ]
+  },
+  "state" : {
+    "dataSourceLinks" : [
+      {
+        "fields" : [
+          {
+            "dataSourceName" : "${App.Datasets.MFG_OrderProduct_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "Order.SalesAgreement.Account.Owner.Name"
+          },
+          {
+            "dataSourceName" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "SalesAgreementProduct.SalesAgreement.Account.Owner.Name"
+          }
+        ],
+        "label" : "Account owner name",
+        "name" : "Link_1871"
+      },
+      {
+        "fields" : [
+          {
+            "dataSourceName" : "${App.Datasets.MFG_OrderProduct_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "Product.Name"
+          },
+          {
+            "dataSourceName" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "SalesAgreementProduct.Product.Name"
+          }
+        ],
+        "label" : "Product Name",
+        "name" : "Link_1938"
+      },
+      {
+        "fields" : [
+          {
+            "dataSourceName" : "${App.Datasets.MFG_OrderProduct_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "Product.Family"
+          },
+          {
+            "dataSourceName" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "SalesAgreementProduct.Product.Family"
+          }
+        ],
+        "label" : "Product Family",
+        "name" : "Link_1954"
+      },
+      {
+        "fields" : [
+          {
+            "dataSourceName" : "${App.Datasets.MFG_OrderProduct_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "Order.Account.Name"
+          },
+          {
+            "dataSourceName" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "SalesAgreementProduct.SalesAgreement.Account.Name"
+          }
+        ],
+        "label" : "Account Name",
+        "name" : "Link_2697"
+      },
+      {
+        "fields" : [
+          {
+            "dataSourceName" : "${App.Datasets.MFG_OrderProduct_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "Order.Account.Type"
+          },
+          {
+            "dataSourceName" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "SalesAgreementProduct.SalesAgreement.Account.Type"
+          }
+        ],
+        "label" : "Account Type",
+        "name" : "Link_3571"
+      },
+      {
+        "fields" : [
+          {
+            "dataSourceName" : "${App.Datasets.MFG_OrderProduct_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "Order.SalesAgreement.Name"
+          },
+          {
+            "dataSourceName" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}",
+            "dataSourceNamespace" : "${Org.Namespace}",
+            "dataSourceType" : "saql",
+            "fieldName" : "SalesAgreementProduct.SalesAgreement.Name"
+          }
+        ],
+        "label" : "Sales Agreement",
+        "name" : "Link_11371"
+      }
+    ],
+    "filters" : [
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.SalesAgreement.Account.Type"
+        ],
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.SalesAgreement.Account.Name"
+        ],
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.Product.Name"
+        ],
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.Product.Family"
+        ],
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "Order.EffectiveDate"
+        ],
+        "label" : "Time Period",
+        "locked" : false,
+        "operator" : ">=<=",
+        "value" : "[[[\"year\",0],[\"day\",0]]]"
+      }
+    ],
+    "gridLayouts" : [
+      {
+        "maxWidth" : 1500,
+        "name" : "Default",
+        "numColumns" : 50,
+        "pages" : [
+          {
+            "label" : "Order Status",
+            "name" : "db9ce4ff-1b16-40ef-8e61-7d6148ac9569",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 10,
+                "column" : 0,
+                "name" : "container_3",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#7D98B3",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 2,
+                "column" : 1,
+                "name" : "image_1",
+                "row" : 1,
+                "rowspan" : 5,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 3,
+                "name" : "text_1",
+                "row" : 1,
+                "rowspan" : 5,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#FFFFFF",
+                  "borderEdges" : [
+                    "left"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 10,
+                "column" : 10,
+                "name" : "link_5",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#7D98B3",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 20,
+                "name" : "link_2",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#7D98B3",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 29,
+                "name" : "link_6",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "rgb(0, 112, 210)",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 14,
+                "column" : 36,
+                "name" : "container_1",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#7D98B3",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_12",
+                "row" : 7,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(228, 234, 239)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 1,
+                "name" : "listselector_1",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 8,
+                "name" : "listselector_2",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 15,
+                "name" : "listselector_3",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 22,
+                "name" : "listselector_4",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 29,
+                "name" : "listselector_5",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 36,
+                "name" : "listselector_6",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 43,
+                "name" : "filterpanel_1",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_7",
+                "row" : 13,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(17, 48, 91)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 1,
+                "name" : "text_40",
+                "row" : 14,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 7,
+                "name" : "text_41",
+                "row" : 14,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 14,
+                "name" : "text_42",
+                "row" : 14,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 21,
+                "name" : "text_46",
+                "row" : 14,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 5,
+                "column" : 1,
+                "name" : "number_3",
+                "row" : 16,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 5,
+                "column" : 7,
+                "name" : "number_7",
+                "row" : 16,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 5,
+                "column" : 14,
+                "name" : "number_8",
+                "row" : 16,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 5,
+                "column" : 21,
+                "name" : "number_11",
+                "row" : 16,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "container_8",
+                "row" : 22,
+                "rowspan" : 33,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(17, 48, 91)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 10,
+                "column" : 2,
+                "name" : "text_44",
+                "row" : 23,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 13,
+                "column" : 2,
+                "name" : "text_45",
+                "row" : 27,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 24,
+                "column" : 18,
+                "name" : "text_47",
+                "row" : 27,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 15,
+                "column" : 2,
+                "name" : "chart_3",
+                "row" : 30,
+                "rowspan" : 24,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 30,
+                "column" : 18,
+                "name" : "chart_7",
+                "row" : 30,
+                "rowspan" : 24,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "container_14",
+                "row" : 60,
+                "rowspan" : 41,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 19,
+                "column" : 2,
+                "name" : "text_43",
+                "row" : 61,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 18,
+                "column" : 26,
+                "name" : "text_48",
+                "row" : 61,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 4,
+                "column" : 44,
+                "name" : "pillbox_3",
+                "row" : 62,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#7D98B3",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 22,
+                "column" : 2,
+                "name" : "chart_11",
+                "row" : 66,
+                "rowspan" : 33,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 22,
+                "column" : 26,
+                "name" : "chart_13",
+                "row" : 66,
+                "rowspan" : 33,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 1,
+                "name" : "text_51",
+                "row" : 105,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "table_1",
+                "row" : 109,
+                "rowspan" : 31,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 1,
+                "column" : 0,
+                "name" : "container_2",
+                "row" : 57,
+                "rowspan" : 47,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(220, 228, 239)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 1,
+                "column" : 49,
+                "name" : "container_4",
+                "row" : 57,
+                "rowspan" : 47,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(220, 228, 239)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "container_5",
+                "row" : 57,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(220, 228, 239)",
+                  "borderColor" : "#FFFFFF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "container_6",
+                "row" : 101,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(220, 228, 239)",
+                  "borderColor" : "#FFFFFF",
+                  "borderEdges" : [
+                    "top"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_10",
+                "row" : 104,
+                "rowspan" : 38,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [ ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "rgb(4, 29, 64)",
+          "cellSpacingX" : 0,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#C5D3E0"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "Pricing_for_selected_Acc_1" : {
+        "broadcastFacet" : false,
+        "groups" : [ ],
+        "label" : "Pricing Across Accounts by grouping",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\n q = filter q by 'isValidProductSchedule' == \"true\";\n q = foreach q generate 'Id' as 'Id',  'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'DerivedActualAmount' as 'DerivedActualAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyQuantity', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate_sec_epoch' else date_to_epoch(now()) end) as 'LastValidDate_sec_epoch', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate' else toString(now(),\"yyyy-MM-dd\") end) as 'LastValidDate', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount', ('SalesPrice'*(100-'DiscountPercentage')/100) as 'Final_Price', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice';\n result = foreach q generate 'Id' as 'Id', 'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId', 'SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', \n{{column(Time_Toggle_1.selection, [\"actuals_quantity_cal\"]).asObject()}} as 'Actuals', \n{{column(Time_Toggle_1.selection, [\"planned_quantity_cal\"]).asObject()}} as 'Planned', 'Final_Price' as 'Final_Price', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice', 'Final_Price'-'SalesAgreementProduct.ListPrice' as 'Discount_Amount';\n result = foreach result generate 'Id' as 'Id',  'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId',  'SalesAgreementProduct.SalesAgreement.Account.Name', 'Actuals', 'Planned', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'Final_Price'*'Actuals' as 'Final_Total_Amount', 'Final_Price' as 'Final_Price', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice', 'Discount_Amount'*'ActualQuantity' as 'Total_Discount_Amount';\n result = group result by {{cell(Prod_vs_Prod_Family_1.selection, 0, \"grouping\").asGrouping()}};\n result = foreach result generate {{row(Prod_vs_Prod_Family_1.selection, [0], [\"column\",\"projection\"]).asProjection()}}, {{row(Prod_vs_Prod_Family_1.selection, [0], [\"column\"]).asObject()}} as 'Grouping', coalesce(sum('Actuals'),0) as 'Actuals', coalesce(sum('Actuals'),0)/sum('Planned') as 'Realization', min('Final_Price') as 'min_Final_Price', max('Final_Price') as 'max_Final_Price', sum('Final_Total_Amount')/sum('Actuals')  as 'avg_Final_Price', sum('Final_Total_Amount') as 'Final_Total_Amount', sum('Total_Discount_Amount') as 'Total_Discount_Amount', first('SalesAgreementProduct.ListPrice') as 'SalesAgreementProduct.ListPrice';\n result = filter result by {{cell(Sales_by_grouping_1.selection, 0, cell(Prod_vs_Prod_Family_1.selection, 0, \"grouping\")).asEquality('Grouping')}};\n result = group result by all;\n result = foreach result generate (case when count() > 1 then \"SELECT ONE PRODUCT\" else first('Grouping') end) as 'Grouping', (case when \"{{row(Prod_vs_Prod_Family_1.selection, [0], [\"grouping\"]).asObject()}}\" == \"SalesAgreementProduct.Product.Family\" then \" - \" when count()>1 then \" - \" else \"$\"+number_to_string(round(min('min_Final_Price')), \"#,00\") end) as 'min_Final_Price', (case when \"{{row(Prod_vs_Prod_Family_1.selection, [0], [\"grouping\"]).asObject()}}\" == \"SalesAgreementProduct.Product.Family\" then \" - \" when count()>1 then \" - \" else \"$\"+number_to_string(round(max('max_Final_Price')), \"#,00\") end) as 'max_Final_Price', (case when count()>1 then \" - \" else \"$\"+number_to_string(round(sum('Final_Total_Amount')/sum('Actuals')), \"#,00\") end) as 'avg_Final_Price', sum('Final_Total_Amount') as 'Final_Total_Amount', round( sum('Total_Discount_Amount')/sum('Actuals') ) as 'avg_Discount_Amount', (case when count()>1 then \" - \" else number_to_string(round((sum('Total_Discount_Amount')/sum('Actuals'))*100/sum('SalesAgreementProduct.ListPrice')), \"#,00\")+\"%\" end) as 'avg_Discount_Percent', sum('SalesAgreementProduct.ListPrice') as 'SalesAgreementProduct.ListPrice';\n",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "start" : [ ],
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "details_table_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "details table",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_OrderProduct_tp.FullyQualifiedName}\";\n q = foreach q generate 'Order.OrderNumber' as 'Order.OrderNumber', 'Product.Name' as 'Product.Name', 'Order.EffectiveDate' as 'Order.EffectiveDate', coalesce('Order.Status',\" - \") as 'Order.Status', coalesce('Order.Contract.ContractNumber', \" - \") as 'Order.Contract.ContractNumber', coalesce('Order.SalesAgreement.Name', \" - \") as 'Order.SalesAgreement.Name', coalesce('Quantity',0) as 'Quantity' , coalesce('TotalPrice',0) as 'TotalPrice';\n q = group q by ('Order.OrderNumber', 'Product.Name', 'Order.EffectiveDate', 'Order.Status', 'Order.Contract.ContractNumber', 'Order.SalesAgreement.Name');\n\n q = foreach q generate 'Order.OrderNumber' as 'Order.OrderNumber', 'Product.Name' as 'Product.Name', 'Order.EffectiveDate' as 'Order.EffectiveDate', 'Order.Status' as 'Order.Status', 'Order.Contract.ContractNumber' as 'Associated Contract','Order.SalesAgreement.Name' as 'Associated Agreement', sum('Quantity') as 'Quantity' , sum('TotalPrice') as 'sum_TotalPrice';\nq = order q by ('sum_TotalPrice' desc);\nq = limit q 2000;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "mode" : "fittocontainer",
+            "numberOfLines" : 1,
+            "pivoted" : false,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : false,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "Order_count_by_week_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Order count by week",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "unique",
+                "Order.OrderNumber"
+              ]
+            ],
+            "groups" : [
+              [
+                "Order.EffectiveDate_Year",
+                "Order.EffectiveDate_Week"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "start" : [ ],
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "vbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Order.EffectiveDate_Year~~~Order.EffectiveDate_Week"
+              ],
+              "plots" : [
+                "unique_Order.OrderNumber"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : false,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Order_Id_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "unique",
+                "Order.Id"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "unique_Order.Id"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "TotalPrice_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "TotalPrice"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "sum_TotalPrice"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "SalesAgreementProduc_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "SalesAgreementProduct.SalesAgreement.Account.Owner.Name"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "multi",
+        "start" : [ ],
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "Revenue_Realisation_Trend" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Revenue_Realisation_Trend",
+        "numbers" : [ ],
+        "query" : "all_slaps = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\n all_slaps = filter all_slaps by 'isValidProductSchedule' == \"true\";\n valid_slaps = filter all_slaps by date('StartDate_Year', 'StartDate_Month', 'StartDate_Day') in [..\"current year\"];\n valid_slaps = filter valid_slaps by date('ActualEndDate_Year', 'ActualEndDate_Month', 'ActualEndDate_Day') in [\"1 year ago\"..];\n valid_slaps = foreach valid_slaps generate 'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', date_to_epoch(toDate(number_to_string(string_to_number(toString(now(),\"yyyy\"))-1, \"#\")    +    \"-01-01 00:00:00\", \"yyyy-MM-dd HH:mm:ss\")) as 'Start', date_to_epoch(toDate(toString(now(),\"yyyy\")    +    \"-12-31 23:59:59\", \"yyyy-MM-dd HH:mm:ss\")) as 'End', 'Id' as 'Id', 'StartDate_sec_epoch' as 'StartDate_sec_epoch', 'ActualEndDate_sec_epoch' as 'ActualEndDate_sec_epoch', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate_sec_epoch' else date_to_epoch(now()) end) as 'LastValidDate_sec_epoch', 'DerivedActualAmount' as 'DerivedActualAmount', 'PlannedAmountFinal' as 'PlannedAmountFinal', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyQuantity', 'PlannedDailyAmount' as 'PlannedDailyAmount', 'SalesPrice' as 'SalesPrice', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice', 'DiscountPercentage' as 'DiscountPercentage', ('SalesPrice'*(100-'DiscountPercentage')/100)-'SalesAgreementProduct.ListPrice' as 'Discount_Amount';\n Start = foreach valid_slaps generate 'Start' as 'Start', 'End' as 'End', 'Id' as 'Id', 'StartDate_sec_epoch' as 'Start Date', 'LastValidDate_sec_epoch' as 'End Date', case when ('StartDate_sec_epoch' >= 'Start') then date_to_string(toDate('StartDate_sec_epoch'),\"yyyy\") else date_to_string(toDate('Start'),\"yyyy\") end as 'Date_Year', case when ('StartDate_sec_epoch' >= 'Start') then date_to_string(toDate('StartDate_sec_epoch'),\"MM\") else date_to_string(toDate('Start'),\"MM\") end as 'Date_Month', \n(case when ('StartDate_sec_epoch' >= 'Start') && ('LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch')))) then (daysBetween(toDate('StartDate_sec_epoch'),month_last_day(toDate('StartDate_sec_epoch')))+1) * 'PlannedDailyAmount' when ('StartDate_sec_epoch' < 'Start') && ('LastValidDate_sec_epoch' < date_to_epoch(month_last_day(toDate('Start')))) then (daysBetween(toDate('Start'),toDate('LastValidDate_sec_epoch'))+1) * 'PlannedDailyAmount' when ('StartDate_sec_epoch' < 'Start') && ('LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch')))) then (daysBetween(toDate('Start'),month_last_day(toDate('Start')))+1) * 'PlannedDailyAmount' else 'PlannedAmountFinal' end) as 'PlannedAmount', \n(case when ('StartDate_sec_epoch' >= 'Start') && ('LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch')))) then (daysBetween(toDate('StartDate_sec_epoch'),month_last_day(toDate('StartDate_sec_epoch')))+1) * 'ActualDailyQuantity' when ('StartDate_sec_epoch' < 'Start') && ('LastValidDate_sec_epoch' < date_to_epoch(month_last_day(toDate('Start')))) then (daysBetween(toDate('Start'),toDate('LastValidDate_sec_epoch'))+1) * 'ActualDailyQuantity' when ('StartDate_sec_epoch' < 'Start') && ('LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch')))) then (daysBetween(toDate('Start'),month_last_day(toDate('Start')))+1) * 'ActualDailyQuantity' else 'ActualQuantity' end) as 'ActualQuantity', \n(case when ('StartDate_sec_epoch' >= 'Start') && ('LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch')))) then (daysBetween(toDate('StartDate_sec_epoch'),month_last_day(toDate('StartDate_sec_epoch')))+1) * 'PlannedDailyQuantity' when ('StartDate_sec_epoch' < 'Start') && ('LastValidDate_sec_epoch' < date_to_epoch(month_last_day(toDate('Start')))) then (daysBetween(toDate('Start'),toDate('LastValidDate_sec_epoch'))+1) * 'PlannedDailyQuantity' when ('StartDate_sec_epoch' < 'Start') && ('LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch')))) then (daysBetween(toDate('Start'),month_last_day(toDate('Start')))+1) * 'PlannedDailyQuantity' else 'PlannedQuantityFinal' end) as 'PlannedQuantity', \n(case when ('StartDate_sec_epoch' >= 'Start') && ('LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch')))) then (daysBetween(toDate('StartDate_sec_epoch'),month_last_day(toDate('StartDate_sec_epoch')))+1) * 'ActualDailyAmount' when ('StartDate_sec_epoch' < 'Start') && ('LastValidDate_sec_epoch' < date_to_epoch(month_last_day(toDate('Start')))) then (daysBetween(toDate('Start'),toDate('LastValidDate_sec_epoch'))+1) * 'ActualDailyAmount' when ('StartDate_sec_epoch' < 'Start') && ('LastValidDate_sec_epoch' > date_to_epoch(month_last_day(toDate('StartDate_sec_epoch')))) then (daysBetween(toDate('Start'),month_last_day(toDate('Start')))+1) * 'ActualDailyAmount' else 'DerivedActualAmount' end) as 'ActualAmount', \n'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount', 'ActualDailyAmount' as 'ActualDailyAmount', 'ActualDailyQuantity' as 'ActualDailyQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'SalesPrice' as 'SalesPrice', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice', 'DiscountPercentage' as 'DiscountPercentage', ('SalesPrice'*(100-'DiscountPercentage')/100)-'SalesAgreementProduct.ListPrice' as 'Discount_Amount';\n End_Value = foreach valid_slaps generate 'Start' as 'Start', 'End' as 'End', 'Id' as 'Id', 'StartDate_sec_epoch' as 'Start Date', 'LastValidDate_sec_epoch' as 'End Date', case when ('LastValidDate_sec_epoch' < 'End') then date_to_string(toDate('LastValidDate_sec_epoch'),\"yyyy\") else  date_to_string(toDate('End'),\"yyyy\") end as 'Date_Year', case when ('LastValidDate_sec_epoch' < 'End') then date_to_string(toDate('LastValidDate_sec_epoch'),\"MM\") else  date_to_string(toDate('End'),\"MM\") end as 'Date_Month', \n(case \n    when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) \n    && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) \n    && ('LastValidDate_sec_epoch' < 'End')) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))))),toDate('LastValidDate_sec_epoch'))) * 'PlannedDailyAmount' \n    when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) \n    && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) \n    && ('LastValidDate_sec_epoch' > 'End')) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))))),toDate('End'))) * 'PlannedDailyAmount' \n    else 0 end) as 'PlannedAmount', \n(case \n    when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) \n    && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) \n    && ('LastValidDate_sec_epoch' < 'End')) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))))),toDate('LastValidDate_sec_epoch'))) * 'ActualDailyAmount' \n    when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) \n    && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) \n    && ('LastValidDate_sec_epoch' > 'End')) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))))),toDate('End'))) * 'ActualDailyAmount' \n    else 0 end) as 'ActualAmount', \n(case \n    when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) \n    && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) \n    && ('LastValidDate_sec_epoch' < 'End')) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))))),toDate('LastValidDate_sec_epoch'))) * 'PlannedDailyQuantity' \n    when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) \n    && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) \n    && ('LastValidDate_sec_epoch' > 'End')) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))))),toDate('End'))) * 'PlannedDailyQuantity' \n    else 0 end) as 'PlannedQuantity', \n(case \n    when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) \n    && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))) + 86400)) \n    && ('LastValidDate_sec_epoch' < 'End')) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('LastValidDate_sec_epoch'))) - 2764800)))))),toDate('LastValidDate_sec_epoch'))) * 'ActualDailyQuantity' \n    when (('StartDate_sec_epoch' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) \n    && ('Start' < (date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))) + 86400)) \n    && ('LastValidDate_sec_epoch' > 'End')) then (daysBetween(toDate((date_to_epoch(month_last_day(toDate((date_to_epoch(month_last_day(toDate('End'))) - 2764800)))))),toDate('End'))) * 'ActualDailyQuantity' \n    else 0 end) as 'ActualQuantity', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount', 'ActualDailyAmount' as 'ActualDailyAmount', 'ActualDailyQuantity' as 'ActualDailyQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'SalesPrice' as 'SalesPrice', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice', 'DiscountPercentage' as 'DiscountPercentage', ('SalesPrice'*(100-'DiscountPercentage')/100)-'SalesAgreementProduct.ListPrice' as 'Discount_Amount';\n DataForFill = union Start, End_Value;\nDataForFill = foreach DataForFill generate 'Id' as 'Id', 'Date_Year' as 'Date_Year', 'Date_Month' as 'Date_Month','Start' as 'Start', 'End' as 'End', 'Start Date' as 'Start Date', 'End Date' as 'End Date','ActualAmount' as 'ActualAmount', 'PlannedAmount' as 'PlannedAmount', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount', 'ActualDailyAmount' as 'ActualDailyAmount', 'ActualQuantity' as 'ActualQuantity', 'PlannedQuantity' as 'PlannedQuantity', 'ActualDailyQuantity' as 'ActualDailyQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'Discount_Amount' as 'Discount_Amount';\nFilledData = fill DataForFill by (dateCols=('Date_Year', 'Date_Month', \"Y-M\"), partition='Id');\n FilledData = group FilledData by ('Id', 'Date_Year', 'Date_Month');\nFilledData = foreach FilledData generate 'Id', 'Date_Year', 'Date_Month', date_to_epoch(toDate('Date_Year'+\"-\"+'Date_Month'+\"-01\",\"yyyy-MM-dd\")) as 'Date',first('Start') as 'Start', min(first('Start')) over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'StartFilter', first('End') as 'End', min(first('End')) over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'EndFilter',  min(first('Start Date')) over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'Start Date', max(first('End Date')) over ([..] partition by 'Id' ) as 'End Date', sum('ActualAmount') as 'ActualAmount', sum('PlannedAmount') as 'PlannedAmount', min(first('PlannedDailyAmount'))over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'PlannedDailyAmount', min(first('ActualDailyAmount'))over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'ActualDailyAmount', sum('ActualQuantity') as 'ActualQuantity', sum('PlannedQuantity') as 'PlannedQuantity', min(first('PlannedDailyQuantity'))over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'PlannedDailyQuantity', min(first('ActualDailyQuantity'))over ([..0] partition by 'Id' order by ('Date_Year','Date_Month')) as 'ActualDailyQuantity', first('Discount_Amount') as 'Discount_Amount';\n FilledData = filter FilledData by coalesce('Start',0) != 0 || ('Date' > 'StartFilter' && 'Date' > 'Start Date' && 'Date' < 'End Date' && 'Date' < 'EndFilter');\n FilledData = foreach FilledData generate 'Id', 'Date_Year', 'Date_Month', (case when 'PlannedAmount' is null then month_days(toDate('Date'))*'PlannedDailyAmount' else 'PlannedAmount' end) as 'PlannedAmount', (case when 'ActualAmount' is null then month_days(toDate('Date'))*'ActualDailyAmount' else 'ActualAmount' end) as 'ActualAmount', (case when 'PlannedQuantity' is null then month_days(toDate('Date'))*'PlannedDailyQuantity' else 'PlannedQuantity' end) as 'PlannedQuantity', (case when 'ActualQuantity' is null then month_days(toDate('Date'))*'ActualDailyQuantity' else 'ActualQuantity' end) as 'ActualQuantity', 'Discount_Amount' as 'Discount_Amount';\n FilledData = foreach FilledData generate 'Id', 'Date_Year', 'Date_Month', 'PlannedAmount' as 'PlannedAmount', 'ActualAmount' as 'ActualAmount', 'PlannedQuantity' as 'PlannedQuantity', 'ActualQuantity' as 'ActualQuantity', 'Discount_Amount' as 'Discount_Amount', 'Discount_Amount'*'ActualQuantity' as 'Total_Discount_Amount';\n result = group FilledData by ('Date_Year', 'Date_Month');\n result = foreach result generate 'Date_Year'+\"~~~\"+'Date_Month' as 'StartDate_Year~~~StartDate_Month', 'Date_Year' as 'StartDate_Year', 'Date_Month' as 'StartDate_Month', \"01\" as 'StartDate_Day', sum('PlannedAmount') as 'PlannedAmount', sum('ActualAmount') as 'ActualAmount', sum('PlannedQuantity') as 'PlannedQuantity', sum('ActualQuantity') as 'ActualQuantity', sum('Total_Discount_Amount') as 'Total_Discount_Amount';\n result_cy = filter result by {{row(Time_Toggle_1.selection, [0], [\"date_min\",\"date_max\"]).asDateRange(\"date('StartDate_Year','StartDate_Month','StartDate_Day')\")}};\n result_cy = group result_cy by 'StartDate_Year~~~StartDate_Month';\n result_cy = foreach result_cy generate 'StartDate_Year~~~StartDate_Month' as 'StartDate_Year~~~StartDate_Month', first('StartDate_Year') as 'StartDate_Year', first('StartDate_Month') as 'StartDate_Month', sum('ActualAmount') as 'ActualAmount', sum('PlannedAmount') as 'PlannedAmount' , round(coalesce(sum('ActualAmount'),0)*100/sum('PlannedAmount')) as 'Revenue_Demand_Realisation', sum('ActualQuantity') as 'ActualQuantity', sum('PlannedQuantity') as 'PlannedQuantity' , round(coalesce(sum('ActualQuantity'),0)*100/sum('PlannedQuantity')) as 'Quantity_Demand_Realisation', sum('Total_Discount_Amount') as 'Total_Discount_Amount', sum('Total_Discount_Amount')*100/sum('ActualAmount') as 'Discount_percent';\n  result_min = order result_cy by {{cell(Qty_vs_Amount_1.selection, 0, \"realization_col\").asObject()}} asc;\n result_min = limit result_min 1;\n result_max = order result_cy by {{cell(Qty_vs_Amount_1.selection, 0, \"realization_col\").asObject()}} desc;\n result_max = limit result_cy 1;\n result_all = group result_cy by all;\n result_all = foreach result_all generate \"ALL\" as 'StartDate_Month', \"ALL\" as 'StartDate_Year' , sum(ActualAmount) as 'ActualAmount', sum(PlannedAmount) as  'PlannedAmount', round(coalesce(sum('ActualAmount'),0)*100/sum('PlannedAmount')) as 'Revenue_Demand_Realisation', round(coalesce(sum('ActualQuantity'),0)*100/sum('PlannedQuantity')) as 'Quantity_Demand_Realisation', sum('Total_Discount_Amount') as 'Total_Discount_Amount', sum('Total_Discount_Amount')*100/sum('ActualAmount') as 'Discount_percent';\n result = union result_min, result_max, result_all;\n result = foreach result generate (case when 'StartDate_Month' ==\"01\" then \"JAN\" when 'StartDate_Month' ==\"02\" then \"FEB\" when 'StartDate_Month' ==\"03\" then \"MAR\" when 'StartDate_Month' ==\"04\" then \"APR\" when 'StartDate_Month' ==\"05\" then \"MAY\" when 'StartDate_Month' ==\"06\" then \"JUN\" when 'StartDate_Month' ==\"07\" then \"JUL\" when 'StartDate_Month' ==\"08\" then \"AUG\" when 'StartDate_Month' ==\"09\" then \"SEP\" when 'StartDate_Month' ==\"10\" then \"OCT\" when 'StartDate_Month' ==\"11\" then \"NOV\" when 'StartDate_Month' ==\"12\" then \"DEC\" end)+\" \"+'StartDate_Year' as 'Month_Year', number_to_string({{cell(Qty_vs_Amount_1.selection, 0, \"actuals_col\").asObject()}},\"#,00\") as 'ActualAmount', number_to_string({{cell(Qty_vs_Amount_1.selection, 0, \"actuals_col\").asObject()}},\"#,00\") as  'PlannedAmount', number_to_string({{cell(Qty_vs_Amount_1.selection, 0, \"realization_col\").asObject()}},\"#,00\")+\"%\" as 'Demand_Realisation', number_to_string(round('Total_Discount_Amount'), \"#,00\") as 'Total_Discount_Amount', round('Discount_percent') as 'Discount_percent';\n",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "bottom-center",
+              "inside" : false
+            },
+            "axisMode" : "sync",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "time-bar",
+            "timeAxis" : {
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : ""
+            },
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "binValues" : false,
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "Amount",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Orders_by_status_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Orders by status",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "TotalPrice"
+              ]
+            ],
+            "groups" : [
+              "Order.Status"
+            ],
+            "order" : [
+              [
+                "sum_TotalPrice",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "bottom-center",
+              "inside" : false
+            },
+            "showMeasureTitle" : false,
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "origami",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimension" : [
+                "Order.Status"
+              ],
+              "plots" : [
+                "sum_TotalPrice"
+              ]
+            },
+            "showActionMenu" : true,
+            "valueType" : "compactNumber",
+            "showTotal" : true,
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Qty_vs_Amount_2" : {
+        "broadcastFacet" : true,
+        "columns" : {
+          "Display" : {
+            "type" : "string"
+          }
+        },
+        "label" : "Qty vs Amount",
+        "selectMode" : "single",
+        "start" : {
+          "display" : [
+            "$"
+          ]
+        },
+        "type" : "staticflex",
+        "values" : [
+          {
+            "display" : "Qty",
+            "value" : "unique('Order.Id') as 'unique_OrderId'",
+            "order" : "unique_OrderId"
+          },
+          {
+            "display" : "$",
+            "value" : "sum('TotalPrice') as 'sum_TotalPrice'",
+            "order" : "sum_TotalPrice"
+          }
+        ]
+      },
+      "SalesAgreementProduc_3" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "SalesAgreementProduct.SalesAgreement.Account.Type"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "multi",
+        "start" : [ ],
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "pricing_across_accounts_by_grouping" : {
+        "broadcastFacet" : false,
+        "groups" : [ ],
+        "label" : "Pricing Across Accounts by grouping",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\n q = filter q by 'isValidProductSchedule' == \"true\";\n q = foreach q generate 'Id' as 'Id',  'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'DerivedActualAmount' as 'DerivedActualAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyQuantity', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate_sec_epoch' else date_to_epoch(now()) end) as 'LastValidDate_sec_epoch', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate' else toString(now(),\"yyyy-MM-dd\") end) as 'LastValidDate', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount', ('SalesPrice'*(100-'DiscountPercentage')/100) as 'Final_Price', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice';\n result = foreach q generate 'Id' as 'Id', 'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId', 'SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', \n{{column(Time_Toggle_1.selection, [\"actuals_quantity_cal\"]).asObject()}} as 'Actuals', \n{{column(Time_Toggle_1.selection, [\"planned_quantity_cal\"]).asObject()}} as 'Planned', 'Final_Price' as 'Final_Price', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice', 'Final_Price'-'SalesAgreementProduct.ListPrice' as 'Discount_Amount';\n result = foreach result generate 'Id' as 'Id',  'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId',  'SalesAgreementProduct.SalesAgreement.Account.Name', 'Actuals', 'Planned', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'Final_Price'*'Actuals' as 'Final_Total_Amount', 'Final_Price' as 'Final_Price', 'SalesAgreementProduct.ListPrice' as 'SalesAgreementProduct.ListPrice', 'Discount_Amount'*'ActualQuantity' as 'Total_Discount_Amount';\n result = group result by {{cell(Prod_vs_Prod_Family_1.selection, 0, \"grouping\").asGrouping()}};\n result = foreach result generate {{row(Prod_vs_Prod_Family_1.selection, [0], [\"column\",\"projection\"]).asProjection()}}, {{row(Prod_vs_Prod_Family_1.selection, [0], [\"column\"]).asObject()}} as 'Grouping', coalesce(sum('Actuals'),0) as 'Actuals', coalesce(sum('Actuals'),0)/sum('Planned') as 'Realization', min('Final_Price') as 'min_Final_Price', max('Final_Price') as 'max_Final_Price', sum('Final_Total_Amount')/sum('Actuals')  as 'avg_Final_Price', sum('Final_Total_Amount') as 'Final_Total_Amount', sum('Total_Discount_Amount') as 'Total_Discount_Amount', first('SalesAgreementProduct.ListPrice') as 'SalesAgreementProduct.ListPrice';\n result = filter result by {{cell(Sales_by_grouping_1.selection, 0, cell(Prod_vs_Prod_Family_1.selection, 0, \"grouping\")).asEquality('Grouping')}};\n result = group result by all;\n result = foreach result generate (case when count() > 1 then \"SELECT ONE PRODUCT\" else first('Grouping') end) as 'Grouping', (case when \"{{row(Prod_vs_Prod_Family_1.selection, [0], [\"grouping\"]).asObject()}}\" == \"SalesAgreementProduct.Product.Family\" then \" - \" when count()>1 then \" - \" else \"$\"+number_to_string(round(min('min_Final_Price')), \"#,00\") end) as 'min_Final_Price', (case when \"{{row(Prod_vs_Prod_Family_1.selection, [0], [\"grouping\"]).asObject()}}\" == \"SalesAgreementProduct.Product.Family\" then \" - \" when count()>1 then \" - \" else \"$\"+number_to_string(round(max('max_Final_Price')), \"#,00\") end) as 'max_Final_Price', (case when count()>1 then \" - \" else \"$\"+number_to_string(round(sum('Final_Total_Amount')/sum('Actuals')), \"#,00\") end) as 'avg_Final_Price', sum('Final_Total_Amount') as 'Final_Total_Amount', round( sum('Total_Discount_Amount')/sum('Actuals') ) as 'avg_Discount_Amount', (case when count()>1 then \" - \" else number_to_string(round((sum('Total_Discount_Amount')/sum('Actuals'))*100/sum('SalesAgreementProduct.ListPrice')), \"#,00\")+\"%\" end) as 'avg_Discount_Percent', sum('SalesAgreementProduct.ListPrice') as 'SalesAgreementProduct.ListPrice';\n",
+        "receiveFacet" : false,
+        "selectMode" : "single",
+        "start" : [ ],
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Order_SalesAgreement_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "Order.SalesAgreement.Name"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "products_by_revenue__1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "products by revenue or qty",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_OrderProduct_tp.FullyQualifiedName}\";\nq = group q by 'Product.Name';\nq = foreach q generate 'Product.Name' as 'Product.Name', {{cell(Qty_vs_Amount_2.selection, 0, \"value\").asObject()}};\nq = order q by {{column(Qty_vs_Amount_2.selection, [\"order\"]).asOrder()}} desc;",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "start" : [ ],
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "vbar",
+            "title" : {
+              "fontSize" : 16,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "left",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : false,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : false,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Order_ContractId_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "unique",
+                "Order.ContractId"
+              ]
+            ],
+            "filters" : [
+              [
+                "Order.Contract.Status",
+                [
+                  "Activated"
+                ],
+                "in"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "unique_Order.ContractId"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Sales_by_grouping_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Sales by grouping",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\n q = filter q by 'isValidProductSchedule' == \"true\";\n q = foreach q generate 'Id' as 'Id',  'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'DerivedActualAmount' as 'DerivedActualAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyQuantity', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate_sec_epoch' else date_to_epoch(now()) end) as 'LastValidDate_sec_epoch', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate' else toString(now(),\"yyyy-MM-dd\") end) as 'LastValidDate', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount';\n result = foreach q generate 'Id' as 'Id', 'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId', 'SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', \n{{column(Time_Toggle_1.selection, column(Qty_vs_Amount_1.selection, [\"time_toggle_actuals\"])).asObject()}} as 'Actuals', \n{{column(Time_Toggle_1.selection, column(Qty_vs_Amount_1.selection, [\"time_toggle_planned\"])).asObject()}} as 'Planned';\n result = foreach result generate 'Id' as 'Id',  'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId',  'SalesAgreementProduct.SalesAgreement.Account.Name', 'Actuals', 'Planned', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate';\n result = group result by {{cell(Prod_vs_Prod_Family_1.selection, 0, \"grouping\").asGrouping()}};\n result = foreach result generate {{row(Prod_vs_Prod_Family_1.selection, [0], [\"column\",\"projection\"]).asProjection()}}, coalesce(sum('Actuals'),0) as 'Actuals', coalesce(sum('Actuals'),0)/sum('Planned') as 'Realization';\n result = order result by ('Actuals' desc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "start" : [ ],
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Sales_by_grouping_2" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Sales by grouping",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\n q = filter q by 'isValidProductSchedule' == \"true\";\n q = foreach q generate 'Id' as 'Id',  'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId','SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', 'DerivedActualAmount' as 'DerivedActualAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'DerivedActualAmount'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyAmount', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate('ActualEndDate', \"yyyy-MM-dd\"))+1) else 'ActualQuantity'/(daysBetween(toDate('StartDate', \"yyyy-MM-dd\"), toDate(toString(now(),\"yyyy-MM-dd\"), \"yyyy-MM-dd\"))+1) end) as 'ActualDailyQuantity', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate_sec_epoch' else date_to_epoch(now()) end) as 'LastValidDate_sec_epoch', (case when 'ActualEndDate_sec_epoch'<date_to_epoch(now()) then 'ActualEndDate' else toString(now(),\"yyyy-MM-dd\") end) as 'LastValidDate', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'PlannedDailyAmount' as 'PlannedDailyAmount';\n result = foreach q generate 'Id' as 'Id', 'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId', 'SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate', \n{{column(Time_Toggle_1.selection, column(Qty_vs_Amount_1.selection, [\"time_toggle_actuals\"])).asObject()}} as 'Actuals', \n{{column(Time_Toggle_1.selection, column(Qty_vs_Amount_1.selection, [\"time_toggle_planned\"])).asObject()}} as 'Planned';\n result = foreach result generate 'Id' as 'Id',  'ActualQuantity' as 'ActualQuantity', 'PlannedDailyQuantity' as 'PlannedDailyQuantity', 'PlannedQuantityFinal' as 'PlannedQuantityFinal', 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', 'SalesAgreementProduct.Product.Family' as 'SalesAgreementProduct.Product.Family', 'SalesAgreementProduct.ProductId' as 'SalesAgreementProduct.ProductId',  'SalesAgreementProduct.SalesAgreement.Account.Name', 'Actuals', 'Planned', 'StartDate' as 'StartDate', 'ActualEndDate' as 'ActualEndDate';\n result = group result by {{cell(Prod_vs_Prod_Family_1.selection, 0, \"grouping\").asGrouping()}};\n result = foreach result generate {{row(Prod_vs_Prod_Family_1.selection, [0], [\"column\",\"projection\"]).asProjection()}}, coalesce(sum('Actuals'),0) as 'Actuals', coalesce(sum('Actuals'),0)/sum('Planned') as 'Realization';\n result = order result by ('Actuals' desc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "start" : [ ],
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "SalesAgreementProduc_8" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "unique",
+                "SalesAgreementProduct.SalesAgreementId"
+              ]
+            ],
+            "filters" : [
+              [
+                "SalesAgreementProduct.SalesAgreement.StatusCode",
+                [
+                  "Activated"
+                ],
+                "in"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "unique_SalesAgreementProduct.SalesAgreementId"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Orders_by_value_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Orders by value",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "TotalPrice"
+              ]
+            ],
+            "groups" : [
+              "Order.OrderNumber"
+            ],
+            "order" : [
+              [
+                "sum_TotalPrice",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "start" : [ ],
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 16,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "left",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Order.OrderNumber"
+              ],
+              "plots" : [
+                "sum_TotalPrice"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : false,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : false,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "SalesAgreementProduc_6" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "SalesAgreementProduct.Product.Family"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "multi",
+        "start" : [ ],
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "SalesAgreementProduc_4" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "SalesAgreementProduct.SalesAgreement.Account.Name"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "singlerequired",
+        "start" : [ ],
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "SalesAgreementProduc_5" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "SalesAgreementProduct.Name"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "multi",
+        "start" : [ ],
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "rgba(255, 255, 255, 0)",
+      "borderColor" : "#E6ECF2",
+      "borderEdges" : [ ],
+      "borderRadius" : 0,
+      "borderWidth" : 1
+    },
+    "widgets" : {
+      "number_11" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : true,
+          "measureField" : "unique_Order.Id",
+          "numberColor" : "#FFFFFF",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "Order_Id_1",
+          "textAlignment" : "left",
+          "title" : "",
+          "titleColor" : "#091A3E",
+          "titleSize" : 16
+        },
+        "type" : "number"
+      },
+      "text_18" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : true,
+          "text" : "Choose KPI:",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "text"
+      },
+      "container_14" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "text_19" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : true,
+          "text" : "Group by:",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "text"
+      },
+      "number_8" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : true,
+          "measureField" : "unique_SalesAgreementProduct.SalesAgreementId",
+          "numberColor" : "#FFFFFF",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "SalesAgreementProduc_8",
+          "textAlignment" : "left",
+          "title" : "",
+          "titleColor" : "#091A3E",
+          "titleSize" : 16
+        },
+        "type" : "number"
+      },
+      "number_7" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : true,
+          "measureField" : "unique_Order.ContractId",
+          "numberColor" : "#FFFFFF",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "Order_ContractId_1",
+          "textAlignment" : "left",
+          "title" : "",
+          "titleColor" : "#091A3E",
+          "titleSize" : 16
+        },
+        "type" : "number"
+      },
+      "container_1" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "text_51" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : false,
+          "text" : "Details Table",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "container_2" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_3" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_4" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_5" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_6" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_7" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_8" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "chart_7" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "bottom-center",
+            "inside" : false
+          },
+          "showMeasureTitle" : false,
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "origami",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimension" : [
+              "Order.Status"
+            ],
+            "plots" : [
+              "sum_TotalPrice"
+            ]
+          },
+          "showActionMenu" : true,
+          "valueType" : "compactNumber",
+          "showTotal" : true,
+          "theme" : "dark",
+          "step" : "Orders_by_status_1",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_3" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showValues" : true,
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "vbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Order.EffectiveDate_Year~~~Order.EffectiveDate_Week"
+            ],
+            "plots" : [
+              "unique_Order.OrderNumber"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : false,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "Order_count_by_week_1",
+          "dimensionAxis" : {
+            "showTitle" : true,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "Year-Week",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round",
+                "parameters" : { }
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "listselector_6" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "instant" : false,
+          "measureField" : "none",
+          "showActionMenu" : false,
+          "step" : "Order_SalesAgreement_1",
+          "title" : "Sales Agreement"
+        },
+        "type" : "listselector"
+      },
+      "listselector_3" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "instant" : false,
+          "measureField" : "none",
+          "showActionMenu" : false,
+          "step" : "SalesAgreementProduc_4",
+          "title" : "Account Name"
+        },
+        "type" : "listselector"
+      },
+      "listselector_2" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "instant" : false,
+          "measureField" : "none",
+          "showActionMenu" : false,
+          "step" : "SalesAgreementProduc_3",
+          "title" : "Account Type"
+        },
+        "type" : "listselector"
+      },
+      "text_1" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "Account Insights",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "listselector_5" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "instant" : false,
+          "measureField" : "none",
+          "showActionMenu" : false,
+          "step" : "SalesAgreementProduc_6",
+          "title" : "Product Family"
+        },
+        "type" : "listselector"
+      },
+      "listselector_4" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "instant" : false,
+          "measureField" : "none",
+          "showActionMenu" : false,
+          "step" : "SalesAgreementProduc_5",
+          "title" : "Product Name"
+        },
+        "type" : "listselector"
+      },
+      "text_47" : {
+        "parameters" : {
+          "fontSize" : 14,
+          "showActionMenu" : false,
+          "text" : "2. What is the status split of orders for the selected start date?",
+          "textAlignment" : "left",
+          "textColor" : "#7D98B3"
+        },
+        "type" : "text"
+      },
+      "text_46" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : false,
+          "text" : "ORDERS (#)",
+          "textAlignment" : "left",
+          "textColor" : "#C6D3E1"
+        },
+        "type" : "text"
+      },
+      "filterpanel_1" : {
+        "parameters" : {
+          "filterItemOptions" : {
+            "propertyColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "filters" : [
+            {
+              "dataset" : {
+                "name" : "${App.Datasets.MFG_OrderProduct_tp.Name}"
+              },
+              "field" : "Order.EffectiveDate"
+            }
+          ],
+          "showAllFilters" : false
+        },
+        "type" : "filterpanel"
+      },
+      "text_48" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : false,
+          "text" : "Which products' sales will be affected by selected orders?",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "link_2" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['Account Insights - Product Sales & Pricing'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 12,
+          "includeState" : true,
+          "text" : "PRODUCT SALES & PRICING",
+          "textAlignment" : "center",
+          "textColor" : "rgb(84, 105, 141)"
+        },
+        "type" : "link"
+      },
+      "text_43" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : false,
+          "text" : "Which are my most valuable orders?",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "text_42" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : false,
+          "text" : "ACTIVE AGREEMENTS",
+          "textAlignment" : "left",
+          "textColor" : "#C6D3E1"
+        },
+        "type" : "text"
+      },
+      "text_45" : {
+        "parameters" : {
+          "fontSize" : 14,
+          "showActionMenu" : false,
+          "text" : "1. Select order start date for the account",
+          "textAlignment" : "left",
+          "textColor" : "#7D98B3"
+        },
+        "type" : "text"
+      },
+      "text_44" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : false,
+          "text" : "Order Status",
+          "textAlignment" : "left",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "text"
+      },
+      "table_1" : {
+        "parameters" : {
+          "borderColor" : "#e0e5ee",
+          "borderWidth" : 1,
+          "cell" : {
+            "backgroundColor" : "#ffffff",
+            "fontColor" : "#16325c",
+            "fontSize" : 12
+          },
+          "columnProperties" : { },
+          "columns" : [ ],
+          "customBulkActions" : [ ],
+          "exploreLink" : true,
+          "header" : {
+            "backgroundColor" : "#f4f6f9",
+            "fontColor" : "#16325c",
+            "fontSize" : 12
+          },
+          "innerMajorBorderColor" : "#a8b7c7",
+          "innerMinorBorderColor" : "#e0e5ee",
+          "mode" : "fittocontainer",
+          "numberOfLines" : 1,
+          "pivoted" : false,
+          "showActionMenu" : true,
+          "showRowIndexColumn" : false,
+          "step" : "details_table_1",
+          "totals" : true,
+          "verticalPadding" : 8
+        },
+        "type" : "table"
+      },
+      "text_41" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : false,
+          "text" : "ACTIVE CONTRACTS",
+          "textAlignment" : "left",
+          "textColor" : "#C6D3E1"
+        },
+        "type" : "text"
+      },
+      "number_3" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "sum_TotalPrice",
+          "numberColor" : "#FFFFFF",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "TotalPrice_1",
+          "textAlignment" : "left",
+          "title" : "",
+          "titleColor" : "#091A3E",
+          "titleSize" : 16
+        },
+        "type" : "number"
+      },
+      "text_40" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : false,
+          "text" : "ORDERS",
+          "textAlignment" : "left",
+          "textColor" : "#C6D3E1"
+        },
+        "type" : "text"
+      },
+      "link_5" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['Account Insights - Agreements Performance'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 12,
+          "includeState" : true,
+          "text" : "AGREEMENTS PERFORMANCE",
+          "textAlignment" : "center",
+          "textColor" : "rgb(84, 105, 141)"
+        },
+        "type" : "link"
+      },
+      "link_6" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "db9ce4ff-1b16-40ef-8e61-7d6148ac9569"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "ORDER STATUS",
+          "textAlignment" : "center",
+          "textColor" : "#0070D2"
+        },
+        "type" : "link"
+      },
+      "pillbox_3" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : false,
+          "fontSize" : 12,
+          "selectedTab" : {
+            "backgroundColor" : "rgb(51, 87, 121)",
+            "borderColor" : "#C6D3E1",
+            "borderEdges" : [ ],
+            "borderWidth" : 0,
+            "textColor" : "#FFFFFF"
+          },
+          "showActionMenu" : true,
+          "step" : "Qty_vs_Amount_2",
+          "textColor" : "#7D98B3"
+        },
+        "type" : "pillbox"
+      },
+      "image_1" : {
+        "parameters" : {
+          "alignmentX" : "center",
+          "alignmentY" : "center",
+          "fit" : "fitwidth",
+          "image" : {
+            "name" : "${App.Images['manufacturing_app_iconpng1'].Name}",
+            "namespace" : "${Org.Namespace}"
+          }
+        },
+        "type" : "image"
+      },
+      "container_12" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "listselector_1" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "instant" : false,
+          "measureField" : "none",
+          "showActionMenu" : false,
+          "step" : "SalesAgreementProduc_2",
+          "title" : "Owner Name"
+        },
+        "type" : "listselector"
+      },
+      "container_10" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "chart_13" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showValues" : true,
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "vbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 16,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "left",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : false,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "colorblind",
+          "step" : "products_by_revenue__1",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round",
+                "parameters" : { }
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_11" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showValues" : true,
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 16,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "left",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Order.OrderNumber"
+            ],
+            "plots" : [
+              "sum_TotalPrice"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : false,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "colorblind",
+          "step" : "Orders_by_value_1",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round",
+                "parameters" : { }
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      }
+    }
+  }
+}

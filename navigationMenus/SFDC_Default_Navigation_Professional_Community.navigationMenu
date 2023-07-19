@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Professional Community</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>Community</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Community Home</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/community-home</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>My Feeds</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/my-feeds</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <defaultListViewId>My_ChatterGroups</defaultListViewId>
+                <label>Groups</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>CollaborationGroup</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Topics</label>
+                <position>3</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/topics</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>My Streams</label>
+                <position>4</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/streams</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Messages</label>
+                <position>5</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/messages/Home</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Share Ideas</label>
+                <position>6</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/ideas</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Key Topics</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>ShowMoreTopics</target>
+        <type>NavigationalTopic</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Store</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/b2b-store</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Support</label>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Support Home</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/support</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Knowledge Base</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/knowledge-base</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Work Orders</label>
+                <position>2</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>WorkOrder</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Register Purchase</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/register-your-product</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>My Account</label>
+        <position>5</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <defaultListViewId>Lauren_Bailey</defaultListViewId>
+                <label>Orders</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>Order</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <defaultListViewId>United_Partners_Invoices</defaultListViewId>
+                <label>Invoices</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>Invoice_Example__c</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <defaultListViewId>United_Partners_Projects</defaultListViewId>
+                <label>Projects</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>Milestone1_Project__c</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Files</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/my-files</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Asset Overview</label>
+        <position>6</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/asset-overview</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Asset Detail</label>
+        <position>7</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/asset/02iHr00000Bjy58QAA</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Find a Partner</label>
+        <position>8</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/partner-list</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

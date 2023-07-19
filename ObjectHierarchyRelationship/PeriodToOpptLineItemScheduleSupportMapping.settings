@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectHierarchyRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <mappingType>Support</mappingType>
+    <masterLabel>ObjectHierarchyRelationship</masterLabel>
+    <parentObjectMapping>
+        <inputObject>Period</inputObject>
+        <mappingFields>
+            <inputField>StartDate</inputField>
+            <outputField>ScheduleDate</outputField>
+        </mappingFields>
+        <outputObject>OpportunityLineItemSchedule</outputObject>
+    </parentObjectMapping>
+    <parentRecord>CmpForecastFactToOpportunityItemSchedule</parentRecord>
+    <sourceReferenceRelaFieldName>Period</sourceReferenceRelaFieldName>
+    <usageType>TransformationMapping</usageType>
+</ObjectHierarchyRelationship>

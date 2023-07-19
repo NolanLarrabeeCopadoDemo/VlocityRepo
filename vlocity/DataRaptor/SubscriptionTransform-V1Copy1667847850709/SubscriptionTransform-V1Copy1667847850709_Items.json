@@ -1,0 +1,233 @@
+[
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem3",
+        "InputFieldName": "CITY",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CITY",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem4",
+        "InputFieldName": "COUNTRY",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "COUNTRY",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem8",
+        "InputFieldName": "IF_customer_not_in_US",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IF_customer_not_in_US",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem5",
+        "InputFieldName": "STATE",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "STATE",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem2",
+        "InputFieldName": "STREET1",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "STREET1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem6",
+        "InputFieldName": "SUBSCRIBER_NAME",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SUBSCRIBER_NAME",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem1",
+        "InputFieldName": "products:Product",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "products:Product",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem10",
+        "InputFieldName": "products:Quantity",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "products:Quantity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem0",
+        "InputFieldName": "products:mrc",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "products:mrc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem9",
+        "InputFieldName": "products:otc",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "products:otc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SubscriptionTransform-V1Copy1667847850709Custom0jI3y000000fyBmEAIItem7",
+        "InputFieldName": "total_mrc",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "SubscriptionTransform-V1Copy1667847850709",
+        "OmniDataTransformationId": {
+            "Name": "SubscriptionTransform-V1Copy1667847850709",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SubscriptionTransform-V1Copy1667847850709",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "total_mrc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

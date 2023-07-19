@@ -1,0 +1,31 @@
+{
+    "Accident": null,
+    "AccountId": "0015Y00002j02jXQAQ",
+    "ConfigureCI": null,
+    "Context": "Lead",
+    "ContextId": "00Q5Y00001wJhzJUAS",
+    "HI": null,
+    "LeadCompany": "Sears Accounting",
+    "LeadEmail": "anewsom@gmail.autocumulus.com",
+    "LeadFirstName": "Adrian",
+    "LeadLastName": "Newsom",
+    "LeadMobilePhone": "3778024260",
+    "RelatedAccount": "0015Y00002j02jXQAQ",
+    "Source": "Lead",
+    "newAccount": null,
+    "newCensus": null,
+    "recordType": {
+        "isActive": true,
+        "objName": "Quote",
+        "recTypeId": "0125Y0000028a8vQAA",
+        "recTypeName": "Group Quote"
+    },
+    "sObjTypeName": "Quote",
+    "sRecTypeName": "Group Quote",
+    "timeStamp": "2021-05-07T01:45:04.236Z",
+    "userCurrencyCode": "USD",
+    "userId": "0055Y00000F07qnQAB",
+    "userName": "todd.sears@finsmaster21.ido",
+    "userProfile": "*FINS - Internal - Admin",
+    "userTimeZone": "-420"
+}

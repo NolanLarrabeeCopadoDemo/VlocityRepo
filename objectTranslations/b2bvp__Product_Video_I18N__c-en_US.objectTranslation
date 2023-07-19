@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>b2bvp__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>b2bvp__Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Video --></label>
+        <name>b2bvp__Product_Video__c</name>
+        <relationshipLabel><!-- Product Video I18Ns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>b2bvp__Title__c</name>
+    </fields>
+</CustomObjectTranslation>

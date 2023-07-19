@@ -1,0 +1,46 @@
+[
+    {
+        "FormulaExpression": "IF(QUERY('SELECT Id From DocumentTemplate'), true, false)",
+        "FormulaResultPath": "newObject",
+        "FormulaSequence": 1,
+        "GlobalKey": "007bf04c-ccf6-4101-939d-46a2402aff3c",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "getDocumentObjectTypeDCT",
+        "OmniDataTransformationId": {
+            "Name": "getDocumentObjectTypeDCT",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/getDocumentObjectTypeDCT",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "a958b6a7-050d-4f90-b6cd-f7d3f6c1d1bd",
+        "InputFieldName": "newObject",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "getDocumentObjectTypeDCT",
+        "OmniDataTransformationId": {
+            "Name": "getDocumentObjectTypeDCT",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/getDocumentObjectTypeDCT",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "isNewObject",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

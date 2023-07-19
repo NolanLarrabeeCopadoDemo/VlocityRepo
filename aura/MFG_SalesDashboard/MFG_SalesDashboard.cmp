@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="recordId" type="Id" />
+    <wave:waveDashboard height="800" developerName="MFG_Tools_Sales_Account_View" filter="{'datasets':{'MFG_IDO_Tools_Sales_Metrics':[{'fields':['Account'],'filter':{'operator':'in','values':['Ohana Tools']}}]}}"   />
+</aura:component>

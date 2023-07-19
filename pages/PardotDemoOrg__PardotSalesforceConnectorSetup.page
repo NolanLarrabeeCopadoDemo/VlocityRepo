@@ -1,0 +1,26 @@
+<apex:page standardStylesheets="false">
+    <apex:form >
+
+        <apex:pageBlock title="Configure Salesforce Connector" >
+
+            <div style="font-size: 15px; margin-bottom: 1em;">
+                <p>Next, we will configure a Salesforce connector to get data flowing between your PDO and SDO. You will need your SDO credentials on this step.</p>
+                <ol>
+                    <li>Click the <strong>Change connector user</strong> button below</li>
+                    <li>Enter your SDO credentials in the popup window ({!$User.Username})</li>
+                    <li>Click <strong>Allow</strong></li>
+                    <li>Click <strong>Next Step</strong> above to move on to the next step</li>
+                </ol>
+            </div>
+
+            <apex:iframe src="{!$Label.PardotDemoOrg__Pardot_Base_Url}/connector/editSfdcConnector" scrolling="true" id="ssoIframe" />
+
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value=" Previous Step " onclick="window.location='/apex/PardotSalesforceSSO'; return false;" />
+                <apex:commandButton value=" Next Step " onclick="window.location='/apex/PardotSetupCompletionPage'; return false;" />
+            </apex:pageBlockButtons>
+
+        </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

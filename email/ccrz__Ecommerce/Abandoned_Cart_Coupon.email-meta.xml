@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Abandoned Cart Coupon</name>
+    <style>none</style>
+    <subject>10% Off Your Cart!</subject>
+    <textOnly>Hi {!ccrz__E_Cart__c.ccrz__Contact__c},
+You have an open cart. Use coupon code {!ccrz__E_Cart__c.ccrz__CartId__c} for 10% off this order!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

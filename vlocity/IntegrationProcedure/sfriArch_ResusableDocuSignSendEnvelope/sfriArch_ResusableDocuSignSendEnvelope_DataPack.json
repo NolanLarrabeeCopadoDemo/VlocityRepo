@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "sfriArch_ResusableDocuSignSendEnvelope_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsLocked": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "MayEdit": true,
+    "Name": "sfiArch Resusable DocuSign Send Envelope",
+    "OmniProcessElement": [
+        "sfriArch_ResusableDocuSignSendEnvelope_Element_DetermineDocumentToSend.json",
+        "sfriArch_ResusableDocuSignSendEnvelope_Element_SetEnvelopeDetails.json",
+        "sfriArch_ResusableDocuSignSendEnvelope_Element_SendDocuSignEnvelope.json"
+    ],
+    "OmniProcessKey": "sfriArch_ResusableDocuSignSendEnvelope",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "sfriArch_ResusableDocuSignSendEnvelope_PropertySetConfig.json",
+    "SubType": "ResusableDocuSignSendEnvelope",
+    "Type": "sfriArch",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/sfriArch/ResusableDocuSignSendEnvelope/Procedure",
+    "WebComponentKey": "09776060-ff82-cc96-91bb-f6a69060f8cb"
+}

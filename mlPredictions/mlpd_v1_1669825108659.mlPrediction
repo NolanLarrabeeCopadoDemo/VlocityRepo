@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MLPredictionDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiApplicationDeveloperName>CaseWrapUpModel</aiApplicationDeveloperName>
+    <description>ServiceCaseWrapUp predField Sub_Type__c</description>
+    <developerName>mlpd_v1_1669825108659</developerName>
+    <masterLabel>ServiceCaseWrapUpSub_Type__c</masterLabel>
+    <predictionField>Case.Sub_Type__c</predictionField>
+    <status>Draft</status>
+    <type>MulticlassClassification</type>
+</MLPredictionDefinition>

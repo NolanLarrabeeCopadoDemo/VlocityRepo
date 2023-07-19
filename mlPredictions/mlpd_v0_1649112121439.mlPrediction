@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MLPredictionDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiApplicationDeveloperName>CaseWrapUpModel</aiApplicationDeveloperName>
+    <description>CWU predField Product_Family_KB__c</description>
+    <developerName>mlpd_v0_1649112121439</developerName>
+    <masterLabel>CWUProduct_Family_KB__c</masterLabel>
+    <predictionField>Case.Product_Family_KB__c</predictionField>
+    <status>Enabled</status>
+    <type>MulticlassClassification</type>
+</MLPredictionDefinition>

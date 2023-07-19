@@ -1,0 +1,110 @@
+{
+  "version" : "56.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "ProductFamily", "AccountId", "TierInterval", "ProductName", "PriceBook", "Industry", "ArrowUp", "ForecastStatus", "PayoutStatus", "IgnoreLabel", "TierName", "Country", "EffectiveRebateLabel", "AccountName", "OwnerName", "Time", "ParentName", "RebateProgram", "SalesAgreementName", "SalesAgreementCancellationDate", "SalesAgreementStartDate", "AccountExternalId", "RebateProgramExternalId", "ScheduleFrequency", "CurrentTier", "LastProcessedDate", "SalesAgreementsStatus", "AccountType", "ArrowDown", "HasIncentivesLabel", "ProductExternalId", "HasIncentives", "SalesAgreementExternalId", "SalesAgreementEndDate", "UnderReview", "Compliance", "ProductPerformance", "CurrentQualifier", "PurchasesRequired", "PlannedQuantity", "PayoutsToDate", "QuotedPrice", "PlannedDemand", "PlannedRevenue", "PayoutToQuantity", "RebateValue", "ProgressLabel", "ActualDemand", "Orders", "ForecastedQuantity", "CurrentQualifierMin", "ActualRevenue", "TierBenefit", "ForecastedRevenue", "Quantity", "EffectiveRebate", "RevenueRatio", "UnitPrice", "RebateProgramNro" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "MFG_Demo_Sales_Agreements_Rebates_Tiers",
+          "name" : "MFG_Demo_Sales_Agreements_Rebates_Tiers"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "External_ID__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "SalesAgreement",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "SalesAgreement"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "UPDATE0" : {
+      "action" : "update",
+      "sources" : [ "LOAD_DATASET0", "LOAD_DATASET1" ],
+      "parameters" : {
+        "leftKeys" : [ "SalesAgreementName" ],
+        "rightKeys" : [ "Name" ],
+        "updateColumns" : {
+          "SalesAgreementExternalId" : "External_ID__c"
+        }
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "UPDATE0" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "MFG_Demo_Sales_Agreements_Rebates_Tiers",
+          "name" : "MFG_Demo_Sales_Agreements_Rebates_Tiers",
+          "folderName" : "Demo_MFG_Analytics_FY23"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "MFG_Demo_Sales_Agreements_Rebates_Tiers",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1" : {
+        "label" : "SalesAgreement",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "UPDATE0" : {
+        "label" : "Update SA External IDs",
+        "description" : "",
+        "type" : "UPDATE",
+        "top" : 112,
+        "left" : 252
+      },
+      "OUTPUT0" : {
+        "label" : "Save SAT",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 392
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET0",
+      "target" : "UPDATE0"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "UPDATE0"
+    }, {
+      "source" : "UPDATE0",
+      "target" : "OUTPUT0"
+    } ],
+    "hiddenColumns" : [ ]
+  }
+}

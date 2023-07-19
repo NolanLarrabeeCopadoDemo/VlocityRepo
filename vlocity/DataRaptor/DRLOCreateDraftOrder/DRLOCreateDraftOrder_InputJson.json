@@ -1,0 +1,139 @@
+{
+    "": "",
+    "AccountInfo": {
+        "TAAccountName-Block": {
+            "AccountIdSF": "001B000001LxacQIAR",
+            "AccountPhone": "(212) 555-5555",
+            "BillingCity": "Bill New York",
+            "BillingCountry": "Bill USA",
+            "BillingPostalCode": "Bill 31349",
+            "BillingState": "Bill MH",
+            "BillingStreet": "Bill Street A",
+            "Name": "Acme",
+            "TAAccountName": "Acme",
+            "Website": "www.google.com"
+        }
+    },
+    "AccountsAndContacts": {
+        "ContactDetails": [
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hnIAD",
+                "Email": "paresh.koshti@pwc.com",
+                "FirstName": "Edward",
+                "LastName": "Stamos",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hoIAD",
+                "Email": "pgoriparthy@salesforce.com",
+                "FirstName": "Howard",
+                "LastName": "Jones",
+                "Phone": "(212) 555-5555",
+                "selectedContact": true
+            },
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hpIAD",
+                "Email": "pkoshti@salesforce.com",
+                "FirstName": "Leanne",
+                "LastName": "Tomlin",
+                "Phone": "(212) 555-5555",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000IP2hqIAD",
+                "Email": "info@salesforce.com",
+                "FirstName": "Marc",
+                "LastName": "Benioff",
+                "Phone": "(415) 901-7000",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001LxacQIAR",
+                "ContactId": "003B000000KqNowIAF",
+                "Email": "asda@gmail.com",
+                "FirstName": "asd",
+                "LastName": "asd",
+                "Phone": "34324",
+                "selectedContact": false
+            }
+        ]
+    },
+    "Contacts": [
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hnIAD",
+            "Email": "paresh.koshti@pwc.com",
+            "FirstName": "Edward",
+            "LastName": "Stamos",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hoIAD",
+            "Email": "pgoriparthy@salesforce.com",
+            "FirstName": "Howard",
+            "LastName": "Jones",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hpIAD",
+            "Email": "pkoshti@salesforce.com",
+            "FirstName": "Leanne",
+            "LastName": "Tomlin",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000IP2hqIAD",
+            "Email": "info@salesforce.com",
+            "FirstName": "Marc",
+            "LastName": "Benioff",
+            "Phone": "(415) 901-7000"
+        },
+        {
+            "AccountIdofContact": "001B000001LxacQIAR",
+            "ContactId": "003B000000KqNowIAF",
+            "Email": "asda@gmail.com",
+            "FirstName": "asd",
+            "LastName": "asd",
+            "Phone": "34324"
+        }
+    ],
+    "Error": {
+    },
+    "GenerateDocument": null,
+    "selectedAccountId": "001B000001LxacQIAR",
+    "setAccountDetails": {
+        "AccountIdSF": "001B000001LxacQIAR",
+        "AccountPhone": "(212) 555-5555",
+        "BillingCity": "Bill New York",
+        "BillingCountry": "Bill USA",
+        "BillingPostalCode": "Bill 31349",
+        "BillingState": "Bill MH",
+        "BillingStreet": "Bill Street A",
+        "Name": "Acme",
+        "TAAccountName": "Acme",
+        "Website": "www.google.com"
+    },
+    "timeStamp": "2022-03-22T07:09:18.200Z",
+    "userCurrencyCode": "USD",
+    "userId": "005B0000007L6rwIAC",
+    "userName": "rebate-admin-72@gs0.org",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-420",
+    "userTimeZoneName": "America/Los_Angeles",
+    "vlcTimeTracking": {
+        "AccountInfo": 5471,
+        "AccountsAndContacts": 4947,
+        "DRFetchContactDetails": 444,
+        "OmniScriptSessionToken": "32ac7e1e-c761-48a3-afc9-cb82be2239cf",
+        "SelectedAccount": 0,
+        "SetValues3": 0
+    }
+}

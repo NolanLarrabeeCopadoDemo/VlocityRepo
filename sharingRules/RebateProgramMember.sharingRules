@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Partner_Rebate_access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Partner Rebate access</label>
+        <sharedTo>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedTo>
+        <sharedFrom>
+            <role>Partner</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Rebate_Program_Member</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Rebate Program Member</label>
+        <sharedTo>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedTo>
+        <sharedFrom>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

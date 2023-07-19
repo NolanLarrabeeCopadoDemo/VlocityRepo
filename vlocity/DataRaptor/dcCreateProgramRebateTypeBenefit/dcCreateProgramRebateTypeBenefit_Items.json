@@ -1,0 +1,235 @@
+[
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit5909624735263885",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBBenefitValue",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BenefitValue",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit1925568826172943",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBBenefitAchieved",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Benefit_Achieved__c",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit4841554482222903",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBEffectiveEndDate",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EffectiveEndDate",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit2654539390025241",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBEffectiveStartDate",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EffectiveStartDate",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit05711616265400399",
+        "IsDisabled": true,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit5566317692757954",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBMaxQualify",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MaximumQualifyingValue",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "1",
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit3862554976394379",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBMinQualify",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MinimumQualifyingValue",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit49148932400605116",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBName",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit6245988991257805",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBProductTA-Block:ProductId",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductId",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit8192250431210271",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBProgramRebateTypeTA-Block:ProgramRebateTypeId",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProgramRebateTypeId",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateProgramRebateTypeBenefit91434748671514",
+        "InputFieldName": "RebateTypeBenefits:RebateTypeBenefitsBlock:RTBStatus",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateProgramRebateTypeBenefit",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateProgramRebateTypeBenefit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateProgramRebateTypeBenefit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "ProgramRebateTypeBenefit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

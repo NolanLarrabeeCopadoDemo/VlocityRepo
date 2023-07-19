@@ -1,0 +1,830 @@
+{
+  "version" : "55.0",
+  "nodes" : {
+    "FILTER5" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET1" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "IsActive",
+          "operator" : "EQUAL",
+          "operands" : [ "true" ]
+        } ]
+      }
+    },
+    "FILTER6" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET10" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "JOIN0" : {
+      "action" : "join",
+      "sources" : [ "EDIT_ATTRIBUTES7", "LOAD_DATASET10" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "ParentRole.Id" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "ParentRoleId" ],
+        "rightQualifier" : "ParentRole",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN2" : {
+      "action" : "join",
+      "sources" : [ "EDIT_ATTRIBUTES5", "EDIT_ATTRIBUTES11" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Role.Id" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UserRoleId" ],
+        "rightQualifier" : "Role",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN3" : {
+      "action" : "join",
+      "sources" : [ "FILTER6", "EDIT_ATTRIBUTES5" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "ForecastManager.Id", "ForecastManager.Username", "ForecastManager.LastName", "ForecastManager.FirstName", "ForecastManager.CompanyName", "ForecastManager.Division", "ForecastManager.Department", "ForecastManager.Title", "ForecastManager.Street", "ForecastManager.City", "ForecastManager.State", "ForecastManager.PostalCode", "ForecastManager.Country", "ForecastManager.Email", "ForecastManager.Phone", "ForecastManager.MobilePhone", "ForecastManager.Alias", "ForecastManager.IsActive", "ForecastManager.TimeZoneSidKey", "ForecastManager.UserRoleId", "ForecastManager.ReceivesInfoEmails", "ForecastManager.UserType", "ForecastManager.SmallPhotoUrl", "ForecastManager.isDuplicate" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "ForecastUserId" ],
+        "rightQualifier" : "ForecastManager",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN4" : {
+      "action" : "join",
+      "sources" : [ "EDIT_ATTRIBUTES13", "JOIN3" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "ParentRoleId" ],
+        "rightQualifier" : "ParentRole",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN5" : {
+      "action" : "join",
+      "sources" : [ "EDIT_ATTRIBUTES5", "JOIN4" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Role.Id" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UserRoleId" ],
+        "rightQualifier" : "Role",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN6" : {
+      "action" : "join",
+      "sources" : [ "EDIT_ATTRIBUTES5", "EDIT_ATTRIBUTES15" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Role.Id", "Role.Username", "Role.LastName", "Role.FirstName", "Role.Name", "Role.CompanyName", "Role.Division", "Role.Department", "Role.Title", "Role.Street", "Role.City", "Role.State", "Role.PostalCode", "Role.Country", "Role.Email", "Role.Phone", "Role.MobilePhone", "Role.Alias", "Role.IsActive", "Role.TimeZoneSidKey", "Role.UserRoleId", "Role.ReceivesInfoEmails", "Role.UserType", "Role.SmallPhotoUrl", "Role.ForecastEnabled", "Role.isDuplicate", "Role.UniqueUserName", "Role.Role.Name", "Role.Role.ParentRoleId", "Role.Role.DeveloperName", "Role.Role.ForecastUserId", "Role.Role.ForecastManager.Name", "Role.Role.ForecastManager.ForecastEnabled", "Role.Role.ForecastManager.UniqueUserName", "Role.Role.RolePath", "Role.Role.Roles", "Role.Role.ParentRole.Name", "Role.Role.ParentRole.ParentRoleId", "Role.Role.ParentRole.DeveloperName", "Role.Role.ParentRole.ForecastManager.Name", "Role.Role.ParentRole.ForecastManager.ForecastEnabled", "Role.Role.ParentRole.ForecastManager.UniqueUserName" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UniqueUserName" ],
+        "rightQualifier" : "Role",
+        "rightKeys" : [ "UniqueUserName" ]
+      }
+    },
+    "JOIN7" : {
+      "action" : "join",
+      "sources" : [ "JOIN6", "JOIN4" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "CompanyName", "Division", "Department", "Title", "Street", "City", "State", "PostalCode", "Country", "Phone", "MobilePhone", "Alias", "ReceivesInfoEmails", "Roles.ParentRoleId", "Roles.ParentRole.ParentRoleId", "Roles.ParentRole.ForecastManager.ForecastEnabled" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UserRoleId" ],
+        "rightQualifier" : "Roles",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Username", "LastName", "FirstName", "Name", "CompanyName", "Division", "Department", "Title", "Street", "City", "State", "PostalCode", "Country", "Email", "Phone", "MobilePhone", "Alias", "IsActive", "TimeZoneSidKey", "UserRoleId", "ReceivesInfoEmails", "UserType", "SmallPhotoUrl", "FullPhotoUrl", "ForecastEnabled" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET10" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "ParentRoleId", "DeveloperName", "ForecastUserId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UserRole",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UserRole"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "DROP_FIELDS0" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "User",
+          "name" : "User4",
+          "folderName" : "Customer_Insights_Analytics_v2"
+        }
+      }
+    },
+    "OUTPUT1" : {
+      "action" : "save",
+      "sources" : [ "JOIN7" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "UserRole",
+          "name" : "UserRole1",
+          "folderName" : "Customer_Insights_Analytics_v2"
+        }
+      }
+    },
+    "EDIT_ATTRIBUTES6" : {
+      "action" : "schema",
+      "sources" : [ "FLATTEN0" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Id_flatten",
+          "newProperties" : {
+            "label" : "RolePath",
+            "name" : "RolePath"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES7" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES6" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Id_flatten_multiField",
+          "newProperties" : {
+            "label" : "Roles",
+            "name" : "Roles"
+          }
+        } ]
+      }
+    },
+    "FLATTEN0" : {
+      "action" : "flatten",
+      "sources" : [ "LOAD_DATASET10" ],
+      "parameters" : {
+        "selfField" : "Id",
+        "parentField" : "ParentRoleId",
+        "multiField" : {
+          "name" : "Id_flatten_multiField",
+          "label" : "Roles",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "Id_flatten",
+          "label" : "RolePath",
+          "isSystemField" : false
+        },
+        "includeSelfId" : false
+      }
+    },
+    "EDIT_ATTRIBUTES8" : {
+      "action" : "schema",
+      "sources" : [ "FLATTEN1" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "DeveloperName_flatten",
+          "newProperties" : {
+            "label" : "RoleNamesPath",
+            "name" : "RoleNamesPath"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES9" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES8" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "DeveloperName_flatten_multiField",
+          "newProperties" : {
+            "label" : "RoleNames",
+            "name" : "RoleNames"
+          }
+        } ]
+      }
+    },
+    "FLATTEN1" : {
+      "action" : "flatten",
+      "sources" : [ "JOIN0" ],
+      "parameters" : {
+        "selfField" : "DeveloperName",
+        "parentField" : "ParentRole.DeveloperName",
+        "multiField" : {
+          "name" : "DeveloperName_flatten_multiField",
+          "label" : "RoleNames",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "DeveloperName_flatten",
+          "label" : "RoleNamesPath",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    },
+    "EDIT_ATTRIBUTES10" : {
+      "action" : "schema",
+      "sources" : [ "FLATTEN2" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "DeveloperName_flatten1",
+          "newProperties" : {
+            "label" : "Hierarchy_RoleNamesPath",
+            "name" : "Hierarchy_RoleNamesPath"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES11" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES10" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "DeveloperName_flatten1_multiField",
+          "newProperties" : {
+            "label" : "Hierarchy_RoleNames",
+            "name" : "Hierarchy_RoleNames"
+          }
+        } ]
+      }
+    },
+    "FLATTEN2" : {
+      "action" : "flatten",
+      "sources" : [ "EDIT_ATTRIBUTES9" ],
+      "parameters" : {
+        "selfField" : "DeveloperName",
+        "parentField" : "ParentRole.DeveloperName",
+        "multiField" : {
+          "name" : "DeveloperName_flatten1_multiField",
+          "label" : "Hierarchy_RoleNames",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "DeveloperName_flatten1",
+          "label" : "Hierarchy_RoleNamesPath",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    },
+    "EDIT_ATTRIBUTES4" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA0" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Id_formula",
+          "newProperties" : {
+            "label" : "isDuplicate",
+            "name" : "isDuplicate"
+          }
+        } ]
+      }
+    },
+    "FORMULA0" : {
+      "action" : "computeRelative",
+      "sources" : [ "FILTER5" ],
+      "parameters" : {
+        "partitionBy" : [ "Name" ],
+        "orderBy" : [ {
+          "fieldName" : "Id",
+          "direction" : "ASC"
+        } ],
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Id_formula",
+          "label" : "isDuplicate",
+          "formulaExpression" : "lead(Id)",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES5" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA1" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Id_formula1",
+          "newProperties" : {
+            "label" : "UniqueUserName",
+            "name" : "UniqueUserName"
+          }
+        } ]
+      }
+    },
+    "FORMULA1" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES4" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Id_formula1",
+          "label" : "UniqueUserName",
+          "formulaExpression" : "case \n\twhen isDuplicate is null\n\tthen Name\n\telse\n\tconcat(Name,' (',Username,')')\nend",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "DROP_FIELDS0" : {
+      "action" : "schema",
+      "sources" : [ "JOIN2" ],
+      "parameters" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "isDuplicate" ]
+        }
+      }
+    },
+    "EDIT_ATTRIBUTES12" : {
+      "action" : "schema",
+      "sources" : [ "FLATTEN3" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Id_flatten",
+          "newProperties" : {
+            "label" : "RolePath",
+            "name" : "RolePath"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES13" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES12" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Id_flatten_multiField",
+          "newProperties" : {
+            "label" : "Roles",
+            "name" : "Roles"
+          }
+        } ]
+      }
+    },
+    "FLATTEN3" : {
+      "action" : "flatten",
+      "sources" : [ "JOIN3" ],
+      "parameters" : {
+        "selfField" : "Id",
+        "parentField" : "ParentRoleId",
+        "multiField" : {
+          "name" : "Id_flatten_multiField",
+          "label" : "Roles",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "Id_flatten",
+          "label" : "RolePath",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    },
+    "EDIT_ATTRIBUTES14" : {
+      "action" : "schema",
+      "sources" : [ "FLATTEN4" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "UniqueUserName_flatten",
+          "newProperties" : {
+            "label" : "RolesNamesPath",
+            "name" : "RolesNamesPath"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES15" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES14" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "UniqueUserName_flatten_multiField",
+          "newProperties" : {
+            "label" : "RoleNames",
+            "name" : "RoleNames"
+          }
+        } ]
+      }
+    },
+    "FLATTEN4" : {
+      "action" : "flatten",
+      "sources" : [ "JOIN5" ],
+      "parameters" : {
+        "selfField" : "UniqueUserName",
+        "parentField" : "Role.ParentRole.ForecastManager.UniqueUserName",
+        "multiField" : {
+          "name" : "UniqueUserName_flatten_multiField",
+          "label" : "RoleNames",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "UniqueUserName_flatten",
+          "label" : "RolesNamesPath",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "FILTER5" : {
+        "label" : "Filter Active Users Only",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 392,
+        "left" : 252
+      },
+      "FILTER6" : {
+        "label" : "Filter",
+        "type" : "FILTER",
+        "top" : 812.4,
+        "left" : 252
+      },
+      "JOIN0" : {
+        "label" : "Augment_ParentName_onto_UserRole",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 672,
+        "left" : 392
+      },
+      "JOIN2" : {
+        "label" : "Augment_Roles_onto_User",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392.4,
+        "left" : 812
+      },
+      "JOIN3" : {
+        "label" : "Join ForecastUsers onto UserRole",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812.1,
+        "left" : 532.1
+      },
+      "JOIN4" : {
+        "label" : "Add ParentRole Name",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 812
+      },
+      "JOIN5" : {
+        "label" : "Join Roles onto ForecastUsers",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 813.3,
+        "left" : 952
+      },
+      "JOIN6" : {
+        "label" : "Join Role onto User Forecast Hierarchy",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 813.3,
+        "left" : 1232
+      },
+      "JOIN7" : {
+        "label" : "Join Roles onto User",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 1372
+      },
+      "LOAD_DATASET1" : {
+        "label" : "User",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET10" : {
+        "label" : "UserRole",
+        "type" : "LOAD_DATASET",
+        "top" : 672,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "OUTPUT0" : {
+        "label" : "Save User",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 392.1,
+        "left" : 1092
+      },
+      "OUTPUT1" : {
+        "label" : "Save UserRole",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 812,
+        "left" : 1512
+      },
+      "TRANSFORM0" : {
+        "label" : "Flatten_UserRole",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 672,
+        "left" : 252,
+        "graph" : {
+          "EDIT_ATTRIBUTES6" : null,
+          "EDIT_ATTRIBUTES7" : null,
+          "FLATTEN0" : null
+        },
+        "connectors" : [ {
+          "source" : "FLATTEN0",
+          "target" : "EDIT_ATTRIBUTES6"
+        }, {
+          "source" : "EDIT_ATTRIBUTES6",
+          "target" : "EDIT_ATTRIBUTES7"
+        } ]
+      },
+      "TRANSFORM1" : {
+        "label" : "Flatten_ParentName",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 672,
+        "left" : 532,
+        "graph" : {
+          "EDIT_ATTRIBUTES8" : null,
+          "EDIT_ATTRIBUTES9" : null,
+          "FLATTEN1" : null
+        },
+        "connectors" : [ {
+          "source" : "FLATTEN1",
+          "target" : "EDIT_ATTRIBUTES8"
+        }, {
+          "source" : "EDIT_ATTRIBUTES8",
+          "target" : "EDIT_ATTRIBUTES9"
+        } ]
+      },
+      "TRANSFORM2" : {
+        "label" : "Flatten_Hierarchy_Grouping",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 672,
+        "left" : 672,
+        "graph" : {
+          "EDIT_ATTRIBUTES10" : null,
+          "EDIT_ATTRIBUTES11" : null,
+          "FLATTEN2" : null
+        },
+        "connectors" : [ {
+          "source" : "FLATTEN2",
+          "target" : "EDIT_ATTRIBUTES10"
+        }, {
+          "source" : "EDIT_ATTRIBUTES10",
+          "target" : "EDIT_ATTRIBUTES11"
+        } ]
+      },
+      "TRANSFORM3" : {
+        "label" : "Compute_IsDuplicate_Name",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 392,
+        "left" : 392,
+        "graph" : {
+          "EDIT_ATTRIBUTES4" : null,
+          "FORMULA0" : null
+        },
+        "connectors" : [ {
+          "source" : "FORMULA0",
+          "target" : "EDIT_ATTRIBUTES4"
+        } ]
+      },
+      "TRANSFORM4" : {
+        "label" : "Compute_UniqueUserName",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 392,
+        "left" : 532,
+        "graph" : {
+          "EDIT_ATTRIBUTES5" : null,
+          "FORMULA1" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            }
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA1",
+          "target" : "EDIT_ATTRIBUTES5"
+        } ]
+      },
+      "TRANSFORM5" : {
+        "label" : "Transform",
+        "type" : "TRANSFORM",
+        "top" : 392.1,
+        "left" : 952.1,
+        "graph" : {
+          "DROP_FIELDS0" : null
+        },
+        "connectors" : [ ]
+      },
+      "TRANSFORM6" : {
+        "label" : "Flatten UserRole",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 812,
+        "left" : 672,
+        "graph" : {
+          "EDIT_ATTRIBUTES12" : null,
+          "EDIT_ATTRIBUTES13" : null,
+          "FLATTEN3" : null
+        },
+        "connectors" : [ {
+          "source" : "FLATTEN3",
+          "target" : "EDIT_ATTRIBUTES12"
+        }, {
+          "source" : "EDIT_ATTRIBUTES12",
+          "target" : "EDIT_ATTRIBUTES13"
+        } ]
+      },
+      "TRANSFORM7" : {
+        "label" : "Flatten Parent Name",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 812,
+        "left" : 1092,
+        "graph" : {
+          "EDIT_ATTRIBUTES14" : null,
+          "EDIT_ATTRIBUTES15" : null,
+          "FLATTEN4" : null
+        },
+        "connectors" : [ {
+          "source" : "FLATTEN4",
+          "target" : "EDIT_ATTRIBUTES14"
+        }, {
+          "source" : "EDIT_ATTRIBUTES14",
+          "target" : "EDIT_ATTRIBUTES15"
+        } ]
+      }
+    },
+    "connectors" : [ {
+      "source" : "TRANSFORM0",
+      "target" : "JOIN0"
+    }, {
+      "source" : "LOAD_DATASET10",
+      "target" : "TRANSFORM0"
+    }, {
+      "source" : "JOIN0",
+      "target" : "TRANSFORM1"
+    }, {
+      "source" : "TRANSFORM1",
+      "target" : "TRANSFORM2"
+    }, {
+      "source" : "FILTER5",
+      "target" : "TRANSFORM3"
+    }, {
+      "source" : "TRANSFORM3",
+      "target" : "TRANSFORM4"
+    }, {
+      "source" : "TRANSFORM4",
+      "target" : "JOIN2"
+    }, {
+      "source" : "TRANSFORM2",
+      "target" : "JOIN2"
+    }, {
+      "source" : "LOAD_DATASET10",
+      "target" : "JOIN0"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "FILTER5"
+    }, {
+      "source" : "TRANSFORM5",
+      "target" : "OUTPUT0"
+    }, {
+      "source" : "JOIN2",
+      "target" : "TRANSFORM5"
+    }, {
+      "source" : "LOAD_DATASET10",
+      "target" : "FILTER6"
+    }, {
+      "source" : "FILTER6",
+      "target" : "JOIN3"
+    }, {
+      "source" : "TRANSFORM4",
+      "target" : "JOIN3"
+    }, {
+      "source" : "JOIN3",
+      "target" : "TRANSFORM6"
+    }, {
+      "source" : "TRANSFORM6",
+      "target" : "JOIN4"
+    }, {
+      "source" : "JOIN3",
+      "target" : "JOIN4"
+    }, {
+      "source" : "TRANSFORM4",
+      "target" : "JOIN5"
+    }, {
+      "source" : "JOIN4",
+      "target" : "JOIN5"
+    }, {
+      "source" : "JOIN5",
+      "target" : "TRANSFORM7"
+    }, {
+      "source" : "TRANSFORM4",
+      "target" : "JOIN6"
+    }, {
+      "source" : "TRANSFORM7",
+      "target" : "JOIN6"
+    }, {
+      "source" : "JOIN6",
+      "target" : "JOIN7"
+    }, {
+      "source" : "JOIN4",
+      "target" : "JOIN7"
+    }, {
+      "source" : "JOIN7",
+      "target" : "OUTPUT1"
+    } ],
+    "hiddenColumns" : [ ]
+  }
+}

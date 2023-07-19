@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>Used in the portal to provide the supplier user with the ability to update the expected delivery date of the goods ordered.</description>
+    <masterLabel>SRM: Update Purchase Order Promise Date</masterLabel>
+</FlowDefinition>

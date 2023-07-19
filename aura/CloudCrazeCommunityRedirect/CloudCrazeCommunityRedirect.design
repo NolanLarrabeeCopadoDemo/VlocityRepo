@@ -1,0 +1,3 @@
+<design:component label="B2B Redirect">
+	<design:attribute name="Community" datasource="MFG Customer Community,MFG Partner Central"/> 
+</design:component>

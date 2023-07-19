@@ -1,0 +1,11 @@
+Membership Number,Account,Member Status,Enrollment Channel,Enrollment Date,Partnership Start Date,Percentage of Team Trained,Number Of Quarterly Conference Attended,Brand Coverage,Loyalty Program,Loyalty Tier Group,Loyalty Tier,Effective Date,Tier Expiration Date,Loyalty Currency Name,Total Accrued,Total Redeemed,Total Expired,Last Expiration Process Run Date,Contact Name
+100001,Acme Partners,Active,Web,2018-02-20,2016-01-20,75,3,60,Partner Extraa Program,Status Tier Group,Platinum,2020-06-01,2021-05-31,Points,46771,0,0,2020-05-01,Adam Smith
+100002,Pinnacle Partners,Active,Web,2019-05-02,2016-02-05,75,2,75,Partner Extraa Program,Status Tier Group,Gold,2020-06-05,2021-06-04,Points,45371,0,0,2020-05-02,Brian Mcgrath
+100003,Summit Resellers,Active,Web,2019-07-21,2018-02-21,60,2,55,Partner Extraa Program,Status Tier Group,Silver,2020-02-21,,Points,27492,0,0,2020-05-03,Chris Oven
+100004,Meridian Partners,Active,Web,2019-03-01,2018-03-01,60,3,60,Partner Extraa Program,Status Tier Group,Silver,2019-03-01,,Points,3268,0,0,2020-05-04,Dennise Smith
+100005,Zenith Distributors,Active,Web,2020-04-03,2018-04-03,50,2,30,Partner Extraa Program,Status Tier Group,Silver,2020-04-03,,Points,426,0,0,2020-05-05,Elizabeth Turner
+100006,Bailey Construction,Active,Web,2020-05-16,2019-05-19,40,2,40,Partner Extraa Program,Status Tier Group,Silver,2020-05-16,,Points,9638,0,0,2020-05-06,Farooq Ahmed
+100007,Auric Distribution,Active,Web,2017-03-04,2020-03-04,70,1,20,Partner Extraa Program,Status Tier Group,Silver,2017-03-04,,Points,19868,0,0,2020-05-07,Greg Thompson
+100008,Haven Enterprises,Active,Web,2020-02-25,2020-02-25,80,1,25,Partner Extraa Program,Status Tier Group,Silver,2020-02-25,,Points,20357,0,0,2020-05-08,Harrold Williamson
+100009,Goodman Imports,Active,Web,2018-03-12,2020-03-12,55,1,50,Partner Extraa Program,Status Tier Group,Silver,2018-03-12,,Points,33822,0,0,2020-05-09,Irene Smith
+100010,Towson Inc.,Active,Web,2018-05-25,2020-05-25,90,1,30,Partner Extraa Program,Status Tier Group,Silver,2018-05-25,,Points,17387,0,0,2020-05-10,Johnson Grainer

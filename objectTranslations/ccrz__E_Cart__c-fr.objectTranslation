@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Panier CC</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Paniers CC</value>
+    </caseValues>
+    <fields>
+        <label><!-- Budget Approval Requested --></label>
+        <name>Budget_Approval_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Approved for Checkout --></label>
+        <name>Budget_Approved_for_Checkout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Override --></label>
+        <name>Budget_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Approved for Checkout --></label>
+        <name>Credit_Override_Approved_for_Checkout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override Requested --></label>
+        <name>Credit_Override_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Override --></label>
+        <name>Credit_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Message Text --></label>
+        <name>Custom_Message_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Message Type --></label>
+        <name>Custom_Message_Type__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info</masterLabel>
+            <translation><!-- Info --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- CC Carts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Needed --></label>
+        <name>Quote_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- CC Carts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reward Points Applied --></label>
+        <name>Reward_Points_Applied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Quote Overrides --></label>
+        <name>Use_Quote_Overrides__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>ccrz__Account__c</name>
+        <relationshipLabel><!-- Carts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Cart --></label>
+        <name>ccrz__ActiveCart__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Amount --></label>
+        <name>ccrz__AdjustmentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Reason --></label>
+        <name>ccrz__AdjustmentReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anonymous Id --></label>
+        <name>ccrz__AnonymousId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>ccrz__BillTo__c</name>
+        <relationshipLabel><!-- Carts (BillToID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>ccrz__BuyerCompanyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>ccrz__BuyerEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>ccrz__BuyerFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>ccrz__BuyerLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Phone --></label>
+        <name>ccrz__BuyerMobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>ccrz__BuyerPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCEmailAddress --></label>
+        <name>ccrz__CCEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cart Id --></label>
+        <name>ccrz__CartId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cart Status --></label>
+        <name>ccrz__CartStatus__c</name>
+        <picklistValues>
+            <masterLabel>Abandoned</masterLabel>
+            <translation>Abandonné</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Fermé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>Ouvrir</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cart Type --></label>
+        <name>ccrz__CartType__c</name>
+        <picklistValues>
+            <masterLabel>Cart</masterLabel>
+            <translation>Panier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read-Only WishList</masterLabel>
+            <translation>Liste de souhaits en lecture seule</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WishList</masterLabel>
+            <translation>Liste de souhaits</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>ccrz__Contact__c</name>
+        <relationshipLabel><!-- CC Carts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract ID --></label>
+        <name>ccrz__ContractId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency ISO Code --></label>
+        <name>ccrz__CurrencyISOCode__c</name>
+    </fields>
+    <fields>
+        <help>Ce champ sera utilisé avec les implémentations dans lesquelles un utilisateur peut commander pour plusieurs comptes (dont potentiellement le sien). Le compte effectif contrôle les avantages, tarifs et intégrations qui déterminent l’expérience du site.</help>
+        <label><!-- Effective Account ID --></label>
+        <name>ccrz__EffectiveAccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypted Id --></label>
+        <name>ccrz__EncryptedId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>ccrz__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>ccrz__Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>ccrz__PONumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>ccrz__PaymentMethod__c</name>
+    </fields>
+    <fields>
+        <help>La dernière date à laquelle B2B Commerce a établi le prix des articles du panier.</help>
+        <label><!-- Repriced Date --></label>
+        <name>ccrz__RepricedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>ccrz__RequestDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Id --></label>
+        <name>ccrz__SessionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Amount --></label>
+        <name>ccrz__ShipAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Complete --></label>
+        <name>ccrz__ShipComplete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Discount Amount --></label>
+        <name>ccrz__ShipDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Method --></label>
+        <name>ccrz__ShipMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Structure --></label>
+        <name>ccrz__ShipStructure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>ccrz__ShipTo__c</name>
+        <relationshipLabel><!-- Carts (ShipToID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Storefront --></label>
+        <name>ccrz__Storefront__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subtotal Amount --></label>
+        <name>ccrz__SubtotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Amount --></label>
+        <name>ccrz__TaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxExemptFlag --></label>
+        <name>ccrz__TaxExemptFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax SubTotal Amount --></label>
+        <name>ccrz__TaxSubTotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>ccrz__TotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Discount --></label>
+        <name>ccrz__TotalDiscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Quantity --></label>
+        <name>ccrz__TotalQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Surcharge --></label>
+        <name>ccrz__TotalSurcharge__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>ccrz__User__c</name>
+        <relationshipLabel><!-- CC Carts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Validation Status --></label>
+        <name>ccrz__ValidationStatus__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Numéro automatique de panier</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Quote_This_Cart --></label>
+        <name>Quote_This_Cart</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_in_Storefront --></label>
+        <name>ccrz__View_in_Storefront</name>
+    </webLinks>
+</CustomObjectTranslation>

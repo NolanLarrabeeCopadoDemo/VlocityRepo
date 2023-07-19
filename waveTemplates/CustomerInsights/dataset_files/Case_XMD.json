@@ -1,0 +1,86 @@
+{
+    "dates": [],
+    "derivedDimensions": [],
+    "derivedMeasures": [],
+    "dimensions": [
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Duration_Bucket",
+            "members": [
+                {
+                    "label": "1-7",
+                    "member": "1. 1-7"
+                },
+                {
+                    "label": "8-21",
+                    "member": "2. 8-21"
+                },
+                {
+                    "label": "22-60",
+                    "member": "3. 22-60"
+                },
+                {
+                    "label": "61-100",
+                    "member": "4. 61-100"
+                },
+                {
+                    "label": "101-365",
+                    "member": "5. 101-365"
+                },
+                {
+                    "label": ">1yr",
+                    "member": "6. >1yr"
+                },
+                {
+                    "label": "N/A",
+                    "member": "7. NA"
+                }
+            ],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "CaseNumber",
+            "linkTemplate": "/{{row.Id}}",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "recordIdField": "Id",
+            "salesforceActions": [],
+            "salesforceActionsEnabled": false
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Agent.Name",
+            "label": "Case Owner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Account.Owner.Name",
+            "label": "Account Owner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Contact.Name",
+            "label": "Contact Name",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        }
+    ],
+    "measures": [],
+    "organizations": [],
+    "showDetailsDefaultFields": []
+}

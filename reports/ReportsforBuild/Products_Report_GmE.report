@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>CUSTOMER_PRODUCT_ID</field>
+    </columns>
+    <columns>
+        <field>Product2.MFG_Image_URL__c</field>
+    </columns>
+    <columns>
+        <field>Product2.purl__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Image_URL__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Image__c</field>
+    </columns>
+    <columns>
+        <field>Product2.External_ID__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ID_for_Org_Customizer__c</field>
+    </columns>
+    <description>Includes Product Image URLS and External ID</description>
+    <format>Tabular</format>
+    <name>Products Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Product2.External_ID__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

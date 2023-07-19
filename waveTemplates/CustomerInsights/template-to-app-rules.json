@@ -1,0 +1,943 @@
+{
+  "constants": [],
+  "macros": [],
+  "rules": [
+    {
+      "name": "Apply SecPred using Role Hierarchy - for Opp Recipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_opportunity_combined"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "apply sec pred to Opportunity save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT4.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'Owner.Roles.Roles' == \"$User.UserRoleId\" || 'OwnerId' == \"$User.Id\""
+        },
+        {
+          "action": "set",
+          "description": "apply sec pred to Account save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT6.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'Owner.Roles.Roles' == \"$User.UserRoleId\" || 'OwnerId' == \"$User.Id\""
+        },
+        {
+          "action": "set",
+          "description": "apply sec pred to OppHistory save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT7.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'Opp.Owner.Roles.Roles' == \"$User.UserRoleId\" || 'Opp.OwnerId' == \"$User.Id\""
+        }
+      ]
+    },
+    {
+      "name": "Apply SecPred using Role Hierarchy - for Opp Recipe - OpptyProduct dataset",
+      "condition": "${Variables.Has_RoleHierarchy == 'Yes' && Variables.Has_Products == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_opportunity_combined"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "apply sec pred to OpptyProduct save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT5.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'Opportunity.Owner.Roles.Roles' == \"$User.UserRoleId\" || 'Opportunity.OwnerId' == \"$User.Id\""
+        }
+      ]
+    },
+    {
+      "name": "Apply SecPred using Role Hierarchy - for Activity Recipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'Yes' && Variables.Has_Activities == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_activity"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "apply sec pred to Activity save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT0.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'Owner.Role.Roles' == \"$User.UserRoleId\" || 'OwnerId' == \"$User.Id\""
+        }
+      ]
+    },
+    {
+      "name": "Apply SecPred using Role Hierarchy - for Lead Recipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'Yes' && Variables.Has_Leads == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_lead"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "apply sec pred to Lead save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT0.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'Owner.Role.Roles' == \"$User.UserRoleId\" || 'OwnerId' == \"$User.Id\""
+        }
+      ]
+    },
+    {
+      "name": "Apply SecPred without using Role Hierarchy",
+      "condition": "${Variables.Has_RoleHierarchy == 'No'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_opportunity_combined"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "apply sec pred to Opportunity save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT4.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'OwnerId' == \"$User.Id\""
+        },
+        {
+          "action": "set",
+          "description": "apply sec pred to Account save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT6.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'OwnerId' == \"$User.Id\""
+        },
+        {
+          "action": "set",
+          "description": "apply sec pred to OppHistory save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT7.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'Opp.OwnerId' == \"$User.Id\""
+        }
+      ]
+    },
+    {
+      "name": "Apply SecPred without Role Hierarchy - for Opp Recipe - OpptyProduct dataset",
+      "condition": "${Variables.Has_RoleHierarchy == 'No' && Variables.Has_Products == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_opportunity_combined"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "apply sec pred to OpptyProduct save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT5.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'Opportunity.OwnerId' == \"$User.Id\""
+        }
+      ]
+    }, 
+    {
+      "name": "Apply SecPred without Role Hierarchy - for Activity Recipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'No' && Variables.Has_Activities == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_activity"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "apply sec pred to Activity save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT0.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'OwnerId' == \"$User.Id\""
+        }
+      ]
+    },
+    {
+      "name": "Apply SecPred without Role Hierarchy - for Lead Recipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'No' && Variables.Has_Leads == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_lead"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "apply sec pred to Lead save node",
+          "path": "$.recipeDefinition.nodes.OUTPUT0.parameters.dataset.rowLevelSecurityFilter",
+          "value": "'OwnerId' == \"$User.Id\""
+        }
+      ]
+    },   
+    {
+      "name": "UpdateLoadRolesToRemoveNameFieldInUserRecipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_user_combined"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "delete",
+          "description": "update connected dataset node to remove Name field which is only used for dataset load",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET10.parameters.dataset.name"
+        }
+      ]
+    },
+    {
+      "name": "UpdateLoadRolesToCSVUploadInUserRecipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'No'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_user_combined"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "update load dataset node to use external csv upload instead of connected dataset",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET10.parameters.dataset.type",
+          "value": "analyticsDataset"
+        },
+        {
+          "action": "delete",
+          "description": "update load dataset node to use external csv upload instead of connected dataset",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET10.parameters.dataset.connectionName"
+        },
+        {
+          "action": "delete",
+          "description": "update load dataset node to use external csv upload instead of connected dataset",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET10.parameters.dataset.sourceObjectName"
+        },
+        {
+          "action": "set",
+          "description": "update load dataset node to use external csv upload instead of connected dataset",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET10.parameters.dataset.name",
+          "value": "${App.Datasets.no_userrole_hierarchy_insights.Name}"
+        }
+      ]
+    },
+    {
+      "name": "RemoveIsPersonAccountFieldsAndFilterfromOppRecipe",
+      "condition": "${Variables.Has_PersonAccount == 'No'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_opportunity_combined"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "delete",
+          "description": "delete IsPersonAccount Filter related nodes",
+          "path": "$.recipeDefinition.nodes.FILTER7"
+        },
+        {
+          "action": "delete",
+          "description": "delete IsPersonAccount Filter related nodes",
+          "path": "$.recipeDefinition.ui.nodes.FILTER7"
+        },
+        {
+          "action": "delete",
+          "description": "delete IsPersonAccount related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.target=~/^FILTER7$/i)]"
+        },
+        {
+          "action": "set",
+          "description": "re-attach nodes without IsPersonAccount filter",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.source=~/^FILTER7$/i)].source",
+          "value": "LOAD_DATASET6"
+        },
+        {
+          "action": "set",
+          "description": "re-attach nodes without IsPersonAccount filter",
+          "path": "$.recipeDefinition.nodes.JOIN9.sources[0]",
+          "value": "LOAD_DATASET6"
+        },
+        {
+          "action": "delete",
+          "description": "delete IsPersonAccount related fields",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET6.parameters.fields[?(@=~ /IsPersonAccount/i)]"
+        }
+      ]
+    },
+    {
+      "name": "RemoveProductOpptyLineItemAndPricebookEntryfromOppRecipe",
+      "condition": "${Variables.Has_Products == 'No'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_opportunity_combined"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "delete",
+          "description": "delete Product2 related nodes",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET19"
+        },
+        {
+          "action": "delete",
+          "description": "delete Product2 related nodes",
+          "path": "$.recipeDefinition.ui.nodes.LOAD_DATASET19"
+        },
+        {
+          "action": "delete",
+          "description": "delete Product2 related nodes",
+          "path": "$.recipeDefinition.nodes.JOIN17"
+        },
+        {
+          "action": "delete",
+          "description": "delete Product2 related nodes",
+          "path": "$.recipeDefinition.ui.nodes.JOIN17"
+        },
+        {
+          "action": "delete",
+          "description": "delete Product2 related nodes",
+          "path": "$.recipeDefinition.nodes.OUTPUT8"
+        },
+        {
+          "action": "delete",
+          "description": "delete Product2 related nodes",
+          "path": "$.recipeDefinition.ui.nodes.OUTPUT8"
+        },
+        {
+          "action": "delete",
+          "description": "delete Product2 related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.source=~/^LOAD_DATASET19$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete Product2 related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.target=~/^OUTPUT8$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.nodes.OUTPUT5"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.ui.nodes.OUTPUT5"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.nodes.FORMULA12"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.nodes.FORMULA13"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.ui.nodes.TRANSFORM4"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.source=~/^TRANSFORM4$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.target=~/^TRANSFORM4$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.nodes.JOIN12"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.ui.nodes.JOIN12"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.source=~/^JOIN12$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.target=~/^JOIN12$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.nodes.FILTER6"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.ui.nodes.FILTER6"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.source=~/^FILTER6$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related connectors",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.target=~/^FILTER6$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET13"
+        },
+        {
+          "action": "delete",
+          "description": "delete OpptyProduct/LineItem related nodes",
+          "path": "$.recipeDefinition.ui.nodes.LOAD_DATASET13"
+        },
+        {
+          "action": "delete",
+          "description": "delete PricebookEntry related nodes",
+          "path": "$.recipeDefinition.nodes.JOIN3"
+        },
+        {
+          "action": "delete",
+          "description": "delete PricebookEntry related nodes",
+          "path": "$.recipeDefinition.ui.nodes.JOIN3"
+        },
+        {
+          "action": "delete",
+          "description": "delete PricebookEntry related nodes",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET8"
+        },
+        {
+          "action": "delete",
+          "description": "delete PricebookEntry related nodes",
+          "path": "$.recipeDefinition.ui.nodes.LOAD_DATASET8"
+        },
+        {
+          "action": "delete",
+          "description": "delete PricebookEntry related nodes",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.source=~/^LOAD_DATASET8$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete PricebookEntry related nodes",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.target=~/^JOIN3$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "delete connector for join product onto LineItem",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.target=~/^JOIN17$/i)]"
+        },
+        {
+          "action": "set",
+          "description": "re-attach nodes without JOIN3 & JOIN17",
+          "path": "$.recipeDefinition.nodes.JOIN10.sources[0]",
+          "value": "FORMULA4"
+        },
+
+        {
+          "action": "set",
+          "description": "update connector from JOIN10 to TRANSFORM1 (without JOIN3 & JOIN17)",
+          "path": "$.recipeDefinition.ui.connectors.[?(@.source=~/^JOIN17$/i)].source",
+          "value":"TRANSFORM1"
+        }
+      ]
+    },
+    {
+      "name": "Remove UserRole Hierarchy Rules from Lead recipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'No'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_lead"
+        }
+      ],
+      "actions": [
+        {
+          "action": "set",
+          "description": "setting fields to load from User dataset but leaving out Role Hierarchy related fields",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET2.parameters.fields",
+          "value": "[\"UniqueUserName\",\"Email\",\"Name\",\"Username\",\"Id\",\"SmallPhotoUrl\",\"FullPhotoUrl\"]"
+        }
+      ]
+    },
+    {
+      "name": "Remove UserRole Hierarchy Rules from Case recipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'No'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_case"
+        }
+      ],
+      "actions": [
+        {
+          "action": "set",
+          "description": "setting fields to load from User dataset but leaving out Role Hierarchy related fields",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET5.parameters.fields",
+          "value": "[\"UniqueUserName\",\"Email\",\"Name\",\"Username\",\"Id\",\"SmallPhotoUrl\",\"FullPhotoUrl\"]"
+        }
+      ]
+    },
+    {
+      "name": "Remove UserRole Hierarchy Rules from Activity recipe",
+      "condition": "${Variables.Has_RoleHierarchy == 'No'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_activity"
+        }
+      ],
+      "actions": [
+        {
+          "action": "set",
+          "description": "setting fields to load from User dataset but leaving out Role Hierarchy related fields",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET2.parameters.fields",
+          "value": "[\"UniqueUserName\",\"Email\",\"Name\",\"Username\",\"Id\",\"SmallPhotoUrl\",\"FullPhotoUrl\"]"
+        }
+      ]
+    },
+    {
+      "name": "UpdateLoadLeadsToCSVUploadInLeadsRecipe",
+      "condition": "${Variables.Has_Leads == 'No'}",
+      "appliesTo": [
+        {
+          "type": "recipe",
+          "name": "insights_lead"
+        }
+      ],
+      "actions": [     
+        {
+          "action": "set",
+          "description": "update load dataset node to use external csv upload instead of connected dataset",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET0.parameters.dataset.type",
+          "value": "analyticsDataset"
+        },
+        {
+          "action": "delete",
+          "description": "update load dataset node to use external csv upload instead of connected dataset",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET0.parameters.dataset.connectionName"
+        },
+        {
+          "action": "delete",
+          "description": "update load dataset node to use external csv upload instead of connected dataset",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET0.parameters.dataset.sourceObjectName"
+        },
+        {
+          "action": "set",
+          "description": "update load dataset node to use external csv upload instead of connected dataset",
+          "path": "$.recipeDefinition.nodes.LOAD_DATASET0.parameters.dataset.name",
+          "value": "${App.Datasets.Lead_tp.Name}"
+        }
+      ]
+    },
+    {
+      "name": "Remove Lead Components link from Activity dashboard",
+      "condition": "${Variables.Has_Leads == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Activity_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Lead Page",
+          "path": "$.state.widgets.link_2"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Lead Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_2')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Lead Components link from Case dashboard",
+      "condition": "${Variables.Has_Leads == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Case_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Lead Page",
+          "path": "$.state.widgets.link_1"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Lead Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_1')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Lead Components link from Opportunity dashboard",
+      "condition": "${Variables.Has_Leads == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Opportunity_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Lead Page",
+          "path": "$.state.widgets.link_2"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Lead Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_2')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Lead Components link from Product dashboard",
+      "condition": "${Variables.Has_Leads == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Product_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Lead Page",
+          "path": "$.state.widgets.link_3"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Lead Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_3')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Product Components link from Activity dashboard",
+      "condition": "${Variables.Has_Products == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Activity_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Product Page",
+          "path": "$.state.widgets.link_4"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Product Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_4')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Product Components link from Cases dashboard",
+      "condition": "${Variables.Has_Products == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Case_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Product Page",
+          "path": "$.state.widgets.link_5"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Product Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_5')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Product Components link from Leads dashboard",
+      "condition": "${Variables.Has_Products == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Lead_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Product Page",
+          "path": "$.state.widgets.link_5"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Product Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_5')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Product Components link from Opportunity dashboard",
+      "condition": "${Variables.Has_Products == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Opportunity_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Product Page",
+          "path": "$.state.widgets.link_3"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Product Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_3')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Case Components link from Opportunity dashboard",
+      "condition": "${Variables.Has_Cases == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Opportunity_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Case Page",
+          "path": "$.state.widgets.link_1"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Case Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_1')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Case Components link from Activities dashboard",
+      "condition": "${Variables.Has_Cases == 'No' && Variables.Has_Activities == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Activity_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Case Page",
+          "path": "$.state.widgets.link_1"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Case Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_1')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Activites Components link from Opportunity dashboard",
+      "condition": "${Variables.Has_Activities == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Opportunity_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Case Page",
+          "path": "$.state.widgets.link_7"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Case Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_7')]"
+        }
+      ]
+    },
+    {
+      "name": "Remove Activity Components link from Case dashboard",
+      "condition": "${Variables.Has_Activities == 'No' && Variables.Has_Cases == 'Yes'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Case_Components_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete unused widget link for Case Page",
+          "path": "$.state.widgets.link_2"
+        },
+        {
+          "action": "delete",
+          "description": "delete Link layout for Case Page",
+          "path": "$.state.gridLayouts..[?(@.name=='link_2')]"
+        }
+      ]
+    },
+    {
+      "name": "Replace Activity Component in Account Embedded dashboard",
+      "condition": "${Variables.Has_Activities == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Account_Embedded_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "set",
+          "description": "Replace Activity Component in Account Embedded dashboard with Avg Days in Sales Cycle component",
+          "path": "$.state.widgets.component_1..source.name",
+          "value": "${App.Components['Opportunity Avg Days in Sales Cycle'].Name}"
+        },
+        {
+          "action": "delete",
+          "description": "Delete step that references the Activity dataset",
+          "path": "$.state.steps.ActivityEmbedFilter_1"
+        }
+      ]
+    },
+    {
+      "name": "Replace Cases component in Account Embedded dashboard",
+      "condition": "${Variables.Has_Cases == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Account_Embedded_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "set",
+          "description": "Replace Case Component in Account Embedded dashboard with Win Rate component",
+          "path": "$.state.widgets.component_3..source.name",
+          "value": "${App.Components['Opportunity Win Rate'].Name}"
+        },
+        {
+          "action": "delete",
+          "description": "Delete step that references the Case dataset",
+          "path": "$.state.steps.CaseEmbedFilter_1"
+        }
+      ]
+    },
+    {
+      "name": "Replace Products component in Account Embedded dashboard",
+      "condition": "${Variables.Has_Products == 'No'}",
+      "appliesTo": [
+        {
+          "type": "dashboard",
+          "name": "Account_Embedded_tp"
+        }
+      ],
+      "actions": [
+        {
+          "action": "set",
+          "description": "Replace Product component in Account Embedded dashboard with Closed Won component",
+          "path": "$.state.widgets.component_4..source.name",
+          "value": "${App.Components['Opportunity Closed Won'].Name}"
+        }
+      ]
+    },
+    {
+      "name": "RemoveProductFromFolder",
+      "condition": "${Variables.Has_Products == 'No'}",
+      "appliesTo": [
+        {
+          "type": "folder",
+          "name": "*"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete Gallery - Product Components from Folder",
+          "path": "$.featuredAssets.default.assets..[?(@.id=~ /^.*Gallery - Product Components.*$/i)]"
+        }
+      ]
+    },
+    {
+      "name": "RemoveLeadFromFolder",
+      "condition": "${Variables.Has_Leads == 'No'}",
+      "appliesTo": [
+        {
+          "type": "folder",
+          "name": "*"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete Gallery - Lead Components from Folder",
+          "path": "$.featuredAssets.default.assets..[?(@.id=~ /^.*Gallery - Lead Components.*$/i)]"
+        }
+      ]
+    },
+    {
+      "name": "RemoveCaseFromFolder",
+      "condition": "${Variables.Has_Cases == 'No'}",
+      "appliesTo": [
+        {
+          "type": "folder",
+          "name": "*"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete Case Components from Folder",
+          "path": "$.featuredAssets.default.assets..[?(@.id=~ /^.*Service Performance.*$/i)]"
+        },
+        {
+          "action": "delete",
+          "description": "Delete Service Performance dashboard from Folder",
+          "path": "$.featuredAssets.default.assets..[?(@.id=~ /^.*Gallery - Case Components.*$/i)]"
+        }
+      ]
+    },
+    {
+      "name": "RemoveActivityDashboardFromFolderJson",
+      "condition": "${Variables.Has_Activities == 'No'}",
+      "appliesTo": [
+        {
+          "type": "folder",
+          "name": "*"
+        }
+      ],
+      "actions": [
+        {
+          "action": "delete",
+          "description": "Delete Gallery - Activity Components from Folder",
+          "path": "$.featuredAssets.default.assets..[?(@.id=~ /^.*Gallery - Activity Components.*$/i)]"
+        }
+      ]
+    }
+  ]
+}

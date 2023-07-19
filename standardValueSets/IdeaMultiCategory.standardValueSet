@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Portal Enhancements</fullName>
+        <default>false</default>
+        <label>Portal Enhancements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner Enhancements</fullName>
+        <default>false</default>
+        <label>Partner Enhancements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Enhancements</fullName>
+        <default>true</default>
+        <label>Product Enhancements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Company-Wide Improvements - Internal</fullName>
+        <default>false</default>
+        <label>Company-Wide Improvements - Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Team - Internal</fullName>
+        <default>false</default>
+        <label>Sales Team - Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Team - Internal</fullName>
+        <default>false</default>
+        <label>Marketing Team - Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Support Team - Internal</fullName>
+        <default>false</default>
+        <label>Support Team - Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Activity Management</fullName>
+        <default>false</default>
+        <label>Activity Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Audio Conferencing</fullName>
+        <default>false</default>
+        <label>Audio Conferencing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Benefits</fullName>
+        <default>false</default>
+        <label>Benefits</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Best Practices</fullName>
+        <default>false</default>
+        <label>Best Practices</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change Requests</fullName>
+        <default>false</default>
+        <label>Change Requests</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Conference Room Setup</fullName>
+        <default>false</default>
+        <label>Conference Room Setup</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Corporate Wireless</fullName>
+        <default>false</default>
+        <label>Corporate Wireless</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Culture</fullName>
+        <default>false</default>
+        <label>Culture</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Feedback</fullName>
+        <default>false</default>
+        <label>Customer Feedback</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Me Page</fullName>
+        <default>false</default>
+        <label>Contact Me Page</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Quality</fullName>
+        <default>false</default>
+        <label>Data Quality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Sponsorship</fullName>
+        <default>false</default>
+        <label>Executive Sponsorship</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Google Apps</fullName>
+        <default>false</default>
+        <label>Google Apps</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Green - Alt Transport Credit</fullName>
+        <default>false</default>
+        <label>Green - Alt Transport Credit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Green - Car / Van Pooling</fullName>
+        <default>false</default>
+        <label>Green - Car / Van Pooling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Green - Carbon Offset</fullName>
+        <default>false</default>
+        <label>Green - Carbon Offset</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Green - Electric Reduction</fullName>
+        <default>false</default>
+        <label>Green - Electric Reduction</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Green - Glass / Can Recycling</fullName>
+        <default>false</default>
+        <label>Green - Glass / Can Recycling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Green - Paper Waste</fullName>
+        <default>false</default>
+        <label>Green - Paper Waste</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Green - Waste Reduction</fullName>
+        <default>false</default>
+        <label>Green - Waste Reduction</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Green - Water Reduction</fullName>
+        <default>false</default>
+        <label>Green - Water Reduction</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Requests</fullName>
+        <default>false</default>
+        <label>Marketing Requests</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Print Advertising</fullName>
+        <default>false</default>
+        <label>Print Advertising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Marketing</fullName>
+        <default>false</default>
+        <label>Email Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Events</fullName>
+        <default>false</default>
+        <label>Events</label>
+    </standardValue>
+    <standardValue>
+        <fullName>My Google Apps Idea</fullName>
+        <default>false</default>
+        <label>My Google Apps Idea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>My Marketing Idea</fullName>
+        <default>false</default>
+        <label>My Marketing Idea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>My Partner Relationship Management Idea</fullName>
+        <default>false</default>
+        <label>My Partner Relationship Management Idea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>My Salesforce Content Idea</fullName>
+        <default>false</default>
+        <label>My Salesforce Content Idea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>My Salesforce Ideas Idea</fullName>
+        <default>false</default>
+        <label>My Salesforce Ideas Idea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Search Marketing</fullName>
+        <default>false</default>
+        <label>Search Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>My Service &amp; Support Idea</fullName>
+        <default>false</default>
+        <label>My Service &amp; Support Idea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>My SFA Idea</fullName>
+        <default>false</default>
+        <label>My SFA Idea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Viral Marketing</fullName>
+        <default>false</default>
+        <label>Viral Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Site</fullName>
+        <default>false</default>
+        <label>Web Site</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AppExchange Apps</fullName>
+        <default>false</default>
+        <label>AppExchange Apps</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Onboarding</fullName>
+        <default>false</default>
+        <label>Onboarding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PC/Laptop/Hardware</fullName>
+        <default>false</default>
+        <label>PC/Laptop/Hardware</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PDA/Blackberry</fullName>
+        <default>false</default>
+        <label>PDA/Blackberry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Performance Management</fullName>
+        <default>false</default>
+        <label>Performance Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone/Voicemail</fullName>
+        <default>false</default>
+        <label>Phone/Voicemail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Printer/Copier/Fax</fullName>
+        <default>false</default>
+        <label>Printer/Copier/Fax</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Software</fullName>
+        <default>false</default>
+        <label>Software</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Templates</fullName>
+        <default>false</default>
+        <label>Templates</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Video Conferencing</fullName>
+        <default>false</default>
+        <label>Video Conferencing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Volunteering</fullName>
+        <default>false</default>
+        <label>Volunteering</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VPN/RSA</fullName>
+        <default>false</default>
+        <label>VPN/RSA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Me Requests</fullName>
+        <default>false</default>
+        <label>Contact Me Requests</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Marketing</fullName>
+        <default>false</default>
+        <label>Channel Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Testimonials</fullName>
+        <default>false</default>
+        <label>Customer Testimonials</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Demo Center</fullName>
+        <default>false</default>
+        <label>Demo Center</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Templates</fullName>
+        <default>false</default>
+        <label>Email Templates</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Free Trial</fullName>
+        <default>false</default>
+        <label>Free Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Landing Page Design</fullName>
+        <default>false</default>
+        <label>Landing Page Design</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Generation</fullName>
+        <default>false</default>
+        <label>Lead Generation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online Community</fullName>
+        <default>false</default>
+        <label>Online Community</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Launches</fullName>
+        <default>false</default>
+        <label>Product Launches</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Marketing</fullName>
+        <default>false</default>
+        <label>Product Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Search Advertising</fullName>
+        <default>false</default>
+        <label>Search Advertising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Search Engine Optimization</fullName>
+        <default>false</default>
+        <label>Search Engine Optimization</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Shows</fullName>
+        <default>false</default>
+        <label>Trade Shows</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TV and Radio Advertising</fullName>
+        <default>false</default>
+        <label>TV and Radio Advertising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinars</fullName>
+        <default>false</default>
+        <label>Webinars</label>
+    </standardValue>
+    <standardValue>
+        <fullName>White Papers</fullName>
+        <default>false</default>
+        <label>White Papers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recruiting</fullName>
+        <default>false</default>
+        <label>Recruiting</label>
+    </standardValue>
+</StandardValueSet>

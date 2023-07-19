@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccountForecastSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accountFilterId>000000000000000</accountFilterId>
+    <accountForecastFormulas>
+        <endingPeriod>12</endingPeriod>
+        <formula>ROUND( ((MFG_Sales_Agreement_Planned_Quantity__c)*(1+AccForecastPeriodMetric.AccountGrowthPercentage)),0)</formula>
+        <formulaType>QUANTITY</formulaType>
+        <startingPeriod>1</startingPeriod>
+    </accountForecastFormulas>
+    <accountForecastFormulas>
+        <endingPeriod>12</endingPeriod>
+        <formula>(SalesAgreementPlannedRevenue)*(1+(AccForecastPeriodMetric.AccountGrowthPercentage + AccForecastPeriodMetric.MarketGrowthPercentage ))</formula>
+        <formulaType>REVENUE</formulaType>
+        <startingPeriod>1</startingPeriod>
+    </accountForecastFormulas>
+    <acctPrdctPrdFrcstVolCnt>42966</acctPrdctPrdFrcstVolCnt>
+    <calculationFrequency>Monthly</calculationFrequency>
+    <displayDuration>12</displayDuration>
+    <displayedForecastMetrics>OpportunityQuantity,MFG_Sales_Agreement_Planned_Quantity__c,PastOrdersQuantity,CurrentOrdersQuantity,Remaining_Forecast__c</displayedForecastMetrics>
+    <displayedRevenueMetrics>OpportunityRevenue,PastOrdersRevenue,CurrentOrdersRevenue,SalesAgreementPlannedRevenue</displayedRevenueMetrics>
+    <editableAtStartOfPeriod>true</editableAtStartOfPeriod>
+    <editsAllowedFor>31</editsAllowedFor>
+    <forecastFrequency>Monthly</forecastFrequency>
+    <objectMapping>
+        <inputObject>AccountProductPeriodForecast</inputObject>
+        <mappingFields>
+            <inputField>MFG_Sales_Agreement_Planned_Quantity__c</inputField>
+            <outputField>MFG_Total_Sales_Agreement_Planned_Quant__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Remaining_Forecast__c</inputField>
+            <outputField>Remaining_Forecast__c</outputField>
+        </mappingFields>
+        <outputObject>AccountProductForecast</outputObject>
+    </objectMapping>
+    <opportunityItemScheduleEnabled>false</opportunityItemScheduleEnabled>
+    <opportunityProbabilityEnabled>false</opportunityProbabilityEnabled>
+    <productFilterId>000000000000000</productFilterId>
+    <recalculateAllFrcstCnt>0</recalculateAllFrcstCnt>
+    <regenerateForecastCnt>0</regenerateForecastCnt>
+    <salesAgreementFilterId>00BHr00000BrFZr</salesAgreementFilterId>
+    <startingPeriod>2</startingPeriod>
+</AccountForecastSettings>

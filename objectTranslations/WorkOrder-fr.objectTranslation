@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Crew Managment Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>FSL__Emergency_Current_WorkORder_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID d&apos;Ordre d&apos;exécution parent</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>parent_workorder_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID d&apos;Ordre d&apos;exécution racine</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>root_workorder_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Ordre d&apos;exécution Racine</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>workorder_rootworkorder</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label>Accepté/Rejeté</label>
+        <name>Accept_Reject__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation>Accepté</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation>Rejeté</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>OE de l&apos;utilisateur Courant</label>
+        <name>Current_Users_Work_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Days --></label>
+        <name>DB_Days__c</name>
+    </fields>
+    <fields>
+        <label>Autorisation - Active</label>
+        <name>Entitlement_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>Lié à un Plan de Maintenance</label>
+        <name>FSL_Is_Linked_To_Maintenance_Plan__c</name>
+    </fields>
+    <fields>
+        <label>Lié à un Contrat de Service</label>
+        <name>FSL_Is_Linked_To_Service_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Fill In Candidate --></label>
+        <name>FSL__IsFillInCandidate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Geocoding For Chatter Actions --></label>
+        <name>FSL__Prevent_Geocoding_For_Chatter_Actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Priority --></label>
+        <name>FSL__Scheduling_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visiting Hours --></label>
+        <name>FSL__VisitingHours__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Opportunité</label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Commande</label>
+        <name>Order__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Devis</label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Prix Total (Produits Consommés)</label>
+        <name>Total_Price_Consumed_Products__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,46 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "UpdatedTotal",
+    "OmniProcessId": {
+        "Name": "Expedite Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ExpediteOrder/OS/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Request Approved",
+        "OmniProcessId": {
+            "Name": "Expedite Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ExpediteOrder/OS/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ExpediteOrder/OS/English/Request Approved",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Request Approved",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 3,
+        "dataType": "Currency",
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "%TotalPrice% + %Shipping Cost%",
+        "hide": true,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "UpdatedTotal",
+        "mask": null,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ExpediteOrder/OS/English/UpdatedTotal"
+}

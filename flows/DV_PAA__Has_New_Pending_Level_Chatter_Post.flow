@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>Flow used to create a Chatter post following the process of &apos;Partner Program Update&apos;</description>
+    <label>Has New Pending Level Chatter Post</label>
+    <processMetadataValues>
+        <name>AssociatedRecord</name>
+        <value/>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

@@ -1,0 +1,9 @@
+Application {!partdir_mp__Partner_App__c.Name} has been deleted by the owner and now isn’t available on the portal.
+
+To check and delete the record in Salesforce if needed:
+
+1. Open the application record in Salesforce or follow the link. {!partdir_mp__Partner_App__c.Link}
+
+2. Click on the drop-down menu to see more Quick Actions.
+
+3. Click Delete.

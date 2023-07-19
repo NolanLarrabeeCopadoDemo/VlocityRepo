@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Configurator Filters --></label>
+        <name>SBQQ__ConfiguratorFilter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Configurator Lookup --></label>
+        <name>SBQQ__ConfiguratorLookup</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Search Filters --></label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Search Results --></label>
+        <name>SBQQ__SearchResults</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <picklistValues>
+            <masterLabel>Mineral Sands</masterLabel>
+            <translation><!-- Mineral Sands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Products</masterLabel>
+            <translation><!-- Other Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titanium Chemicals</masterLabel>
+            <translation><!-- Titanium Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titanium Dioxide (TiO2)</masterLabel>
+            <translation><!-- Titanium Dioxide (TiO2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ultrafine and Specialty Titanium Dioxide</masterLabel>
+            <translation><!-- Ultrafine and Specialty Titanium Dioxide --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Maximum discount allowed by sales rep before manager approval is required. --></help>
+        <label><!-- Approval Threshold --></label>
+        <name>Approval_Threshold__c</name>
+    </fields>
+    <fields>
+        <label>会议</label>
+        <name>Attribute_1__c</name>
+        <picklistValues>
+            <masterLabel>Conference Room-in-a-Box</masterLabel>
+            <translation>会议室-IN-A-Box的</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projectors</masterLabel>
+            <translation>投影机</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>便携式音频</label>
+        <name>Attribute_2__c</name>
+        <picklistValues>
+            <masterLabel>Desktop Audio</masterLabel>
+            <translation>桌面音响</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Headphones</masterLabel>
+            <translation>头戴耳机</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>家庭音响</label>
+        <name>Attribute_3__c</name>
+        <picklistValues>
+            <masterLabel>Home Theatre</masterLabel>
+            <translation>家庭影院</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Room Audio</masterLabel>
+            <translation>多房间音频</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speakers</masterLabel>
+            <translation>音箱</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>颜色</label>
+        <name>Attribute_4__c</name>
+        <picklistValues>
+            <masterLabel>Black</masterLabel>
+            <translation>黑色</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gray</masterLabel>
+            <translation>灰色</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation>银</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation>白色</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>服务</label>
+        <name>Attribute_5__c</name>
+        <picklistValues>
+            <masterLabel>Installation Services</masterLabel>
+            <translation>安装服务</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protection Plans</masterLabel>
+            <translation>保护计划</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tech Support</masterLabel>
+            <translation>技术支持</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Segment --></label>
+        <name>Business_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Market</masterLabel>
+            <translation><!-- Middle Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMB</masterLabel>
+            <translation><!-- SMB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>详情</label>
+        <name>Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB --></label>
+        <name>EDY_ORGCUSTOM__DB__c</name>
+    </fields>
+    <fields>
+        <label>老字号</label>
+        <name>EDY_ORGCUSTOM__Old_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Compatibility --></label>
+        <name>Engine_Commpatibility__c</name>
+        <picklistValues>
+            <masterLabel>CX2100</masterLabel>
+            <translation><!-- CX2100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CX2200</masterLabel>
+            <translation><!-- CX2200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CX2300</masterLabel>
+            <translation><!-- CX2300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CX3100</masterLabel>
+            <translation><!-- CX3100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CX3300</masterLabel>
+            <translation><!-- CX3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CX4400</masterLabel>
+            <translation><!-- CX4400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CX999D</masterLabel>
+            <translation><!-- CX999D --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>外部ID</label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fuel Type --></label>
+        <name>Fuel_Type__c</name>
+        <picklistValues>
+            <masterLabel>Diesel</masterLabel>
+            <translation><!-- Diesel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethanol</masterLabel>
+            <translation><!-- Ethanol --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Field used to filter products for Guided Selling. --></help>
+        <label><!-- Guided Selling --></label>
+        <name>Guided_Selling__c</name>
+        <picklistValues>
+            <masterLabel>Batteries</masterLabel>
+            <translation><!-- Batteries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Battery Tools</masterLabel>
+            <translation><!-- Battery Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kits</masterLabel>
+            <translation><!-- Kits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Licenses</masterLabel>
+            <translation><!-- Software Licenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turbines</masterLabel>
+            <translation><!-- Turbines --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID为组织定制</label>
+        <name>ID_for_Org_Customizer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image(obsolete) --></label>
+        <name>Image_Deprecate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Height --></label>
+        <name>Image_Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image URL --></label>
+        <name>Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Width --></label>
+        <name>Image_Width__c</name>
+    </fields>
+    <fields>
+        <help><!-- Post an image (200px wide, transparent .PNG recommended) in the &quot;Product Images&quot; folder of Documents.  Copy the Record ID (in the URL) of the new document and paste it here. --></help>
+        <label>图像</label>
+        <name>Image__c</name>
+    </fields>
+    <fields>
+        <label>其他详细信息</label>
+        <name>Item_Additional_Details__c</name>
+    </fields>
+    <fields>
+        <label>特征</label>
+        <name>Item_Features__c</name>
+    </fields>
+    <fields>
+        <label>项目详细描述</label>
+        <name>Item_Long_Description__c</name>
+    </fields>
+    <fields>
+        <label>项目建议零售价</label>
+        <name>Item_MSRP__c</name>
+    </fields>
+    <fields>
+        <label>项目简述</label>
+        <name>Item_Short_Description__c</name>
+    </fields>
+    <fields>
+        <label>技术指标</label>
+        <name>Item_Specifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>MFG_Category__c</name>
+        <picklistValues>
+            <masterLabel>Backhoe</masterLabel>
+            <translation><!-- Backhoe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broom</masterLabel>
+            <translation><!-- Broom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compactor</masterLabel>
+            <translation><!-- Compactor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammer</masterLabel>
+            <translation><!-- Hammer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pulverizer</masterLabel>
+            <translation><!-- Pulverizer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ripper</masterLabel>
+            <translation><!-- Ripper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trencher</masterLabel>
+            <translation><!-- Trencher --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MFG_Image_URL --></label>
+        <name>MFG_Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Index --></label>
+        <name>Market_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material__c</name>
+        <picklistValues>
+            <masterLabel>Cast Iron</masterLabel>
+            <translation><!-- Cast Iron --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iridium</masterLabel>
+            <translation><!-- Iridium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micropore Media Paper</masterLabel>
+            <translation><!-- Micropore Media Paper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rubber</masterLabel>
+            <translation><!-- Rubber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silicon</masterLabel>
+            <translation><!-- Silicon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steel</masterLabel>
+            <translation><!-- Steel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Max Quantity --></label>
+        <name>Max_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Quantity --></label>
+        <name>Min_Quantity__c</name>
+    </fields>
+    <fields>
+        <label>产品型号</label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name with Code --></label>
+        <name>Name_with_Code__c</name>
+    </fields>
+    <fields>
+        <label>图像</label>
+        <name>ProductImageRelatedList__c</name>
+    </fields>
+    <fields>
+        <label>产品组</label>
+        <name>Product_Catalog__c</name>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation>消费类电子产品</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation>通用</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Description RT --></label>
+        <name>Product_Description_RT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Image --></label>
+        <name>Product_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Segment --></label>
+        <name>Product_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Energy, Utilities, and Process Manufacturing</masterLabel>
+            <translation><!-- Energy, Utilities, and Process Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select to base its calculations within an order on the targets. --></help>
+        <label><!-- Allocate POT on Orders --></label>
+        <name>SBQQ__AllocatePotOnOrders__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a behavior when amending assets representing this product. By default, asset quantities cannot decrease unless an upgrade is added, and no refund is applied. --></help>
+        <label><!-- Asset Amendment Behavior --></label>
+        <name>SBQQ__AssetAmendmentBehavior__c</name>
+        <picklistValues>
+            <masterLabel>Allow Refund</masterLabel>
+            <translation><!-- Allow Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation><!-- Default --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates how this product is converted to asset. --></help>
+        <label><!-- Asset Conversion --></label>
+        <name>SBQQ__AssetConversion__c</name>
+        <picklistValues>
+            <masterLabel>One per quote line</masterLabel>
+            <translation><!-- One per quote line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One per unit</masterLabel>
+            <translation><!-- One per unit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Non-blank value designates this product is sold in batches. Enter quantity in each batch. Quantity entered in quote will be divided by this value and rounded up to the nearest integer. --></help>
+        <label><!-- Batch Quantity --></label>
+        <name>SBQQ__BatchQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines how often this product will be invoiced. --></help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided. --></help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field used to calculate block pricing. --></help>
+        <label><!-- Block Pricing Field --></label>
+        <name>SBQQ__BlockPricingField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation><!-- Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The type of the product charge. --></help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marks this product as a component, excluding it from selection in product lookup. --></help>
+        <label><!-- Component --></label>
+        <name>SBQQ__Component__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount rate compounded by quantity. --></help>
+        <label><!-- Compound Discount (%) --></label>
+        <name>SBQQ__CompoundDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this to control when Configure Products screen shows up for this product. Choose &quot;Add&quot; to limit to initial configuration. Choose &quot;Edit&quot; to subsequent configuration. --></help>
+        <label><!-- Configuration Event --></label>
+        <name>SBQQ__ConfigurationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that will be used for this product during configuration. --></help>
+        <label><!-- Configuration Field Set --></label>
+        <name>SBQQ__ConfigurationFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>OptionConfiguration</masterLabel>
+            <translation><!-- OptionConfiguration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Configuration Fields --></label>
+        <name>SBQQ__ConfigurationFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Title of the configuration form rendered from specified configuration fields. --></help>
+        <label><!-- Configuration Form Title --></label>
+        <name>SBQQ__ConfigurationFormTitle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configuration type of this product: Choose Allowed if the user is allowed to configure the product/bundle, but not required to, Disabled when your bundle automatically selects options, or Required if the product/bundle must be configured. --></help>
+        <label><!-- Configuration Type --></label>
+        <name>SBQQ__ConfigurationType__c</name>
+        <picklistValues>
+            <masterLabel>Allowed</masterLabel>
+            <translation><!-- Allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disabled</masterLabel>
+            <translation><!-- Disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- JavaScript function used to validate configuration of this product. --></help>
+        <label><!-- Configuration Validator --></label>
+        <name>SBQQ__ConfigurationValidator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pattern used to generate product code (SKU) for configured products. --></help>
+        <label><!-- Configured Code Pattern --></label>
+        <name>SBQQ__ConfiguredCodePattern__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pattern used to generate dynamic product description for configured products. --></help>
+        <label><!-- Configured Description Pattern --></label>
+        <name>SBQQ__ConfiguredDescriptionPattern__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls whether cost for this product may be modified on individual quotes. --></help>
+        <label><!-- Cost Editable --></label>
+        <name>SBQQ__CostEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule for used as a Cost Schedule with this product. --></help>
+        <label><!-- Cost Schedule --></label>
+        <name>SBQQ__CostSchedule__c</name>
+        <relationshipLabel><!-- Products (Cost Schedule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Custom Configuration Page --></label>
+        <name>SBQQ__CustomConfigurationPage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Configuration Required --></label>
+        <name>SBQQ__CustomConfigurationRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select how this product should be available in Customer Communities. --></help>
+        <label><!-- Customer Community Availability --></label>
+        <name>SBQQ__CustomerCommunityAvailability__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Only when already owned</masterLabel>
+            <translation><!-- Only when already owned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Pricing Table --></label>
+        <name>SBQQ__DefaultPricingTable__c</name>
+        <picklistValues>
+            <masterLabel>Segmented</masterLabel>
+            <translation><!-- Segmented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the starting quantity of the product when added. --></help>
+        <label><!-- Default Quantity --></label>
+        <name>SBQQ__DefaultQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag that indicates this product&apos;s description is locked (not editable on the quote). --></help>
+        <label><!-- Lock Description --></label>
+        <name>SBQQ__DescriptionLocked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify discount category for this product. --></help>
+        <label><!-- Discount Category --></label>
+        <name>SBQQ__DiscountCategory__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule for use with this product --></help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Quantity Discounted Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use to place constraints on dynamically calculated prices. --></help>
+        <label><!-- Percent Of Total Constraint --></label>
+        <name>SBQQ__DynamicPricingConstraint__c</name>
+        <picklistValues>
+            <masterLabel>List price is maximum</masterLabel>
+            <translation><!-- List price is maximum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List price is minimum</masterLabel>
+            <translation><!-- List price is minimum --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Should be enabled if you experience performance errors during bundle configuration. Bundle will be processed asynchronously. --></help>
+        <label><!-- Enable Large Configuration --></label>
+        <name>SBQQ__EnableLargeConfiguration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to always exclude this product from percent of total calculations (normally non-subscription products are included in percent of total calculations). --></help>
+        <label><!-- Exclude From Percent Of Total --></label>
+        <name>SBQQ__ExcludeFromMaintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this product should not be transferred to the opportunity. --></help>
+        <label><!-- Exclude From Opportunity --></label>
+        <name>SBQQ__ExcludeFromOpportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, indicates that configuring this Product automatically launches the External Configuration URL, defined in Salesforce CPQ settings. --></help>
+        <label><!-- Externally Configurable --></label>
+        <name>SBQQ__ExternallyConfigurable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will generate a contracted price based on the adjusted quote line if flagged. --></help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation><!-- Discount Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation><!-- Do Not Generate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Has Configuration Attributes --></label>
+        <name>SBQQ__HasConfigurationAttributes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if this product has at least one consumption schedule --></help>
+        <label><!-- Has Consumption Schedules --></label>
+        <name>SBQQ__HasConsumptionSchedule__c</name>
+    </fields>
+    <fields>
+        <help><!-- Excludes this product from appearing on the quote PDF. --></help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to hide this product&apos;s price in the Product Search Results. --></help>
+        <label><!-- Hide Price in Search Results --></label>
+        <name>SBQQ__HidePriceInSearchResults__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to always include this product in percent of total calculations (normally subscription products are excluded from percent of total calculations). --></help>
+        <label><!-- Include In Percent Of Total --></label>
+        <name>SBQQ__IncludeInMaintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to create a new quote group when this product is added (unless the current group is empty). --></help>
+        <label><!-- New Quote Group --></label>
+        <name>SBQQ__NewQuoteGroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marks this product as not discountable. --></help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to make this product non-discountable for partners. --></help>
+        <label><!-- Non Partner Discountable --></label>
+        <name>SBQQ__NonPartnerDiscountable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines how options are presented to users. --></help>
+        <label><!-- Option Layout --></label>
+        <name>SBQQ__OptionLayout__c</name>
+        <picklistValues>
+            <masterLabel>Sections</masterLabel>
+            <translation><!-- Sections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tabs</masterLabel>
+            <translation><!-- Tabs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wizard</masterLabel>
+            <translation><!-- Wizard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Determines how user selects options attached to this product. &quot;Click&quot; method presents options with checkboxes next to them. &quot;Add&quot; renders a button which brings up a dialog box with available options. --></help>
+        <label><!-- Option Selection Method --></label>
+        <name>SBQQ__OptionSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click</masterLabel>
+            <translation><!-- Click --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select if this product is optional by default. Optional products don&apos;t contribute to quote total or get transferred to the opportunity. --></help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this product allows for price to be freely editable when building a quote. --></help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pricing guidance for use with this product. --></help>
+        <label><!-- Pricing Guidance --></label>
+        <name>SBQQ__PricingGuidance__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select if Pricing Method can be changed when this product is added to quote. --></help>
+        <label><!-- Pricing Method Editable --></label>
+        <name>SBQQ__PricingMethodEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pricing method that should be applied to this product. --></help>
+        <label><!-- Pricing Method --></label>
+        <name>SBQQ__PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation><!-- Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation><!-- Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation><!-- Percent Of Total --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- ID of Document or Content record that holds the picture for this product. --></help>
+        <label><!-- Product Picture Id --></label>
+        <name>SBQQ__ProductPictureID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow or prevent changing the quantity for this product. --></help>
+        <label><!-- Quantity Editable --></label>
+        <name>SBQQ__QuantityEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the number of decimal places used in the Quantity field. --></help>
+        <label><!-- Quantity Scale --></label>
+        <name>SBQQ__QuantityScale__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked this product can only be configured when first added to a quote. If selected, users will not have access to a Configure link on the Edit Lines page after product has been added. --></help>
+        <label><!-- Disable Reconfiguration --></label>
+        <name>SBQQ__ReconfigurationDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product that replaces this product on renewal. Use this to quote a different SKU when renewing. --></help>
+        <label><!-- Renewal Product --></label>
+        <name>SBQQ__RenewalProduct__c</name>
+        <relationshipLabel><!-- Original Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Determines a default sort order of products in the Product Lookup page, and therefore the order in which they are added to the quote. --></help>
+        <label><!-- Sort Order --></label>
+        <name>SBQQ__SortOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formatted specifications for this product for use in quote templates to produce spec sheets. --></help>
+        <label><!-- Specifications --></label>
+        <name>SBQQ__Specifications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether Percent of Total is calculated off List or Net product prices. --></help>
+        <label><!-- Percent Of Total Base --></label>
+        <name>SBQQ__SubscriptionBase__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net</masterLabel>
+            <translation><!-- Net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular</masterLabel>
+            <translation><!-- Regular --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this to limit percent of total calculations to certain product categories. For example, software maintenance should only calculate percentage on products with a software maintenance percent of total category. --></help>
+        <label><!-- Percent Of Total Category --></label>
+        <name>SBQQ__SubscriptionCategory__c</name>
+        <picklistValues>
+            <masterLabel>Accessories</masterLabel>
+            <translation><!-- Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates how this Product is converted to Subscriptions --></help>
+        <label><!-- Subscription Conversion --></label>
+        <name>SBQQ__SubscriptionConversion__c</name>
+        <picklistValues>
+            <masterLabel>One per subscribed asset</masterLabel>
+            <translation><!-- One per subscribed asset --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Percent of non-subscription total to be used as the price of this subscription. --></help>
+        <label><!-- Percent Of Total (%) --></label>
+        <name>SBQQ__SubscriptionPercent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of pricing to use for this subscription. &quot;None&quot; means this product is not a subscription. --></help>
+        <label><!-- Subscription Pricing --></label>
+        <name>SBQQ__SubscriptionPricing__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Price</masterLabel>
+            <translation><!-- Fixed Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation><!-- Percent Of Total --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field to override a product that is included in a percent of total calculation. Point this lookup to a product with a list price you would like to use for the current product’s Percent of Total calculations. --></help>
+        <label><!-- Percent Of Total Target --></label>
+        <name>SBQQ__SubscriptionTarget__c</name>
+        <relationshipLabel><!-- Subscription Targeting Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Term length of this subscription. Only applicable if the product is a subscription. --></help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Renewalable Subscriptions will transfer to Renewal Quotes. One-time Subscriptions will not. --></help>
+        <label><!-- Subscription Type --></label>
+        <name>SBQQ__SubscriptionType__c</name>
+        <picklistValues>
+            <masterLabel>One-time</masterLabel>
+            <translation><!-- One-time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewable</masterLabel>
+            <translation><!-- Renewable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the tax code for taxation rules. --></help>
+        <label><!-- Tax code --></label>
+        <name>SBQQ__TaxCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this product is taxable. --></help>
+        <label><!-- Taxable --></label>
+        <name>SBQQ__Taxable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify subscription term level that should be used in calculating term discount. Leave blank to indicate default. --></help>
+        <label><!-- Term Discount Level --></label>
+        <name>SBQQ__TermDiscountLevel__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line</masterLabel>
+            <translation><!-- Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Schedule for discounts based on subscription term. --></help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Term Discounted Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use to specify credit when quoting upgrades to this product. --></help>
+        <label><!-- Upgrade Credit --></label>
+        <name>SBQQ__UpgradeCredit__c</name>
+        <relationshipLabel><!-- Credited Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The conversion rate between this product&apos;s quantity and that of its source product. --></help>
+        <label><!-- Upgrade Ratio --></label>
+        <name>SBQQ__UpgradeRatio__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product being upgraded. Populating this field makes this product an upgrade. --></help>
+        <label><!-- Upgrade Source --></label>
+        <name>SBQQ__UpgradeSource__c</name>
+        <relationshipLabel><!-- Target Upgrades --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specify the upgraded product. Only applicable if this product is an upgrade as indicated by Upgrade From field being populated. --></help>
+        <label><!-- Upgrade Target --></label>
+        <name>SBQQ__UpgradeTarget__c</name>
+        <relationshipLabel><!-- Source Upgrades --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Series --></label>
+        <name>Series__c</name>
+        <picklistValues>
+            <masterLabel>Badger Parts</masterLabel>
+            <translation><!-- Badger Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Badger Performance</masterLabel>
+            <translation><!-- Badger Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ultra Performance Parts</masterLabel>
+            <translation><!-- Ultra Performance Parts --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site.com ID --></label>
+        <name>Site_com_ID__c</name>
+    </fields>
+    <fields>
+        <label>状态</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>批准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>回顾</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Published to Website</masterLabel>
+            <translation>发布到网站</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Sector --></label>
+        <name>Sub_Sector__c</name>
+        <picklistValues>
+            <masterLabel>Downstream</masterLabel>
+            <translation><!-- Downstream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil Field Services and Equipment</masterLabel>
+            <translation><!-- Oil Field Services and Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Manufacturing</masterLabel>
+            <translation><!-- Process Manufacturing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Engine Oils</masterLabel>
+            <translation><!-- Engine Oils --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gear Oils</masterLabel>
+            <translation><!-- Gear Oils --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greases</masterLabel>
+            <translation><!-- Greases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synthetics</masterLabel>
+            <translation><!-- Synthetics --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- analyticsdemo_batch_id__c --></label>
+        <name>analyticsdemo_batch_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Unit of Measurement --></label>
+        <name>base_unit_of_measurement__c</name>
+        <picklistValues>
+            <masterLabel>Gallons</masterLabel>
+            <translation><!-- Gallons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hours</masterLabel>
+            <translation><!-- Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linear Feet</masterLabel>
+            <translation><!-- Linear Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square Feet</masterLabel>
+            <translation><!-- Square Feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Rule --></label>
+        <name>blng__BillingRule__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue Recognition Rule --></label>
+        <name>blng__RevenueRecognitionRule__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tax Rule --></label>
+        <name>blng__TaxRule__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check this to not trigger inventory approvals. This effectively turns off all price rules and approval chains triggered by associated inventory lookup objects. --></help>
+        <label><!-- Bypass Inventory Approvals --></label>
+        <name>bypass_inventory_approvals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configurable on Website --></label>
+        <name>configurable_on_website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Product --></label>
+        <name>custom_product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Fuel Type --></label>
+        <name>engine_fuel_type__c</name>
+        <picklistValues>
+            <masterLabel>Diesel</masterLabel>
+            <translation><!-- Diesel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gasoline</masterLabel>
+            <translation><!-- Gasoline --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Excavator Type --></label>
+        <name>excavator_type__c</name>
+        <picklistValues>
+            <masterLabel>Demolition Excavators</masterLabel>
+            <translation><!-- Demolition Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frontless Excavators</masterLabel>
+            <translation><!-- Frontless Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Excavators</masterLabel>
+            <translation><!-- Large Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Excavators</masterLabel>
+            <translation><!-- Medium Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mini Excavators</masterLabel>
+            <translation><!-- Mini Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Excavators</masterLabel>
+            <translation><!-- Small Excavators --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Help --></label>
+        <name>help__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Link --></label>
+        <name>help_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intended Use --></label>
+        <name>intended_use__c</name>
+        <picklistValues>
+            <masterLabel>Concrete Reinforcement</masterLabel>
+            <translation><!-- Concrete Reinforcement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engine Oil</masterLabel>
+            <translation><!-- Engine Oil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hydraulic Fluid</masterLabel>
+            <translation><!-- Hydraulic Fluid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Masonry</masterLabel>
+            <translation><!-- Masonry --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Machine Operating Weight (lbs) --></label>
+        <name>machine_operating_weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner SKU --></label>
+        <name>partner_sku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Unit Of Measure --></label>
+        <name>pricing_unit_of_measure__c</name>
+        <picklistValues>
+            <masterLabel>Fluid Ounces</masterLabel>
+            <translation><!-- Fluid Ounces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gallons</masterLabel>
+            <translation><!-- Gallons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hours</masterLabel>
+            <translation><!-- Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linear Feet</masterLabel>
+            <translation><!-- Linear Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linear Yards</masterLabel>
+            <translation><!-- Linear Yards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liters</masterLabel>
+            <translation><!-- Liters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pints</masterLabel>
+            <translation><!-- Pints --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square Feet</masterLabel>
+            <translation><!-- Square Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square Meters</masterLabel>
+            <translation><!-- Square Meters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square Yards</masterLabel>
+            <translation><!-- Square Yards --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Application --></label>
+        <name>primary_application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Info --></label>
+        <name>product_info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Model --></label>
+        <name>product_model__c</name>
+        <picklistValues>
+            <masterLabel>414LP KAA</masterLabel>
+            <translation><!-- 414LP KAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CX490D</masterLabel>
+            <translation><!-- CX490D --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>product_type__c</name>
+        <picklistValues>
+            <masterLabel>Articulated Trucks</masterLabel>
+            <translation><!-- Articulated Trucks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asphalt Pavers</masterLabel>
+            <translation><!-- Asphalt Pavers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backhoe Loaders</masterLabel>
+            <translation><!-- Backhoe Loaders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compact Track/Multi Terrain Loaders</masterLabel>
+            <translation><!-- Compact Track/Multi Terrain Loaders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compactors</masterLabel>
+            <translation><!-- Compactors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dozers</masterLabel>
+            <translation><!-- Dozers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draglines</masterLabel>
+            <translation><!-- Draglines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drills</masterLabel>
+            <translation><!-- Drills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electric Rope Shovels</masterLabel>
+            <translation><!-- Electric Rope Shovels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excavators</masterLabel>
+            <translation><!-- Excavators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forest Machines</masterLabel>
+            <translation><!-- Forest Machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harvesters</masterLabel>
+            <translation><!-- Harvesters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hydraulic Mining Shovels</masterLabel>
+            <translation><!-- Hydraulic Mining Shovels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off-Highway Trucks</masterLabel>
+            <translation><!-- Off-Highway Trucks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Highway Trucks</masterLabel>
+            <translation><!-- On-Highway Trucks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts</masterLabel>
+            <translation><!-- Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skid Steer</masterLabel>
+            <translation><!-- Skid Steer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trailers</masterLabel>
+            <translation><!-- Trailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wheel Loaders</masterLabel>
+            <translation><!-- Wheel Loaders --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- purl --></label>
+        <name>purl__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAE Rated Operating Capacity (lbs) --></label>
+        <name>rated_operating_capacity_sae__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Approval --></label>
+        <name>requires_approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAE Gross Power (hp) --></label>
+        <name>sae_gross_power_hp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visible On Website --></label>
+        <name>visible_on_website__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- This record type displays attributes that are specific to the custom Catalog found in the Order Console. --></description>
+        <label>产品目录</label>
+        <name>Catalog_Products</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Parts that are related to core products. --></description>
+        <label><!-- Parts --></label>
+        <name>Parts</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Products used in process manufacturing, such as chemicals, materials, etc --></description>
+        <label><!-- Process Manufacturing Products --></label>
+        <name>Process_Manufacturing_Products</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Core products that are not dependent on other products. --></description>
+        <label>产品</label>
+        <name>Products</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot have Allocate POT on Orders enabled if Percent of Total Constraint is specified. --></errorMessage>
+        <name>SBQQ__Cannot_Allocate_POT_With_Constraint</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to use the Option Layout field, the Configurator view in Custom Settings must be set to Wizard. Otherwise, the Option Layout will default to a &apos;Section&apos;. --></errorMessage>
+        <name>SBQQ__Configurator_View_must_be_Wizard</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must check either Include In Maintenance or Exclude From Maintenance checkbox. --></errorMessage>
+        <name>SBQQ__Include_or_Exclude_Maintenance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is Recurring, a Billing Type must be selected. --></errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only select One per Subscribed Asset for Subscription Conversion for Percent of Total Subscriptions --></errorMessage>
+        <name>SBQQ__Subscription_Conversion_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Subscription Pricing must be &apos;Percent of Total&apos; to set this field to true. --></errorMessage>
+        <name>SBQQ__Subscription_Pricing_Must_Be_POT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only subscription products may specify term discount schedule --></errorMessage>
+        <name>SBQQ__Term_schedule_requires_subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time, a Billing Frequency value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time or Usage, a Billing Type value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_Delete_Records --></label>
+        <name>Mass_Delete_Records</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+    <webLinks>
+        <label>添加图像</label>
+        <name>Update_Image</name>
+    </webLinks>
+</CustomObjectTranslation>

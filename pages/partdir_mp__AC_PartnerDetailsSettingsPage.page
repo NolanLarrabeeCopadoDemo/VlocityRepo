@@ -1,0 +1,318 @@
+<apex:page id="AC_PartnerDetailsSettingsPage" title="AC Partner Details Settings" controller="partdir_mp.AC_PartnerDetailsSettingsPageCtrl">
+
+    <apex:slds />
+
+    <style>
+
+        .slds-scope, .slds-scope:not(html) {
+            height: 98vh;
+            background-image: var(--lwc-brandBandDefaultImage,
+            url(/_slds/images/themes/oneSalesforce/banner-brand-default.png)),
+            linear-gradient(to top,
+                    rgba(1, 68, 134, 0) 0,
+                    rgb(1, 68, 134)) !important;
+            padding: 0 !important;
+        }
+
+        html {
+            overflow: hidden  !important;
+        }
+
+        html body.sfdcBody {
+            overflow-y: hidden  !important;
+        }
+
+        .body .bPageBlock,  body .secondaryPalette.bPageBlock {
+            -webkit-border-radius: 0;
+            border-radius: 0;
+        }
+
+        .settings-page {
+            margin: 0.75rem;
+            height: 98vh;
+            overflow: auto;
+        }
+
+        .settings-page .slds-accordion__summary,
+        .settings-page .message.confirmM2 {
+            position: sticky;
+            z-index: 100;
+            background-color: #ffffff;
+        }
+
+        .settings-page .slds-accordion__summary {
+            top: 0;
+        }
+
+        .settings-page .message.confirmM2 {
+            top: 35px;
+        }
+
+        .settings-page .message {
+            margin: 2px 0;
+        }
+
+        .settings-page .bPageBlock.brandSecondaryBrd.apexDefaultPageBlock.secondaryPalette {
+            background-color: white;
+        }
+
+        .settings-page .bPageBlock.apexDefaultPageBlock .pbBottomButtons {
+            border-top: 1px solid #f6f6f6;
+        }
+
+        .settings-page .bPageBlock.apexDefaultPageBlock .pbBody {
+            margin: 0;
+        }
+
+        .settings-page .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader {
+            color: #00212d;
+            font-size: large;
+            padding-left: 5px;
+        }
+
+        .settings-page .bPageBlock .pbBody .pbSubheader {
+            background-color: #f6f6f6;
+        }
+
+        .settings-page .bPageBlock .detailList .labelCol {
+            width: 30%;
+        }
+
+        .settings-page .bPageBlock .detailList .data2Col {
+            width: 60%;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        .settings-page .bPageBlock .detailList tr th,
+        .settings-page .bPageBlock .detailList tr td {
+            border-bottom: none;
+        }
+
+        .settings-page .web-to-form {
+            width: 100%;
+            max-width: 60vw;
+        }
+
+        .settings-page .field-set-options, .settings-page .zones-options {
+            height: calc(1.875rem + 2px);
+            width: 60%;
+            border: 1px solid #c9c9c9;
+            border-radius: 0.25rem;
+        }
+
+        .settings-page .field-set-options {
+            width: 40%;
+        }
+
+        .settings-page .zones-options {
+            width: 60%;
+        }
+
+        .settings-page li.select-list {
+            list-style: circle;
+            margin-left: 35%;
+        }
+
+        @media all and (max-width: 980px) {
+            .slds-scope, .slds-scope:not(html), .slds-scope body {
+                height: 97.5vh;
+            }
+            .settings-page {
+                height: 97.5vh;
+            }
+
+        }
+
+        @media all and (max-width: 767px) {
+            .settings-page .bPageBlock .detailList .labelCol {
+                width: 50%;
+            }
+            .settings-page .bPageBlock .detailList .data2Col {
+                width: 50%;
+            }
+
+            .web-to-form {
+                max-width: 50vw;
+            }
+
+            .settings-page li.select-list {
+                list-style: circle;
+                margin-left: 50%;
+            }
+        }
+
+    </style>
+
+    <div class="slds-card settings-page">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ul class="slds-accordion">
+        <li class="slds-accordion__list-item">
+        <section class="slds-accordion__section" id="general-section">
+            <div class="slds-accordion__summary">
+            <h2 class="slds-accordion__summary-heading">
+                <button class="slds-button slds-button_reset slds-accordion__summary-action" onclick="changeGeneralVisibility()">
+                <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left">
+                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#switch')}"></use>
+                </svg>
+                <span class="slds-accordion__summary-content">{!$Label.labelGeneral}</span>
+                </button>
+            </h2>
+            </div>
+            <div class="slds-accordion__content">
+                <apex:form id="general">
+                <apex:pageMessage rendered="{!showConfirmation}" severity="Confirm" summary="{!$Label.partdir_mp__msgSaveMetadata}" strength="3"/>
+                <apex:pageMessage rendered="{!showSavingError}" severity="Error" summary="{!$Label.partdir_mp__msgErrorSaveMetadata}" strength="3"/>
+                <apex:pageMessage rendered="{!showError}" severity="Error" summary="{!$Label.partdir_mp__msgErrorLoadMetadata}" strength="3"/>
+                <apex:pageMessage rendered="{!showWarningEmptyWTL}" severity="Warning" summary="{!$Label.partdir_mp__msgWarningWebToLeadForm}" strength="3"/>
+                  
+                <apex:pageBlock >
+                    <apex:pageBlockSection columns="1" title="Partners settings" id="partner-fields" collapsible="false">
+
+                        <apex:inputCheckbox value="{!generalSettings.isEnableCustomOrdering}" label="Enable custom ordering"/>
+
+                        <apex:pageBlockSection columns="1">
+
+                            <apex:selectList styleClass="field-set-options" label="Partner Additional Info Field Set"
+                                             value="{!generalSettings.partnerAdditionalInfoFieldSet}"
+                                             multiselect="false" size="1">
+                                <apex:selectOptions value="{!accountBrandFieldSetsOptions}" />
+                                <apex:actionSupport event="onchange" action="{!reloadPartnerInfoFieldSetsValues}" reRender="partner-fields" />
+                            </apex:selectList>
+
+                            <apex:repeat value="{!partnerInfoFieldSetValues}" var="string">
+                                <ul><li class="select-list">{!string} </li></ul>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection columns="1" title="Applications settings" id="app-fields" collapsible="false">
+
+                        <apex:inputCheckbox value="{!generalSettings.allowCreating}" label="Allow creating an App without approval"/>
+                        <apex:inputCheckbox value="{!generalSettings.allowUpdating}" label="Allow updating an App without approval"/>
+                        <apex:inputCheckbox value="{!generalSettings.allowDeleting}" label="Allow deleting an App without approval"/>
+
+                        <apex:pageBlockSection columns="1">
+
+                            <apex:selectList styleClass="field-set-options" label="App Additional Info Field Set"
+                                             value="{!generalSettings.appAdditionalInfoFieldSet}"
+                                             multiselect="false" size="1">
+                                <apex:selectOptions value="{!partnerAppFieldSetsOptions}" />
+                                <apex:actionSupport event="onchange" action="{!reloadAppInfoFieldSetsValues}" reRender="app-fields" />
+                            </apex:selectList>
+
+                            <apex:repeat value="{!appInfoFieldSetValues}" var="string">
+                                <ul><li class="select-list">{!string} </li></ul>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection columns="1" title="Notifications Settings" id="notification" collapsible="false">
+                        <apex:inputCheckbox label="Enable notifications to Approver"
+                                            value="{!generalSettings.allowNotifyApprover}" />
+
+                        <apex:inputCheckbox label="Enable notifications to Partner"
+                                            value="{!generalSettings.allowNotifyPartner}"/>
+
+                        <apex:inputCheckbox label="Enable notifications on the Approval Process"
+                                            value="{!generalSettings.allowNotifyApproval}"/>
+
+                        <apex:inputCheckbox label="Enable notifications on Account Brand"
+                                            value="{!generalSettings.allowNotifyAccountBrand}"/>
+
+                        <apex:selectList styleClass="field-set-options" label="Org-Wide Email Address"
+                                         value="{!generalSettings.orgWideAddressId}"
+                                         multiselect="false" size="1">
+                            <apex:selectOptions value="{!orgWideAddressOptions}" />
+                            <apex:actionSupport event="onchange" action="{!reloadOrgWideAddressesValue}" reRender="notification" />
+                        </apex:selectList>
+
+                        <apex:pageBlockSection rendered="{!generalSettings.orgWideAddressId != null}" columns="1">
+                            <ul><li class="select-list">{!orgWideAddressEmail} </li></ul>
+                        </apex:pageBlockSection>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection columns="1" title="General marketplace settings" collapsible="false">
+                        <apex:inputCheckbox value="{!generalSettings.isOnlyOneReview}" label="Allow only one review per user"/>
+                        <apex:inputCheckbox value="{!generalSettings.isEnabledAdvancedFilters}" label="Enable advanced filtering"/>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection columns="1">
+                        <apex:inputCheckbox onChange="openCustomWebToLead()" value="{!generalSettings.isCustomWebToLead}" label="Use custom Web-to-Lead"/>
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection columns="1" id="web-to-lead">
+                        <apex:inputTextarea rendered="{!generalSettings.isCustomWebToLead}" rows="5"
+                                            value="{!generalSettings.webToLeadForm}"
+                                            styleClass=" {!IF(showWarningEmptyWTL, 'web-to-form slds-has-error', 'web-to-form')}"
+                                            label="Web-to-Lead form *"
+                                            title="This field is required!"/>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockButtons rendered="{!generalSettings != null}" location="bottom">
+                        <apex:commandButton styleClass="slds-button slds-button_neutral" value="Save settings"
+                                            action="{!saveGeneralSettings}" reRender="general"/>
+                    </apex:pageBlockButtons>
+
+                </apex:pageBlock>
+
+                <apex:actionFunction name="showWebToLead" reRender="web-to-lead">
+                </apex:actionFunction>
+                </apex:form>
+            </div>
+        </section>
+        </li>
+        <li class="slds-accordion__list-item">
+        <section class="slds-accordion__section" id="zone-section">
+            <div class="slds-accordion__summary">
+            <h2 class="slds-accordion__summary-heading">
+                <button class="slds-button slds-button_reset slds-accordion__summary-action" onclick="changeZoneVisibility()">
+                <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left">
+                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#switch')}"></use>
+                </svg>
+                <span class="slds-accordion__summary-content">{!$Label.labelZone}</span>
+                </button>
+            </h2>
+            </div>
+            <div class="slds-accordion__content">
+                <apex:form id="zoneValues">
+                    <apex:pageBlock >
+                        <apex:pageBlockSection columns="2"  title="Select zone" collapsible="false">
+                            <apex:selectList styleClass="zones-options" label="Select zone for setting" title="Select zone for setting"
+                                             value="{!selectedZone}"
+                                             multiselect="false" size="1">
+                                <apex:selectOptions value="{!zoneOptions}" />
+                                <apex:actionSupport event="onchange" action="{!refreshOptions}" reRender="zoneValues, zoneInformation"/>
+                            </apex:selectList>
+
+                            <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!createNewZone}"
+                                                value="Create new Zone" rendered="{!selectedZone != ''}" reRender="zoneValues, zoneInformation"/>
+
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                </apex:form>
+
+                <c:AC_PartnerZonesSettings currentZoneName="{!selectedZone}"  id="zoneInformation" />
+
+            </div>
+        </section>
+        </li>
+    </ul>
+    </html>
+    </div>
+    
+    <script>
+        function changeGeneralVisibility() {
+          document.getElementById("general-section").classList.toggle("slds-is-open");
+        }
+        function changeZoneVisibility() {
+          document.getElementById("zone-section").classList.toggle("slds-is-open");
+        }
+        function openCustomWebToLead() {
+            showWebToLead();
+        }
+    </script>
+
+</apex:page>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Chat Answer --></label>
+        <name>Chat_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>FAQ_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>FAQ_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Comments --></label>
+        <name>FAQ_Internal_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>FAQ_Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cause --></label>
+        <name>KCSArticle_Cause__c</name>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>KCSArticle_Environment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue --></label>
+        <name>KCSArticle_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>KCSArticle_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Image --></label>
+        <name>OpenGraph_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Type --></label>
+        <name>OpenGraph_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpenGraph Url --></label>
+        <name>OpenGraph_Url__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Cirrus --></label>
+        <name>Cirrus</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FAQ --></label>
+        <name>FAQ</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- KCSArticle --></label>
+        <name>KCSArticle</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

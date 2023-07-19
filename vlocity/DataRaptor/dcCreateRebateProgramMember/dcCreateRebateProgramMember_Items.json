@@ -1,0 +1,87 @@
+[
+    {
+        "GlobalKey": "dcCreateRebateProgramMember45773452294490324",
+        "InputFieldName": "RebateMembers:RebateMemberBlock:RebateMembersAccountTA-Block:RebateMembersAccountId",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateRebateProgramMember",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateRebateProgramMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateRebateProgramMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "RebateProgramMember",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "dcCreateRebateProgramMember43015961439755657",
+        "IsDisabled": true,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "dcCreateRebateProgramMember",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateRebateProgramMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateRebateProgramMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RebateProgramMember",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateRebateProgramMember7695723432317338",
+        "InputFieldName": "RebateMembers:RebateMemberBlock:MemberStatus",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateRebateProgramMember",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateRebateProgramMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateRebateProgramMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MemberStatus",
+        "OutputObjectName": "RebateProgramMember",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "dcCreateRebateProgramMember0279474389235157",
+        "InputFieldName": "RebateProgramId",
+        "IsDisabled": false,
+        "IsLocked": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MayEdit": true,
+        "Name": "dcCreateRebateProgramMember",
+        "OmniDataTransformationId": {
+            "Name": "dcCreateRebateProgramMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/dcCreateRebateProgramMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RebateProgramId",
+        "OutputObjectName": "RebateProgramMember",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

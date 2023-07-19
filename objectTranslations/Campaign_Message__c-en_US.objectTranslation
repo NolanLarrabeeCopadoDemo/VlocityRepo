@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Campaign Message</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Campaign Messages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approved Members --></label>
+        <name>Approved_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Message --></label>
+        <name>Campaign_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Subject --></label>
+        <name>Campaign_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Campaign Messages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conclusion --></label>
+        <name>Conclusion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failed Members --></label>
+        <name>Failed_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Introduction --></label>
+        <name>Introduction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejected Members --></label>
+        <name>Rejected_Members__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplicationComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buttonIconUrl>http://crmsuccess.blogs.com/.a/6a00e54ee3905b88330120a52b806c970b-pi</buttonIconUrl>
+    <isHeightFixed>false</isHeightFixed>
+    <isHidden>true</isHidden>
+    <isWidthFixed>false</isWidthFixed>
+    <visualforcePage>SCQuickSetup__RefreshCase</visualforcePage>
+</CustomApplicationComponent>

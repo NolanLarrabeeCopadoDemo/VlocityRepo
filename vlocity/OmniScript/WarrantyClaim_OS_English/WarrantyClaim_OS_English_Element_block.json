@@ -1,0 +1,41 @@
+{
+    "IsActive": true,
+    "IsLocked": false,
+    "IsOmniScriptEmbeddable": false,
+    "MayEdit": true,
+    "Name": "block",
+    "OmniProcessId": {
+        "Name": "Asset Warranty Claim",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/WarrantyClaim/OS/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Claim",
+        "OmniProcessId": {
+            "Name": "Asset Warranty Claim",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/WarrantyClaim/OS/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/WarrantyClaim/OS/English/Claim",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Claim",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 6,
+        "dataJSON": false,
+        "label": "TextBlock5",
+        "sanitize": false,
+        "show": null,
+        "text": "<h2 style=\"text-align: left;\"><strong>Asset Name:</strong> %Name%</h2>\n<p style=\"text-align: left;\"><strong>Product Model: </strong>%Product Model%</p>\n<p style=\"text-align: left;\"><strong>Product Code: </strong>%Product Code%</p>\n<p style=\"text-align: left;\"><strong>Purchase Date: </strong>%Purchase Date%</p>\n<p style=\"text-align: left;\"><strong>Serial Number:</strong> %Serial Number%</p>\n<p style=\"text-align: left;\"></p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/WarrantyClaim/OS/English/block"
+}

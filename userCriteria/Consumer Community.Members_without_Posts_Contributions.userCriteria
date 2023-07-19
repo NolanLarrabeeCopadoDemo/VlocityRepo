@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserCriteria xmlns="http://soap.sforce.com/2006/04/metadata">
+    <lastChatterActivityAgeInSeconds>-1</lastChatterActivityAgeInSeconds>
+    <masterLabel>Members without Posts (Contributions)</masterLabel>
+    <profiles>*customer community - members</profiles>
+    <profiles>community member - login-based</profiles>
+    <userTypes>Customer</userTypes>
+</UserCriteria>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>2</activeVersionNumber>
+    <description>Flow called by the &quot;Qualify Partner&quot; action on the Partner Application lead record that converts the lead, launches the PRM: ONB - Set Up Partner Account subflow, and launches the PRM: ONB - Set Up Partner User subflow.</description>
+    <masterLabel>PRM: ONB - Qualify Partner Lead</masterLabel>
+</FlowDefinition>

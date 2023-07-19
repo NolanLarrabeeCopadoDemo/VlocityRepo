@@ -1,0 +1,512 @@
+{
+    "": "",
+    "AccountDetails": {
+        "BillingCity": "San Francisco",
+        "BillingCountry": "USA",
+        "BillingPostalCode": "94105",
+        "BillingState": "CA",
+        "BillingStreet": "1 Market St.",
+        "Id": "001B000001QUZ0QIAX",
+        "Name": "Omega Incorporated",
+        "ShippingCity": "San Francisco",
+        "ShippingCountry": "USA",
+        "ShippingPostalCode": "94105",
+        "ShippingState": "CA",
+        "ShippingStreet": "50 Fremont St",
+        "accountNumber": "A43836686"
+    },
+    "AccountInfo": {
+        "TAAccountName-Block": {
+            "AccountIdSF": "001B000001QUZ0QIAX",
+            "AccountPhone": "(415) 555-0153",
+            "BillingCity": "San Francisco",
+            "BillingCountry": "USA",
+            "BillingPostalCode": "94105",
+            "BillingState": "CA",
+            "BillingStreet": "1 Market St.",
+            "Contacts": [
+                {
+                    "Name": "Lauren Bailey"
+                },
+                {
+                    "Name": "James Wu"
+                },
+                {
+                    "Name": "Mark Kingston"
+                },
+                {
+                    "Name": "Chris Post"
+                },
+                {
+                    "Name": "Beth Hodges"
+                },
+                {
+                    "Name": "Warren Jones"
+                },
+                {
+                    "Name": "Sudhir Bakhru"
+                },
+                {
+                    "Name": "Brad Shultz"
+                },
+                {
+                    "Name": "Vikram Kalu"
+                },
+                {
+                    "Name": "Sienna Competente"
+                },
+                {
+                    "Name": "Mark Metz"
+                },
+                {
+                    "Name": "Sean Murphy"
+                },
+                {
+                    "Name": "Stephanie Curran"
+                },
+                {
+                    "Name": "Steve Mcdonald"
+                },
+                {
+                    "Name": "Keith Lopez"
+                },
+                {
+                    "Name": "Al Miller"
+                },
+                {
+                    "Name": "Jeff Kane"
+                },
+                {
+                    "Name": "Kathy Fitzpatrick"
+                },
+                {
+                    "Name": "Ed Flachbarth"
+                },
+                {
+                    "Name": "Judy Odom"
+                },
+                {
+                    "Name": "Doug Hart"
+                },
+                {
+                    "Name": "Unknown Customer"
+                },
+                {
+                    "Name": "Dan Fitzgerald"
+                },
+                {
+                    "Name": "Tom Rogers"
+                },
+                {
+                    "Name": "Lindsay Boyle"
+                },
+                {
+                    "Name": "Mike Kranston"
+                },
+                {
+                    "Name": "John Snow"
+                }
+            ],
+            "Name": "Omega Incorporated",
+            "TAAccountName": "Omega Incorporated",
+            "Website": "www.omegaincorporated.com"
+        }
+    },
+    "AccountsAndContacts": {
+        "ContactDetails": [
+            {
+                "AccountIdofContact": "001B000001QUZ0QIAX",
+                "ContactId": "003B000000LRnF2IAL",
+                "Email": "lbailey@example.com",
+                "FirstName": "Lauren",
+                "LastName": "Bailey",
+                "Phone": "(415) 555-1212",
+                "selectedContact": true
+            },
+            {
+                "AccountIdofContact": "001B000001QUZ0QIAX",
+                "ContactId": "003B000000LRnF8IAL",
+                "Email": "jwu@example.com",
+                "FirstName": "James",
+                "LastName": "Wu",
+                "Phone": "(274) 555-0197",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001QUZ0QIAX",
+                "ContactId": "003B000000LRnFAIA1",
+                "Email": "mkingston@example.com",
+                "FirstName": "Mark",
+                "LastName": "Kingston",
+                "Phone": "(769) 555-7272",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001QUZ0QIAX",
+                "ContactId": "003B000000LRnFDIA1",
+                "Email": "cpost@example.com",
+                "FirstName": "Chris",
+                "LastName": "Post",
+                "Phone": "(415) 555-5590",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001QUZ0QIAX",
+                "ContactId": "003B000000LRnFKIA1",
+                "Email": "bhodges@example.com",
+                "FirstName": "Beth",
+                "LastName": "Hodges",
+                "Phone": "(422) 555-5262",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001QUZ0QIAX",
+                "ContactId": "003B000000LRnHSIA1",
+                "Email": "wjones@mailinator.com",
+                "FirstName": "Warren",
+                "LastName": "Jones",
+                "Phone": "(415) 555-0153",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001QUZ0QIAX",
+                "ContactId": "003B000000LRnFgIAL",
+                "Email": "sbakhru@salesforce.com",
+                "FirstName": "Sudhir",
+                "LastName": "Bakhru",
+                "Phone": "(415) 555-0153",
+                "selectedContact": false
+            },
+            {
+                "AccountIdofContact": "001B000001QUZ0QIAX",
+                "ContactId": "003B000000LRnHYIA1",
+                "FirstName": "Brad",
+                "LastName": "Shultz",
+                "Phone": "(415) 555-0153",
+                "selectedContact": false
+            }
+        ]
+    },
+    "ArticlesLength": 0,
+    "Contacts": [
+        {
+            "AccountIdofContact": "001B000001QUZ0QIAX",
+            "ContactId": "003B000000LRnF2IAL",
+            "Email": "lbailey@example.com",
+            "FirstName": "Lauren",
+            "LastName": "Bailey",
+            "Phone": "(415) 555-1212"
+        },
+        {
+            "AccountIdofContact": "001B000001QUZ0QIAX",
+            "ContactId": "003B000000LRnF8IAL",
+            "Email": "jwu@example.com",
+            "FirstName": "James",
+            "LastName": "Wu",
+            "Phone": "(274) 555-0197"
+        },
+        {
+            "AccountIdofContact": "001B000001QUZ0QIAX",
+            "ContactId": "003B000000LRnFAIA1",
+            "Email": "mkingston@example.com",
+            "FirstName": "Mark",
+            "LastName": "Kingston",
+            "Phone": "(769) 555-7272"
+        },
+        {
+            "AccountIdofContact": "001B000001QUZ0QIAX",
+            "ContactId": "003B000000LRnFDIA1",
+            "Email": "cpost@example.com",
+            "FirstName": "Chris",
+            "LastName": "Post",
+            "Phone": "(415) 555-5590"
+        },
+        {
+            "AccountIdofContact": "001B000001QUZ0QIAX",
+            "ContactId": "003B000000LRnFKIA1",
+            "Email": "bhodges@example.com",
+            "FirstName": "Beth",
+            "LastName": "Hodges",
+            "Phone": "(422) 555-5262"
+        },
+        {
+            "AccountIdofContact": "001B000001QUZ0QIAX",
+            "ContactId": "003B000000LRnHSIA1",
+            "Email": "wjones@mailinator.com",
+            "FirstName": "Warren",
+            "LastName": "Jones",
+            "Phone": "(415) 555-0153"
+        },
+        {
+            "AccountIdofContact": "001B000001QUZ0QIAX",
+            "ContactId": "003B000000LRnFgIAL",
+            "Email": "sbakhru@salesforce.com",
+            "FirstName": "Sudhir",
+            "LastName": "Bakhru",
+            "Phone": "(415) 555-0153"
+        },
+        {
+            "AccountIdofContact": "001B000001QUZ0QIAX",
+            "ContactId": "003B000000LRnHYIA1",
+            "FirstName": "Brad",
+            "LastName": "Shultz",
+            "Phone": "(415) 555-0153"
+        }
+    ],
+    "DRId_Order": "801B0000001zzcUIAQ",
+    "DRId_OrderItem": "802B00000065W0cIAE",
+    "Error": null,
+    "FileFormat": "pdf",
+    "Files": "",
+    "FilesLength": 0,
+    "OrderDetails": {
+        "AccountId": "001B000001QUZ0QIAX",
+        "CreatedBy": "Admin User",
+        "OrderNumber": "00006584",
+        "TotalAmount": 5750
+    },
+    "OrderItem": {
+        "Name": "Compactor 3500",
+        "Quantity": 1,
+        "TotalPrice": 5750,
+        "UnitPrice": 5750
+    },
+    "PriceBookEntry": {
+        "CustomLWC6": {
+            "Products": {
+                "selectedprods": [
+                    {
+                        "Id": "REC0",
+                        "PId": "01tB00000028mSBIAY",
+                        "PbeIsActive": true,
+                        "PbeName": "Compactor 3500",
+                        "PbeUnitPrice": 5750,
+                        "PriceBookEntryId": "01uB0000002ke5AIAQ",
+                        "Product2Id": "01tB00000028mSBIAY",
+                        "Qty": "1",
+                        "QuantityUnitOfMeasure": "Each",
+                        "_flex": {
+                            "state0element0block_element3block_element0": true,
+                            "state0element0block_element3block_element0_child": true,
+                            "state0element0block_element3block_element1": true,
+                            "state0element0block_element3block_element1_child": true,
+                            "state0element0block_element4block_element0": true,
+                            "state0element0block_element4block_element0_child": true,
+                            "state0element0block_element4block_element1": true,
+                            "state0element0block_element4block_element1_child": true,
+                            "uniqueKey": "REC0"
+                        },
+                        "addToEstimate": true,
+                        "uniqueKey": "REC0"
+                    }
+                ]
+            }
+        },
+        "PriceBook-Block": {
+            "PriceBook": "Manufacturing Cloud",
+            "PriceBookIdSF": "01sB0000002wtY7IAI",
+            "PriceBookrecName": "Manufacturing Cloud"
+        },
+        "ProductName": "Compactor"
+    },
+    "Product": {
+        "PbeProduct": [
+            {
+                "PId": "01tB00000028mSBIAY",
+                "PbeIsActive": true,
+                "PbeName": "Compactor 3500",
+                "PbeUnitPrice": 5750,
+                "PriceBookEntryId": "01uB0000002ke5AIAQ",
+                "Product2Id": "01tB00000028mSBIAY",
+                "Qty": "1",
+                "QuantityUnitOfMeasure": "Each",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01tB00000028mSCIAY",
+                "PbeIsActive": true,
+                "PbeName": "Compactor 9000",
+                "PbeUnitPrice": 8100,
+                "PriceBookEntryId": "01uB0000002ke5BIAQ",
+                "Product2Id": "01tB00000028mSCIAY",
+                "Qty": "1",
+                "QuantityUnitOfMeasure": "Each",
+                "addToEstimate": false
+            },
+            {
+                "PId": "01tB00000028mSDIAY",
+                "PbeIsActive": true,
+                "PbeName": "Compactor 9500",
+                "PbeUnitPrice": 13000,
+                "PriceBookEntryId": "01uB0000002ke6qIAA",
+                "Product2Id": "01tB00000028mSDIAY",
+                "Qty": "1",
+                "QuantityUnitOfMeasure": "Each",
+                "addToEstimate": false
+            }
+        ],
+        "listisblank": false
+    },
+    "SObjectId": "801B0000001zzcUIAQ",
+    "attachFileFormat": "pdf",
+    "docTitle": "Order Form",
+    "documentTitle": "Order Form",
+    "estimatedProducts": {
+        "ProductsInCart": {
+            "summaryproducts": {
+                "ep": {
+                    "PbeName": "Compactor 3500",
+                    "PbeUnitPrice": 5750,
+                    "PriceBookEntryId": "01uB0000002ke5AIAQ",
+                    "Product2Id": "01tB00000028mSBIAY",
+                    "Qty": "1",
+                    "Subtotal": 5750
+                }
+            }
+        },
+        "subtotalcal": 5750
+    },
+    "estimatedproducts": null,
+    "generateDocument": {
+    },
+    "generateMergeDocument": null,
+    "pdfContentVersionIds": null,
+    "selectedAccountId": "001B000001QUZ0QIAX",
+    "selectedTemplate": null,
+    "setAccountDetails": {
+        "AccountIdSF": "001B000001QUZ0QIAX",
+        "AccountPhone": "(415) 555-0153",
+        "BillingCity": "San Francisco",
+        "BillingCountry": "USA",
+        "BillingPostalCode": "94105",
+        "BillingState": "CA",
+        "BillingStreet": "1 Market St.",
+        "Contacts": [
+            {
+                "Name": "Lauren Bailey"
+            },
+            {
+                "Name": "James Wu"
+            },
+            {
+                "Name": "Mark Kingston"
+            },
+            {
+                "Name": "Chris Post"
+            },
+            {
+                "Name": "Beth Hodges"
+            },
+            {
+                "Name": "Warren Jones"
+            },
+            {
+                "Name": "Sudhir Bakhru"
+            },
+            {
+                "Name": "Brad Shultz"
+            },
+            {
+                "Name": "Vikram Kalu"
+            },
+            {
+                "Name": "Sienna Competente"
+            },
+            {
+                "Name": "Mark Metz"
+            },
+            {
+                "Name": "Sean Murphy"
+            },
+            {
+                "Name": "Stephanie Curran"
+            },
+            {
+                "Name": "Steve Mcdonald"
+            },
+            {
+                "Name": "Keith Lopez"
+            },
+            {
+                "Name": "Al Miller"
+            },
+            {
+                "Name": "Jeff Kane"
+            },
+            {
+                "Name": "Kathy Fitzpatrick"
+            },
+            {
+                "Name": "Ed Flachbarth"
+            },
+            {
+                "Name": "Judy Odom"
+            },
+            {
+                "Name": "Doug Hart"
+            },
+            {
+                "Name": "Unknown Customer"
+            },
+            {
+                "Name": "Dan Fitzgerald"
+            },
+            {
+                "Name": "Tom Rogers"
+            },
+            {
+                "Name": "Lindsay Boyle"
+            },
+            {
+                "Name": "Mike Kranston"
+            },
+            {
+                "Name": "John Snow"
+            }
+        ],
+        "Name": "Omega Incorporated",
+        "TAAccountName": "Omega Incorporated",
+        "Website": "www.omegaincorporated.com"
+    },
+    "summaryproducts": {
+        "ep": [
+            {
+                "PbeName": "Compactor 3500",
+                "PbeUnitPrice": 5750,
+                "PriceBookEntryId": "01uB0000002ke5AIAQ",
+                "Product2Id": "01tB00000028mSBIAY",
+                "Qty": "1",
+                "Subtotal": 5750
+            }
+        ]
+    },
+    "templateNames": [
+        {
+            "VlocityDocumentTemplate": "OrderDetails"
+        }
+    ],
+    "templateType": "Microsoft Word .DOCX Template",
+    "timeStamp": "2022-08-12T17:45:50.809Z",
+    "userCurrencyCode": "USD",
+    "userId": "005B0000008hySuIAI",
+    "userName": "admin@mfgmasterpre240v1.ido",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-420",
+    "userTimeZoneName": "America/Los_Angeles",
+    "vlcTimeTracking": {
+        "AccountInfo": 62192,
+        "AccountsAndContacts": 4175,
+        "DRCreateDraftOrder": 1596,
+        "DRFetchContactDetails": 170,
+        "DataRaptorExtractOrder": 364,
+        "IPMergeProducts": 195,
+        "OmniScriptSessionToken": "5e42ad27-853f-4f6b-af09-59ed52771af5",
+        "PriceBookEntry": 22952,
+        "SelectedAccount": 0,
+        "SetValues3": 0,
+        "estimatedProducts": 2097,
+        "filesLength": 0,
+        "requiredInputs": 0,
+        "setDocGenInputData": 0
+    }
+}

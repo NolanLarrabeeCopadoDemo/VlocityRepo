@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Custom_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Custom_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Accurate_Data_and_Classification__c</fields>
+        <fields>Escalates_shortages_and_price_increases__c</fields>
+        <fields>Fast_response_to_Put_out_fires__c</fields>
+        <fields>Financial_health_reviews_of_supply_base__c</fields>
+        <fields>Global_view_of_collection_systems__c</fields>
+        <fields>Has_performance_monitoring_available__c</fields>
+        <fields>How_happy_are_you_with_service__c</fields>
+        <fields>Information_Shared_across_Supply_Chain__c</fields>
+        <label>Custom Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Accurate_Data_and_Classification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Accurate Data and Classification</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Escalates_shortages_and_price_increases__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Escalates shortages and price increases</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fast_response_to_Put_out_fires__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Fast response to &quot;Put out fires&quot;</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Financial_health_reviews_of_supply_base__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Financial health reviews of supply base</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Global_view_of_collection_systems__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Global view of collection systems</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Has_performance_monitoring_available__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has performance monitoring available</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>How_happy_are_you_with_service__c</fullName>
+        <externalId>false</externalId>
+        <label>How happy are you with service?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Information_Shared_across_Supply_Chain__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Information Shared across Supply Chain?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Major_risks_reviewed_regularly__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Major risks reviewed regularly</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Manages_complexity_in_supply_chain__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Manages complexity in supply chain</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Overall_Risk_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>100-
+IF( Accurate_Data_and_Classification__c , 5, 0) -
+IF( Global_view_of_collection_systems__c , 5, 0) -
+IF( Processes_are_managed_proactively__c , 5, 0) -
+IF( Sourcing_from_Single_Supplier_Facility__c , 5, 0) -
+IF( Major_risks_reviewed_regularly__c , 5, 0) -
+IF( Financial_health_reviews_of_supply_base__c , 5, 0) -
+IF( Reviews_risks_around_costs_regularly__c , 5, 0) -
+IF( Financial_health_reviews_of_supply_base__c , 5, 0) -
+IF( Reviews_risks_around_costs_regularly__c , 5, 0) -
+IF( Information_Shared_across_Supply_Chain__c , 5, 0) -
+IF( Fast_response_to_Put_out_fires__c , 5, 0) -
+IF( SOP_incl_Demand_Management_Reviewed__c , 5, 0) -
+IF( Has_performance_monitoring_available__c , 5, 0) -
+IF( Escalates_shortages_and_price_increases__c , 5, 0) -
+IF( Seeks_weakest_links_in_Supply_Chain__c , 5, 0) -
+IF( Manages_complexity_in_supply_chain__c , 5, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall Risk Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Processes_are_managed_proactively__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Processes are managed proactively</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Reviews_risks_around_costs_regularly__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reviews risks around costs regularly</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SOP_incl_Demand_Management_Reviewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>S&amp;OP incl Demand Management Reviewed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Seeks_weakest_links_in_Supply_Chain__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Seeks weakest links in Supply Chain</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sourcing_from_Single_Supplier_Facility__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sourcing from Single Supplier Facility</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Identify</fullName>
+                    <default>false</default>
+                    <label>Identify</label>
+                </value>
+                <value>
+                    <fullName>Assess</fullName>
+                    <default>false</default>
+                    <label>Assess</label>
+                </value>
+                <value>
+                    <fullName>Mitigate</fullName>
+                    <default>false</default>
+                    <label>Mitigate</label>
+                </value>
+                <value>
+                    <fullName>Control Risks</fullName>
+                    <default>false</default>
+                    <label>Control Risks</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Supplier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Supplier</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Risk Assessments</relationshipLabel>
+        <relationshipName>Risk_Assessments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>What_is_the_quality_of_product__c</fullName>
+        <externalId>false</externalId>
+        <label>What is the quality of product</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>What_is_your_likelyhood_to_renew__c</fullName>
+        <externalId>false</externalId>
+        <label>What is your likelyhood to renew?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Risk Assessment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Accurate_Data_and_Classification__c</columns>
+        <columns>Escalates_shortages_and_price_increases__c</columns>
+        <columns>Fast_response_to_Put_out_fires__c</columns>
+        <columns>Financial_health_reviews_of_supply_base__c</columns>
+        <columns>Global_view_of_collection_systems__c</columns>
+        <columns>Has_performance_monitoring_available__c</columns>
+        <columns>How_happy_are_you_with_service__c</columns>
+        <columns>Information_Shared_across_Supply_Chain__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Records</label>
+    </listViews>
+    <nameField>
+        <displayFormat>R-{000000}</displayFormat>
+        <label>Risk Assessment</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Risk Assessments</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Accurate_Data_and_Classification__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Escalates_shortages_and_price_increases__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Fast_response_to_Put_out_fires__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Financial_health_reviews_of_supply_base__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Global_view_of_collection_systems__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Has_performance_monitoring_available__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>How_happy_are_you_with_service__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Information_Shared_across_Supply_Chain__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

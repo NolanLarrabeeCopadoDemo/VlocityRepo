@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>admin</profile>
+        </profiles>
+        <users>
+            <user>brenda.service.3r0xhimhnt1m.qlvciwltzazl@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>jay.service.ipvucb8vru8d.lpgpfjx5upsf@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>majimenez@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>steven.service.p252hxl9fh31.alfesfuq5mom@copado.com2023/07/18_17-7-41.demo3</user>
+            <user>tim.service.0aifxjprqang.baxiwsymnt5n@copado.com2023/07/18_17-7-41.demo3</user>
+        </users>
+    </assignments>
+    <criticalWaitTime>60</criticalWaitTime>
+    <disableTransferConferenceGreeting>false</disableTransferConferenceGreeting>
+    <enableAgentFileTransfer>true</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>true</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>false</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>true</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>true</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>true</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>Chat Representatives</label>
+</LiveChatAgentConfig>

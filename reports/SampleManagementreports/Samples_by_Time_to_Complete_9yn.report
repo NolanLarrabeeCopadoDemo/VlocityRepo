@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_89416513</developerName>
+        <masterLabel>Time to Complete</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Sample__c.Time_to_Complete_days__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>4</to>
+            </sourceValues>
+            <value>&lt;4 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>4</from>
+                <to>7</to>
+            </sourceValues>
+            <value>4-7 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+                <to>14</to>
+            </sourceValues>
+            <value>8-14 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>14</from>
+                <to>28</to>
+            </sourceValues>
+            <value>15-28 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>28</from>
+            </sourceValues>
+            <value>&gt; 28 days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Sample__c.Time_to_Complete_days__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_89416513</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Samples by Time to Complete</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Sample__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Sample__c.Completed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,64 @@
+{
+    "ContextId": null,
+    "RebateProgram": {
+        "RPEndDate": null,
+        "RPFrequency": null,
+        "RPName": null,
+        "RPPayoutCalcDays": null,
+        "RPStartDate": null,
+        "RPStatus": null,
+        "RPTXGraceDays": null
+    },
+    "RebateType": {
+        "RebateTypeBlock": {
+            "RTAccrualRate": null,
+            "RTAggregateObjectName": null,
+            "RTBaselineAmount": null,
+            "RTBenefitQualifierField": null,
+            "RTCalculationDefinition": null,
+            "RTCalculationMethod": null,
+            "RTCalculationType": null,
+            "RTIsIntegratable": null,
+            "RTMeasureField": null,
+            "RTName": null,
+            "RTProductFilterType": null,
+            "RTRebateMeasureType": null,
+            "RTStatus": null
+        }
+    },
+    "RebateTypeBenefits": {
+        "RebateTypeBenefitsBlock": {
+            "RTBAppliedBenefit": null,
+            "RTBBenefitAchieved": null,
+            "RTBEffectiveEndDate": null,
+            "RTBEffectiveStartDate": null,
+            "RTBMaximumMeasureFieldValue": null,
+            "RTBName": null,
+            "RTBProductTA-Block": {
+                "ProductCode": null,
+                "RTBProductTA": null
+            },
+            "RTBProgramRebateTypeName-Block": {
+                "ProgramRebateTypeId": null,
+                "RTBProgramRebateTypeName": null
+            },
+            "RTBQualifyingRange": null,
+            "RTBStatus": null
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DRCreateProgramRebateTypeBenefits": null,
+        "DRCreateRebateProgram": null,
+        "RebateProgram": null,
+        "RebateType": null,
+        "RebateTypeBenefits": null,
+        "SetRebateProgramId": null
+    }
+}

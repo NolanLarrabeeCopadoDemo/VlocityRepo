@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectHierarchyRelationship xmlns="http://soap.sforce.com/2006/04/metadata">
+    <inputObjRecordsGrpFieldName>ManufacturingProgram</inputObjRecordsGrpFieldName>
+    <mappingType>ParentToParent</mappingType>
+    <masterLabel>ObjectHierarchyRelationship</masterLabel>
+    <parentObjectMapping>
+        <inputObject>MfgProgramCpntFrcstFact</inputObject>
+        <outputObject>Opportunity</outputObject>
+    </parentObjectMapping>
+    <usageType>TransformationMapping</usageType>
+</ObjectHierarchyRelationship>

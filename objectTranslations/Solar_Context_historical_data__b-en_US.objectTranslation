@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solar_Context_historical_data</value>
+    </caseValues>
+    <fields>
+        <label><!-- ContextKey --></label>
+        <name>ContextKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mode --></label>
+        <name>Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- PlatformEvent --></label>
+        <name>PlatformEvent__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReplayId --></label>
+        <name>ReplayId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time --></label>
+        <name>Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracker_Event_error_code --></label>
+        <name>Tracker_Event_error_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracker_Event_power_output --></label>
+        <name>Tracker_Event_power_output__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracker_Event_rotation_x --></label>
+        <name>Tracker_Event_rotation_x__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracker_Event_rotation_z --></label>
+        <name>Tracker_Event_rotation_z__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

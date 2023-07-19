@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BatchCalcJobDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <description>Aggregates the accrued non-qualifying points after the last run. The aggregated points are grouped by member and currency.</description>
+        <fields>
+            <aggregateFunction>Max</aggregateFunction>
+            <alias>MaxCreatedDate</alias>
+            <sourceFieldName>Ledger_CreatedDate</sourceFieldName>
+        </fields>
+        <fields>
+            <aggregateFunction>Max</aggregateFunction>
+            <alias>PrevTotalPointsAccrued</alias>
+            <sourceFieldName>LMC_TotalPointsAccrued</sourceFieldName>
+        </fields>
+        <fields>
+            <aggregateFunction>Sum</aggregateFunction>
+            <alias>TotalPointsToBeAdded</alias>
+            <sourceFieldName>Ledger_Points</sourceFieldName>
+        </fields>
+        <groupBy>LMC_Id</groupBy>
+        <label>Total Points To Credit Since Last Process Date</label>
+        <name>TotalPointsToCreditSinceLastProcessDate</name>
+        <sourceName>LedgerRecordsForAggregation</sourceName>
+    </aggregates>
+    <datasources>
+        <description>The loyalty ledger is used as a data source for calculating non-qualifying points.</description>
+        <fields>
+            <name>CreatedDate</name>
+        </fields>
+        <fields>
+            <name>EventType</name>
+        </fields>
+        <fields>
+            <name>LoyaltyProgramCurrencyId</name>
+        </fields>
+        <fields>
+            <name>LoyaltyProgramMemberId</name>
+        </fields>
+        <fields>
+            <name>Points</name>
+        </fields>
+        <label>Loyalty Ledger</label>
+        <name>LoyaltyLedger</name>
+        <sourceName>LoyaltyLedger</sourceName>
+        <type>StandardObject</type>
+    </datasources>
+    <datasources>
+        <description>The loyalty member currency is used as a data source for calculating non-qualifying points.</description>
+        <fields>
+            <name>Id</name>
+        </fields>
+        <fields>
+            <name>LastAccrualProcessedDate</name>
+        </fields>
+        <fields>
+            <name>LoyaltyMemberId</name>
+        </fields>
+        <fields>
+            <name>LoyaltyProgramCurrencyId</name>
+        </fields>
+        <fields>
+            <name>TotalPointsAccrued</name>
+        </fields>
+        <label>Loyalty Member Currency</label>
+        <name>LoyaltyMemberCurrency</name>
+        <sourceName>LoyaltyMemberCurrency</sourceName>
+        <type>StandardObject</type>
+    </datasources>
+    <datasources>
+        <description>The loyalty program is used as a data source for calculating non-qualifying points.</description>
+        <fields>
+            <name>Id</name>
+        </fields>
+        <fields>
+            <name>Name</name>
+        </fields>
+        <label>Loyalty Program</label>
+        <name>LoyaltyProgram</name>
+        <sourceName>LoyaltyProgram</sourceName>
+        <type>StandardObject</type>
+    </datasources>
+    <datasources>
+        <description>The loyalty program currency is used as a data source for calculating non-qualifying points.</description>
+        <fields>
+            <name>CurrencyType</name>
+        </fields>
+        <fields>
+            <name>Id</name>
+        </fields>
+        <fields>
+            <name>LoyaltyProgramId</name>
+        </fields>
+        <label>Loyalty Program Currency</label>
+        <name>LoyaltyProgramCurrency</name>
+        <sourceName>LoyaltyProgramCurrency</sourceName>
+        <type>StandardObject</type>
+    </datasources>
+    <description>Calculates and updates the member’s points balance. This process aggregates the points for all non-qualifying currencies credited to the member since it was last run.</description>
+    <filters>
+        <criteria>
+            <operator>Equals</operator>
+            <sequence>1</sequence>
+            <sourceFieldName>EventType</sourceFieldName>
+            <value>Credit</value>
+        </criteria>
+        <criteria>
+            <operator>Equals</operator>
+            <sequence>2</sequence>
+            <sourceFieldName>CurrencyType</sourceFieldName>
+            <value>NonQualifying</value>
+        </criteria>
+        <criteria>
+            <inputVariable>LoyaltyProgramName</inputVariable>
+            <operator>Equals</operator>
+            <sequence>3</sequence>
+            <sourceFieldName>LoyaltyProgramName</sourceFieldName>
+        </criteria>
+        <description>Filters the ledgers that have non-qualifying points for the loyalty program.</description>
+        <filterCondition>1 AND 2 AND 3</filterCondition>
+        <isDynamicFilter>false</isDynamicFilter>
+        <label>Filter Non-Qualifying Points Accrued For Program</label>
+        <name>FilterNonQualifyingPointsAccruedForProgram</name>
+        <sourceName>LLAndLPCPlusLP</sourceName>
+    </filters>
+    <filters>
+        <criteria>
+            <operator>Equals</operator>
+            <sequence>1</sequence>
+            <sourceFieldName>IsCreatedDateGreaterThanLastProcessRunDate</sourceFieldName>
+            <value>Y</value>
+        </criteria>
+        <description>Filters the ledgers created after the last time non-qualifying points were credited to members.</description>
+        <filterCondition>1</filterCondition>
+        <isDynamicFilter>false</isDynamicFilter>
+        <label>Ledger Records For Aggregation</label>
+        <name>LedgerRecordsForAggregation</name>
+        <sourceName>IsLedgerCreatedAfterLastProcessRun</sourceName>
+    </filters>
+    <isTemplate>false</isTemplate>
+    <joins>
+        <description>Adds the program name to ledgers.</description>
+        <fields>
+            <alias>CreatedDate</alias>
+            <sourceFieldName>CreatedDate</sourceFieldName>
+            <sourceName>LLPlusLPC</sourceName>
+        </fields>
+        <fields>
+            <alias>CurrencyType</alias>
+            <sourceFieldName>CurrencyType</sourceFieldName>
+            <sourceName>LLPlusLPC</sourceName>
+        </fields>
+        <fields>
+            <alias>EventType</alias>
+            <sourceFieldName>EventType</sourceFieldName>
+            <sourceName>LLPlusLPC</sourceName>
+        </fields>
+        <fields>
+            <alias>LoyaltyProgramCurrencyId</alias>
+            <sourceFieldName>LoyaltyProgramCurrencyId</sourceFieldName>
+            <sourceName>LLPlusLPC</sourceName>
+        </fields>
+        <fields>
+            <alias>LoyaltyProgramMemberId</alias>
+            <sourceFieldName>LoyaltyProgramMemberId</sourceFieldName>
+            <sourceName>LLPlusLPC</sourceName>
+        </fields>
+        <fields>
+            <alias>LoyaltyProgramName</alias>
+            <sourceFieldName>Name</sourceFieldName>
+            <sourceName>LoyaltyProgram</sourceName>
+        </fields>
+        <fields>
+            <alias>Points</alias>
+            <sourceFieldName>Points</sourceFieldName>
+            <sourceName>LLPlusLPC</sourceName>
+        </fields>
+        <joinKeys>
+            <primarySourceFieldName>LoyaltyProgramId</primarySourceFieldName>
+            <secondarySourceFieldName>Id</secondarySourceFieldName>
+        </joinKeys>
+        <label>Add Program Name to Ledger</label>
+        <name>LLAndLPCPlusLP</name>
+        <primarySourceName>LLPlusLPC</primarySourceName>
+        <secondarySourceName>LoyaltyProgram</secondarySourceName>
+        <type>LeftOuter</type>
+    </joins>
+    <joins>
+        <description>Adds the program currency type to ledgers.</description>
+        <fields>
+            <alias>CreatedDate</alias>
+            <sourceFieldName>CreatedDate</sourceFieldName>
+            <sourceName>LoyaltyLedger</sourceName>
+        </fields>
+        <fields>
+            <alias>CurrencyType</alias>
+            <sourceFieldName>CurrencyType</sourceFieldName>
+            <sourceName>LoyaltyProgramCurrency</sourceName>
+        </fields>
+        <fields>
+            <alias>EventType</alias>
+            <sourceFieldName>EventType</sourceFieldName>
+            <sourceName>LoyaltyLedger</sourceName>
+        </fields>
+        <fields>
+            <alias>LoyaltyProgramCurrencyId</alias>
+            <sourceFieldName>LoyaltyProgramCurrencyId</sourceFieldName>
+            <sourceName>LoyaltyLedger</sourceName>
+        </fields>
+        <fields>
+            <alias>LoyaltyProgramId</alias>
+            <sourceFieldName>LoyaltyProgramId</sourceFieldName>
+            <sourceName>LoyaltyProgramCurrency</sourceName>
+        </fields>
+        <fields>
+            <alias>LoyaltyProgramMemberId</alias>
+            <sourceFieldName>LoyaltyProgramMemberId</sourceFieldName>
+            <sourceName>LoyaltyLedger</sourceName>
+        </fields>
+        <fields>
+            <alias>Points</alias>
+            <sourceFieldName>Points</sourceFieldName>
+            <sourceName>LoyaltyLedger</sourceName>
+        </fields>
+        <joinKeys>
+            <primarySourceFieldName>LoyaltyProgramCurrencyId</primarySourceFieldName>
+            <secondarySourceFieldName>Id</secondarySourceFieldName>
+        </joinKeys>
+        <label>Add Loyalty Program Currency Type to Ledger</label>
+        <name>LLPlusLPC</name>
+        <primarySourceName>LoyaltyLedger</primarySourceName>
+        <secondarySourceName>LoyaltyProgramCurrency</secondarySourceName>
+        <type>LeftOuter</type>
+    </joins>
+    <joins>
+        <description>Gets current point balance from the Loyalty Member Currency record.</description>
+        <fields>
+            <alias>Ledger_CreatedDate</alias>
+            <sourceFieldName>CreatedDate</sourceFieldName>
+            <sourceName>FilterNonQualifyingPointsAccruedForProgram</sourceName>
+        </fields>
+        <fields>
+            <alias>Ledger_Points</alias>
+            <sourceFieldName>Points</sourceFieldName>
+            <sourceName>FilterNonQualifyingPointsAccruedForProgram</sourceName>
+        </fields>
+        <fields>
+            <alias>LMC_Id</alias>
+            <sourceFieldName>Id</sourceFieldName>
+            <sourceName>LoyaltyMemberCurrency</sourceName>
+        </fields>
+        <fields>
+            <alias>LMC_LastProcessRunDate</alias>
+            <sourceFieldName>LastAccrualProcessedDate</sourceFieldName>
+            <sourceName>LoyaltyMemberCurrency</sourceName>
+        </fields>
+        <fields>
+            <alias>LMC_TotalPointsAccrued</alias>
+            <sourceFieldName>TotalPointsAccrued</sourceFieldName>
+            <sourceName>LoyaltyMemberCurrency</sourceName>
+        </fields>
+        <joinKeys>
+            <primarySourceFieldName>LoyaltyProgramCurrencyId</primarySourceFieldName>
+            <secondarySourceFieldName>LoyaltyProgramCurrencyId</secondarySourceFieldName>
+        </joinKeys>
+        <joinKeys>
+            <primarySourceFieldName>LoyaltyProgramMemberId</primarySourceFieldName>
+            <secondarySourceFieldName>LoyaltyMemberId</secondarySourceFieldName>
+        </joinKeys>
+        <label>Non-Qualifying Points Accrued by Member</label>
+        <name>NonQualifyingPointsAccruedPlusLMC</name>
+        <primarySourceName>FilterNonQualifyingPointsAccruedForProgram</primarySourceName>
+        <secondarySourceName>LoyaltyMemberCurrency</secondarySourceName>
+        <type>LeftOuter</type>
+    </joins>
+    <label>Calculate Non-Qualifying Points to Credit Members</label>
+    <parameters>
+        <dataType>Text</dataType>
+        <description>The name of the loyalty program.</description>
+        <isMultiValue>false</isMultiValue>
+        <label>Loyalty Program Name</label>
+        <name>LoyaltyProgramName</name>
+    </parameters>
+    <processType>Loyalty</processType>
+    <status>Active</status>
+    <transforms>
+        <description>Calculates the total points accrued points by a member.</description>
+        <expressionFields>
+            <alias>FinalTPA</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>2</decimalPlaces>
+            <expression>({PrevTotalPointsAccrued}+{TotalPointsToBeAdded})</expression>
+            <length>15</length>
+        </expressionFields>
+        <label>Calculate Total Points Accrued</label>
+        <name>CalculateTotalPointsAccrued</name>
+        <sourceName>TotalPointsToCreditSinceLastProcessDate</sourceName>
+        <transformationType>Expression</transformationType>
+    </transforms>
+    <transforms>
+        <description>Determines whether a ledger was created after the last accrual was processed.</description>
+        <expressionFields>
+            <alias>IsCreatedDateGreaterThanLastProcessRunDate</alias>
+            <dataType>Text</dataType>
+            <expression>(IF(ISNULL({LMC_LastProcessRunDate}), &quot;Y&quot;, IF(({Ledger_CreatedDate}&gt;{LMC_LastProcessRunDate}), &quot;Y&quot;, &quot;N&quot;)))</expression>
+            <length>5</length>
+        </expressionFields>
+        <label>Is Ledger Created After Last Process Run</label>
+        <name>IsLedgerCreatedAfterLastProcessRun</name>
+        <sourceName>NonQualifyingPointsAccruedPlusLMC</sourceName>
+        <transformationType>Expression</transformationType>
+    </transforms>
+    <writebacks>
+        <description>Updates the total accrued points and the last accrual processed date in the loyalty member currency records.</description>
+        <fields>
+            <sourceFieldName>LMC_Id</sourceFieldName>
+            <targetFieldName>Id</targetFieldName>
+        </fields>
+        <fields>
+            <sourceFieldName>FinalTPA</sourceFieldName>
+            <targetFieldName>TotalPointsAccrued</targetFieldName>
+        </fields>
+        <fields>
+            <sourceFieldName>MaxCreatedDate</sourceFieldName>
+            <targetFieldName>LastAccrualProcessedDate</targetFieldName>
+        </fields>
+        <isChangedRow>false</isChangedRow>
+        <label>Update Member Balance And Last Accrual Process Date</label>
+        <name>UpdateMemberBalanceAndLastAccrualProcessDate</name>
+        <operationType>Update</operationType>
+        <sourceName>CalculateTotalPointsAccrued</sourceName>
+        <storageType>sObject</storageType>
+        <targetObjectName>LoyaltyMemberCurrency</targetObjectName>
+        <writebackSequence>1</writebackSequence>
+        <writebackUser>005Hr00000EirARIAZ</writebackUser>
+    </writebacks>
+</BatchCalcJobDefinition>

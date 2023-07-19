@@ -1,0 +1,74 @@
+{
+    "dates": [],
+    "derivedDimensions": [],
+    "derivedMeasures": [
+        {
+            "conditionalFormatting": {},
+            "field": "ConversionRate",
+            "format": {
+                "customFormat": "[\"#,###.##%\",100]",
+                "delimiters": {}
+            },
+            "showInExplorer": true
+        }
+    ],
+    "dimensions": [
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Owner.Name",
+            "label": "Owner Name",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "ConvertedOpp.Name",
+            "label": "Opportunity Name",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "ConvertedOpp.Owner.Name",
+            "label": "Opportunity Owner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "ConvertedContact.Name",
+            "label": "Converted Contact Name",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "Name",
+            "label": "Contact Name",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        },
+        {
+            "conditionalFormatting": {},
+            "customActions": [],
+            "field": "ConvertedOpp.Account.Owner.Name",
+            "label": "ConvertedAccountOwner",
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": []
+        }
+    ],
+    "measures": [],
+    "organizations": [],
+    "showDetailsDefaultFields": []
+}

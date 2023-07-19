@@ -1,0 +1,7 @@
+[
+    "DataRaptor/dcCreateProgramRebateTypeBenefit",
+    "DataRaptor/dcCreateRebateProgramAndTypesAndProducts",
+    "DataRaptor/dcCreateRebateProgramMember",
+    "DataRaptor/dcGetAccountsTA",
+    "DataRaptor/dcGetRebateTypeTA"
+]

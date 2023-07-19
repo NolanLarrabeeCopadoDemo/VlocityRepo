@@ -1,0 +1,4 @@
+<design:component label="Asset Order Parts">
+    <design:attribute name="Community" datasource="Professional Community"/> 
+	<design:attribute name="Store" datasource="DefaultStore,MFGEquipment"/> 
+</design:component>

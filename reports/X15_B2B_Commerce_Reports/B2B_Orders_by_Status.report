@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ccrz__E_Order__c.ccrz__Account__c</field>
+    </columns>
+    <columns>
+        <field>ccrz__E_Order__c.ccrz__Contact__c</field>
+    </columns>
+    <columns>
+        <field>ccrz__E_Order__c.ccrz__TotalAmount__c</field>
+    </columns>
+    <columns>
+        <field>ccrz__E_Order__c.ccrz__Storefront__c</field>
+    </columns>
+    <description>All Cloudcraze/B2B Commerce Orders by Status</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ccrz__E_Order__c.ccrz__OrderStatus__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>ccrz__E_Order__c.ccrz__OrderDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>B2B Orders by Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ccrz__E_Order__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ccrz__E_Order__c.ccrz__OrderDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

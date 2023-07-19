@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserCriteria xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationAgeInSeconds>604800</creationAgeInSeconds>
+    <masterLabel>New Members</masterLabel>
+    <profiles>*customer community</profiles>
+    <profiles>*customer community - members</profiles>
+    <profiles>community member - login-based</profiles>
+    <userTypes>Customer</userTypes>
+</UserCriteria>

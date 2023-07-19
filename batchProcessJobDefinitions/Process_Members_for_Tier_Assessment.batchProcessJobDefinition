@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BatchProcessJobDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <batchSize>50</batchSize>
+    <dataSource>
+        <condition>1</condition>
+        <criteria>all</criteria>
+        <filters>
+            <dynamicValue>false</dynamicValue>
+            <fieldName>Status__c</fieldName>
+            <fieldValue>Pending</fieldValue>
+            <operator>equals</operator>
+            <sequenceNo>1</sequenceNo>
+        </filters>
+        <sourceObject>TierAssessmentMember__c</sourceObject>
+    </dataSource>
+    <description>Processes Tier Assessment Member records that are in pending status. This batch job is used to run a flow that assesses and updates members’ tier.</description>
+    <flowApiName>Assess_and_Update_Member_Tier</flowApiName>
+    <flowInputVariable>TierAssessmentMemberId</flowInputVariable>
+    <masterLabel>Process Members for Tier Assessment</masterLabel>
+    <processGroup>Loyalty</processGroup>
+    <retryCount>2</retryCount>
+    <retryInterval>5000</retryInterval>
+    <status>Active</status>
+    <type>Flow</type>
+</BatchProcessJobDefinition>

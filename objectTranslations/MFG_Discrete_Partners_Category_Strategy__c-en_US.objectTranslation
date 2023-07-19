@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Category Strategy</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Category Strategies</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category Status --></label>
+        <name>Category_Status__c</name>
+        <picklistValues>
+            <masterLabel>Executing</masterLabel>
+            <translation><!-- Executing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Development</masterLabel>
+            <translation><!-- In Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Review</masterLabel>
+            <translation><!-- Under Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Review Date --></label>
+        <name>Last_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Review Date --></label>
+        <name>Next_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portfolio/Specification Rationalization --></label>
+        <name>PortfolioSpecification_Rationalization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spend Leverage --></label>
+        <name>Spend_Leverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Indicator --></label>
+        <name>Status_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strategy Summary --></label>
+        <name>Strategy_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supplier Management --></label>
+        <name>Supplier_Management__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

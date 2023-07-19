@@ -1,0 +1,3158 @@
+{
+  "name" : "Whitespace_Analysis_tp",
+  "label" : "Whitespace Analysis",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [
+      {
+        "conditionalFormatting" : {
+          "backgroundColor" : {
+            "referenceField" : "G",
+            "type" : "single",
+            "parameters" : {
+              "formatValue" : "#673300",
+              "operandValue" : 0,
+              "operator" : "=="
+            }
+          }
+        },
+        "field" : "ActiveAccounts_2.C",
+        "format" : { }
+      },
+      {
+        "conditionalFormatting" : {
+          "backgroundColor" : {
+            "referenceField" : "G",
+            "type" : "single",
+            "parameters" : {
+              "formatValue" : "#673300",
+              "operandValue" : 0,
+              "operator" : "=="
+            }
+          }
+        },
+        "field" : "ActiveAccounts_2.A",
+        "format" : { }
+      },
+      {
+        "conditionalFormatting" : {
+          "backgroundColor" : {
+            "referenceField" : "G",
+            "type" : "single",
+            "parameters" : {
+              "formatValue" : "#673300",
+              "operandValue" : 0,
+              "operator" : "=="
+            }
+          }
+        },
+        "field" : "ActiveAccounts_2.B",
+        "format" : { }
+      },
+      {
+        "conditionalFormatting" : {
+          "backgroundColor" : {
+            "referenceField" : "G",
+            "type" : "single",
+            "parameters" : {
+              "formatValue" : "#673300",
+              "operandValue" : 0,
+              "operator" : "=="
+            }
+          }
+        },
+        "field" : "ActiveAccounts_2.F",
+        "format" : { }
+      },
+      {
+        "conditionalFormatting" : {
+          "backgroundColor" : {
+            "referenceField" : "G",
+            "type" : "single",
+            "parameters" : {
+              "formatValue" : "#673300",
+              "operandValue" : 0,
+              "operator" : "=="
+            }
+          }
+        },
+        "field" : "ActiveAccounts_2.D",
+        "format" : { }
+      },
+      {
+        "conditionalFormatting" : {
+          "backgroundColor" : {
+            "referenceField" : "G",
+            "type" : "single",
+            "parameters" : {
+              "formatValue" : "#673300",
+              "operandValue" : 0,
+              "operator" : "=="
+            }
+          }
+        },
+        "field" : "ActiveAccounts_2.E",
+        "format" : { }
+      }
+    ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [
+      {
+        "recordDisplayFields" : [ ],
+        "conditionalFormatting" : {
+          "backgroundColor" : {
+            "referenceField" : "G",
+            "type" : "single",
+            "parameters" : {
+              "formatValue" : "#673300",
+              "operandValue" : 0,
+              "operator" : "=="
+            }
+          }
+        },
+        "salesforceActions" : [ ],
+        "field" : "ActiveAccounts_2.SalesAgreementProduct.SalesAgreement.Account.Name",
+        "members" : [ ],
+        "customActions" : [ ]
+      }
+    ]
+  },
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.SalesAgreement.Account.Owner.Name"
+        ],
+        "label" : "Account Owner",
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.SalesAgreement.Account.Type"
+        ],
+        "label" : "Account Type",
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.SalesAgreement.Account.Name"
+        ],
+        "label" : "Account",
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.SalesAgreement.Account.Parent.Name"
+        ],
+        "label" : "Parent Account",
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.SalesAgreement.Account.Industry"
+        ],
+        "label" : "Industry",
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.SalesAgreement.Account.BillingCountry"
+        ],
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "SalesAgreementProduct.Product.Family"
+        ],
+        "locked" : false,
+        "operator" : "in"
+      }
+    ],
+    "gridLayouts" : [
+      {
+        "maxWidth" : 1500,
+        "name" : "Default",
+        "numColumns" : 50,
+        "pages" : [
+          {
+            "label" : "ACCOUNTS WHITESPACE",
+            "name" : "affd9fef-3319-4206-840e-62d065d7b8c8",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_1",
+                "row" : 7,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#E6ECF2",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 49,
+                "column" : 1,
+                "name" : "filterpanel_1",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 1,
+                "name" : "text_3",
+                "row" : 85,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_4",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#7D98B3",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 3,
+                "name" : "text_13",
+                "row" : 1,
+                "rowspan" : 5,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "left"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 2,
+                "column" : 1,
+                "name" : "image_2",
+                "row" : 1,
+                "rowspan" : 5,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 11,
+                "name" : "link_11",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "rgb(0, 112, 210)",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 23,
+                "column" : 1,
+                "name" : "text_28",
+                "row" : 15,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "table_1",
+                "row" : 19,
+                "rowspan" : 18,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(18, 37, 76)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 22,
+                "column" : 2,
+                "name" : "text_1",
+                "row" : 42,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 14,
+                "column" : 2,
+                "name" : "text_2",
+                "row" : 46,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 46,
+                "column" : 2,
+                "name" : "chart_1",
+                "row" : 51,
+                "rowspan" : 28,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 16,
+                "name" : "listselector_1",
+                "row" : 46,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#C6D3E1",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "table_2",
+                "row" : 89,
+                "rowspan" : 31,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 19,
+                "name" : "link_1",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "container_6",
+                "row" : 41,
+                "rowspan" : 41,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 39,
+                "name" : "pillbox_1",
+                "row" : 43,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "text_6",
+                "row" : 39,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(220, 228, 239)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "text_7",
+                "row" : 82,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(220, 228, 239)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_2",
+                "row" : 84,
+                "rowspan" : 38,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 1,
+                "column" : 0,
+                "name" : "text_10",
+                "row" : 41,
+                "rowspan" : 41,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(220, 228, 239)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 1,
+                "column" : 49,
+                "name" : "text_11",
+                "row" : 41,
+                "rowspan" : 41,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(220, 228, 239)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              }
+            ]
+          },
+          {
+            "label" : "PRODUCT RECOMMENDATION1",
+            "name" : "286f71cb-f18e-462f-af41-9ec6ac5c5751",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 49,
+                "column" : 1,
+                "name" : "filterpanel_1",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 1,
+                "name" : "text_3",
+                "row" : 63,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_4",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#7D98B3",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 3,
+                "name" : "text_13",
+                "row" : 1,
+                "rowspan" : 5,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "left"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 2,
+                "column" : 1,
+                "name" : "image_2",
+                "row" : 1,
+                "rowspan" : 5,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 19,
+                "name" : "link_2",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "rgb(0, 112, 210)",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 11,
+                "name" : "link_4",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "container_5",
+                "row" : 15,
+                "rowspan" : 45,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(17, 48, 91)",
+                  "borderColor" : "rgb(230, 236, 242)",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 23,
+                "column" : 2,
+                "name" : "text_8",
+                "row" : 16,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "table_5",
+                "row" : 67,
+                "rowspan" : 31,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 13,
+                "column" : 2,
+                "name" : "text_9",
+                "row" : 20,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 15,
+                "name" : "listselector_3",
+                "row" : 20,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "rgb(51, 87, 121)",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 21,
+                "column" : 26,
+                "name" : "text_4",
+                "row" : 25,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(51, 87, 121, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 23,
+                "column" : 2,
+                "name" : "chart_5",
+                "row" : 24,
+                "rowspan" : 34,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 22,
+                "column" : 26,
+                "name" : "table_6",
+                "row" : 29,
+                "rowspan" : 29,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 34,
+                "name" : "link_5",
+                "row" : 20,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#335779",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 41,
+                "name" : "link_9",
+                "row" : 20,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "rgb(51, 87, 121)",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_1",
+                "row" : 7,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#E6ECF2",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_2",
+                "row" : 62,
+                "rowspan" : 38,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          },
+          {
+            "label" : "PRODUCT RECOMMENDATION2",
+            "name" : "cadb1626-c4a9-4eed-9260-819c63994cdf",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_1",
+                "row" : 7,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#E6ECF2",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 49,
+                "column" : 1,
+                "name" : "filterpanel_1",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 10,
+                "column" : 1,
+                "name" : "text_3",
+                "row" : 63,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_4",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#7D98B3",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 3,
+                "name" : "text_13",
+                "row" : 1,
+                "rowspan" : 5,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "left"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 2,
+                "column" : 1,
+                "name" : "image_2",
+                "row" : 1,
+                "rowspan" : 5,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 19,
+                "name" : "link_2",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "rgb(0, 112, 210)",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 11,
+                "name" : "link_4",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 23,
+                "column" : 2,
+                "name" : "text_8",
+                "row" : 16,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "table_5",
+                "row" : 67,
+                "rowspan" : 31,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 13,
+                "column" : 2,
+                "name" : "text_9",
+                "row" : 20,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "rgba(230, 236, 242, 0)",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 8
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 15,
+                "name" : "listselector_3",
+                "row" : 20,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "rgb(51, 87, 121)",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 4,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 22,
+                "column" : 2,
+                "name" : "chart_3",
+                "row" : 27,
+                "rowspan" : 31,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 22,
+                "column" : 26,
+                "name" : "table_4",
+                "row" : 29,
+                "rowspan" : 29,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 19,
+                "column" : 26,
+                "name" : "text_4",
+                "row" : 25,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(51, 87, 121, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 34,
+                "name" : "link_6",
+                "row" : 20,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(18, 37, 76, 0)",
+                  "borderColor" : "rgb(51, 87, 121)",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 41,
+                "name" : "link_8",
+                "row" : 20,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#335779",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 48,
+                "column" : 1,
+                "name" : "container_5",
+                "row" : 15,
+                "rowspan" : 45,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgb(17, 48, 91)",
+                  "borderColor" : "rgb(230, 236, 242)",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 50,
+                "column" : 0,
+                "name" : "container_2",
+                "row" : 62,
+                "rowspan" : 38,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [ ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "rgb(4, 29, 64)",
+          "cellSpacingX" : 0,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#C5D3E0"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "AccountsFilter_1" : {
+        "broadcastFacet" : false,
+        "groups" : [ ],
+        "label" : "AccountsFilter",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by {{column(SalesAgreementProduc_3.selection, [\"SalesAgreementProduct.Name\"]).asEquality(\"SalesAgreementProduct.Name\")}};\nresult = group q by all;\nq = foreach q generate 'SalesAgreementProduct.SalesAgreement.AccountId' as 'AccountId';",
+        "receiveFacet" : false,
+        "selectMode" : "single",
+        "strings" : [
+          "AccountId"
+        ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "maxColumnWidth" : 300,
+            "minColumnWidth" : 40,
+            "mode" : "variable",
+            "numberOfLines" : 1,
+            "showActionMenu" : true,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "AccountsToggle_1" : {
+        "broadcastFacet" : true,
+        "columns" : {
+          "Display" : {
+            "type" : "string"
+          }
+        },
+        "label" : "AccountsToggle",
+        "selectMode" : "singlerequired",
+        "type" : "staticflex",
+        "values" : [
+          {
+            "display" : "ACTIVE ACCOUNTS",
+            "value" : "[\"Activated\"]",
+            "label" : "Active Accounts",
+            "filtercondition" : ""
+          },
+          {
+            "display" : "ALL ACCOUNTS",
+            "value" : "[\"Activated\", \"Cancelled\", \"Expired\"]",
+            "label" : "All Accounts",
+            "filtercondition" : "--"
+          }
+        ]
+      },
+      "CLV_1" : {
+        "broadcastFacet" : true,
+        "columns" : {
+          "Display" : {
+            "type" : "string"
+          }
+        },
+        "label" : "CLV",
+        "selectMode" : "singlerequired",
+        "type" : "staticflex",
+        "values" : [
+          {
+            "display" : "CUSTOMER LIFETIME VALUE",
+            "value" : "CLV",
+            "label" : "Customer Litetime Value"
+          },
+          {
+            "display" : "REVENUE",
+            "value" : "Revenue",
+            "label" : "Revenue"
+          }
+        ]
+      },
+      "SalesAgreementProduc_2" : {
+        "broadcastFacet" : false,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "SalesAgreementProduct.SalesAgreement.StatusCode"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "multirequired",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "SalesAgreementProduc_3" : {
+        "broadcastFacet" : false,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "SalesAgreementProduct.Name"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : false,
+        "selectMode" : "singlerequired",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "static_2" : {
+        "broadcastFacet" : true,
+        "columns" : {
+          "Text2" : {
+            "type" : "string"
+          },
+          "Display" : {
+            "type" : "string"
+          }
+        },
+        "label" : "",
+        "selectMode" : "singlerequired",
+        "type" : "staticflex",
+        "values" : [
+          {
+            "Display" : "Revenue",
+            "value" : "Revenue"
+          },
+          {
+            "Display" : "Quantity",
+            "value" : "ActualQuantity"
+          }
+        ]
+      },
+      "AgreementFilter_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "AgreementFilter",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by {{column(SalesAgreementProduc_3.selection, [\"SalesAgreementProduct.Name\"]).asEquality(\"SalesAgreementProduct.Name\")}};\nq = foreach q generate 'SalesAgreementProduct.SalesAgreementId' as 'AgreementId';",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "maxColumnWidth" : 300,
+            "minColumnWidth" : 40,
+            "mode" : "variable",
+            "numberOfLines" : 1,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "ActiveAccounts_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MFG_SalesAgreementProductSchedule_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "ActiveAccounts",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "unique",
+                "SalesAgreementProduct.SalesAgreement.Name",
+                "A"
+              ],
+              [
+                "unique",
+                "SalesAgreementProductId",
+                "B"
+              ],
+              [
+                "sum",
+                "DerivedActualAmount",
+                "C"
+              ],
+              [
+                "unique",
+                "SalesAgreementProduct.SalesAgreement.Name",
+                "D"
+              ],
+              [
+                "unique",
+                "SalesAgreementProduct.SalesAgreement.Name",
+                "E"
+              ],
+              [
+                "sum",
+                "DerivedPlannedAmount",
+                "F"
+              ],
+              [
+                "count",
+                "*",
+                "G"
+              ]
+            ],
+            "columns" : [
+              {
+                "query" : {
+                  "measures" : [
+                    [
+                      "unique",
+                      "SalesAgreementProduct.SalesAgreement.Name"
+                    ]
+                  ],
+                  "groups" : [
+                    "SalesAgreementProduct.SalesAgreement.Account.Name"
+                  ],
+                  "filters" : [
+                    [
+                      "SalesAgreementProduct.SalesAgreement.StatusCode",
+                      [
+                        "Activated",
+                        "Approved"
+                      ],
+                      "in"
+                    ]
+                  ]
+                },
+                "header" : "# of Approved or Active Agreements"
+              },
+              {
+                "query" : {
+                  "measures" : [
+                    [
+                      "unique",
+                      "SalesAgreementProductId"
+                    ]
+                  ],
+                  "groups" : [
+                    "SalesAgreementProduct.SalesAgreement.Account.Name"
+                  ]
+                },
+                "header" : "# of Products"
+              },
+              {
+                "query" : {
+                  "measures" : [
+                    [
+                      "sum",
+                      "DerivedActualAmount"
+                    ]
+                  ],
+                  "groups" : [
+                    "SalesAgreementProduct.SalesAgreement.Account.Name"
+                  ]
+                },
+                "header" : "Past Revenue"
+              },
+              {
+                "query" : {
+                  "measures" : [
+                    [
+                      "unique",
+                      "SalesAgreementProduct.SalesAgreement.Name"
+                    ]
+                  ],
+                  "groups" : [
+                    "SalesAgreementProduct.SalesAgreement.Account.Name"
+                  ],
+                  "filters" : [
+                    [
+                      "SalesAgreementProduct.SalesAgreement.StatusCode",
+                      [
+                        "InProcess"
+                      ],
+                      "in"
+                    ]
+                  ]
+                },
+                "header" : "# of In-Process Agreements"
+              },
+              {
+                "query" : {
+                  "measures" : [
+                    [
+                      "unique",
+                      "SalesAgreementProduct.SalesAgreement.Name"
+                    ]
+                  ],
+                  "groups" : [
+                    "SalesAgreementProduct.SalesAgreement.Account.Name"
+                  ],
+                  "filters" : [
+                    [
+                      "SalesAgreementProduct.SalesAgreement.StatusCode",
+                      [
+                        "Cancelled",
+                        "Expired"
+                      ],
+                      "in"
+                    ]
+                  ]
+                },
+                "header" : "# of Expired or Cancelled Agreements"
+              },
+              {
+                "query" : {
+                  "measures" : [
+                    [
+                      "sum",
+                      "DerivedPlannedAmount"
+                    ]
+                  ],
+                  "groups" : [
+                    "SalesAgreementProduct.SalesAgreement.Account.Name"
+                  ]
+                },
+                "header" : "Total Planned Revenue"
+              },
+              {
+                "query" : {
+                  "measures" : [
+                    [
+                      "count",
+                      "*"
+                    ]
+                  ],
+                  "groups" : [
+                    "SalesAgreementProduct.SalesAgreement.Account.Name"
+                  ],
+                  "formula" : "coalesce(A,0)",
+                  "order" : [
+                    [
+                      -1,
+                      {
+                        "ascending" : true,
+                        "inner" : false
+                      }
+                    ]
+                  ]
+                },
+                "header" : "ActiveFlag"
+              }
+            ],
+            "groups" : [
+              "SalesAgreementProduct.SalesAgreement.Account.Name"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "options" : { },
+          "parameters" : {
+            "borderColor" : "#54698d",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#16325c",
+              "fontColor" : "#ffffff",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [
+              "A",
+              "B",
+              "F",
+              "D",
+              "E",
+              "C",
+              "SalesAgreementProduct.SalesAgreement.Account.Name"
+            ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#000000",
+              "fontColor" : "#ffffff",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#54698d",
+            "innerMinorBorderColor" : "#54698d",
+            "mode" : "fittocontainer",
+            "numberOfLines" : 1,
+            "pivoted" : false,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : false,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "SalesAgreementProduc_1" : {
+        "broadcastFacet" : false,
+        "groups" : [ ],
+        "label" : "SalesAgreementProduc_1",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nresult = group q by ('SalesAgreementProduct.SalesAgreement.Account.Name', 'SalesAgreementProduct.Name', 'SalesAgreementProduct.SalesAgreement.Name', 'SalesAgreementProduct.SalesAgreement.Status', 'SalesAgreementProduct.SalesAgreement.StartDate_Year', 'SalesAgreementProduct.SalesAgreement.StartDate_Month', 'SalesAgreementProduct.SalesAgreement.StartDate_Day', 'SalesAgreementProduct.SalesAgreement.EndDate_Year', 'SalesAgreementProduct.SalesAgreement.EndDate_Month', 'SalesAgreementProduct.SalesAgreement.EndDate_Day');\nresult = foreach result generate q.'SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', q.'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', q.'SalesAgreementProduct.SalesAgreement.Name' as 'SalesAgreementProduct.SalesAgreement.Name', q.'SalesAgreementProduct.SalesAgreement.StartDate_Year' + \"-\" + q.'SalesAgreementProduct.SalesAgreement.StartDate_Month' + \"-\" + q.'SalesAgreementProduct.SalesAgreement.StartDate_Day' as 'Agreement Start Date', q.'SalesAgreementProduct.SalesAgreement.EndDate_Year' + \"-\" + q.'SalesAgreementProduct.SalesAgreement.EndDate_Month' + \"-\" + q.'SalesAgreementProduct.SalesAgreement.EndDate_Day'  as 'Agreement End Date', q.'SalesAgreementProduct.SalesAgreement.Status' as 'Status', sum(q.'DerivedActualAmount') \n    as 'Actual Revenue', sum(q.'PlannedAmountFinal') as 'B', sum(q.'ActualQuantity') as 'Actual Quantity', sum(q.'PlannedQuantity') as 'Planned Quantity' ;\nresult = order result by ('SalesAgreementProduct.SalesAgreement.Account.Name' asc, 'SalesAgreementProduct.Name' asc, \n'SalesAgreementProduct.SalesAgreement.Name' asc, 'Status' asc, 'Agreement Start Date' asc, 'Agreement End Date' asc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "mode" : "fittocontainer",
+            "numberOfLines" : 1,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : false,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "ActiveAccounts_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "ActiveAccounts",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = group q by 'SalesAgreementProduct.SalesAgreement.AccountId';\nq = foreach q generate 'SalesAgreementProduct.SalesAgreement.AccountId' as 'AccountId'; ",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "maxColumnWidth" : 300,
+            "minColumnWidth" : 40,
+            "mode" : "variable",
+            "numberOfLines" : 1,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : true,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "SalesAgreementProduc_6" : {
+        "broadcastFacet" : false,
+        "groups" : [ ],
+        "label" : "SalesAgreementProduc_6",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nr = filter q by {{column(SalesAgreementProduc_3.selection, [\"SalesAgreementProduct.Name\"]).asEquality(\"SalesAgreementProduct.Name\")}};\ns = filter q by {{column(SalesAgreementProduc_4.selection,[\"SalesAgreementProduct.Name\"]).asEquality(\"SalesAgreementProduct.Name\") }};\n\nresult = group r by 'SalesAgreementProduct.SalesAgreement.Account.Name' left, s by 'SalesAgreementProduct.SalesAgreement.Account.Name';\nfinal = foreach result generate r['SalesAgreementProduct.SalesAgreement.Account.Name'] as 'Account', sum(r.'ActualQuantity') as 'Units of Selected Product', sum(s.'ActualQuantity') as 'Units of Recommended Product';\n\nfinal = order final by ('Units of Selected Product' desc);",
+        "receiveFacet" : false,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "borderColor" : "#54698d",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#16325c",
+              "fontColor" : "#ffffff",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#000000",
+              "fontColor" : "#ffffff",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#54698d",
+            "innerMinorBorderColor" : "#54698d",
+            "mode" : "fittocontainer",
+            "numberOfLines" : 1,
+            "pivoted" : false,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : false,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "AccountProductRevenu_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "AccountProductRevenue",
+        "numbers" : [ ],
+        "query" : "p = load \"${App.Datasets.MFG_SalesAgreementProduct_tp.FullyQualifiedName}\";\nq = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by {{column(SalesAgreementProduc_2.selection, [\"SalesAgreementProduct.SalesAgreement.StatusCode\"]).asEquality(\"SalesAgreementProduct.SalesAgreement.StatusCode\")}};\np = group p by ('Product.Name', 'SalesAgreement.Account.Name');\np = foreach p generate p.'Product.Name' as 'Product.Name', p.'SalesAgreement.Account.Name' as 'SalesAgreement.Account.Name',\n         0 as 'Revenue', 0 as 'ActualQuantity';\n\nq = filter q by 'isValidProductSchedule' == \"true\";\nq = group q by ('SalesAgreementProduct.SalesAgreement.Account.Name', 'SalesAgreementProduct.Name');\nq = foreach q generate 'SalesAgreementProduct.SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', 'SalesAgreementProduct.Name' \n    as 'SalesAgreementProduct.Name', sum('DerivedActualAmount') as 'Revenue', sum(ActualQuantity) as 'ActualQuantity';\n\nr = group p by ('SalesAgreement.Account.Name','Product.Name') left, q by ('SalesAgreementProduct.SalesAgreement.Account.Name','SalesAgreementProduct.Name');\n\nr = foreach r generate p.'SalesAgreement.Account.Name' as 'SalesAgreementProduct.SalesAgreement.Account.Name', \n   p.'Product.Name' as 'SalesAgreementProduct.Name',  coalesce(sum(q.'{{row(static_2.selection,[0],[\"value\"]).asObject()}}'),0) as 'Revenue';   \nr = order r by ('SalesAgreementProduct.SalesAgreement.Account.Name' asc, 'SalesAgreementProduct.Name' asc);",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "highColor" : "#009DDF",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "lowColor" : "#E2F4FC",
+            "visualizationType" : "matrix",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "columnMap" : {
+              "r" : [
+                "Revenue"
+              ],
+              "color" : [
+                "Revenue"
+              ],
+              "x" : [
+                "SalesAgreementProduct.Name"
+              ],
+              "y" : [
+                "SalesAgreementProduct.SalesAgreement.Account.Name"
+              ]
+            },
+            "showActionMenu" : true,
+            "x" : {
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "Products"
+            },
+            "y" : {
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "Accounts"
+            },
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "SalesAgreementProduc_4" : {
+        "broadcastFacet" : false,
+        "groups" : [ ],
+        "label" : "SalesAgreementProduc_4",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by {{column(AgreementFilter_1.result, [\"AgreementId\"]).asEquality('SalesAgreementProduct.SalesAgreementId')}};\nq = filter q by 'SalesAgreementProduct.Name' != \"{{row(SalesAgreementProduc_3.selection,[0],[\"SalesAgreementProduct.Name\"]).asObject()}}\";\nq = group q by 'SalesAgreementProduct.Name';\nq = foreach q generate 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', unique('SalesAgreementProduct.SalesAgreement.Name') as 'unique_SalesAgreementProduct.SalesAgreement.Name';\nq = filter q by 'SalesAgreementProduct.Name' != \"{{row(SalesAgreementProduc_3.selection,[0],[\"SalesAgreementProduct.Name\"]).asObject()}}\";\nq = order q by 'unique_SalesAgreementProduct.SalesAgreement.Name' desc;",
+        "receiveFacet" : false,
+        "selectMode" : "singlerequired",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "# of Sales Agreements",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : false,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "Product",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Relationship_Header_1" : {
+        "broadcastFacet" : true,
+        "groups" : [ ],
+        "label" : "Relationship_Header",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by {{column(ActiveAccounts_1.result, [\"AccountId\"]).asEquality('SalesAgreementProduct.SalesAgreement.AccountId')}};\nq = foreach q generate q.'SalesAgreementProduct.SalesAgreementId' as 'SalesAgreementProduct.SalesAgreementId',q.'SalesAgreementProduct.SalesAgreement.Name' as 'SalesAgreementProduct.SalesAgreement.Name', q.'SalesAgreementProduct.SalesAgreement.AccountId' as 'AccountId', 'SalesAgreementProduct.SalesAgreement.Account.Name' as 'AccountName', q.'SalesAgreementProduct.SalesAgreement.StartDate_sec_epoch' as 'StartDate_sec_epoch', q.'SalesAgreementProduct.SalesAgreement.EndDate_sec_epoch' as 'EndDate_sec_epoch', 'DerivedActualAmount' as 'DerivedActualAmount', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'DerivedPlannedAmount' as 'DerivedPlannedAmount',\nq.'DerivedActualAmount'/(daysBetween(toDate(q.'SalesAgreementProduct.SalesAgreement.StartDate_sec_epoch'),case when toDate(q.'ActualEndDate_sec_epoch') < now() then toDate(q.'ActualEndDate_sec_epoch') else now() end)+1) as 'ActualDailyAmount', \n(case when toDate(q.'SalesAgreementProduct.SalesAgreement.StartDate_sec_epoch') > now() then 0 else (daysBetween((case when toDate(q.'SalesAgreementProduct.SalesAgreement.StartDate_sec_epoch') < toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\") && toDate(q.'EndDate_sec_epoch') > toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\") then toDate((toString(now(), \"yyyy\")+\"-01-01\"), \"yyyy-MM-dd\") else toDate(q.'SalesAgreementProduct.SalesAgreement.StartDate_sec_epoch') end),case when toDate(q.'ActualEndDate_sec_epoch') < now() then toDate(q.'ActualEndDate_sec_epoch') else now() end)+1) end) as 'ActualDays_YTD', \nq.'PlannedDailyAmount' as 'PlannedDailyAmount',\n    case when toDate(q.'ActualEndDate_sec_epoch') > now() then  daysBetween( case when toDate(q.'SalesAgreementProduct.SalesAgreement.StartDate_sec_epoch') > now() then toDate(q.'SalesAgreementProduct.SalesAgreement.StartDate_sec_epoch') else now() end, toDate(q.'ActualEndDate_sec_epoch'))+1 end as 'FutureDays';\n\n\nq = foreach q generate q.'SalesAgreementProduct.SalesAgreementId' as 'SalesAgreementProduct.SalesAgreementId', q.'SalesAgreementProduct.SalesAgreement.Name' as 'SalesAgreementProduct.SalesAgreement.Name', 'AccountName' as 'AccountName','AccountId' as 'AccountId', 'StartDate_sec_epoch' as 'StartDate_sec_epoch', 'EndDate_sec_epoch' as 'EndDate_sec_epoch', \n'DerivedActualAmount' as 'DerivedActualAmount', 'PlannedAmountFinal' as 'PlannedAmountFinal', 'DerivedPlannedAmount' as 'DerivedPlannedAmount', (q.'ActualDailyAmount'*q.'ActualDays_YTD') as  'RevenueTillToday', (q.'PlannedDailyAmount'*q.'ActualDays_YTD') as 'PlannedTillToday', (q.'PlannedDailyAmount'*q.'FutureDays') as 'PlannedAfterToday'; \n\nresult = group q by all;\nresult = foreach result generate unique('AccountId') as 'NoOfAccounts', sum(q.'RevenueTillToday')+(sum(q.'PlannedAfterToday')* (sum(q.'RevenueTillToday')/sum(q.PlannedTillToday))) as 'RevenueGenerated', sum(q.'DerivedPlannedAmount') as 'PlannedRevenue', (sum(q.'RevenueTillToday')+(sum(q.'PlannedAfterToday')* (sum(q.'RevenueTillToday')/sum(q.PlannedTillToday))))/unique('AccountId') as 'Avg_Customer_Lifetime_Value';",
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "SalesAgreementProduc_5" : {
+        "broadcastFacet" : false,
+        "groups" : [ ],
+        "label" : "SalesAgreementProduc_5",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nr = filter q by {{column(SalesAgreementProduc_3.selection, [\"SalesAgreementProduct.Name\"]).asEquality(\"SalesAgreementProduct.Name\")}};\ns = filter q by {{column(AccountsWithProduct_1.selection,[\"SalesAgreementProduct.Name\"]).asEquality(\"SalesAgreementProduct.Name\") }};\n\nresult = group r by 'SalesAgreementProduct.SalesAgreement.Account.Name' left, s by 'SalesAgreementProduct.SalesAgreement.Account.Name';\nfinal = foreach result generate r['SalesAgreementProduct.SalesAgreement.Account.Name'] as 'Account', sum(r.'ActualQuantity') as 'Units of Selected Product', sum(s.'ActualQuantity') as 'Units of Recommended Product';\n\nfinal = order final by ('Units of Selected Product' desc);",
+        "receiveFacet" : false,
+        "selectMode" : "single",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "borderColor" : "#54698d",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#16325c",
+              "fontColor" : "#ffffff",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#000000",
+              "fontColor" : "#ffffff",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#54698d",
+            "innerMinorBorderColor" : "#54698d",
+            "mode" : "fittocontainer",
+            "numberOfLines" : 1,
+            "pivoted" : false,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : false,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "AccountsWithProduct_1" : {
+        "broadcastFacet" : false,
+        "groups" : [ ],
+        "label" : "AccountsWithProduct",
+        "numbers" : [ ],
+        "query" : "q = load \"${App.Datasets.MFG_SalesAgreementProductSchedule_tp.FullyQualifiedName}\";\nq = filter q by {{column(AccountsFilter_1.result, [\"AccountId\"]).asEquality('SalesAgreementProduct.SalesAgreement.AccountId')}};\nq = filter q by 'SalesAgreementProduct.Name' != \"{{row(SalesAgreementProduc_3.selection,[0],[\"SalesAgreementProduct.Name\"]).asObject()}}\";\nq = group q by 'SalesAgreementProduct.Name';\nq = foreach q generate 'SalesAgreementProduct.Name' as 'SalesAgreementProduct.Name', unique('SalesAgreementProduct.SalesAgreement.Account.Name') as 'unique_SalesAgreementProduct.SalesAgreement.Account.Name';\nq = order q by 'unique_SalesAgreementProduct.SalesAgreement.Account.Name' desc;",
+        "receiveFacet" : false,
+        "selectMode" : "singlerequired",
+        "strings" : [ ],
+        "type" : "saql",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "binValues" : false,
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "# of Accounts",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "Product",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "#FFFFFF",
+      "borderColor" : "#E6ECF2",
+      "borderEdges" : [ ],
+      "borderRadius" : 0,
+      "borderWidth" : 1
+    },
+    "widgets" : {
+      "number_12" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : true,
+          "measureField" : "NoOfAccounts",
+          "numberColor" : "#091A3E",
+          "numberSize" : 16,
+          "showActionMenu" : true,
+          "step" : "Relationship_Header_1",
+          "textAlignment" : "left",
+          "title" : "",
+          "titleColor" : "#091A3E",
+          "titleSize" : 16
+        },
+        "type" : "number"
+      },
+      "number_11" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "PlannedRevenue",
+          "numberColor" : "#E6ECF2",
+          "numberSize" : 16,
+          "showActionMenu" : true,
+          "step" : "Relationship_Header_1",
+          "textAlignment" : "left",
+          "title" : "",
+          "titleColor" : "#091A3E",
+          "titleSize" : 16
+        },
+        "type" : "number"
+      },
+      "number_10" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "NoOfAccounts",
+          "numberColor" : "#E6ECF2",
+          "numberSize" : 16,
+          "showActionMenu" : true,
+          "step" : "Relationship_Header_1",
+          "textAlignment" : "left",
+          "title" : "",
+          "titleColor" : "#091A3E",
+          "titleSize" : 16
+        },
+        "type" : "number"
+      },
+      "text_19" : {
+        "parameters" : {
+          "fontSize" : 10,
+          "showActionMenu" : true,
+          "text" : "TOTAL NO OF ACCOUNTS",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "text_13" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "Whitespace Analysis",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "link_11" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "affd9fef-3319-4206-840e-62d065d7b8c8"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "ACCOUNTS WHITESPACE",
+          "textAlignment" : "center",
+          "textColor" : "rgb(0, 112, 210)"
+        },
+        "type" : "link"
+      },
+      "text_10" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "text_11" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "container_1" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_2" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_4" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_5" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "text_3" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "Details Table",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "container_6" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "text_2" : {
+        "parameters" : {
+          "fontSize" : 14,
+          "showActionMenu" : true,
+          "text" : "Select sales agreement states to exclude from whitespace",
+          "textAlignment" : "left",
+          "textColor" : "#335779"
+        },
+        "type" : "text"
+      },
+      "chart_5" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showValues" : true,
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "binValues" : false,
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "# of Accounts",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "AccountsWithProduct_1",
+          "dimensionAxis" : {
+            "showTitle" : true,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "Recommended Product",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round",
+                "parameters" : { }
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "text_5" : {
+        "parameters" : {
+          "fontSize" : 14,
+          "showActionMenu" : true,
+          "text" : "Which accounts do not have active or approved agreements?",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "text_4" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "How many units of selected product are sold?",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "text_7" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "chart_1" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : false,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "highColor" : "#009DDF",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "lowColor" : "#E2F4FC",
+          "visualizationType" : "matrix",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "columnMap" : {
+            "r" : [
+              "Revenue"
+            ],
+            "color" : [
+              "Revenue"
+            ],
+            "x" : [
+              "SalesAgreementProduct.Name"
+            ],
+            "y" : [
+              "SalesAgreementProduct.SalesAgreement.Account.Name"
+            ]
+          },
+          "showActionMenu" : true,
+          "x" : {
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "Products"
+          },
+          "y" : {
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "Accounts"
+          },
+          "theme" : "wave",
+          "step" : "AccountProductRevenu_1",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "text_6" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "text_9" : {
+        "parameters" : {
+          "fontSize" : 14,
+          "showActionMenu" : true,
+          "text" : "Select the product to view products most sold with it",
+          "textAlignment" : "left",
+          "textColor" : "#7D98B3"
+        },
+        "type" : "text"
+      },
+      "text_8" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "What products are most sold together?",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "chart_3" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showValues" : true,
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "# of Sales Agreements",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "SalesAgreementProduc_4",
+          "dimensionAxis" : {
+            "showTitle" : true,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "Recommended Product",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round",
+                "parameters" : { }
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "text_1" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "In which accounts could I be selling more products?",
+          "textAlignment" : "left",
+          "textColor" : "#091A3E"
+        },
+        "type" : "text"
+      },
+      "filterpanel_1" : {
+        "parameters" : {
+          "filterItemOptions" : {
+            "backgroundColor" : "#FFFFFF",
+            "borderColor" : "#E6ECF2",
+            "borderRadius" : 4,
+            "borderWidth" : 1,
+            "propertyColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "filters" : [ ],
+          "itemsPerRow" : 7,
+          "showAllFilters" : true,
+          "title" : {
+            "separatorColor" : "#E6ECF2",
+            "text" : {
+              "align" : "left",
+              "color" : "#091A3E",
+              "fontSize" : 16,
+              "label" : "Filters"
+            },
+            "visible" : false
+          }
+        },
+        "type" : "filterpanel"
+      },
+      "image_2" : {
+        "parameters" : {
+          "alignmentX" : "center",
+          "alignmentY" : "center",
+          "fit" : "fitwidth",
+          "image" : {
+            "name" : "${App.Images['manufacturing_app_icon2xpng'].Name}",
+            "namespace" : "${Org.Namespace}"
+          }
+        },
+        "type" : "image"
+      },
+      "listselector_3" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#E6ECF2",
+            "valueColor" : "#E6ECF2"
+          },
+          "instant" : false,
+          "measureField" : "none",
+          "showActionMenu" : false,
+          "step" : "SalesAgreementProduc_3",
+          "title" : ""
+        },
+        "type" : "listselector"
+      },
+      "text_28" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "showActionMenu" : true,
+          "text" : "Which accounts do not have active or approved agreements?",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "link_3" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "32e04838-d3ff-4554-b350-dbf372b7b843"
+          },
+          "destinationType" : "page",
+          "fontSize" : 16,
+          "includeState" : false,
+          "text" : "OVERVIEW",
+          "textAlignment" : "center",
+          "textColor" : "#091A3E"
+        },
+        "type" : "link"
+      },
+      "text_25" : {
+        "parameters" : {
+          "fontSize" : 10,
+          "showActionMenu" : true,
+          "text" : "AVG CUSTOMER LIFETIME VALUE",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "text_24" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : true,
+          "text" : "Which are my most and least valuable accounts?",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "link_4" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "affd9fef-3319-4206-840e-62d065d7b8c8"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "ACCOUNTS WHITESPACE",
+          "textAlignment" : "center",
+          "textColor" : "#335779"
+        },
+        "type" : "link"
+      },
+      "link_1" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "286f71cb-f18e-462f-af41-9ec6ac5c5751"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "PRODUCT RECOMMENDATION",
+          "textAlignment" : "center",
+          "textColor" : "rgb(84, 105, 141)"
+        },
+        "type" : "link"
+      },
+      "link_2" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "286f71cb-f18e-462f-af41-9ec6ac5c5751"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "PRODUCT RECOMMENDATION",
+          "textAlignment" : "center",
+          "textColor" : "rgb(0, 112, 210)"
+        },
+        "type" : "link"
+      },
+      "text_21" : {
+        "parameters" : {
+          "fontSize" : 10,
+          "showActionMenu" : true,
+          "text" : "TOTAL REVENUE GENERATED",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "text_23" : {
+        "parameters" : {
+          "fontSize" : 12,
+          "showActionMenu" : true,
+          "text" : "What is the relationship length of my accounts?",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "text_22" : {
+        "parameters" : {
+          "fontSize" : 10,
+          "showActionMenu" : true,
+          "text" : "TOTAL PLANNED REVENUE",
+          "textAlignment" : "left",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "text"
+      },
+      "table_1" : {
+        "parameters" : {
+          "borderColor" : "#54698d",
+          "borderWidth" : 1,
+          "cell" : {
+            "backgroundColor" : "#16325c",
+            "fontColor" : "#ffffff",
+            "fontSize" : 12
+          },
+          "columnProperties" : { },
+          "columns" : [
+            "A",
+            "B",
+            "F",
+            "D",
+            "E",
+            "C",
+            "SalesAgreementProduct.SalesAgreement.Account.Name"
+          ],
+          "customBulkActions" : [ ],
+          "exploreLink" : true,
+          "header" : {
+            "backgroundColor" : "#000000",
+            "fontColor" : "#ffffff",
+            "fontSize" : 12
+          },
+          "innerMajorBorderColor" : "#54698d",
+          "innerMinorBorderColor" : "#54698d",
+          "mode" : "fittocontainer",
+          "numberOfLines" : 1,
+          "pivoted" : false,
+          "showActionMenu" : true,
+          "showRowIndexColumn" : false,
+          "step" : "ActiveAccounts_2",
+          "totals" : true,
+          "verticalPadding" : 8
+        },
+        "type" : "table"
+      },
+      "table_2" : {
+        "parameters" : {
+          "borderColor" : "#e0e5ee",
+          "borderWidth" : 1,
+          "cell" : {
+            "backgroundColor" : "#ffffff",
+            "fontColor" : "#16325c",
+            "fontSize" : 12
+          },
+          "columnProperties" : { },
+          "columns" : [ ],
+          "customBulkActions" : [ ],
+          "exploreLink" : true,
+          "header" : {
+            "backgroundColor" : "#f4f6f9",
+            "fontColor" : "#16325c",
+            "fontSize" : 12
+          },
+          "innerMajorBorderColor" : "#a8b7c7",
+          "innerMinorBorderColor" : "#e0e5ee",
+          "mode" : "fittocontainer",
+          "numberOfLines" : 1,
+          "pivoted" : false,
+          "showActionMenu" : true,
+          "showRowIndexColumn" : false,
+          "step" : "SalesAgreementProduc_1",
+          "totals" : true,
+          "verticalPadding" : 8
+        },
+        "type" : "table"
+      },
+      "table_3" : {
+        "parameters" : {
+          "borderColor" : "#e0e5ee",
+          "borderWidth" : 1,
+          "cell" : {
+            "backgroundColor" : "#ffffff",
+            "fontColor" : "#16325c",
+            "fontSize" : 12
+          },
+          "columnProperties" : { },
+          "columns" : [
+            "A",
+            "B",
+            "F",
+            "D",
+            "E",
+            "C",
+            "SalesAgreementProduct.SalesAgreement.Account.Name"
+          ],
+          "customBulkActions" : [ ],
+          "exploreLink" : true,
+          "header" : {
+            "backgroundColor" : "#f4f6f9",
+            "fontColor" : "#16325c",
+            "fontSize" : 12
+          },
+          "innerMajorBorderColor" : "#a8b7c7",
+          "innerMinorBorderColor" : "#e0e5ee",
+          "mode" : "fittocontainer",
+          "numberOfLines" : 1,
+          "pivoted" : false,
+          "showActionMenu" : true,
+          "showRowIndexColumn" : false,
+          "step" : "ActiveAccounts_2",
+          "totals" : true,
+          "verticalPadding" : 8
+        },
+        "type" : "table"
+      },
+      "link_9" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "cadb1626-c4a9-4eed-9260-819c63994cdf"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "# OF SALES AGREEMENTS",
+          "textAlignment" : "center",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "link"
+      },
+      "table_4" : {
+        "parameters" : {
+          "borderColor" : "#54698d",
+          "borderWidth" : 1,
+          "cell" : {
+            "backgroundColor" : "#16325c",
+            "fontColor" : "#ffffff",
+            "fontSize" : 12
+          },
+          "columnProperties" : { },
+          "columns" : [ ],
+          "customBulkActions" : [ ],
+          "exploreLink" : true,
+          "header" : {
+            "backgroundColor" : "#000000",
+            "fontColor" : "#ffffff",
+            "fontSize" : 12
+          },
+          "innerMajorBorderColor" : "#54698d",
+          "innerMinorBorderColor" : "#54698d",
+          "mode" : "fittocontainer",
+          "numberOfLines" : 1,
+          "pivoted" : false,
+          "showActionMenu" : true,
+          "showRowIndexColumn" : false,
+          "step" : "SalesAgreementProduc_6",
+          "totals" : true,
+          "verticalPadding" : 8
+        },
+        "type" : "table"
+      },
+      "link_7" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "63e8ac36-e5bc-4abd-bf67-f7a1e2e29c1f"
+          },
+          "destinationType" : "page",
+          "fontSize" : 16,
+          "includeState" : false,
+          "text" : "ACCOUNTS IN FOCUS",
+          "textAlignment" : "center",
+          "textColor" : "#0D34B6"
+        },
+        "type" : "link"
+      },
+      "table_5" : {
+        "parameters" : {
+          "borderColor" : "#e0e5ee",
+          "borderWidth" : 1,
+          "cell" : {
+            "backgroundColor" : "#ffffff",
+            "fontColor" : "#16325c",
+            "fontSize" : 12
+          },
+          "columnProperties" : { },
+          "columns" : [ ],
+          "customBulkActions" : [ ],
+          "exploreLink" : true,
+          "header" : {
+            "backgroundColor" : "#f4f6f9",
+            "fontColor" : "#16325c",
+            "fontSize" : 12
+          },
+          "innerMajorBorderColor" : "#a8b7c7",
+          "innerMinorBorderColor" : "#e0e5ee",
+          "mode" : "fittocontainer",
+          "numberOfLines" : 1,
+          "pivoted" : false,
+          "showActionMenu" : true,
+          "showRowIndexColumn" : false,
+          "step" : "SalesAgreementProduc_1",
+          "totals" : true,
+          "verticalPadding" : 8
+        },
+        "type" : "table"
+      },
+      "link_8" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "cadb1626-c4a9-4eed-9260-819c63994cdf"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "# OF SALES AGREEMENTS",
+          "textAlignment" : "center",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "link"
+      },
+      "table_6" : {
+        "parameters" : {
+          "borderColor" : "#54698d",
+          "borderWidth" : 1,
+          "cell" : {
+            "backgroundColor" : "#16325c",
+            "fontColor" : "#ffffff",
+            "fontSize" : 12
+          },
+          "columnProperties" : { },
+          "columns" : [ ],
+          "customBulkActions" : [ ],
+          "exploreLink" : true,
+          "header" : {
+            "backgroundColor" : "#000000",
+            "fontColor" : "#ffffff",
+            "fontSize" : 12
+          },
+          "innerMajorBorderColor" : "#54698d",
+          "innerMinorBorderColor" : "#54698d",
+          "mode" : "fittocontainer",
+          "numberOfLines" : 1,
+          "pivoted" : false,
+          "showActionMenu" : true,
+          "showRowIndexColumn" : false,
+          "step" : "SalesAgreementProduc_5",
+          "totals" : true,
+          "verticalPadding" : 8
+        },
+        "type" : "table"
+      },
+      "pillbox_1" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : false,
+          "fontSize" : 12,
+          "selectedTab" : {
+            "backgroundColor" : "rgb(51, 87, 121)",
+            "borderColor" : "rgb(51, 87, 121)",
+            "borderEdges" : [
+              "all"
+            ],
+            "borderWidth" : 1,
+            "textColor" : "#FFFFFF"
+          },
+          "showActionMenu" : false,
+          "step" : "static_2",
+          "textColor" : "rgb(51, 87, 121)"
+        },
+        "type" : "pillbox"
+      },
+      "link_5" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "286f71cb-f18e-462f-af41-9ec6ac5c5751"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "# OF ACCOUNTS",
+          "textAlignment" : "center",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "link"
+      },
+      "link_6" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "286f71cb-f18e-462f-af41-9ec6ac5c5751"
+          },
+          "destinationType" : "page",
+          "fontSize" : 12,
+          "includeState" : false,
+          "text" : "# OF ACCOUNTS",
+          "textAlignment" : "center",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "link"
+      },
+      "pillbox_6" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : false,
+          "fontSize" : 10,
+          "selectedTab" : {
+            "backgroundColor" : "#0070D2",
+            "borderColor" : "#C6D3E1",
+            "borderEdges" : [
+              "all"
+            ],
+            "borderWidth" : 1,
+            "textColor" : "#FFFFFF"
+          },
+          "showActionMenu" : true,
+          "step" : "AccountsToggle_1",
+          "textColor" : "#0070D2"
+        },
+        "type" : "pillbox"
+      },
+      "listselector_1" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "instant" : false,
+          "measureField" : "count",
+          "showActionMenu" : false,
+          "step" : "SalesAgreementProduc_2",
+          "title" : ""
+        },
+        "type" : "listselector"
+      },
+      "pillbox_7" : {
+        "parameters" : {
+          "compact" : false,
+          "exploreLink" : false,
+          "fontSize" : 10,
+          "selectedTab" : {
+            "backgroundColor" : "#0070D2",
+            "borderColor" : "#C6D3E1",
+            "borderEdges" : [
+              "all"
+            ],
+            "borderWidth" : 1,
+            "textColor" : "#FFFFFF"
+          },
+          "showActionMenu" : true,
+          "step" : "CLV_1",
+          "textColor" : "#E6ECF2"
+        },
+        "type" : "pillbox"
+      }
+    }
+  }
+}

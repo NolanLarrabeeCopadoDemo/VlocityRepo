@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>3</activeVersionNumber>
+    <description>Flow launched by the &quot;Qualify Partner&quot; flow action that creates a user, assigns the delegated administrator profile, assigns permission sets &amp; PSLs, &amp; creates onboarding tasks</description>
+    <masterLabel>PRM: ONB - Set Up Partner User</masterLabel>
+</FlowDefinition>

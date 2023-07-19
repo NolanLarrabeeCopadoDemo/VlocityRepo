@@ -1,0 +1,9 @@
+<!--
+ - Created by brandon.rogers on 4/20/20.
+ -->
+
+<apex:page id="ckz_CartUpload_incl" docType="html-5.0" sidebar="false" showHeader="false" standardStylesheets="false" applyHtmlTag="false">
+
+    <c:ckz_CartUpload />
+
+</apex:page>

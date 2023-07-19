@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Record: Lead - Partner Applications</audienceName>
+    <container>Badger Partner Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>RecordType.Name</entityField>
+                <entityType>Lead</entityType>
+                <fieldValue>Partner Application</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>93418bff-ca06-4de9-b2ec-abff1f3e69be</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Lead_Detail_Lead_Detail_Partner_Signup_Results_Page</targetValue>
+        </target>
+    </targets>
+</Audience>

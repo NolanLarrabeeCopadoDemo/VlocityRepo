@@ -1,0 +1,11 @@
+<aura:component controller="CloudCrazeRedirectCntr" implements="forceCommunity:availableForAllPageTypes,force:hasRecordId" access="global" >
+	<aura:attribute name="Community" type="String" />
+    <aura:attribute name="Store" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <aura:attribute name="URL" type="String" />
+    <div class="center">
+        <button class="btn" style="background-color:#7AA72C;" onclick="{!c.gotoURL}">
+            Buy Parts for this Machine
+        </button>
+    </div>
+</aura:component>

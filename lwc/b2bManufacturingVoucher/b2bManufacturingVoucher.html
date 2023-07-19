@@ -1,0 +1,27 @@
+<template>
+    <div class="voucher slds-p-around_small">
+        <div class="slds-media slds-media_center">
+            <div class="slds-media__figure">
+                <img src={iconSrc} alt="" />
+            </div>
+            <div class="slds-media__body">
+                <h3 class="voucher__name slds-text-title_bold">{name}</h3>
+            </div>
+        </div>
+        <div class="slds-grid slds-m-top_small">
+            <div class="voucher__info voucher__info_expiration">
+                <div class="voucher__info__label">Expiration</div>
+                <div class="voucher__info__value slds-text-title_bold">
+                    <lightning-formatted-date-time
+                        value={expirationDate}
+                    ></lightning-formatted-date-time>
+                </div>
+            </div>
+            <div class="voucher__info voucher__info_code">
+                <div class="voucher__info__label">Code</div>
+                <div class="voucher__info__value slds-text-title_bold">{code}</div>
+            </div>
+        </div>
+        <img src={pathIcon} alt="" class="voucher__half-circle" />
+    </div>
+</template>

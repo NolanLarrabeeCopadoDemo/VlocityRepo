@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BatchProcessJobDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <batchSize>50</batchSize>
+    <dataSource>
+        <condition>1 AND 2</condition>
+        <criteria>all</criteria>
+        <filters>
+            <dynamicValue>false</dynamicValue>
+            <fieldName>Status</fieldName>
+            <fieldValue>Pending</fieldValue>
+            <operator>equals</operator>
+            <sequenceNo>1</sequenceNo>
+        </filters>
+        <filters>
+            <dynamicValue>true</dynamicValue>
+            <dynamicValueType>reference</dynamicValueType>
+            <fieldName>LoyaltyProgramId</fieldName>
+            <fieldValue>LoyaltyProgram</fieldValue>
+            <operator>equals</operator>
+            <sequenceNo>2</sequenceNo>
+        </filters>
+        <sourceObject>TransactionJournal</sourceObject>
+    </dataSource>
+    <description>Processes pending transaction journal records for a specific loyalty program. This batch job runs a flow that awards points to members.</description>
+    <flowApiName>Credit_Points_to_Members</flowApiName>
+    <flowInputVariable>transactionJournalId</flowInputVariable>
+    <masterLabel>Process Pending Transactions Based on Loyalty Program</masterLabel>
+    <processGroup>Loyalty</processGroup>
+    <retryCount>2</retryCount>
+    <retryInterval>5000</retryInterval>
+    <status>Active</status>
+    <type>Flow</type>
+</BatchProcessJobDefinition>

@@ -1,0 +1,176 @@
+{
+    "Completion": null,
+    "Error": {
+    },
+    "PbeProduct": [
+        {
+            "PbeIsActive": true,
+            "PbeName": "Genwatt 1000KW",
+            "PbeUnitPrice": 1000,
+            "PriceBookEntryId": "01u8Y00000L9rshQAB",
+            "Product2Id": "01t8Y00000NV8FkQAL",
+            "ProductUrl": "http://www.slhmetals.com/images/Steel%20Rebar%2002.png",
+            "Qty": "1",
+            "addToEstimate": false,
+            "filtervalue": "filtervalue"
+        },
+        {
+            "PbeIsActive": true,
+            "PbeName": "Genwatt 10KW",
+            "PbeUnitPrice": 200,
+            "PriceBookEntryId": "01u8Y00000L9rsmQAB",
+            "Product2Id": "01t8Y00000NV8FpQAL",
+            "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg",
+            "Qty": "1",
+            "addToEstimate": false,
+            "filtervalue": "filtervalue"
+        }
+    ],
+    "PriceBookEntry": {
+        "CustomLWC6": {
+            "Products": {
+                "selectedprods": [
+                    {
+                        "Id": "REC0",
+                        "PbeIsActive": true,
+                        "PbeName": "Genwatt 1000KW",
+                        "PbeUnitPrice": 1000,
+                        "PriceBookEntryId": "01u8Y00000L9rshQAB",
+                        "Product2Id": "01t8Y00000NV8FkQAL",
+                        "ProductUrl": "http://www.slhmetals.com/images/Steel%20Rebar%2002.png",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC0"
+                        },
+                        "addToEstimate": true,
+                        "filtervalue": "filtervalue",
+                        "uniqueKey": "REC0"
+                    },
+                    {
+                        "Id": "REC1",
+                        "PbeIsActive": true,
+                        "PbeName": "Genwatt 10KW",
+                        "PbeUnitPrice": 200,
+                        "PriceBookEntryId": "01u8Y00000L9rsmQAB",
+                        "Product2Id": "01t8Y00000NV8FpQAL",
+                        "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg",
+                        "Qty": "1",
+                        "_flex": {
+                            "state0element0block_element2": true,
+                            "state0element0block_element2_child": true,
+                            "state0element0block_element3": true,
+                            "state0element0block_element3_child": true,
+                            "state0element0block_element4": true,
+                            "state0element0block_element4_child": true,
+                            "state0element0block_element5": true,
+                            "state0element0block_element5_child": true,
+                            "uniqueKey": "REC1"
+                        },
+                        "addToEstimate": true,
+                        "filtervalue": "filtervalue",
+                        "uniqueKey": "REC1"
+                    }
+                ]
+            }
+        },
+        "Noofproducts": 3,
+        "PriceBook-Block": {
+            "PriceBook": "Manufacturing",
+            "PriceBookIdSF": "01s8Y000001THDiQAO",
+            "PriceBookrecName": "Manufacturing"
+        },
+        "Text1": "gen",
+        "totalcost": 0
+    },
+    "estimatedProducts": {
+        "Formula1": 1200,
+        "Formula2": {
+            "ep1": {
+                "ep": [
+                    {
+                        "PbeName": "Genwatt 1000KW",
+                        "PbeUnitPrice": 1000,
+                        "PriceBookEntryId": "01u8Y00000L9rshQAB",
+                        "Product2Id": "01t8Y00000NV8FkQAL",
+                        "ProductUrl": "http://www.slhmetals.com/images/Steel%20Rebar%2002.png",
+                        "Qty": "1",
+                        "Subtotal": 1000
+                    },
+                    {
+                        "PbeName": "Genwatt 10KW",
+                        "PbeUnitPrice": 200,
+                        "PriceBookEntryId": "01u8Y00000L9rsmQAB",
+                        "Product2Id": "01t8Y00000NV8FpQAL",
+                        "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg",
+                        "Qty": "1",
+                        "Subtotal": 200
+                    }
+                ]
+            }
+        },
+        "ProductsInCart": {
+            "summaryproducts": {
+                "ep": [
+                    {
+                        "PbeName": "Genwatt 1000KW",
+                        "PbeUnitPrice": 1000,
+                        "PriceBookEntryId": "01u8Y00000L9rshQAB",
+                        "Product2Id": "01t8Y00000NV8FkQAL",
+                        "ProductUrl": "http://www.slhmetals.com/images/Steel%20Rebar%2002.png",
+                        "Qty": "1",
+                        "Subtotal": 1000
+                    },
+                    {
+                        "PbeName": "Genwatt 10KW",
+                        "PbeUnitPrice": 200,
+                        "PriceBookEntryId": "01u8Y00000L9rsmQAB",
+                        "Product2Id": "01t8Y00000NV8FpQAL",
+                        "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg",
+                        "Qty": "1",
+                        "Subtotal": 200
+                    }
+                ]
+            }
+        },
+        "subtotalcal": 1200
+    },
+    "estimatedproducts": {
+    },
+    "summaryproducts": {
+        "Total": 1200,
+        "ep": [
+            {
+                "PbeName": "Genwatt 1000KW",
+                "PbeUnitPrice": 1000,
+                "PriceBookEntryId": "01u8Y00000L9rshQAB",
+                "Product2Id": "01t8Y00000NV8FkQAL",
+                "ProductUrl": "http://www.slhmetals.com/images/Steel%20Rebar%2002.png",
+                "Qty": "2",
+                "Subtotal": 1000
+            },
+            {
+                "PbeName": "Genwatt 10KW",
+                "PbeUnitPrice": 200,
+                "PriceBookEntryId": "01u8Y00000L9rsmQAB",
+                "Product2Id": "01t8Y00000NV8FpQAL",
+                "ProductUrl": "https://mfg-ido.s3.us-east-2.amazonaws.com/Images/Badger+Product+Images/Compactor+3500+1.jpg",
+                "Qty": "1",
+                "Subtotal": 200
+            }
+        ]
+    },
+    "timeStamp": "2022-01-31T18:26:54.120Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058Y00000AwAk2QAF",
+    "userName": "demo.org@%vlocity_namespace%.1642136864485",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-480"
+}

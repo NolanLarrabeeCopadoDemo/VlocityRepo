@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>AllInternalUsers</sharedTo>
+        <sharedToType>Organization</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>AllCustomerPortalUsers</sharedTo>
+        <sharedToType>AllCspUsers</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>barry.brown.ijb9fpwrbfsq.wdhkfef9jrml@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>PartnerUser</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>jamie.green.gp5s1jpb5ujt.h3qt7fvfc3ry@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>PartnerUser</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>ppartner.z4uprnqi8cv6.c5goflopjl.vq3wfwrtnrne@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>PartnerUser</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>sarah.phillips.kgbhvymwqyre.fmechecbsyug@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>PartnerUser</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>sean.silver.oasitxolobxo.b8utckvqgkjc@copado.com2023/07/18_17-7-41.demo3</sharedTo>
+        <sharedToType>PartnerUser</sharedToType>
+    </folderShares>
+    <name>Partner Community Reports</name>
+</ReportFolder>

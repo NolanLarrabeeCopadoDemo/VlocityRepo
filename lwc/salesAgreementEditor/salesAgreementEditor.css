@@ -1,0 +1,52 @@
+.colProdName, .colMetric, .colTotal {
+    width: 10%;
+}
+
+.productName {
+    vertical-align: top;
+    padding: 0.5em 0;
+}
+/*
+.tableCellInput {
+    padding: 0;
+}
+*/
+.saIcon {
+    background-color:#6a8929;
+    border-radius:2px
+}
+.phaseScreen {
+    margin-bottom: 5em;
+}
+.spinner {
+    z-index: 1000;
+}
+.tableCell input[data-is-future=true][data-metric*='Actual'] {
+    /*disabled: true*/
+}
+.tableCell input[data-metric=metric][data-productId=productId]:not([disabled]) {
+
+}
+.tableCell {
+    /*pointer-events: none;*/
+}
+.inline {
+    display: inline;
+}
+
+.dataTable {
+    /*margin: 0.25em 1em;*/
+    padding: 1em 1em 1em 2em;
+}
+
+.dataTable thead {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(4) {
+    padding: 1em 0;
+}
+hr {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "ContentDocumentId": {
+            "LatestPublishedVersion.ExternalDocumentInfo2": "2b3020d6-5ef2-6cda-622f-e9e0e989202a",
+            "LatestPublishedVersion.Title": "Conect Communication Subscription Agreement Template (2)-1.docx",
+            "LatestPublishedVersion.VersionNumber": "1",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "ContentDocument/Generated-1938719702",
+            "VlocityRecordSObjectType": "ContentDocument"
+        },
+        "DocumentTemplate.GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+        "DocumentTemplateId": {
+            "GlobalKey": "SubscriptionAgreement/1/MFG Master 240v1/1666389718065",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "DocumentTemplate/Generated948618311",
+            "VlocityRecordSObjectType": "DocumentTemplate"
+        },
+        "FileStageType": "Original",
+        "IsLocked": false,
+        "LatestContentVersionId": {
+            "ExternalDocumentInfo2": "2b3020d6-5ef2-6cda-622f-e9e0e989202a",
+            "Title": "Conect Communication Subscription Agreement Template (2)-1.docx",
+            "VersionNumber": "1",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "ContentVersion/Generated-1646989320",
+            "VlocityRecordSObjectType": "ContentVersion"
+        },
+        "MayEdit": true,
+        "Name": "Conect Communication Subscription Agreement Template (2)-1.docx",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "DocumentTemplateContentDoc",
+        "VlocityRecordSourceKey": "DocumentTemplateContentDoc/Generated1224036922"
+    }
+]
