@@ -1,5 +1,5 @@
 {
-    "Description": "7/19/23 TS changing Doc Gen component back to English, this version has docusign.  Same version for all orgs. Copado Demo Example in RoP training",
+    "Description": "7/20/23 TS changing Doc Gen component back to English, this version has docusign.  Same version for all orgs. New Copado Demo Example in RoP training",
     "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
     "IsIntegrationProcedure": false,
     "IsLocked": false,
@@ -68,5 +68,5 @@
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
     "VlocityRecordSourceKey": "OmniProcess/team/createOrder/English",
-    "WebComponentKey": "62726f72-5e15-1e92-bf36-987dc840a27f"
+    "WebComponentKey": "9e41824b-0b6a-2575-dded-9ef880f11dff"
 }
