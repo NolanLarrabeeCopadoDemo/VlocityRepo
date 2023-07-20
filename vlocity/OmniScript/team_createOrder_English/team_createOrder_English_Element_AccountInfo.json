@@ -35,7 +35,7 @@
             "remoteTimeout": 30000,
             "typeFilter": ""
         },
-        "label": "Select Account",
+        "label": "Select your Account Record",
         "message": {
         },
         "nextLabel": "Next",
